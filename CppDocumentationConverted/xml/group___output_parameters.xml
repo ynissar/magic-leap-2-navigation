@@ -1,0 +1,1401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___output_parameters" kind="group">
+    <compoundname>OutputParameters</compoundname>
+    <title>Parameters</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___output_parameters_1ga2c21c97ac90004b477b87ce0287f9cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSoundVolumeLinear</definition>
+        <argsstring>(MLHandle handle, float volume)</argsstring>
+        <name>MLAudioSetSoundVolumeLinear</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Sets the volume of a sound output using a linear scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of valid values is from 0 to 8. A value of 0 indicates silence. A value of 1 indicates unity gain. A maximum value of 8 indicates 8x unity gain (+18 dB).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The linear volume that the sound output will be set to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000026"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1193" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1193" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga2e9e60353fe08174fa9d9b64cf977d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSoundVolumeLinear</definition>
+        <argsstring>(MLHandle handle, float *out_volume)</argsstring>
+        <name>MLAudioGetSoundVolumeLinear</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_volume</declname>
+        </param>
+        <briefdescription>
+<para>Queries the volume of a sound output in a linear scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of valid values is from 0 to 8. A value of 0 indicates silence. A value of 1 indicates unity gain. A maximum value of 8 indicates 8x unity gain (+18 dB).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved linear volume of the sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000027"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1213" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1213" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gae3ed201c73bf365f583c16b5609ec4ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSoundVolumeDb</definition>
+        <argsstring>(MLHandle handle, float volume)</argsstring>
+        <name>MLAudioSetSoundVolumeDb</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Sets the volume of a sound output using a decibel scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of valid values is from -100 dB to +18 dB. A value of -100 dB indicates silence. A value of 0 dB indicates unity gain. A maximum value of 18 dB indicates 8x unity gain.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dB volume that the sound output will be set to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000028"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1233" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1233" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gaff273aeb9ff0c9ce3dfa21bd2b5b30ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSoundVolumeDb</definition>
+        <argsstring>(MLHandle handle, float *out_volume)</argsstring>
+        <name>MLAudioGetSoundVolumeDb</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_volume</declname>
+        </param>
+        <briefdescription>
+<para>Queries the volume of a sound output using a decibel scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of valid values is from -100 dB to +18 dB. A value of -100 dB indicates silence. A value of 0 dB indicates unity gain. A maximum value of 18 dB indicates 8x unity gain.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved dB volume of the sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000029"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1253" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1253" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga0e6655b24ee4af7c72289ad565d8a4b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSoundPitch</definition>
+        <argsstring>(MLHandle handle, float pitch)</argsstring>
+        <name>MLAudioSetSoundPitch</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitch</declname>
+        </param>
+        <briefdescription>
+<para>Sets the pitch of a sound output by modifying its playback speed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of valid values is from 0.5 which plays at half speed and produces an octave shift down, to 2.0 which plays at double speed and produces an octave shift up. The default value of 1.0 plays the sound at its original speed and pitch.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pitch of the sound output to be set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid buffer size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000030"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1275" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1275" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga0631c7d1666c85d14bf31f46c9471055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSoundPitch</definition>
+        <argsstring>(MLHandle handle, float *out_pitch)</argsstring>
+        <name>MLAudioGetSoundPitch</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_pitch</declname>
+        </param>
+        <briefdescription>
+<para>Queries the pitch of a sound output which corresponds to its playback speed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of valid values is from 0.5 which plays at half speed and produces an octave shift down, to 2.0 which plays at double speed and produces an octave shift up. At the default value of 1.0 the sound plays at its original speed and pitch.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved pitch of the sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000031"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1296" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1296" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gaaacfdd1144e66060909ddb92cf15065c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSoundMute</definition>
+        <argsstring>(MLHandle handle, bool is_muted)</argsstring>
+        <name>MLAudioSetSoundMute</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_muted</declname>
+        </param>
+        <briefdescription>
+<para>Sets the mute state of a sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The &apos;sound mute&apos; of a sound output only affects that one sound output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_muted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the sound output will be muted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000032"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1314" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1314" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga3cbc0b64387cc3b4c94313a280458d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSoundMute</definition>
+        <argsstring>(MLHandle handle, bool *out_is_muted)</argsstring>
+        <name>MLAudioGetSoundMute</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_muted</declname>
+        </param>
+        <briefdescription>
+<para>Queries the mute state of a sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The &apos;sound mute&apos; of a sound output only affects that one sound output.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_muted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the sound output is muted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000033"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1335" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1335" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gad4b842ef18ba70923b031a3c14ea259e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSoundBypassesMasterVolume</definition>
+        <argsstring>(MLHandle handle, bool is_bypassing)</argsstring>
+        <name>MLAudioSetSoundBypassesMasterVolume</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_bypassing</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether a sound output is exempt from attenuation due to master volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This call sets whether a sound output is bypassing master volume, making it effectively &quot;always audible&quot; (assuming it is neither muted nor set to zero volume on a per-sound basis). This option is available only on certain SKUs; trying to set it when the device is not compatible will produce an error as listed below. In addition, this option only works when a sound is non-spatial; the non-spatial sound parameters volume, pitch, etc remain active for sounds that are bypassing master volume.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_bypassing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether the sound output should bypass master volume or not.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_IncompatibleSKU</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to feature not being supported on current device version.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000034"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1360" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1360" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga98b9357ce375aef3b02d660aa2257aa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSoundBypassesMasterVolume</definition>
+        <argsstring>(MLHandle handle, bool *out_is_bypassing)</argsstring>
+        <name>MLAudioGetSoundBypassesMasterVolume</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_bypassing</declname>
+        </param>
+        <briefdescription>
+<para>Queries whether a sound output is exempt from attenuation due to master volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This call queries whether a sound output is bypassing master volume, making it effectively &quot;always audible&quot; (assuming it is neither muted nor set to zero volume on a per-sound basis). This option is available only on certain SKUs; trying to query it when the device is not compatible will produce an error as listed below. In addition, this option only works when a sound is non-spatial; the non-spatial sound parameters volume, pitch, etc remain active for sounds that are bypassing master volume.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_bypassing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether the sound output is bypassing master volume or not.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully queried the bypassing state of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_IncompatibleSKU</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to feature not being supported on current device version. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000035"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1386" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1386" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga79b0b6d5d24a411cf4b40698c4cd8790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSoundLooping</definition>
+        <argsstring>(MLHandle handle, bool is_looping)</argsstring>
+        <name>MLAudioSetSoundLooping</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_looping</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether a sound output is looping or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Looping is available for sound outputs that use Loaded Files and Streamed Files (and their audio resource equivalents). If a sound output is set to looping, then when it reaches the end of the file, it continues playing from the beginning of the file. Looping is not available for sound outputs that use Buffered Outputs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_looping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines whether the sound output is looping or not.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set looping of audio. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000036"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1407" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1407" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga8bd9f78a0e38150b23b3af6b74b38d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSoundLooping</definition>
+        <argsstring>(MLHandle handle, bool *out_is_looping)</argsstring>
+        <name>MLAudioGetSoundLooping</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_looping</declname>
+        </param>
+        <briefdescription>
+<para>Queries whether a sound output is looping or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Looping is available for sound outputs that use Loaded Files and Streamed Files (and their audio resource equivalents). If a sound output is set to looping, then when it reaches the end of the file, it continues playing from the beginning of the file. Looping is not available for sound outputs that use Buffered Outputs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_looping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the sound output state is looping.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000037"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1428" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1428" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gac6034fd64db7abbcd45a67bdda10a370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetStreamedFileOffset</definition>
+        <argsstring>(MLHandle handle, uint32_t offset_in_msec)</argsstring>
+        <name>MLAudioSetStreamedFileOffset</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset_in_msec</declname>
+        </param>
+        <briefdescription>
+<para>Sets the playback position of a sound output that&apos;s playing a Streamed File. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The playback position is in milliseconds and can be set regardless of the playback state.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset_in_msec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The playback position in milliseconds the sound output will be set to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because operation is unavailable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000038"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1447" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1447" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1ga52d51994c6f8d288cdcf8454877526b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetStreamedFileOffset</definition>
+        <argsstring>(MLHandle handle, uint32_t *out_offset_in_msec)</argsstring>
+        <name>MLAudioGetStreamedFileOffset</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_offset_in_msec</declname>
+        </param>
+        <briefdescription>
+<para>Queries the playback position of a sound output that&apos;s playing a Streamed File. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The playback position is in milliseconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_offset_in_msec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved playback position.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because operation is unavailable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000039"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1467" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1467" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gad1eab93ce57b5e724655ee0bb9b47752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetOutputDevice</definition>
+        <argsstring>(MLAudioOutputDevice *out_current_device)</argsstring>
+        <name>MLAudioGetOutputDevice</name>
+        <param>
+          <type><ref refid="group___def_parameters_1gae498b54ee89029cbefe357c849bf219e" kindref="member">MLAudioOutputDevice</ref> *</type>
+          <declname>out_current_device</declname>
+        </param>
+        <briefdescription>
+<para>Queries which type of sound output device is being used for sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a global configuration that is not specific to individual sound outputs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_current_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum indicating what kind of audio output device is currently in use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully indicated the type of output device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000040"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1483" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1483" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_parameters_1gafb8d2ae41885c890e7c0ed1d424a87d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetOutputDeviceCallback</definition>
+        <argsstring>(MLAudioOutputDeviceChangedCallback callback, void *context)</argsstring>
+        <name>MLAudioSetOutputDeviceCallback</name>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga2cf31440a911e0a5b9fb26fe619b8544" kindref="member">MLAudioOutputDeviceChangedCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Registers a callback for when the active audio hardware output has changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully registered the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000041"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1500" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1500" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>PARAMETERS. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

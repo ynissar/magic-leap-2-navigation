@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_buffer_format" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioBufferFormat</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1gab8dbc144028784a6a0ae10fa95d9618a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::channel_count</definition>
+        <argsstring></argsstring>
+        <name>channel_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of channels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="386" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga7e5505d6123f99531497e69c617272c0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::samples_per_second</definition>
+        <argsstring></argsstring>
+        <name>samples_per_second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sample rate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="388" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gabbca433958cd5e0fc250016fca44b265" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::bits_per_sample</definition>
+        <argsstring></argsstring>
+        <name>bits_per_sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits per sample. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="390" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga73b06613b76f6451254ccde91cf36183" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::valid_bits_per_sample</definition>
+        <argsstring></argsstring>
+        <name>valid_bits_per_sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits used per sample. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="392" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga66e86af091603a5de9a1e880e0393cf5" prot="public" static="no" mutable="no">
+        <type><ref refid="group___def_buffering_1gaa15645de3aeeafd395e01683d414e2c2" kindref="member">MLAudioSampleFormat</ref></type>
+        <definition>MLAudioSampleFormat MLAudioBufferFormat::sample_format</definition>
+        <argsstring></argsstring>
+        <name>sample_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Integer or float. Float is not currently implemented for buffered I/O. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="394" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga930b819a5d3e0b0466bc31f3f224f953" prot="public" static="no" mutable="no">
+        <type><ref refid="group___def_buffering_1gaf9dc383d6665cc020cf4355e33536ef3" kindref="member">MLAudioChannelFormat</ref></type>
+        <definition>MLAudioChannelFormat MLAudioBufferFormat::channel_format</definition>
+        <argsstring></argsstring>
+        <name>channel_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="396" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Buffer format settings for input and output streams. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="384" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="384" bodyend="397"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1gabbca433958cd5e0fc250016fca44b265" prot="public" virt="non-virtual"><scope>MLAudioBufferFormat</scope><name>bits_per_sample</name></member>
+      <member refid="group___audio_defs_1gab8dbc144028784a6a0ae10fa95d9618a" prot="public" virt="non-virtual"><scope>MLAudioBufferFormat</scope><name>channel_count</name></member>
+      <member refid="group___audio_defs_1ga930b819a5d3e0b0466bc31f3f224f953" prot="public" virt="non-virtual"><scope>MLAudioBufferFormat</scope><name>channel_format</name></member>
+      <member refid="group___audio_defs_1ga66e86af091603a5de9a1e880e0393cf5" prot="public" virt="non-virtual"><scope>MLAudioBufferFormat</scope><name>sample_format</name></member>
+      <member refid="group___audio_defs_1ga7e5505d6123f99531497e69c617272c0" prot="public" virt="non-virtual"><scope>MLAudioBufferFormat</scope><name>samples_per_second</name></member>
+      <member refid="group___audio_defs_1ga73b06613b76f6451254ccde91cf36183" prot="public" virt="non-virtual"><scope>MLAudioBufferFormat</scope><name>valid_bits_per_sample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

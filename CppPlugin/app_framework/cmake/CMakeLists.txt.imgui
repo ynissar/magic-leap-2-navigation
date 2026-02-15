@@ -1,0 +1,52 @@
+cmake_minimum_required(VERSION 3.18.1)
+
+project (imgui)
+
+if(LUMIN)
+  find_path(GLES3_INCLUDE_DIR GLES3/gl3.h HINTS ${ANDROID_NDK})
+  find_library(GLES3_LIBRARY libGLESv3.so HINTS ${GLES3_INCLUDE_DIR}/../lib)
+else()
+  find_package(OpenGL REQUIRED)
+  set(GLES3_LIBRARY "OpenGL::GL")
+endif()
+
+set(SRCS
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_widgets.cpp
+  imgui_tables.cpp
+  backends/imgui_impl_opengl3.cpp
+  )
+
+if(NOT LUMIN)
+  list(APPEND SRCS backends/imgui_impl_glfw.cpp)
+  set(HOST_LIBS glfw)
+endif()
+
+add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
+
+add_library(imgui        STATIC ${SRCS})
+target_include_directories(imgui        PUBLIC . glad  ${GLFW_INCLUDE_DIRS})
+target_link_libraries(imgui        PUBLIC glad ${HOST_LIBS} ${GLES3_LIBRARY})
+
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(imgui PRIVATE -fPIC -Wno-invalid-noreturn)
+endif()
+
+# add_library(imgui_static STATIC ${SRCS})
+# target_include_directories(imgui_static PUBLIC . glad ${GLFW_INCLUDE_DIRS})
+# target_link_libraries(imgui_static PUBLIC glad ${HOST_LIBS} ${GLES3_LIBRARY})
+# set_target_properties(imgui_static PROPERTIES OUTPUT_NAME imgui)
+
+set(IMGUI_INCLUDE_FILES "imgui.h" "imconfig.h")
+
+set_target_properties(imgui
+    PROPERTIES
+    PUBLIC_HEADER "${IMGUI_INCLUDE_FILES}"
+)
+
+install (TARGETS imgui
+    ARCHIVE DESTINATION lib
+    PUBLIC_HEADER DESTINATION include
+)

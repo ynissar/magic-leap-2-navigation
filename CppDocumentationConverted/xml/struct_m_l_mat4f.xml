@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_mat4f" kind="struct" language="C++" prot="public">
+    <compoundname>MLMat4f</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_mat4f_1ab21edb1645151500b316cf4891e9beb2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLMat4f::matrix_colmajor[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>matrix_colmajor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="90" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An arbitrary 4x4 matrix represented with an array of floats. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="89" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="89" bodyend="91"/>
+    <listofallmembers>
+      <member refid="struct_m_l_mat4f_1ab21edb1645151500b316cf4891e9beb2" prot="public" virt="non-virtual"><scope>MLMat4f</scope><name>matrix_colmajor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_coordinate_frame_u_i_d" kind="struct" language="C++" prot="public">
+    <compoundname>MLCoordinateFrameUID</compoundname>
+    <includes refid="ml__coordinate__frame__uid_8h" local="no">ml_coordinate_frame_uid.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_coordinate_frame_u_i_d_1a53d20c47c73d2ac75b1c133a8177c8cb" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t MLCoordinateFrameUID::data[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h" line="27" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A unique identifier which represents a coordinate frame. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h" line="26" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h" bodystart="26" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_m_l_coordinate_frame_u_i_d_1a53d20c47c73d2ac75b1c133a8177c8cb" prot="public" virt="non-virtual"><scope>MLCoordinateFrameUID</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

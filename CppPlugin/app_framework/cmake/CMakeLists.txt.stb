@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.18.1)
+
+project (stb)
+
+set(SRCS
+  stblib.cpp
+  )
+
+
+add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
+# string(
+#     APPEND _opts "$<$<CXX_COMPILER_ID:Clang>:-stdlib=libc++>>"
+# )
+
+# add_compile_options("${_opts}")
+
+add_library(stb STATIC ${SRCS})
+target_include_directories(stb PUBLIC . )
+
+file(GLOB_RECURSE STB_INCLUDE_FILES "stb_*.h")
+
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(stb PRIVATE -fPIC)
+endif()
+
+
+set_target_properties(stb
+    PROPERTIES
+    PUBLIC_HEADER "${STB_INCLUDE_FILES}"
+)
+
+install (TARGETS stb
+    ARCHIVE DESTINATION lib
+    PUBLIC_HEADER DESTINATION include
+)

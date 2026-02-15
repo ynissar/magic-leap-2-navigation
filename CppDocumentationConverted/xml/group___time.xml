@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___time" kind="group">
+    <compoundname>Time</compoundname>
+    <title>Time</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___time_1gacc3bee1a36fbc711896a308f7e0e2d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLTimeConvertMLTimeToSystemTime</definition>
+        <argsstring>(MLTime ml_time, struct timespec *out_timespec_time)</argsstring>
+        <name>MLTimeConvertMLTimeToSystemTime</name>
+        <param>
+          <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+          <declname>ml_time</declname>
+        </param>
+        <param>
+          <type>struct timespec *</type>
+          <declname>out_timespec_time</declname>
+        </param>
+        <briefdescription>
+<para>Converts timestamps from MLTime to system time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref> for more details. System time is equivalent to the systems monotonic clock. This can be used to calculate duration between two MLTime values by converting them both to a timespec and subtracting the subsequent values.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ml_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp received from elsewhere in the ML system. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_timespec_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a converted equivalent timestamp as if received from clock_gettime using CLOCK_MONOTONIC.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully converted timestamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL passed for timespec_time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to convert timestamp with unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000686"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h" line="63" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h" declline="63" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___time_1ga9e8353bc4347abffb1d2a65e24b45033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLTimeConvertSystemTimeToMLTime</definition>
+        <argsstring>(const struct timespec *timespec_time, MLTime *out_ml_time)</argsstring>
+        <name>MLTimeConvertSystemTimeToMLTime</name>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timespec_time</declname>
+        </param>
+        <param>
+          <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref> *</type>
+          <declname>out_ml_time</declname>
+        </param>
+        <briefdescription>
+<para>Converts timestamps from system time to MLTime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref> for more details. System time is equivalent to the systems monotonic clock.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timespec_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>System clock timestamp as received from clock_gettime using CLOCK_MONOTONIC. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_ml_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to system timestamp equivalent in MLTime.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully converted timestamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL passed for ml_time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to convert timespec with unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000687"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h" line="82" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h" declline="82" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the MLTime. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+Please note that the MLTime data type cannot be filled with std::chrono timestamps. For example to generate an MLTime time from the current time you can use the code below.</para>
+<para><programlisting><codeline><highlight class="normal">timespec<sp/>time_spec{};</highlight></codeline>
+<codeline><highlight class="normal">clock_gettime(CLOCK_MONOTONIC,<sp/>&amp;time_spec);</highlight></codeline>
+<codeline><highlight class="normal">MLTime<sp/>converted_ml_time{};</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(MLResult_Ok<sp/>!=<sp/>MLTimeConvertSystemTimeToMLTime(&amp;time_spec,<sp/>&amp;converted_ml_time))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ML_LOG_ERROR(&quot;Failed<sp/>to<sp/>convert<sp/>to<sp/>MLTime<sp/>timestamp&quot;);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

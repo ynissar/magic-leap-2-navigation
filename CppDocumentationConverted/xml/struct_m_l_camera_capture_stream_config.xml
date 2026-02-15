@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_capture_stream_config" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraCaptureStreamConfig</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_capture_stream_config_1a3c16542330099c3d8eba4354b2852862" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1ga81f72e27351fa8c140dd141bd7004828" kindref="member">MLCameraCaptureType</ref></type>
+        <definition>MLCameraCaptureType MLCameraCaptureStreamConfig::capture_type</definition>
+        <argsstring></argsstring>
+        <name>capture_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Capture type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="323" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_stream_config_1ab6e7f1d9e64962f2db4c9c9a41295b16" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLCameraCaptureStreamConfig::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies resolution width. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="325" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_stream_config_1a812354e4754770513e1942acf4deea42" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLCameraCaptureStreamConfig::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies resolution height. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="327" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_stream_config_1ab106d9a7ec2f20bb3fd56b87e91a7858" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1ga50c788fee4b171b21e23ab375a892c74" kindref="member">MLCameraOutputFormat</ref></type>
+        <definition>MLCameraOutputFormat MLCameraCaptureStreamConfig::output_format</definition>
+        <argsstring></argsstring>
+        <name>output_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies output format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="329" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_stream_config_1abc79d0e075c549d98a0b33d17a9a22a2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLCameraCaptureStreamConfig::native_surface_handle</definition>
+        <argsstring></argsstring>
+        <name>native_surface_handle</name>
+        <briefdescription>
+<para>Native surface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for compressed video recording. Handle returned by MLMediaRecorderGetInputSurface should be provided. Maximum video recording resolution supported is 4K(3840x2160). Only valid for capture type <ref refid="group___camera_1gga81f72e27351fa8c140dd141bd7004828aadc39bdf67d1ad611d115150b9ad06ba" kindref="member">MLCameraCaptureType_Video</ref>. Set to ML_INVALID_HANDLE for yuv/rgba video capture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="339" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to encapsulate stream configurations. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="321" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="321" bodyend="340"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_capture_stream_config_1a3c16542330099c3d8eba4354b2852862" prot="public" virt="non-virtual"><scope>MLCameraCaptureStreamConfig</scope><name>capture_type</name></member>
+      <member refid="struct_m_l_camera_capture_stream_config_1a812354e4754770513e1942acf4deea42" prot="public" virt="non-virtual"><scope>MLCameraCaptureStreamConfig</scope><name>height</name></member>
+      <member refid="struct_m_l_camera_capture_stream_config_1abc79d0e075c549d98a0b33d17a9a22a2" prot="public" virt="non-virtual"><scope>MLCameraCaptureStreamConfig</scope><name>native_surface_handle</name></member>
+      <member refid="struct_m_l_camera_capture_stream_config_1ab106d9a7ec2f20bb3fd56b87e91a7858" prot="public" virt="non-virtual"><scope>MLCameraCaptureStreamConfig</scope><name>output_format</name></member>
+      <member refid="struct_m_l_camera_capture_stream_config_1ab6e7f1d9e64962f2db4c9c9a41295b16" prot="public" virt="non-virtual"><scope>MLCameraCaptureStreamConfig</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

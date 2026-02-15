@@ -1,0 +1,949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__world__camera_8h" kind="file" language="C++">
+    <compoundname>ml_world_camera.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h</label>
+        <link refid="ml__world__camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_m_l_world_camera_settings" prot="public">MLWorldCameraSettings</innerclass>
+    <innerclass refid="struct_m_l_world_camera_intrinsics" prot="public">MLWorldCameraIntrinsics</innerclass>
+    <innerclass refid="struct_m_l_world_camera_frame_buffer" prot="public">MLWorldCameraFrameBuffer</innerclass>
+    <innerclass refid="struct_m_l_world_camera_frame" prot="public">MLWorldCameraFrame</innerclass>
+    <innerclass refid="struct_m_l_world_camera_data" prot="public">MLWorldCameraData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___w_cam_1ga4790f45dcc812c1b00184a2edccdddf5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@32</name>
+        <enumvalue id="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a91152457e26d9902bb5b374034eaa36c" prot="public">
+          <name>MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default radial distortion vector size. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a97a0356649e94e69c2265590d2bbc06f" prot="public">
+          <name>MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default tangential distortion vector size. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="46" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWorldCameraIdentifier</name>
+        <enumvalue id="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1d6d94000cbb8d5ec52515a4a5f136b" prot="public">
+          <name>MLWorldCameraIdentifier_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1caa9e19ce4148bd24865ca2fc2893c" prot="public">
+          <name>MLWorldCameraIdentifier_Left</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left World camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba550fddefc06018e34d91469b03b7e3fe" prot="public">
+          <name>MLWorldCameraIdentifier_Right</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right World camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba81ffe1de7879afd1cd822d0f53ca6e78" prot="public">
+          <name>MLWorldCameraIdentifier_Center</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Center World camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba7fcb3b443b479415ee304e11864ae31d" prot="public">
+          <name>MLWorldCameraIdentifier_All</name>
+          <initializer>= MLWorldCameraIdentifier_Left |
+                                MLWorldCameraIdentifier_Right |
+                                MLWorldCameraIdentifier_Center</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>All World cameras. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba4d92e7b9f18e62cbff11b53a5c1afba2" prot="public">
+          <name>MLWorldCameraIdentifier_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera Identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of all the available world camera sensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="58" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___w_cam_1ga24cba0ed2219a282643015dbb5a36cb6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWorldCameraMode</name>
+        <enumvalue id="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a0a8f93af4655c26461e17c9f875642d9" prot="public">
+          <name>MLWorldCameraMode_Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6ad2a1baa5055b51d746ff60a06f6c0dde" prot="public">
+          <name>MLWorldCameraMode_LowExposure</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Low exposure mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This mode is currently only available when the controller is being tracked. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a2217e3b068097a438b9d0ea8cc2ddf11" prot="public">
+          <name>MLWorldCameraMode_NormalExposure</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Normal exposure mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6ab9360fe334b5706496b0c88ce2884ddb" prot="public">
+          <name>MLWorldCameraMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of world camera modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="78" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWorldCameraFrameType</name>
+        <enumvalue id="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a1429497b2045e7bed595ee37340dffe3" prot="public">
+          <name>MLWorldCameraFrameType_Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6af7cea17aeb8d912cf2c1c78d0c9acd99" prot="public">
+          <name>MLWorldCameraFrameType_LowExposure</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Frame captured using <ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6ad2a1baa5055b51d746ff60a06f6c0dde" kindref="member">MLWorldCameraMode_LowExposure</ref> mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a549ab8d0181b98fdece5752da45d2bd5" prot="public">
+          <name>MLWorldCameraFrameType_NormalExposure</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Frame captured using <ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a2217e3b068097a438b9d0ea8cc2ddf11" kindref="member">MLWorldCameraMode_NormalExposure</ref> mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a5d0769a8423df4c8c8dece10e4d6b177" prot="public">
+          <name>MLWorldCameraFrameType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of camera mode used when capturing a frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="98" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="98" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___w_cam_1ga2e832830cb067b484de4bd4d0e4ee9d5" prot="public" static="no">
+        <type>enum <ref refid="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" kindref="member">MLWorldCameraIdentifier</ref></type>
+        <definition>typedef enum MLWorldCameraIdentifier MLWorldCameraIdentifier</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraIdentifier</name>
+        <briefdescription>
+<para>Camera Identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of all the available world camera sensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="73" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1ga459c241cf0e032fcd40847bc36a95580" prot="public" static="no">
+        <type>enum <ref refid="group___w_cam_1ga24cba0ed2219a282643015dbb5a36cb6" kindref="member">MLWorldCameraMode</ref></type>
+        <definition>typedef enum MLWorldCameraMode MLWorldCameraMode</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraMode</name>
+        <briefdescription>
+<para>Enumeration of world camera modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="93" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1ga2efbac78e8a684f01ab92834b1bd4b48" prot="public" static="no">
+        <type>enum <ref refid="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" kindref="member">MLWorldCameraFrameType</ref></type>
+        <definition>typedef enum MLWorldCameraFrameType MLWorldCameraFrameType</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraFrameType</name>
+        <briefdescription>
+<para>Enumeration of camera mode used when capturing a frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="111" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1ga34e870a422a77336905fbbd843b6127a" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref></type>
+        <definition>typedef struct MLWorldCameraSettings MLWorldCameraSettings</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraSettings</name>
+        <briefdescription>
+<para>A structure to encapsulate the camera settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___w_cam_1ga9132b9fa0b8351acf1aa918843c6a8aa" kindref="member">MLWorldCameraSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="148" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1gac2ddbeb5a8b9639cc3126c22b0b5f943" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_world_camera_intrinsics" kindref="compound">MLWorldCameraIntrinsics</ref></type>
+        <definition>typedef struct MLWorldCameraIntrinsics MLWorldCameraIntrinsics</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraIntrinsics</name>
+        <briefdescription>
+<para>World camera intrinsic parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="195" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1gae6f7f5261cc250b124e25b988e1aaf69" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_world_camera_frame_buffer" kindref="compound">MLWorldCameraFrameBuffer</ref></type>
+        <definition>typedef struct MLWorldCameraFrameBuffer MLWorldCameraFrameBuffer</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraFrameBuffer</name>
+        <briefdescription>
+<para>A structure to encapsulate per plane info for each camera frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="215" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1ga1749d3b489e368eec0c14f9b3bf62606" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_world_camera_frame" kindref="compound">MLWorldCameraFrame</ref></type>
+        <definition>typedef struct MLWorldCameraFrame MLWorldCameraFrame</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraFrame</name>
+        <briefdescription>
+<para>A structure to encapsulate output data for each camera sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="238" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_cam_1gae00f583043a96b941dbf4caeaac634af" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref></type>
+        <definition>typedef struct MLWorldCameraData MLWorldCameraData</definition>
+        <argsstring></argsstring>
+        <name>MLWorldCameraData</name>
+        <briefdescription>
+<para>A structure to encapsulate output data for each camera sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___w_cam_1ga51e0436ae24bc42da8761085230d5c7b" kindref="member">MLWorldCameraDataInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="256" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___w_cam_1ga9132b9fa0b8351acf1aa918843c6a8aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLWorldCameraSettingsInit</definition>
+        <argsstring>(MLWorldCameraSettings *inout_handle)</argsstring>
+        <name>MLWorldCameraSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> *</type>
+          <declname>inout_handle</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the camera settings structure. Shall be called before calling <ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000731"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="160" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="160" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_cam_1ga51e0436ae24bc42da8761085230d5c7b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLWorldCameraDataInit</definition>
+        <argsstring>(MLWorldCameraData *inout_world_camera_data)</argsstring>
+        <name>MLWorldCameraDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> *</type>
+          <declname>inout_world_camera_data</declname>
+        </param>
+        <briefdescription>
+<para>Initialize <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> with version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_world_camera_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_world_camera_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="265" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="265" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWorldCameraConnect</definition>
+        <argsstring>(const MLWorldCameraSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLWorldCameraConnect</name>
+        <param>
+          <type>const <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Connect to world cameras. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to camera handle to be used in later APIs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connected to camera device(s) successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000732"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.CAMERA (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="287" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" declline="287" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_cam_1gaeeaf313737c0d173b3d733ff6e0b11dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWorldCameraUpdateSettings</definition>
+        <argsstring>(MLHandle handle, const MLWorldCameraSettings *settings)</argsstring>
+        <name>MLWorldCameraUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Update the world camera settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000733"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="303" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" declline="303" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_cam_1ga99fc26fb929af51604d2d4403430e04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWorldCameraGetLatestWorldCameraData</definition>
+        <argsstring>(MLHandle handle, uint64_t timeout_ms, MLWorldCameraData **out_data)</argsstring>
+        <name>MLWorldCameraGetLatestWorldCameraData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> **</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Poll for Frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling <ref refid="group___w_cam_1ga73e7619062a3d873a4036679511f254e" kindref="member">MLWorldCameraReleaseCameraData</ref>.</para>
+<para>This is a blocking call. API is not thread safe.</para>
+<para>If there are no new camera frames within the timeout_ms duration then the API will return MLResult_Timeout.</para>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World camera data. Will be set to NULL if no valid data is available at this time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World camera data fetched successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returned because no new frame available at this time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000734"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="331" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" declline="331" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_cam_1ga73e7619062a3d873a4036679511f254e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWorldCameraReleaseCameraData</definition>
+        <argsstring>(MLHandle handle, MLWorldCameraData *world_camera_data)</argsstring>
+        <name>MLWorldCameraReleaseCameraData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> *</type>
+          <declname>world_camera_data</declname>
+        </param>
+        <briefdescription>
+<para>Releases specified <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called exactly once for each successfull call to #MLWorldCameraGetLatestCameraData.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">world_camera_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released world camera data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>world_camera_data parameter was not valid (NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000735"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="348" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" declline="348" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_cam_1gaaff6b569eec1c8a58688367a35492cee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWorldCameraDisconnect</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLWorldCameraDisconnect</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect from world camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will disconnect from all the world camera currently connected.</para>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disconnected camera successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to disconnect camera.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000736"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="365" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" declline="365" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a91152457e26d9902bb5b374034eaa36c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a91152457e26d9902bb5b374034eaa36c" kindref="member">MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a97a0356649e94e69c2265590d2bbc06f" kindref="member">MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients</ref><sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="51" refid="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a97a0356649e94e69c2265590d2bbc06f" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" kindref="member">MLWorldCameraIdentifier</ref>{</highlight></codeline>
+<codeline lineno="60" refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1d6d94000cbb8d5ec52515a4a5f136b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1d6d94000cbb8d5ec52515a4a5f136b" kindref="member">MLWorldCameraIdentifier_None</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="62" refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1caa9e19ce4148bd24865ca2fc2893c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1caa9e19ce4148bd24865ca2fc2893c" kindref="member">MLWorldCameraIdentifier_Left</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="64" refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba550fddefc06018e34d91469b03b7e3fe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba550fddefc06018e34d91469b03b7e3fe" kindref="member">MLWorldCameraIdentifier_Right</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="66" refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba81ffe1de7879afd1cd822d0f53ca6e78" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba81ffe1de7879afd1cd822d0f53ca6e78" kindref="member">MLWorldCameraIdentifier_Center</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba7fcb3b443b479415ee304e11864ae31d" kindref="member">MLWorldCameraIdentifier_All</ref><sp/>=<sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2baa1caa9e19ce4148bd24865ca2fc2893c" kindref="member">MLWorldCameraIdentifier_Left</ref><sp/>|</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba550fddefc06018e34d91469b03b7e3fe" kindref="member">MLWorldCameraIdentifier_Right</ref><sp/>|</highlight></codeline>
+<codeline lineno="70" refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba7fcb3b443b479415ee304e11864ae31d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba81ffe1de7879afd1cd822d0f53ca6e78" kindref="member">MLWorldCameraIdentifier_Center</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba4d92e7b9f18e62cbff11b53a5c1afba2" kindref="member">MLWorldCameraIdentifier_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="73" refid="group___w_cam_1ga2e832830cb067b484de4bd4d0e4ee9d5" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" kindref="member">MLWorldCameraIdentifier</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group___w_cam_1ga24cba0ed2219a282643015dbb5a36cb6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___w_cam_1ga24cba0ed2219a282643015dbb5a36cb6" kindref="member">MLWorldCameraMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="80" refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a0a8f93af4655c26461e17c9f875642d9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a0a8f93af4655c26461e17c9f875642d9" kindref="member">MLWorldCameraMode_Unknown</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="86" refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6ad2a1baa5055b51d746ff60a06f6c0dde" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6ad2a1baa5055b51d746ff60a06f6c0dde" kindref="member">MLWorldCameraMode_LowExposure</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="90" refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a2217e3b068097a438b9d0ea8cc2ddf11" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a2217e3b068097a438b9d0ea8cc2ddf11" kindref="member">MLWorldCameraMode_NormalExposure</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6ab9360fe334b5706496b0c88ce2884ddb" kindref="member">MLWorldCameraMode_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="93" refid="group___w_cam_1ga459c241cf0e032fcd40847bc36a95580" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1ga24cba0ed2219a282643015dbb5a36cb6" kindref="member">MLWorldCameraMode</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" kindref="member">MLWorldCameraFrameType</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a1429497b2045e7bed595ee37340dffe3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a1429497b2045e7bed595ee37340dffe3" kindref="member">MLWorldCameraFrameType_Unknown</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="104" refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6af7cea17aeb8d912cf2c1c78d0c9acd99" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6af7cea17aeb8d912cf2c1c78d0c9acd99" kindref="member">MLWorldCameraFrameType_LowExposure</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="108" refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a549ab8d0181b98fdece5752da45d2bd5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a549ab8d0181b98fdece5752da45d2bd5" kindref="member">MLWorldCameraFrameType_NormalExposure</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gga40fed248dca3971adb718208aa3f79f6a5d0769a8423df4c8c8dece10e4d6b177" kindref="member">MLWorldCameraFrameType_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="111" refid="group___w_cam_1ga2efbac78e8a684f01ab92834b1bd4b48" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" kindref="member">MLWorldCameraFrameType</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="struct_m_l_world_camera_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="123" refid="struct_m_l_world_camera_settings_1a8cbe6521842a712f9a4ce07f64a8c672" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_settings_1a8cbe6521842a712f9a4ce07f64a8c672" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="135" refid="struct_m_l_world_camera_settings_1afd55da0a4fc8019265af0396f5b7c3d2" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_settings_1afd55da0a4fc8019265af0396f5b7c3d2" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="147" refid="struct_m_l_world_camera_settings_1a5ffeb4a3101fdbbfc57bd1fe0766a321" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_settings_1a5ffeb4a3101fdbbfc57bd1fe0766a321" kindref="member">cameras</ref>;</highlight></codeline>
+<codeline lineno="148" refid="group___w_cam_1ga34e870a422a77336905fbbd843b6127a" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1ga34e870a422a77336905fbbd843b6127a" kindref="member">MLWorldCameraSettings</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="group___w_cam_1ga9132b9fa0b8351acf1aa918843c6a8aa" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_cam_1ga9132b9fa0b8351acf1aa918843c6a8aa" kindref="member">MLWorldCameraSettingsInit</ref>(<ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref><sp/>*inout_handle)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_handle)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_handle,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref>));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_handle-&gt;<ref refid="struct_m_l_world_camera_settings_1a8cbe6521842a712f9a4ce07f64a8c672" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_handle-&gt;<ref refid="struct_m_l_world_camera_settings_1afd55da0a4fc8019265af0396f5b7c3d2" kindref="member">mode</ref><sp/>=<sp/><ref refid="group___w_cam_1gga24cba0ed2219a282643015dbb5a36cb6a2217e3b068097a438b9d0ea8cc2ddf11" kindref="member">MLWorldCameraMode_NormalExposure</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_handle-&gt;<ref refid="struct_m_l_world_camera_settings_1a5ffeb4a3101fdbbfc57bd1fe0766a321" kindref="member">cameras</ref><sp/>=<sp/><ref refid="group___w_cam_1ggaaad348fdb437d75c84efb0e306b88d2ba7fcb3b443b479415ee304e11864ae31d" kindref="member">MLWorldCameraIdentifier_All</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="struct_m_l_world_camera_intrinsics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_world_camera_intrinsics" kindref="compound">MLWorldCameraIntrinsics</ref><sp/>{</highlight></codeline>
+<codeline lineno="176" refid="struct_m_l_world_camera_intrinsics_1a97b96eef43d36d76f55a6c7689147940" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_intrinsics_1a97b96eef43d36d76f55a6c7689147940" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="178" refid="struct_m_l_world_camera_intrinsics_1a598bcff7efa85b512ba29f5438d2d46f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_intrinsics_1a598bcff7efa85b512ba29f5438d2d46f" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="180" refid="struct_m_l_world_camera_intrinsics_1a4610dd717b26abf65f78f38532fa29bd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref><sp/><ref refid="struct_m_l_world_camera_intrinsics_1a4610dd717b26abf65f78f38532fa29bd" kindref="member">focal_length</ref>;</highlight></codeline>
+<codeline lineno="182" refid="struct_m_l_world_camera_intrinsics_1a40eebdce8b607e49586ab941145f97de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref><sp/><ref refid="struct_m_l_world_camera_intrinsics_1a40eebdce8b607e49586ab941145f97de" kindref="member">principal_point</ref>;</highlight></codeline>
+<codeline lineno="184" refid="struct_m_l_world_camera_intrinsics_1ada1cdbfb2ce50639bdcca9306ebf8ce0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_world_camera_intrinsics_1ada1cdbfb2ce50639bdcca9306ebf8ce0" kindref="member">fov</ref>;</highlight></codeline>
+<codeline lineno="189" refid="struct_m_l_world_camera_intrinsics_1a98d539154362f6eb9800fd2c75c8139c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_world_camera_intrinsics_1a98d539154362f6eb9800fd2c75c8139c" kindref="member">radial_distortion</ref>[<ref refid="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a91152457e26d9902bb5b374034eaa36c" kindref="member">MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients</ref>];</highlight></codeline>
+<codeline lineno="194" refid="struct_m_l_world_camera_intrinsics_1aa21e74cf0c93b29c6ed06bf2744aef29" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_world_camera_intrinsics_1aa21e74cf0c93b29c6ed06bf2744aef29" kindref="member">tangential_distortion</ref>[<ref refid="group___w_cam_1gga4790f45dcc812c1b00184a2edccdddf5a97a0356649e94e69c2265590d2bbc06f" kindref="member">MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients</ref>];</highlight></codeline>
+<codeline lineno="195" refid="group___w_cam_1gac2ddbeb5a8b9639cc3126c22b0b5f943" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1gac2ddbeb5a8b9639cc3126c22b0b5f943" kindref="member">MLWorldCameraIntrinsics</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="struct_m_l_world_camera_frame_buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_world_camera_frame_buffer" kindref="compound">MLWorldCameraFrameBuffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="204" refid="struct_m_l_world_camera_frame_buffer_1ad96927ac0ac3f67d105868db1b3fd3c9" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_frame_buffer_1ad96927ac0ac3f67d105868db1b3fd3c9" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="206" refid="struct_m_l_world_camera_frame_buffer_1ad21d96a9eeb9c605843e0d74a47d71de" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_frame_buffer_1ad21d96a9eeb9c605843e0d74a47d71de" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="208" refid="struct_m_l_world_camera_frame_buffer_1a357c58bf01fc90e40d5d43a6181d5eaf" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_frame_buffer_1a357c58bf01fc90e40d5d43a6181d5eaf" kindref="member">stride</ref>;</highlight></codeline>
+<codeline lineno="210" refid="struct_m_l_world_camera_frame_buffer_1abaa57208dce432ca726a15f9e829a73d" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_frame_buffer_1abaa57208dce432ca726a15f9e829a73d" kindref="member">bytes_per_pixel</ref>;</highlight></codeline>
+<codeline lineno="212" refid="struct_m_l_world_camera_frame_buffer_1a455ed52f825836ac99ab05f17a16d4f2" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_frame_buffer_1a455ed52f825836ac99ab05f17a16d4f2" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="214" refid="struct_m_l_world_camera_frame_buffer_1abc11d6c91cdd62d1c7801baa7c497f1b" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>*<ref refid="struct_m_l_world_camera_frame_buffer_1abc11d6c91cdd62d1c7801baa7c497f1b" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="215" refid="group___w_cam_1gae6f7f5261cc250b124e25b988e1aaf69" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1gae6f7f5261cc250b124e25b988e1aaf69" kindref="member">MLWorldCameraFrameBuffer</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="struct_m_l_world_camera_frame" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_world_camera_frame" kindref="compound">MLWorldCameraFrame</ref><sp/>{</highlight></codeline>
+<codeline lineno="225" refid="struct_m_l_world_camera_frame_1a96527209608963bc11b58b900dfdf6f9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" kindref="member">MLWorldCameraIdentifier</ref><sp/><ref refid="struct_m_l_world_camera_frame_1a96527209608963bc11b58b900dfdf6f9" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="227" refid="struct_m_l_world_camera_frame_1a22b2cc6cf1300b15ccc698f3976ac897" refkind="member"><highlight class="normal"><sp/><sp/>int64_t<sp/><ref refid="struct_m_l_world_camera_frame_1a22b2cc6cf1300b15ccc698f3976ac897" kindref="member">frame_number</ref>;</highlight></codeline>
+<codeline lineno="229" refid="struct_m_l_world_camera_frame_1ab1eb96df04a248b823e940f0cf4d414a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_world_camera_frame_1ab1eb96df04a248b823e940f0cf4d414a" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="231" refid="struct_m_l_world_camera_frame_1a859417cb62bef2f505cd436cfac4543b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_world_camera_intrinsics" kindref="compound">MLWorldCameraIntrinsics</ref><sp/><ref refid="struct_m_l_world_camera_frame_1a859417cb62bef2f505cd436cfac4543b" kindref="member">intrinsics</ref>;</highlight></codeline>
+<codeline lineno="233" refid="struct_m_l_world_camera_frame_1aaa3d0ec8739f9931342966f6f84e4f52" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/><ref refid="struct_m_l_world_camera_frame_1aaa3d0ec8739f9931342966f6f84e4f52" kindref="member">camera_pose</ref>;</highlight></codeline>
+<codeline lineno="235" refid="struct_m_l_world_camera_frame_1a761d5408264e8f93a2c54d557f04d0b7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_world_camera_frame_buffer" kindref="compound">MLWorldCameraFrameBuffer</ref><sp/><ref refid="struct_m_l_world_camera_frame_1a761d5408264e8f93a2c54d557f04d0b7" kindref="member">frame_buffer</ref>;</highlight></codeline>
+<codeline lineno="237" refid="struct_m_l_world_camera_frame_1af8b6de9bc781235495205380fef67304" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" kindref="member">MLWorldCameraFrameType</ref><sp/><ref refid="struct_m_l_world_camera_frame_1af8b6de9bc781235495205380fef67304" kindref="member">frame_type</ref>;</highlight></codeline>
+<codeline lineno="238" refid="group___w_cam_1ga1749d3b489e368eec0c14f9b3bf62606" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1ga1749d3b489e368eec0c14f9b3bf62606" kindref="member">MLWorldCameraFrame</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="struct_m_l_world_camera_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref><sp/>{</highlight></codeline>
+<codeline lineno="251" refid="struct_m_l_world_camera_data_1acd599793b325d5a6d276a3a0dea844ac" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_world_camera_data_1acd599793b325d5a6d276a3a0dea844ac" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="253" refid="struct_m_l_world_camera_data_1af1d0a89acc4ae0e2fd9d0ff33339656e" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_world_camera_data_1af1d0a89acc4ae0e2fd9d0ff33339656e" kindref="member">frame_count</ref>;</highlight></codeline>
+<codeline lineno="255" refid="struct_m_l_world_camera_data_1a382f294cad083595335832dcda5a78d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_world_camera_frame" kindref="compound">MLWorldCameraFrame</ref><sp/>*<ref refid="struct_m_l_world_camera_data_1a382f294cad083595335832dcda5a78d6" kindref="member">frames</ref>;</highlight></codeline>
+<codeline lineno="256" refid="group___w_cam_1gae00f583043a96b941dbf4caeaac634af" refkind="member"><highlight class="normal">}<sp/><ref refid="group___w_cam_1gae00f583043a96b941dbf4caeaac634af" kindref="member">MLWorldCameraData</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="group___w_cam_1ga51e0436ae24bc42da8761085230d5c7b" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_cam_1ga51e0436ae24bc42da8761085230d5c7b" kindref="member">MLWorldCameraDataInit</ref>(<ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref><sp/>*inout_world_camera_data)<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_world_camera_data)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_world_camera_data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref>));</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_world_camera_data-&gt;<ref refid="struct_m_l_world_camera_data_1acd599793b325d5a6d276a3a0dea844ac" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref><sp/>*settings,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="group___w_cam_1gaeeaf313737c0d173b3d733ff6e0b11dc" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___w_cam_1gaeeaf313737c0d173b3d733ff6e0b11dc" kindref="member">MLWorldCameraUpdateSettings</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="group___w_cam_1ga99fc26fb929af51604d2d4403430e04f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___w_cam_1ga99fc26fb929af51604d2d4403430e04f" kindref="member">MLWorldCameraGetLatestWorldCameraData</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/>uint64_t<sp/>timeout_ms,<sp/><ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref><sp/>**<ref refid="group___head_tracking_1gae4da65ee1780df8124e20ab4ca2b8758" kindref="member">out_data</ref>);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="group___w_cam_1ga73e7619062a3d873a4036679511f254e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___w_cam_1ga73e7619062a3d873a4036679511f254e" kindref="member">MLWorldCameraReleaseCameraData</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref><sp/>*world_camera_data);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="group___w_cam_1gaaff6b569eec1c8a58688367a35492cee" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___w_cam_1gaaff6b569eec1c8a58688367a35492cee" kindref="member">MLWorldCameraDisconnect</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h"/>
+  </compounddef>
+</doxygen>

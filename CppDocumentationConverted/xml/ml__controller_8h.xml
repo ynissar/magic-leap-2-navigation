@@ -1,0 +1,852 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__controller_8h" kind="file" language="C++">
+    <compoundname>ml_controller.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__coordinate__frame__uid_8h" local="yes">ml_coordinate_frame_uid.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h</label>
+        <link refid="ml__controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_m_l_controller_configuration" prot="public">MLControllerConfiguration</innerclass>
+    <innerclass refid="struct_m_l_controller_state_ex" prot="public">MLControllerStateEx</innerclass>
+    <innerclass refid="struct_m_l_controller_system_state_ex" prot="public">MLControllerSystemStateEx</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___controller_1ga746afbca462f299091cf5b33e0462ed3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLControllerMode</name>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3a255068c46727d274c4ffc1e9191a92aa" prot="public">
+          <name>Deprecated_Mode_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3ae9d04937bc2e67979399283db205df1f" prot="public">
+          <name>Deprecated_Mode_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3ad443b96b55fdbc09501547b7a36a35f2" prot="public">
+          <name>MLControllerMode_Fused6Dof</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>High quality 6 degrees of freedom tracking (position and orientation). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3a4a60bc80908a3ba961c6d659ea4ad217" prot="public">
+          <name>MLControllerMode_Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Count of number of modes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3a30d3518f77552e95388f0ce11048af39" prot="public">
+          <name>MLControllerMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible tracking modes for the Controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="35" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="35" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___controller_1ga0411cd49bb5b71852cecd93bcbf0ca2d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@7</name>
+        <enumvalue id="group___controller_1gga0411cd49bb5b71852cecd93bcbf0ca2dab70ed1599ebf5b001ea494af19a4471b" prot="public">
+          <name>MLController_MaxActive</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum number of active Controllers. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___controller_1gaa9844bb3b1027865353778872f8041a6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLControllerCalibAccuracy</name>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6ac8225236f2a245a6c5027f40e7b3710b" prot="public">
+          <name>MLControllerCalibAccuracy_Bad</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is Bad. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6a4985b72db520933aac15c76eaf232917" prot="public">
+          <name>MLControllerCalibAccuracy_Low</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is Low. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6a415b7792d88d6837afe75b5742c7e7eb" prot="public">
+          <name>MLControllerCalibAccuracy_Medium</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is Medium. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6a780289c241eb3d6d07bb447a5a245a54" prot="public">
+          <name>MLControllerCalibAccuracy_High</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is High. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6aeec1b793f7ea4284e2c1b5d2a27ff9e4" prot="public">
+          <name>MLControllerCalibAccuracy_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Calibration Accuracy levels for controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLControllerStatus</name>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a0fb43daad3715a2b3bfd0a2e22eff635" prot="public">
+          <name>MLControllerStatus_NotActive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller stream is not active. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a1e112607537481ff0da730fae06fcd29" prot="public">
+          <name>MLControllerStatus_Active_Rotation_Only</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller stream is active (rotation only). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0ab04eb74754b3762383820bdd847d3774" prot="public">
+          <name>MLControllerStatus_Active</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller stream is active (both position and rotation). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a2b27c40f96769f7d6708e8d07568b109" prot="public">
+          <name>MLControllerStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Stream mode for controller stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="82" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___controller_1gae379d425f99a413623e64b00aa81d823" prot="public" static="no">
+        <type>enum <ref refid="group___controller_1ga746afbca462f299091cf5b33e0462ed3" kindref="member">MLControllerMode</ref></type>
+        <definition>typedef enum MLControllerMode MLControllerMode</definition>
+        <argsstring></argsstring>
+        <name>MLControllerMode</name>
+        <briefdescription>
+<para>A set of possible tracking modes for the Controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="44" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1ga7825168748283c4da6476e91f5cb13a0" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref></type>
+        <definition>typedef struct MLControllerConfiguration MLControllerConfiguration</definition>
+        <argsstring></argsstring>
+        <name>MLControllerConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to configure controller&apos;s tracking-modes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="52" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1gad55bf07cfcd73ad5a58095524dccf1e2" prot="public" static="no">
+        <type>enum <ref refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" kindref="member">MLControllerCalibAccuracy</ref></type>
+        <definition>typedef enum MLControllerCalibAccuracy MLControllerCalibAccuracy</definition>
+        <argsstring></argsstring>
+        <name>MLControllerCalibAccuracy</name>
+        <briefdescription>
+<para>Calibration Accuracy levels for controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="75" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1ga2db776b0c6e52fc5353d690069da6ad8" prot="public" static="no">
+        <type>enum <ref refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" kindref="member">MLControllerStatus</ref></type>
+        <definition>typedef enum MLControllerStatus MLControllerStatus</definition>
+        <argsstring></argsstring>
+        <name>MLControllerStatus</name>
+        <briefdescription>
+<para>Stream mode for controller stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="91" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1ga305223f52b45cf93caa8ec16a79ca2b1" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_controller_state_ex" kindref="compound">MLControllerStateEx</ref></type>
+        <definition>typedef struct MLControllerStateEx MLControllerStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLControllerStateEx</name>
+        <briefdescription>
+<para>A structure containing information about the current state of this controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="141" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1gac1f3b6e09cc7c559f707b31d21596b53" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref></type>
+        <definition>typedef struct MLControllerSystemStateEx MLControllerSystemStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLControllerSystemStateEx</name>
+        <briefdescription>
+<para>A structure containing information about the current state of the controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="165" column="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___controller_1gaf16b4cb04263b0683f890dbfa0e230a3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLControllerStream</definition>
+        <argsstring></argsstring>
+        <name>MLControllerStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="111" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___controller_1gaa33b0991ce97fcc269bfda765dff24c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLControllerState</definition>
+        <argsstring></argsstring>
+        <name>MLControllerState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="125" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLControllerSystemState</definition>
+        <argsstring></argsstring>
+        <name>MLControllerSystemState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="153" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___controller_1ga91832a1550e0e295325f279945a3d0c4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" kindref="member">MLControllerSystemState</ref> *</type>
+        <definition>MLHeadTrackingStateEx * out_state</definition>
+        <argsstring></argsstring>
+        <name>out_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="228" column="39" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___controller_1gab3b3a91c6620c686ae6709ab599d16d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLControllerStateEx.&quot;))) struct MLControllerStream</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLControllerStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information about the tracking-stream of this controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure containing information about the current state of this controller.</para>
+<para><xrefsect id="deprecated_1_deprecated000003"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Smooth filtered coordinate frame identifier for this Controller.</para>
+<para>Flag to indicate if tracking-stream is active.</para>
+<para>Mode of the given controller stream.</para>
+<para>Note that the controller mode can switch depending on current environmental conditions. In 6dof mode both rotation and translation are available. In 3dof mode only rotation is available.</para>
+<para>ID of this controller.</para>
+<para>Current controller&apos;s tracking streams.</para>
+<para>Calibration accuracy for the current controller.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="98" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="98" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga733f36d56cdd156e2a0a8ca78543c4eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLControllerSystemStateEx.&quot;))) struct MLControllerSystemState</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLControllerSystemStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information about the current state of the controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>State objects for each connected and active controller.</para>
+<para>Calibration accuracy for the lightwear.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="148" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1gaf5aaa202a816e80c8cc1a2405c74a51e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLControllerSystemStateExInit</definition>
+        <argsstring>(MLControllerSystemStateEx *inout_attr)</argsstring>
+        <name>MLControllerSystemStateExInit</name>
+        <param>
+          <type><ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> *</type>
+          <declname>inout_attr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes values for <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="174" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLControllerCreateEx</definition>
+        <argsstring>(const MLControllerConfiguration *mode, MLHandle *out_handle)</argsstring>
+        <name>MLControllerCreateEx</name>
+        <param>
+          <type>const <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref> *</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a controller tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref> struct which contains the tracking modes to use for this session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will the handle to the controller tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a controller tracker due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controller Succesfully created a controller tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a controller tracker due to lack of permission.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000249"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="197" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" declline="197" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga34269cc948d933f70f20709072e150be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLControllerDestroy</definition>
+        <argsstring>(MLHandle tracker)</argsstring>
+        <name>MLControllerDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>tracker</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a controller tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the tracker created by <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the controller tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the controller tracker due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000250"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="210" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" declline="210" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1gaea6198bd2c8f0077f133352316c0ddb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLControllerGetStateEx.&quot;))) MLResult MLControllerGetState(MLHandle handle</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLControllerGetStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Return the most recent controller state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the tracker created by <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid MLControllerSystemState object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the controller state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully filled out_state with current state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000251"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga68ddc37757f15ef54fab6cedf8fac610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLControllerGetStateEx</definition>
+        <argsstring>(MLHandle handle, MLControllerSystemStateEx *out_state)</argsstring>
+        <name>MLControllerGetStateEx</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> *</type>
+          <declname>out_state</declname>
+        </param>
+        <briefdescription>
+<para>Return the most recent controller state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the tracker created by <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the controller state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully filled out_state with current state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000252"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="245" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" declline="245" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__coordinate__frame__uid_8h" kindref="compound">ml_coordinate_frame_uid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="group___controller_1ga746afbca462f299091cf5b33e0462ed3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___controller_1ga746afbca462f299091cf5b33e0462ed3" kindref="member">MLControllerMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3a255068c46727d274c4ffc1e9191a92aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3a255068c46727d274c4ffc1e9191a92aa" kindref="member">Deprecated_Mode_0</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="37" refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3ae9d04937bc2e67979399283db205df1f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3ae9d04937bc2e67979399283db205df1f" kindref="member">Deprecated_Mode_1</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="39" refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3ad443b96b55fdbc09501547b7a36a35f2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3ad443b96b55fdbc09501547b7a36a35f2" kindref="member">MLControllerMode_Fused6Dof</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="41" refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3a4a60bc80908a3ba961c6d659ea4ad217" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3a4a60bc80908a3ba961c6d659ea4ad217" kindref="member">MLControllerMode_Count</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3a30d3518f77552e95388f0ce11048af39" kindref="member">MLControllerMode_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="44" refid="group___controller_1gae379d425f99a413623e64b00aa81d823" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1ga746afbca462f299091cf5b33e0462ed3" kindref="member">MLControllerMode</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_m_l_controller_configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="struct_m_l_controller_configuration_1a59ff363039f4d91833265b7e623c5289" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_controller_configuration_1a59ff363039f4d91833265b7e623c5289" kindref="member">deprecated_mode_0</ref>;</highlight></codeline>
+<codeline lineno="49" refid="struct_m_l_controller_configuration_1a729aea7398b190805cce59d17c4ba095" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_controller_configuration_1a729aea7398b190805cce59d17c4ba095" kindref="member">deprecated_mode_1</ref>;</highlight></codeline>
+<codeline lineno="51" refid="struct_m_l_controller_configuration_1aeb9ea4b7dd0a23dd12b57d925b45b577" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_controller_configuration_1aeb9ea4b7dd0a23dd12b57d925b45b577" kindref="member">enable_fused6dof</ref>;</highlight></codeline>
+<codeline lineno="52" refid="group___controller_1ga7825168748283c4da6476e91f5cb13a0" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1ga7825168748283c4da6476e91f5cb13a0" kindref="member">MLControllerConfiguration</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga0411cd49bb5b71852cecd93bcbf0ca2dab70ed1599ebf5b001ea494af19a4471b" kindref="member">MLController_MaxActive</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="57" refid="group___controller_1gga0411cd49bb5b71852cecd93bcbf0ca2dab70ed1599ebf5b001ea494af19a4471b" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" kindref="member">MLControllerCalibAccuracy</ref><sp/>{</highlight></codeline>
+<codeline lineno="66" refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6ac8225236f2a245a6c5027f40e7b3710b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6ac8225236f2a245a6c5027f40e7b3710b" kindref="member">MLControllerCalibAccuracy_Bad</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="68" refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6a4985b72db520933aac15c76eaf232917" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6a4985b72db520933aac15c76eaf232917" kindref="member">MLControllerCalibAccuracy_Low</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="70" refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6a415b7792d88d6837afe75b5742c7e7eb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6a415b7792d88d6837afe75b5742c7e7eb" kindref="member">MLControllerCalibAccuracy_Medium</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="72" refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6a780289c241eb3d6d07bb447a5a245a54" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6a780289c241eb3d6d07bb447a5a245a54" kindref="member">MLControllerCalibAccuracy_High</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ggaa9844bb3b1027865353778872f8041a6aeec1b793f7ea4284e2c1b5d2a27ff9e4" kindref="member">MLControllerCalibAccuracy_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="75" refid="group___controller_1gad55bf07cfcd73ad5a58095524dccf1e2" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" kindref="member">MLControllerCalibAccuracy</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" kindref="member">MLControllerStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="84" refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a0fb43daad3715a2b3bfd0a2e22eff635" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a0fb43daad3715a2b3bfd0a2e22eff635" kindref="member">MLControllerStatus_NotActive</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="86" refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a1e112607537481ff0da730fae06fcd29" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a1e112607537481ff0da730fae06fcd29" kindref="member">MLControllerStatus_Active_Rotation_Only</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="88" refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0ab04eb74754b3762383820bdd847d3774" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0ab04eb74754b3762383820bdd847d3774" kindref="member">MLControllerStatus_Active</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a2b27c40f96769f7d6708e8d07568b109" kindref="member">MLControllerStatus_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="91" refid="group___controller_1ga2db776b0c6e52fc5353d690069da6ad8" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" kindref="member">MLControllerStatus</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group___controller_1gab3b3a91c6620c686ae6709ab599d16d4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Replaced<sp/>by<sp/>MLControllerStateEx.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___controller_1gaf16b4cb04263b0683f890dbfa0e230a3" kindref="member">MLControllerStream</ref><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/>coord_frame_controller;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_active;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ga746afbca462f299091cf5b33e0462ed3" kindref="member">MLControllerMode</ref><sp/><ref refid="group___media_player_1gaadb312d53206741a10d68e9a8628734f" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="111" refid="group___controller_1gaf16b4cb04263b0683f890dbfa0e230a3" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1gaf16b4cb04263b0683f890dbfa0e230a3" kindref="member">MLControllerStream</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Replaced<sp/>by<sp/>MLControllerStateEx.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___controller_1gaa33b0991ce97fcc269bfda765dff24c8" kindref="member">MLControllerState</ref><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>uint8_t<sp/>controller_id;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group___controller_1gaf16b4cb04263b0683f890dbfa0e230a3" kindref="member">MLControllerStream</ref><sp/>stream[<ref refid="group___controller_1gga746afbca462f299091cf5b33e0462ed3a4a60bc80908a3ba961c6d659ea4ad217" kindref="member">MLControllerMode_Count</ref>];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" kindref="member">MLControllerCalibAccuracy</ref><sp/>accuracy;</highlight></codeline>
+<codeline lineno="125" refid="group___controller_1gaa33b0991ce97fcc269bfda765dff24c8" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1gaa33b0991ce97fcc269bfda765dff24c8" kindref="member">MLControllerState</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="struct_m_l_controller_state_ex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_controller_state_ex" kindref="compound">MLControllerStateEx</ref><sp/>{</highlight></codeline>
+<codeline lineno="134" refid="struct_m_l_controller_state_ex_1a55d6a71118374642415a878683311b99" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_controller_state_ex_1a55d6a71118374642415a878683311b99" kindref="member">controller_id</ref>;</highlight></codeline>
+<codeline lineno="136" refid="struct_m_l_controller_state_ex_1a281a58851e8149f29c1287a6bcce8767" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_controller_state_ex_1a281a58851e8149f29c1287a6bcce8767" kindref="member">coord_frame_controller</ref>;</highlight></codeline>
+<codeline lineno="138" refid="struct_m_l_controller_state_ex_1aa1b225d715a26e9a70d15f778029e715" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_controller_state_ex_1aa1b225d715a26e9a70d15f778029e715" kindref="member">raw_coord_frame_controller</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_m_l_controller_state_ex_1a83e6cdcc5f8f32b6237ea1b7dd283fbb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" kindref="member">MLControllerStatus</ref><sp/><ref refid="struct_m_l_controller_state_ex_1a83e6cdcc5f8f32b6237ea1b7dd283fbb" kindref="member">status</ref>;</highlight></codeline>
+<codeline lineno="141" refid="group___controller_1ga305223f52b45cf93caa8ec16a79ca2b1" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1ga305223f52b45cf93caa8ec16a79ca2b1" kindref="member">MLControllerStateEx</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="group___controller_1ga733f36d56cdd156e2a0a8ca78543c4eb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Replaced<sp/>by<sp/>MLControllerSystemStateEx.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" kindref="member">MLControllerSystemState</ref><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group___controller_1gaa33b0991ce97fcc269bfda765dff24c8" kindref="member">MLControllerState</ref><sp/>controller_state[<ref refid="group___controller_1gga0411cd49bb5b71852cecd93bcbf0ca2dab70ed1599ebf5b001ea494af19a4471b" kindref="member">MLController_MaxActive</ref>];</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" kindref="member">MLControllerCalibAccuracy</ref><sp/>lightwear_accuracy;</highlight></codeline>
+<codeline lineno="153" refid="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" kindref="member">MLControllerSystemState</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="struct_m_l_controller_system_state_ex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref><sp/>{</highlight></codeline>
+<codeline lineno="162" refid="struct_m_l_controller_system_state_ex_1a6a1423731a5c4ad33164b83b35ae5922" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_controller_system_state_ex_1a6a1423731a5c4ad33164b83b35ae5922" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="164" refid="struct_m_l_controller_system_state_ex_1a5ae12850469f80fbbeccf9474cf53a5b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_controller_state_ex" kindref="compound">MLControllerStateEx</ref><sp/><ref refid="struct_m_l_controller_system_state_ex_1a5ae12850469f80fbbeccf9474cf53a5b" kindref="member">controller_state</ref>[<ref refid="group___controller_1gga0411cd49bb5b71852cecd93bcbf0ca2dab70ed1599ebf5b001ea494af19a4471b" kindref="member">MLController_MaxActive</ref>];</highlight></codeline>
+<codeline lineno="165" refid="group___controller_1gac1f3b6e09cc7c559f707b31d21596b53" refkind="member"><highlight class="normal">}<sp/><ref refid="group___controller_1gac1f3b6e09cc7c559f707b31d21596b53" kindref="member">MLControllerSystemStateEx</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="group___controller_1gaf5aaa202a816e80c8cc1a2405c74a51e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___controller_1gaf5aaa202a816e80c8cc1a2405c74a51e" kindref="member">MLControllerSystemStateExInit</ref>(<ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref><sp/>*inout_attr)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>!=<sp/>inout_attr)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_attr,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref>));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_attr-&gt;<ref refid="struct_m_l_controller_system_state_ex_1a6a1423731a5c4ad33164b83b35ae5922" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref><sp/>*<ref refid="group___media_player_1gaadb312d53206741a10d68e9a8628734f" kindref="member">mode</ref>,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="group___controller_1ga34269cc948d933f70f20709072e150be" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___controller_1ga34269cc948d933f70f20709072e150be" kindref="member">MLControllerDestroy</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>tracker);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="group___controller_1gaea6198bd2c8f0077f133352316c0ddb7" refkind="member"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Replaced<sp/>by<sp/>MLControllerGetStateEx.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="228" refid="group___controller_1ga91832a1550e0e295325f279945a3d0c4" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLControllerGetState(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/>struct<sp/><ref refid="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" kindref="member">MLControllerSystemState</ref><sp/>*<ref refid="group___controller_1ga91832a1550e0e295325f279945a3d0c4" kindref="member">out_state</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="group___controller_1ga68ddc37757f15ef54fab6cedf8fac610" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___controller_1ga68ddc37757f15ef54fab6cedf8fac610" kindref="member">MLControllerGetStateEx</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref><sp/>*<ref refid="group___controller_1ga91832a1550e0e295325f279945a3d0c4" kindref="member">out_state</ref>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h"/>
+  </compounddef>
+</doxygen>

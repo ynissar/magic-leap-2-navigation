@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_eye_tracking_state_ex" kind="struct" language="C++" prot="public">
+    <compoundname>MLEyeTrackingStateEx</compoundname>
+    <includes refid="ml__eye__tracking_8h" local="no">ml_eye_tracking.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1aeb3b9ccff009e733822e109b220c5e91" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLEyeTrackingStateEx::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="76" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a04e2502d2b306688c3185a93f22bd483" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLEyeTrackingStateEx::vergence_confidence</definition>
+        <argsstring></argsstring>
+        <name>vergence_confidence</name>
+        <briefdescription>
+<para>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of vergence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output may be arbitrary if confidence == 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="82" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a957c579e017b22c646779b1782424741" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLEyeTrackingStateEx::left_center_confidence</definition>
+        <argsstring></argsstring>
+        <name>left_center_confidence</name>
+        <briefdescription>
+<para>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of left eye center. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output may be arbitrary if confidence == 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="88" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a1064293c3fb222b91f579a6077ffa210" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLEyeTrackingStateEx::right_center_confidence</definition>
+        <argsstring></argsstring>
+        <name>right_center_confidence</name>
+        <briefdescription>
+<para>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of right eye center. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output may be arbitrary if confidence == 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="94" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1ada5478b52d813f53a5c2f0a68e7b366d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLEyeTrackingStateEx::left_blink</definition>
+        <argsstring></argsstring>
+        <name>left_blink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if eyes are inside a blink. When not wearing the device, values can be arbitrary. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="96" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a6a9caad045390f78b2dc6daa10e10df5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLEyeTrackingStateEx::right_blink</definition>
+        <argsstring></argsstring>
+        <name>right_blink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="97" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a55b5748e2b711cda53d92c0cea1d9161" prot="public" static="no" mutable="no">
+        <type><ref refid="group___eye_tracking_1gae44812d3173b83123e40863c233ab782" kindref="member">MLEyeTrackingError</ref></type>
+        <definition>MLEyeTrackingError MLEyeTrackingStateEx::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents what eye tracking error (if any) is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="99" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a3ccb83666c00879bc2c7d87b8c5e7c49" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLEyeTrackingStateEx::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>The timestamp for all the data fields in this struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="103" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a3d19f5a64531a003afdb2726233c0918" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLEyeTrackingStateEx::left_eye_openness</definition>
+        <argsstring></argsstring>
+        <name>left_eye_openness</name>
+        <briefdescription>
+<para>Openness of the left eye. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="109" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_state_ex_1a132a487ad3cbd13e9d3cc44300883f24" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLEyeTrackingStateEx::right_eye_openness</definition>
+        <argsstring></argsstring>
+        <name>right_eye_openness</name>
+        <briefdescription>
+<para>Openness of the right eye. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="115" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about the state of the eye tracking system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___eye_tracking_1gaa7dbc442b5106466eef753ee6ff4269f" kindref="member">MLEyeTrackingStateInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="74" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="74" bodyend="116"/>
+    <listofallmembers>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a55b5748e2b711cda53d92c0cea1d9161" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>error</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1ada5478b52d813f53a5c2f0a68e7b366d" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>left_blink</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a957c579e017b22c646779b1782424741" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>left_center_confidence</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a3d19f5a64531a003afdb2726233c0918" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>left_eye_openness</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a6a9caad045390f78b2dc6daa10e10df5" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>right_blink</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a1064293c3fb222b91f579a6077ffa210" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>right_center_confidence</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a132a487ad3cbd13e9d3cc44300883f24" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>right_eye_openness</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a3ccb83666c00879bc2c7d87b8c5e7c49" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>timestamp</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1a04e2502d2b306688c3185a93f22bd483" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>vergence_confidence</name></member>
+      <member refid="struct_m_l_eye_tracking_state_ex_1aeb3b9ccff009e733822e109b220c5e91" prot="public" virt="non-virtual"><scope>MLEyeTrackingStateEx</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

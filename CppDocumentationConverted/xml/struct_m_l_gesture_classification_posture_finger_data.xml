@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_gesture_classification_posture_finger_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLGestureClassificationPostureFingerData</compoundname>
+    <includes refid="ml__gesture__classification_8h" local="no">ml_gesture_classification.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_posture_finger_data_1a393afb040d20a07acff28f0ef6556b45" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationPostureFingerData::pinch_normalized_angle</definition>
+        <argsstring></argsstring>
+        <name>pinch_normalized_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalized pinch angle (range 0.0 ~ 1.0). -1.0 if the value is not valid. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="174" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_posture_finger_data_1a3e9695142b8eba49dad81bb4a7056cd2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationPostureFingerData::pinch_angle_of_separation_deg</definition>
+        <argsstring></argsstring>
+        <name>pinch_angle_of_separation_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute pinch angle (angular) in degrees. -1.0 if the value is not valid. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="176" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_posture_finger_data_1ab1f8c2695215ac58160f49b725efcdd9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationPostureFingerData::pinch_normalized_distance</definition>
+        <argsstring></argsstring>
+        <name>pinch_normalized_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalized pinch distance (range 0.0 ~ 1.0). -1.0 if the value is not valid. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="178" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_posture_finger_data_1a11dc6e200041d0895f37a3c8c461f7cd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationPostureFingerData::pinch_distance_m</definition>
+        <argsstring></argsstring>
+        <name>pinch_distance_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute pinch distance (euclidean) in meters. -1.0 if the value is not valid. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="180" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Gesture classification posture related finger data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Pinch values are measured between the finger and thumb. In case thumb is the finger, values are same with index&apos;s values.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="172" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="172" bodyend="181"/>
+    <listofallmembers>
+      <member refid="struct_m_l_gesture_classification_posture_finger_data_1a3e9695142b8eba49dad81bb4a7056cd2" prot="public" virt="non-virtual"><scope>MLGestureClassificationPostureFingerData</scope><name>pinch_angle_of_separation_deg</name></member>
+      <member refid="struct_m_l_gesture_classification_posture_finger_data_1a11dc6e200041d0895f37a3c8c461f7cd" prot="public" virt="non-virtual"><scope>MLGestureClassificationPostureFingerData</scope><name>pinch_distance_m</name></member>
+      <member refid="struct_m_l_gesture_classification_posture_finger_data_1a393afb040d20a07acff28f0ef6556b45" prot="public" virt="non-virtual"><scope>MLGestureClassificationPostureFingerData</scope><name>pinch_normalized_angle</name></member>
+      <member refid="struct_m_l_gesture_classification_posture_finger_data_1ab1f8c2695215ac58160f49b725efcdd9" prot="public" virt="non-virtual"><scope>MLGestureClassificationPostureFingerData</scope><name>pinch_normalized_distance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

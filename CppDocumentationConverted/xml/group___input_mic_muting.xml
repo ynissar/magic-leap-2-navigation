@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___input_mic_muting" kind="group">
+    <compoundname>InputMicMuting</compoundname>
+    <title>Mic Muting</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___input_mic_muting_1gae3e12c881d60ef29a095baf19d1533e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetMicMute</definition>
+        <argsstring>(bool is_muted)</argsstring>
+        <name>MLAudioSetMicMute</name>
+        <param>
+          <type>bool</type>
+          <declname>is_muted</declname>
+        </param>
+        <briefdescription>
+<para>Sets the global input mute state for all input streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The global input mute applies to all input streams, including microphones, Virtual Capture and Mixed Capture. Any app with capture privileges can set it, and it will apply for all apps.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">is_muted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, capture streams will be muted globally.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to lack of permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000102"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="3310" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="3310" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_mic_muting_1ga3472864ca33aa2e32c2e0201e16827b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetMicMute</definition>
+        <argsstring>(bool *out_is_muted)</argsstring>
+        <name>MLAudioGetMicMute</name>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_muted</declname>
+        </param>
+        <briefdescription>
+<para>Queries the global input mute state for all input streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The global input mute applies to all input streams, including microphones, Virtual Capture and Mixed Capture. Any app with capture privileges can set it, and it will apply for all apps.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_muted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, capture streams are muted globally.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to lack of permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000103"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="3331" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="3331" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_mic_muting_1ga406fbb6ba82e3fd09486a5c246247d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetMicMuteCallback</definition>
+        <argsstring>(MLAudioMicMuteCallback callback, void *context)</argsstring>
+        <name>MLAudioSetMicMuteCallback</name>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga6627dc197a757417eb9113e4e0cc156d" kindref="member">MLAudioMicMuteCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Registers a callback for changes to the global input mute state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully registered the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to lack of permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000104"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="3347" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="3347" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MIC MUTING. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

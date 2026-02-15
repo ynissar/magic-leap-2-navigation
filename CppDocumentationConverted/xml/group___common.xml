@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___common" kind="group">
+    <compoundname>Common</compoundname>
+    <title>Common</title>
+    <innerclass refid="struct_m_l_vec2f" prot="public">MLVec2f</innerclass>
+    <innerclass refid="struct_m_l_x_y_zf" prot="public">MLXYZf</innerclass>
+    <innerclass refid="struct_m_l_vec3f" prot="public">MLVec3f</innerclass>
+    <innerclass refid="struct_m_l_quaternionf" prot="public">MLQuaternionf</innerclass>
+    <innerclass refid="struct_m_l_transform" prot="public">MLTransform</innerclass>
+    <innerclass refid="struct_m_l_mat4f" prot="public">MLMat4f</innerclass>
+    <innerclass refid="struct_m_l_rectf" prot="public">MLRectf</innerclass>
+    <innerclass refid="struct_m_l_recti" prot="public">MLRecti</innerclass>
+    <innerclass refid="struct_m_l_color32" prot="public">MLColor32</innerclass>
+    <innerclass refid="struct_m_l_color4f" prot="public">MLColor4f</innerclass>
+    <innerclass refid="struct_m_l_u_u_i_d" prot="public">MLUUID</innerclass>
+    <innerclass refid="struct_m_l_pose" prot="public">MLPose</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___common_1ga67d3b5d29dc662557fcbac8374d33d08" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>typedef struct MLVec2f MLVec2f</definition>
+        <argsstring></argsstring>
+        <name>MLVec2f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>2D vector represented with X and Y floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="32" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga1964e94f8890563e8d6cac63745c7284" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_x_y_zf" kindref="compound">MLXYZf</ref></type>
+        <definition>typedef struct MLXYZf MLXYZf</definition>
+        <argsstring></argsstring>
+        <name>MLXYZf</name>
+        <briefdescription>
+<para>Internal structure used to simplify access of <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref>. Do not create this structure directly and always use <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga1c014020e01d180bd2f6db7f37dec1dd" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>typedef struct MLVec3f MLVec3f</definition>
+        <argsstring></argsstring>
+        <name>MLVec3f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3D vector represented with X, Y, and Z floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga20c316a3feecd024574336e3eca57b16" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>typedef struct MLQuaternionf MLQuaternionf</definition>
+        <argsstring></argsstring>
+        <name>MLQuaternionf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quaternion stored as X, Y, Z, W floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="77" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gad05a31a732ff8a83976f74b95f6b4b35" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref></type>
+        <definition>typedef struct MLTransform MLTransform</definition>
+        <argsstring></argsstring>
+        <name>MLTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information used to transform from one coordinate frame to another. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="86" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gab331a8be27dd872457d4770f83c74371" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref></type>
+        <definition>typedef struct MLMat4f MLMat4f</definition>
+        <argsstring></argsstring>
+        <name>MLMat4f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An arbitrary 4x4 matrix represented with an array of floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="91" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gaa587a28dab0b30bb3c035a0aa5ca2e58" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_rectf" kindref="compound">MLRectf</ref></type>
+        <definition>typedef struct MLRectf MLRectf</definition>
+        <argsstring></argsstring>
+        <name>MLRectf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 2D float rectangle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="99" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga18b97d751237dc2e043804182ce2f061" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_recti" kindref="compound">MLRecti</ref></type>
+        <definition>typedef struct MLRecti MLRecti</definition>
+        <argsstring></argsstring>
+        <name>MLRecti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 2D integer rectangle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="107" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga8a22ec310eb4318b3bfd9c2acb50251b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_color32" kindref="compound">MLColor32</ref></type>
+        <definition>typedef struct MLColor32 MLColor32</definition>
+        <argsstring></argsstring>
+        <name>MLColor32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color represented by 4 unsigned bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="124" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gafc2cf8865c13973627eeba2f89509463" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_color4f" kindref="compound">MLColor4f</ref></type>
+        <definition>typedef struct MLColor4f MLColor4f</definition>
+        <argsstring></argsstring>
+        <name>MLColor4f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color represented by 4 floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="132" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga10c20fc88d4596f0b25bcbdaab7f266b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>typedef struct MLUUID MLUUID</definition>
+        <argsstring></argsstring>
+        <name>MLUUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Universally Unique Identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="151" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga39ed24b20d4477f2d684e554df0e582f" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t MLTime</definition>
+        <argsstring></argsstring>
+        <name>MLTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="154" column="17" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga40161f112438365bb34be01b501df0df" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_pose" kindref="compound">MLPose</ref></type>
+        <definition>typedef struct MLPose MLPose</definition>
+        <argsstring></argsstring>
+        <name>MLPose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Geometric relationship between two coordinate frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="192" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Common APIs types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

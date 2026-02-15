@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_parameters" kind="group">
+    <compoundname>DefParameters</compoundname>
+    <title>Parameters</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___def_parameters_1gae498b54ee89029cbefe357c849bf219e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioOutputDevice</name>
+        <enumvalue id="group___def_parameters_1ggae498b54ee89029cbefe357c849bf219ea785358bc66818b1e26719e721b62039c" prot="public">
+          <name>MLAudioOutputDevice_Wearable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Built-in speakers in the wearable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_parameters_1ggae498b54ee89029cbefe357c849bf219ea70a8c91df9557509c07c632e0909df34" prot="public">
+          <name>MLAudioOutputDevice_USB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB audio from the beltpack. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_parameters_1ggae498b54ee89029cbefe357c849bf219eab352b1552c1c1a48a932bf53d778ab54" prot="public">
+          <name>MLAudioOutputDevice_Bluetooth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A2DP audio via Bluetooth. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_parameters_1ggae498b54ee89029cbefe357c849bf219ea6845d5c1946e2edefb79251c75a3e622" prot="public">
+          <name>MLAudioOutputDevice_HearingAid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Hearing Aid audio via Bluetooth. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_parameters_1ggae498b54ee89029cbefe357c849bf219eab1d51c31a106d438f38953b5e58dbbc9" prot="public">
+          <name>MLAudioOutputDevice_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The currently active output device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="149" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="149" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_parameters_1ga612677f0bedf455b7f1cf6914bc019e7" prot="public" static="no">
+        <type>enum <ref refid="group___def_parameters_1gae498b54ee89029cbefe357c849bf219e" kindref="member">MLAudioOutputDevice</ref></type>
+        <definition>typedef enum MLAudioOutputDevice MLAudioOutputDevice</definition>
+        <argsstring></argsstring>
+        <name>MLAudioOutputDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The currently active output device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="160" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PARAMETERS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2733 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___camera" kind="group">
+    <compoundname>Camera</compoundname>
+    <title>Camera</title>
+    <innerclass refid="struct_m_l_camera_m_r_connect_info" prot="public">MLCameraMRConnectInfo</innerclass>
+    <innerclass refid="struct_m_l_camera_connect_context" prot="public">MLCameraConnectContext</innerclass>
+    <innerclass refid="struct_m_l_camera_capture_stream_caps" prot="public">MLCameraCaptureStreamCaps</innerclass>
+    <innerclass refid="struct_m_l_camera_capture_stream_config" prot="public">MLCameraCaptureStreamConfig</innerclass>
+    <innerclass refid="struct_m_l_camera_capture_config" prot="public">MLCameraCaptureConfig</innerclass>
+    <innerclass refid="struct_m_l_camera_plane_info" prot="public">MLCameraPlaneInfo</innerclass>
+    <innerclass refid="struct_m_l_camera_output" prot="public">MLCameraOutput</innerclass>
+    <innerclass refid="struct_m_l_camera_intrinsic_calibration_parameters" prot="public">MLCameraIntrinsicCalibrationParameters</innerclass>
+    <innerclass refid="struct_m_l_camera_result_extras" prot="public">MLCameraResultExtras</innerclass>
+    <innerclass refid="struct_m_l_camera_device_availability_info" prot="public">MLCameraDeviceAvailabilityInfo</innerclass>
+    <innerclass refid="struct_m_l_camera_device_availability_status_callbacks" prot="public">MLCameraDeviceAvailabilityStatusCallbacks</innerclass>
+    <innerclass refid="struct_m_l_camera_device_status_callbacks" prot="public">MLCameraDeviceStatusCallbacks</innerclass>
+    <innerclass refid="struct_m_l_camera_capture_callbacks" prot="public">MLCameraCaptureCallbacks</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___camera_1gadc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@4</name>
+        <enumvalue id="group___camera_1ggadc29c2ff13d900c2f185ee95427fb06caae3fb7c10338ce0e4be980a336b4911c" prot="public">
+          <name>MLCAMERA_MAXSTREAMS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max No of streams supported by logical camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1gac35323a7ef4d666d98a3b7453a01a1c1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraIdentifier</name>
+        <enumvalue id="group___camera_1ggac35323a7ef4d666d98a3b7453a01a1c1a543524ea6d9b4a8aec57be40481a1fef" prot="public">
+          <name>MLCameraIdentifier_MAIN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>x86 logical camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggac35323a7ef4d666d98a3b7453a01a1c1a751cc18eeb64fe53fb22c1ac826a637d" prot="public">
+          <name>MLCameraIdentifier_CV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CV logical camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggac35323a7ef4d666d98a3b7453a01a1c1a4e331864037683da3ae7a31bddb7cea5" prot="public">
+          <name>MLCameraIdentifier_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Logical camera identifiers available for access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="93" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="93" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1ga81f72e27351fa8c140dd141bd7004828" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraCaptureType</name>
+        <enumvalue id="group___camera_1gga81f72e27351fa8c140dd141bd7004828ad1b446a22c383da2167e9479d81c3b68" prot="public">
+          <name>MLCameraCaptureType_Image</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To capture an image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga81f72e27351fa8c140dd141bd7004828aadc39bdf67d1ad611d115150b9ad06ba" prot="public">
+          <name>MLCameraCaptureType_Video</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To capture a video. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga81f72e27351fa8c140dd141bd7004828a66f710eb5cd17e7d54846cb5bf26914c" prot="public">
+          <name>MLCameraCaptureType_Preview</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To capture a video and access the raw buffer of the frames. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga81f72e27351fa8c140dd141bd7004828ad00ef7b26e60183384d3e11101c41c0f" prot="public">
+          <name>MLCameraCaptureType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Captures operation type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1gad81cc93a1ef01d7eeecb663d8dabb632" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraCaptureFrameRate</name>
+        <enumvalue id="group___camera_1ggad81cc93a1ef01d7eeecb663d8dabb632ab25bac699adea9e805a92a63db793efa" prot="public">
+          <name>MLCameraCaptureFrameRate_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None, used for still capture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggad81cc93a1ef01d7eeecb663d8dabb632ad751363abb6f3f12777335f7035a8714" prot="public">
+          <name>MLCameraCaptureFrameRate_15FPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified 15FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggad81cc93a1ef01d7eeecb663d8dabb632a26bde281ae8280b2f67f82c32232c906" prot="public">
+          <name>MLCameraCaptureFrameRate_30FPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified 30FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggad81cc93a1ef01d7eeecb663d8dabb632a1d63ed960f03b6872daaf8db510329db" prot="public">
+          <name>MLCameraCaptureFrameRate_60FPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified 60FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggad81cc93a1ef01d7eeecb663d8dabb632ae213f7c4562dd74cbf6b591573a00c0c" prot="public">
+          <name>MLCameraCaptureFrameRate_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Captures frame rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Call <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref> to configure frame rate. Use MLCameraCaptureFrameRate_None when configuring only Image capture. Use MLCameraCaptureFrameRate_60fps only when resolution of captures &lt;= 3MP(2048x1536). Use MLCameraCaptureFrameRate_15FPS only when MLCameraConnectFlag is MLCameraConnectFlag_CamOnly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="124" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="124" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1gaecfd52a3b73c83aaa0c29f3984d55a09" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMRQuality</name>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09ac01c8e91b15cb3cd6ad7a760efe1c58e" prot="public">
+          <name>MLCameraMRQuality_648x720</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Specifies 648 x 720 resolution. Aspect ratio: 9x10. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09ac4046c78a192809887eae27fca971dc5" prot="public">
+          <name>MLCameraMRQuality_972x1080</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Specifies 972 x 1080 resolution. Aspect ratio: 9x10. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09abf2875c28d6ea46170d2b9780036b98c" prot="public">
+          <name>MLCameraMRQuality_1944x2160</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Specifies 1944 x 2160 resolution. Aspect ratio: 9x10. MLCameraCaptureFrameRate_60FPS is not supported for this quality mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09aacfe2c07a52f62682fe7b9986b2f2aa7" prot="public">
+          <name>MLCameraMRQuality_960x720</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Specifies 960 x 720 resolution. Aspect ratio: 4x3. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09adae358105446c57e3897c1bc5e0cc57c" prot="public">
+          <name>MLCameraMRQuality_1440x1080</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Specifies 1440 x 1080 resolution. Aspect ratio: 4x3. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09a15e5546e6ce4af4ec0a7e24dd4002752" prot="public">
+          <name>MLCameraMRQuality_2880x2160</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Specifies 2880 x 2160 resolution. Aspect ratio: 4x3. MLCameraCaptureFrameRate_60FPS is not supported for this quality mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggaecfd52a3b73c83aaa0c29f3984d55a09ab914c10996c185db93568aa94fd87527" prot="public">
+          <name>MLCameraMRQuality_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Video Quality enumeration for mixed reality capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="group___camera_1ga5948291a5d5dbc9ab58558df47670c3d" kindref="member">MLCameraGetStreamCaps</ref> to get the resolution. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="142" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="142" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1gab32062a187f7eacddc4bf2bbd5ab271d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraConnectFlag</name>
+        <enumvalue id="group___camera_1ggab32062a187f7eacddc4bf2bbd5ab271da4a9df4656eaafce61b5deeabe5d92e2c" prot="public">
+          <name>MLCameraConnectFlag_CamOnly</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Camera only frame capture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggab32062a187f7eacddc4bf2bbd5ab271da4ecb3dd72219c429d35906d9b51f9ad5" prot="public">
+          <name>MLCameraConnectFlag_VirtualOnly</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Virtual only capture. Only supported for MLCameraIdentifier_MAIN. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggab32062a187f7eacddc4bf2bbd5ab271da120fdd0f8597ccc16250d053c14b52da" prot="public">
+          <name>MLCameraConnectFlag_MR</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mixed Reality capture. Only supported for MLCameraIdentifier_MAIN. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggab32062a187f7eacddc4bf2bbd5ab271da3e1953887f11cbc7a2d06a08cbc730ce" prot="public">
+          <name>MLCameraConnectFlag_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags to describe various modules in camera pipeline. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="180" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="180" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1gacfcf29e1881c7476797133b5aac52871" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMRBlendType</name>
+        <enumvalue id="group___camera_1ggacfcf29e1881c7476797133b5aac52871ac2f417da88ba9ffdb831cdbe07c08354" prot="public">
+          <name>MLCameraMRBlendType_Additive</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Additive blend type. It simply adds pixel values of real world and virtual layer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggacfcf29e1881c7476797133b5aac52871aad7d451c78a084982291a4254c4a31a8" prot="public">
+          <name>MLCameraMRBlendType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual and real content blending modes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="192" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="192" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1ga76c8063ff6d1c9505f676ee2e5cff77c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraDisconnectReason</name>
+        <enumvalue id="group___camera_1gga76c8063ff6d1c9505f676ee2e5cff77ca4e4fe74766ff4b9c10cae25fd63a5d6a" prot="public">
+          <name>MLCameraDisconnect_DeviceLost</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Device lost. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga76c8063ff6d1c9505f676ee2e5cff77ca2609487c5802e483f27115d680920648" prot="public">
+          <name>MLCameraDisconnect_PriorityLost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Priority lost. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga76c8063ff6d1c9505f676ee2e5cff77ca0d60c81f5c89eed11d80873c279285d4" prot="public">
+          <name>MLCameraDisconnect_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera disconnect reason. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="201" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="201" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1ga8dc18edd1815c95859c65f51fe2933fa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraError</name>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faa1dbd3b655fff46bcf9a07d774ecb9e51" prot="public">
+          <name>MLCameraError_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faa45d3193ef0c1bcf7a3ed06838c308cb4" prot="public">
+          <name>MLCameraError_Invalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid/Unknown Error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faa24b35adae61149f4a6e8f8c0d307ec70" prot="public">
+          <name>MLCameraError_Disabled</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Camera disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faab2dda09c00d1ca37e20a06d7da597ba7" prot="public">
+          <name>MLCameraError_DeviceFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Camera device failed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faa51b9ace48230aee73e3898c26960da79" prot="public">
+          <name>MLCameraError_ServiceFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Camera service failed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faa02a485757bb842346d3e29c6be1da8a5" prot="public">
+          <name>MLCameraError_CaptureFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Capture failed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga8dc18edd1815c95859c65f51fe2933faa412f539177855bddb14aa10e8d5011fb" prot="public">
+          <name>MLCameraError_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera errors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="211" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="211" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1ga50c788fee4b171b21e23ab375a892c74" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraOutputFormat</name>
+        <enumvalue id="group___camera_1gga50c788fee4b171b21e23ab375a892c74ae63a64fcc62d43dc17fed8d69aface8e" prot="public">
+          <name>MLCameraOutputFormat_Unknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga50c788fee4b171b21e23ab375a892c74aeb4a931826a08d07610a3902465372d8" prot="public">
+          <name>MLCameraOutputFormat_YUV_420_888</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>YUV planar format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga50c788fee4b171b21e23ab375a892c74ab757bb4588a8737885a52ef35d1e7587" prot="public">
+          <name>MLCameraOutputFormat_JPEG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Compressed output stream. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga50c788fee4b171b21e23ab375a892c74a720e72e9e655cf599b561a1d7d77d819" prot="public">
+          <name>MLCameraOutputFormat_RGBA_8888</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RGB32 format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1gga50c788fee4b171b21e23ab375a892c74a6f4cfaf3789c5d7655a225f12979c7cc" prot="public">
+          <name>MLCameraOutputFormat_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Captured output format. These three parameters determine which formats are supported: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Camera type: [Main, CV].</para>
+</listitem><listitem><para>Mode: [Real, MR, Virtual].</para>
+</listitem><listitem><para>Capture type: [Preview, Video, Image].</para>
+</listitem></itemizedlist>
+</para>
+<para>These are formats supported: <table rows="4" cols="4"><row>
+<entry thead="yes"><para>Format </para>
+</entry><entry thead="yes"><para>Camera Type </para>
+</entry><entry thead="yes"><para>Mode </para>
+</entry><entry thead="yes"><para>Capture Type </para>
+</entry></row>
+<row>
+<entry thead="no"><para>YUV </para>
+</entry><entry thead="no"><para>Main <linebreak/>
+CV </para>
+</entry><entry thead="no"><para>Real <linebreak/>
+Real </para>
+</entry><entry thead="no"><para>Preview, Video, Image <linebreak/>
+Video, Image </para>
+</entry></row>
+<row>
+<entry thead="no"><para>RGBA </para>
+</entry><entry thead="no"><para>Main <linebreak/>
+Main <linebreak/>
+CR </para>
+</entry><entry thead="no"><para>Real <linebreak/>
+MR, Virtual <linebreak/>
+Real </para>
+</entry><entry thead="no"><para>Video <linebreak/>
+Video, Image <linebreak/>
+Video </para>
+</entry></row>
+<row>
+<entry thead="no"><para>JPEG </para>
+</entry><entry thead="no"><para>Main </para>
+</entry><entry thead="no"><para>Real, MR, Virtual </para>
+</entry><entry thead="no"><para>Image </para>
+</entry></row>
+</table>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="243" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="243" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1gae18fe96a00ef08c4453494a61687b585" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraDeviceStatusFlag</name>
+        <enumvalue id="group___camera_1ggae18fe96a00ef08c4453494a61687b585a4410018651cf95a8c38845e65a83f160" prot="public">
+          <name>MLCameraDeviceStatusFlag_Connected</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Connected. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggae18fe96a00ef08c4453494a61687b585ad162dfe45b9ebb0f08282602875e271a" prot="public">
+          <name>MLCameraDeviceStatusFlag_Idle</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Idle. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggae18fe96a00ef08c4453494a61687b585a753b94448e89c0b7e29ce3343e110daf" prot="public">
+          <name>MLCameraDeviceStatusFlag_Streaming</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Opened. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggae18fe96a00ef08c4453494a61687b585ac5f2e715441f4ad400375621102786c1" prot="public">
+          <name>MLCameraDeviceStatusFlag_Disconnected</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disconnected. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggae18fe96a00ef08c4453494a61687b585a26f5656582554e1f50956cb5cf7f1423" prot="public">
+          <name>MLCameraDeviceStatusFlag_Error</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error. Call <ref refid="group___camera_1ga27730a285b193c125fa56578204ece92" kindref="member">MLCameraGetErrorCode</ref> to obtain the error code. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_1ggae18fe96a00ef08c4453494a61687b585af37e497f34b03c44c6a26d7d822684cb" prot="public">
+          <name>MLCameraDeviceStatusFlag_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client can implement polling mechanism to retrieve device status and use these masks to view device status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="257" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="257" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1ga61dadd085c1777f559549e05962b2c9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@5</name>
+        <enumvalue id="group___camera_1gga61dadd085c1777f559549e05962b2c9ea4009b4c20d0bf4ddcaba54a2cd8e1cf0" prot="public">
+          <name>MLCamera_MaxImagePlanes</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of planes representing the image color space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="381" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="381" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_1ga726ca809ffd3d67ab4b8476646f26635" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@6</name>
+        <enumvalue id="group___camera_1gga726ca809ffd3d67ab4b8476646f26635a2ba8435871e78129199fe2f787c06eee" prot="public">
+          <name>MLCameraIntrinsics_MaxDistortionCoefficients</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default distortion vector size. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera distortion vector size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="407" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="407" bodyend="410"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___camera_1ga763871064787b95d983a22831c10790e" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1gac35323a7ef4d666d98a3b7453a01a1c1" kindref="member">MLCameraIdentifier</ref></type>
+        <definition>typedef enum MLCameraIdentifier MLCameraIdentifier</definition>
+        <argsstring></argsstring>
+        <name>MLCameraIdentifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Logical camera identifiers available for access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="100" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga019803efc3ebffc2dda4fb347c439657" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1ga81f72e27351fa8c140dd141bd7004828" kindref="member">MLCameraCaptureType</ref></type>
+        <definition>typedef enum MLCameraCaptureType MLCameraCaptureType</definition>
+        <argsstring></argsstring>
+        <name>MLCameraCaptureType</name>
+        <briefdescription>
+<para>Captures operation type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="114" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga0f8d6ce96ede52f829d36e5d25e5b227" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1gad81cc93a1ef01d7eeecb663d8dabb632" kindref="member">MLCameraCaptureFrameRate</ref></type>
+        <definition>typedef enum MLCameraCaptureFrameRate MLCameraCaptureFrameRate</definition>
+        <argsstring></argsstring>
+        <name>MLCameraCaptureFrameRate</name>
+        <briefdescription>
+<para>Captures frame rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Call <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref> to configure frame rate. Use MLCameraCaptureFrameRate_None when configuring only Image capture. Use MLCameraCaptureFrameRate_60fps only when resolution of captures &lt;= 3MP(2048x1536). Use MLCameraCaptureFrameRate_15FPS only when MLCameraConnectFlag is MLCameraConnectFlag_CamOnly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="135" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gad0884e252449a19e7a09a52edaa8f827" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1gaecfd52a3b73c83aaa0c29f3984d55a09" kindref="member">MLCameraMRQuality</ref></type>
+        <definition>typedef enum MLCameraMRQuality MLCameraMRQuality</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMRQuality</name>
+        <briefdescription>
+<para>Video Quality enumeration for mixed reality capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="group___camera_1ga5948291a5d5dbc9ab58558df47670c3d" kindref="member">MLCameraGetStreamCaps</ref> to get the resolution. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="177" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gab6fbe1edf188ace83bfcca6872dc0d00" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1gab32062a187f7eacddc4bf2bbd5ab271d" kindref="member">MLCameraConnectFlag</ref></type>
+        <definition>typedef enum MLCameraConnectFlag MLCameraConnectFlag</definition>
+        <argsstring></argsstring>
+        <name>MLCameraConnectFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags to describe various modules in camera pipeline. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="189" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga0519d832ac00a5eedd193d42350aee02" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1gacfcf29e1881c7476797133b5aac52871" kindref="member">MLCameraMRBlendType</ref></type>
+        <definition>typedef enum MLCameraMRBlendType MLCameraMRBlendType</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMRBlendType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual and real content blending modes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="198" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga25563d65b582d394bde19b60962b06fe" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1ga76c8063ff6d1c9505f676ee2e5cff77c" kindref="member">MLCameraDisconnectReason</ref></type>
+        <definition>typedef enum MLCameraDisconnectReason MLCameraDisconnectReason</definition>
+        <argsstring></argsstring>
+        <name>MLCameraDisconnectReason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera disconnect reason. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="208" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gae9e2647579e150008058b252de48ef33" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1ga8dc18edd1815c95859c65f51fe2933fa" kindref="member">MLCameraError</ref></type>
+        <definition>typedef enum MLCameraError MLCameraError</definition>
+        <argsstring></argsstring>
+        <name>MLCameraError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera errors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="225" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gada03e5124924da437d12a7ef2e9f1c75" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1ga50c788fee4b171b21e23ab375a892c74" kindref="member">MLCameraOutputFormat</ref></type>
+        <definition>typedef enum MLCameraOutputFormat MLCameraOutputFormat</definition>
+        <argsstring></argsstring>
+        <name>MLCameraOutputFormat</name>
+        <briefdescription>
+<para>Captured output format. These three parameters determine which formats are supported: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Camera type: [Main, CV].</para>
+</listitem><listitem><para>Mode: [Real, MR, Virtual].</para>
+</listitem><listitem><para>Capture type: [Preview, Video, Image].</para>
+</listitem></itemizedlist>
+</para>
+<para>These are formats supported: <table rows="4" cols="4"><row>
+<entry thead="yes"><para>Format </para>
+</entry><entry thead="yes"><para>Camera Type </para>
+</entry><entry thead="yes"><para>Mode </para>
+</entry><entry thead="yes"><para>Capture Type </para>
+</entry></row>
+<row>
+<entry thead="no"><para>YUV </para>
+</entry><entry thead="no"><para>Main <linebreak/>
+CV </para>
+</entry><entry thead="no"><para>Real <linebreak/>
+Real </para>
+</entry><entry thead="no"><para>Preview, Video, Image <linebreak/>
+Video, Image </para>
+</entry></row>
+<row>
+<entry thead="no"><para>RGBA </para>
+</entry><entry thead="no"><para>Main <linebreak/>
+Main <linebreak/>
+CR </para>
+</entry><entry thead="no"><para>Real <linebreak/>
+MR, Virtual <linebreak/>
+Real </para>
+</entry><entry thead="no"><para>Video <linebreak/>
+Video, Image <linebreak/>
+Video </para>
+</entry></row>
+<row>
+<entry thead="no"><para>JPEG </para>
+</entry><entry thead="no"><para>Main </para>
+</entry><entry thead="no"><para>Real, MR, Virtual </para>
+</entry><entry thead="no"><para>Image </para>
+</entry></row>
+</table>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="253" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga11d0d541cfb98e4bf3cfaf27d6a33874" prot="public" static="no">
+        <type>enum <ref refid="group___camera_1gae18fe96a00ef08c4453494a61687b585" kindref="member">MLCameraDeviceStatusFlag</ref></type>
+        <definition>typedef enum MLCameraDeviceStatusFlag MLCameraDeviceStatusFlag</definition>
+        <argsstring></argsstring>
+        <name>MLCameraDeviceStatusFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client can implement polling mechanism to retrieve device status and use these masks to view device status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="270" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" prot="public" static="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>typedef MLHandle MLCameraContext</definition>
+        <argsstring></argsstring>
+        <name>MLCameraContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera context to be used while connecting to camera. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="273" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga269c675c6df124d68aedeceed9517b64" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_m_r_connect_info" kindref="compound">MLCameraMRConnectInfo</ref></type>
+        <definition>typedef struct MLCameraMRConnectInfo MLCameraMRConnectInfo</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMRConnectInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to encapsulate connection settings for MR capture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="283" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gac3fbe93674819c7851505fcf40d2b3ad" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref></type>
+        <definition>typedef struct MLCameraConnectContext MLCameraConnectContext</definition>
+        <argsstring></argsstring>
+        <name>MLCameraConnectContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to encapsulate context for a CameraConnect Request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="301" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga4105735923585454acefb6bbe6ffa63b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_capture_stream_caps" kindref="compound">MLCameraCaptureStreamCaps</ref></type>
+        <definition>typedef struct MLCameraCaptureStreamCaps MLCameraCaptureStreamCaps</definition>
+        <argsstring></argsstring>
+        <name>MLCameraCaptureStreamCaps</name>
+        <briefdescription>
+<para>A structure to encapsulate stream capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The capabilities for each stream supported by logical camera device can be queried with MLCameraGetStreamCaps.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="318" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga79b8e595751632485c17e126b7d26e80" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_capture_stream_config" kindref="compound">MLCameraCaptureStreamConfig</ref></type>
+        <definition>typedef struct MLCameraCaptureStreamConfig MLCameraCaptureStreamConfig</definition>
+        <argsstring></argsstring>
+        <name>MLCameraCaptureStreamConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to encapsulate stream configurations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="340" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga75261695485c04b3aad9ce807b249160" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_capture_config" kindref="compound">MLCameraCaptureConfig</ref></type>
+        <definition>typedef struct MLCameraCaptureConfig MLCameraCaptureConfig</definition>
+        <argsstring></argsstring>
+        <name>MLCameraCaptureConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to encapsulate capture configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="359" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga2482aa861510dc36ae3a1834088567a0" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_plane_info" kindref="compound">MLCameraPlaneInfo</ref></type>
+        <definition>typedef struct MLCameraPlaneInfo MLCameraPlaneInfo</definition>
+        <argsstring></argsstring>
+        <name>MLCameraPlaneInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Per plane info for captured output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="379" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga475557fe75f5cbb2fa935d8e9d8ab232" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_output" kindref="compound">MLCameraOutput</ref></type>
+        <definition>typedef struct MLCameraOutput MLCameraOutput</definition>
+        <argsstring></argsstring>
+        <name>MLCameraOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to encapsulate captured output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="400" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gaf5ece047d287a58b656499dff608e0b5" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_intrinsic_calibration_parameters" kindref="compound">MLCameraIntrinsicCalibrationParameters</ref></type>
+        <definition>typedef struct MLCameraIntrinsicCalibrationParameters MLCameraIntrinsicCalibrationParameters</definition>
+        <argsstring></argsstring>
+        <name>MLCameraIntrinsicCalibrationParameters</name>
+        <briefdescription>
+<para>Camera intrinsic parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="435" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga4ce66f7260a6d17a55da8397350f8dad" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_result_extras" kindref="compound">MLCameraResultExtras</ref></type>
+        <definition>typedef struct MLCameraResultExtras MLCameraResultExtras</definition>
+        <argsstring></argsstring>
+        <name>MLCameraResultExtras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to encapsulate various indices for a capture result. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="451" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga5db2346d413361660f4e8051711c961f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_device_availability_info" kindref="compound">MLCameraDeviceAvailabilityInfo</ref></type>
+        <definition>typedef struct MLCameraDeviceAvailabilityInfo MLCameraDeviceAvailabilityInfo</definition>
+        <argsstring></argsstring>
+        <name>MLCameraDeviceAvailabilityInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to represent info on camera availability. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="459" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga2c9fbad176ba726030a15de444d181f8" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_device_availability_status_callbacks" kindref="compound">MLCameraDeviceAvailabilityStatusCallbacks</ref></type>
+        <definition>typedef struct MLCameraDeviceAvailabilityStatusCallbacks MLCameraDeviceAvailabilityStatusCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLCameraDeviceAvailabilityStatusCallbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device availability status callbacks to be implemented by client to receive device availability status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="477" column="43"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1gacb7092ebf20f930cfb76827cf807fb38" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_device_status_callbacks" kindref="compound">MLCameraDeviceStatusCallbacks</ref></type>
+        <definition>typedef struct MLCameraDeviceStatusCallbacks MLCameraDeviceStatusCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLCameraDeviceStatusCallbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device status callbacks to be implemented by client to receive device status if callback mechanism is used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="527" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_1ga6b9e2f62d79f23f05c618b7468772f79" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_camera_capture_callbacks" kindref="compound">MLCameraCaptureCallbacks</ref></type>
+        <definition>typedef struct MLCameraCaptureCallbacks MLCameraCaptureCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLCameraCaptureCallbacks</name>
+        <briefdescription>
+<para>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___camera_1ga8b0aad8a6839cab3499b7f716b1b43e1" kindref="member">MLCameraCaptureCallbacksInit()</ref> before use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="598" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___camera_1ga7701c058d0f4180d95081ead392691fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLCameraConnectContextInit</definition>
+        <argsstring>(MLCameraConnectContext *inout_context)</argsstring>
+        <name>MLCameraConnectContextInit</name>
+        <param>
+          <type><ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref> *</type>
+          <declname>inout_context</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the connect context structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shall be called before calling <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref> structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000224"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="611" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="611" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gab3db8e30768249cb36fb707f5055caa4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLCameraCaptureConfigInit</definition>
+        <argsstring>(MLCameraCaptureConfig *inout_config)</argsstring>
+        <name>MLCameraCaptureConfigInit</name>
+        <param>
+          <type><ref refid="struct_m_l_camera_capture_config" kindref="compound">MLCameraCaptureConfig</ref> *</type>
+          <declname>inout_config</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the capture config structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shall be called before calling <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_camera_capture_config" kindref="compound">MLCameraCaptureConfig</ref> structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000225"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="630" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="630" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga2034203936fd8562d8afa77f30c863c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLCameraDeviceAvailabilityStatusCallbacksInit</definition>
+        <argsstring>(MLCameraDeviceAvailabilityStatusCallbacks *inout_device_availability_status_callbacks)</argsstring>
+        <name>MLCameraDeviceAvailabilityStatusCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_camera_device_availability_status_callbacks" kindref="compound">MLCameraDeviceAvailabilityStatusCallbacks</ref> *</type>
+          <declname>inout_device_availability_status_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the callback structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shall be called before calling MLCameraSetDeviceAvailabilityStatusCallbacks().</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_device_availability_status_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device availability status callbacks structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000226"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="650" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="650" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga683859500e10e3d5e63ede1ea800c6bf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLCameraDeviceStatusCallbacksInit</definition>
+        <argsstring>(MLCameraDeviceStatusCallbacks *inout_device_status_callbacks)</argsstring>
+        <name>MLCameraDeviceStatusCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_camera_device_status_callbacks" kindref="compound">MLCameraDeviceStatusCallbacks</ref> *</type>
+          <declname>inout_device_status_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the callback structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shall be called before calling <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_device_status_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device status callbacks structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000227"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="672" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="672" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga8b0aad8a6839cab3499b7f716b1b43e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLCameraCaptureCallbacksInit</definition>
+        <argsstring>(MLCameraCaptureCallbacks *inout_capture_callbacks)</argsstring>
+        <name>MLCameraCaptureCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_camera_capture_callbacks" kindref="compound">MLCameraCaptureCallbacks</ref> *</type>
+          <declname>inout_capture_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the callback structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shall be called before calling <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_capture_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture status callbacks structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000228"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="694" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="694" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga5e9b8bb432847d983f27a28d75ecf5f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraInit</definition>
+        <argsstring>(const MLCameraDeviceAvailabilityStatusCallbacks *device_availability_status_callbacks, void *user_data)</argsstring>
+        <name>MLCameraInit</name>
+        <param>
+          <type>const <ref refid="struct_m_l_camera_device_availability_status_callbacks" kindref="compound">MLCameraDeviceAvailabilityStatusCallbacks</ref> *</type>
+          <declname>device_availability_status_callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+<para>Initialize ML Camera API, Register callback for device availability. If the user does not want to register device availability listener, MLCameraConnect can be called directly without <ref refid="group___camera_1ga5e9b8bb432847d983f27a28d75ecf5f0" kindref="member">MLCameraInit()</ref>. MLCameraDeInit should be used for unregistering callbacks and releasing resources acquired in <ref refid="group___camera_1ga5e9b8bb432847d983f27a28d75ecf5f0" kindref="member">MLCameraInit()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device_availability_status_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback to notify camera availability status. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user context data (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera is initialized and callbacks registered successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000229"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.CAMERA (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="724" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="724" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraConnect</definition>
+        <argsstring>(const MLCameraConnectContext *input_context, MLCameraContext *out_context)</argsstring>
+        <name>MLCameraConnect</name>
+        <param>
+          <type>const <ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref> *</type>
+          <declname>input_context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref> *</type>
+          <declname>out_context</declname>
+        </param>
+        <briefdescription>
+<para>Connect to camera device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">input_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref> structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context to be used in later APIs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connected to camera device successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>camera device already connected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000230"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.CAMERA (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="742" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="742" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga6e592c9539479573f7cd6da110578eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraGetNumSupportedStreams</definition>
+        <argsstring>(MLCameraContext context, uint32_t *out_num_supported_streams)</argsstring>
+        <name>MLCameraGetNumSupportedStreams</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_num_supported_streams</declname>
+        </param>
+        <briefdescription>
+<para>Query the no of streams supported by camera device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_num_supported_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of streams supported by device.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>API call completed successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000231"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="757" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="757" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga5948291a5d5dbc9ab58558df47670c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraGetStreamCaps</definition>
+        <argsstring>(MLCameraContext context, const uint32_t stream_index, uint32_t *inout_num_stream_caps, MLCameraCaptureStreamCaps *inout_stream_caps)</argsstring>
+        <name>MLCameraGetStreamCaps</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>stream_index</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>inout_num_stream_caps</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_camera_capture_stream_caps" kindref="compound">MLCameraCaptureStreamCaps</ref> *</type>
+          <declname>inout_stream_caps</declname>
+        </param>
+        <briefdescription>
+<para>Query the stream capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves either the number of capabilities supported by the given stream or an array of capabilities for the given stream. To get the number of capabilities supported by the given stream, this API should be called with num_stream_caps being valid pointer and out_stream_caps being NULL. To retrieve the array of capabilities for the given stream, this API should be called with a valid num_stream_caps (that contains the size of the out_stream_caps) and out_stream_caps being a preallocated array of <ref refid="struct_m_l_camera_capture_stream_caps" kindref="compound">MLCameraCaptureStreamCaps</ref> of size specified by num_stream_caps.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stream_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the stream for which to query capabilities. The index should be in the range [0 , num_supported_streams) where the num_supported_streams is from <ref refid="group___camera_1ga6e592c9539479573f7cd6da110578eb5" kindref="member">MLCameraGetNumSupportedStreams()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_num_stream_caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When the parameter inout_stream_caps is null, this is an output parameter which will hold the number of capabilities supported by the stream on function return. Otherwise this is an input parameter specifying the number of capabilities to retrieve, namely the size of the array pointed to by inout_stream_caps on return. The value should be in the range of [0, number-of-caps-retrieved]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_stream_caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is either null or pointing to an array of <ref refid="group___camera_1ga4105735923585454acefb6bbe6ffa63b" kindref="member">MLCameraCaptureStreamCaps()</ref> on return. Note that caller is responsible for allocating and releasing the array.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>API call completed successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000232"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="788" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="788" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gafdddea0f91bbec52ff0eadc52df46da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraDisconnect</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraDisconnect</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect from camera device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disconnected Camera device successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera device already disconnected or camera device is streaming.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000233"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="803" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="803" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga868ed499591ff99fa22e73793b36a568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraDeInit</definition>
+        <argsstring>()</argsstring>
+        <name>MLCameraDeInit</name>
+        <briefdescription>
+<para>Uninitialize ML Camera API, unregister callback for device availability. Should be called after all camera devices are disconnected. After MLCameraDeInit, MLCameraInit can be called or MLCameraConnect can be called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deinitialization completed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DeInit called when camera device is connected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000234"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="817" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="817" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga1540652d0607c7dea59c87a28d8ee948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraPreCaptureAEAWB</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraPreCaptureAEAWB</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Trigger AEAWB Convergence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API triggers AEAWB sequence and returns when AEAWB convergence has been achieved. The Users can either trigger and converge AEAWB metadata settings or use this API.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid camera context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AEAWB convergence done. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unspecified failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timed out waiting for AEAWB convergence. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera device not configured using <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref> or camera device is streaming.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000235"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="838" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="838" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraPrepareCapture</definition>
+        <argsstring>(MLCameraContext context, const MLCameraCaptureConfig *config, MLHandle *out_request_handle)</argsstring>
+        <name>MLCameraPrepareCapture</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_camera_capture_config" kindref="compound">MLCameraCaptureConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_request_handle</declname>
+        </param>
+        <briefdescription>
+<para>Prepare for capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API prepares for capture per specified <ref refid="group___camera_1ga81f72e27351fa8c140dd141bd7004828" kindref="member">MLCameraCaptureType</ref> by creating a capture request, and a handle to which is returned to the user, who can choose to manipulate the request data (metadata) via APIs defined in <ref refid="ml__camera__metadata__v2_8h" kindref="compound">ml_camera_metadata_v2.h</ref> before performing the capture.</para>
+<para>Shall be called after <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+<para>Note: When preparing capture the width and height parameters should match one of the values returned from <ref refid="group___camera_1ga5948291a5d5dbc9ab58558df47670c3d" kindref="member">MLCameraGetStreamCaps</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture configuration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_request_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the capture request metadata. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to prepare for capture due to invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prepared for capture successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to prepare for capture due to internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera device in streaming state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000236"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="866" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="866" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gabab6383c174fc3652053d44434b72b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraUpdateCaptureSettings</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraUpdateCaptureSettings</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Update capture setting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API updates the capture settings for an active preview/video stream. The API can be used to update capture settings like exposure compensation manual exposure settings like exposure time, iso setting.The capture settings can be changed in metadata handle returned by <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref> and then this API can be called to apply the capture settings.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera not streaming video or not in preview.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000237"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="886" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="886" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraSetDeviceStatusCallbacks</definition>
+        <argsstring>(MLCameraContext context, const MLCameraDeviceStatusCallbacks *device_status_callbacks, void *data)</argsstring>
+        <name>MLCameraSetDeviceStatusCallbacks</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_camera_device_status_callbacks" kindref="compound">MLCameraDeviceStatusCallbacks</ref> *</type>
+          <declname>device_status_callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set the client-implemented callbacks to convey camera device status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Client needs to implement the callbacks defined by <ref refid="struct_m_l_camera_device_status_callbacks" kindref="compound">MLCameraDeviceStatusCallbacks</ref>. The library passes the camera device status to the client via those callbacks.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">device_status_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera device status callbacks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User metadata.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set device status callbacks successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000238"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="905" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="905" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gac97ec7063117126c48d9d3bcb5258822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraSetCaptureCallbacks</definition>
+        <argsstring>(MLCameraContext context, const MLCameraCaptureCallbacks *capture_callbacks, void *data)</argsstring>
+        <name>MLCameraSetCaptureCallbacks</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_camera_capture_callbacks" kindref="compound">MLCameraCaptureCallbacks</ref> *</type>
+          <declname>capture_callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set the client-implemented callbacks to convey capture status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Client needs to implement the callbacks defined by <ref refid="struct_m_l_camera_capture_callbacks" kindref="compound">MLCameraCaptureCallbacks</ref>. The library passes the capture status to the client via those callbacks.</para>
+<para>Shall be called before capture operation for preview/image/video.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">capture_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture status callbacks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User metadata.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set Capture callbacks successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error occurred.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000239"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="927" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="927" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gab0694442faab42cf838932bc490c4157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraCaptureImage</definition>
+        <argsstring>(MLCameraContext context, uint32_t num_images)</argsstring>
+        <name>MLCameraCaptureImage</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>num_images</declname>
+        </param>
+        <briefdescription>
+<para>Capture still image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The output image will be returned in capture callback on_image_buffer_available.</para>
+<para>This is a blocking call, it will return after the end of on_image_buffer_available callback execution.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_images</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of images to capture valid range is 1-10.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context or invalid num_images. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Triggered image capture successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLMediaGenericResult_InvalidOperation Capture device in invalid state or image stream not configured by <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error occurred.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000240"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="948" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="948" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga7a0a82cbf65c94cd6b568e0c893fea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraCaptureVideoStart</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraCaptureVideoStart</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Start video capture. Capture either encoded video or YUV/RGBA frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>YUV/RGBA frames are provides through callback.For encoded video capture valid encoder input surface should be configured.The captured video YUV/RGBA frames will be returned to the application via on_video_buffer_available.</para>
+<para><ref refid="group___camera_1gaa517b1eef9f093c7b6d4d57f63da99a0" kindref="member">MLCameraCaptureVideoStop</ref> needs to be called to stop the capture.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Started video capture successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture device in invalid state or video stream not configured by <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start video recording due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000241"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="970" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="970" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga8d95abfa9a0fd27824c6857fdc68fb31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraCapturePreviewStart</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraCapturePreviewStart</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Start preview provide raw frames through callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The captured preview YUV frames will be returned to the application via on_preview_buffer_available.</para>
+<para><ref refid="group___camera_1ga6b0be9e5d82d1a16471bcd3002a64e42" kindref="member">MLCameraCapturePreviewStop</ref> needs to be called to stop the capture.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Started preview successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start preview due to internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture device in invalid state or preview stream not configured by <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000242"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="990" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="990" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gaa517b1eef9f093c7b6d4d57f63da99a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraCaptureVideoStop</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraCaptureVideoStop</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Stop video capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>User should allow some time, i.e., &gt;500ms, after MLCameraCaptureVideoStart and before calling this API, as captured frames are being encoded. Otherwise, MLResult_UnspecifiedFailure will be returned.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stopped video capture successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to stop video recording due to internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture device in invalid state or video stream not streaming.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000243"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="1010" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="1010" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga6b0be9e5d82d1a16471bcd3002a64e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraCapturePreviewStop</definition>
+        <argsstring>(MLCameraContext context)</argsstring>
+        <name>MLCameraCapturePreviewStop</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Stop preview. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stopped video capture successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to stop preview due to internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capture device in invalid state or preview stream not streaming.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000244"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="1026" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="1026" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga4882ee458933c198dc7c43438cb2865e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraGetDeviceStatus</definition>
+        <argsstring>(MLCameraContext context, uint32_t *out_device_status)</argsstring>
+        <name>MLCameraGetDeviceStatus</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_device_status</declname>
+        </param>
+        <briefdescription>
+<para>Poll camera device status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="group___camera_1gae18fe96a00ef08c4453494a61687b585" kindref="member">MLCameraDeviceStatusFlag</ref> to view specific status bit. Call <ref refid="group___camera_1ga27730a285b193c125fa56578204ece92" kindref="member">MLCameraGetErrorCode()</ref> to obtain the error code if <ref refid="group___camera_1ggae18fe96a00ef08c4453494a61687b585a26f5656582554e1f50956cb5cf7f1423" kindref="member">MLCameraDeviceStatusFlag_Error</ref> bit is set.</para>
+<para>Note: This API can still be used even if <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks()</ref> has been called.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_device_status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device status.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain device status due to invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained device status successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000245"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="1046" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="1046" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gaef93d10d6e8a506bb98909c5b3d30f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraGetDeviceAvailabilityStatus</definition>
+        <argsstring>(MLCameraIdentifier cam_id, bool *out_device_availability_status)</argsstring>
+        <name>MLCameraGetDeviceAvailabilityStatus</name>
+        <param>
+          <type><ref refid="group___camera_1gac35323a7ef4d666d98a3b7453a01a1c1" kindref="member">MLCameraIdentifier</ref></type>
+          <declname>cam_id</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_device_availability_status</declname>
+        </param>
+        <briefdescription>
+<para>Poll camera device availability status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="group___camera_1gaef93d10d6e8a506bb98909c5b3d30f0f" kindref="member">MLCameraGetDeviceAvailabilityStatus</ref> to view specific status.</para>
+<para>Note: This API can still be used even if availability status callback is not registered through <ref refid="group___camera_1ga5e9b8bb432847d983f27a28d75ecf5f0" kindref="member">MLCameraInit</ref> call.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cam_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera Id for which the availability status is to be queried. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_device_availability_status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device availability status.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain device status due to invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained device status successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000246"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="1065" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="1065" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1ga27730a285b193c125fa56578204ece92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraGetErrorCode</definition>
+        <argsstring>(MLCameraContext context, MLCameraError *out_error_code)</argsstring>
+        <name>MLCameraGetErrorCode</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___camera_1ga8dc18edd1815c95859c65f51fe2933fa" kindref="member">MLCameraError</ref> *</type>
+          <declname>out_error_code</declname>
+        </param>
+        <briefdescription>
+<para>Obtain camera device error code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_error_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera device error code.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain device error code due to invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained camera device error code successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000247"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="1080" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="1080" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___camera_1gae229e5a1c5e9701c7f4096b956b9d3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCameraGetCameraCharacteristics</definition>
+        <argsstring>(MLCameraContext context, MLHandle *out_characteristics_handle)</argsstring>
+        <name>MLCameraGetCameraCharacteristics</name>
+        <param>
+          <type><ref refid="group___camera_1gaa365561f84fae9e55ac605aa39da1f72" kindref="member">MLCameraContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_characteristics_handle</declname>
+        </param>
+        <briefdescription>
+<para>Obtains handle for retrieving camera characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API provides the handle for retrieving camera characteristics via APIs defined in <ref refid="ml__camera__metadata__v2_8h" kindref="compound">ml_camera_metadata_v2.h</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera context obtained from <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_characteristics_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to access camera characteristic metadata. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain camera characteristic handle due to invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained camera characteristic handle successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000248"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="1098" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" declline="1098" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for accessing Camera Device and to do Camera Capture. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n camera.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="warning"><para>THIS IS A LEGACY API. IT IS STRONGLY RECOMMENDED TO USE STANDARD ANDROID SDK AND NDK CAMERA APIs: <ulink url="https://developer.android.com/training/camera2">https://developer.android.com/training/camera2</ulink> <ulink url="https://developer.android.com/ndk/reference/group/camera">https://developer.android.com/ndk/reference/group/camera</ulink></para>
+</simplesect>
+</para>
+<sect1 id="group___camera_1autotoc_md5">
+<title>Supported Camera Modes, Resolutions, Capture Type, Formats and FrameRates</title>
+<para><table rows="7" cols="6"><row>
+<entry thead="yes"><para>Camera </para>
+</entry><entry thead="yes"><para>Mode </para>
+</entry><entry thead="yes"><para>Resolution </para>
+</entry><entry thead="yes"><para>Capture Type </para>
+</entry><entry thead="yes"><para>Formats </para>
+</entry><entry thead="yes"><para>FrameRate </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="48"><para>Main</para>
+</entry><entry thead="no" rowspan="12"><para><preformatted>Cam_Only    </preformatted></para>
+</entry><entry thead="no" rowspan="3"><para>640x480<linebreak/>
+1280x720<linebreak/>
+1280x960<linebreak/>
+1440x1080<linebreak/>
+1920x1080<linebreak/>
+2048x1536 </para>
+</entry><entry thead="no" rowspan="1"><para>Preview</para>
+</entry><entry thead="no" rowspan="1"><para>YUV</para>
+</entry><entry thead="no" rowspan="1"><para>15/30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>YUV/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>15/30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>YUV/RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>15/30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="3"><para><linebreak/>
+2880x2160<linebreak/>
+3840x2160<linebreak/>
+4096x3072&lt;br&gt;<linebreak/>
+</para>
+</entry><entry thead="no" rowspan="1"><para>Preview</para>
+</entry><entry thead="no" rowspan="1"><para>YUV</para>
+</entry><entry thead="no" rowspan="1"><para>15/30 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>YUV/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>15/30 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>YUV/RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>15/30 </para>
+</entry></row>
+</table>
+Note: 15Fps only supported in Auto Exposure Mode. <linebreak/>
+When multiple streams are configured frame rate is constrained by max resolution. <linebreak/>
+FrameRate_None can be used when only Image capture_type is used.</para>
+<para><linebreak/>
+ <linebreak/>
+ <table rows="5" cols="6"><row>
+<entry thead="yes"><para>Camera </para>
+</entry><entry thead="yes"><para>Mode </para>
+</entry><entry thead="yes"><para>Resolution </para>
+</entry><entry thead="yes"><para>Capture Type </para>
+</entry><entry thead="yes"><para>Formats </para>
+</entry><entry thead="yes"><para>FrameRate </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="48"><para><preformatted>CV  </preformatted></para>
+</entry><entry thead="no" rowspan="24"><para><preformatted>Cam_Only    </preformatted></para>
+</entry><entry thead="no" rowspan="2"><para>640x480<linebreak/>
+1280x720<linebreak/>
+1280x960<linebreak/>
+1440x1080<linebreak/>
+1920x1080<linebreak/>
+2048x1536 </para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>YUV</para>
+</entry><entry thead="no" rowspan="1"><para>15/30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para><preformatted>YUV/RGB           </preformatted></para>
+</entry><entry thead="no" rowspan="1"><para>15/30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="2"><para><linebreak/>
+2880x2160<linebreak/>
+3840x2160<linebreak/>
+4096x3072&lt;br&gt;<linebreak/>
+ </para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>YUV</para>
+</entry><entry thead="no" rowspan="1"><para>15/30 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>YUV/RGB </para>
+</entry><entry thead="no" rowspan="1"><para>15/30 </para>
+</entry></row>
+</table>
+Note: 15Fps only supported in Auto Exposure Mode <linebreak/>
+FrameRate_None can be used when only Image capture_type is used.</para>
+<para><linebreak/>
+ <linebreak/>
+ <table rows="13" cols="6"><row>
+<entry thead="yes"><para>Camera </para>
+</entry><entry thead="yes"><para>Mode </para>
+</entry><entry thead="yes"><para>Resolution </para>
+</entry><entry thead="yes"><para>Capture Type </para>
+</entry><entry thead="yes"><para>Formats </para>
+</entry><entry thead="yes"><para>FrameRate </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="48"><para>Main</para>
+</entry><entry thead="no" rowspan="24"><para>MR/Virtual_Only</para>
+</entry><entry thead="no" rowspan="2"><para>648x720 </para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>RBG/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para><preformatted>RGB/Compressed    </preformatted></para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="2"><para>960x720 </para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>RBG/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="2"><para>972x1080 </para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>RBG/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="2"><para>1440x1080</para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>RBG/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>30/60 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="2"><para>1944x2160</para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>RBG/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>30 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>30 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="2"><para>2880x2160</para>
+</entry><entry thead="no" rowspan="1"><para>Image</para>
+</entry><entry thead="no" rowspan="1"><para>RBG/JPEG</para>
+</entry><entry thead="no" rowspan="1"><para>30 </para>
+</entry></row>
+<row>
+<entry thead="no" rowspan="1"><para>Video</para>
+</entry><entry thead="no" rowspan="1"><para>RGB/Compressed</para>
+</entry><entry thead="no" rowspan="1"><para>30 </para>
+</entry></row>
+</table>
+Note: Quality and frame rate provided during connection should match the resolution and framerate in PrepareCapture. <linebreak/>
+ <linebreak/>
+</para>
+<para>Stringify the error codes returned by these APIs, call MLMediaResultGetString. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

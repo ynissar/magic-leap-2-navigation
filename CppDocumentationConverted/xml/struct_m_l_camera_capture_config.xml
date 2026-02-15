@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_capture_config" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraCaptureConfig</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_capture_config_1a667def53778a5d3dc91c1f05f2c6efbf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraCaptureConfig::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="345" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_config_1a71fa508c1e57f1b9c73517069ec6e2bf" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gad81cc93a1ef01d7eeecb663d8dabb632" kindref="member">MLCameraCaptureFrameRate</ref></type>
+        <definition>MLCameraCaptureFrameRate MLCameraCaptureConfig::capture_frame_rate</definition>
+        <argsstring></argsstring>
+        <name>capture_frame_rate</name>
+        <briefdescription>
+<para>Capture frame rate: <linebreak/>
+If only IMAGE stream configuration set to MLCameraCaptureFrameRate_None. <linebreak/>
+If setting to 60fps capture resolution should not be more than 1920x1080 for any of the streams. <linebreak/>
+For MR/virtual only capture, the frame rate should match the value selected in <ref refid="struct_m_l_camera_m_r_connect_info" kindref="compound">MLCameraMRConnectInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="354" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_config_1ac807125c03e7416f2aa8a6aa8b368040" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraCaptureConfig::num_streams</definition>
+        <argsstring></argsstring>
+        <name>num_streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of captured streams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="356" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_config_1a8bc2f10a19f1b05272f908149c3a3489" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_camera_capture_stream_config" kindref="compound">MLCameraCaptureStreamConfig</ref></type>
+        <definition>MLCameraCaptureStreamConfig MLCameraCaptureConfig::stream_config[MLCAMERA_MAXSTREAMS]</definition>
+        <argsstring>[MLCAMERA_MAXSTREAMS]</argsstring>
+        <name>stream_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stream configurations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="358" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to encapsulate capture configuration. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLCameraCaptureConfig</label>
+        <link refid="struct_m_l_camera_capture_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>stream_config</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCameraCaptureStreamConfig</label>
+        <link refid="struct_m_l_camera_capture_stream_config"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="343" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="343" bodyend="359"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_capture_config_1a71fa508c1e57f1b9c73517069ec6e2bf" prot="public" virt="non-virtual"><scope>MLCameraCaptureConfig</scope><name>capture_frame_rate</name></member>
+      <member refid="struct_m_l_camera_capture_config_1ac807125c03e7416f2aa8a6aa8b368040" prot="public" virt="non-virtual"><scope>MLCameraCaptureConfig</scope><name>num_streams</name></member>
+      <member refid="struct_m_l_camera_capture_config_1a8bc2f10a19f1b05272f908149c3a3489" prot="public" virt="non-virtual"><scope>MLCameraCaptureConfig</scope><name>stream_config</name></member>
+      <member refid="struct_m_l_camera_capture_config_1a667def53778a5d3dc91c1f05f2c6efbf" prot="public" virt="non-virtual"><scope>MLCameraCaptureConfig</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

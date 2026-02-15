@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_web_view_process_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLWebViewProcessSettings</compoundname>
+    <includes refid="ml__webview_8h" local="no">ml_webview.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_web_view_process_settings_1a6f00fb0453279153c8f66a9fba5996bb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWebViewProcessSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="381" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_process_settings_1ab148be1922f852133aca653cdef0323f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWebViewProcessSettings::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags to be set for the process using the webview. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="383" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct to define webview process initialization. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1ga0debf195a5e7fda653faba2370d4507d" kindref="member">MLWebViewProcessSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="380" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="380" bodyend="384"/>
+    <listofallmembers>
+      <member refid="struct_m_l_web_view_process_settings_1ab148be1922f852133aca653cdef0323f" prot="public" virt="non-virtual"><scope>MLWebViewProcessSettings</scope><name>flags</name></member>
+      <member refid="struct_m_l_web_view_process_settings_1a6f00fb0453279153c8f66a9fba5996bb" prot="public" virt="non-virtual"><scope>MLWebViewProcessSettings</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_power_manager_component_property" kind="struct" language="C++" prot="public">
+    <compoundname>MLPowerManagerComponentProperty</compoundname>
+    <includes refid="ml__power__manager_8h" local="no">ml_power_manager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_power_manager_component_property_1a91e091aa7f623ea8ab75e7948d7ec8cf" prot="public" static="no" mutable="no">
+        <type><ref refid="group___power_manager_1ga2db41bd4a348194a7681fab1b52c5eca" kindref="member">MLPowerManagerPropertyType</ref></type>
+        <definition>MLPowerManagerPropertyType MLPowerManagerComponentProperty::property_type</definition>
+        <argsstring></argsstring>
+        <name>property_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of each property. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="248" column="30" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_power_manager_component_property_1a4ed254b4b3cf981c06993bdeebf6f4de" prot="public" static="no" mutable="no">
+        <type>union MLPowerManagerComponentProperty::@25</type>
+        <definition>union MLPowerManagerComponentProperty::@25 MLPowerManagerComponentProperty::@26</definition>
+        <argsstring></argsstring>
+        <name>@26</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="262" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate the data for each <ref refid="group___power_manager_1ga62248c1a2edcf894ff9a3265ac9512e5" kindref="member">MLPowerManagerPropertyType</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct and union is used as a flexible way for each component to output an array containing distinct types of data.</para>
+<para>The below code shows how a Controller could output battery_info, battery_level, charging_state or connection_state. Where data is an instance of <ref refid="struct_m_l_power_manager_property_data" kindref="compound">MLPowerManagerPropertyData</ref> returned from <ref refid="group___power_manager_1ga24e463bca5df16394ca99457f902040a" kindref="member">MLPowerManagerGetComponentProperties</ref>. <programlisting><codeline><highlight class="normal">auto<sp/>properties<sp/>=<sp/>data.properties;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>for<sp/>(int<sp/>num<sp/>=<sp/>0;<sp/>num<sp/>&lt;<sp/>data.size;<sp/>num++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>switch<sp/>(properties[num]-&gt;property_type)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>(MLPowerManagerPropertyType_BatteryInfo):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Process<sp/>properties[num]-&gt;battery_info<sp/>enum</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>(MLPowerManagerPropertyType_BatteryLevel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Process<sp/>properties[num]-&gt;battery_level<sp/>as<sp/>integer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>(MLPowerManagerPropertyType_ChargingState):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Process<sp/>properties[num]-&gt;charging_state<sp/>as<sp/>enum</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>(MLPowerManagerPropertyType_ConnectionState):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Process<sp/>properties[num]-&gt;connection_state<sp/>as<sp/>enum</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>default:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Error<sp/>handle<sp/>if<sp/>default<sp/>case</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="246" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="246" bodyend="263"/>
+    <listofallmembers>
+      <member refid="struct_m_l_power_manager_component_property_1a91e091aa7f623ea8ab75e7948d7ec8cf" prot="public" virt="non-virtual"><scope>MLPowerManagerComponentProperty</scope><name>property_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

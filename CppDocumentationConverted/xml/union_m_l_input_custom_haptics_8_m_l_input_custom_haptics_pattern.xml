@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern" kind="union" language="C++" prot="public">
+    <compoundname>MLInputCustomHaptics.MLInputCustomHapticsPattern</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern_1ab9056d71aca02a3a7fb860f66864fef0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>buzz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="539" column="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern_1aa609481a2dc27a815f1b360c8292227a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_input_pre_defined_pattern" kindref="compound">MLInputPreDefinedPattern</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pre_defined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="540" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Either buzz command or pre-defined pattern. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="538" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="538" bodyend="541"/>
+    <listofallmembers>
+      <member refid="union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern_1ab9056d71aca02a3a7fb860f66864fef0" prot="public" virt="non-virtual"><scope>MLInputCustomHaptics.MLInputCustomHapticsPattern</scope><name>buzz</name></member>
+      <member refid="union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern_1aa609481a2dc27a815f1b360c8292227a" prot="public" virt="non-virtual"><scope>MLInputCustomHaptics.MLInputCustomHapticsPattern</scope><name>pre_defined</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

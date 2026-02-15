@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_depth_camera_frame" kind="struct" language="C++" prot="public">
+    <compoundname>MLDepthCameraFrame</compoundname>
+    <includes refid="ml__depth__camera_8h" local="no">ml_depth_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1a843bd86d796f922ba0df06ded0abc221" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t MLDepthCameraFrame::frame_number</definition>
+        <argsstring></argsstring>
+        <name>frame_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 64bit integer to index the frame number associated with this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="389" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1a67fe824489be253e0e4f595975f1e826" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLDepthCameraFrame::frame_timestamp</definition>
+        <argsstring></argsstring>
+        <name>frame_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame timestamp specifies the time at which the frame was captured. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="391" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1aa399a5fb320398558b8ab1821e5633ab" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1gaea020248a0d7250f529b456654531612" kindref="member">MLDepthCameraFrameType</ref></type>
+        <definition>MLDepthCameraFrameType MLDepthCameraFrame::frame_type</definition>
+        <argsstring></argsstring>
+        <name>frame_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Depth camera stream used for capturing this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="393" column="26" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1ac6917567c2aef3927b727e2279f69ecb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref></type>
+        <definition>MLTransform MLDepthCameraFrame::camera_pose</definition>
+        <argsstring></argsstring>
+        <name>camera_pose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Depth camera pose in the world co-ordinate system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="395" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1a95d121679b07f4ec2b3df1ea0a98a8f4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_depth_camera_intrinsics" kindref="compound">MLDepthCameraIntrinsics</ref></type>
+        <definition>MLDepthCameraIntrinsics MLDepthCameraFrame::intrinsics</definition>
+        <argsstring></argsstring>
+        <name>intrinsics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera intrinsic parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="397" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1ae823ef20ba721c2529bcac7bfe3a177a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1gaeb4018ba28194aa4847760ab2fd92b95" kindref="member">MLDepthCameraDepthImage</ref> *</type>
+        <definition>MLDepthCameraDepthImage* MLDepthCameraFrame::depth_image</definition>
+        <argsstring></argsstring>
+        <name>depth_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Depth image. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="399" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1af45935e961905159e2fbcc78826440db" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1ga4ba9c02f0735f85a960c575faf243922" kindref="member">MLDepthCameraConfidenceBuffer</ref> *</type>
+        <definition>MLDepthCameraConfidenceBuffer* MLDepthCameraFrame::confidence</definition>
+        <argsstring></argsstring>
+        <name>confidence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Confidence score. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="401" column="33" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1a278b59030d79f0e535096a1167bc3e79" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1ga1de1c53541ca3182e994898de978c4ea" kindref="member">MLDepthCameraDepthFlagsBuffer</ref> *</type>
+        <definition>MLDepthCameraDepthFlagsBuffer* MLDepthCameraFrame::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Depth flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="403" column="33" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1ad24a1ed6d78b1043f171e425301dbfdd" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1ga042e8323aa036dbf9b388400724fd9bc" kindref="member">MLDepthCameraAmbientRawDepthImage</ref> *</type>
+        <definition>MLDepthCameraAmbientRawDepthImage* MLDepthCameraFrame::ambient_raw_depth_image</definition>
+        <argsstring></argsstring>
+        <name>ambient_raw_depth_image</name>
+        <briefdescription>
+<para>Ambient raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is off. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="409" column="37" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_1af2bcac68f97ae35d598ff1494b105cc9" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1ga91a2068470abc94e61ac24ec3461b70b" kindref="member">MLDepthCameraRawDepthImage</ref> *</type>
+        <definition>MLDepthCameraRawDepthImage* MLDepthCameraFrame::raw_depth_image</definition>
+        <argsstring></argsstring>
+        <name>raw_depth_image</name>
+        <briefdescription>
+<para>Raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is on. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="415" column="30" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to encapsulate output data for each camera sensor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLDepthCameraFrame</label>
+        <link refid="struct_m_l_depth_camera_frame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ambient_raw_depth_image</edgelabel>
+          <edgelabel>confidence</edgelabel>
+          <edgelabel>depth_image</edgelabel>
+          <edgelabel>flags</edgelabel>
+          <edgelabel>raw_depth_image</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>intrinsics</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>camera_pose</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLDepthCameraIntrinsics</label>
+        <link refid="struct_m_l_depth_camera_intrinsics"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>focal_length</edgelabel>
+          <edgelabel>principal_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="5">
+        <label>MLTransform</label>
+        <link refid="struct_m_l_transform"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MLVec2f</label>
+        <link refid="struct_m_l_vec2f"/>
+      </node>
+      <node id="2">
+        <label>MLDepthCameraFrameBuffer</label>
+        <link refid="struct_m_l_depth_camera_frame_buffer"/>
+      </node>
+      <node id="7">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="387" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="387" bodyend="416"/>
+    <listofallmembers>
+      <member refid="struct_m_l_depth_camera_frame_1ad24a1ed6d78b1043f171e425301dbfdd" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>ambient_raw_depth_image</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1ac6917567c2aef3927b727e2279f69ecb" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>camera_pose</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1af45935e961905159e2fbcc78826440db" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>confidence</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1ae823ef20ba721c2529bcac7bfe3a177a" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>depth_image</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1a278b59030d79f0e535096a1167bc3e79" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>flags</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1a843bd86d796f922ba0df06ded0abc221" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>frame_number</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1a67fe824489be253e0e4f595975f1e826" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>frame_timestamp</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1aa399a5fb320398558b8ab1821e5633ab" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>frame_type</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1a95d121679b07f4ec2b3df1ea0a98a8f4" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>intrinsics</name></member>
+      <member refid="struct_m_l_depth_camera_frame_1af2bcac68f97ae35d598ff1494b105cc9" prot="public" virt="non-virtual"><scope>MLDepthCameraFrame</scope><name>raw_depth_image</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

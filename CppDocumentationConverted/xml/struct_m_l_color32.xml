@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_color32" kind="struct" language="C++" prot="public">
+    <compoundname>MLColor32</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_color32_1a9fae16ba2e024bbb00a2ac26db1179e2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLColor32::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="115" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_color32_1a2ce21318d6d2838f2ef1264538aee3f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLColor32::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="116" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_color32_1a12477cc1878336a79188559db4334919" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLColor32::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="117" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_color32_1ae7123488a877b268acf5d13f7038d6df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLColor32::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="118" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Color represented by 4 unsigned bytes. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="110" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="110" bodyend="124"/>
+    <listofallmembers>
+      <member refid="struct_m_l_color32_1a9fae16ba2e024bbb00a2ac26db1179e2" prot="public" virt="non-virtual"><scope>MLColor32</scope><name>a</name></member>
+      <member refid="struct_m_l_color32_1a2ce21318d6d2838f2ef1264538aee3f5" prot="public" virt="non-virtual"><scope>MLColor32</scope><name>b</name></member>
+      <member refid="struct_m_l_color32_1a12477cc1878336a79188559db4334919" prot="public" virt="non-virtual"><scope>MLColor32</scope><name>g</name></member>
+      <member refid="struct_m_l_color32_1ae7123488a877b268acf5d13f7038d6df" prot="public" virt="non-virtual"><scope>MLColor32</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

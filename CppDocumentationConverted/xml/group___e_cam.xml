@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___e_cam" kind="group">
+    <compoundname>ECam</compoundname>
+    <title>Eye Camera</title>
+    <innerclass refid="struct_m_l_eye_camera_settings" prot="public">MLEyeCameraSettings</innerclass>
+    <innerclass refid="struct_m_l_eye_camera_frame_buffer" prot="public">MLEyeCameraFrameBuffer</innerclass>
+    <innerclass refid="struct_m_l_eye_camera_frame" prot="public">MLEyeCameraFrame</innerclass>
+    <innerclass refid="struct_m_l_eye_camera_data" prot="public">MLEyeCameraData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___e_cam_1ga2dd74db1696fc691271b70977088f02c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLEyeCameraIdentifier</name>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02ca5c8da0a7a16088b2f323c62949ce681d" prot="public">
+          <name>MLEyeCameraIdentifier_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02ca1e736f7885e0907e4155704700a195ec" prot="public">
+          <name>MLEyeCameraIdentifier_LeftTemple</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left temple eye camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02cab3d82ce65c61d994e1fc238c4b6f9e13" prot="public">
+          <name>MLEyeCameraIdentifier_LeftNasal</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left nasal eye camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02ca54002581a5b677527cf498a14835871a" prot="public">
+          <name>MLEyeCameraIdentifier_RightNasal</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right nasal eye camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02cae534cf893dbf1eb411483bb5da675202" prot="public">
+          <name>MLEyeCameraIdentifier_RightTemple</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right temple eye camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02cab7965febbe627b1756c715a3e8ae4637" prot="public">
+          <name>MLEyeCameraIdentifier_All</name>
+          <initializer>= MLEyeCameraIdentifier_LeftTemple |
+                              MLEyeCameraIdentifier_LeftNasal  |
+                              MLEyeCameraIdentifier_RightNasal |
+                              MLEyeCameraIdentifier_RightTemple</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>All Eye cameras. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_cam_1gga2dd74db1696fc691271b70977088f02ca286eee8082a4eb707d406dc14a66dfc5" prot="public">
+          <name>MLEyeCameraIdentifier_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera Identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of all the available eye camera sensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="45" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___e_cam_1ga7c30809e4c120adf1b99e7b59c613fb0" prot="public" static="no">
+        <type>enum <ref refid="group___e_cam_1ga2dd74db1696fc691271b70977088f02c" kindref="member">MLEyeCameraIdentifier</ref></type>
+        <definition>typedef enum MLEyeCameraIdentifier MLEyeCameraIdentifier</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCameraIdentifier</name>
+        <briefdescription>
+<para>Camera Identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of all the available eye camera sensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="63" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___e_cam_1gaff87a525a216c4dab9e0b154f83f467e" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref></type>
+        <definition>typedef struct MLEyeCameraSettings MLEyeCameraSettings</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCameraSettings</name>
+        <briefdescription>
+<para>A structure to encapsulate the camera settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___e_cam_1ga60b185d6b7f3cdbbdb8148508a6befe3" kindref="member">MLEyeCameraSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="83" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___e_cam_1ga5d6fb550411549f8aea2838fac939100" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_eye_camera_frame_buffer" kindref="compound">MLEyeCameraFrameBuffer</ref></type>
+        <definition>typedef struct MLEyeCameraFrameBuffer MLEyeCameraFrameBuffer</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCameraFrameBuffer</name>
+        <briefdescription>
+<para>A structure to encapsulate per plane info for each camera frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="123" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___e_cam_1gaf38674499bb1804257241caadd140f82" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_eye_camera_frame" kindref="compound">MLEyeCameraFrame</ref></type>
+        <definition>typedef struct MLEyeCameraFrame MLEyeCameraFrame</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCameraFrame</name>
+        <briefdescription>
+<para>A structure to encapsulate output data for each camera sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="139" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___e_cam_1ga402e6fb800f42eb841df6ab9336343aa" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref></type>
+        <definition>typedef struct MLEyeCameraData MLEyeCameraData</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCameraData</name>
+        <briefdescription>
+<para>A structure to encapsulate all the eye camera data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___e_cam_1ga311c79c0f6c76dc9aeab8a851ac5d0c2" kindref="member">MLEyeCameraDataInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="155" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___e_cam_1ga60b185d6b7f3cdbbdb8148508a6befe3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLEyeCameraSettingsInit</definition>
+        <argsstring>(MLEyeCameraSettings *inout_settings)</argsstring>
+        <name>MLEyeCameraSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the camera settings structure. Shall be called before calling <ref refid="group___e_cam_1gaa74abb159328cf73781444d99e348c01" kindref="member">MLEyeCameraConnect()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000268"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="95" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="group___e_cam_1ga311c79c0f6c76dc9aeab8a851ac5d0c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLEyeCameraDataInit</definition>
+        <argsstring>(MLEyeCameraData *inout_eye_camera_data)</argsstring>
+        <name>MLEyeCameraDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> *</type>
+          <declname>inout_eye_camera_data</declname>
+        </param>
+        <briefdescription>
+<para>Initialize <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> with version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_eye_camera_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_eye_camera_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="164" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="group___e_cam_1gaa74abb159328cf73781444d99e348c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeCameraConnect</definition>
+        <argsstring>(const MLEyeCameraSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLEyeCameraConnect</name>
+        <param>
+          <type>const <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Connect to eye cameras. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to camera handle to be used in later APIs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connected to camera device(s) successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000269"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.EYE_CAMERA (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="186" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" declline="186" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___e_cam_1gaa3a5b46db525e535ec29db782feafbbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeCameraUpdateSettings</definition>
+        <argsstring>(MLHandle handle, const MLEyeCameraSettings *settings)</argsstring>
+        <name>MLEyeCameraUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Update the eye camera settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___e_cam_1gaa74abb159328cf73781444d99e348c01" kindref="member">MLEyeCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000270"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="203" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" declline="203" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___e_cam_1ga1fdd7aab1a822b25e7812fe35eb47a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeCameraGetLatestCameraData</definition>
+        <argsstring>(MLHandle handle, uint64_t timeout_ms, MLEyeCameraData *out_data)</argsstring>
+        <name>MLEyeCameraGetLatestCameraData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Poll for Frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling <ref refid="group___e_cam_1gafc7e8b2cfc97da1c575631b174915083" kindref="member">MLEyeCameraReleaseCameraData</ref>.</para>
+<para>This is a blocking call. API is not thread safe.</para>
+<para>If there are no new camera frames within the timeout_ms duration then the API will return MLResult_Timeout.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___e_cam_1gaa74abb159328cf73781444d99e348c01" kindref="member">MLEyeCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eye camera data. Will be set to NULL if no valid data is available at this time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera frames fetched successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returned because no new frame available at this time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000271"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="231" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" declline="231" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___e_cam_1gafc7e8b2cfc97da1c575631b174915083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeCameraReleaseCameraData</definition>
+        <argsstring>(MLHandle handle, MLEyeCameraData *eye_camera_data)</argsstring>
+        <name>MLEyeCameraReleaseCameraData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> *</type>
+          <declname>eye_camera_data</declname>
+        </param>
+        <briefdescription>
+<para>Releases specified <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called exactly once for each call to <ref refid="group___e_cam_1ga1fdd7aab1a822b25e7812fe35eb47a5c" kindref="member">MLEyeCameraGetLatestCameraData</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___e_cam_1gaa74abb159328cf73781444d99e348c01" kindref="member">MLEyeCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">eye_camera_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released eye camera data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000272"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="249" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" declline="249" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___e_cam_1gab1d2644c462067f800f29d5dcf6377e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeCameraDisconnect</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLEyeCameraDisconnect</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect from eye camera(s). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will disconnect from all the eye camera(s) currently connected.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___e_cam_1gaa74abb159328cf73781444d99e348c01" kindref="member">MLEyeCameraConnect</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disconnected camera(s) successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to disconnect camera(s).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000273"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="266" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" declline="266" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs to access the eye camera data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\experimental This is an experimental API which may be modified or removed without any prior notice. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___output_master_volume" kind="group">
+    <compoundname>OutputMasterVolume</compoundname>
+    <title>Master Volume</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___output_master_volume_1gac67b009fc2d45c2a264937e610b1d1d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetMasterVolume</definition>
+        <argsstring>(float *out_volume)</argsstring>
+        <name>MLAudioGetMasterVolume</name>
+        <param>
+          <type>float *</type>
+          <declname>out_volume</declname>
+        </param>
+        <briefdescription>
+<para>Queries the master volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range of the volume is 0-100, with 0 being silent and 100 being full volume.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved master volume.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000087"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2863" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2863" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_master_volume_1ga822d1b3ad603cd207030667d94eba9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetMasterVolumeCallback</definition>
+        <argsstring>(MLAudioMasterVolumeChangedCallback callback, void *context)</argsstring>
+        <name>MLAudioSetMasterVolumeCallback</name>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga6d858bcead8bb23af387e45077e670c4" kindref="member">MLAudioMasterVolumeChangedCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Registers a callback for changes to the master volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully registered the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000088"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2878" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2878" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_master_volume_1ga41840faf87ba2be880e580f0422546b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetOutputMute</definition>
+        <argsstring>(bool *out_is_muted)</argsstring>
+        <name>MLAudioGetOutputMute</name>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_muted</declname>
+        </param>
+        <briefdescription>
+<para>Queries the state of the global output mute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out_is_muted If true, global output is muted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000089"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2894" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2894" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_master_volume_1gab09023448d81a23e957f732244ba0294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetOutputMuteCallback</definition>
+        <argsstring>(MLAudioOutputMuteChangedCallback callback, void *context)</argsstring>
+        <name>MLAudioSetOutputMuteCallback</name>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga5b6ce49c5bbf1482360f3a3c19e799ae" kindref="member">MLAudioOutputMuteChangedCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Registers a callback for changes to the global output mute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully registered the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000090"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2911" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2911" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MASTER VOLUME. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

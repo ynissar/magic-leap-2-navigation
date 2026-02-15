@@ -1,0 +1,52 @@
+diff -ur glslang-src-orig/glslang/MachineIndependent/ParseHelper.cpp glslang-src/glslang/MachineIndependent/ParseHelper.cpp
+--- glslang-src-orig/glslang/MachineIndependent/ParseHelper.cpp	2021-08-09 14:22:56.227001624 -0400
++++ glslang-src/glslang/MachineIndependent/ParseHelper.cpp	2021-08-09 14:27:09.217109549 -0400
+@@ -636,6 +636,8 @@
+ 
+ int TParseContext::getIoArrayImplicitSize(const TQualifier &qualifier, TString *featureString) const
+ {
++    (void)qualifier;
++
+     int expectedSize = 0;
+     TString str = "unknown";
+     unsigned int maxVertices = intermediate.getVertices() != TQualifier::layoutNotSet ? intermediate.getVertices() : 0;
+diff -ur glslang-src-orig/glslang/MachineIndependent/Versions.cpp glslang-src/glslang/MachineIndependent/Versions.cpp
+--- glslang-src-orig/glslang/MachineIndependent/Versions.cpp	2021-08-09 14:22:56.227001624 -0400
++++ glslang-src/glslang/MachineIndependent/Versions.cpp	2021-08-09 14:27:39.860697113 -0400
+@@ -866,6 +866,9 @@
+ // Check if extension is used with correct shader stage.
+ void TParseVersions::checkExtensionStage(const TSourceLoc& loc, const char * const extension)
+ {
++    (void) loc;
++    (void) extension;
++
+ #ifdef NV_EXTENSIONS
+     // GL_NV_mesh_shader extension is only allowed in task/mesh shaders
+     if (strcmp(extension, "GL_NV_mesh_shader") == 0) {
+diff -ur glslang-src-orig/SPIRV/GlslangToSpv.cpp glslang-src/SPIRV/GlslangToSpv.cpp
+--- glslang-src-orig/SPIRV/GlslangToSpv.cpp	2021-08-09 14:22:56.119002424 -0400
++++ glslang-src/SPIRV/GlslangToSpv.cpp	2021-08-09 14:26:11.985544908 -0400
+@@ -3491,6 +3491,7 @@
+ //
+ bool TGlslangToSpvTraverser::filterMember(const glslang::TType& member)
+ {
++    (void)member;
+ #ifdef NV_EXTENSIONS
+     auto& extensions = glslangIntermediate->getRequestedExtensions();
+ 
+@@ -6488,6 +6489,7 @@
+ // Create group invocation operations.
+ spv::Id TGlslangToSpvTraverser::createInvocationsOperation(glslang::TOperator op, spv::Id typeId, std::vector<spv::Id>& operands, glslang::TBasicType typeProxy)
+ {
++    (void)typeProxy;
+ #ifdef AMD_EXTENSIONS
+     bool isUnsigned = isTypeUnsignedInt(typeProxy);
+     bool isFloat = isTypeFloat(typeProxy);
+@@ -7531,6 +7533,7 @@
+ // Intrinsics with no arguments (or no return value, and no precision).
+ spv::Id TGlslangToSpvTraverser::createNoArgOperation(glslang::TOperator op, spv::Decoration precision, spv::Id typeId)
+ {
++    (void)precision;
+     // GLSL memory barriers use queuefamily scope in new model, device scope in old model
+     spv::Scope memoryBarrierScope = glslangIntermediate->usingVulkanMemoryModel() ? spv::ScopeQueueFamilyKHR : spv::ScopeDevice;
+ 

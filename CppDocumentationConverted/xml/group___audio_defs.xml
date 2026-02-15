@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___audio_defs" kind="group">
+    <compoundname>AudioDefs</compoundname>
+    <title>Audio Definitions</title>
+    <innerclass refid="struct_m_l_audio_multiband_level" prot="public">MLAudioMultibandLevel</innerclass>
+    <innergroup refid="group___def_control">Control</innergroup>
+    <innergroup refid="group___def_parameters">Parameters</innergroup>
+    <innergroup refid="group___def_acoustics">Acoustics</innergroup>
+    <innergroup refid="group___audio_output">Audio Output</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___audio_defs_1gafe7c4c8100eeea232e42cf1d9a289c73" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioMicCaptureType</name>
+        <enumvalue id="group___audio_defs_1ggafe7c4c8100eeea232e42cf1d9a289c73a0da315c025714a8f4599891981ebf774" prot="public">
+          <name>MLAudioMicCaptureType_VoiceComm</name>
+          <briefdescription>
+<para>User voice, suitable for communications. Mono, 16 bit integer, 16k sampling rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_defs_1ggafe7c4c8100eeea232e42cf1d9a289c73a16b9ae032dd3b0a5757ce208b4c37cb8" prot="public">
+          <name>MLAudioMicCaptureType_VoiceCapture</name>
+          <briefdescription>
+<para>High fidelity user voice, suitable for recording. Mono, 16 bit integer, 48k sampling rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_defs_1ggafe7c4c8100eeea232e42cf1d9a289c73ab76583eafa361c7c620a1beaec4232c7" prot="public">
+          <name>MLAudioMicCaptureType_WorldCapture</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+<para>Mic mix representing the user&apos;s surroundings. Stereo, 16 bit integer, 48k sampling rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_defs_1ggafe7c4c8100eeea232e42cf1d9a289c73a0cd2cd9cc74e69f1cc2dac8d49148cc4" prot="public">
+          <name>MLAudioMicCaptureType_RawMicsAndAECRef</name>
+          <briefdescription>
+<para>All 4 mics unprocessed (front L/R, side L/R) + AEC return from amp (L/R). Channel layout: 1 - Front L, 2 - Front R, 3 - Side L, 4 - Side R, 5 - AEC return L, 6 - AEC return R. DC Offset and/or background hum may be present on channels 1-4 due to lack of processing. 6-channel, 16 bit integer, 48k sampling rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_defs_1ggafe7c4c8100eeea232e42cf1d9a289c73a0c5abbcb21fa037e4c96360a96cc36f5" prot="public">
+          <name>MLAudioMicCaptureType_Ensure32Bits</name>
+          <initializer>=0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of mic input to capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="168" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="168" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___audio_defs_1ga4ba2a8d6de29212f74a9ea1306dde83a" prot="public" static="no">
+        <type>enum <ref refid="group___audio_defs_1gafe7c4c8100eeea232e42cf1d9a289c73" kindref="member">MLAudioMicCaptureType</ref></type>
+        <definition>typedef enum MLAudioMicCaptureType MLAudioMicCaptureType</definition>
+        <argsstring></argsstring>
+        <name>MLAudioMicCaptureType</name>
+        <briefdescription>
+<para>The type of mic input to capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="193" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___audio_defs_1ga9cbe36e0397e2c8a7b2b84ff55768262" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref></type>
+        <definition>typedef struct MLAudioMultibandLevel MLAudioMultibandLevel</definition>
+        <argsstring></argsstring>
+        <name>MLAudioMultibandLevel</name>
+        <briefdescription>
+<para>Properties specifying a broadband level and three sub-band levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="209" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___audio_defs_1ga87f5a643608eaed2a6a122ee11750535" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::main</definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for all frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="202" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gad8ce680729fd5183f164b8ce90d44028" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::lf</definition>
+        <argsstring></argsstring>
+        <name>lf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for low frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="204" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga98ccc40334de56fc00f77d65c5c3ceec" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::mf</definition>
+        <argsstring></argsstring>
+        <name>mf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for mid frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="206" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga556d2b6a21f1b849d0f384586bca4a51" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::hf</definition>
+        <argsstring></argsstring>
+        <name>hf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for high frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="208" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga3d779fd7d3200ca3c78f194cd24946b6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref></type>
+        <definition>MLAudioMultibandLevel MLAudioDispersionProperties::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dispersion output mix level. Range is [0, 0, 0, 0] to [8, 2, 2, 2]. Default is [0.25, 1, 1, 1]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="229" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0e063c570a676230493d103a1f082fc7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioDispersionProperties::pre_delay</definition>
+        <argsstring></argsstring>
+        <name>pre_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delay (secs) from direct sound to earliest reflection cluster onset. Must be &lt;= reverb pre_delay. Range is 0.005 to 0.1. Default is 0.01. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="231" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga7a485f53531542492a9f6adadc886fe0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref></type>
+        <definition>MLAudioMultibandLevel MLAudioReverbProperties::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverb output mix level. Range is [0, 0, 0, 0] to [8, 2, 2, 2]. Default is [0.16, 1, 1, 1]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="241" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae8ee4c3f1c54a93f24f71fee745aeb90" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::pre_delay</definition>
+        <argsstring></argsstring>
+        <name>pre_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delay (secs) from direct sound to the late reverberation onset. Must be &gt;= dispersion pre_delay. Range is 0.02 to 0.1. Default is 0.03. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="243" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga54049cc54d29f8cec2e653435d509f39" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::decay_time</definition>
+        <argsstring></argsstring>
+        <name>decay_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decay time (secs) for late reverberation. Range is 0 to 20. Default is 0.7. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="245" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gacaa099a31b5c476995460dd8c30f5104" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::decay_time_lf_ratio</definition>
+        <argsstring></argsstring>
+        <name>decay_time_lf_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relative reverberation decay time multiplying factor for low frequencies. Range is 0.1 to 2. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="247" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga587c82a51d58538f525f294671731cc2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::decay_time_hf_ratio</definition>
+        <argsstring></argsstring>
+        <name>decay_time_hf_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relative reverberation decay time multiplying factor for high frequencies. Range is 0.1 to 2. Default is 0.6. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="249" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga84727707f19895248b3c863d450b5282" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundDistanceProperties::min_distance</definition>
+        <argsstring></argsstring>
+        <name>min_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance until which sound is at full volume. Range is 0 to FLT_MAX. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="266" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae738d79fcd8be8b986fcd07a88c4689c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundDistanceProperties::max_distance</definition>
+        <argsstring></argsstring>
+        <name>max_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance beyond which sound gets no quieter. Range is min_distance to FLT_MAX. Default is FLT_MAX. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="268" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga64e714fc416e1a2b8a4a31f24034ff4f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundDistanceProperties::rolloff_factor</definition>
+        <argsstring></argsstring>
+        <name>rolloff_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale factor relative to real-world distance attenuation. Range is 0 to FLT_MAX. Default is 1 (real world). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="270" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga77b43e1cedc9c05fa2ebb5f219bbeaf5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::inner_angle</definition>
+        <argsstring></argsstring>
+        <name>inner_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle in degrees defining the sides of a cone, within which there is no radiation attenuation. Range is 0 to 360. Default is 50. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="276" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gab432fb7870f3b652a9327fb2ed450648" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_angle</definition>
+        <argsstring></argsstring>
+        <name>outer_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle in degrees defining the sides of a cone, beyond which the outer_gain values are fully applied. Range is 0 to 360. Default is 340. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="278" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0a503746cdcc2e8ecba1f91264844a5c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain</definition>
+        <argsstring></argsstring>
+        <name>outer_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for all frequencies. Range is 0 to 1. Default is 1. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="280" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0bd21d5c17765761d4dc635b798476cb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain_lf</definition>
+        <argsstring></argsstring>
+        <name>outer_gain_lf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for low frequencies. Range is 0 to 1. Default is 0.65. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="282" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga2b296bf04efdd84c43923abd22293b44" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain_mf</definition>
+        <argsstring></argsstring>
+        <name>outer_gain_mf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for mid frequencies. Range is 0 to 1. Default is 0.4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="284" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga26858911a1e8e8029b461f0f15d25cfc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain_hf</definition>
+        <argsstring></argsstring>
+        <name>outer_gain_hf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for high frequencies. Range is 0 to 1. Default is 0.08. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="286" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae68904003ef73afcec722f2e71acaaca" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLAudioRaycast::eye_point</definition>
+        <argsstring></argsstring>
+        <name>eye_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starting point of the ray. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="296" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gaab4d4ae5621b66242b78633056a6bec8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLAudioRaycast::end_point</definition>
+        <argsstring></argsstring>
+        <name>end_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ending point of the ray. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="298" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gac3c076951d3b297e17d95ca70a4b28dd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioObstruction::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount of obstruction [0-1] with 1 = fully applied transmission values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="308" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga47546999b2cd60d679694ce470c637b2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLAudioObstruction::hit_point</definition>
+        <argsstring></argsstring>
+        <name>hit_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Location of obstruction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="310" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gada5cde89772c6d2a0b546b92f5a096e6" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastRequest::source_id</definition>
+        <argsstring></argsstring>
+        <name>source_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="320" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gab6cf4c539b010441c2dc17f03cd3eb10" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastRequest::image_id</definition>
+        <argsstring></argsstring>
+        <name>image_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="322" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga9ce4a0cfa91650a97185b289627ea0bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioRaycastRequest::leg_index</definition>
+        <argsstring></argsstring>
+        <name>leg_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="324" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gaab6fc47e4e42a2d9b2ee4edcc9ef3c4a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_raycast" kindref="compound">MLAudioRaycast</ref></type>
+        <definition>MLAudioRaycast MLAudioRaycastRequest::ray</definition>
+        <argsstring></argsstring>
+        <name>ray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raycast to test for obstruction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="326" column="20" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga70c064db715decc9f35ffcec6ee55b94" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastResult::source_id</definition>
+        <argsstring></argsstring>
+        <name>source_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="336" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0f6d70127f4d934bb769f928c59785da" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastResult::image_id</definition>
+        <argsstring></argsstring>
+        <name>image_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="338" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga808ca1e3e567f6175a52ef9fc38d3179" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioRaycastResult::leg_index</definition>
+        <argsstring></argsstring>
+        <name>leg_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="340" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga5cf4278fad7092918666327b08056847" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_raycast" kindref="compound">MLAudioRaycast</ref></type>
+        <definition>MLAudioRaycast MLAudioRaycastResult::ray</definition>
+        <argsstring></argsstring>
+        <name>ray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raycast tested for obstruction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="342" column="20" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga95f4f5d1b2ab1132f53879a871aeb242" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref></type>
+        <definition>MLAudioObstruction MLAudioRaycastResult::obstruction</definition>
+        <argsstring></argsstring>
+        <name>obstruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result of obstruction test. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="344" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gab8dbc144028784a6a0ae10fa95d9618a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::channel_count</definition>
+        <argsstring></argsstring>
+        <name>channel_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of channels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="386" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga7e5505d6123f99531497e69c617272c0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::samples_per_second</definition>
+        <argsstring></argsstring>
+        <name>samples_per_second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sample rate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="388" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gabbca433958cd5e0fc250016fca44b265" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::bits_per_sample</definition>
+        <argsstring></argsstring>
+        <name>bits_per_sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits per sample. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="390" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga73b06613b76f6451254ccde91cf36183" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBufferFormat::valid_bits_per_sample</definition>
+        <argsstring></argsstring>
+        <name>valid_bits_per_sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits used per sample. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="392" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga66e86af091603a5de9a1e880e0393cf5" prot="public" static="no" mutable="no">
+        <type><ref refid="group___def_buffering_1gaa15645de3aeeafd395e01683d414e2c2" kindref="member">MLAudioSampleFormat</ref></type>
+        <definition>MLAudioSampleFormat MLAudioBufferFormat::sample_format</definition>
+        <argsstring></argsstring>
+        <name>sample_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Integer or float. Float is not currently implemented for buffered I/O. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="394" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga930b819a5d3e0b0466bc31f3f224f953" prot="public" static="no" mutable="no">
+        <type><ref refid="group___def_buffering_1gaf9dc383d6665cc020cf4355e33536ef3" kindref="member">MLAudioChannelFormat</ref></type>
+        <definition>MLAudioChannelFormat MLAudioBufferFormat::channel_format</definition>
+        <argsstring></argsstring>
+        <name>channel_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="396" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gace752b9e419adf6fe1978f1f42e84841" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* MLAudioBuffer::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to audio data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="402" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gaaa435b22dfdd7dc26490dc692f753a37" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBuffer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of audio data in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="404" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gaaf2f27f2f3559abb7c5ca1822bc5af66" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* MLAudioSpectralAnalysis::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Magnitudes of the spectral energy in a column-major matrix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="450" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae84147eaafdb8446c23ba9cd877beb10" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLAudioSpectralAnalysis::num_columns</definition>
+        <argsstring></argsstring>
+        <name>num_columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bands of spectral energy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="452" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga55486fa185b62502a3674191051ce536" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLAudioSpectralAnalysis::num_rows</definition>
+        <argsstring></argsstring>
+        <name>num_rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of divisions of the time window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="454" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AUDIO DEFINITIONS. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

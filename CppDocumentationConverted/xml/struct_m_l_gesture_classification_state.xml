@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_gesture_classification_state" kind="struct" language="C++" prot="public">
+    <compoundname>MLGestureClassificationState</compoundname>
+    <includes refid="ml__gesture__classification_8h" local="no">ml_gesture_classification.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1a5b62d5da75a6cfa22f1cf6fd5d9b1012" prot="public" static="no" mutable="no">
+        <type><ref refid="group___gesture_classification_1ga677626041c68da36ab13f6d33568bb8c" kindref="member">MLGestureClassificationPostureType</ref></type>
+        <definition>MLGestureClassificationPostureType MLGestureClassificationState::posture_type</definition>
+        <argsstring></argsstring>
+        <name>posture_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gesture classification hand posture type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="208" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1a2b5afbec105eaaa72af8bb7764e9809e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___gesture_classification_1gaf6b0ed5409b850bef1dc0794ec21012d" kindref="member">MLGestureClassificationKeyPoseType</ref></type>
+        <definition>MLGestureClassificationKeyPoseType MLGestureClassificationState::keypose_type</definition>
+        <argsstring></argsstring>
+        <name>keypose_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gesture classification hand key pose type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="210" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1a5b683b2063fbfd44164576dd35232388" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_gesture_classification_finger_state" kindref="compound">MLGestureClassificationFingerState</ref></type>
+        <definition>MLGestureClassificationFingerState MLGestureClassificationState::thumb</definition>
+        <argsstring></argsstring>
+        <name>thumb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Thumb finger state data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="212" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1a6aa94010046878770766ad334c8c7110" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_gesture_classification_finger_state" kindref="compound">MLGestureClassificationFingerState</ref></type>
+        <definition>MLGestureClassificationFingerState MLGestureClassificationState::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index finger state data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="214" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1afe3b01eabadd253913a9c9221e9460f4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_gesture_classification_finger_state" kindref="compound">MLGestureClassificationFingerState</ref></type>
+        <definition>MLGestureClassificationFingerState MLGestureClassificationState::middle</definition>
+        <argsstring></argsstring>
+        <name>middle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Middle finger state data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="216" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1ad8ba6a7b74bbf79b761af93acf05f3b2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_gesture_classification_finger_state" kindref="compound">MLGestureClassificationFingerState</ref></type>
+        <definition>MLGestureClassificationFingerState MLGestureClassificationState::ring</definition>
+        <argsstring></argsstring>
+        <name>ring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ring finger state data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="218" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1abf050cdbd9d875f693726ab9d0fcfae5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_gesture_classification_finger_state" kindref="compound">MLGestureClassificationFingerState</ref></type>
+        <definition>MLGestureClassificationFingerState MLGestureClassificationState::pinky</definition>
+        <argsstring></argsstring>
+        <name>pinky</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinky finger state data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="220" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1aa15633a02258d3c4fbeb4f3642bb9512" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationState::angle_thumb_index_deg</definition>
+        <argsstring></argsstring>
+        <name>angle_thumb_index_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle between thumb and index (angular) in degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="222" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1a5743db6fb62492b50e1ba8e88cd3fe7a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationState::angle_index_middle_deg</definition>
+        <argsstring></argsstring>
+        <name>angle_index_middle_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle between index and middle (angular) in degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="224" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1a13e881f659a9a20ef35163d66cd18f7e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationState::angle_middle_ring_deg</definition>
+        <argsstring></argsstring>
+        <name>angle_middle_ring_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle between middle and ring (angular) in degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="226" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_state_1ab75fc462611a2eb5c3786dbcbde80be2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGestureClassificationState::angle_ring_pinky_deg</definition>
+        <argsstring></argsstring>
+        <name>angle_ring_pinky_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle between ring and pinky (angular) in degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="228" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Gesture classification state of a single hand. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLGestureClassificationFingerState</label>
+        <link refid="struct_m_l_gesture_classification_finger_state"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>posture_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLGestureClassificationPostureFingerData</label>
+        <link refid="struct_m_l_gesture_classification_posture_finger_data"/>
+      </node>
+      <node id="1">
+        <label>MLGestureClassificationState</label>
+        <link refid="struct_m_l_gesture_classification_state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>index</edgelabel>
+          <edgelabel>middle</edgelabel>
+          <edgelabel>pinky</edgelabel>
+          <edgelabel>ring</edgelabel>
+          <edgelabel>thumb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="206" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="206" bodyend="229"/>
+    <listofallmembers>
+      <member refid="struct_m_l_gesture_classification_state_1a5743db6fb62492b50e1ba8e88cd3fe7a" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>angle_index_middle_deg</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1a13e881f659a9a20ef35163d66cd18f7e" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>angle_middle_ring_deg</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1ab75fc462611a2eb5c3786dbcbde80be2" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>angle_ring_pinky_deg</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1aa15633a02258d3c4fbeb4f3642bb9512" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>angle_thumb_index_deg</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1a6aa94010046878770766ad334c8c7110" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>index</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1a2b5afbec105eaaa72af8bb7764e9809e" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>keypose_type</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1afe3b01eabadd253913a9c9221e9460f4" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>middle</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1abf050cdbd9d875f693726ab9d0fcfae5" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>pinky</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1a5b62d5da75a6cfa22f1cf6fd5d9b1012" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>posture_type</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1ad8ba6a7b74bbf79b761af93acf05f3b2" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>ring</name></member>
+      <member refid="struct_m_l_gesture_classification_state_1a5b683b2063fbfd44164576dd35232388" prot="public" virt="non-virtual"><scope>MLGestureClassificationState</scope><name>thumb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

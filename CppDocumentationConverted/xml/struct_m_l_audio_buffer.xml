@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioBuffer</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1gace752b9e419adf6fe1978f1f42e84841" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* MLAudioBuffer::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to audio data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="402" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gaaa435b22dfdd7dc26490dc692f753a37" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioBuffer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of audio data in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="404" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An audio buffer for passing data to/from buffered outputs and inputs. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="400" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="400" bodyend="405"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1gace752b9e419adf6fe1978f1f42e84841" prot="public" virt="non-virtual"><scope>MLAudioBuffer</scope><name>ptr</name></member>
+      <member refid="group___audio_defs_1gaaa435b22dfdd7dc26490dc692f753a37" prot="public" virt="non-virtual"><scope>MLAudioBuffer</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

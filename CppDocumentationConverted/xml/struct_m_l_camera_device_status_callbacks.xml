@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_device_status_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraDeviceStatusCallbacks</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_device_status_callbacks_1a2b3d86c92817259ac6b6e85be0f7859d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraDeviceStatusCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="482" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_status_callbacks_1a91e0d6fa41c39ccf848e3fe62dc9f2bc" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraDeviceStatusCallbacks::on_device_streaming) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>on_device_streaming</name>
+        <briefdescription>
+<para>Callback is invoked when the camera is streaming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="489" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_status_callbacks_1afb2e5522177d36abdeb3dfd3a7c04731" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraDeviceStatusCallbacks::on_device_idle) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>on_device_idle</name>
+        <briefdescription>
+<para>Callback is invoked when the camera stops streaming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="496" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_status_callbacks_1ad0b65198282dc672e4fda63a6721f65a" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraDeviceStatusCallbacks::on_device_disconnected) (MLCameraDisconnectReason reason, void *data)</definition>
+        <argsstring>)(MLCameraDisconnectReason reason, void *data)</argsstring>
+        <name>on_device_disconnected</name>
+        <briefdescription>
+<para>Callback is invoked when the camera is disconnected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Represents the reason for disconnection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="504" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_status_callbacks_1a2f00dbcc2ac25570add2195b63f00db0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraDeviceStatusCallbacks::on_device_error) (MLCameraError error, void *data)</definition>
+        <argsstring>)(MLCameraError error, void *data)</argsstring>
+        <name>on_device_error</name>
+        <briefdescription>
+<para>Callback is invoked when the camera encountered errors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+Invalid: The camera device is not available.</para>
+<para><linebreak/>
+Disabled: The camera device can&apos;t be opened due to a device policy.</para>
+<para><linebreak/>
+Device error: The camera device encountered a fatal error such as the Headset device has lost connection or the hardware comm bus is busy and not be able to response and caused a timeout.</para>
+<para><linebreak/>
+Service error: The camera service has encountered a fatal error and could not provide service.</para>
+<para><linebreak/>
+Capture failed: The capture request has failed. on_capture_failed or on_capture_buffer_lost callbacks will be invoked when this error happens.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Represents the error type when happened. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="526" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Device status callbacks to be implemented by client to receive device status if callback mechanism is used. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="480" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="480" bodyend="527"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_device_status_callbacks_1ad0b65198282dc672e4fda63a6721f65a" prot="public" virt="non-virtual"><scope>MLCameraDeviceStatusCallbacks</scope><name>on_device_disconnected</name></member>
+      <member refid="struct_m_l_camera_device_status_callbacks_1a2f00dbcc2ac25570add2195b63f00db0" prot="public" virt="non-virtual"><scope>MLCameraDeviceStatusCallbacks</scope><name>on_device_error</name></member>
+      <member refid="struct_m_l_camera_device_status_callbacks_1afb2e5522177d36abdeb3dfd3a7c04731" prot="public" virt="non-virtual"><scope>MLCameraDeviceStatusCallbacks</scope><name>on_device_idle</name></member>
+      <member refid="struct_m_l_camera_device_status_callbacks_1a91e0d6fa41c39ccf848e3fe62dc9f2bc" prot="public" virt="non-virtual"><scope>MLCameraDeviceStatusCallbacks</scope><name>on_device_streaming</name></member>
+      <member refid="struct_m_l_camera_device_status_callbacks_1a2b3d86c92817259ac6b6e85be0f7859d" prot="public" virt="non-virtual"><scope>MLCameraDeviceStatusCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

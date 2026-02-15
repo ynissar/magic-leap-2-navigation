@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_spatial_anchor" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpatialAnchor</compoundname>
+    <includes refid="ml__spatial__anchor_8h" local="no">ml_spatial_anchor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1a55029aee6f1e8c955723629caa53b0a3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpatialAnchor::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>Version of the structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="208" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1ad1e4fca04db9f0e569d4a83a59670ce5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>MLUUID MLSpatialAnchor::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The anchor&apos;s unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a unique identifier for a single Spatial Anchor that is generated and managed by the Spatial Anchor system. The ID is created when MLSpatialAnchorCreate is called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="216" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1adbcf63531a37daa62b68fcfc33ae651f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLSpatialAnchor::cfuid</definition>
+        <argsstring></argsstring>
+        <name>cfuid</name>
+        <briefdescription>
+<para>The coordinate frame identifier of the Spatial Anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This should be passed to MLSnapshotGetTransform to get the anchor&apos;s transform.</para>
+<para>The anchor&apos;s transform is set when the anchor is created but may be updated later by the Spatial Anchor system based on factors such as quality of the mapped space and subsequent localizations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="226" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1a7f73114b285c81aa7b53cb34aa135b87" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t MLSpatialAnchor::expiration_timestamp_s</definition>
+        <argsstring></argsstring>
+        <name>expiration_timestamp_s</name>
+        <briefdescription>
+<para>The suggested expiration timestamp for this anchor represented in seconds since the Unix epoch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial Anchor system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="234" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1a389c94eacb4e3d0579656a589d959852" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLSpatialAnchor::is_persisted</definition>
+        <argsstring></argsstring>
+        <name>is_persisted</name>
+        <briefdescription>
+<para>Indicates whether or not the anchor has been persisted via a call to <ref refid="group___spatial_anchor_1ga6f611aba2f239c6f880a54bee4b66e38" kindref="member">MLSpatialAnchorPublish</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="239" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1a4b01d13f5ac2bd4b32fddbbd9d0629c5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>MLUUID MLSpatialAnchor::space_id</definition>
+        <argsstring></argsstring>
+        <name>space_id</name>
+        <briefdescription>
+<para>The ID of the space that this anchor belongs to. This is only relevant if is_persisted is true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="244" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_1a186c30863780abaa9ad4d7c7cefd9df1" prot="public" static="no" mutable="no">
+        <type><ref refid="group___spatial_anchor_1ga6c5272ce6185402df25df0a22500ccd6" kindref="member">MLSpatialAnchorQuality</ref></type>
+        <definition>MLSpatialAnchorQuality MLSpatialAnchor::quality</definition>
+        <argsstring></argsstring>
+        <name>quality</name>
+        <briefdescription>
+<para>The quality of the local space that this anchor occupies. This value may change over time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="249" column="26" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure representing a user-defined Spatial Anchor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+      <node id="1">
+        <label>MLSpatialAnchor</label>
+        <link refid="struct_m_l_spatial_anchor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id</edgelabel>
+          <edgelabel>space_id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cfuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="204" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="204" bodyend="250"/>
+    <listofallmembers>
+      <member refid="struct_m_l_spatial_anchor_1adbcf63531a37daa62b68fcfc33ae651f" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>cfuid</name></member>
+      <member refid="struct_m_l_spatial_anchor_1a7f73114b285c81aa7b53cb34aa135b87" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>expiration_timestamp_s</name></member>
+      <member refid="struct_m_l_spatial_anchor_1ad1e4fca04db9f0e569d4a83a59670ce5" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>id</name></member>
+      <member refid="struct_m_l_spatial_anchor_1a389c94eacb4e3d0579656a589d959852" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>is_persisted</name></member>
+      <member refid="struct_m_l_spatial_anchor_1a186c30863780abaa9ad4d7c7cefd9df1" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>quality</name></member>
+      <member refid="struct_m_l_spatial_anchor_1a4b01d13f5ac2bd4b32fddbbd9d0629c5" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>space_id</name></member>
+      <member refid="struct_m_l_spatial_anchor_1a55029aee6f1e8c955723629caa53b0a3" prot="public" virt="non-virtual"><scope>MLSpatialAnchor</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

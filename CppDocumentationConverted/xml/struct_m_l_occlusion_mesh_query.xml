@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_occlusion_mesh_query" kind="struct" language="C++" prot="public">
+    <compoundname>MLOcclusionMeshQuery</compoundname>
+    <includes refid="ml__occlusion_8h" local="no">ml_occlusion.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_query_1a1e2819d8fabb588276010e0330938b70" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLOcclusionMeshQuery::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="129" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure for occlusion mesh query. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="127" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="127" bodyend="130"/>
+    <listofallmembers>
+      <member refid="struct_m_l_occlusion_mesh_query_1a1e2819d8fabb588276010e0330938b70" prot="public" virt="non-virtual"><scope>MLOcclusionMeshQuery</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

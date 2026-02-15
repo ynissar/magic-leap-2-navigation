@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_web_view_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLWebViewSettings</compoundname>
+    <includes refid="ml__webview_8h" local="no">ml_webview.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1a2e34f429b2cc22f6c2d9f77c8cadae2f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWebViewSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="334" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1ae0862ca74e60d9bcc04836387ff22fe7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWebViewSettings::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal size of webview in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="336" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1ade795aaa4cc1b659a52bebb43dbede93" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWebViewSettings::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vertical size of webview in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="338" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1a1699ebfe8bd53f81c99d4c472ddcdfe7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MLWebViewSettings::application_vm</definition>
+        <argsstring></argsstring>
+        <name>application_vm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>JavaVM pointer to use for Android up-calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="340" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1a3d7ede2193c32077dbc643773c304f60" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MLWebViewSettings::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Android jobject to android.content.Context instance for Android up-calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="342" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1a3abe7a0b08c199224ff5f55d033442a2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref></type>
+        <definition>MLWebViewEventCallbacks MLWebViewSettings::callbacks</definition>
+        <argsstring></argsstring>
+        <name>callbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event callbacks for interacting with webview. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="344" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1a3bb5fe96738f010ab4b0dcb9e4ad973b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLWebViewSettings::is_popup</definition>
+        <argsstring></argsstring>
+        <name>is_popup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is this a popup? </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="346" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_settings_1ab61c4d4b70dbeb1bd4509c191f113d1f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t MLWebViewSettings::popup_id</definition>
+        <argsstring></argsstring>
+        <name>popup_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Popup identifier used to create a webview. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="348" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct to define webview initialization. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1gaa5db486d68d7e91604288136c92f3a40" kindref="member">MLWebViewSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLWebViewEventCallbacks</label>
+        <link refid="struct_m_l_web_view_event_callbacks"/>
+      </node>
+      <node id="1">
+        <label>MLWebViewSettings</label>
+        <link refid="struct_m_l_web_view_settings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>callbacks</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="333" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="333" bodyend="349"/>
+    <listofallmembers>
+      <member refid="struct_m_l_web_view_settings_1a1699ebfe8bd53f81c99d4c472ddcdfe7" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>application_vm</name></member>
+      <member refid="struct_m_l_web_view_settings_1a3abe7a0b08c199224ff5f55d033442a2" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>callbacks</name></member>
+      <member refid="struct_m_l_web_view_settings_1a3d7ede2193c32077dbc643773c304f60" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>context</name></member>
+      <member refid="struct_m_l_web_view_settings_1ade795aaa4cc1b659a52bebb43dbede93" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>height</name></member>
+      <member refid="struct_m_l_web_view_settings_1a3bb5fe96738f010ab4b0dcb9e4ad973b" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>is_popup</name></member>
+      <member refid="struct_m_l_web_view_settings_1ab61c4d4b70dbeb1bd4509c191f113d1f" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>popup_id</name></member>
+      <member refid="struct_m_l_web_view_settings_1a2e34f429b2cc22f6c2d9f77c8cadae2f" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>version</name></member>
+      <member refid="struct_m_l_web_view_settings_1ae0862ca74e60d9bcc04836387ff22fe7" prot="public" virt="non-virtual"><scope>MLWebViewSettings</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

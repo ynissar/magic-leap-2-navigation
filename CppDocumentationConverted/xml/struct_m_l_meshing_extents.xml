@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_extents" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingExtents</compoundname>
+    <includes refid="ml__meshing2_8h" local="no">ml_meshing2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_extents_1a02a0085efa40fe3fbe43dc544559f327" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLMeshingExtents::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The center of the bounding box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="113" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_extents_1aef08c50becbb063256890848fc64d68a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>MLQuaternionf MLMeshingExtents::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The rotation of the bounding box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="115" column="17" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_extents_1a254fb201e318ccd315e0b81ff326b837" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLMeshingExtents::extents</definition>
+        <argsstring></argsstring>
+        <name>extents</name>
+        <briefdescription>
+<para>The size of the bounding box. When a mesh request is complete all mesh blocks within 10 meters of the device that intersect with the extents provided here will be returned in <ref refid="struct_m_l_meshing_mesh_info" kindref="compound">MLMeshingMeshInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="120" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Axis aligned bounding box for querying updated mesh info. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="3">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+      <node id="1">
+        <label>MLMeshingExtents</label>
+        <link refid="struct_m_l_meshing_extents"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>center</edgelabel>
+          <edgelabel>extents</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="111" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="111" bodyend="121"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_extents_1a02a0085efa40fe3fbe43dc544559f327" prot="public" virt="non-virtual"><scope>MLMeshingExtents</scope><name>center</name></member>
+      <member refid="struct_m_l_meshing_extents_1a254fb201e318ccd315e0b81ff326b837" prot="public" virt="non-virtual"><scope>MLMeshingExtents</scope><name>extents</name></member>
+      <member refid="struct_m_l_meshing_extents_1aef08c50becbb063256890848fc64d68a" prot="public" virt="non-virtual"><scope>MLMeshingExtents</scope><name>rotation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_import_out_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceImportOutData</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_import_out_data_1af1744644a624b1d76ef1045dd55d8433" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>MLUUID MLSpaceImportOutData::space_id</definition>
+        <argsstring></argsstring>
+        <name>space_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unique ID of the imported Space. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="450" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the imported Space. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLSpaceImportOutData</label>
+        <link refid="struct_m_l_space_import_out_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>space_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="448" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="448" bodyend="451"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_import_out_data_1af1744644a624b1d76ef1045dd55d8433" prot="public" virt="non-virtual"><scope>MLSpaceImportOutData</scope><name>space_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

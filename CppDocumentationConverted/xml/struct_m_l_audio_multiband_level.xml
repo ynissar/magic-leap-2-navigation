@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_multiband_level" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioMultibandLevel</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1ga87f5a643608eaed2a6a122ee11750535" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::main</definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for all frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="202" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gad8ce680729fd5183f164b8ce90d44028" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::lf</definition>
+        <argsstring></argsstring>
+        <name>lf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for low frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="204" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga98ccc40334de56fc00f77d65c5c3ceec" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::mf</definition>
+        <argsstring></argsstring>
+        <name>mf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for mid frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="206" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga556d2b6a21f1b849d0f384586bca4a51" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioMultibandLevel::hf</definition>
+        <argsstring></argsstring>
+        <name>hf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level for high frequencies. Range is contextual. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="208" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties specifying a broadband level and three sub-band levels. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="200" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="200" bodyend="209"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1ga556d2b6a21f1b849d0f384586bca4a51" prot="public" virt="non-virtual"><scope>MLAudioMultibandLevel</scope><name>hf</name></member>
+      <member refid="group___audio_defs_1gad8ce680729fd5183f164b8ce90d44028" prot="public" virt="non-virtual"><scope>MLAudioMultibandLevel</scope><name>lf</name></member>
+      <member refid="group___audio_defs_1ga87f5a643608eaed2a6a122ee11750535" prot="public" virt="non-virtual"><scope>MLAudioMultibandLevel</scope><name>main</name></member>
+      <member refid="group___audio_defs_1ga98ccc40334de56fc00f77d65c5c3ceec" prot="public" virt="non-virtual"><scope>MLAudioMultibandLevel</scope><name>mf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

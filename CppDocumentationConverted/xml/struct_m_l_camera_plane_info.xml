@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_plane_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraPlaneInfo</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1ac386503c6cbaef0a5059e793618ddfe4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="364" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1aa69930d8611b98c2066304b3440f45cb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the output image in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="366" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1ab2559ddeecbc1038fb6fc32bcee80e06" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the output image in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="368" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1a7dd705618ba10d0d4ca215fcd1b8e9de" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stride of the output image in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="370" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1aae5cb9f716795f89be23b855f84ca26a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::bytes_per_pixel</definition>
+        <argsstring></argsstring>
+        <name>bytes_per_pixel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes used to represent a pixel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="372" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1af5bd60890274c12bf311618b8847f9cf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::pixel_stride</definition>
+        <argsstring></argsstring>
+        <name>pixel_stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance between 2 consecutive pixels in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="374" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1a86b0d1c36fedf868b3a5a8b10bd6661b" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* MLCameraPlaneInfo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Image data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="376" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_plane_info_1a63dba8a5fd6ba868b91f2a2e7529bf88" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraPlaneInfo::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes in the image output data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="378" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Per plane info for captured output. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="362" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="362" bodyend="379"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_plane_info_1aae5cb9f716795f89be23b855f84ca26a" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>bytes_per_pixel</name></member>
+      <member refid="struct_m_l_camera_plane_info_1a86b0d1c36fedf868b3a5a8b10bd6661b" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>data</name></member>
+      <member refid="struct_m_l_camera_plane_info_1ab2559ddeecbc1038fb6fc32bcee80e06" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>height</name></member>
+      <member refid="struct_m_l_camera_plane_info_1af5bd60890274c12bf311618b8847f9cf" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>pixel_stride</name></member>
+      <member refid="struct_m_l_camera_plane_info_1a63dba8a5fd6ba868b91f2a2e7529bf88" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>size</name></member>
+      <member refid="struct_m_l_camera_plane_info_1a7dd705618ba10d0d4ca215fcd1b8e9de" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>stride</name></member>
+      <member refid="struct_m_l_camera_plane_info_1ac386503c6cbaef0a5059e793618ddfe4" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>version</name></member>
+      <member refid="struct_m_l_camera_plane_info_1aa69930d8611b98c2066304b3440f45cb" prot="public" virt="non-virtual"><scope>MLCameraPlaneInfo</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

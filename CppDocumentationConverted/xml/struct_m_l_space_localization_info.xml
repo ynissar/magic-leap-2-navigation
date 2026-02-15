@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_localization_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceLocalizationInfo</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_localization_info_1a1ea351923f473fdcbf85deebdacac727" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceLocalizationInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="304" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_localization_info_1a86166fa6c75af4bf0b212481a46ec3d0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>MLUUID MLSpaceLocalizationInfo::space_id</definition>
+        <argsstring></argsstring>
+        <name>space_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref> of the Space into which the device attempts to localize into. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="306" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A collection of parameters to be used for localization request. This structure must be initialized by calling <ref refid="group___space_1gad15116e35a8c009cef4218608c0a07cc" kindref="member">MLSpaceLocalizationInfoInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+      <node id="1">
+        <label>MLSpaceLocalizationInfo</label>
+        <link refid="struct_m_l_space_localization_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>space_id</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="302" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="302" bodyend="307"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_localization_info_1a86166fa6c75af4bf0b212481a46ec3d0" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationInfo</scope><name>space_id</name></member>
+      <member refid="struct_m_l_space_localization_info_1a1ea351923f473fdcbf85deebdacac727" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationInfo</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

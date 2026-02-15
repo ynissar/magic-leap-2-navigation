@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_perception_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLPerceptionSettings</compoundname>
+    <includes refid="ml__perception_8h" local="no">ml_perception.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_perception_settings_1a1e139dc34620e981ec83fafd6f806e5f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MLPerceptionSettings::override_port</definition>
+        <argsstring></argsstring>
+        <name>override_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="31" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Settings for initializing the perception system. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="30" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" bodystart="30" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_m_l_perception_settings_1a1e139dc34620e981ec83fafd6f806e5f" prot="public" virt="non-virtual"><scope>MLPerceptionSettings</scope><name>override_port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

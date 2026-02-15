@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_version" kind="struct" language="C++" prot="public">
+    <compoundname>MLVersion</compoundname>
+    <includes refid="ml__api_8h" local="no">ml_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_version_1a65b8c2f9f0f447cb22d8ec87cac337ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLVersion::major</definition>
+        <argsstring></argsstring>
+        <name>major</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Major version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="95" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_version_1a6b7f8a625f4e0387b4947e12ed317b3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLVersion::minor</definition>
+        <argsstring></argsstring>
+        <name>minor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minor version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="97" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_version_1a87021faa71ab3f87eaf87e9aaf4ba7fa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLVersion::revision</definition>
+        <argsstring></argsstring>
+        <name>revision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Revision. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="99" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_version_1ac8ff55e69c067a422b6df3286bcbff14" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char MLVersion::build_id[MLVersion_BuildIdMaxLength]</definition>
+        <argsstring>[MLVersion_BuildIdMaxLength]</argsstring>
+        <name>build_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="101" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SDK version: &apos;[major].[minor].[revision].[build_id]&apos;. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="93" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="93" bodyend="102"/>
+    <listofallmembers>
+      <member refid="struct_m_l_version_1ac8ff55e69c067a422b6df3286bcbff14" prot="public" virt="non-virtual"><scope>MLVersion</scope><name>build_id</name></member>
+      <member refid="struct_m_l_version_1a65b8c2f9f0f447cb22d8ec87cac337ec" prot="public" virt="non-virtual"><scope>MLVersion</scope><name>major</name></member>
+      <member refid="struct_m_l_version_1a6b7f8a625f4e0387b4947e12ed317b3e" prot="public" virt="non-virtual"><scope>MLVersion</scope><name>minor</name></member>
+      <member refid="struct_m_l_version_1a87021faa71ab3f87eaf87e9aaf4ba7fa" prot="public" virt="non-virtual"><scope>MLVersion</scope><name>revision</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

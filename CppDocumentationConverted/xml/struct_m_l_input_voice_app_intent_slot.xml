@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_input_voice_app_intent_slot" kind="struct" language="C++" prot="public">
+    <compoundname>MLInputVoiceAppIntentSlot</compoundname>
+    <includes refid="ml__voice_8h" local="no">ml_voice.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_input_voice_app_intent_slot_1a43c90c87ea03da008f37a8813fb21c90" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MLInputVoiceAppIntentSlot::slot_name</definition>
+        <argsstring></argsstring>
+        <name>slot_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The C string carrying slot name which is UTF-8 and null terminated. And the memory of this variable is managed by system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="99" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_voice_app_intent_slot_1aa497a44720cb219ff60c7e1883748426" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MLInputVoiceAppIntentSlot::slot_value</definition>
+        <argsstring></argsstring>
+        <name>slot_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The C string carrying concept value which is UTF-8 and null terminated. And the memory of this variable is managed by system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="102" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing voice app-intent slot in voice event. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="96" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="96" bodyend="103"/>
+    <listofallmembers>
+      <member refid="struct_m_l_input_voice_app_intent_slot_1a43c90c87ea03da008f37a8813fb21c90" prot="public" virt="non-virtual"><scope>MLInputVoiceAppIntentSlot</scope><name>slot_name</name></member>
+      <member refid="struct_m_l_input_voice_app_intent_slot_1aa497a44720cb219ff60c7e1883748426" prot="public" virt="non-virtual"><scope>MLInputVoiceAppIntentSlot</scope><name>slot_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

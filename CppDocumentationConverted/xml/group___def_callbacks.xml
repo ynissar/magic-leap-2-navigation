@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_callbacks" kind="group">
+    <compoundname>DefCallbacks</compoundname>
+    <title>Callbacks</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_callbacks_1ga96ebf02309a503a470bbeed9ade4f3eb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioSoundEventCallback) (MLHandle handle, MLAudioSoundEvent event, void *context)</definition>
+        <argsstring>)(MLHandle handle, MLAudioSoundEvent event, void *context)</argsstring>
+        <name>MLAudioSoundEventCallback</name>
+        <briefdescription>
+<para>Callback to notify when a sound event has occurred. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking, except for calls to MLAudioDestroySound which will be blocked until the callback returns (unless the &apos;Destroy&apos; call is called from the same thread as the callback, in which case it won&apos;t be blocked). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="546" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1gad873331c56c0b4a096e6b835f0bbdde0" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioMediaEventCallback) (MLAudioMediaEvent event, void *context)</definition>
+        <argsstring>)(MLAudioMediaEvent event, void *context)</argsstring>
+        <name>MLAudioMediaEventCallback</name>
+        <briefdescription>
+<para>Callback to notify when a media event has occurred. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="552" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1ga2a3527d903d9e8c4911d76f0432a0e10" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioBufferCallback) (MLHandle handle, void *context)</definition>
+        <argsstring>)(MLHandle handle, void *context)</argsstring>
+        <name>MLAudioBufferCallback</name>
+        <briefdescription>
+<para>Callback to notify when an audio buffer is available for reading or writing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking, except for calls to MLAudioDestroySound and MLAudioDestroyInput (for sounds and inputs respectively) which will be blocked until the callback returns (unless the &apos;Destroy&apos; call is called from the same thread as the callback, in which case it won&apos;t be blocked). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="562" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1ga8b1c4b5ae6c501ded1914cf3df49f51f" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioResourceDiscardedCallback) (MLHandle resource, void *context)</definition>
+        <argsstring>)(MLHandle resource, void *context)</argsstring>
+        <name>MLAudioResourceDiscardedCallback</name>
+        <briefdescription>
+<para>Callback to notify when an audio resource&apos;s data is being discarded to make room for other resource data. Resource data that is not being referenced by a sound will be discarded before resource data that is being referenced by a sound. Resources that are being played by a sound will not have their data discarded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="572" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1ga6d858bcead8bb23af387e45077e670c4" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioMasterVolumeChangedCallback) (float new_volume, void *context)</definition>
+        <argsstring>)(float new_volume, void *context)</argsstring>
+        <name>MLAudioMasterVolumeChangedCallback</name>
+        <briefdescription>
+<para>Callback to notify when the master volume has been changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="578" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1ga5b6ce49c5bbf1482360f3a3c19e799ae" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioOutputMuteChangedCallback) (bool is_muted, void *context)</definition>
+        <argsstring>)(bool is_muted, void *context)</argsstring>
+        <name>MLAudioOutputMuteChangedCallback</name>
+        <briefdescription>
+<para>Callback to notify when the global output mute has been changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="584" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1ga2cf31440a911e0a5b9fb26fe619b8544" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioOutputDeviceChangedCallback) (MLAudioOutputDevice current_device, void *context)</definition>
+        <argsstring>)(MLAudioOutputDevice current_device, void *context)</argsstring>
+        <name>MLAudioOutputDeviceChangedCallback</name>
+        <briefdescription>
+<para>Callback to notify when the active output device has changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="590" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1ga6627dc197a757417eb9113e4e0cc156d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioMicMuteCallback) (bool is_muted, void *context)</definition>
+        <argsstring>)(bool is_muted, void *context)</argsstring>
+        <name>MLAudioMicMuteCallback</name>
+        <briefdescription>
+<para>Callback to notify when the global mic mute has been changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="596" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1gaa9ca8f45f6a245454b594059448c1378" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioTraitAnalysisCallback) (MLHandle handle, MLAudioTraitAnalysisTarget target, float value, void *context)</definition>
+        <argsstring>)(MLHandle handle, MLAudioTraitAnalysisTarget target, float value, void *context)</argsstring>
+        <name>MLAudioTraitAnalysisCallback</name>
+        <briefdescription>
+<para>Callback to provide a changed value for a running trait analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="602" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_callbacks_1gab0aa4a1d32c6bd512dd87f5260a7409a" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MLAudioSpectralAnalysisCallback) (MLHandle handle, MLAudioSpectralAnalysisTarget target, MLAudioSpectralAnalysis values, void *context)</definition>
+        <argsstring>)(MLHandle handle, MLAudioSpectralAnalysisTarget target, MLAudioSpectralAnalysis values, void *context)</argsstring>
+        <name>MLAudioSpectralAnalysisCallback</name>
+        <briefdescription>
+<para>Callback to provide a changed value set for a running spectral analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called on a separate thread which is non-blocking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="608" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CALLBACKS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

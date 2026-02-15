@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__media__common_8h" kind="file" language="C++">
+    <compoundname>ml_media_common.h</compoundname>
+    <includedby refid="ml__media__extractor_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</includedby>
+    <includedby refid="ml__media__player_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</label>
+        <link refid="ml__media__player_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_common.h</label>
+        <link refid="ml__media__common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</label>
+        <link refid="ml__media__extractor_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___media_player_1ga5c451a324f07b4385a07abdcb42214ae" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaSeekMode</name>
+        <enumvalue id="group___media_player_1gga5c451a324f07b4385a07abdcb42214aeafa2ff7b24b56c915810df2181cba66b3" prot="public">
+          <name>MLMediaSeekMode_Previous_Sync</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Seek to the previous key frame. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea08ecce17d043eb0a124c7bf3bbaca34d" prot="public">
+          <name>MLMediaSeekMode_Next_Sync</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Seek to the next key frame. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea5c3a09c173665c588263e63edf6c0508" prot="public">
+          <name>MLMediaSeekMode_Closest_Sync</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Seek to the closest key frame. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga5c451a324f07b4385a07abdcb42214aeae2962596cadb89f74f139dc58721dada" prot="public">
+          <name>MLMediaSeekMode_Closest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Seek to the closest frame, more accurate but slower. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea02c41282017b21d6223b39626c02c9b8" prot="public">
+          <name>MLMediaSeekMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode indicating where exactly to seek to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_common.h" line="29" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_common.h" bodystart="29" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___media_player_1gaf50c74894774041706449c9de622b5b9" prot="public" static="no">
+        <type>enum <ref refid="group___media_player_1ga5c451a324f07b4385a07abdcb42214ae" kindref="member">MLMediaSeekMode</ref></type>
+        <definition>typedef enum MLMediaSeekMode MLMediaSeekMode</definition>
+        <argsstring></argsstring>
+        <name>MLMediaSeekMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode indicating where exactly to seek to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_common.h" line="40" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="group___media_player_1ga5c451a324f07b4385a07abdcb42214ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1ga5c451a324f07b4385a07abdcb42214ae" kindref="member">MLMediaSeekMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aeafa2ff7b24b56c915810df2181cba66b3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aeafa2ff7b24b56c915810df2181cba66b3" kindref="member">MLMediaSeekMode_Previous_Sync</ref>,</highlight></codeline>
+<codeline lineno="33" refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea08ecce17d043eb0a124c7bf3bbaca34d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea08ecce17d043eb0a124c7bf3bbaca34d" kindref="member">MLMediaSeekMode_Next_Sync</ref>,</highlight></codeline>
+<codeline lineno="35" refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea5c3a09c173665c588263e63edf6c0508" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea5c3a09c173665c588263e63edf6c0508" kindref="member">MLMediaSeekMode_Closest_Sync</ref>,</highlight></codeline>
+<codeline lineno="37" refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aeae2962596cadb89f74f139dc58721dada" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aeae2962596cadb89f74f139dc58721dada" kindref="member">MLMediaSeekMode_Closest</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga5c451a324f07b4385a07abdcb42214aea02c41282017b21d6223b39626c02c9b8" kindref="member">MLMediaSeekMode_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="40" refid="group___media_player_1gaf50c74894774041706449c9de622b5b9" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_player_1ga5c451a324f07b4385a07abdcb42214ae" kindref="member">MLMediaSeekMode</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_common.h"/>
+  </compounddef>
+</doxygen>

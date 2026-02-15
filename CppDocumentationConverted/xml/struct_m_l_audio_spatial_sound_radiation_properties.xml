@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_spatial_sound_radiation_properties" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioSpatialSoundRadiationProperties</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1ga77b43e1cedc9c05fa2ebb5f219bbeaf5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::inner_angle</definition>
+        <argsstring></argsstring>
+        <name>inner_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle in degrees defining the sides of a cone, within which there is no radiation attenuation. Range is 0 to 360. Default is 50. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="276" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gab432fb7870f3b652a9327fb2ed450648" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_angle</definition>
+        <argsstring></argsstring>
+        <name>outer_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle in degrees defining the sides of a cone, beyond which the outer_gain values are fully applied. Range is 0 to 360. Default is 340. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="278" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0a503746cdcc2e8ecba1f91264844a5c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain</definition>
+        <argsstring></argsstring>
+        <name>outer_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for all frequencies. Range is 0 to 1. Default is 1. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="280" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0bd21d5c17765761d4dc635b798476cb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain_lf</definition>
+        <argsstring></argsstring>
+        <name>outer_gain_lf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for low frequencies. Range is 0 to 1. Default is 0.65. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="282" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga2b296bf04efdd84c43923abd22293b44" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain_mf</definition>
+        <argsstring></argsstring>
+        <name>outer_gain_mf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for mid frequencies. Range is 0 to 1. Default is 0.4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="284" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga26858911a1e8e8029b461f0f15d25cfc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundRadiationProperties::outer_gain_hf</definition>
+        <argsstring></argsstring>
+        <name>outer_gain_hf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gain applied beyond outer cone for high frequencies. Range is 0 to 1. Default is 0.08. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="286" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Properties describing the directionality of a spatial sound using two cones, between which attention values are interpolated. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="274" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="274" bodyend="287"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1ga77b43e1cedc9c05fa2ebb5f219bbeaf5" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundRadiationProperties</scope><name>inner_angle</name></member>
+      <member refid="group___audio_defs_1gab432fb7870f3b652a9327fb2ed450648" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundRadiationProperties</scope><name>outer_angle</name></member>
+      <member refid="group___audio_defs_1ga0a503746cdcc2e8ecba1f91264844a5c" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundRadiationProperties</scope><name>outer_gain</name></member>
+      <member refid="group___audio_defs_1ga26858911a1e8e8029b461f0f15d25cfc" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundRadiationProperties</scope><name>outer_gain_hf</name></member>
+      <member refid="group___audio_defs_1ga0bd21d5c17765761d4dc635b798476cb" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundRadiationProperties</scope><name>outer_gain_lf</name></member>
+      <member refid="group___audio_defs_1ga2b296bf04efdd84c43923abd22293b44" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundRadiationProperties</scope><name>outer_gain_mf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

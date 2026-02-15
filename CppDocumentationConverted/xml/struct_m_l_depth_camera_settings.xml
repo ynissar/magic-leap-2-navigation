@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_depth_camera_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLDepthCameraSettings</compoundname>
+    <includes refid="ml__depth__camera_8h" local="no">ml_depth_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_depth_camera_settings_1a8d90fb3e4d342dead9c41185fd4fde2f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="237" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_settings_1a506edf4c75773246445def3ad33ebe55" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraSettings::streams</definition>
+        <argsstring></argsstring>
+        <name>streams</name>
+        <briefdescription>
+<para>Depth camera stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___d_cam_1ga80cd3148e1f2cb24ed2e90f0bab9fb1c" kindref="member">MLDepthCameraStream</ref> for more details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="244" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_settings_1aff2362245392adba56cb6b418c4bd498" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_depth_camera_stream_config" kindref="compound">MLDepthCameraStreamConfig</ref></type>
+        <definition>MLDepthCameraStreamConfig MLDepthCameraSettings::stream_configs[MLDepthCameraFrameType_Count]</definition>
+        <argsstring>[MLDepthCameraFrameType_Count]</argsstring>
+        <name>stream_configs</name>
+        <briefdescription>
+<para>Controls for each of the depth camera streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only controls for streams enabled via <ref refid="struct_m_l_depth_camera_settings_1a506edf4c75773246445def3ad33ebe55" kindref="member">streams</ref> field will be read. Use <ref refid="group___d_cam_1ga5f2c5af9cc3a3b87e1dfd8152943dd46" kindref="member">MLDepthCameraFrameType</ref> enumeration for indexing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="251" column="29" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to encapsulate the camera settings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___d_cam_1ga1aed943f1ad81c5299171f91b8938427" kindref="member">MLDepthCameraSettingsInit</ref> before use.</para>
+<para>These are supported configurations: <table rows="0" cols="0"><caption>Streams Exposure limits [us] Frame rate [FPS] Long Range 250 - 2000 1, 5 Short Range 50 - 375 On 50Hz PLC: 5, 25, 50On 60Hz PLC: 5, 30, 60  Use <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities</ref> to get a list of available configurations. \note The system may not be able to service all the requested streams at any given time. This parameter is treated as a hint and data will be provided for the requested streams if available. \note The API only supports a single stream. In a future release support for multiple streams will be added. @par API Level:\n 29 </caption>
+</table>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLDepthCameraSettings</label>
+        <link refid="struct_m_l_depth_camera_settings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>stream_configs</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLDepthCameraStreamConfig</label>
+        <link refid="struct_m_l_depth_camera_stream_config"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="235" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="235" bodyend="252"/>
+    <listofallmembers>
+      <member refid="struct_m_l_depth_camera_settings_1aff2362245392adba56cb6b418c4bd498" prot="public" virt="non-virtual"><scope>MLDepthCameraSettings</scope><name>stream_configs</name></member>
+      <member refid="struct_m_l_depth_camera_settings_1a506edf4c75773246445def3ad33ebe55" prot="public" virt="non-virtual"><scope>MLDepthCameraSettings</scope><name>streams</name></member>
+      <member refid="struct_m_l_depth_camera_settings_1a8d90fb3e4d342dead9c41185fd4fde2f" prot="public" virt="non-virtual"><scope>MLDepthCameraSettings</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

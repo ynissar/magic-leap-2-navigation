@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_result_extras" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraResultExtras</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_result_extras_1adb07cda662a2f42a5c1410d0f0c2020d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraResultExtras::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="440" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_result_extras_1a90347a417b9beb9e62155f9b18071f08" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t MLCameraResultExtras::frame_number</definition>
+        <argsstring></argsstring>
+        <name>frame_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 64bit integer to index the frame number associated with this result. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="442" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_result_extras_1a43e5d3f267f1d2229e09f1305d102c96" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLCameraResultExtras::vcam_timestamp</definition>
+        <argsstring></argsstring>
+        <name>vcam_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame timestamp. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="444" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_result_extras_1ae10cd9cdcc83179803c031ffd93845fb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_camera_intrinsic_calibration_parameters" kindref="compound">MLCameraIntrinsicCalibrationParameters</ref> *</type>
+        <definition>MLCameraIntrinsicCalibrationParameters* MLCameraResultExtras::intrinsics</definition>
+        <argsstring></argsstring>
+        <name>intrinsics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera intrinsic parameter.</para>
+<para>Only valid within callback scope.</para>
+<para>The Library allocates and maintains the lifetime of intrinsics.</para>
+<para>Only valid for on_image_buffer_available, on_video_buffer_available, on_preview_buffer_available callbacks.</para>
+<para>NULL for on_capture_completed, on_capture_failed callbacks. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="450" column="42" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to encapsulate various indices for a capture result. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>MLVec2f</label>
+        <link refid="struct_m_l_vec2f"/>
+      </node>
+      <node id="1">
+        <label>MLCameraResultExtras</label>
+        <link refid="struct_m_l_camera_result_extras"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>intrinsics</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCameraIntrinsicCalibrationParameters</label>
+        <link refid="struct_m_l_camera_intrinsic_calibration_parameters"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>focal_length</edgelabel>
+          <edgelabel>principal_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="438" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="438" bodyend="451"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_result_extras_1a90347a417b9beb9e62155f9b18071f08" prot="public" virt="non-virtual"><scope>MLCameraResultExtras</scope><name>frame_number</name></member>
+      <member refid="struct_m_l_camera_result_extras_1ae10cd9cdcc83179803c031ffd93845fb" prot="public" virt="non-virtual"><scope>MLCameraResultExtras</scope><name>intrinsics</name></member>
+      <member refid="struct_m_l_camera_result_extras_1a43e5d3f267f1d2229e09f1305d102c96" prot="public" virt="non-virtual"><scope>MLCameraResultExtras</scope><name>vcam_timestamp</name></member>
+      <member refid="struct_m_l_camera_result_extras_1adb07cda662a2f42a5c1410d0f0c2020d" prot="public" virt="non-virtual"><scope>MLCameraResultExtras</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___spatial_anchor" kind="group">
+    <compoundname>SpatialAnchor</compoundname>
+    <title>Spatial Anchor</title>
+    <innerclass refid="struct_m_l_spatial_anchor" prot="public">MLSpatialAnchor</innerclass>
+    <innerclass refid="struct_m_l_spatial_anchor_create_info" prot="public">MLSpatialAnchorCreateInfo</innerclass>
+    <innerclass refid="struct_m_l_spatial_anchor_query_filter" prot="public">MLSpatialAnchorQueryFilter</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___spatial_anchor_1gaac34dfe6c6b73b43a4656c9dce041034" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@29</name>
+        <enumvalue id="group___spatial_anchor_1ggaac34dfe6c6b73b43a4656c9dce041034a8521276d752ce61491e2ffcf9085a607" prot="public">
+          <name>MLResultAPIPrefix_SpatialAnchor</name>
+          <initializer>= ( 0x439  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLSpatialAnchorResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggaac34dfe6c6b73b43a4656c9dce041034aa9c722b8293d7bf4fe6c2bd619b013d6" prot="public">
+          <name>MLSpatialAnchor_MaxSpaceNameLength</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum size for the name of the space in the <ref refid="group___spatial_anchor_1ga6f72383e992b07b725ef886736401f26" kindref="member">MLSpatialAnchorLocalizationInfo</ref> structure. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___spatial_anchor_1gab82a21e303a00d81097c1d6396ff3373" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpatialAnchorResult</name>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373acf2f5044c1dfd600e832bbaca9437260" prot="public">
+          <name>MLSpatialAnchorResult_MaxAnchorLimitReached</name>
+          <initializer>= MLResultAPIPrefix_SpatialAnchor</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The maximum number of anchors for the current space has been reached. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373a3ab00e52ca539830ccabe9cd157e3486" prot="public">
+          <name>MLSpatialAnchorResult_MinDistanceThresholdExceeded</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The minimum distance between anchors was not met. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373a91c6d71fa1bb2b35e6b3b0a8f242ff67" prot="public">
+          <name>MLSpatialAnchorResult_InsufficientMapping</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The space has not been sufficiently mapped to allow this operation. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373a44d6c3c89868a60ba6b320c12a66617c" prot="public">
+          <name>MLSpatialAnchorResult_InvalidId</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The provided anchor Id was not valid. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373a49333e8671b5acf0b8bdd6d2007c76ea" prot="public">
+          <name>MLSpatialAnchorResult_InvalidExpirationTimestamp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The provided expiration suggestion was not valid. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373a6f427e86bcb1ec8feaf8735fc623db3d" prot="public">
+          <name>MLSpatialAnchorResult_NotLocalized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The operation cannot be completed because the device has not yet localized. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373adf73ee504a8c37f7587fbf4e078f103c" prot="public">
+          <name>MLSpatialAnchorResult_ServerError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There was an error communicating with the server. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373abd35a650188ab14ecacee6bf32d97611" prot="public">
+          <name>MLSpatialAnchorResult_ServiceUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The operation failed because the underlying service is not yet available, retry later. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1ggab82a21e303a00d81097c1d6396ff3373ac5d7431809044e9d201bd63400a7696a" prot="public">
+          <name>MLSpatialAnchorResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SpatialAnchor-specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="58" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___spatial_anchor_1ga7f1ce040d38400fbae97c01c231ac591" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpatialAnchorLocalizationStatus</name>
+        <enumvalue id="group___spatial_anchor_1gga7f1ce040d38400fbae97c01c231ac591aff8e2ebca73cb5a0e5525b1a6109d7d0" prot="public">
+          <name>MLSpatialAnchorLocalizationStatus_NotLocalized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device is not currently localized. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga7f1ce040d38400fbae97c01c231ac591ad696db5810ee14f101806e7ef4ca23e8" prot="public">
+          <name>MLSpatialAnchorLocalizationStatus_Localized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device has localized successfully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga7f1ce040d38400fbae97c01c231ac591af692a7b87e5ec7d80c92261f1b3fc9ba" prot="public">
+          <name>MLSpatialAnchorLocalizationStatus_LocalizationPending</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A localization attempt is currently in progress. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga7f1ce040d38400fbae97c01c231ac591a85ad7ab8108a691ba8a9585b35a350e2" prot="public">
+          <name>MLSpatialAnchorLocalizationStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The current localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000545"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationStatus. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="93" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="93" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___spatial_anchor_1ga6773bf8e3f665838284a4b915c0121fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpatialAnchorMappingMode</name>
+        <enumvalue id="group___spatial_anchor_1gga6773bf8e3f665838284a4b915c0121fdaa56668d3b2791d37371c87e4c62ad4e4" prot="public">
+          <name>MLSpatialAnchorMappingMode_OnDevice</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Using on-device mapping. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga6773bf8e3f665838284a4b915c0121fdaa8dc9f79c04a292bb1f0a982ceb46364" prot="public">
+          <name>MLSpatialAnchorMappingMode_ARCloud</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Using cloud-based mapping. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga6773bf8e3f665838284a4b915c0121fda0552ab4d8a1155a4f851fe3f1f8e0e40" prot="public">
+          <name>MLSpatialAnchorMappingMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Mapping mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000546"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="113" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___spatial_anchor_1ga6c5272ce6185402df25df0a22500ccd6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpatialAnchorQuality</name>
+        <enumvalue id="group___spatial_anchor_1gga6c5272ce6185402df25df0a22500ccd6a3615258a7d6888a63adbf973dddf0f4c" prot="public">
+          <name>MLSpatialAnchorQuality_Low</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Low quality, this anchor can be expected to move significantly. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga6c5272ce6185402df25df0a22500ccd6a456dfeb696aadf8916b928a03ace3d76" prot="public">
+          <name>MLSpatialAnchorQuality_Medium</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Medium quality, this anchor may move slightly. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga6c5272ce6185402df25df0a22500ccd6a0b21c3c504e97f2f0bdba71d7f2d840e" prot="public">
+          <name>MLSpatialAnchorQuality_High</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>High quality, this anchor is stable and suitable for digital content attachment. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___spatial_anchor_1gga6c5272ce6185402df25df0a22500ccd6aa0c4bc16b166b4f2f2b901452cbc82bd" prot="public">
+          <name>MLSpatialAnchorQuality_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The quality of the local space around the anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can change over time as the user continues to scan the space.</para>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="131" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___spatial_anchor_1ga9af07c8d0edb99429dfc9f6fc2cb90d5" prot="public" static="no">
+        <type>enum <ref refid="group___spatial_anchor_1gab82a21e303a00d81097c1d6396ff3373" kindref="member">MLSpatialAnchorResult</ref></type>
+        <definition>typedef enum MLSpatialAnchorResult MLSpatialAnchorResult</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorResult</name>
+        <briefdescription>
+<para>SpatialAnchor-specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="85" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___spatial_anchor_1gaccfb917a4daac57ac7ffa437c0082b83" prot="public" static="no">
+        <type>enum <ref refid="group___spatial_anchor_1ga7f1ce040d38400fbae97c01c231ac591" kindref="member">MLSpatialAnchorLocalizationStatus</ref></type>
+        <definition>typedef enum MLSpatialAnchorLocalizationStatus MLSpatialAnchorLocalizationStatus</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorLocalizationStatus</name>
+        <briefdescription>
+<para>The current localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000545"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationStatus. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="105" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___spatial_anchor_1ga9172403a170ffb883541abede56651a4" prot="public" static="no">
+        <type>enum <ref refid="group___spatial_anchor_1ga6773bf8e3f665838284a4b915c0121fd" kindref="member">MLSpatialAnchorMappingMode</ref></type>
+        <definition>typedef enum MLSpatialAnchorMappingMode MLSpatialAnchorMappingMode</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorMappingMode</name>
+        <briefdescription>
+<para>Mapping mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000546"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="122" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___spatial_anchor_1gae93c3128ac41c79421afd38981ab8460" prot="public" static="no">
+        <type>enum <ref refid="group___spatial_anchor_1ga6c5272ce6185402df25df0a22500ccd6" kindref="member">MLSpatialAnchorQuality</ref></type>
+        <definition>typedef enum MLSpatialAnchorQuality MLSpatialAnchorQuality</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorQuality</name>
+        <briefdescription>
+<para>The quality of the local space around the anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can change over time as the user continues to scan the space.</para>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="140" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___spatial_anchor_1gaeed22085aefdd2208431f29a62bab768" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref></type>
+        <definition>typedef struct MLSpatialAnchor MLSpatialAnchor</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchor</name>
+        <briefdescription>
+<para>A structure representing a user-defined Spatial Anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="250" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___spatial_anchor_1gaaa683120064b6fbe90c70c2307f15193" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_spatial_anchor_create_info" kindref="compound">MLSpatialAnchorCreateInfo</ref></type>
+        <definition>typedef struct MLSpatialAnchorCreateInfo MLSpatialAnchorCreateInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorCreateInfo</name>
+        <briefdescription>
+<para>A structure used to populate anchor creation info when creating a new Spatial Anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="295" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___spatial_anchor_1ga95998414b4566b503be5ebab3789c8a7" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_spatial_anchor_query_filter" kindref="compound">MLSpatialAnchorQueryFilter</ref></type>
+        <definition>typedef struct MLSpatialAnchorQueryFilter MLSpatialAnchorQueryFilter</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorQueryFilter</name>
+        <briefdescription>
+<para>A collection of filters for Spatial Anchor queries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Filters that have been set will be combined via logical conjunction. E.g. results must match the ids filter AND fall within the radius constraint when both have been set.</para>
+<para>This struct must be initialized by calling <ref refid="group___spatial_anchor_1ga366c74107d4e7696ea4609902d75966b" kindref="member">MLSpatialAnchorQueryFilterInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="364" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___spatial_anchor_1ga6f72383e992b07b725ef886736401f26" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLSpatialAnchorLocalizationInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpatialAnchorLocalizationInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="179" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___spatial_anchor_1ga81284cb2298ad7d5eb713d9e37b06428" prot="public" static="no" mutable="no">
+        <type><ref refid="group___spatial_anchor_1ga6f72383e992b07b725ef886736401f26" kindref="member">MLSpatialAnchorLocalizationInfo</ref> *</type>
+        <definition>MLSpatialAnchorLocalizationInfo* out_localization_info</definition>
+        <argsstring></argsstring>
+        <name>out_localization_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="605" column="42" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___spatial_anchor_1ga8bfc7d235197c3596593b0363afe6435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLSpaceLocalizationResult.&quot;))) struct MLSpatialAnchorLocalizationInfo</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLSpaceLocalizationResult.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information about the device&apos;s localization state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000547"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. Replaced by <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref>. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Version of the structure.</para>
+<para>The localization status at the time this structure was returned.</para>
+<para>The current mapping mode.</para>
+<para>If localized, this will contain the name of the current space.</para>
+<para>If localized, this will contain the unique ID of the current space.</para>
+<para>If localized, this will contain the identifier of the transform of the target space&apos;s origin relative to the world origin.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="148" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="148" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga1927726112c9a67eeb0fb2008f4a106d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLSpaceLocalizationResultInit.&quot;))) static inline void MLSpatialAnchorLocalizationInfoInit(MLSpatialAnchorLocalizationInfo *inout_info)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLSpaceLocalizationResultInit.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="group___spatial_anchor_1ga6f72383e992b07b725ef886736401f26" kindref="member">MLSpatialAnchorLocalizationInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000548"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationResultInit. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The localization info to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000668"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="191" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="191" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga4548b42b46afa1d16be41f91dbb8f093" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpatialAnchorInit</definition>
+        <argsstring>(MLSpatialAnchor *inout_anchor)</argsstring>
+        <name>MLSpatialAnchorInit</name>
+        <param>
+          <type><ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *</type>
+          <declname>inout_anchor</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for a <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000669"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="261" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="261" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1gac2f5462db58e7349672e4560a984d7c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpatialAnchorCreateInfoInit</definition>
+        <argsstring>(MLSpatialAnchorCreateInfo *inout_info)</argsstring>
+        <name>MLSpatialAnchorCreateInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_spatial_anchor_create_info" kindref="compound">MLSpatialAnchorCreateInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for a <ref refid="struct_m_l_spatial_anchor_create_info" kindref="compound">MLSpatialAnchorCreateInfo</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The info struct to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000670"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="306" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="306" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga366c74107d4e7696ea4609902d75966b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpatialAnchorQueryFilterInit</definition>
+        <argsstring>(MLSpatialAnchorQueryFilter *inout_query_filter)</argsstring>
+        <name>MLSpatialAnchorQueryFilterInit</name>
+        <param>
+          <type><ref refid="struct_m_l_spatial_anchor_query_filter" kindref="compound">MLSpatialAnchorQueryFilter</ref> *</type>
+          <declname>inout_query_filter</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the default values for a query filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_query_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000671"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="375" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="375" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga188d99968363decb15f2008cb0872c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorTrackerCreate</definition>
+        <argsstring>(MLHandle *out_handle)</argsstring>
+        <name>MLSpatialAnchorTrackerCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Create a Spatial Anchor tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain a handle for a Spatial Anchor tracker if successful, otherwise it will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The out_handle parameter was not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tracker was not created.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000672"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPATIAL_ANCHOR (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="399" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="399" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga4d2362a7e10fb4482447316b23f0b8b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorTrackerDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLSpatialAnchorTrackerDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a previously created Spatial Anchor tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Spatial Anchor tracker created by <ref refid="group___spatial_anchor_1ga4bbe58b62f7b38f3da2c32f8f018b0d3" kindref="member">MLSpatialAnchorCreate()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle parameter was not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tracker was not destroyed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000673"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="414" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="414" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga4bbe58b62f7b38f3da2c32f8f018b0d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorCreate</definition>
+        <argsstring>(MLHandle handle, const MLSpatialAnchorCreateInfo *create_info, MLSpatialAnchor *out_anchor)</argsstring>
+        <name>MLSpatialAnchorCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_spatial_anchor_create_info" kindref="compound">MLSpatialAnchorCreateInfo</ref> *</type>
+          <declname>create_info</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *</type>
+          <declname>out_anchor</declname>
+        </param>
+        <briefdescription>
+<para>Create a new local Spatial Anchor at the desired location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On success, out_anchor will be returned with a newly generated ID.</para>
+<para>Any unpublished anchor will be lost if the Headpose session is lost. See #MLHeadTrackingGetMapEvents for more details.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">create_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A struct containing the creation info for the new anchor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The created anchor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor was successfully created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_InsufficientMapping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Insufficient mapping. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_InvalidExpirationTimestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid expiration timestamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_MaxAnchorLimitReached</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum anchor limit reached. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_MinDistanceThresholdExceeded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum distance threshold exceeded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000674"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="438" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="438" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga6f611aba2f239c6f880a54bee4b66e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorPublish</definition>
+        <argsstring>(MLHandle handle, MLUUID anchor_id)</argsstring>
+        <name>MLSpatialAnchorPublish</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+          <declname>anchor_id</declname>
+        </param>
+        <briefdescription>
+<para>Publish an existing local Spatial Anchor to the persistent backend. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depending on the currently selected mapping mode, this can store the anchor locally or in the cloud. This call will fail if the device is not localized to a space.</para>
+<para>Any unpublished anchor will be lost if the Headpose session is lost. See #MLHeadTrackingGetMapEvents for more details.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">anchor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Id of the local anchor to publish.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor was successfully published and persisted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_NotLocalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not localized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_InvalidId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid Id provided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_MaxAnchorLimitReached</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum anchor limit reached. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_MinDistanceThresholdExceeded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum distance threshold exceeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server error occurred.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000675"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="464" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="464" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga7ab3c90f255c9f52a9d0d5ca5de636da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorDelete</definition>
+        <argsstring>(MLHandle handle, MLUUID anchor_id)</argsstring>
+        <name>MLSpatialAnchorDelete</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+          <declname>anchor_id</declname>
+        </param>
+        <briefdescription>
+<para>Delete an existing Spatial Anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If successful, this will delete the anchor from persistent storage based on the currently selected mapping mode.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">anchor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Id of the anchor to delete.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor was successfully deleted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_InvalidId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid Id provided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server error occurred.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000676"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="484" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="484" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga72ad407a8a5207534f2ca7df3a75a4a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorUpdate</definition>
+        <argsstring>(MLHandle handle, const MLSpatialAnchor *anchor)</argsstring>
+        <name>MLSpatialAnchorUpdate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *</type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+<para>Update a Spatial Anchor&apos;s properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The only property that can currently be updated is the expiration timestamp.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor containing the desired updated properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor was successfully updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_InvalidId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid Id provided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_InvalidExpirationTimestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid expiration timestamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server error occurred.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000677"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="505" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="505" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1gaa6891320d4b4d406b870709e83b46555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorQueryCreate</definition>
+        <argsstring>(MLHandle handle, const MLSpatialAnchorQueryFilter *query_filter, MLHandle *out_query_handle, uint32_t *out_results_count)</argsstring>
+        <name>MLSpatialAnchorQueryCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_spatial_anchor_query_filter" kindref="compound">MLSpatialAnchorQueryFilter</ref> *</type>
+          <declname>query_filter</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_query_handle</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_results_count</declname>
+        </param>
+        <briefdescription>
+<para>Create a new query for Spatial Anchors in the current space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is the responsibility of the caller to call <ref refid="group___spatial_anchor_1ga5a2d889598883ad4e4d378e1c7e09cc9" kindref="member">MLSpatialAnchorQueryDestroy</ref> with the query handle returned from this function after the results are no longer needed.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter structure for the query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_query_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle for this query to be used with MLSpatialAnchorQueryGetResult. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_results_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total number of entries found by the query. This can be any number between 0 and max_results.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query executed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unspecified error occurred. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_NotLocalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not localized to a space.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000678"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="528" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="528" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga5a2d889598883ad4e4d378e1c7e09cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorQueryDestroy</definition>
+        <argsstring>(MLHandle handle, MLHandle query_handle)</argsstring>
+        <name>MLSpatialAnchorQueryDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>query_handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a previously created query handle and release its associated resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor query.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle was successfully destroyed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000679"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="546" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="546" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga4a291f512f3cfc42f10f817c60fd52a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpatialAnchorQueryGetResult</definition>
+        <argsstring>(MLHandle handle, MLHandle query_handle, uint32_t first_index, uint32_t last_index, MLSpatialAnchor *out_results)</argsstring>
+        <name>MLSpatialAnchorQueryGetResult</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>query_handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>first_index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>last_index</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *</type>
+          <declname>out_results</declname>
+        </param>
+        <briefdescription>
+<para>Get the result of a previous Spatial Anchor query. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Putting index bounds on the results allows the caller to only receive a subset of the total number of results generated by the query. This is useful as a form of pagination in the case of a large number of anchors in the current space. Indexing is zero-based so if there are N results in the query, then it is required that 0 &lt;= first_index &lt;= last_index &lt; N.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a query obtained from MLSpatialAnchorQuery. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">first_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">last_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The last index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of (last_index - first_index + 1) size to hold the query results.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query executed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was incorrect. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unspecified failure occurred. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpatialAnchorResult_NotLocalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not localized to a space.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000680"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="571" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="571" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga49959e1e16249a989ff476f2a9e4a699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLSpatialAnchorGetResultString</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>MLSpatialAnchorGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLSpatialAnchorResult and MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000681"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="587" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" declline="587" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___spatial_anchor_1ga3de3402fe1d5c9119a77f28a80f0f888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLSpaceGetLocalizationResult.&quot;))) MLResult MLSpatialAnchorGetLocalizationInfo(MLHandle handle</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLSpaceGetLocalizationResult.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Get the current localization status of the device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000549"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceGetLocalizationResult. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a Spatial Anchor tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_localization_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The localization info structure to be populated.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query executed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters was incorrect. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unspecified failure occurred.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000682"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="604" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for managing Spatial Anchors. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+Spatial Anchor management is closely tied to the selected mapping mode on the device. The modes are mutually exclusive and affect the functionality of these APIs. The available mapping modes are:</para>
+<para>On-Device Mode - A persistent mode in which anchors are persisted locally and will be available in multiple sessions when localized to the same space in which they were published.</para>
+<para>AR Cloud Mode - A persistent mode in which anchors are persisted in the cloud environment and will be available in multiple sessions to devices that are localized to the same space in which they were published. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_pose" kind="struct" language="C++" prot="public">
+    <compoundname>MLPose</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_pose_1a1bd86eb3570939a2daadcbe1258bd654" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref></type>
+        <definition>MLTransform MLPose::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+<para>6-DoF transformation between the two coordinate frames that can be directly used to express source frame coordinates in destination frame coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="163" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1a5217a1fc63b3c0f34b9a40b07103ffdc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLPose::has_derivatives</definition>
+        <argsstring></argsstring>
+        <name>has_derivatives</name>
+        <briefdescription>
+<para>Indicate if this pose has derivative values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="167" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1a7f5098b7f35c0023ebc080cded8017e8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLPose::linear_velocity</definition>
+        <argsstring></argsstring>
+        <name>linear_velocity</name>
+        <briefdescription>
+<para>The linear velocity in meters per second. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="171" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1aec47304b3fba7bd51c71e3c0b81ab408" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLPose::linear_acceleration</definition>
+        <argsstring></argsstring>
+        <name>linear_acceleration</name>
+        <briefdescription>
+<para>The linear acceleration in meters per second squared. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="175" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1adb7631d3d00da844745159e2f2628fcf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLPose::angular_velocity</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity</name>
+        <briefdescription>
+<para>Angular velocity in radians per second. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="179" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1addc39db5c1f0361fdb8a17833a594f95" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLPose::angular_acceleration</definition>
+        <argsstring></argsstring>
+        <name>angular_acceleration</name>
+        <briefdescription>
+<para>Angular accleration in radians per second squared. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="183" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1a16c21c29ca18bd80fde922bc229ff404" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLPose::origin_time_ns</definition>
+        <argsstring></argsstring>
+        <name>origin_time_ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time when this relationship was measured. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="186" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_pose_1abb30b43c4b9541b2039446f2e3783638" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLPose::predict_time_ns</definition>
+        <argsstring></argsstring>
+        <name>predict_time_ns</name>
+        <briefdescription>
+<para>Time to which this relationship has been predicted. May be equal to origin_time_ns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="191" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Geometric relationship between two coordinate frames. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="3">
+        <label>MLTransform</label>
+        <link refid="struct_m_l_transform"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLPose</label>
+        <link refid="struct_m_l_pose"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>angular_acceleration</edgelabel>
+          <edgelabel>angular_velocity</edgelabel>
+          <edgelabel>linear_acceleration</edgelabel>
+          <edgelabel>linear_velocity</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="157" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="157" bodyend="192"/>
+    <listofallmembers>
+      <member refid="struct_m_l_pose_1addc39db5c1f0361fdb8a17833a594f95" prot="public" virt="non-virtual"><scope>MLPose</scope><name>angular_acceleration</name></member>
+      <member refid="struct_m_l_pose_1adb7631d3d00da844745159e2f2628fcf" prot="public" virt="non-virtual"><scope>MLPose</scope><name>angular_velocity</name></member>
+      <member refid="struct_m_l_pose_1a5217a1fc63b3c0f34b9a40b07103ffdc" prot="public" virt="non-virtual"><scope>MLPose</scope><name>has_derivatives</name></member>
+      <member refid="struct_m_l_pose_1aec47304b3fba7bd51c71e3c0b81ab408" prot="public" virt="non-virtual"><scope>MLPose</scope><name>linear_acceleration</name></member>
+      <member refid="struct_m_l_pose_1a7f5098b7f35c0023ebc080cded8017e8" prot="public" virt="non-virtual"><scope>MLPose</scope><name>linear_velocity</name></member>
+      <member refid="struct_m_l_pose_1a16c21c29ca18bd80fde922bc229ff404" prot="public" virt="non-virtual"><scope>MLPose</scope><name>origin_time_ns</name></member>
+      <member refid="struct_m_l_pose_1abb30b43c4b9541b2039446f2e3783638" prot="public" virt="non-virtual"><scope>MLPose</scope><name>predict_time_ns</name></member>
+      <member refid="struct_m_l_pose_1a1bd86eb3570939a2daadcbe1258bd654" prot="public" virt="non-virtual"><scope>MLPose</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

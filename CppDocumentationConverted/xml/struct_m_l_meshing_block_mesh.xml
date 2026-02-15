@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_block_mesh" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingBlockMesh</compoundname>
+    <includes refid="ml__meshing2_8h" local="no">ml_meshing2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1ad8cd2995f6fa7ba8da49ca9baa3704aa" prot="public" static="no" mutable="no">
+        <type><ref refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" kindref="member">MLMeshingResult</ref></type>
+        <definition>MLMeshingResult MLMeshingBlockMesh::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The result of the meshing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="164" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a075d781aa2cd940c88d71afff0331da5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLMeshingBlockMesh::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The coordinate FrameID of the block. Note: Not for use with perception snapshot system, purely a unique identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="166" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a81268d86875876487b84f32706e84979" prot="public" static="no" mutable="no">
+        <type><ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref></type>
+        <definition>MLMeshingLOD MLMeshingBlockMesh::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LOD level of the meshing request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="168" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a791e908ab4a97055aa17cc66be399af0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLMeshingBlockMesh::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The settings with which meshing took place. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="170" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a51ca9c102a571665a24ffa8106acc8a9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MLMeshingBlockMesh::index_count</definition>
+        <argsstring></argsstring>
+        <name>index_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of indices in index buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="172" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1aba92124110f06b88bac38293d34e57ce" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLMeshingBlockMesh::vertex_count</definition>
+        <argsstring></argsstring>
+        <name>vertex_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of vertices in vertex/normal/confidence buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="174" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a171aa6b402c44105bfd023fa323627b5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *</type>
+        <definition>MLVec3f* MLMeshingBlockMesh::vertex</definition>
+        <argsstring></argsstring>
+        <name>vertex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the vertex buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="176" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1aadce473e3a9b7bfa3078b5831032c37b" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* MLMeshingBlockMesh::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>Pointer to index buffer. In the index buffer each value is the index of a vertex in the vertex buffer. Three indices define one triangle. For example, the first triangle will have the vertices: vertex[index[0]], vertex[index[1]], vertex[index[2]]. Index order is defined by the MLMeshingFlags_IndexOrderCW flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="184" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a4a6a070a5c4c0c0cffd3caaa829aa56d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *</type>
+        <definition>MLVec3f* MLMeshingBlockMesh::normal</definition>
+        <argsstring></argsstring>
+        <name>normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to normals buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="186" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_mesh_1a2ab8694bbfad25ef7808d437bf9d5754" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* MLMeshingBlockMesh::confidence</definition>
+        <argsstring></argsstring>
+        <name>confidence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to confidence buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="188" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Final structure for a block mesh. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLMeshingBlockMesh</label>
+        <link refid="struct_m_l_meshing_block_mesh"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>normal</edgelabel>
+          <edgelabel>vertex</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="3">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="162" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="162" bodyend="189"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_block_mesh_1a2ab8694bbfad25ef7808d437bf9d5754" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>confidence</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1a791e908ab4a97055aa17cc66be399af0" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>flags</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1a075d781aa2cd940c88d71afff0331da5" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>id</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1aadce473e3a9b7bfa3078b5831032c37b" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>index</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1a51ca9c102a571665a24ffa8106acc8a9" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>index_count</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1a81268d86875876487b84f32706e84979" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>level</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1a4a6a070a5c4c0c0cffd3caaa829aa56d" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>normal</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1ad8cd2995f6fa7ba8da49ca9baa3704aa" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>result</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1a171aa6b402c44105bfd023fa323627b5" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>vertex</name></member>
+      <member refid="struct_m_l_meshing_block_mesh_1aba92124110f06b88bac38293d34e57ce" prot="public" virt="non-virtual"><scope>MLMeshingBlockMesh</scope><name>vertex_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

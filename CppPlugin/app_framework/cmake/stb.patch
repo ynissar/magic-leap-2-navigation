@@ -1,0 +1,32 @@
+diff -ur --new-file stb-src-orig/stb_easy_font.h stb-src/stb_easy_font.h
+--- stb-src-orig/stb_easy_font.h	2021-07-13 00:27:12.000000000 -0400
++++ stb-src/stb_easy_font.h	2021-08-18 09:53:19.413663630 -0400
+@@ -190,11 +190,18 @@
+     return offset;
+ }
+
++#if !ML_WINDOWS
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wunused-function"
++#endif
+ static float stb_easy_font_spacing_val = 0;
+ static void stb_easy_font_spacing(float spacing)
+ {
+    stb_easy_font_spacing_val = spacing;
+ }
++#if !ML_WINDOWS
++#pragma GCC diagnostic pop
++#endif
+
+ static int stb_easy_font_print(float x, float y, char *text, unsigned char color[4], void *vertex_buffer, int vbuf_size)
+ {
+diff -ur --new-file stb-src-orig/stblib.cpp stb-src/stblib.cpp
+--- stb-src-orig/stblib.cpp	1969-12-31 19:00:00.000000000 -0500
++++ stb-src/stblib.cpp	2021-08-13 12:07:04.000000000 -0400
+@@ -0,0 +1,6 @@
++
++#define STB_IMAGE_IMPLEMENTATION
++#include <stb_image.h>
++
++#define STB_IMAGE_WRITE_IMPLEMENTATION
++#include <stb_image_write.h>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_controller_configuration" kind="struct" language="C++" prot="public">
+    <compoundname>MLControllerConfiguration</compoundname>
+    <includes refid="ml__controller_8h" local="no">ml_controller.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_controller_configuration_1a59ff363039f4d91833265b7e623c5289" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLControllerConfiguration::deprecated_mode_0</definition>
+        <argsstring></argsstring>
+        <name>deprecated_mode_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="48" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_controller_configuration_1a729aea7398b190805cce59d17c4ba095" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLControllerConfiguration::deprecated_mode_1</definition>
+        <argsstring></argsstring>
+        <name>deprecated_mode_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="49" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_controller_configuration_1aeb9ea4b7dd0a23dd12b57d925b45b577" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLControllerConfiguration::enable_fused6dof</definition>
+        <argsstring></argsstring>
+        <name>enable_fused6dof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>High quality 6 degrees of freedom tracking (position and orientation). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="51" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to configure controller&apos;s tracking-modes. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="47" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="47" bodyend="52"/>
+    <listofallmembers>
+      <member refid="struct_m_l_controller_configuration_1a59ff363039f4d91833265b7e623c5289" prot="public" virt="non-virtual"><scope>MLControllerConfiguration</scope><name>deprecated_mode_0</name></member>
+      <member refid="struct_m_l_controller_configuration_1a729aea7398b190805cce59d17c4ba095" prot="public" virt="non-virtual"><scope>MLControllerConfiguration</scope><name>deprecated_mode_1</name></member>
+      <member refid="struct_m_l_controller_configuration_1aeb9ea4b7dd0a23dd12b57d925b45b577" prot="public" virt="non-virtual"><scope>MLControllerConfiguration</scope><name>enable_fused6dof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

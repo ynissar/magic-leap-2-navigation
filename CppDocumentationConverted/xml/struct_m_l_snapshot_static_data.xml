@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_snapshot_static_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLSnapshotStaticData</compoundname>
+    <includes refid="ml__snapshot_8h" local="no">ml_snapshot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_snapshot_static_data_1a3f4f2bb31199b22d12d40f6ed63fb196" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSnapshotStaticData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="100" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_snapshot_static_data_1a3a0870776c6362389b0e2ba412625e7a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLSnapshotStaticData::coord_world_origin</definition>
+        <argsstring></argsstring>
+        <name>coord_world_origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coordinate frame ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="102" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static information about the snapshot system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Initalize this structure with MLSnapshotStaticDataInit and populate with <ref refid="group___perception_1ga85e7a5fafcf1c5ea81d28ccada531996" kindref="member">MLSnapshotGetStaticData()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 30</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLSnapshotStaticData</label>
+        <link refid="struct_m_l_snapshot_static_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coord_world_origin</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="98" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="98" bodyend="103"/>
+    <listofallmembers>
+      <member refid="struct_m_l_snapshot_static_data_1a3a0870776c6362389b0e2ba412625e7a" prot="public" virt="non-virtual"><scope>MLSnapshotStaticData</scope><name>coord_world_origin</name></member>
+      <member refid="struct_m_l_snapshot_static_data_1a3f4f2bb31199b22d12d40f6ed63fb196" prot="public" virt="non-virtual"><scope>MLSnapshotStaticData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

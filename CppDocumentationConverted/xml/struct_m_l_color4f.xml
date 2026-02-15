@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_color4f" kind="struct" language="C++" prot="public">
+    <compoundname>MLColor4f</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_color4f_1a4f09e2fa8c63bb2761586d531c687019" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLColor4f::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="128" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_color4f_1afb10f135165983576b5cf46aa79bdc95" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLColor4f::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="129" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_color4f_1a2a0a5f83ad734a5c3095ae54c8110732" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLColor4f::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="130" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_color4f_1a0fc47ff2f637657eb3334f1dc464b119" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLColor4f::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="131" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Color represented by 4 floats. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="127" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="127" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_m_l_color4f_1a0fc47ff2f637657eb3334f1dc464b119" prot="public" virt="non-virtual"><scope>MLColor4f</scope><name>a</name></member>
+      <member refid="struct_m_l_color4f_1a2a0a5f83ad734a5c3095ae54c8110732" prot="public" virt="non-virtual"><scope>MLColor4f</scope><name>b</name></member>
+      <member refid="struct_m_l_color4f_1afb10f135165983576b5cf46aa79bdc95" prot="public" virt="non-virtual"><scope>MLColor4f</scope><name>g</name></member>
+      <member refid="struct_m_l_color4f_1a4f09e2fa8c63bb2761586d531c687019" prot="public" virt="non-virtual"><scope>MLColor4f</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

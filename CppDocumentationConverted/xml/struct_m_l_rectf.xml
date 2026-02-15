@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_rectf" kind="struct" language="C++" prot="public">
+    <compoundname>MLRectf</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_rectf_1a16488dabdf2f94ca0064cb99b4b4a68e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLRectf::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="95" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_rectf_1a0f330536afbc8b7da91534f31aa1822e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLRectf::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="96" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_rectf_1a0540cf34d71f4c02a4f5afc096f9a314" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLRectf::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="97" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_rectf_1aff75580a0a2f1b88fc86db90d72fc4b3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLRectf::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="98" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A 2D float rectangle. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="94" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="94" bodyend="99"/>
+    <listofallmembers>
+      <member refid="struct_m_l_rectf_1aff75580a0a2f1b88fc86db90d72fc4b3" prot="public" virt="non-virtual"><scope>MLRectf</scope><name>h</name></member>
+      <member refid="struct_m_l_rectf_1a0540cf34d71f4c02a4f5afc096f9a314" prot="public" virt="non-virtual"><scope>MLRectf</scope><name>w</name></member>
+      <member refid="struct_m_l_rectf_1a16488dabdf2f94ca0064cb99b4b4a68e" prot="public" virt="non-virtual"><scope>MLRectf</scope><name>x</name></member>
+      <member refid="struct_m_l_rectf_1a0f330536afbc8b7da91534f31aa1822e" prot="public" virt="non-virtual"><scope>MLRectf</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

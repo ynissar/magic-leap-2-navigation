@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__zi__permissions_8h" kind="file" language="C++">
+    <compoundname>ml_zi_permissions.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h</label>
+        <link refid="ml__zi__permissions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___z_i_1ga31167d52a34374dc0739aa044067b651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsStart</definition>
+        <argsstring>()</argsstring>
+        <name>MLZIPermissionsStart</name>
+        <briefdescription>
+<para>Start the ZI permissions system. This must be called before other permissions calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000741"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="47" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="47" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1ga479a4f7042a5ec8debf0bfd865dbbce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsStop</definition>
+        <argsstring>()</argsstring>
+        <name>MLZIPermissionsStop</name>
+        <briefdescription>
+<para>Stop the ZI permission system. Call to clean up the ZI permission system at application termination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000742"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="59" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="59" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1gabe61cef9d7bb5ec4542521ec61559697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsIsGranted</definition>
+        <argsstring>(const char *permission_name)</argsstring>
+        <name>MLZIPermissionsIsGranted</name>
+        <param>
+          <type>const char *</type>
+          <declname>permission_name</declname>
+        </param>
+        <briefdescription>
+<para>Asks if the application has the given permission granted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://developer.android.com/training/permissions/requesting">https://developer.android.com/training/permissions/requesting</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">permission_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission_name parameter is not valid (or null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission is granted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If permission denied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If permission request has not been resolved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000743"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>Any </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="78" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="78" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1ga365b1fb09ac23d2d67d10cbdb45e1748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsRequest</definition>
+        <argsstring>(const char *permission_name)</argsstring>
+        <name>MLZIPermissionsRequest</name>
+        <param>
+          <type>const char *</type>
+          <declname>permission_name</declname>
+        </param>
+        <briefdescription>
+<para>Request the given permission (blocking if pending until user either allows or denies permission). Client code can poll the permission state to see if the permission was granted, denied or still pending. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://developer.android.com/training/permissions/requesting">https://developer.android.com/training/permissions/requesting</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">permission_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission_name parameter is not valid (or null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000744"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="96" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="96" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="group___z_i_1ga31167d52a34374dc0739aa044067b651" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___z_i_1ga31167d52a34374dc0739aa044067b651" kindref="member">MLZIPermissionsStart</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___z_i_1ga479a4f7042a5ec8debf0bfd865dbbce1" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___z_i_1ga479a4f7042a5ec8debf0bfd865dbbce1" kindref="member">MLZIPermissionsStop</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group___z_i_1gabe61cef9d7bb5ec4542521ec61559697" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___z_i_1gabe61cef9d7bb5ec4542521ec61559697" kindref="member">MLZIPermissionsIsGranted</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*permission_name);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="group___z_i_1ga365b1fb09ac23d2d67d10cbdb45e1748" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___z_i_1ga365b1fb09ac23d2d67d10cbdb45e1748" kindref="member">MLZIPermissionsRequest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*permission_name);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h"/>
+  </compounddef>
+</doxygen>

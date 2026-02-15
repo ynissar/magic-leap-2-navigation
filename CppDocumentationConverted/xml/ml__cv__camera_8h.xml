@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__cv__camera_8h" kind="file" language="C++">
+    <compoundname>ml_cv_camera.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h</label>
+        <link refid="ml__cv__camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCVCameraID</name>
+        <enumvalue id="group___c_v_camera_1ggae01e86afbbd63376057a3f66ccfb9569ac053764bd94b43d855af06204c8c7d3a" prot="public">
+          <name>MLCVCameraID_ColorCamera</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default camera id. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_v_camera_1ggae01e86afbbd63376057a3f66ccfb9569a1d8c25f10a87f04fcf470c7b65664412" prot="public">
+          <name>MLCVCameraID_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Camera id. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera id enum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" line="35" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" bodystart="35" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___c_v_camera_1gad2d3a5fc908b365647a6866bb8df264a" prot="public" static="no">
+        <type>enum <ref refid="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" kindref="member">MLCVCameraID</ref></type>
+        <definition>typedef enum MLCVCameraID MLCVCameraID</definition>
+        <argsstring></argsstring>
+        <name>MLCVCameraID</name>
+        <briefdescription>
+<para>Camera id enum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" line="40" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_v_camera_1ga10388b02fed500d39ab2ae4698ad3070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCVCameraTrackingCreate</definition>
+        <argsstring>(MLHandle *out_handle)</argsstring>
+        <name>MLCVCameraTrackingCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Create CV Camera Tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tracker handle.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On success. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000253"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.CAMERA (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" line="55" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" declline="55" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_v_camera_1gafd453da4f37d0ceb6a35fb422ccc1e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCVCameraGetFramePose</definition>
+        <argsstring>(MLHandle camera_handle, MLHandle head_handle, MLCVCameraID id, MLTime camera_timestamp, MLTransform *out_transform)</argsstring>
+        <name>MLCVCameraGetFramePose</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>camera_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>head_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" kindref="member">MLCVCameraID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+          <declname>camera_timestamp</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref> *</type>
+          <declname>out_transform</declname>
+        </param>
+        <briefdescription>
+<para>Get the camera pose in the world coordinate system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the timestamp provided from the #on_video_buffer_available callback from <ref refid="ml__camera__v2_8h" kindref="compound">ml_camera_v2.h</ref>. The camera tracker only caches a limited set of poses. Retrieve the camera pose as soon as the timestamp is available else the API may return MLResult_PoseNotFound.</para>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">camera_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle previously created with MLCVCameraTrackingCreate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">head_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle previously created with MLHeadTrackingCreate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">camera_timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to request the pose. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transform from camera to world origin.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id parameter was not valid or out_transform parameter was not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained transform successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PoseNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pose is currently not available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000254"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" line="83" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" declline="83" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_v_camera_1ga07cfda0e76261e3f23a7b3838b3f4c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLCVCameraTrackingDestroy</definition>
+        <argsstring>(MLHandle camera_handle)</argsstring>
+        <name>MLCVCameraTrackingDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>camera_handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroy Tracker after usage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">camera_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle previously created with MLCVCameraTrackingCreate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On success. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000255"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" line="97" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h" declline="97" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" kindref="member">MLCVCameraID</ref><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="group___c_v_camera_1ggae01e86afbbd63376057a3f66ccfb9569ac053764bd94b43d855af06204c8c7d3a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___c_v_camera_1ggae01e86afbbd63376057a3f66ccfb9569ac053764bd94b43d855af06204c8c7d3a" kindref="member">MLCVCameraID_ColorCamera</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="group___c_v_camera_1ggae01e86afbbd63376057a3f66ccfb9569a1d8c25f10a87f04fcf470c7b65664412" kindref="member">MLCVCameraID_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="40" refid="group___c_v_camera_1gad2d3a5fc908b365647a6866bb8df264a" refkind="member"><highlight class="normal">}<sp/><ref refid="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" kindref="member">MLCVCameraID</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group___c_v_camera_1ga10388b02fed500d39ab2ae4698ad3070" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___c_v_camera_1ga10388b02fed500d39ab2ae4698ad3070" kindref="member">MLCVCameraTrackingCreate</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="group___c_v_camera_1gafd453da4f37d0ceb6a35fb422ccc1e62" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___c_v_camera_1gafd453da4f37d0ceb6a35fb422ccc1e62" kindref="member">MLCVCameraGetFramePose</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>camera_handle,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>head_handle,<sp/><ref refid="group___c_v_camera_1gae01e86afbbd63376057a3f66ccfb9569" kindref="member">MLCVCameraID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/>camera_timestamp,<sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/>*out_transform);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="group___c_v_camera_1ga07cfda0e76261e3f23a7b3838b3f4c24" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___c_v_camera_1ga07cfda0e76261e3f23a7b3838b3f4c24" kindref="member">MLCVCameraTrackingDestroy</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>camera_handle);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h"/>
+  </compounddef>
+</doxygen>

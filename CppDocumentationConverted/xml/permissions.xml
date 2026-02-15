@@ -1,0 +1,1745 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="permissions" kind="page">
+    <compoundname>permissions</compoundname>
+    <title>Permissions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000398"/> None </para>
+<para><anchor id="permissions_1_permissions000389"/> None </para>
+<para><anchor id="permissions_1_permissions000390"/> None </para>
+<para><anchor id="permissions_1_permissions000391"/> None </para>
+<para><anchor id="permissions_1_permissions000392"/> None </para>
+<para><anchor id="permissions_1_permissions000393"/> None </para>
+<para><anchor id="permissions_1_permissions000394"/> None </para>
+<para><anchor id="permissions_1_permissions000395"/> None </para>
+<para><anchor id="permissions_1_permissions000396"/> None </para>
+<para><anchor id="permissions_1_permissions000397"/> None </para>
+<para><anchor id="permissions_1_permissions000388"/> None </para>
+<para><anchor id="permissions_1_permissions000399"/> None </para>
+<para><anchor id="permissions_1_permissions000400"/> None </para>
+<para><anchor id="permissions_1_permissions000401"/> None </para>
+<para><anchor id="permissions_1_permissions000402"/> None </para>
+<para><anchor id="permissions_1_permissions000403"/> None </para>
+<para><anchor id="permissions_1_permissions000404"/> None </para>
+<para><anchor id="permissions_1_permissions000405"/> None </para>
+<para><anchor id="permissions_1_permissions000406"/> None </para>
+<para><anchor id="permissions_1_permissions000379"/> None</para>
+<para><anchor id="permissions_1_permissions000371"/> None </para>
+<para><anchor id="permissions_1_permissions000372"/> None </para>
+<para><anchor id="permissions_1_permissions000373"/> None </para>
+<para><anchor id="permissions_1_permissions000374"/> None </para>
+<para><anchor id="permissions_1_permissions000375"/> None </para>
+<para><anchor id="permissions_1_permissions000376"/> None </para>
+<para><anchor id="permissions_1_permissions000377"/> None </para>
+<para><anchor id="permissions_1_permissions000378"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000407"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000380"/> None </para>
+<para><anchor id="permissions_1_permissions000381"/> None </para>
+<para><anchor id="permissions_1_permissions000382"/> None </para>
+<para><anchor id="permissions_1_permissions000383"/> None </para>
+<para><anchor id="permissions_1_permissions000384"/> None </para>
+<para><anchor id="permissions_1_permissions000385"/> None </para>
+<para><anchor id="permissions_1_permissions000386"/> None </para>
+<para><anchor id="permissions_1_permissions000387"/> None </para>
+<para><anchor id="permissions_1_permissions000435"/> None </para>
+<para><anchor id="permissions_1_permissions000426"/> None </para>
+<para><anchor id="permissions_1_permissions000427"/> None </para>
+<para><anchor id="permissions_1_permissions000428"/> None </para>
+<para><anchor id="permissions_1_permissions000429"/> None </para>
+<para><anchor id="permissions_1_permissions000430"/> None </para>
+<para><anchor id="permissions_1_permissions000431"/> None </para>
+<para><anchor id="permissions_1_permissions000432"/> None </para>
+<para><anchor id="permissions_1_permissions000433"/> None </para>
+<para><anchor id="permissions_1_permissions000434"/> None </para>
+<para><anchor id="permissions_1_permissions000425"/> None </para>
+<para><anchor id="permissions_1_permissions000436"/> None </para>
+<para><anchor id="permissions_1_permissions000437"/> None </para>
+<para><anchor id="permissions_1_permissions000438"/> None </para>
+<para><anchor id="permissions_1_permissions000439"/> None </para>
+<para><anchor id="permissions_1_permissions000440"/> None </para>
+<para><anchor id="permissions_1_permissions000441"/> None </para>
+<para><anchor id="permissions_1_permissions000442"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_error_1gafacc84c24ec3eac1bdd17b7659ada1a4" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) const char *MLMediaResultGetString(MLResult code)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000443"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000416"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000408"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000409"/> None </para>
+<para><anchor id="permissions_1_permissions000410"/> None </para>
+<para><anchor id="permissions_1_permissions000411"/> None </para>
+<para><anchor id="permissions_1_permissions000412"/> None </para>
+<para><anchor id="permissions_1_permissions000413"/> None </para>
+<para><anchor id="permissions_1_permissions000414"/> None </para>
+<para><anchor id="permissions_1_permissions000415"/> None </para>
+<para><anchor id="permissions_1_permissions000370"/> None </para>
+<para><anchor id="permissions_1_permissions000417"/> None </para>
+<para><anchor id="permissions_1_permissions000418"/> None </para>
+<para><anchor id="permissions_1_permissions000419"/> None </para>
+<para><anchor id="permissions_1_permissions000420"/> None </para>
+<para><anchor id="permissions_1_permissions000421"/> None </para>
+<para><anchor id="permissions_1_permissions000422"/> None </para>
+<para><anchor id="permissions_1_permissions000423"/> None </para>
+<para><anchor id="permissions_1_permissions000424"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1ga2f7a91c022f91c26ac5ae7ad47bcd185" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLHeadTrackingGetStateEx.&quot;))) MLResult MLHeadTrackingGetState(MLHandle head_tracker</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000324"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga3de3402fe1d5c9119a77f28a80f0f888" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLSpaceGetLocalizationResult.&quot;))) MLResult MLSpatialAnchorGetLocalizationInfo(MLHandle handle</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000682"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga1927726112c9a67eeb0fb2008f4a106d" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLSpaceLocalizationResultInit.&quot;))) static inline void MLSpatialAnchorLocalizationInfoInit(MLSpatialAnchorLocalizationInfo *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000668"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___planes_1ga3a857120d906c95607210d9f869b43fe" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))) struct MLPolygon</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000630"/> None </para>
+<para><anchor id="permissions_1_permissions000629"/> None </para>
+<para><anchor id="permissions_1_permissions000628"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000320"/> None </para>
+<para><anchor id="permissions_1_permissions000321"/> None </para>
+<para><anchor id="permissions_1_permissions000322"/> None </para>
+<para><anchor id="permissions_1_permissions000323"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1ga50ca9662498141eccf3859fb65833109" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLHandTrackingCreateEx.&quot;))) MLResult MLHandTrackingCreate(MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000314"/> com.magicleap.permission.HAND_TRACKING (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000325"/> None </para>
+<para><anchor id="permissions_1_permissions000326"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_calibration_1ga51d44b1461b1f979bf58031cef2aa018" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLEyeCalibrationState</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000327"/> None </para>
+<para><anchor id="permissions_1_permissions000328"/> None </para>
+<para><anchor id="permissions_1_permissions000329"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___planes_1ga3a857120d906c95607210d9f869b43fe" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))) struct MLPolygon</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000627"/> None </para>
+<para><anchor id="permissions_1_permissions000626"/> com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous) </para>
+<para><anchor id="permissions_1_permissions000625"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000305"/> None </para>
+<para><anchor id="permissions_1_permissions000297"/> None </para>
+<para><anchor id="permissions_1_permissions000298"/> None </para>
+<para><anchor id="permissions_1_permissions000299"/> None </para>
+<para><anchor id="permissions_1_permissions000300"/> None </para>
+<para><anchor id="permissions_1_permissions000301"/> None </para>
+<para><anchor id="permissions_1_permissions000302"/> None </para>
+<para><anchor id="permissions_1_permissions000303"/> None </para>
+<para><anchor id="permissions_1_permissions000304"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga3c3a2a1bcaa612fe73467b61e600dc02" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLInputGetControllerStateEx.&quot;))) MLResult MLInputGetControllerState(MLHandle handle</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000333"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000306"/> None </para>
+<para><anchor id="permissions_1_permissions000307"/> None </para>
+<para><anchor id="permissions_1_permissions000308"/> None </para>
+<para><anchor id="permissions_1_permissions000309"/> None </para>
+<para><anchor id="permissions_1_permissions000310"/> None </para>
+<para><anchor id="permissions_1_permissions000311"/> None </para>
+<para><anchor id="permissions_1_permissions000312"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga6b9a39d4c5d258e2b149898f048206d7" kindref="member">__attribute__</ref>  ((deprecated(&quot;Unimplemented and scheduled for removal.&quot;))) MLResult MLWebViewGetScrollSize(MLHandle web_view</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000721"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000361"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000352"/> None </para>
+<para><anchor id="permissions_1_permissions000353"/> None </para>
+<para><anchor id="permissions_1_permissions000354"/> None </para>
+<para><anchor id="permissions_1_permissions000355"/> None </para>
+<para><anchor id="permissions_1_permissions000356"/> None </para>
+<para><anchor id="permissions_1_permissions000357"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000358"/> None </para>
+<para><anchor id="permissions_1_permissions000359"/> None </para>
+<para><anchor id="permissions_1_permissions000360"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000351"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000362"/> None </para>
+<para><anchor id="permissions_1_permissions000363"/> None </para>
+<para><anchor id="permissions_1_permissions000364"/> None </para>
+<para><anchor id="permissions_1_permissions000365"/> None </para>
+<para><anchor id="permissions_1_permissions000366"/> None </para>
+<para><anchor id="permissions_1_permissions000367"/> None </para>
+<para><anchor id="permissions_1_permissions000368"/> None </para>
+<para><anchor id="permissions_1_permissions000369"/> None </para>
+<para><anchor id="permissions_1_permissions000602"/> None </para>
+<para><anchor id="permissions_1_permissions000610"/> None </para>
+<para><anchor id="permissions_1_permissions000609"/> None </para>
+<para><anchor id="permissions_1_permissions000608"/> None </para>
+<para><anchor id="permissions_1_permissions000607"/> None </para>
+<para><anchor id="permissions_1_permissions000606"/> None </para>
+<para><anchor id="permissions_1_permissions000605"/> None </para>
+<para><anchor id="permissions_1_permissions000604"/> None </para>
+<para><anchor id="permissions_1_permissions000603"/> None </para>
+<para><anchor id="permissions_1_permissions000444"/> None </para>
+<para><anchor id="permissions_1_permissions000601"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000344"/> com.magicleap.permission.MARKER_TRACKING (protection level: normal) </para>
+<para><anchor id="permissions_1_permissions000345"/> None </para>
+<para><anchor id="permissions_1_permissions000346"/> None </para>
+<para><anchor id="permissions_1_permissions000347"/> None </para>
+<para><anchor id="permissions_1_permissions000348"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000349"/> None </para>
+<para><anchor id="permissions_1_permissions000350"/> None </para>
+<para><anchor id="permissions_1_permissions000545"/> None </para>
+<para><anchor id="permissions_1_permissions000536"/> None </para>
+<para><anchor id="permissions_1_permissions000537"/> None </para>
+<para><anchor id="permissions_1_permissions000538"/> None </para>
+<para><anchor id="permissions_1_permissions000539"/> None </para>
+<para><anchor id="permissions_1_permissions000540"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga5152787af81f779f5e2f5d9a13f45302" kindref="member">__attribute__</ref>  ((deprecated(&quot;This feature is not supported starting 1.2.0.&quot;))) MLResult MLMediaPlayerGetAudioHandle(MLHandle media_player</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000541"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000542"/> None </para>
+<para><anchor id="permissions_1_permissions000543"/> None </para>
+<para><anchor id="permissions_1_permissions000544"/> None </para>
+<para><anchor id="permissions_1_permissions000535"/> None </para>
+<para><anchor id="permissions_1_permissions000546"/> None </para>
+<para><anchor id="permissions_1_permissions000547"/> None </para>
+<para><anchor id="permissions_1_permissions000548"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000600"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000550"/> None </para>
+<para><anchor id="permissions_1_permissions000551"/> None </para>
+<para><anchor id="permissions_1_permissions000552"/> None </para>
+<para><anchor id="permissions_1_permissions000553"/> None </para>
+<para><anchor id="permissions_1_permissions000526"/> None </para>
+<para><anchor id="permissions_1_permissions000518"/> None </para>
+<para><anchor id="permissions_1_permissions000519"/> None </para>
+<para><anchor id="permissions_1_permissions000520"/> None </para>
+<para><anchor id="permissions_1_permissions000521"/> None </para>
+<para><anchor id="permissions_1_permissions000522"/> None </para>
+<para><anchor id="permissions_1_permissions000523"/> None </para>
+<para><anchor id="permissions_1_permissions000524"/> None </para>
+<para><anchor id="permissions_1_permissions000525"/> None </para>
+<para><anchor id="permissions_1_permissions000554"/> None </para>
+<para><anchor id="permissions_1_permissions000527"/> None </para>
+<para><anchor id="permissions_1_permissions000528"/> None </para>
+<para><anchor id="permissions_1_permissions000529"/> None </para>
+<para><anchor id="permissions_1_permissions000530"/> None </para>
+<para><anchor id="permissions_1_permissions000531"/> None </para>
+<para><anchor id="permissions_1_permissions000532"/> None </para>
+<para><anchor id="permissions_1_permissions000533"/> None </para>
+<para><anchor id="permissions_1_permissions000534"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000598"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000573"/> None </para>
+<para><anchor id="permissions_1_permissions000574"/> None</para>
+<para><anchor id="permissions_1_permissions000575"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000576"/> None </para>
+<para><anchor id="permissions_1_permissions000577"/> None </para>
+<para><anchor id="permissions_1_permissions000578"/> None </para>
+<para><anchor id="permissions_1_permissions000579"/> None </para>
+<para><anchor id="permissions_1_permissions000580"/> None </para>
+<para><anchor id="permissions_1_permissions000599"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000572"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000597"/> None </para>
+<para><anchor id="permissions_1_permissions000596"/> None </para>
+<para><anchor id="permissions_1_permissions000595"/> None </para>
+<para><anchor id="permissions_1_permissions000594"/> None </para>
+<para><anchor id="permissions_1_permissions000593"/> None </para>
+<para><anchor id="permissions_1_permissions000592"/> None </para>
+<para><anchor id="permissions_1_permissions000591"/> None </para>
+<para><anchor id="permissions_1_permissions000590"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000563"/> None </para>
+<para><anchor id="permissions_1_permissions000555"/> None </para>
+<para><anchor id="permissions_1_permissions000556"/> None </para>
+<para><anchor id="permissions_1_permissions000557"/> None </para>
+<para><anchor id="permissions_1_permissions000558"/> None </para>
+<para><anchor id="permissions_1_permissions000559"/> None </para>
+<para><anchor id="permissions_1_permissions000560"/> None </para>
+<para><anchor id="permissions_1_permissions000561"/> None </para>
+<para><anchor id="permissions_1_permissions000562"/> android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+<para><anchor id="permissions_1_permissions000517"/> None </para>
+<para><anchor id="permissions_1_permissions000564"/> None </para>
+<para><anchor id="permissions_1_permissions000565"/> None </para>
+<para><anchor id="permissions_1_permissions000566"/> None </para>
+<para><anchor id="permissions_1_permissions000567"/> None </para>
+<para><anchor id="permissions_1_permissions000568"/> None </para>
+<para><anchor id="permissions_1_permissions000569"/> None </para>
+<para><anchor id="permissions_1_permissions000570"/> None </para>
+<para><anchor id="permissions_1_permissions000571"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000472"/> None </para>
+<para><anchor id="permissions_1_permissions000463"/> None </para>
+<para><anchor id="permissions_1_permissions000464"/> None </para>
+<para><anchor id="permissions_1_permissions000465"/> None </para>
+<para><anchor id="permissions_1_permissions000466"/> None </para>
+<para><anchor id="permissions_1_permissions000467"/> None </para>
+<para><anchor id="permissions_1_permissions000468"/> None </para>
+<para><anchor id="permissions_1_permissions000469"/> None </para>
+<para><anchor id="permissions_1_permissions000470"/> None </para>
+<para><anchor id="permissions_1_permissions000471"/> None </para>
+<para><anchor id="permissions_1_permissions000462"/> None </para>
+<para><anchor id="permissions_1_permissions000473"/> None </para>
+<para><anchor id="permissions_1_permissions000474"/> None </para>
+<para><anchor id="permissions_1_permissions000475"/> None </para>
+<para><anchor id="permissions_1_permissions000476"/> None </para>
+<para><anchor id="permissions_1_permissions000477"/> None </para>
+<para><anchor id="permissions_1_permissions000478"/> None </para>
+<para><anchor id="permissions_1_permissions000479"/> None </para>
+<para><anchor id="permissions_1_permissions000480"/> None </para>
+<para><anchor id="permissions_1_permissions000453"/> None </para>
+<para><anchor id="permissions_1_permissions000445"/> None </para>
+<para><anchor id="permissions_1_permissions000446"/> None </para>
+<para><anchor id="permissions_1_permissions000447"/> android.permission.INTERNET (protection level: normal) </para>
+<para><anchor id="permissions_1_permissions000448"/> android.permission.INTERNET (protection level: normal) </para>
+<para><anchor id="permissions_1_permissions000449"/> None </para>
+<para><anchor id="permissions_1_permissions000450"/> None </para>
+<para><anchor id="permissions_1_permissions000451"/> None </para>
+<para><anchor id="permissions_1_permissions000452"/> None </para>
+<para><anchor id="permissions_1_permissions000481"/> None </para>
+<para><anchor id="permissions_1_permissions000454"/> None </para>
+<para><anchor id="permissions_1_permissions000455"/> None </para>
+<para><anchor id="permissions_1_permissions000456"/> None </para>
+<para><anchor id="permissions_1_permissions000457"/> None </para>
+<para><anchor id="permissions_1_permissions000458"/> None </para>
+<para><anchor id="permissions_1_permissions000459"/> None </para>
+<para><anchor id="permissions_1_permissions000460"/> None </para>
+<para><anchor id="permissions_1_permissions000461"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000508"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000500"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000501"/> None </para>
+<para><anchor id="permissions_1_permissions000502"/> None </para>
+<para><anchor id="permissions_1_permissions000503"/> None </para>
+<para><anchor id="permissions_1_permissions000504"/> None </para>
+<para><anchor id="permissions_1_permissions000505"/> None </para>
+<para><anchor id="permissions_1_permissions000506"/> android.permission.INTERNET (protection level: normal) </para>
+<para><anchor id="permissions_1_permissions000507"/> android.permission.INTERNET (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000499"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000509"/> None </para>
+<para><anchor id="permissions_1_permissions000510"/> None </para>
+<para><anchor id="permissions_1_permissions000511"/> None </para>
+<para><anchor id="permissions_1_permissions000512"/> None </para>
+<para><anchor id="permissions_1_permissions000513"/> None </para>
+<para><anchor id="permissions_1_permissions000514"/> None </para>
+<para><anchor id="permissions_1_permissions000515"/> None </para>
+<para><anchor id="permissions_1_permissions000516"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000490"/> None </para>
+<para><anchor id="permissions_1_permissions000482"/> None </para>
+<para><anchor id="permissions_1_permissions000483"/> None </para>
+<para><anchor id="permissions_1_permissions000484"/> None </para>
+<para><anchor id="permissions_1_permissions000485"/> None </para>
+<para><anchor id="permissions_1_permissions000486"/> None </para>
+<para><anchor id="permissions_1_permissions000487"/> None </para>
+<para><anchor id="permissions_1_permissions000488"/> None </para>
+<para><anchor id="permissions_1_permissions000489"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000296"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000491"/> None </para>
+<para><anchor id="permissions_1_permissions000492"/> None </para>
+<para><anchor id="permissions_1_permissions000493"/> None </para>
+<para><anchor id="permissions_1_permissions000494"/> None </para>
+<para><anchor id="permissions_1_permissions000495"/> None </para>
+<para><anchor id="permissions_1_permissions000496"/> None </para>
+<para><anchor id="permissions_1_permissions000497"/> None </para>
+<para><anchor id="permissions_1_permissions000498"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000295"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga6b9a39d4c5d258e2b149898f048206d7" kindref="member">__attribute__</ref>  ((deprecated(&quot;Unimplemented and scheduled for removal.&quot;))) MLResult MLWebViewGetScrollSize(MLHandle web_view</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000722"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1gaea6198bd2c8f0077f133352316c0ddb7" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLControllerGetStateEx.&quot;))) MLResult MLControllerGetState(MLHandle handle</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000251"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_calibration_1ga51d44b1461b1f979bf58031cef2aa018" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLEyeCalibrationState</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000265"/> None </para>
+<para><anchor id="permissions_1_permissions000266"/> None </para>
+<para><anchor id="permissions_1_permissions000267"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1ga60c73ce20a1bc00246a1a20d4386a17e" kindref="member">MLAudioBeginAcousticSceneUpdate</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000043"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_analysis_1ga96b4ae2ac0e8a31e251e85320f7a62ee" kindref="member">MLAudioBeginSpectralAnalysisFromMicCapture</ref>  (MLAudioSpectralAnalysisTarget target, MLAudioSpectralAnalysisCallback callback, void *context, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000108"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_analysis_1gaf07985ff6799775bc57e07a43f3df221" kindref="member">MLAudioBeginTraitAnalysisFromMicCapture</ref>  (MLAudioTraitAnalysisTarget target, MLAudioTraitAnalysisCallback callback, void *context, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000105"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1ga3aaac1c9001af0b44b263dc4a4f0cbe4" kindref="member">MLAudioCheckResource</ref>  (MLHandle resource, bool *out_is_ready)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000008"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_allocation_1gac42552ba225847fda65163a6d16cb719" kindref="member">MLAudioCreateInputFromMicCapture</ref>  (MLAudioMicCaptureType mic_capture_type, const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *format, uint32_t buffer_size_in_bytes, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000091"/> android.permission.RECORD_AUDIO (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_allocation_1ga0ba4afe1cb3144b6ada4ebce8ef1430b" kindref="member">MLAudioCreateInputFromMixedCapture</ref>  (const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *format, uint32_t buffer_size, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000093"/> android.permission.RECORD_AUDIO (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_allocation_1ga3430b86b2f2b30ff549c1814c530a077" kindref="member">MLAudioCreateInputFromVirtualCapture</ref>  (const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *format, uint32_t buffer_size, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000092"/> android.permission.RECORD_AUDIO (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1gadb42dfa3e5e2e9539f354344651e593c" kindref="member">MLAudioCreateLoadedResource</ref>  (int file, bool dynamic_decode, MLAudioResourceDiscardedCallback callback, void *context, MLHandle *out_resource)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000006"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_allocation_1gae617c6d07a3511a1db9e9c6abb292753" kindref="member">MLAudioCreateSoundWithBufferedOutput</ref>  (const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *format, uint32_t buffer_size_in_bytes, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000016"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_allocation_1ga516a9b93576a3b0cbf3a664cd82e9bc6" kindref="member">MLAudioCreateSoundWithLoadedFile</ref>  (int file, bool auto_destroy, bool dynamic_decode, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000014"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1ga00bbdcb1689afe7584a856cc0fd6e100" kindref="member">MLAudioCreateSoundWithLoadedResource</ref>  (MLHandle resource, bool auto_destroy, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000012"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_allocation_1gadf79c93ef8d9c0de4c9e325c7e19a0ae" kindref="member">MLAudioCreateSoundWithStreamedFile</ref>  (int file, bool auto_destroy, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000015"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1ga8b7e1339f8a416c4a2d2f70d4c53e82e" kindref="member">MLAudioCreateSoundWithStreamedResource</ref>  (MLHandle resource, bool auto_destroy, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000013"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1gab1133902dd9bc9a065133857221424f8" kindref="member">MLAudioCreateStreamedResource</ref>  (int file, MLAudioResourceDiscardedCallback callback, void *context, MLHandle *out_resource)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000007"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_allocation_1gaccef2b0b7deb18847b9e5bdbb58d3469" kindref="member">MLAudioDestroyInput</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000094"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1gaf2d76222781dc01b9ee5b0b61c2595da" kindref="member">MLAudioDestroyResource</ref>  (MLHandle resource)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000011"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_allocation_1ga5772ae3be742d0d329a2d4c2886e1769" kindref="member">MLAudioDestroySound</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000017"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1gab5bb01e3a96564a6b86ab777f0665bfc" kindref="member">MLAudioEndAcousticSceneUpdate</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000044"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_analysis_1ga467951b8e1463b760293fe12473b433c" kindref="member">MLAudioEndSpectralAnalysis</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000110"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_analysis_1ga36e2609e911bd9ea3c2b9df314aebd63" kindref="member">MLAudioEndTraitAnalysis</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000107"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1gac6453fb0270df01aed7cf4cbf228597b" kindref="member">MLAudioGetAcousticSceneDispersionDefault</ref>  (<ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> *out_properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000050"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1ga19978e53659e44d241196f7c497c2b75" kindref="member">MLAudioGetAcousticSceneMapEnable</ref>  (bool *out_is_enabled)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000046"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1ga6273e0bf9f27ee21fbf1d99678758d35" kindref="member">MLAudioGetAcousticSceneReverbDefault</ref>  (<ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> *out_properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000052"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1ga84a6adf74fc35d5a6239af40a4a279e1" kindref="member">MLAudioGetAcousticSceneTransmissionDefault</ref>  (<ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *out_transmission)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000048"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_buffering_1ga8ad4fee156b94fbddfedf56e51eb2c60" kindref="member">MLAudioGetBufferedInputDefaults</ref>  (uint32_t channel_count, uint32_t samples_per_second, <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *out_format, uint32_t *out_recommended_size_in_bytes, uint32_t *out_min_size_in_bytes)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000098"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_buffering_1gac502c88ca7be0fd1068d9d2e3c075de6" kindref="member">MLAudioGetBufferedInputLatency</ref>  (MLHandle handle, float *out_latency_in_msec)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000099"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_buffering_1ga9c6a88b8deb7ccbd99246c00ed9a43bd" kindref="member">MLAudioGetBufferedOutputDefaults</ref>  (uint32_t channel_count, uint32_t samples_per_second, float max_pitch_change, <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *out_format, uint32_t *out_recommended_size_in_bytes, uint32_t *out_min_size_in_bytes)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000082"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_buffering_1ga90f0cab4330cbfbb75969aa82a613f6b" kindref="member">MLAudioGetBufferedOutputFramesPlayed</ref>  (MLHandle handle, uint64_t *out_frames_played)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000084"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_buffering_1ga2e2a0b2f408fe9e492daca94a4996e7e" kindref="member">MLAudioGetBufferedOutputLatency</ref>  (MLHandle handle, float *out_latency_in_msec)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000083"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1ga6f8e4f232694be13a4ccd0c509296eb5" kindref="member">MLAudioGetChangedAcousticMap</ref>  (uint32_t prev_map_tag, uint8_t **out_map_data, uint32_t *out_map_size_in_bytes, uint32_t *out_map_tag)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000053"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_buffering_1ga65c40a90c61f16352d3bfed5ec4e9c0e" kindref="member">MLAudioGetInputBuffer</ref>  (MLHandle handle, <ref refid="struct_m_l_audio_buffer" kindref="compound">MLAudioBuffer</ref> *out_buf)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000100"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_control_1ga37374e69da45c01322a504903b8218ea" kindref="member">MLAudioGetInputState</ref>  (MLHandle handle, MLAudioState *out_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000097"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_master_volume_1gac67b009fc2d45c2a264937e610b1d1d1" kindref="member">MLAudioGetMasterVolume</ref>  (float *out_volume)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000087"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_mic_muting_1ga3472864ca33aa2e32c2e0201e16827b8" kindref="member">MLAudioGetMicMute</ref>  (bool *out_is_muted)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000103"/> android.permission.RECORD_AUDIO (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_buffering_1gaf0c944fc0dd2635f63d6f6cccce56714" kindref="member">MLAudioGetOutputBuffer</ref>  (MLHandle handle, <ref refid="struct_m_l_audio_buffer" kindref="compound">MLAudioBuffer</ref> *out_buf)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000085"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gad1eab93ce57b5e724655ee0bb9b47752" kindref="member">MLAudioGetOutputDevice</ref>  (MLAudioOutputDevice *out_current_device)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000040"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_master_volume_1ga41840faf87ba2be880e580f0422546b2" kindref="member">MLAudioGetOutputMute</ref>  (bool *out_is_muted)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000089"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1gabe26b9ccc7d4a2fd9d8e748ae371dfb8" kindref="member">MLAudioGetResourceSize</ref>  (MLHandle resource, uint32_t *out_size_in_bytes)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000009"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga98b9357ce375aef3b02d660aa2257aa6" kindref="member">MLAudioGetSoundBypassesMasterVolume</ref>  (MLHandle handle, bool *out_is_bypassing)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000035"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1ga3306cdb0436f6963f116e6715c056744" kindref="member">MLAudioGetSoundFormat</ref>  (MLHandle handle, <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *out_format)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000023"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga8bd9f78a0e38150b23b3af6b74b38d1c" kindref="member">MLAudioGetSoundLooping</ref>  (MLHandle handle, bool *out_is_looping)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000037"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga3cbc0b64387cc3b4c94313a280458d38" kindref="member">MLAudioGetSoundMute</ref>  (MLHandle handle, bool *out_is_muted)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000033"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga0631c7d1666c85d14bf31f46c9471055" kindref="member">MLAudioGetSoundPitch</ref>  (MLHandle handle, float *out_pitch)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000031"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1gaaf6b3c728cb26bc82e95e463ac26412e" kindref="member">MLAudioGetSoundState</ref>  (MLHandle handle, MLAudioState *out_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000022"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gaff273aeb9ff0c9ce3dfa21bd2b5b30ce" kindref="member">MLAudioGetSoundVolumeDb</ref>  (MLHandle handle, float *out_volume)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000029"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga2e9e60353fe08174fa9d9b64cf977d60" kindref="member">MLAudioGetSoundVolumeLinear</ref>  (MLHandle handle, float *out_volume)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000027"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gaae174563420a2dcb86337b7734b71d10" kindref="member">MLAudioGetSpatialRaycastRequests</ref>  (<ref refid="struct_m_l_audio_raycast_request" kindref="compound">MLAudioRaycastRequest</ref> **out_raycast_requests, uint32_t *out_request_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000080"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga3f9750449e12fbb6bde6a694b9bca679" kindref="member">MLAudioGetSpatialSoundBillboarding</ref>  (MLHandle handle, bool *out_is_billboarding)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000061"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga8473f9bd81a7b1d1ef4acf21205fd2d7" kindref="member">MLAudioGetSpatialSoundDirection</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref> *out_direction)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000059"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga6d19d2f97860baf835b775e4840aa59f" kindref="member">MLAudioGetSpatialSoundDirectLevel</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *out_level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000071"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga22bdfd43ff4179c948448b42747d466b" kindref="member">MLAudioGetSpatialSoundDispersionSendLevel</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *out_level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000075"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga21d1a0a6dda4dc067b7484f3d92e4f80" kindref="member">MLAudioGetSpatialSoundDistanceAttenuation</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> *out_properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000067"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga5ebbc9d46dac0722f1cd5f17cf79a317" kindref="member">MLAudioGetSpatialSoundEnable</ref>  (MLHandle handle, bool *out_is_enabled)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000055"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga578f9bf7d5dac620d07eca93f3be40c4" kindref="member">MLAudioGetSpatialSoundHeadRelative</ref>  (MLHandle handle, bool *out_is_head_relative)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000079"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga4b23a03c99dee32d902f66865d19a4c9" kindref="member">MLAudioGetSpatialSoundIndirectLevel</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *out_level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000073"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gae724bb9f12ebf150335712703d6b77d8" kindref="member">MLAudioGetSpatialSoundObstruction</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *out_left_ear, <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *out_right_ear)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000063"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga2b749fcbacc9f8e1c956cf50717cc61f" kindref="member">MLAudioGetSpatialSoundObstructionOverride</ref>  (MLHandle handle, <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *out_override)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000065"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gae1715f9ac9fd41184daea0e8761ee541" kindref="member">MLAudioGetSpatialSoundPosition</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *out_position)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000057"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga687e6558a912b0f7be9e822d996c797f" kindref="member">MLAudioGetSpatialSoundRadiation</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> *out_properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000069"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gab4557cf7993d6d36a24c84b7d8e8a92c" kindref="member">MLAudioGetSpatialSoundReverbSendLevel</ref>  (MLHandle handle, uint32_t channel, <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *out_level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000077"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_analysis_1ga0ffd3bd0d30550252928557ae96be454" kindref="member">MLAudioGetSpectralAnalysis</ref>  (MLHandle handle, <ref refid="struct_m_l_audio_spectral_analysis" kindref="compound">MLAudioSpectralAnalysis</ref> *out_values)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000109"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga52d51994c6f8d288cdcf8454877526b1" kindref="member">MLAudioGetStreamedFileOffset</ref>  (MLHandle handle, uint32_t *out_offset_in_msec)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000039"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_analysis_1gadbf5c2e574a63f524d93173e76af624e" kindref="member">MLAudioGetTraitAnalysis</ref>  (MLHandle handle, float *out_value)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000106"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1ga3f3e7e76f87a5dcb65b43c4ff6264b01" kindref="member">MLAudioPauseSound</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000020"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_resources_1ga20df6058fb038db73f8636bc0e931ea6" kindref="member">MLAudioRefreshResource</ref>  (MLHandle resource, int file)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000010"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_buffering_1ga9b7838d31383dde0a9f0c35ae1fa6ddf" kindref="member">MLAudioReleaseInputBuffer</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000101"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_buffering_1ga2f7add2955010cb02d125374fa22543a" kindref="member">MLAudioReleaseOutputBuffer</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000086"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1gad30ca6c72be37550687df1d9e35b2bd6" kindref="member">MLAudioResetAcousticScene</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000042"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1gab1f6218e66e16b40b230939357e1e34a" kindref="member">MLAudioResumeSound</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000021"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1gac787cac2191538ce335e26c11249676d" kindref="member">MLAudioSetAcousticSceneDispersionDefault</ref>  (const <ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> *properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000049"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1gabe6781f504f56fa8b7f81a71034c1b21" kindref="member">MLAudioSetAcousticSceneMapEnable</ref>  (bool is_enabled)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000045"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1ga85ef3f8d5087bd3abd6d9ddf41f91bf8" kindref="member">MLAudioSetAcousticSceneReverbDefault</ref>  (const <ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> *properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000051"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_acoustics_1gac8af39b35168435dbf823b3438da6952" kindref="member">MLAudioSetAcousticSceneTransmissionDefault</ref>  (const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *transmission)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000047"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_master_volume_1ga822d1b3ad603cd207030667d94eba9a3" kindref="member">MLAudioSetMasterVolumeCallback</ref>  (MLAudioMasterVolumeChangedCallback callback, void *context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000088"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1gadf7d87534dd6adf158fad73c972228ba" kindref="member">MLAudioSetMediaEventCallback</ref>  (MLAudioMediaEventCallback callback, void *context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000025"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_mic_muting_1gae3e12c881d60ef29a095baf19d1533e8" kindref="member">MLAudioSetMicMute</ref>  (bool is_muted)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000102"/> android.permission.RECORD_AUDIO (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_mic_muting_1ga406fbb6ba82e3fd09486a5c246247d0f" kindref="member">MLAudioSetMicMuteCallback</ref>  (MLAudioMicMuteCallback callback, void *context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000104"/> android.permission.RECORD_AUDIO (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gafb8d2ae41885c890e7c0ed1d424a87d4" kindref="member">MLAudioSetOutputDeviceCallback</ref>  (MLAudioOutputDeviceChangedCallback callback, void *context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000041"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_master_volume_1gab09023448d81a23e957f732244ba0294" kindref="member">MLAudioSetOutputMuteCallback</ref>  (MLAudioOutputMuteChangedCallback callback, void *context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000090"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gad4b842ef18ba70923b031a3c14ea259e" kindref="member">MLAudioSetSoundBypassesMasterVolume</ref>  (MLHandle handle, bool is_bypassing)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000034"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1gab12f1e51872f2cc35c742507c10631f1" kindref="member">MLAudioSetSoundEventCallback</ref>  (MLHandle handle, MLAudioSoundEventCallback callback, void *context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000024"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga79b0b6d5d24a411cf4b40698c4cd8790" kindref="member">MLAudioSetSoundLooping</ref>  (MLHandle handle, bool is_looping)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000036"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gaaacfdd1144e66060909ddb92cf15065c" kindref="member">MLAudioSetSoundMute</ref>  (MLHandle handle, bool is_muted)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000032"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga0e6655b24ee4af7c72289ad565d8a4b0" kindref="member">MLAudioSetSoundPitch</ref>  (MLHandle handle, float pitch)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000030"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gae3ed201c73bf365f583c16b5609ec4ff" kindref="member">MLAudioSetSoundVolumeDb</ref>  (MLHandle handle, float volume)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000028"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1ga2c21c97ac90004b477b87ce0287f9cea" kindref="member">MLAudioSetSoundVolumeLinear</ref>  (MLHandle handle, float volume)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000026"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga26ff565d4d61b6eb66a0fd8636d4107d" kindref="member">MLAudioSetSpatialRaycastResults</ref>  (<ref refid="struct_m_l_audio_raycast_result" kindref="compound">MLAudioRaycastResult</ref> *raycast_results, uint32_t result_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000081"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gafb1924466870656d3c890a4c20447315" kindref="member">MLAudioSetSpatialSoundBillboarding</ref>  (MLHandle handle, bool is_billboarding)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000060"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gab3079343d0e69eead1de2713ba9618f5" kindref="member">MLAudioSetSpatialSoundDirection</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref> *direction)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000058"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga2870947057d44b78c47d79ac7d597c30" kindref="member">MLAudioSetSpatialSoundDirectLevel</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000070"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga0397716d05d937f9f61b32842e318c59" kindref="member">MLAudioSetSpatialSoundDispersionSendLevel</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000074"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga33b85b9459df0e65e1f4e226f30b9a78" kindref="member">MLAudioSetSpatialSoundDistanceAttenuation</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> *properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000066"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga7c98e7fd009b10b80934bfe99f137e67" kindref="member">MLAudioSetSpatialSoundEnable</ref>  (MLHandle handle, bool is_enabled)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000054"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga420c33debe8b250fc3902e377a5d3009" kindref="member">MLAudioSetSpatialSoundHeadRelative</ref>  (MLHandle handle, bool is_head_relative)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000078"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gadf8f262d3245512463c9f635f265eca5" kindref="member">MLAudioSetSpatialSoundIndirectLevel</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000072"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gaf87d2f2f8343969d3b01ee64e195a048" kindref="member">MLAudioSetSpatialSoundObstruction</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *left_ear, const <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *right_ear)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000062"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga3bd414666f892d64ae8b77e5f50c9583" kindref="member">MLAudioSetSpatialSoundObstructionOverride</ref>  (MLHandle handle, const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *override)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000064"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga0fc2d32f50b57a19b531ecd58594643a" kindref="member">MLAudioSetSpatialSoundPosition</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *position)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000056"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1ga49e94b1d9e619fa7d32487e001b3acb8" kindref="member">MLAudioSetSpatialSoundRadiation</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> *properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000068"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_spatial_sound_1gab3f64dc36fd2ecc0c4700f1f4c071a0c" kindref="member">MLAudioSetSpatialSoundReverbSendLevel</ref>  (MLHandle handle, uint32_t channel, const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000076"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_parameters_1gac6034fd64db7abbcd45a67bdda10a370" kindref="member">MLAudioSetStreamedFileOffset</ref>  (MLHandle handle, uint32_t offset_in_msec)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000038"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_control_1gad6a0a2fc7081535c067df7e902d06d66" kindref="member">MLAudioStartInput</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000095"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1ga7d64b4f6b97c1c27cbdd3cf98ff601f6" kindref="member">MLAudioStartSound</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000018"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_control_1gaca3532e4e36ca37eddb81dce6b2a50d3" kindref="member">MLAudioStopInput</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000096"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___output_control_1ga20e8ca7f252e47bce25fd37b1bde2dd0" kindref="member">MLAudioStopSound</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000019"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga8b0aad8a6839cab3499b7f716b1b43e1" kindref="member">MLCameraCaptureCallbacksInit</ref>  (<ref refid="struct_m_l_camera_capture_callbacks" kindref="compound">MLCameraCaptureCallbacks</ref> *inout_capture_callbacks)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000228"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gab3db8e30768249cb36fb707f5055caa4" kindref="member">MLCameraCaptureConfigInit</ref>  (<ref refid="struct_m_l_camera_capture_config" kindref="compound">MLCameraCaptureConfig</ref> *inout_config)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000225"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gab0694442faab42cf838932bc490c4157" kindref="member">MLCameraCaptureImage</ref>  (MLCameraContext context, uint32_t num_images)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000240"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga8d95abfa9a0fd27824c6857fdc68fb31" kindref="member">MLCameraCapturePreviewStart</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000242"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga6b0be9e5d82d1a16471bcd3002a64e42" kindref="member">MLCameraCapturePreviewStop</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000244"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga7a0a82cbf65c94cd6b568e0c893fea04" kindref="member">MLCameraCaptureVideoStart</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000241"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gaa517b1eef9f093c7b6d4d57f63da99a0" kindref="member">MLCameraCaptureVideoStop</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000243"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga4a50bb7b85c33fecc312157a3f78b56d" kindref="member">MLCameraConnect</ref>  (const <ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref> *input_context, MLCameraContext *out_context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000230"/> android.permission.CAMERA (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga7701c058d0f4180d95081ead392691fd" kindref="member">MLCameraConnectContextInit</ref>  (<ref refid="struct_m_l_camera_connect_context" kindref="compound">MLCameraConnectContext</ref> *inout_context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000224"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga868ed499591ff99fa22e73793b36a568" kindref="member">MLCameraDeInit</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000234"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga2034203936fd8562d8afa77f30c863c8" kindref="member">MLCameraDeviceAvailabilityStatusCallbacksInit</ref>  (<ref refid="struct_m_l_camera_device_availability_status_callbacks" kindref="compound">MLCameraDeviceAvailabilityStatusCallbacks</ref> *inout_device_availability_status_callbacks)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000226"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga683859500e10e3d5e63ede1ea800c6bf" kindref="member">MLCameraDeviceStatusCallbacksInit</ref>  (<ref refid="struct_m_l_camera_device_status_callbacks" kindref="compound">MLCameraDeviceStatusCallbacks</ref> *inout_device_status_callbacks)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000227"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gafdddea0f91bbec52ff0eadc52df46da9" kindref="member">MLCameraDisconnect</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000233"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gae229e5a1c5e9701c7f4096b956b9d3e7" kindref="member">MLCameraGetCameraCharacteristics</ref>  (MLCameraContext context, MLHandle *out_characteristics_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000248"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gaef93d10d6e8a506bb98909c5b3d30f0f" kindref="member">MLCameraGetDeviceAvailabilityStatus</ref>  (MLCameraIdentifier cam_id, bool *out_device_availability_status)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000246"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga4882ee458933c198dc7c43438cb2865e" kindref="member">MLCameraGetDeviceStatus</ref>  (MLCameraContext context, uint32_t *out_device_status)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000245"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga27730a285b193c125fa56578204ece92" kindref="member">MLCameraGetErrorCode</ref>  (MLCameraContext context, MLCameraError *out_error_code)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000247"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga6e592c9539479573f7cd6da110578eb5" kindref="member">MLCameraGetNumSupportedStreams</ref>  (MLCameraContext context, uint32_t *out_num_supported_streams)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000231"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga5948291a5d5dbc9ab58558df47670c3d" kindref="member">MLCameraGetStreamCaps</ref>  (MLCameraContext context, const uint32_t stream_index, uint32_t *inout_num_stream_caps, <ref refid="struct_m_l_camera_capture_stream_caps" kindref="compound">MLCameraCaptureStreamCaps</ref> *inout_stream_caps)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000232"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga5e9b8bb432847d983f27a28d75ecf5f0" kindref="member">MLCameraInit</ref>  (const <ref refid="struct_m_l_camera_device_availability_status_callbacks" kindref="compound">MLCameraDeviceAvailabilityStatusCallbacks</ref> *device_availability_status_callbacks, void *user_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000229"/> android.permission.CAMERA (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga50dfaa85db969d9b26371c8121026143" kindref="member">MLCameraMetadataGetAFDistanceRangeRequestMetadata</ref>  (MLHandle request_handle, float out_data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000146"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga994f4c1452d0f22ea7a89396b75da0fe" kindref="member">MLCameraMetadataGetAFDistanceRangeResultMetadata</ref>  (MLHandle result_handle, float out_data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000205"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gad7782e793bf0a1bd5a1c2a35e3127cf1" kindref="member">MLCameraMetadataGetColorCorrectionAberrationModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataColorCorrectionAberrationMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000135"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga1044d86c5afed78034dd990b3d23cfa0" kindref="member">MLCameraMetadataGetColorCorrectionAberrationModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataColorCorrectionAberrationMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000190"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaf464c950a74894d6c40a2f9425349e85" kindref="member">MLCameraMetadataGetColorCorrectionAvailableAberrationModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataColorCorrectionAberrationMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000111"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gacca4a372b1beeb83099cfc83508dcb56" kindref="member">MLCameraMetadataGetColorCorrectionGainsRequestMetadata</ref>  (MLHandle request_handle, float out_data[4])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000134"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gad8fd68854cb989e61ddd911f0ea1ba6e" kindref="member">MLCameraMetadataGetColorCorrectionGainsResultMetadata</ref>  (MLHandle result_handle, float out_data[4])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000191"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga96ac37d94811f5089250fb15254f2720" kindref="member">MLCameraMetadataGetColorCorrectionModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataColorCorrectionMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000132"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga88aa352ea83c07b782964bd481f76c45" kindref="member">MLCameraMetadataGetColorCorrectionModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataColorCorrectionMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000188"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga7021e48dc70e864b0eb8263ec823bc30" kindref="member">MLCameraMetadataGetColorCorrectionTransformRequestMetadata</ref>  (MLHandle request_handle, <ref refid="struct_m_l_camera_metadata_rational" kindref="compound">MLCameraMetadataRational</ref> out_data[3][3])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000133"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaca04b3ec630327ec66303647bdb043a5" kindref="member">MLCameraMetadataGetColorCorrectionTransformResultMetadata</ref>  (MLHandle result_handle, <ref refid="struct_m_l_camera_metadata_rational" kindref="compound">MLCameraMetadataRational</ref> out_data[3][3])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000189"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga555372f89d859c61781e2e57b55c79a0" kindref="member">MLCameraMetadataGetControlAEAntibandingModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAEAntibandingMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000136"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gad0f6b9aeac6d834cdf393354c06667d1" kindref="member">MLCameraMetadataGetControlAEAntibandingModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAEAntibandingMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000192"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga3f0df3ce01833e00a8dc0cdbde476a2f" kindref="member">MLCameraMetadataGetControlAEAvailableAntibandingModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlAEAntibandingMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000113"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga76c44c1b32b02a30c403765ef785ad6b" kindref="member">MLCameraMetadataGetControlAEAvailableModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlAEMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000112"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga236585a69c507a266431c6e504162160" kindref="member">MLCameraMetadataGetControlAECompensationRange</ref>  (MLHandle characteristics_handle, int32_t out_data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000114"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gac91c762a7e708480a578a60c9ea10018" kindref="member">MLCameraMetadataGetControlAECompensationStep</ref>  (MLHandle characteristics_handle, <ref refid="struct_m_l_camera_metadata_rational" kindref="compound">MLCameraMetadataRational</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000115"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga183b5d34838a15cbbda4b873a39376a0" kindref="member">MLCameraMetadataGetControlAEExposureCompensationRequestMetadata</ref>  (MLHandle request_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000137"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga5e9e9b4fa62e704da1436bfa08c39e84" kindref="member">MLCameraMetadataGetControlAEExposureCompensationResultMetadata</ref>  (MLHandle result_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000193"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gae7a9d036b03d48f5c6ad649dc3d780f9" kindref="member">MLCameraMetadataGetControlAELockAvailable</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlAELock *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000116"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga7da29e9e39e27bdfe30253cefd9765fb" kindref="member">MLCameraMetadataGetControlAELockRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAELock *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000138"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga4452b239da59be9c1dbd4a6b1d3c9b75" kindref="member">MLCameraMetadataGetControlAELockResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAELock *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000194"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga0c3fd7c3e11b9015720331ba56b2ba39" kindref="member">MLCameraMetadataGetControlAEMaxRegions</ref>  (MLHandle characteristics_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000117"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga7416f0e21b7394ba3c801255bc511e07" kindref="member">MLCameraMetadataGetControlAEModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAEMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000139"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga236dd8b8d13c6bf0eb8f85673c544f7e" kindref="member">MLCameraMetadataGetControlAEModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAEMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000195"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga57d8dc0fd4bfe1740ff1b4b02d44a228" kindref="member">MLCameraMetadataGetControlAERegionsRequestMetadata</ref>  (MLHandle request_handle, int32_t out_data[3][5], uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000140"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gad285d55f50cc0716a2087c430c66ce98" kindref="member">MLCameraMetadataGetControlAERegionsResultMetadata</ref>  (MLHandle result_handle, int32_t out_data[3][5], uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000196"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga3f1d53aad528c12c4965d6681904d5bf" kindref="member">MLCameraMetadataGetControlAEStateResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAEState *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000198"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga236e9e295bfd68ab553bd31f80921dce" kindref="member">MLCameraMetadataGetControlAETargetFPSRangeResultMetadata</ref>  (MLHandle result_handle, int32_t out_data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000197"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaf81bb522b1fbfc885e7a5be6ccf4fb4d" kindref="member">MLCameraMetadataGetControlAFAvailableModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlAFMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000120"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaf77c20f6576298e0f5ac4015917252fa" kindref="member">MLCameraMetadataGetControlAFMaxRegions</ref>  (MLHandle characteristics_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000121"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga884b8b890264b16d63327b18e32fc8c9" kindref="member">MLCameraMetadataGetControlAFModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAFMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000143"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga457e42c11ef7fade8a15d1d481470b36" kindref="member">MLCameraMetadataGetControlAFModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAFMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000202"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa215dadffe978b2191b2a8b904da21a0" kindref="member">MLCameraMetadataGetControlAFRegionsRequestMetadata</ref>  (MLHandle request_handle, int32_t out_data[3][5], uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000145"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga2af0beaef825fcb240fdec47b8263113" kindref="member">MLCameraMetadataGetControlAFRegionsResultMetadata</ref>  (MLHandle result_handle, int32_t out_data[3][5], uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000204"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaf1c3118345d5b645f5d4f070403439df" kindref="member">MLCameraMetadataGetControlAFSceneChangeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAFSceneChange *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000207"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaf8e4896b1ea9262b7812155862b9d59c" kindref="member">MLCameraMetadataGetControlAFStateResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAFState *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000206"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga3021dc8dd96268647b6f31dc50940ddd" kindref="member">MLCameraMetadataGetControlAFTriggerRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAFTrigger *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000144"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gafe0c5c8e33b65d60dd9047543c741310" kindref="member">MLCameraMetadataGetControlAFTriggerResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAFTrigger *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000203"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga531c7fc1b468cb2928cca559830bf3b2" kindref="member">MLCameraMetadataGetControlAvailableEffectModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlEffectMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000123"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga69ac7f2673b897a8fbb562b7acf57836" kindref="member">MLCameraMetadataGetControlAvailableModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000118"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga955e35442d7938f9c238323a3adab9f2" kindref="member">MLCameraMetadataGetControlAvailableSceneModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlSceneMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000122"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga71ddd04c4cd44b9bde967855fdb805d3" kindref="member">MLCameraMetadataGetControlAWBAvailableModes</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlAWBMode **out_data, uint32_t *out_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000119"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga8dc7892621020966a443a1d22dd6255c" kindref="member">MLCameraMetadataGetControlAWBLockAvailable</ref>  (MLHandle characteristics_handle, MLCameraMetadataControlAWBLock *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000124"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga915febac26e8ea3431c982da4c03e875" kindref="member">MLCameraMetadataGetControlAWBLockRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAWBLock *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000141"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga08b2f78d6a203629765dc47f16495417" kindref="member">MLCameraMetadataGetControlAWBLockResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAWBLock *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000199"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaadae49ea3de61ef65a5105ccc59e72e9" kindref="member">MLCameraMetadataGetControlAWBModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlAWBMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000142"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gae0dfb3def05829cf04cfca3b168b0d3f" kindref="member">MLCameraMetadataGetControlAWBModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAWBMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000201"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga9cb916b23c4e64b9a6e76bb501d16bef" kindref="member">MLCameraMetadataGetControlAWBStateResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlAWBState *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000200"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga818e1abd880bdf3c49b6cfe6856c760c" kindref="member">MLCameraMetadataGetControlEffectModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlEffectMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000153"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga7adb162237e95e490ccad5b94533cc9e" kindref="member">MLCameraMetadataGetControlEffectModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlEffectMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000217"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa463717b7fc480ef8025125433b2a9e7" kindref="member">MLCameraMetadataGetControlExposureUpperTimeLimitRequestMetadata</ref>  (MLHandle request_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000154"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gad926ef6a3dcd4c30bcd9bd57fc816f18" kindref="member">MLCameraMetadataGetControlExposureUpperTimeLimitResultMetadata</ref>  (MLHandle result_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000218"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga209c2ae9afbc5973cef796d3a494f01e" kindref="member">MLCameraMetadataGetControlForceApplyModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlForceApplyMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000159"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga68fc0275c7b0863dd0ffb78215406c71" kindref="member">MLCameraMetadataGetControlForceApplyModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlForceApplyMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000222"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa7220f7752564313c61f3df1f8bcf374" kindref="member">MLCameraMetadataGetControlModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000148"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga81cb6eb6239045bcfe39ab302264160f" kindref="member">MLCameraMetadataGetControlModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000210"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga9119a255930b4cd88b50e2eeb7b45a27" kindref="member">MLCameraMetadataGetControlSceneModeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataControlSceneMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000149"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga901a0cc747333e2ad001ef4430f27046" kindref="member">MLCameraMetadataGetControlSceneModeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataControlSceneMode *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000211"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga806a10de5c4bb92d4b9abd9bb2599440" kindref="member">MLCameraMetadataGetJpegGPSCoordinatesRequestMetadata</ref>  (MLHandle request_handle, double out_data[3])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000155"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga2c4c67ceb49d0c6f586e7b40674f82c3" kindref="member">MLCameraMetadataGetJpegGPSCoordinatesResultMetadata</ref>  (MLHandle result_handle, double out_data[3])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000219"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga33886ff26c3b3596498393ae38e28151" kindref="member">MLCameraMetadataGetJpegGPSTimestampRequestMetadata</ref>  (MLHandle request_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000156"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga85d0e33255886f58de0e41c743b3b1aa" kindref="member">MLCameraMetadataGetJpegGPSTimestampResultMetadata</ref>  (MLHandle result_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000220"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga063c4ae9cad45101b1fce70cfc669770" kindref="member">MLCameraMetadataGetJpegQualityRequestMetadata</ref>  (MLHandle request_handle, uint8_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000158"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa24d1b5c3c477899982b5022d7bf14de" kindref="member">MLCameraMetadataGetJpegQualityResultMetadata</ref>  (MLHandle result_handle, uint8_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000223"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga29b3ad61bad1dcea2b1c069418ea2ac0" kindref="member">MLCameraMetadataGetJpegThumbnailSizeRequestMetadata</ref>  (MLHandle request_handle, MLCameraMetadataJpegThumbnailSize *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000157"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gace615c590039dae6b469ee913257e65f" kindref="member">MLCameraMetadataGetJpegThumbnailSizeResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataJpegThumbnailSize *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000221"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga07c3b93611841a7242d81eef3de77237" kindref="member">MLCameraMetadataGetLensFocusDistanceRequestMetadata</ref>  (MLHandle request_handle, float *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000147"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gad44334fa2c06791f8a539316a905428c" kindref="member">MLCameraMetadataGetLensFocusDistanceResultMetadata</ref>  (MLHandle result_handle, float *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000208"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga1dd69d004b7fec7f69206537a1906be2" kindref="member">MLCameraMetadataGetLensInfoHyperfocalDistance</ref>  (MLHandle characteristics_handle, float *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000128"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga60ae25c55124d53d03cd060008e4be86" kindref="member">MLCameraMetadataGetLensInfoMinimumFocusDistance</ref>  (MLHandle characteristics_handle, float *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000129"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga8db64cdabf89c09f570d93e41d440f2a" kindref="member">MLCameraMetadataGetLensInfoMinimumFocusDistanceIncrement</ref>  (MLHandle characteristics_handle, float *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000130"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga3ced5fb01bbd52964f2c763f19a74d00" kindref="member">MLCameraMetadataGetLensStateResultMetadata</ref>  (MLHandle result_handle, MLCameraMetadataLensState *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000209"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga2888f5668b9124f2ff563cfbeab3cbaf" kindref="member">MLCameraMetadataGetPostRawSensitivityBoostRange</ref>  (MLHandle characteristics_handle, int32_t out_data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000127"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaabcd728a0479aa1ec42b7c62f2e21d6e" kindref="member">MLCameraMetadataGetPostRawSensitivityBoostRequestMetadata</ref>  (MLHandle request_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000152"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga3c03764b15b7dbeb95ca83344e735ae8" kindref="member">MLCameraMetadataGetPostRawSensitivityBoostResultMetadata</ref>  (MLHandle result_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000214"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaff4ad6d1484fafe97327b02a2c2667aa" kindref="member">MLCameraMetadataGetSensorExposureTimeRequestMetadata</ref>  (MLHandle request_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000150"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga9acb2011e038348a4b92f0ea85b036cf" kindref="member">MLCameraMetadataGetSensorExposureTimeResultMetadata</ref>  (MLHandle result_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000212"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa67aece3e8e793e8425e9a14b97f3f18" kindref="member">MLCameraMetadataGetSensorFrameDurationResultMetadata</ref>  (MLHandle result_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000216"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga0146ab30fe659ca3e15aed5a12f24034" kindref="member">MLCameraMetadataGetSensorInfoActiveArraySize</ref>  (MLHandle characteristics_handle, int32_t out_data[4])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000125"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga6fecf647a7d34ff87ae3cd67422935e5" kindref="member">MLCameraMetadataGetSensorInfoSensitivityRange</ref>  (MLHandle characteristics_handle, int32_t out_data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000126"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga7871601aa8ebb4d6b383ec5c501644ef" kindref="member">MLCameraMetadataGetSensorOrientation</ref>  (MLHandle characteristics_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000131"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga1e72fc2005ec7d1c205092e316dce2db" kindref="member">MLCameraMetadataGetSensorSensitivityRequestMetadata</ref>  (MLHandle request_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000151"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gac06bac3688d20f13a0528b6bf838c9ea" kindref="member">MLCameraMetadataGetSensorSensitivityResultMetadata</ref>  (MLHandle result_handle, int32_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000213"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga32a5be28b5988cece16ff18c00d52fa4" kindref="member">MLCameraMetadataGetSensorTimestampResultMetadata</ref>  (MLHandle result_handle, int64_t *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000215"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga9ad04996257dcaaf0a0570760be23e4a" kindref="member">MLCameraMetadataSetAFDistanceRange</ref>  (MLHandle request_handle, const float data[2])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000174"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga2b2a645e62383631590c165015328a8d" kindref="member">MLCameraMetadataSetColorCorrectionAberrationMode</ref>  (MLHandle request_handle, const MLCameraMetadataColorCorrectionAberrationMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000163"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga4b737a1d7c0fedf65e6c028c30c439ad" kindref="member">MLCameraMetadataSetColorCorrectionGains</ref>  (MLHandle request_handle, const float data[4])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000162"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga844eb4ef3efda65d4904ad98848054f0" kindref="member">MLCameraMetadataSetColorCorrectionMode</ref>  (MLHandle request_handle, const MLCameraMetadataColorCorrectionMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000160"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa2fd1777ca35ab388abaa23a63abe7ab" kindref="member">MLCameraMetadataSetColorCorrectionTransform</ref>  (MLHandle request_handle, const <ref refid="struct_m_l_camera_metadata_rational" kindref="compound">MLCameraMetadataRational</ref> data[3][3])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000161"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga1e405e8375e52ce875e708909a99844d" kindref="member">MLCameraMetadataSetControlAEAntibandingMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlAEAntibandingMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000164"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga5ef322a7f2ca03beece2ac0f6bc54dd5" kindref="member">MLCameraMetadataSetControlAEExposureCompensation</ref>  (MLHandle request_handle, const int32_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000165"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaeea9ed73403009eb61055480d81814f6" kindref="member">MLCameraMetadataSetControlAELock</ref>  (MLHandle request_handle, const MLCameraMetadataControlAELock *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000166"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gae900da45a15e80fb4e8158b0cd37bc04" kindref="member">MLCameraMetadataSetControlAEMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlAEMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000167"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga6b50ef96233f31501e1069c884c3c0d4" kindref="member">MLCameraMetadataSetControlAERegions</ref>  (MLHandle request_handle, const int32_t data[3][5], const uint32_t count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000168"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga4649ccc06b2e9f668b2fda117739179e" kindref="member">MLCameraMetadataSetControlAFMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlAFMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000171"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gada6a1e77bb8d25e2267ac5ff5b4c55bd" kindref="member">MLCameraMetadataSetControlAFRegions</ref>  (MLHandle request_handle, const int32_t data[3][5], const uint32_t count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000173"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga9467aa22499df794b3cab8c8d4084151" kindref="member">MLCameraMetadataSetControlAFTrigger</ref>  (MLHandle request_handle, const MLCameraMetadataControlAFTrigger *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000172"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gacb3898fb6fa4af5a87313b5072b4c051" kindref="member">MLCameraMetadataSetControlAWBLock</ref>  (MLHandle request_handle, const MLCameraMetadataControlAWBLock *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000169"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga9cca0e19e4f11e6ce76d20ee66b081ce" kindref="member">MLCameraMetadataSetControlAWBMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlAWBMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000170"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga3e13080e4e5a339f306500d3c1308737" kindref="member">MLCameraMetadataSetControlEffectMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlEffectMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000181"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaffe2f4830dc66057fca27f9a74d38ac2" kindref="member">MLCameraMetadataSetControlExposureUpperTimeLimit</ref>  (MLHandle request_handle, const int64_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000182"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gabf4827e7d3bcc363d8ac17e6ba78375e" kindref="member">MLCameraMetadataSetControlForceApplyMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlForceApplyMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000187"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gac287ddcdde94e6e8e29a5c2621b4a5ba" kindref="member">MLCameraMetadataSetControlMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000176"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga66f0f40e1bf594fa72067f3d72edbd91" kindref="member">MLCameraMetadataSetControlSceneMode</ref>  (MLHandle request_handle, const MLCameraMetadataControlSceneMode *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000177"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gac5cdbfe47682a33598b0de5c5e080963" kindref="member">MLCameraMetadataSetJpegGPSCoordinates</ref>  (MLHandle request_handle, const double data[3])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000183"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa21e1ab2074a64972a97f8418d1f746c" kindref="member">MLCameraMetadataSetJpegGPSTimestamp</ref>  (MLHandle request_handle, const int64_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000184"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gab39022f88218aa307d565fceb3bb3245" kindref="member">MLCameraMetadataSetJpegQuality</ref>  (MLHandle request_handle, const uint8_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000186"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga5d6a6efce20aeae15927ff127bed73f0" kindref="member">MLCameraMetadataSetJpegThumbnailSize</ref>  (MLHandle request_handle, const MLCameraMetadataJpegThumbnailSize *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000185"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga384756e003d920dbd53c2e3678a81f17" kindref="member">MLCameraMetadataSetLensFocusDistance</ref>  (MLHandle request_handle, const float *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000175"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1ga628b16abb4ff0cd3da68853b7680c17b" kindref="member">MLCameraMetadataSetPostRawSensitivityBoost</ref>  (MLHandle request_handle, const int32_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000180"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa9444e87103011a6488359dce9da7d8e" kindref="member">MLCameraMetadataSetSensorExposureTime</ref>  (MLHandle request_handle, const int64_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000178"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_metadata_1gaa3bac88f90d9deaf64bbad6041e251f6" kindref="member">MLCameraMetadataSetSensorSensitivity</ref>  (MLHandle request_handle, const int32_t *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000179"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga1540652d0607c7dea59c87a28d8ee948" kindref="member">MLCameraPreCaptureAEAWB</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000235"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture</ref>  (MLCameraContext context, const <ref refid="struct_m_l_camera_capture_config" kindref="compound">MLCameraCaptureConfig</ref> *config, MLHandle *out_request_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000236"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>  (MLCameraContext context, const <ref refid="struct_m_l_camera_capture_callbacks" kindref="compound">MLCameraCaptureCallbacks</ref> *capture_callbacks, void *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000239"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1ga6bb597e0ba9f5ef7644aaad5102a30de" kindref="member">MLCameraSetDeviceStatusCallbacks</ref>  (MLCameraContext context, const <ref refid="struct_m_l_camera_device_status_callbacks" kindref="compound">MLCameraDeviceStatusCallbacks</ref> *device_status_callbacks, void *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000238"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___camera_1gabab6383c174fc3652053d44434b72b28" kindref="member">MLCameraUpdateCaptureSettings</ref>  (MLCameraContext context)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000237"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx</ref>  (const <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref> *mode, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000249"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1ga34269cc948d933f70f20709072e150be" kindref="member">MLControllerDestroy</ref>  (MLHandle tracker)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000250"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1ga68ddc37757f15ef54fab6cedf8fac610" kindref="member">MLControllerGetStateEx</ref>  (MLHandle handle, <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> *out_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000252"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___c_v_camera_1gafd453da4f37d0ceb6a35fb422ccc1e62" kindref="member">MLCVCameraGetFramePose</ref>  (MLHandle camera_handle, MLHandle head_handle, MLCVCameraID id, MLTime camera_timestamp, <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref> *out_transform)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000254"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___c_v_camera_1ga10388b02fed500d39ab2ae4698ad3070" kindref="member">MLCVCameraTrackingCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000253"/> android.permission.CAMERA (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___c_v_camera_1ga07cfda0e76261e3f23a7b3838b3f4c24" kindref="member">MLCVCameraTrackingDestroy</ref>  (MLHandle camera_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000255"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1gabaa73bd82279e9baadb4e4f3d29299a3" kindref="member">MLDepthCameraCapabilityFilterInit</ref>  (<ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref> *inout_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000257"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>  (const <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> *settings, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000258"/> com.magicleap.permission.DEPTH_CAMERA (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga0574a26bcd11a3aa3fe19fff2d683a6e" kindref="member">MLDepthCameraDisconnect</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000264"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities</ref>  (MLHandle handle, const <ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref> *filter, <ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref> *out_caps)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000260"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga60600fdd4d7d666758d9be4acf7ba524" kindref="member">MLDepthCameraGetLatestDepthData</ref>  (MLHandle handle, uint64_t timeout_ms, <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000262"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga4755187bb8ca046c1c7c8bff0da99ee1" kindref="member">MLDepthCameraReleaseCapabilities</ref>  (MLHandle handle, <ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref> *out_caps)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000261"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga9a65008cb2d8bbb5754b22295f80264e" kindref="member">MLDepthCameraReleaseDepthData</ref>  (MLHandle handle, <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> *depth_camera_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000263"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga1aed943f1ad81c5299171f91b8938427" kindref="member">MLDepthCameraSettingsInit</ref>  (<ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> *inout_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000256"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___d_cam_1ga415a73bfe115db7960366752b9a82159" kindref="member">MLDepthCameraUpdateSettings</ref>  (MLHandle handle, const <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000259"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___e_cam_1gaa74abb159328cf73781444d99e348c01" kindref="member">MLEyeCameraConnect</ref>  (const <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> *settings, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000269"/> com.magicleap.permission.EYE_CAMERA (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___e_cam_1gab1d2644c462067f800f29d5dcf6377e6" kindref="member">MLEyeCameraDisconnect</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000273"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___e_cam_1ga1fdd7aab1a822b25e7812fe35eb47a5c" kindref="member">MLEyeCameraGetLatestCameraData</ref>  (MLHandle handle, uint64_t timeout_ms, <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000271"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___e_cam_1gafc7e8b2cfc97da1c575631b174915083" kindref="member">MLEyeCameraReleaseCameraData</ref>  (MLHandle handle, <ref refid="struct_m_l_eye_camera_data" kindref="compound">MLEyeCameraData</ref> *eye_camera_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000272"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___e_cam_1ga60b185d6b7f3cdbbdb8148508a6befe3" kindref="member">MLEyeCameraSettingsInit</ref>  (<ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> *inout_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000268"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___e_cam_1gaa3a5b46db525e535ec29db782feafbbb" kindref="member">MLEyeCameraUpdateSettings</ref>  (MLHandle handle, const <ref refid="struct_m_l_eye_camera_settings" kindref="compound">MLEyeCameraSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000270"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_tracking_1ga580b6f27b900c12aa1bf2d24fe697591" kindref="member">MLEyeTrackingCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000274"/> com.magicleap.permission.EYE_TRACKING (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_tracking_1ga4e6637050fa140f2086f51d5ec746c0c" kindref="member">MLEyeTrackingDestroy</ref>  (MLHandle eye_tracker)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000275"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_tracking_1gaeadd17327f07cce7b8dc8b4d4209195a" kindref="member">MLEyeTrackingGetStateEx</ref>  (MLHandle eye_tracker, <ref refid="struct_m_l_eye_tracking_state_ex" kindref="compound">MLEyeTrackingStateEx</ref> *out_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000277"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_tracking_1gab06d1af555599ebe9c2194888cbab102" kindref="member">MLEyeTrackingGetStaticData</ref>  (MLHandle eye_tracker, <ref refid="struct_m_l_eye_tracking_static_data" kindref="compound">MLEyeTrackingStaticData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000276"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" kindref="member">MLFacialExpressionCreateClient</ref>  (const <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> *settings, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000281"/> com.magicleap.permission.FACIAL_EXPRESSION (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1ga286756c1c4c34119b2c83c28404b1a6f" kindref="member">MLFacialExpressionDestroyClient</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000284"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1gae76d323432fb31d325c3730389c7c1b8" kindref="member">MLFacialExpressionEyeDataInit</ref>  (<ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref> *inout_eye_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000278"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1ga02fdbd66d8739b9eab0d90475224344a" kindref="member">MLFacialExpressionGetEyeData</ref>  (MLHandle handle, <ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref> *out_eye_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000283"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1ga9018874648901c781e40c3e4fbab0c35" kindref="member">MLFacialExpressionGetResultString</ref>  (MLResult result)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000280"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1ga71abdb68af410132b9c99b9b2ffc8744" kindref="member">MLFacialExpressionSettingsInit</ref>  (<ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> *inout_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000279"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___facial_expression_1ga0d4e5aa00bd426aea8e86990c83d0429" kindref="member">MLFacialExpressionUpdateSettings</ref>  (MLHandle handle, const <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000282"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gaze_recognition_1gade0d05e383d0ac7b1525faa7d5e84282" kindref="member">MLGazeRecognitionCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000287"/> com.magicleap.permission.EYE_TRACKING (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gaze_recognition_1ga2c4c22b659c0a8c99c8bd03c8f4aceb4" kindref="member">MLGazeRecognitionDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000288"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gaze_recognition_1gadf6a5548f0bb60d34721a03c08057542" kindref="member">MLGazeRecognitionGetState</ref>  (MLHandle handle, <ref refid="struct_m_l_gaze_recognition_state" kindref="compound">MLGazeRecognitionState</ref> *out_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000290"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gaze_recognition_1gadd83562daefbc8506640498b27f0dcb4" kindref="member">MLGazeRecognitionGetStaticData</ref>  (MLHandle handle, <ref refid="struct_m_l_gaze_recognition_static_data" kindref="compound">MLGazeRecognitionStaticData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000289"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gaze_recognition_1gaa01f609e49f796f150747fd1de1cd297" kindref="member">MLGazeRecognitionStateInit</ref>  (<ref refid="struct_m_l_gaze_recognition_state" kindref="compound">MLGazeRecognitionState</ref> *inout_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000286"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gaze_recognition_1ga5f13a1a32acb677fd75cb737a8cf4825" kindref="member">MLGazeRecognitionStaticDataInit</ref>  (<ref refid="struct_m_l_gaze_recognition_static_data" kindref="compound">MLGazeRecognitionStaticData</ref> *inout_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000285"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gesture_classification_1ga8a1e592707d424766223d28826aafc48" kindref="member">MLGestureClassificationCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000291"/> com.magicleap.permission.HAND_TRACKING (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gesture_classification_1gad2943ba9ccbff967330aac9a77b54939" kindref="member">MLGestureClassificationDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000292"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gesture_classification_1gac7e60930b12b0805a6e2e7841d8317dc" kindref="member">MLGestureClassificationGetData</ref>  (MLHandle handle, <ref refid="struct_m_l_gesture_classification_data" kindref="compound">MLGestureClassificationData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000294"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___gesture_classification_1ga5e78cbddfa008b226b51d5ce17db6828" kindref="member">MLGestureClassificationGetStaticData</ref>  (MLHandle handle, <ref refid="struct_m_l_gesture_classification_static_data" kindref="compound">MLGestureClassificationStaticData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000293"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___platform_1ga2465b1b80dfbf39b79d76a392f38802d" kindref="member">MLGetResultString</ref>  (MLResult result_code)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000001"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___platform_1gaf78966c503f273cae23d3f8188f495ba" kindref="member">MLGetVersion</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000005"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___platform_1gab652ce8c2afdad17f91aab3ac35bb18c" kindref="member">MLGetVersionName</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000004"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___platform_1gaec8456292d85bdc97436de2507c18610" kindref="member">MLGlobalGetResultString</ref>  (MLResult result_code)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000002"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" kindref="member">MLHandleIsValid</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000003"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1ga51ea0e2bbd50d210531154f12869f737" kindref="member">MLHandTrackingCreateEx</ref>  (const <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> *settings, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000315"/> com.magicleap.permission.HAND_TRACKING (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1gab1bc7a76607208a5b66692be24285cd8" kindref="member">MLHandTrackingDestroy</ref>  (MLHandle hand_tracker)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000317"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1ga8604087b02ed433174ff23fc25add2ee" kindref="member">MLHandTrackingGetData</ref>  (MLHandle hand_tracker, <ref refid="struct_m_l_hand_tracking_data" kindref="compound">MLHandTrackingData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000318"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1ga8bbc7420798fece88fcae6a43388e7da" kindref="member">MLHandTrackingGetStaticData</ref>  (MLHandle hand_tracker, <ref refid="struct_m_l_hand_tracking_static_data" kindref="compound">MLHandTrackingStaticData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000319"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1gad9eb02864e383e77de3ec9c4ffe676cf" kindref="member">MLHandTrackingUpdateSettings</ref>  (MLHandle hand_tracker, const <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000316"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gae53654b2a56fac1bfe8a929d10048540" kindref="member">MLInputCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000331"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga58a2a6d455fffd4e1a850251d23a1f29" kindref="member">MLInputCreateCustomHapticsPattern</ref>  (MLHandle handle, <ref refid="struct_m_l_input_custom_haptics_info" kindref="compound">MLInputCustomHapticsInfo</ref> *info, uint32_t *inout_pattern_id)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000339"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gae55fa64c5eb66fb0e619ff525646c02c" kindref="member">MLInputDeleteCustomHapticsPattern</ref>  (MLHandle handle, uint32_t pattern_id)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000341"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga592d6f741d254547ab74043c8ee258ab" kindref="member">MLInputDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000343"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga68795f47e3d03b98f326b8e8a95a3545" kindref="member">MLInputGetConnectedDevices</ref>  (MLHandle handle, <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> *inout_devices)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000335"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gadb83512defd22a275680735730c3cc27" kindref="member">MLInputGetControllerStateEx</ref>  (MLHandle handle, <ref refid="struct_m_l_input_controller_state_ex" kindref="compound">MLInputControllerStateEx</ref> out_state[MLInput_MaxControllers])</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000334"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga4b5a189db9a59273666d4eea5b821412" kindref="member">MLInputGetResultString</ref>  (MLResult result)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000330"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga2f9e540988b267fa39d8c75b9c2a6a49" kindref="member">MLInputReleaseConnectedDevicesList</ref>  (MLHandle handle, <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> *devices)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000336"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx</ref>  (MLHandle handle, const <ref refid="struct_m_l_input_controller_callbacks_ex" kindref="compound">MLInputControllerCallbacksEx</ref> *controller_callbacks, void *user_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000332"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga7006b917f1d86d441218e7e4314b29f5" kindref="member">MLInputStartControllerFeedbackBuzzCommand</ref>  (MLHandle handle, uint8_t controller_id, const <ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref> *command)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000338"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga5b3fd5ead389211a79ba6cfded305dd6" kindref="member">MLInputStartControllerFeedbackCustomHapticsPattern</ref>  (MLHandle handle, uint8_t controller_id, uint32_t pattern_id)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000340"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga689901e7286c3fd274a48756a8c9943a" kindref="member">MLInputStartControllerFeedbackPreDefinedPattern</ref>  (MLHandle handle, uint8_t controller_id, <ref refid="struct_m_l_input_pre_defined_pattern" kindref="compound">MLInputPreDefinedPattern</ref> *pattern)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000337"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga042d4fe02f355f8b8b174e0e5d635afd" kindref="member">MLInputStopControllerFeedback</ref>  (MLHandle handle, uint8_t controller_id)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000342"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gac6e400b4f0d09f23b4734db5c6405772" kindref="member">MLMediaPlayerOnMediaTimedTextUpdateCallback</ref>  )(MLHandle media_player, MLHandle timed_text, void *data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000549"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1ga6a30bf2be428ffac2561d092cccf82bb" kindref="member">MLMeshingCreateClient</ref>  (MLHandle *out_client_handle, const <ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000581"/> com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1ga216e0caf2132e3356c3b675bddf25b7a" kindref="member">MLMeshingDestroyClient</ref>  (MLHandle client_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000582"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1gaf31a70ba3e796a3809d2e0efffb2f308" kindref="member">MLMeshingFreeResource</ref>  (MLHandle client_handle, MLHandle *request_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000589"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1gab3f62af8d22ef3ac2386bdb9e6cb367b" kindref="member">MLMeshingGetMeshInfoResult</ref>  (MLHandle client_handle, MLHandle request_handle, <ref refid="struct_m_l_meshing_mesh_info" kindref="compound">MLMeshingMeshInfo</ref> *out_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000586"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1gad4e26f458f33e4185749819953f344bc" kindref="member">MLMeshingGetMeshResult</ref>  (MLHandle client_handle, MLHandle request_handle, <ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref> *out_mesh)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000588"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1ga5fcfcf1b5a992440dac8c586aaf4a9ac" kindref="member">MLMeshingInitSettings</ref>  (<ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref> *out_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000583"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_utilities_1gacde005f762f87954e333465eed005261" kindref="member">MLMeshingPopulateDepth</ref>  (MLHandle client_handle, const <ref refid="struct_m_l_meshing_depth_buffer_info" kindref="compound">MLMeshingDepthBufferInfo</ref> *info, const <ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref> *meshes)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000313"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1ga751aeddf04c6a646cf673ce29287cb5b" kindref="member">MLMeshingRequestMesh</ref>  (MLHandle client_handle, const <ref refid="struct_m_l_meshing_mesh_request" kindref="compound">MLMeshingMeshRequest</ref> *request, MLHandle *out_request_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000587"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1ga0d26d31532d3e4110fb19e85bb84f3f3" kindref="member">MLMeshingRequestMeshInfo</ref>  (MLHandle client_handle, const <ref refid="struct_m_l_meshing_extents" kindref="compound">MLMeshingExtents</ref> *extents, MLHandle *out_request_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000585"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___meshing2_1ga2a4834bba566c15a3eb1e66b460d1d9e" kindref="member">MLMeshingUpdateSettings</ref>  (MLHandle client_handle, const <ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000584"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1ga1be12f16433f201195084d3d7fd5bd07" kindref="member">MLOcclusionCreateClient</ref>  (const <ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref> *settings, MLHandle *out_client_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000614"/> com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1gaf0f669710fa5e91a8eb1c19ec7c983ec" kindref="member">MLOcclusionDestroyClient</ref>  (MLHandle client_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000615"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1ga587477a06bf01038c6a61d9222a2284c" kindref="member">MLOcclusionGetLatestMesh</ref>  (MLHandle handle, const <ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref> *mesh_query, <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> *out_mesh_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000617"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1ga55129ccd07bce4349f4014980c944844" kindref="member">MLOcclusionMeshInit</ref>  (<ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> *inout_mesh)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000612"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1gaecdfef7ed0923cb61ff20e78e30272bb" kindref="member">MLOcclusionMeshQueryInit</ref>  (<ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref> *inout_mesh_query)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000613"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1gaa567e649b61cc2fdf29101a068126130" kindref="member">MLOcclusionReleaseMesh</ref>  (MLHandle handle, <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> *mesh_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000618"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1gab700c727d2350d714227fd9e2db67298" kindref="member">MLOcclusionSettingsInit</ref>  (<ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref> *inout_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000611"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___occlusion_1ga9c0fc3e0820308c7c0202b0a93a2c5bb" kindref="member">MLOcclusionUpdateSettings</ref>  (MLHandle handle, const <ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000616"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1ga603052db7983ada2c2914808bbfe5556" kindref="member">MLPerceptionGetPredictedSnapshot</ref>  (MLTime timestamp, MLSnapshot **out_snapshot)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000623"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" kindref="member">MLPerceptionGetSnapshot</ref>  (MLSnapshot **out_snapshot)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000622"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1ga4dbc63fcb5cee6e7a611c2112e72d344" kindref="member">MLPerceptionInitSettings</ref>  (<ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref> *out_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000619"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1ga9ecc623e84bd956436108024a0ad68bb" kindref="member">MLPerceptionReleaseSnapshot</ref>  (MLSnapshot *snap)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000624"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1ga9f73adaced184926e98e683d987f7ea3" kindref="member">MLPerceptionShutdown</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000621"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1gae3a8d4f9078ec8618ae822703061ae75" kindref="member">MLPerceptionStartup</ref>  (<ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000620"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___platform_1gabe3cb6a5f17a98592a312cbe95d298f0" kindref="member">MLPlatformGetAPILevel</ref>  (uint32_t *out_api_level)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000631"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga7bcc52fbbf5ad99e61849cad1d5b06db" kindref="member">MLPowerManagerCreate</ref>  (MLPowerManagerComponent component, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000632"/> none  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga3412565288153d28e7b56089c4bf1bc0" kindref="member">MLPowerManagerDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000633"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1gad80b91dedf35a927820cfa01d8113886" kindref="member">MLPowerManagerGetAvailablePowerStates</ref>  (MLHandle handle, const <ref refid="struct_m_l_power_manager_power_state_info" kindref="compound">MLPowerManagerPowerStateInfo</ref> *in_info, <ref refid="struct_m_l_power_manager_power_state_data" kindref="compound">MLPowerManagerPowerStateData</ref> *out_states)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000638"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga66f0168ef79d133787df768d6ccb918a" kindref="member">MLPowerManagerGetAvailableProperties</ref>  (MLHandle handle, const <ref refid="struct_m_l_power_manager_property_type_info" kindref="compound">MLPowerManagerPropertyTypeInfo</ref> *in_info, <ref refid="struct_m_l_power_manager_property_type_data" kindref="compound">MLPowerManagerPropertyTypeData</ref> *out_properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000641"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga24e463bca5df16394ca99457f902040a" kindref="member">MLPowerManagerGetComponentProperties</ref>  (MLHandle handle, const <ref refid="struct_m_l_power_manager_property_info" kindref="compound">MLPowerManagerPropertyInfo</ref> *in_info, <ref refid="struct_m_l_power_manager_property_data" kindref="compound">MLPowerManagerPropertyData</ref> *out_properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000636"/> None </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga62d3dc5d9aa02ce377e29b72a8f70be3" kindref="member">MLPowerManagerGetPowerState</ref>  (MLHandle handle, const <ref refid="struct_m_l_power_manager_power_state_info" kindref="compound">MLPowerManagerPowerStateInfo</ref> *in_info, <ref refid="struct_m_l_power_manager_power_state_data" kindref="compound">MLPowerManagerPowerStateData</ref> *out_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000639"/> None </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga6c894ce01b5aaf1ce5a4e88c58998dfd" kindref="member">MLPowerManagerGetResultString</ref>  (MLResult result_code)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000643"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga2c17d96f17cabf56a943aec2aa137755" kindref="member">MLPowerManagerReleasePowerStateData</ref>  (MLHandle handle, <ref refid="struct_m_l_power_manager_power_state_data" kindref="compound">MLPowerManagerPowerStateData</ref> *power_states)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000640"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1gaba571ce91256ad03f94a451183964a10" kindref="member">MLPowerManagerReleasePropertyData</ref>  (MLHandle handle, <ref refid="struct_m_l_power_manager_property_data" kindref="compound">MLPowerManagerPropertyData</ref> *properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000637"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1gac4f369f8677d677f875f3e60fcdbc02f" kindref="member">MLPowerManagerReleasePropertyTypeData</ref>  (MLHandle handle, <ref refid="struct_m_l_power_manager_property_type_data" kindref="compound">MLPowerManagerPropertyTypeData</ref> *properties)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000642"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1gafd4bc89d539a0de46b072fc8d2f06e98" kindref="member">MLPowerManagerSetCallbacks</ref>  (MLHandle handle, <ref refid="struct_m_l_power_manager_callbacks" kindref="compound">MLPowerManagerCallbacks</ref> *cb, void *user_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000634"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___power_manager_1ga4db90ad99376194b9a966a319dc1c8a4" kindref="member">MLPowerManagerSetPowerState</ref>  (MLHandle handle, const <ref refid="struct_m_l_power_manager_power_state_settings" kindref="compound">MLPowerManagerPowerStateSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000635"/> None </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1gac73ae10bf4ea48c9039479658b807b13" kindref="member">MLSnapshotGetPoseInBase</ref>  (const MLSnapshot *snapshot, const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *base_id, const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *id, <ref refid="struct_m_l_pose" kindref="compound">MLPose</ref> *out_pose)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000647"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1gae70dc7a0e140aee6306fd442a5a2e884" kindref="member">MLSnapshotGetResultString</ref>  (MLResult result_code)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000648"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1ga85e7a5fafcf1c5ea81d28ccada531996" kindref="member">MLSnapshotGetStaticData</ref>  (<ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref> *out_static_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000644"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1gaca4197ebdb7cb75b07423fd45debc738" kindref="member">MLSnapshotGetTransform</ref>  (const MLSnapshot *snapshot, const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *id, <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref> *out_transform)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000645"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___perception_1gace955a2e80a00a978c4cdb5586c15a0e" kindref="member">MLSnapshotGetTransformWithDerivatives</ref>  (const MLSnapshot *snapshot, const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *id, <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref> *out_transform, <ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref> *out_derivatives)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000646"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga17ae1607ebe52d2f202652086e5522ad" kindref="member">MLSpaceCallbacksInit</ref>  (<ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> *inout_callbacks)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000655"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" kindref="member">MLSpaceExportInfoInit</ref>  (<ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000657"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref>  (const <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref> *export_info, <ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000666"/> com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga25f4671a9ed8c725e6e711b462089088" kindref="member">MLSpaceGetLocalizationResult</ref>  (MLHandle handle, <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref> *out_localization_result)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000663"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1gaf6a7a19e6e4c3eeb9a47f853f29757e1" kindref="member">MLSpaceGetResultString</ref>  (MLResult result)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000658"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" kindref="member">MLSpaceGetSpaceList</ref>  (MLHandle handle, const <ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref> *query_filter, <ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *out_space_list)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000660"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga9802e8653b9eddae5b33a61233fde414" kindref="member">MLSpaceImportInfoInit</ref>  (<ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000656"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga0584f9886bb1d1408c3e672556f01b1b" kindref="member">MLSpaceImportSpace</ref>  (const <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> *import_info, <ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref> *out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000665"/> com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1gae215ee4fefd36959893a2f1856d05a7d" kindref="member">MLSpaceInit</ref>  (<ref refid="struct_m_l_space" kindref="compound">MLSpace</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000650"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga550978af81a1086eceba4e12d484e24e" kindref="member">MLSpaceListInit</ref>  (<ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000651"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1gad15116e35a8c009cef4218608c0a07cc" kindref="member">MLSpaceLocalizationInfoInit</ref>  (<ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000653"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" kindref="member">MLSpaceLocalizationResultInit</ref>  (<ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000654"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>  (const <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref> *settings, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000659"/> com.magicleap.permission.SPACE_MANAGER (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga4ca5fd11d5c0bd1f9dfbc02db8b27350" kindref="member">MLSpaceManagerDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000664"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" kindref="member">MLSpaceManagerSettingsInit</ref>  (<ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000649"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga8671dc4dddec350ff713efa55f88a295" kindref="member">MLSpaceQueryFilterInit</ref>  (<ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref> *inout_query_filter)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000652"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1gae1f897eee7002fb943de6609da0f0873" kindref="member">MLSpaceReleaseExportData</ref>  (<ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> *space_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000667"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" kindref="member">MLSpaceReleaseSpaceList</ref>  (MLHandle handle, <ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *space_list)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000661"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___space_1ga2465fe8e9cda7d4e873b30be446ad59b" kindref="member">MLSpaceRequestLocalization</ref>  (MLHandle handle, const <ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref> *localization_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000662"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga4bbe58b62f7b38f3da2c32f8f018b0d3" kindref="member">MLSpatialAnchorCreate</ref>  (MLHandle handle, const <ref refid="struct_m_l_spatial_anchor_create_info" kindref="compound">MLSpatialAnchorCreateInfo</ref> *create_info, <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *out_anchor)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000674"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1gac2f5462db58e7349672e4560a984d7c2" kindref="member">MLSpatialAnchorCreateInfoInit</ref>  (<ref refid="struct_m_l_spatial_anchor_create_info" kindref="compound">MLSpatialAnchorCreateInfo</ref> *inout_info)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000670"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga7ab3c90f255c9f52a9d0d5ca5de636da" kindref="member">MLSpatialAnchorDelete</ref>  (MLHandle handle, <ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref> anchor_id)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000676"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga49959e1e16249a989ff476f2a9e4a699" kindref="member">MLSpatialAnchorGetResultString</ref>  (MLResult result)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000681"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga4548b42b46afa1d16be41f91dbb8f093" kindref="member">MLSpatialAnchorInit</ref>  (<ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *inout_anchor)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000669"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga6f611aba2f239c6f880a54bee4b66e38" kindref="member">MLSpatialAnchorPublish</ref>  (MLHandle handle, <ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref> anchor_id)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000675"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1gaa6891320d4b4d406b870709e83b46555" kindref="member">MLSpatialAnchorQueryCreate</ref>  (MLHandle handle, const <ref refid="struct_m_l_spatial_anchor_query_filter" kindref="compound">MLSpatialAnchorQueryFilter</ref> *query_filter, MLHandle *out_query_handle, uint32_t *out_results_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000678"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga5a2d889598883ad4e4d378e1c7e09cc9" kindref="member">MLSpatialAnchorQueryDestroy</ref>  (MLHandle handle, MLHandle query_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000679"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga366c74107d4e7696ea4609902d75966b" kindref="member">MLSpatialAnchorQueryFilterInit</ref>  (<ref refid="struct_m_l_spatial_anchor_query_filter" kindref="compound">MLSpatialAnchorQueryFilter</ref> *inout_query_filter)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000671"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga4a291f512f3cfc42f10f817c60fd52a7" kindref="member">MLSpatialAnchorQueryGetResult</ref>  (MLHandle handle, MLHandle query_handle, uint32_t first_index, uint32_t last_index, <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *out_results)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000680"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga188d99968363decb15f2008cb0872c15" kindref="member">MLSpatialAnchorTrackerCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000672"/> com.magicleap.permission.SPATIAL_ANCHOR (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga4d2362a7e10fb4482447316b23f0b8b5" kindref="member">MLSpatialAnchorTrackerDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000673"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga72ad407a8a5207534f2ca7df3a75a4a0" kindref="member">MLSpatialAnchorUpdate</ref>  (MLHandle handle, const <ref refid="struct_m_l_spatial_anchor" kindref="compound">MLSpatialAnchor</ref> *anchor)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000677"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___system_notification_manager_1ga59a91be3936b39fbf9988b2594ef23dc" kindref="member">MLSystemNotificationManagerCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000683"/> com.magicleap.permission.SYSTEM_NOTIFICATION (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___system_notification_manager_1gad0b4ebb380fbc056d9e02d31fc4281bc" kindref="member">MLSystemNotificationManagerDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000684"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___system_notification_manager_1ga83104d8a16d16d29d4e831494b08125d" kindref="member">MLSystemNotificationManagerSetNotifications</ref>  (MLHandle handle, bool suppress)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000685"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___time_1gacc3bee1a36fbc711896a308f7e0e2d06" kindref="member">MLTimeConvertMLTimeToSystemTime</ref>  (MLTime ml_time, struct timespec *out_timespec_time)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000686"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___time_1ga9e8353bc4347abffb1d2a65e24b45033" kindref="member">MLTimeConvertSystemTimeToMLTime</ref>  (const struct timespec *timespec_time, MLTime *out_ml_time)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000687"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga5067cfc1a47e73f2fb164aa3694e9880" kindref="member">MLVoiceGetResultString</ref>  (MLResult result)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000697"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga4aa987614762db01434d36b7beafaa23" kindref="member">MLVoiceIntentCallbacksInit</ref>  (<ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref> *inout_callbacks)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000688"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gaf3a89b14464c0e6dbb99480e1fc34ad5" kindref="member">MLVoiceIntentConfigureSettings</ref>  (MLHandle handle, const <ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref> *voice_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000692"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga966bf9010aca2b177bca495b13d68feb" kindref="member">MLVoiceIntentCreate</ref>  (MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000690"/> com.magicleap.permission.VOICE_INPUT (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga3a6f91eba298224f466b7d734427d22e" kindref="member">MLVoiceIntentDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000691"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gaa2f88d3c14fe1eeab0fa3e4d7128fd6c" kindref="member">MLVoiceIntentIsEnabled</ref>  (MLHandle handle, bool *out_is_enabled)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000696"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gaa7f88ecd8baa0dcfa5b5bde41b960fdd" kindref="member">MLVoiceIntentSetCallbacks</ref>  (MLHandle handle, const <ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref> *voice_callbacks, void *user_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000693"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga4b201c29d5d41402f519328c9474ce5d" kindref="member">MLVoiceIntentSettingsInit</ref>  (<ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref> *inout_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000689"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gad704a22baf87a1e8d348db235ebbe255" kindref="member">MLVoiceIntentStartProcessing</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000694"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gaabf0b5047adc58663b87e04aef9010bf" kindref="member">MLVoiceIntentStopProcessing</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000695"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga019115da7292ae0df862309ff381061d" kindref="member">MLWebViewAcquireNextAvailableFrame</ref>  (MLHandle web_view, struct AHardwareBuffer **out_native_buffer)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000706"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga10a4a19aa51fff7c8aa459335a99f92a" kindref="member">MLWebViewCanGoBack</ref>  (MLHandle web_view, bool *out_can_go_back)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000713"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gacace6fc8da82f30f6823d0d7af1e17bc" kindref="member">MLWebViewCanGoForward</ref>  (MLHandle web_view, bool *out_can_go_forward)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000714"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga149e0398123225701f613cafab536408" kindref="member">MLWebViewClearCache</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000730"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga08232e58b87d14aa8ee7e1ddcd5e2430" kindref="member">MLWebViewCreate</ref>  (MLHandle *out_handle, const <ref refid="struct_m_l_web_view_settings" kindref="compound">MLWebViewSettings</ref> *in_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000703"/> com.magicleap.permission.WEBVIEW (protection level: normal)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga93a93605df5f0016f88a49e75ea35370" kindref="member">MLWebViewCursorStateInit</ref>  (<ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *inout_cursor_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000698"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga42e80641406db9bff09e23b005e6fc79" kindref="member">MLWebViewDestroy</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000704"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gac67c0e330756c3859d0bf70d54e09161" kindref="member">MLWebViewEventCallbacksInit</ref>  (<ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref> *inout_callback)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000699"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga40aec2ee90cba86d42f213f3c2f8af48" kindref="member">MLWebViewGetFrameTransformMatrix</ref>  (MLHandle web_view, <ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref> *out_matrix)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000728"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gac86a6c40e1e99f56e3ec3f873aca215e" kindref="member">MLWebViewGetUrl</ref>  (MLHandle web_view, uint32_t *inout_size, char *inout_url)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000712"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga8b4dceb6d237c547fcb0a11ddf2af131" kindref="member">MLWebViewGetZoomFactor</ref>  (MLHandle web_view, double *out_zoom_factor)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000724"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga6ec019a289bc4ae10e1d2ac4b556239c" kindref="member">MLWebViewGoBack</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000709"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga54b398539ade12af8825d0f0c6a33cd2" kindref="member">MLWebViewGoForward</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000710"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga18caf102c825abb7bf513a044df9e80e" kindref="member">MLWebViewGoTo</ref>  (MLHandle web_view, const char *url)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000708"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gab27ed1886ee0bb3d557a844fc731b793" kindref="member">MLWebViewInjectChar</ref>  (MLHandle web_view, uint32_t char_utf32)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000718"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga3602cc9b0a9e6723124e970acdbe00b0" kindref="member">MLWebViewInjectKeyDown</ref>  (MLHandle web_view, int32_t key_code, uint32_t modifier_mask)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000719"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga1c6337f50a8b33776aec9b867b6b6bb1" kindref="member">MLWebViewInjectKeyUp</ref>  (MLHandle web_view, int32_t key_code, uint32_t modifier_mask)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000720"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga3b19a18f3e4bbaa618566b2c4cf7697f" kindref="member">MLWebViewInjectMouseButtonDown</ref>  (MLHandle web_view, const <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *cursor_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000716"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gab57456f6587b527603c42cc1f5369f65" kindref="member">MLWebViewInjectMouseButtonUp</ref>  (MLHandle web_view, const <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *cursor_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000717"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga6636283750030f7a525b7b1f5fdb11ee" kindref="member">MLWebViewInjectMouseMove</ref>  (MLHandle web_view, const <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *cursor_state)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000715"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga0debf195a5e7fda653faba2370d4507d" kindref="member">MLWebViewProcessSettingsInit</ref>  (<ref refid="struct_m_l_web_view_process_settings" kindref="compound">MLWebViewProcessSettings</ref> *inout_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000701"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gaf32d53b91802f066aa7df38a554dc0e1" kindref="member">MLWebViewReleaseFrame</ref>  (MLHandle web_view, struct AHardwareBuffer *native_buffer)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000707"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gad5e92884af2623407a8cc93c1809a97b" kindref="member">MLWebViewReload</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000711"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga24eab1b5aac297d0b60adb724e500da5" kindref="member">MLWebViewRemoveAllCookies</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000729"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga960c3f12d9837a19c86fb6237ebac8a4" kindref="member">MLWebViewResetZoom</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000727"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga16079029367531074d1ff3381f294073" kindref="member">MLWebViewScrollBy</ref>  (MLHandle web_view, const int32_t x_pixels, const int32_t y_pixels)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000723"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gac3513bd78b38b89b4dfa7a0ce068989c" kindref="member">MLWebViewSetEventCallbacks</ref>  (MLHandle web_view, const <ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref> *callbacks)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000705"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gabcfe0c92d9aa64f2301853a6dad80426" kindref="member">MLWebViewSetProcessSettings</ref>  (const <ref refid="struct_m_l_web_view_process_settings" kindref="compound">MLWebViewProcessSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000702"/> None </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gaa5db486d68d7e91604288136c92f3a40" kindref="member">MLWebViewSettingsInit</ref>  (<ref refid="struct_m_l_web_view_settings" kindref="compound">MLWebViewSettings</ref> *inout_settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000700"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1gaaebd61092f959f4b074e6e4321f1e61c" kindref="member">MLWebViewZoomIn</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000725"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga29494b983dbd9a80662f4dfa8c9867d1" kindref="member">MLWebViewZoomOut</ref>  (MLHandle web_view)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000726"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___w_cam_1gab2b4352030944d95f59807b1b287bbc8" kindref="member">MLWorldCameraConnect</ref>  (const <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> *settings, MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000732"/> android.permission.CAMERA (protection level: dangerous)  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___w_cam_1gaaff6b569eec1c8a58688367a35492cee" kindref="member">MLWorldCameraDisconnect</ref>  (MLHandle handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000736"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___w_cam_1ga99fc26fb929af51604d2d4403430e04f" kindref="member">MLWorldCameraGetLatestWorldCameraData</ref>  (MLHandle handle, uint64_t timeout_ms, <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> **out_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000734"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___w_cam_1ga73e7619062a3d873a4036679511f254e" kindref="member">MLWorldCameraReleaseCameraData</ref>  (MLHandle handle, <ref refid="struct_m_l_world_camera_data" kindref="compound">MLWorldCameraData</ref> *world_camera_data)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000735"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___w_cam_1ga9132b9fa0b8351acf1aa918843c6a8aa" kindref="member">MLWorldCameraSettingsInit</ref>  (<ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> *inout_handle)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000731"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___w_cam_1gaeeaf313737c0d173b3d733ff6e0b11dc" kindref="member">MLWorldCameraUpdateSettings</ref>  (MLHandle handle, const <ref refid="struct_m_l_world_camera_settings" kindref="compound">MLWorldCameraSettings</ref> *settings)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000733"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1gae7df7c75df42b89bcda76eed8146461e" kindref="member">MLZIGraphicsEnumerateRequiredVkDeviceExtensions</ref>  (VkExtensionProperties *out_required_extension_properties, uint32_t *out_extension_property_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000740"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1ga23b26792bf48fc5e589fe8518910fa23" kindref="member">MLZIGraphicsEnumerateRequiredVkInstanceExtensions</ref>  (VkExtensionProperties *out_required_extension_properties, uint32_t *out_extension_property_count)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000739"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1ga65ce2bbe6bc817eb68473debf6067729" kindref="member">MLZIIsServerConfigured</ref>  (bool *out_is_configured)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000737"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1gabe61cef9d7bb5ec4542521ec61559697" kindref="member">MLZIPermissionsIsGranted</ref>  (const char *permission_name)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000743"/> Any  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1ga365b1fb09ac23d2d67d10cbdb45e1748" kindref="member">MLZIPermissionsRequest</ref>  (const char *permission_name)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000744"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1ga31167d52a34374dc0739aa044067b651" kindref="member">MLZIPermissionsStart</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000741"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1ga479a4f7042a5ec8debf0bfd865dbbce1" kindref="member">MLZIPermissionsStop</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000742"/> None  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___z_i_1gae81e497700c5d36b2b3749d70ab66698" kindref="member">MLZISetProgramLabel</ref>  (const char *in_label)</term></varlistentry>
+<listitem><para><anchor id="permissions_1_permissions000738"/> None </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="permissions"/>
+  </compounddef>
+</doxygen>

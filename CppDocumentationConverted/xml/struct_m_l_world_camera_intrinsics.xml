@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_world_camera_intrinsics" kind="struct" language="C++" prot="public">
+    <compoundname>MLWorldCameraIntrinsics</compoundname>
+    <includes refid="ml__world__camera_8h" local="no">ml_world_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1a97b96eef43d36d76f55a6c7689147940" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraIntrinsics::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera width. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="176" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1a598bcff7efa85b512ba29f5438d2d46f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraIntrinsics::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera height. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="178" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1a4610dd717b26abf65f78f38532fa29bd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>MLVec2f MLWorldCameraIntrinsics::focal_length</definition>
+        <argsstring></argsstring>
+        <name>focal_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera focal length. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="180" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1a40eebdce8b607e49586ab941145f97de" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>MLVec2f MLWorldCameraIntrinsics::principal_point</definition>
+        <argsstring></argsstring>
+        <name>principal_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera principal point. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="182" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1ada1cdbfb2ce50639bdcca9306ebf8ce0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLWorldCameraIntrinsics::fov</definition>
+        <argsstring></argsstring>
+        <name>fov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field of view in degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="184" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1a98d539154362f6eb9800fd2c75c8139c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MLWorldCameraIntrinsics::radial_distortion[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients]</definition>
+        <argsstring>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients]</argsstring>
+        <name>radial_distortion</name>
+        <briefdescription>
+<para>Radial distortion vector. The radial distortion co-efficients are in the following order: [k1, k2, k3, k4]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="189" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_intrinsics_1aa21e74cf0c93b29c6ed06bf2744aef29" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MLWorldCameraIntrinsics::tangential_distortion[MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients]</definition>
+        <argsstring>[MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients]</argsstring>
+        <name>tangential_distortion</name>
+        <briefdescription>
+<para>Tangential distortion vector. The tangential distortion co-efficients are in the following order: [p1, p2]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="194" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>World camera intrinsic parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec2f</label>
+        <link refid="struct_m_l_vec2f"/>
+      </node>
+      <node id="1">
+        <label>MLWorldCameraIntrinsics</label>
+        <link refid="struct_m_l_world_camera_intrinsics"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>focal_length</edgelabel>
+          <edgelabel>principal_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="174" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="174" bodyend="195"/>
+    <listofallmembers>
+      <member refid="struct_m_l_world_camera_intrinsics_1a4610dd717b26abf65f78f38532fa29bd" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>focal_length</name></member>
+      <member refid="struct_m_l_world_camera_intrinsics_1ada1cdbfb2ce50639bdcca9306ebf8ce0" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>fov</name></member>
+      <member refid="struct_m_l_world_camera_intrinsics_1a598bcff7efa85b512ba29f5438d2d46f" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>height</name></member>
+      <member refid="struct_m_l_world_camera_intrinsics_1a40eebdce8b607e49586ab941145f97de" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>principal_point</name></member>
+      <member refid="struct_m_l_world_camera_intrinsics_1a98d539154362f6eb9800fd2c75c8139c" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>radial_distortion</name></member>
+      <member refid="struct_m_l_world_camera_intrinsics_1aa21e74cf0c93b29c6ed06bf2744aef29" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>tangential_distortion</name></member>
+      <member refid="struct_m_l_world_camera_intrinsics_1a97b96eef43d36d76f55a6c7689147940" prot="public" virt="non-virtual"><scope>MLWorldCameraIntrinsics</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

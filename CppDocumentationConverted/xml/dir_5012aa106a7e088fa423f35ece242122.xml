@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_5012aa106a7e088fa423f35ece242122" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include</compoundname>
+    <innerfile refid="ml__api_8h">ml_api.h</innerfile>
+    <innerfile refid="ml__audio_8h">ml_audio.h</innerfile>
+    <innerfile refid="ml__audio__channel__mask_8h">ml_audio_channel_mask.h</innerfile>
+    <innerfile refid="ml__camera__metadata__tags__v2_8h">ml_camera_metadata_tags_v2.h</innerfile>
+    <innerfile refid="ml__camera__metadata__v2_8h">ml_camera_metadata_v2.h</innerfile>
+    <innerfile refid="ml__camera__v2_8h">ml_camera_v2.h</innerfile>
+    <innerfile refid="ml__camera__vendor__tags_8h">ml_camera_vendor_tags.h</innerfile>
+    <innerfile refid="ml__controller_8h">ml_controller.h</innerfile>
+    <innerfile refid="ml__coordinate__frame__uid_8h">ml_coordinate_frame_uid.h</innerfile>
+    <innerfile refid="ml__cv__camera_8h">ml_cv_camera.h</innerfile>
+    <innerfile refid="ml__depth__camera_8h">ml_depth_camera.h</innerfile>
+    <innerfile refid="ml__eye__calibration_8h">ml_eye_calibration.h</innerfile>
+    <innerfile refid="ml__eye__camera_8h">ml_eye_camera.h</innerfile>
+    <innerfile refid="ml__eye__tracking_8h">ml_eye_tracking.h</innerfile>
+    <innerfile refid="ml__facial__expression_8h">ml_facial_expression.h</innerfile>
+    <innerfile refid="ml__gaze__recognition_8h">ml_gaze_recognition.h</innerfile>
+    <innerfile refid="ml__gesture__classification_8h">ml_gesture_classification.h</innerfile>
+    <innerfile refid="ml__graphics_8h">ml_graphics.h</innerfile>
+    <innerfile refid="ml__graphics__utils_8h">ml_graphics_utils.h</innerfile>
+    <innerfile refid="ml__hand__tracking_8h">ml_hand_tracking.h</innerfile>
+    <innerfile refid="ml__head__tracking_8h">ml_head_tracking.h</innerfile>
+    <innerfile refid="ml__headset__fit_8h">ml_headset_fit.h</innerfile>
+    <innerfile refid="ml__input_8h">ml_input.h</innerfile>
+    <innerfile refid="ml__marker__tracking_8h">ml_marker_tracking.h</innerfile>
+    <innerfile refid="ml__media__cea608__caption_8h">ml_media_cea608_caption.h</innerfile>
+    <innerfile refid="ml__media__cea708__caption_8h">ml_media_cea708_caption.h</innerfile>
+    <innerfile refid="ml__media__codec_8h">ml_media_codec.h</innerfile>
+    <innerfile refid="ml__media__codeclist_8h">ml_media_codeclist.h</innerfile>
+    <innerfile refid="ml__media__common_8h">ml_media_common.h</innerfile>
+    <innerfile refid="ml__media__crypto_8h">ml_media_crypto.h</innerfile>
+    <innerfile refid="ml__media__data__source_8h">ml_media_data_source.h</innerfile>
+    <innerfile refid="ml__media__drm_8h">ml_media_drm.h</innerfile>
+    <innerfile refid="ml__media__error_8h">ml_media_error.h</innerfile>
+    <innerfile refid="ml__media__extractor_8h">ml_media_extractor.h</innerfile>
+    <innerfile refid="ml__media__format_8h">ml_media_format.h</innerfile>
+    <innerfile refid="ml__media__muxer_8h">ml_media_muxer.h</innerfile>
+    <innerfile refid="ml__media__player_8h">ml_media_player.h</innerfile>
+    <innerfile refid="ml__media__recorder_8h">ml_media_recorder.h</innerfile>
+    <innerfile refid="ml__media__stream__source_8h">ml_media_stream_source.h</innerfile>
+    <innerfile refid="ml__media__ttml_8h">ml_media_ttml.h</innerfile>
+    <innerfile refid="ml__media__types_8h">ml_media_types.h</innerfile>
+    <innerfile refid="ml__media__webvtt_8h">ml_media_webvtt.h</innerfile>
+    <innerfile refid="ml__meshing2_8h">ml_meshing2.h</innerfile>
+    <innerfile refid="ml__native__surface_8h">ml_native_surface.h</innerfile>
+    <innerfile refid="ml__occlusion_8h">ml_occlusion.h</innerfile>
+    <innerfile refid="ml__perception_8h">ml_perception.h</innerfile>
+    <innerfile refid="ml__planes_8h">ml_planes.h</innerfile>
+    <innerfile refid="ml__platform_8h">ml_platform.h</innerfile>
+    <innerfile refid="ml__power__manager_8h">ml_power_manager.h</innerfile>
+    <innerfile refid="ml__snapshot_8h">ml_snapshot.h</innerfile>
+    <innerfile refid="ml__space_8h">ml_space.h</innerfile>
+    <innerfile refid="ml__spatial__anchor_8h">ml_spatial_anchor.h</innerfile>
+    <innerfile refid="ml__system__notification__manager_8h">ml_system_notification_manager.h</innerfile>
+    <innerfile refid="ml__time_8h">ml_time.h</innerfile>
+    <innerfile refid="ml__types_8h">ml_types.h</innerfile>
+    <innerfile refid="ml__version_8h">ml_version.h</innerfile>
+    <innerfile refid="ml__voice_8h">ml_voice.h</innerfile>
+    <innerfile refid="ml__webview_8h">ml_webview.h</innerfile>
+    <innerfile refid="ml__world__camera_8h">ml_world_camera.h</innerfile>
+    <innerfile refid="ml__zi_8h">ml_zi.h</innerfile>
+    <innerfile refid="ml__zi__graphics_8h">ml_zi_graphics.h</innerfile>
+    <innerfile refid="ml__zi__permissions_8h">ml_zi_permissions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/"/>
+  </compounddef>
+</doxygen>

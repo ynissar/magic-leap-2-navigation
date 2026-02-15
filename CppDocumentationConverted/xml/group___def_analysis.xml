@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_analysis" kind="group">
+    <compoundname>DefAnalysis</compoundname>
+    <title>Analysis</title>
+    <innerclass refid="struct_m_l_audio_spectral_analysis" prot="public">MLAudioSpectralAnalysis</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___def_analysis_1ga366e39cd897072efb50e25fe30864b2c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioTraitAnalysisTarget</name>
+        <enumvalue id="group___def_analysis_1gga366e39cd897072efb50e25fe30864b2ca070220eeca77e9da5aef44daa3de1bd4" prot="public">
+          <name>MLAudioTraitAnalysisTarget_AmbientSoundLevelDbfs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient Sound Level dBFS, a full scale sound level measurement of an ambient mic stream. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1gga366e39cd897072efb50e25fe30864b2ca12574cdf6b7360d2a902ea49252c251a" prot="public">
+          <name>MLAudioTraitAnalysisTarget_UserVoicePresence</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Voice Presence, indicates absence (0) or presence (1) of voice in a voice mic stream. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1gga366e39cd897072efb50e25fe30864b2ca8cb8aff32745666049d4cd4ff6cce594" prot="public">
+          <name>MLAudioTraitAnalysisTarget_UserVoiceLevelDbfs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Voice Level dBFS, a full scale sound level measurement of a voice mic stream. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1gga366e39cd897072efb50e25fe30864b2cab78658a4def3c64bd0383c9568641853" prot="public">
+          <name>MLAudioTraitAnalysisTarget_UserVoicePitch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Voice Pitch, frequency in hertz of the voice in a voice mic stream. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1gga366e39cd897072efb50e25fe30864b2ca75c54e30f4e4a0eddea13fb82a8f3104" prot="public">
+          <name>MLAudioTraitAnalysisTarget_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available trait analyses of an audio stream. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="420" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="420" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___def_analysis_1gaa8f82371e07f2f8513a2154bbdd263fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioSpectralAnalysisTarget</name>
+        <enumvalue id="group___def_analysis_1ggaa8f82371e07f2f8513a2154bbdd263fda4de199a166fe90896cf8b1a4ec511f25" prot="public">
+          <name>MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Voice Mel Frequency Cepstral Coefficients (MFCC), spectral analysis of a voice mic stream. (typically used for lip-sync). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1ggaa8f82371e07f2f8513a2154bbdd263fda84203fb1112fb31ea0d6535c8dd7c121" prot="public">
+          <name>MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumBark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient Sound Spectrum Bark Scale, spectral analysis of ambient mic stream(s) using Bark scale. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1ggaa8f82371e07f2f8513a2154bbdd263fda91b433aee1425ae2cb55333b4ebc7690" prot="public">
+          <name>MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumMel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient Sound Spectrum Mel Scale, spectral analysis of ambient mic stream(s) using Mel scale. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1ggaa8f82371e07f2f8513a2154bbdd263fdaebc2c97c48e226b8496f2ad0d0c64db1" prot="public">
+          <name>MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumThirdOctave</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient Sound Spectrum Third Octave Scale, spectral analysis of ambient mic stream(s) using a 1/3 octave scale. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_analysis_1ggaa8f82371e07f2f8513a2154bbdd263fdaaa69bf50f73e335820b8b5216df3328c" prot="public">
+          <name>MLAudioSpectralAnalysisTarget_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available frequency spectrum analyses of an audio stream. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="434" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="434" bodyend="445"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_analysis_1ga0cbd84b9cbd75f83c29c1bed12cfa4af" prot="public" static="no">
+        <type>enum <ref refid="group___def_analysis_1ga366e39cd897072efb50e25fe30864b2c" kindref="member">MLAudioTraitAnalysisTarget</ref></type>
+        <definition>typedef enum MLAudioTraitAnalysisTarget MLAudioTraitAnalysisTarget</definition>
+        <argsstring></argsstring>
+        <name>MLAudioTraitAnalysisTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available trait analyses of an audio stream. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="431" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_analysis_1gaf60d5bdb146a98c2c7c5c6658b69d44b" prot="public" static="no">
+        <type>enum <ref refid="group___def_analysis_1gaa8f82371e07f2f8513a2154bbdd263fd" kindref="member">MLAudioSpectralAnalysisTarget</ref></type>
+        <definition>typedef enum MLAudioSpectralAnalysisTarget MLAudioSpectralAnalysisTarget</definition>
+        <argsstring></argsstring>
+        <name>MLAudioSpectralAnalysisTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available frequency spectrum analyses of an audio stream. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="445" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_analysis_1gaefaf5352f9c73ccab3015e7574914de8" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_spectral_analysis" kindref="compound">MLAudioSpectralAnalysis</ref></type>
+        <definition>typedef struct MLAudioSpectralAnalysis MLAudioSpectralAnalysis</definition>
+        <argsstring></argsstring>
+        <name>MLAudioSpectralAnalysis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A representation of frequency spectrum energy over a window of time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="455" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ANALYSIS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

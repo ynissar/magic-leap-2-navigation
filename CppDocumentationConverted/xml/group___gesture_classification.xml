@@ -1,0 +1,752 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___gesture_classification" kind="group">
+    <compoundname>GestureClassification</compoundname>
+    <title>Gesture Classification System</title>
+    <innerclass refid="struct_m_l_gesture_classification_static_data" prot="public">MLGestureClassificationStaticData</innerclass>
+    <innerclass refid="struct_m_l_gesture_classification_posture_finger_data" prot="public">MLGestureClassificationPostureFingerData</innerclass>
+    <innerclass refid="struct_m_l_gesture_classification_finger_state" prot="public">MLGestureClassificationFingerState</innerclass>
+    <innerclass refid="struct_m_l_gesture_classification_state" prot="public">MLGestureClassificationState</innerclass>
+    <innerclass refid="struct_m_l_gesture_classification_data" prot="public">MLGestureClassificationData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___gesture_classification_1ga731fad37ed66b3c844b48f6b19248454" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGestureClassificationHandType</name>
+        <enumvalue id="group___gesture_classification_1gga731fad37ed66b3c844b48f6b19248454a93283bc6d8623f303184d218cabcd7ea" prot="public">
+          <name>MLGestureClassificationHandType_Left</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga731fad37ed66b3c844b48f6b19248454a80b5ddfac1e0cad021fbfed9b0bedbb2" prot="public">
+          <name>MLGestureClassificationHandType_Right</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga731fad37ed66b3c844b48f6b19248454a8710b07681cc44eb9e075566aafdf493" prot="public">
+          <name>MLGestureClassificationHandType_Count</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of hands. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga731fad37ed66b3c844b48f6b19248454a092a419ae8903aa1430c63a270fda342" prot="public">
+          <name>MLGestureClassificationHandType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available hand types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="73" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___gesture_classification_1ga677626041c68da36ab13f6d33568bb8c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGestureClassificationPostureType</name>
+        <enumvalue id="group___gesture_classification_1gga677626041c68da36ab13f6d33568bb8caf3afcb3a78736ddbb9ff2d71f953daa2" prot="public">
+          <name>MLGestureClassificationPostureType_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga677626041c68da36ab13f6d33568bb8ca7a9a28704a0b33e64c74fcda4626f938" prot="public">
+          <name>MLGestureClassificationPostureType_Pinch</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pinch posture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga677626041c68da36ab13f6d33568bb8cacd351c4d2c9c39a263308dc20f7aaeb2" prot="public">
+          <name>MLGestureClassificationPostureType_Point</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Point posture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga677626041c68da36ab13f6d33568bb8cab9ddfe8dcf1dc184096fd4099a177636" prot="public">
+          <name>MLGestureClassificationPostureType_Grasp</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Grasp posture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga677626041c68da36ab13f6d33568bb8cafdf2adb65c27bf8beedffafc353f8f05" prot="public">
+          <name>MLGestureClassificationPostureType_Open</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Open hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1gga677626041c68da36ab13f6d33568bb8ca8ac52aeb4cb65e61313824bacb138c54" prot="public">
+          <name>MLGestureClassificationPostureType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>System gesture classification posture type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="121" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___gesture_classification_1gaf6b0ed5409b850bef1dc0794ec21012d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGestureClassificationKeyPoseType</name>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da547a8a253d39aee2ef1df43b05e7b856" prot="public">
+          <name>MLGestureClassificationKeyPoseType_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da0bed015d044ba6595ac8855d23be79e8" prot="public">
+          <name>MLGestureClassificationKeyPoseType_OK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>OK pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012daed6777e654ff42b2352010fdf8b40ddf" prot="public">
+          <name>MLGestureClassificationKeyPoseType_C</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>C pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012dace7df9abc3fb8948d11cfcac36f36ae2" prot="public">
+          <name>MLGestureClassificationKeyPoseType_Pinch</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pinch pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da7d724b5c3830da083e2cbb8e2be39fad" prot="public">
+          <name>MLGestureClassificationKeyPoseType_Finger</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Finger pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da4f17c790ed1cffd6ebac7766a2fedeca" prot="public">
+          <name>MLGestureClassificationKeyPoseType_L</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>L pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012dab678e8c31514cc683f6baf950e32d804" prot="public">
+          <name>MLGestureClassificationKeyPoseType_Thumb</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Thumb up pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da7bb9b644228e0eeee8003eda19dfbc9a" prot="public">
+          <name>MLGestureClassificationKeyPoseType_Fist</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Fist pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da12d4968453454ece0e59ef8a1e286477" prot="public">
+          <name>MLGestureClassificationKeyPoseType_Open</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Open pose. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___gesture_classification_1ggaf6b0ed5409b850bef1dc0794ec21012da47f521b1d297c678e2b1a0170266b812" prot="public">
+          <name>MLGestureClassificationKeyPoseType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>System gesture classification key pose type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="141" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="141" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___gesture_classification_1gac618106c2af70016e8a4a4de4de38cb5" prot="public" static="no">
+        <type>enum <ref refid="group___gesture_classification_1ga731fad37ed66b3c844b48f6b19248454" kindref="member">MLGestureClassificationHandType</ref></type>
+        <definition>typedef enum MLGestureClassificationHandType MLGestureClassificationHandType</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationHandType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available hand types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="82" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1ga69e78a158fe8ca96ac1b916ea9df3ebf" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_gesture_classification_static_data" kindref="compound">MLGestureClassificationStaticData</ref></type>
+        <definition>typedef struct MLGestureClassificationStaticData MLGestureClassificationStaticData</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationStaticData</name>
+        <briefdescription>
+<para>Static information about the gesture classification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Populate with <ref refid="group___gesture_classification_1ga5e78cbddfa008b226b51d5ce17db6828" kindref="member">MLGestureClassificationGetStaticData()</ref>. This structure must be initialized by calling <ref refid="group___gesture_classification_1ga4090d5515fd93c8c38804a8d1f18fc69" kindref="member">MLGestureClassificationStaticDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="100" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1gaffdd65eadbb02a038b93ace831519b7d" prot="public" static="no">
+        <type>enum <ref refid="group___gesture_classification_1ga677626041c68da36ab13f6d33568bb8c" kindref="member">MLGestureClassificationPostureType</ref></type>
+        <definition>typedef enum MLGestureClassificationPostureType MLGestureClassificationPostureType</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationPostureType</name>
+        <briefdescription>
+<para>System gesture classification posture type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="134" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1ga3b71160ba46a0877eddfa2653ffa1ed8" prot="public" static="no">
+        <type>enum <ref refid="group___gesture_classification_1gaf6b0ed5409b850bef1dc0794ec21012d" kindref="member">MLGestureClassificationKeyPoseType</ref></type>
+        <definition>typedef enum MLGestureClassificationKeyPoseType MLGestureClassificationKeyPoseType</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationKeyPoseType</name>
+        <briefdescription>
+<para>System gesture classification key pose type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="162" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1ga59fe041345b1304c9645fa590c760293" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_gesture_classification_posture_finger_data" kindref="compound">MLGestureClassificationPostureFingerData</ref></type>
+        <definition>typedef struct MLGestureClassificationPostureFingerData MLGestureClassificationPostureFingerData</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationPostureFingerData</name>
+        <briefdescription>
+<para>Gesture classification posture related finger data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinch values are measured between the finger and thumb. In case thumb is the finger, values are same with index&apos;s values.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="181" column="42"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1gaeb8da02a544385da7762773607574913" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_gesture_classification_finger_state" kindref="compound">MLGestureClassificationFingerState</ref></type>
+        <definition>typedef struct MLGestureClassificationFingerState MLGestureClassificationFingerState</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationFingerState</name>
+        <briefdescription>
+<para>Gesture classification state of a single finger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="199" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1gae1a62895e1454e97d2c1981cbb8a4e9a" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_gesture_classification_state" kindref="compound">MLGestureClassificationState</ref></type>
+        <definition>typedef struct MLGestureClassificationState MLGestureClassificationState</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationState</name>
+        <briefdescription>
+<para>Gesture classification state of a single hand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="229" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___gesture_classification_1ga9dd20642ca34d951686b69bf2816da77" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_gesture_classification_data" kindref="compound">MLGestureClassificationData</ref></type>
+        <definition>typedef struct MLGestureClassificationData MLGestureClassificationData</definition>
+        <argsstring></argsstring>
+        <name>MLGestureClassificationData</name>
+        <briefdescription>
+<para>Data which is received when querying tracker from <ref refid="group___gesture_classification_1gac7e60930b12b0805a6e2e7841d8317dc" kindref="member">MLGestureClassificationGetData()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___gesture_classification_1ga6c70f9ecd2d7542645fbaa1a1699dfe2" kindref="member">MLGestureClassificationDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="243" column="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___gesture_classification_1ga4090d5515fd93c8c38804a8d1f18fc69" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLGestureClassificationStaticDataInit</definition>
+        <argsstring>(MLGestureClassificationStaticData *inout_data)</argsstring>
+        <name>MLGestureClassificationStaticDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_gesture_classification_static_data" kindref="compound">MLGestureClassificationStaticData</ref> *</type>
+          <declname>inout_data</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_gesture_classification_static_data" kindref="compound">MLGestureClassificationStaticData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="109" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="group___gesture_classification_1ga6c70f9ecd2d7542645fbaa1a1699dfe2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLGestureClassificationDataInit</definition>
+        <argsstring>(MLGestureClassificationData *inout_data)</argsstring>
+        <name>MLGestureClassificationDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_gesture_classification_data" kindref="compound">MLGestureClassificationData</ref> *</type>
+          <declname>inout_data</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_gesture_classification_data" kindref="compound">MLGestureClassificationData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="252" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="252" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="group___gesture_classification_1ga8a1e592707d424766223d28826aafc48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLGestureClassificationCreate</definition>
+        <argsstring>(MLHandle *out_handle)</argsstring>
+        <name>MLGestureClassificationCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a gesture classification tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the created gesture classification tracker. Only valid if the return value is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a tracker due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tracker was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PrivilegeDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks privilege. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000291"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.HAND_TRACKING (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="274" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" declline="274" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___gesture_classification_1gad2943ba9ccbff967330aac9a77b54939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLGestureClassificationDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLGestureClassificationDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a gesture classification tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a gesture classification tracker created by <ref refid="group___gesture_classification_1ga8a1e592707d424766223d28826aafc48" kindref="member">MLGestureClassificationCreate()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy a tracker due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>It successfully destroyed the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000292"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="290" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" declline="290" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___gesture_classification_1ga5e78cbddfa008b226b51d5ce17db6828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLGestureClassificationGetStaticData</definition>
+        <argsstring>(MLHandle handle, MLGestureClassificationStaticData *out_data)</argsstring>
+        <name>MLGestureClassificationGetStaticData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_gesture_classification_static_data" kindref="compound">MLGestureClassificationStaticData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Gets static information about the gesture classification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a gesture classification tracker created by <ref refid="group___gesture_classification_1ga8a1e592707d424766223d28826aafc48" kindref="member">MLGestureClassificationCreate()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target to populate the data about the gesture classification.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get static data due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gesture classification static data was successfully received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000293"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="307" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" declline="307" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___gesture_classification_1gac7e60930b12b0805a6e2e7841d8317dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLGestureClassificationGetData</definition>
+        <argsstring>(MLHandle handle, MLGestureClassificationData *out_data)</argsstring>
+        <name>MLGestureClassificationGetData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_gesture_classification_data" kindref="compound">MLGestureClassificationData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Queries the state of the gesture classification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a gesture classification tracker created by <ref refid="group___gesture_classification_1ga8a1e592707d424766223d28826aafc48" kindref="member">MLGestureClassificationCreate()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_gesture_classification_data" kindref="compound">MLGestureClassificationData</ref> structure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to retrieve data due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state information was available and the information in out_data is valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000294"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="324" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" declline="324" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Gesture Classification system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+The gesture classification system identifies specific hand configurations and exposes them via the APIs here. These hand configurations can be broadly divided into two groups:</para>
+<para><orderedlist>
+<listitem><para>Postures (<ref refid="group___gesture_classification_1ga677626041c68da36ab13f6d33568bb8c" kindref="member">MLGestureClassificationPostureType</ref>).</para>
+</listitem><listitem><para>Key Poses (<ref refid="group___gesture_classification_1gaf6b0ed5409b850bef1dc0794ec21012d" kindref="member">MLGestureClassificationKeyPoseType</ref>).</para>
+</listitem></orderedlist>
+</para>
+<sect1 id="group___gesture_classification_1Postures">
+<title>Postures</title>
+<para>Postures is a collection of hand configuration that allows for meaningful variations of the same configuration. For example a hand configuration is classified as pinch posture when the index and thumb tip is touching while the other three fingers are fully extended. At the same time a hand configuration where the index and thumb tips are touching but the other three fingers are partially curled will still be treated as a pinch posture.</para>
+<para>Postures will be more accommodative to variations seen between users and the same user doing the gesture in slightly different ways.</para>
+<para>Postures will work well for use cases where the user is interacting with the UI over time. Examples: grab and move, point and click.</para>
+</sect1>
+<sect1 id="group___gesture_classification_1KeyPoses">
+<title>KeyPoses</title>
+<para>KeyPoses on the other hand is a discrete collection of static hand configurations. It looks for specific geometric relationship between the hand key points.</para>
+<para>KeyPoses will work well for use cases where the user need a on-off switch, a button. Examples: start capture, save session.</para>
+</sect1>
+<sect1 id="group___gesture_classification_1Interaction">
+<title>Point</title>
+<para>The interaction point is a transform which dynamically adapts, in both translation and rotation, based on the current classified posture (<ref refid="group___gesture_classification_1ga677626041c68da36ab13f6d33568bb8c" kindref="member">MLGestureClassificationPostureType</ref>). It provides a single optimal point of reference to simplify common direct and indirect hand interactions. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

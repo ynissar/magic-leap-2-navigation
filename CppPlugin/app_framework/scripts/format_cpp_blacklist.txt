@@ -1,0 +1,6 @@
+scripts
+tests
+githooks
+include/app_framework/imgui/imgui_impl_glfw.h
+include/app_framework/imgui/imgui_impl_opengl3.h
+include/app_framework/version.h

@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_input_controller_callbacks_ex" kind="struct" language="C++" prot="public">
+    <compoundname>MLInputControllerCallbacksEx</compoundname>
+    <includes refid="ml__input_8h" local="no">ml_input.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1ad55ac0812a63c8b85a5855aefc933f58" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLInputControllerCallbacksEx::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="254" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1ab459f3b1b02f6452d609bca418cd9882" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_touchpad_gesture) (uint8_t controller_id, const MLInputControllerTouchpadGesture *touchpad_gesture, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, const MLInputControllerTouchpadGesture *touchpad_gesture, void *data)</argsstring>
+        <name>on_touchpad_gesture</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a touch gesture is detected. This callback will be called for both discrete and continuous gestures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">touchpad_gesture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the struct containing state of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="262" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1a83627611ff089989c9be8882d2466713" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_touchpad_gesture_continue) (uint8_t controller_id, const MLInputControllerTouchpadGesture *touchpad_gesture, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, const MLInputControllerTouchpadGesture *touchpad_gesture, void *data)</argsstring>
+        <name>on_touchpad_gesture_continue</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a continuation of a touch gesture is detected. This callback will be called only for continuous gestures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">touchpad_gesture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the struct containing state of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="270" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1a5b67da6147bbb868af4e0da3e1ba5027" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_touchpad_gesture_end) (uint8_t controller_id, const MLInputControllerTouchpadGesture *touchpad_gesture, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, const MLInputControllerTouchpadGesture *touchpad_gesture, void *data)</argsstring>
+        <name>on_touchpad_gesture_end</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a continuous touch gesture ends. This callback will be called only for continuous gestures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">touchpad_gesture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the struct containing state of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="278" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1ab222cbab4861d4c3ad5cf36d42993975" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_button_down) (uint8_t controller_id, MLInputControllerButton button, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, MLInputControllerButton button, void *data)</argsstring>
+        <name>on_button_down</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a controller button is pressed. This callback will be called only for discrete gestures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the controller button. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="285" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1a721fc74aa12afeecfa207e5cf709d645" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_button_up) (uint8_t controller_id, MLInputControllerButton button, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, MLInputControllerButton button, void *data)</argsstring>
+        <name>on_button_up</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a controller button is released. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the controller button. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="292" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1acf504d315fff16e0f8f116502278dd98" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_button_click) (uint8_t controller_id, MLInputControllerButton button, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, MLInputControllerButton button, void *data)</argsstring>
+        <name>on_button_click</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a controller button is pressed and released within a short duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the controller button. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="299" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1a236399ec7de5c4c78e2d05a75e109a6d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_trigger) (uint8_t controller_id, MLInputControllerTriggerEvent event, float depth, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, MLInputControllerTriggerEvent event, float depth, void *data)</argsstring>
+        <name>on_trigger</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a controller trigger state is changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the trigger event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalized value of trigger pressing (0.0 ~ 1.0) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="307" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1aeb5996eb07f64b973502d70dfa1f8940" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_connect) (uint8_t controller_id, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, void *data)</argsstring>
+        <name>on_connect</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a controller is connected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="313" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_callbacks_ex_1aee47b813df80ea932e31283f521fb351" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLInputControllerCallbacksEx::on_disconnect) (uint8_t controller_id, void *data)</definition>
+        <argsstring>)(uint8_t controller_id, void *data)</argsstring>
+        <name>on_disconnect</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a controller is disconnected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" kindref="member">MLInputSetControllerCallbacksEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="319" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing callbacks for input controller events. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL.</para>
+<para>This structure must be initialized by calling <ref refid="group___input_1gaf8c43f4ba01939f31180fd0ee488bc6b" kindref="member">MLInputControllerCallbacksExInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="252" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="252" bodyend="320"/>
+    <listofallmembers>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1acf504d315fff16e0f8f116502278dd98" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_button_click</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1ab222cbab4861d4c3ad5cf36d42993975" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_button_down</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1a721fc74aa12afeecfa207e5cf709d645" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_button_up</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1aeb5996eb07f64b973502d70dfa1f8940" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_connect</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1aee47b813df80ea932e31283f521fb351" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_disconnect</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1ab459f3b1b02f6452d609bca418cd9882" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_touchpad_gesture</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1a83627611ff089989c9be8882d2466713" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_touchpad_gesture_continue</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1a5b67da6147bbb868af4e0da3e1ba5027" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_touchpad_gesture_end</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1a236399ec7de5c4c78e2d05a75e109a6d" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>on_trigger</name></member>
+      <member refid="struct_m_l_input_controller_callbacks_ex_1ad55ac0812a63c8b85a5855aefc933f58" prot="public" virt="non-virtual"><scope>MLInputControllerCallbacksEx</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

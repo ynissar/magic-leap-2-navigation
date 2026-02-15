@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_web_view_event_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLWebViewEventCallbacks</compoundname>
+    <includes refid="ml__webview_8h" local="no">ml_webview.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a068efef8d68964985fb18edb764e9bfa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWebViewEventCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="182" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a54cc09d51607384d75002f95773dba72" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MLWebViewEventCallbacks::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User data passed to every callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="185" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1ae1a9ef91312c60e93e542fc0b2784bff" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_before_resource_load) (const char *resource_url, void *user_data)</definition>
+        <argsstring>)(const char *resource_url, void *user_data)</argsstring>
+        <name>on_before_resource_load</name>
+        <briefdescription>
+<para>Called to notify when a resource will loadeded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">resource_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the url of the resource about to be loaded. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="192" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a6b0c55728e7b2888c058e817d2ee854d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_load_end) (bool is_main_frame, int32_t http_status_code, void *user_data)</definition>
+        <argsstring>)(bool is_main_frame, int32_t http_status_code, void *user_data)</argsstring>
+        <name>on_load_end</name>
+        <briefdescription>
+<para>Called to notify load completion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">is_main_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this event was for the main frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">http_status_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The standard http status code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="199" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1abe8c61a883b805cf4b4751a06e1e56b5" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_load_error) (bool is_main_frame, int32_t http_status_code, const char *error_str, const char *failed_url, void *user_data)</definition>
+        <argsstring>)(bool is_main_frame, int32_t http_status_code, const char *error_str, const char *failed_url, void *user_data)</argsstring>
+        <name>on_load_error</name>
+        <briefdescription>
+<para>Called if there was any error during loading. These errors could be due to connectivity, certificate errors etc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">is_main_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If this event was for the main frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">http_status_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Http status code for the URL load failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">error_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stringified version of the error code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">failed_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url that caused the load error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="209" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1aefddc9178e3781678486b7e33fbbb53f" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* MLWebViewEventCallbacks::on_certificate_error) (int32_t error_code, const char *url, const char *error_message, const char *details, void *user_data)</definition>
+        <argsstring>)(int32_t error_code, const char *url, const char *error_message, const char *details, void *user_data)</argsstring>
+        <name>on_certificate_error</name>
+        <briefdescription>
+<para>Called when there is any certificate error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code for ssl error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url associated to the certificate error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">error_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Certificate error short description. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">details</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Certificate error details. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if should continue loading and false if should stop loading. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="219" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a55ea169abcd4969a7683faf1241da186" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_show_keyboard) (int32_t x, int32_t y, int32_t width, int32_t height, int32_t text_input_flags, MLWebViewTextInputType text_input_type, void *user_data)</definition>
+        <argsstring>)(int32_t x, int32_t y, int32_t width, int32_t height, int32_t text_input_flags, MLWebViewTextInputType text_input_type, void *user_data)</argsstring>
+        <name>on_show_keyboard</name>
+        <briefdescription>
+<para>Called when user selects an input field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal position of the input field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical position of the input field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the input field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the input field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">text_input_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or combination of <ref refid="group___web_view_1ga26227ab49b713a26184e433d7359a166" kindref="member">MLWebViewTextInputFlags</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">text_input_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of <ref refid="group___web_view_1gadec127060bd128e88988340ca6456cad" kindref="member">MLWebViewTextInputType</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="230" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1ac864911d06311523eed25ed9e526d5c2" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_keyboard_dismiss) (void *user_data)</definition>
+        <argsstring>)(void *user_data)</argsstring>
+        <name>on_keyboard_dismiss</name>
+        <briefdescription>
+<para>Called when user deselects an input field and the keyboard should be dismissed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="240" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1aea7b1086a9d1566259a20e9edb828f95" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_destroy) (void *user_data)</definition>
+        <argsstring>)(void *user_data)</argsstring>
+        <name>on_destroy</name>
+        <briefdescription>
+<para>Called when webview is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="244" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a19256e9741051088214048e09ef84e9d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_service_connected) (void *user_data)</definition>
+        <argsstring>)(void *user_data)</argsstring>
+        <name>on_service_connected</name>
+        <briefdescription>
+<para>This callback is used to pass notify user of service connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user data passed in during initialization. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="250" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1adfd1cb16c7e578f6cccbb83edef9f540" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_service_disconnected) (void *user_data)</definition>
+        <argsstring>)(void *user_data)</argsstring>
+        <name>on_service_disconnected</name>
+        <briefdescription>
+<para>This callback is used to notify user that service is disconnect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Handle can no longer be used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="255" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a5840f4014d2457a9b1fb1c98c5b915fb" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_service_failed) (MLResult result, void *user_data)</definition>
+        <argsstring>)(MLResult result, void *user_data)</argsstring>
+        <name>on_service_failed</name>
+        <briefdescription>
+<para>This callback is used to notify user that service has failed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Callback on_service_failed is for version &gt;= 2.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reason for the failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user data passed back to the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="263" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a49ae825f9e9b121f2a09ff9220fad2c0" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* MLWebViewEventCallbacks::on_before_popup) (const char *url, void *user_data)</definition>
+        <argsstring>)(const char *url, void *user_data)</argsstring>
+        <name>on_before_popup</name>
+        <briefdescription>
+<para>This callback is used to ask the application if is OK to load a URL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Callback on_before_popup is for version &gt;= 3.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application should return true if it accepts the popup and false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user data passed back to the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="272" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a47ac37599748476d9e61677686d15c1c" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_popup_opened) (uint64_t popup_id, const char *url, void *user_data)</definition>
+        <argsstring>)(uint64_t popup_id, const char *url, void *user_data)</argsstring>
+        <name>on_popup_opened</name>
+        <briefdescription>
+<para>This callback is used to notify application that popup is opened. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Callback on_popup_opened is for version &gt;= 3.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user data passed back to the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="280" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_web_view_event_callbacks_1a39e0f1fdfbd1f645eeed9b0264f0784e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLWebViewEventCallbacks::on_popup_closed) (MLHandle handle, void *user_data)</definition>
+        <argsstring>)(MLHandle handle, void *user_data)</argsstring>
+        <name>on_popup_closed</name>
+        <briefdescription>
+<para>This callback is used to notify the application of a closing popup. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback is used to notify the application of a popup that is being closed. For example, this can happen if window.close() is used. This is not always called. If the application closes the popup itself, then this function is not called. An application should call MLWebViewDestroy as soon as possible on the popup&apos;s handle after receiving this callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the webview handle of the popup being closed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user data passed back to the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="294" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Event handler for MLWebView callbacks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1gac67c0e330756c3859d0bf70d54e09161" kindref="member">MLWebViewEventCallbacksInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="179" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="179" bodyend="295"/>
+    <listofallmembers>
+      <member refid="struct_m_l_web_view_event_callbacks_1a49ae825f9e9b121f2a09ff9220fad2c0" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_before_popup</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1ae1a9ef91312c60e93e542fc0b2784bff" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_before_resource_load</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1aefddc9178e3781678486b7e33fbbb53f" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_certificate_error</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1aea7b1086a9d1566259a20e9edb828f95" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_destroy</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1ac864911d06311523eed25ed9e526d5c2" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_keyboard_dismiss</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a6b0c55728e7b2888c058e817d2ee854d" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_load_end</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1abe8c61a883b805cf4b4751a06e1e56b5" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_load_error</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a39e0f1fdfbd1f645eeed9b0264f0784e" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_popup_closed</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a47ac37599748476d9e61677686d15c1c" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_popup_opened</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a19256e9741051088214048e09ef84e9d" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_service_connected</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1adfd1cb16c7e578f6cccbb83edef9f540" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_service_disconnected</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a5840f4014d2457a9b1fb1c98c5b915fb" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_service_failed</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a55ea169abcd4969a7683faf1241da186" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>on_show_keyboard</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a54cc09d51607384d75002f95773dba72" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>user_data</name></member>
+      <member refid="struct_m_l_web_view_event_callbacks_1a068efef8d68964985fb18edb764e9bfa" prot="public" virt="non-virtual"><scope>MLWebViewEventCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

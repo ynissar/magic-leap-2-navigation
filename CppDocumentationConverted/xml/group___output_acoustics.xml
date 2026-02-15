@@ -1,0 +1,686 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___output_acoustics" kind="group">
+    <compoundname>OutputAcoustics</compoundname>
+    <title>Acoustics</title>
+    <innergroup refid="group___output_spatial_sound">Spatial Sound</innergroup>
+    <innergroup refid="group___output_buffering">Buffering</innergroup>
+    <innergroup refid="group___output_master_volume">Master Volume</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___output_acoustics_1gad30ca6c72be37550687df1d9e35b2bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioResetAcousticScene</definition>
+        <argsstring>()</argsstring>
+        <name>MLAudioResetAcousticScene</name>
+        <briefdescription>
+<para>Resets the Acoustic Scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each client of this audio API is automatically assigned an Acoustic Scene that specifies the acoustic behaviors of that client&apos;s spatial audio content. An Acoustic Scene can be modified and customized by calling functions in the ACOUSTICS section of this audio API. This function resets the caller&apos;s Acoustic Scene to its initial default state.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully reset the Acoustic Scene. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No custom scene exists for client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000042"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1532" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1532" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1ga60c73ce20a1bc00246a1a20d4386a17e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioBeginAcousticSceneUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>MLAudioBeginAcousticSceneUpdate</name>
+        <briefdescription>
+<para>Pauses the processing of changes to the Acoustic Scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function signals the beginning of a collection of changes to the Acoustic Scene, intended to be heard at the same time. After calling MLAudioBeginAcousticSceneUpdate, any subsequent calls to functions in the ACOUSTICS section of this audio API will be deferred, and will be applied simultaneously when MLAudioEndAcousticSceneUpdate is called.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully began the Acoustic Scene update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000043"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1549" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1549" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1gab5bb01e3a96564a6b86ab777f0665bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioEndAcousticSceneUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>MLAudioEndAcousticSceneUpdate</name>
+        <briefdescription>
+<para>Resumes the processing of changes to the Acoustic Scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function signals the ending of a collection of changes to the Acoustic Scene, causing them to be heard at the same time. After calling MLAudioBeginAcousticSceneUpdate, any subsequent calls to functions in the ACOUSTICS section of this audio API will be deferred, and will be applied simultaneously when MLAudioEndAcousticSceneUpdate is called.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully ended the Acoustic Scene update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No custom scene exists for client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000044"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1567" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1567" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1gabe6781f504f56fa8b7f81a71034c1b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetAcousticSceneMapEnable</definition>
+        <argsstring>(bool is_enabled)</argsstring>
+        <name>MLAudioSetAcousticSceneMapEnable</name>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether spatial rendering emulates the acoustics of the user&apos;s environment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Acoustic Map is a device-curated representation of the acoustics of the local physical environment. Enabling the Acoustic Map makes virtual objects sound as though they exist in the local physical environment.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the Acoustic Map will be enabled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000045"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1585" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1585" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1ga19978e53659e44d241196f7c497c2b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetAcousticSceneMapEnable</definition>
+        <argsstring>(bool *out_is_enabled)</argsstring>
+        <name>MLAudioGetAcousticSceneMapEnable</name>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Queries whether spatial rendering emulates the acoustics of the user&apos;s environment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Acoustic Map is a device-curated representation of the acoustics of the local physical environment. When the Acoustic Map is enabled, virtual objects sound as though they exist in the local physical environment.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the Acoustic Map is enabled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000046"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1604" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1604" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1gac8af39b35168435dbf823b3438da6952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetAcousticSceneTransmissionDefault</definition>
+        <argsstring>(const MLAudioMultibandLevel *transmission)</argsstring>
+        <name>MLAudioSetAcousticSceneTransmissionDefault</name>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>transmission</declname>
+        </param>
+        <briefdescription>
+<para>Sets the default attenuation applied to obstructed spatial sounds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagation of virtual sound in space can be obstructed by virtual objects created by the client, or by the virtual representation of the local physical environment. In cases where these obstructions have no transmission properties defined, the Acoustic Scene default transmission properties set by this function are used. Transmission properties are specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct in which values of [1, (1, 1, 1)] represent fully unobstructed, while [0, (1, 1, 1)] or [1, (0, 0, 0)] both represent fully obstructed.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">transmission</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to set the default properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the default properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000047"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1627" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1627" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1ga84a6adf74fc35d5a6239af40a4a279e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetAcousticSceneTransmissionDefault</definition>
+        <argsstring>(MLAudioMultibandLevel *out_transmission)</argsstring>
+        <name>MLAudioGetAcousticSceneTransmissionDefault</name>
+        <param>
+          <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>out_transmission</declname>
+        </param>
+        <briefdescription>
+<para>Queries the default attenuation applied to obstructed spatial sounds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagation of virtual sound in space can be obstructed by virtual objects created by the client, or by the virtual representation of the local physical environment. In cases where these obstructions have no transmission properties defined, the Acoustic Scene default transmission properties queried by this function are used. Transmission properties are specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct in which values of [1, (1, 1, 1)] represent fully unobstructed, while [0, (1, 1, 1)] or [1, (0, 0, 0)] both represent fully obstructed.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_transmission</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to be filled with the default properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the default properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000048"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1650" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1650" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1gac787cac2191538ce335e26c11249676d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetAcousticSceneDispersionDefault</definition>
+        <argsstring>(const MLAudioDispersionProperties *properties)</argsstring>
+        <name>MLAudioSetAcousticSceneDispersionDefault</name>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Sets the default dispersion properties, which control the rendering of clustered reflections. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagation model for a spatial sound has 4 parts: direct path, reflections, dispersion, and reverb. Dispersion comprises the clustered non-discrete reflections that precede the reverb. In areas where no dispersion properties are explicitly defined, the Acoustic Scene default dispersion properties set by this function are used. Dispersion properties are specified by an <ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> struct which specifies a gain using an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref>, and a pre-delay. If the pre-delay setting is greater than the pre-delay of the default reverb properties, it will be clamped to an equal value.</para>
+<para>This &apos;AcousticScene&apos; API sets a shared acoustic processing effect that is applied to multiple spatial sounds. To set the per-sound mix levels for this effect, see the corresponding &apos;SpatialSoundSendLevel&apos; API which is MLAudioSetSpatialSoundDispersionSendLevel.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> struct to set the default properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the default properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000049"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1677" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1677" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1gac6453fb0270df01aed7cf4cbf228597b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetAcousticSceneDispersionDefault</definition>
+        <argsstring>(MLAudioDispersionProperties *out_properties)</argsstring>
+        <name>MLAudioGetAcousticSceneDispersionDefault</name>
+        <param>
+          <type><ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> *</type>
+          <declname>out_properties</declname>
+        </param>
+        <briefdescription>
+<para>Queries the default dispersion properties, which control the rendering of clustered reflections. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagation model for a spatial sound has 4 parts: direct path, reflections, dispersion, and reverb. Dispersion comprises the clustered non-discrete reflections that precede the reverb. In areas where no dispersion properties are explicitly defined, the Acoustic Scene default dispersion properties queried by this function are used. Dispersion properties are specified by an <ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> struct which specifies a gain using an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref>, and a pre-delay.</para>
+<para>This &apos;AcousticScene&apos; API queries a shared acoustic processing effect that is applied to multiple spatial sounds. To query the per-sound mix levels for this effect, see the corresponding &apos;SpatialSoundSendLevel&apos; API which is MLAudioGetSpatialSoundDispersionSendLevel.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref> struct to be filled with the default properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the default properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000050"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1703" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1703" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1ga85ef3f8d5087bd3abd6d9ddf41f91bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetAcousticSceneReverbDefault</definition>
+        <argsstring>(const MLAudioReverbProperties *properties)</argsstring>
+        <name>MLAudioSetAcousticSceneReverbDefault</name>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Sets the default reverb properties, which control the rendering of late reverberation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagation model for a spatial sound has 4 parts: direct path, reflections, dispersion, and reverb. The reverb comprises late stage sound decay caused by the acoustic space. In areas where no reverb properties are explicitly defined, the Acoustic Scene default reverb properties set by this function are used. Reverb properties are specified by an <ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> struct which specifies a gain using an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref>, a pre-delay, and the time and frequency contour of the reverb envelope. If the pre-delay setting is less than the pre-delay of the default dispersion properties, it will be clamped to an equal value.</para>
+<para>This &apos;AcousticScene&apos; API sets a shared acoustic processing effect that is applied to multiple spatial sounds. To set the per-sound mix levels for this effect, see the corresponding &apos;SpatialSoundSendLevel&apos; API which is MLAudioSetSpatialSoundReverbSendLevel.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> struct to set the properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the default properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000051"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1730" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1730" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1ga6273e0bf9f27ee21fbf1d99678758d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetAcousticSceneReverbDefault</definition>
+        <argsstring>(MLAudioReverbProperties *out_properties)</argsstring>
+        <name>MLAudioGetAcousticSceneReverbDefault</name>
+        <param>
+          <type><ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> *</type>
+          <declname>out_properties</declname>
+        </param>
+        <briefdescription>
+<para>Queries the default reverb properties, which control the rendering of late reverberation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagation model for a spatial sound has 4 parts: direct path, reflections, dispersion, and reverb. The reverb comprises late stage sound decay caused by the acoustic space. In areas where no reverb properties are explicitly defined, the Acoustic Scene default reverb properties queried by this function are used. Reverb properties are specified by an <ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> struct which specifies a gain using an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref>, a pre-delay, and the time and frequency contour of the reverb envelope.</para>
+<para>This &apos;AcousticScene&apos; API queries a shared acoustic processing effect that is applied to multiple spatial sounds. To query the per-sound mix levels for this effect, see the corresponding &apos;SpatialSoundSendLevel&apos; API which is MLAudioGetSpatialSoundReverbSendLevel.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref> struct to be filled with the default properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the default properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000052"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1755" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1755" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_acoustics_1ga6f8e4f232694be13a4ccd0c509296eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetChangedAcousticMap</definition>
+        <argsstring>(uint32_t prev_map_tag, uint8_t **out_map_data, uint32_t *out_map_size_in_bytes, uint32_t *out_map_tag)</argsstring>
+        <name>MLAudioGetChangedAcousticMap</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>prev_map_tag</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>out_map_data</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_map_size_in_bytes</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_map_tag</declname>
+        </param>
+        <briefdescription>
+<para>INTERNAL USE ONLY: Retrieves the Acoustic Map if it has been updated since the previous call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acoustic Map data is a device-curated representation of the acoustics of the local physical environment. The out_map_data argument will point to a serialized copy of the map and must deleted after use. This function is intended for internal use and should not be called by clients of the MLAudio API.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prev_map_tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The map tag received in previous call. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_map_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved pointer to serialized copy of Acoustic Map data if prev_map_tag != out_map_tag. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_map_size_in_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved length of serialized Acoustic Map data in bytes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_map_tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved current map tag to be passed in subsequent call.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000053"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1777" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1777" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ACOUSTICS. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

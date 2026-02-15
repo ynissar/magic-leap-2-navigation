@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__snapshot_8h" kind="file" language="C++">
+    <compoundname>ml_snapshot.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__coordinate__frame__uid_8h" local="yes">ml_coordinate_frame_uid.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="ml__perception_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</label>
+        <link refid="ml__snapshot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</label>
+        <link refid="ml__perception_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</label>
+        <link refid="ml__snapshot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_m_l_transform_derivatives" prot="public">MLTransformDerivatives</innerclass>
+    <innerclass refid="struct_m_l_snapshot_static_data" prot="public">MLSnapshotStaticData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___perception_1gaabfcbcb5ac86a1edac4035264bc7d2b8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@27</name>
+        <enumvalue id="group___perception_1ggaabfcbcb5ac86a1edac4035264bc7d2b8aa2938fdd9683be3e03cf67d332f806ff" prot="public">
+          <name>MLResultAPIPrefix_Snapshot</name>
+          <initializer>= ( 0x87b8  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLSnapshotResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="30" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___perception_1gaa7f70a1576412b479c4f538923487b57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSnapshotResult</name>
+        <enumvalue id="group___perception_1ggaa7f70a1576412b479c4f538923487b57a1756fc367867ce04a183df00d3499525" prot="public">
+          <name>MLSnapshotResult_DerivativesNotCalculated</name>
+          <initializer>= MLResultAPIPrefix_Snapshot</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Derivatives not calculated for requested coordinate frame. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___perception_1ggaa7f70a1576412b479c4f538923487b57a439fcbf4a335462d980b1d7135a3fd12" prot="public">
+          <name>MLSnapshotResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return values for Snapshot API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="36" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___perception_1gabb23c327410266b9bbdb6c11adc20ec3" prot="public" static="no">
+        <type>enum <ref refid="group___perception_1gaa7f70a1576412b479c4f538923487b57" kindref="member">MLSnapshotResult</ref></type>
+        <definition>typedef enum MLSnapshotResult MLSnapshotResult</definition>
+        <argsstring></argsstring>
+        <name>MLSnapshotResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return values for Snapshot API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="41" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___perception_1ga456153cba59313fa043e97c5835df9c7" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref></type>
+        <definition>typedef struct MLTransformDerivatives MLTransformDerivatives</definition>
+        <argsstring></argsstring>
+        <name>MLTransformDerivatives</name>
+        <briefdescription>
+<para>Velocity and acceleration derivatives for a related transform. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="64" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___perception_1ga90484d03b3f9ca37af996c74acd50d67" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref></type>
+        <definition>typedef struct MLSnapshotStaticData MLSnapshotStaticData</definition>
+        <argsstring></argsstring>
+        <name>MLSnapshotStaticData</name>
+        <briefdescription>
+<para>Static information about the snapshot system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initalize this structure with MLSnapshotStaticDataInit and populate with <ref refid="group___perception_1ga85e7a5fafcf1c5ea81d28ccada531996" kindref="member">MLSnapshotGetStaticData()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 30</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="103" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___perception_1gaa14a3ce2de93527687c615433aad4d23" prot="public" static="no">
+        <type>struct <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref></type>
+        <definition>typedef struct MLSnapshot MLSnapshot</definition>
+        <argsstring></argsstring>
+        <name>MLSnapshot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opaque snapshot of system state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="132" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___perception_1gad6e4922d6a0aec00b5d44529f7f83733" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLTransformDerivativesInit</definition>
+        <argsstring>(MLTransformDerivatives *inout_data)</argsstring>
+        <name>MLTransformDerivativesInit</name>
+        <param>
+          <type><ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref> *</type>
+          <declname>inout_data</declname>
+        </param>
+        <briefdescription>
+<para>Intializes the default values for <ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that will be initialized with default values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="73" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="73" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gad1c8088969031a90dce4b954fd3b5333" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSnapshotStaticDataInit</definition>
+        <argsstring>(MLSnapshotStaticData *inout_data)</argsstring>
+        <name>MLSnapshotStaticDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref> *</type>
+          <declname>inout_data</declname>
+        </param>
+        <briefdescription>
+<para>Intializes the default values for <ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 30</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that will be initialized with default values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="112" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="112" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1ga85e7a5fafcf1c5ea81d28ccada531996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSnapshotGetStaticData</definition>
+        <argsstring>(MLSnapshotStaticData *out_static_data)</argsstring>
+        <name>MLSnapshotGetStaticData</name>
+        <param>
+          <type><ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref> *</type>
+          <declname>out_static_data</declname>
+        </param>
+        <briefdescription>
+<para>Get the static data pertaining to the snapshot system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 30</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_static_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target to populate the data about snapshot system.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain static data due to invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained static data successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain static data due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000644"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="132" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" declline="132" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gaca4197ebdb7cb75b07423fd45debc738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSnapshotGetTransform</definition>
+        <argsstring>(const MLSnapshot *snapshot, const MLCoordinateFrameUID *id, MLTransform *out_transform)</argsstring>
+        <name>MLSnapshotGetTransform</name>
+        <param>
+          <type>const <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> *</type>
+          <declname>snapshot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref> *</type>
+          <declname>out_transform</declname>
+        </param>
+        <briefdescription>
+<para>Get transform between world origin and the coordinate frame <lsquo/>id<rsquo/>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">snapshot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A snapshot of tracker state. Can be obtained with <ref refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" kindref="member">MLPerceptionGetSnapshot()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Look up the transform between the current origin and this coordinate frame id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid pointer to a <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref>. To be filled out with requested transform data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained transform successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PoseNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinate Frame is valid, but not found in the current pose snapshot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000645"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="151" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" declline="151" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gace955a2e80a00a978c4cdb5586c15a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSnapshotGetTransformWithDerivatives</definition>
+        <argsstring>(const MLSnapshot *snapshot, const MLCoordinateFrameUID *id, MLTransform *out_transform, MLTransformDerivatives *out_derivatives)</argsstring>
+        <name>MLSnapshotGetTransformWithDerivatives</name>
+        <param>
+          <type>const <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> *</type>
+          <declname>snapshot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref> *</type>
+          <declname>out_transform</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref> *</type>
+          <declname>out_derivatives</declname>
+        </param>
+        <briefdescription>
+<para>Get transform between world origin and the coordinate frame <lsquo/>id<rsquo/> as well as any derivatives that have been calculated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">snapshot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A snapshot of tracker state. Can be obtained with <ref refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" kindref="member">MLPerceptionGetSnapshot()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Look up the transform between the current origin and this coordinate frame id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid pointer to a <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref>. To be filled out with requested transform data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_derivatives</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid pointer to a <ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref>. To be filled out with the derivatives of the transform if available.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained transform successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PoseNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinate Frame is valid, but not found in the current pose snapshot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSnapshotResult_DerivativesNotCalculated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Derivatives are not available for the requested coordinate Frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000646"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="173" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" declline="173" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gac73ae10bf4ea48c9039479658b807b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSnapshotGetPoseInBase</definition>
+        <argsstring>(const MLSnapshot *snapshot, const MLCoordinateFrameUID *base_id, const MLCoordinateFrameUID *id, MLPose *out_pose)</argsstring>
+        <name>MLSnapshotGetPoseInBase</name>
+        <param>
+          <type>const <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> *</type>
+          <declname>snapshot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *</type>
+          <declname>base_id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_pose" kindref="compound">MLPose</ref> *</type>
+          <declname>out_pose</declname>
+        </param>
+        <briefdescription>
+<para>Get transform between coordinate frame &apos;base_id&apos; and the coordinate frame <lsquo/>id<rsquo/> as well as any derivatives that have been calculated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">//<sp/>Get<sp/>the<sp/>CFUID<sp/>for<sp/>World<sp/>Origin</highlight></codeline>
+<codeline><highlight class="normal">MLSnapshotStaticData<sp/>snapshot_static_data<sp/>=<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">MLSnapshotStaticDataInit(&amp;snapshot_static_data);</highlight></codeline>
+<codeline><highlight class="normal">MLSnapshotGetStaticData(&amp;snapshot_static_data);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Get<sp/>the<sp/>CFUID<sp/>for<sp/>Headset<sp/>Origin</highlight></codeline>
+<codeline><highlight class="normal">MLHeadTrackingStaticData<sp/>head_static_data_<sp/>=<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">MLHeadTrackingGetStaticData(head_tracker_,<sp/>&amp;head_static_data_);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Get<sp/>the<sp/>CFUID<sp/>for<sp/>left<sp/>eye</highlight></codeline>
+<codeline><highlight class="normal">MLEyeTrackingStaticData<sp/>eye_static_data_<sp/>=<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">MLEyeTrackingGetStaticData(eye_tracker_,<sp/>&amp;eye_static_data_);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MLPose<sp/>left_eye_center<sp/>=<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">MLSnapshot<sp/>*snapshot<sp/>=<sp/>nullptr;</highlight></codeline>
+<codeline><highlight class="normal">bool<sp/>gaze_in_device_coordinate_frame<sp/>=<sp/>true;</highlight></codeline>
+<codeline><highlight class="normal">MLPerceptionGetSnapshot(&amp;snapshot);</highlight></codeline>
+<codeline><highlight class="normal">if(gaze_in_device_coordinate_frame)<sp/>{<sp/><sp/>//<sp/>Left<sp/>eye<sp/>gaze<sp/>in<sp/>device<sp/>coordinate<sp/>frame.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MLSnapshotGetPoseInBase(snapshot,<sp/>&amp;head_static_data_.coord_frame_head,<sp/>&amp;eye_static_data_.left_center,<sp/>&amp;left_eye_center);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">else<sp/>{<sp/><sp/>//<sp/>Left<sp/>eye<sp/>gaze<sp/>in<sp/>world<sp/>origin<sp/>coordinate<sp/>frame.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MLSnapshotGetPoseInBase(snapshot,<sp/>&amp;snapshot_static_data.coord_world_origin,<sp/>&amp;eye_static_data_.left_center,<sp/>&amp;left_eye_center);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">MLPerceptionReleaseSnapshot(snapshot);</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="par"><title>API Level:\n 30</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">snapshot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A snapshot of tracker state. Can be obtained with <ref refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" kindref="member">MLPerceptionGetSnapshot()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">base_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate frame in which to locate &apos;id&apos;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate frame which needs to be located in the base_id coordinate frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid pointer to a <ref refid="struct_m_l_pose" kindref="compound">MLPose</ref>. To be filled out with requested pose data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obtained transform successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PoseNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinate Frame is valid, but not found in the current pose snapshot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain transform due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000647"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="223" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" declline="223" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gae70dc7a0e140aee6306fd442a5a2e884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLSnapshotGetResultString</definition>
+        <argsstring>(MLResult result_code)</argsstring>
+        <name>MLSnapshotGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result_code</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string representation for each result code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This call returns strings for all of the global MLResult and MLSnapshotResult codes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLResult type to be converted to string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of the result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000648"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="237" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" declline="237" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__coordinate__frame__uid_8h" kindref="compound">ml_coordinate_frame_uid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="group___perception_1ggaabfcbcb5ac86a1edac4035264bc7d2b8aa2938fdd9683be3e03cf67d332f806ff" kindref="member">MLResultAPIPrefix_Snapshot</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x87b8)</highlight></codeline>
+<codeline lineno="33" refid="group___perception_1ggaabfcbcb5ac86a1edac4035264bc7d2b8aa2938fdd9683be3e03cf67d332f806ff" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="group___perception_1gaa7f70a1576412b479c4f538923487b57" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___perception_1gaa7f70a1576412b479c4f538923487b57" kindref="member">MLSnapshotResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="38" refid="group___perception_1ggaa7f70a1576412b479c4f538923487b57a1756fc367867ce04a183df00d3499525" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___perception_1ggaa7f70a1576412b479c4f538923487b57a1756fc367867ce04a183df00d3499525" kindref="member">MLSnapshotResult_DerivativesNotCalculated</ref><sp/>=<sp/><ref refid="group___perception_1ggaabfcbcb5ac86a1edac4035264bc7d2b8aa2938fdd9683be3e03cf67d332f806ff" kindref="member">MLResultAPIPrefix_Snapshot</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="group___perception_1ggaa7f70a1576412b479c4f538923487b57a439fcbf4a335462d980b1d7135a3fd12" kindref="member">MLSnapshotResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="41" refid="group___perception_1gabb23c327410266b9bbdb6c11adc20ec3" refkind="member"><highlight class="normal">}<sp/><ref refid="group___perception_1gaa7f70a1576412b479c4f538923487b57" kindref="member">MLSnapshotResult</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="struct_m_l_transform_derivatives" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="struct_m_l_transform_derivatives_1a5b3ec32570659ff639c84066970e4477" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_transform_derivatives_1a5b3ec32570659ff639c84066970e4477" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="54" refid="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" kindref="member">linear_velocity_m_s</ref>;</highlight></codeline>
+<codeline lineno="57" refid="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" kindref="member">linear_acceleration_m_s2</ref>;</highlight></codeline>
+<codeline lineno="60" refid="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" kindref="member">angular_velocity_r_s</ref>;</highlight></codeline>
+<codeline lineno="63" refid="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" kindref="member">angular_acceleration_r_s2</ref>;</highlight></codeline>
+<codeline lineno="64" refid="group___perception_1ga456153cba59313fa043e97c5835df9c7" refkind="member"><highlight class="normal">}<sp/><ref refid="group___perception_1ga456153cba59313fa043e97c5835df9c7" kindref="member">MLTransformDerivatives</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group___perception_1gad6e4922d6a0aec00b5d44529f7f83733" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___perception_1gad6e4922d6a0aec00b5d44529f7f83733" kindref="member">MLTransformDerivativesInit</ref>(<ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref><sp/>*inout_data)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_data)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a5b3ec32570659ff639c84066970e4477" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" kindref="member">linear_velocity_m_s</ref>.<ref refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" kindref="member">x</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" kindref="member">linear_velocity_m_s</ref>.<ref refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" kindref="member">y</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" kindref="member">linear_velocity_m_s</ref>.<ref refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" kindref="member">z</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" kindref="member">linear_acceleration_m_s2</ref>.<ref refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" kindref="member">x</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" kindref="member">linear_acceleration_m_s2</ref>.<ref refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" kindref="member">y</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" kindref="member">linear_acceleration_m_s2</ref>.<ref refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" kindref="member">z</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" kindref="member">angular_velocity_r_s</ref>.<ref refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" kindref="member">x</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" kindref="member">angular_velocity_r_s</ref>.<ref refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" kindref="member">y</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" kindref="member">angular_velocity_r_s</ref>.<ref refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" kindref="member">z</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" kindref="member">angular_acceleration_r_s2</ref>.<ref refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" kindref="member">x</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" kindref="member">angular_acceleration_r_s2</ref>.<ref refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" kindref="member">y</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" kindref="member">angular_acceleration_r_s2</ref>.<ref refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" kindref="member">z</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="struct_m_l_snapshot_static_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="struct_m_l_snapshot_static_data_1a3f4f2bb31199b22d12d40f6ed63fb196" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_snapshot_static_data_1a3f4f2bb31199b22d12d40f6ed63fb196" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="102" refid="struct_m_l_snapshot_static_data_1a3a0870776c6362389b0e2ba412625e7a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_snapshot_static_data_1a3a0870776c6362389b0e2ba412625e7a" kindref="member">coord_world_origin</ref>;</highlight></codeline>
+<codeline lineno="103" refid="group___perception_1ga90484d03b3f9ca37af996c74acd50d67" refkind="member"><highlight class="normal">}<sp/><ref refid="group___perception_1ga90484d03b3f9ca37af996c74acd50d67" kindref="member">MLSnapshotStaticData</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="group___perception_1gad1c8088969031a90dce4b954fd3b5333" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___perception_1gad1c8088969031a90dce4b954fd3b5333" kindref="member">MLSnapshotStaticDataInit</ref>(<ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref><sp/>*inout_data)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_data)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref>));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_data-&gt;<ref refid="struct_m_l_snapshot_static_data_1a3f4f2bb31199b22d12d40f6ed63fb196" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1ga85e7a5fafcf1c5ea81d28ccada531996" kindref="member">MLSnapshotGetStaticData</ref>(<ref refid="struct_m_l_snapshot_static_data" kindref="compound">MLSnapshotStaticData</ref><sp/>*out_static_data);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="group___perception_1gaca4197ebdb7cb75b07423fd45debc738" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1gaca4197ebdb7cb75b07423fd45debc738" kindref="member">MLSnapshotGetTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/>*snapshot,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/>*</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/>*out_transform);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="group___perception_1gace955a2e80a00a978c4cdb5586c15a0e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1gace955a2e80a00a978c4cdb5586c15a0e" kindref="member">MLSnapshotGetTransformWithDerivatives</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/>*snapshot,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/>*</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/>*out_transform,<sp/><ref refid="struct_m_l_transform_derivatives" kindref="compound">MLTransformDerivatives</ref><sp/>*out_derivatives);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="group___perception_1gac73ae10bf4ea48c9039479658b807b13" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1gac73ae10bf4ea48c9039479658b807b13" kindref="member">MLSnapshotGetPoseInBase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/>*snapshot,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/>*base_id,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/>*</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="struct_m_l_pose" kindref="compound">MLPose</ref><sp/>*out_pose);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="group___perception_1gae70dc7a0e140aee6306fd442a5a2e884" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1gae70dc7a0e140aee6306fd442a5a2e884" kindref="member">MLSnapshotGetResultString</ref>(<ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/>result_code);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h"/>
+  </compounddef>
+</doxygen>

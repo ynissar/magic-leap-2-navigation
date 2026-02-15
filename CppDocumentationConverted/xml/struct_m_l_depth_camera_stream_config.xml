@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_depth_camera_stream_config" kind="struct" language="C++" prot="public">
+    <compoundname>MLDepthCameraStreamConfig</compoundname>
+    <includes refid="ml__depth__camera_8h" local="no">ml_depth_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_depth_camera_stream_config_1abfbfd803b2c08ae0dbe366d1ac6c7201" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraStreamConfig::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags to configure the depth data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="203" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_stream_config_1a496843a1202250a31228cd170aff7a27" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraStreamConfig::exposure</definition>
+        <argsstring></argsstring>
+        <name>exposure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exposure in microseconds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="205" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_stream_config_1a8291267aaec3f742b9a07ee52ed82ef5" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_cam_1ga220e1a2733378e7ea8eeb2eca457eb95" kindref="member">MLDepthCameraFrameRate</ref></type>
+        <definition>MLDepthCameraFrameRate MLDepthCameraStreamConfig::frame_rate</definition>
+        <argsstring></argsstring>
+        <name>frame_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame rate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="207" column="26" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to encapsulate the camera config for a specific stream. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="201" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="201" bodyend="208"/>
+    <listofallmembers>
+      <member refid="struct_m_l_depth_camera_stream_config_1a496843a1202250a31228cd170aff7a27" prot="public" virt="non-virtual"><scope>MLDepthCameraStreamConfig</scope><name>exposure</name></member>
+      <member refid="struct_m_l_depth_camera_stream_config_1abfbfd803b2c08ae0dbe366d1ac6c7201" prot="public" virt="non-virtual"><scope>MLDepthCameraStreamConfig</scope><name>flags</name></member>
+      <member refid="struct_m_l_depth_camera_stream_config_1a8291267aaec3f742b9a07ee52ed82ef5" prot="public" virt="non-virtual"><scope>MLDepthCameraStreamConfig</scope><name>frame_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_gaze_recognition_state" kind="struct" language="C++" prot="public">
+    <compoundname>MLGazeRecognitionState</compoundname>
+    <includes refid="ml__gaze__recognition_8h" local="no">ml_gaze_recognition.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___gaze_recognition_1gae9d5c2a59a1a6614fbb620928f9b46ee" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLGazeRecognitionState::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="106" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga9b48f29d9ebe59833d82cfbf486bc031" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLGazeRecognitionState::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The timestamp accociated with all data fields in this struct. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="108" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1gad3d9a54b3bc86fe2fd5e5fc46498fa6d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___gaze_recognition_1ga358049e2c4eae6f5694cf25ecd180b90" kindref="member">MLGazeRecognitionError</ref></type>
+        <definition>MLGazeRecognitionError MLGazeRecognitionState::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents what gaze Recognition error (if any) is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="110" column="26" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1gaa92a414d3ffd7f7d16c14b99d53c046d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___gaze_recognition_1gabf91a38d39661f73f8a87964754e0e8d" kindref="member">MLGazeRecognitionBehavior</ref></type>
+        <definition>MLGazeRecognitionBehavior MLGazeRecognitionState::behavior</definition>
+        <argsstring></argsstring>
+        <name>behavior</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents what known gaze Recognition behavior is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="112" column="29" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga970dae2759a4fbd26bbc4f06bd49fef7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>MLVec2f MLGazeRecognitionState::eye_left</definition>
+        <argsstring></argsstring>
+        <name>eye_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector for eye-in-skull position of left eye, even if right eye is closed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="114" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1gaf3700f4c042cfb8a6ea692112562e086" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>MLVec2f MLGazeRecognitionState::eye_right</definition>
+        <argsstring></argsstring>
+        <name>eye_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector for eye-in-skull position of right eye, even if left eye is closed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="116" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga34d787acade1fa243ec8b08e34053444" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionState::onset_s</definition>
+        <argsstring></argsstring>
+        <name>onset_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata field for onset of the current behavior, in seconds. Onset applies to all behaviors and marks the time when the current behavior began. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="118" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1gafd86bba38d819ac9b830f496186fa9a4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionState::duration_s</definition>
+        <argsstring></argsstring>
+        <name>duration_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata field for duration of the current behavior, in seconds. Duration applies to all gaze types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="120" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1gae1f783a2e17193f32c9a7bb05d9bae16" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionState::velocity_degps</definition>
+        <argsstring></argsstring>
+        <name>velocity_degps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="122" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga2870bdec332d06b2aae90a54d76de99d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionState::amplitude_deg</definition>
+        <argsstring></argsstring>
+        <name>amplitude_deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata field for amplitude of the current movement, which is eye-position displacement in degrees of visual angle. Amplitude applies to saccades and pursuit, otherwise NaN. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="124" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga3b4875f45b4b4b21e4129a9f78fb30a0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionState::direction_radial</definition>
+        <argsstring></argsstring>
+        <name>direction_radial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="126" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about the state of the Gaze Recognition system. This structure must be initialized by calling <ref refid="group___gaze_recognition_1gaa01f609e49f796f150747fd1de1cd297" kindref="member">MLGazeRecognitionStateInit()</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec2f</label>
+        <link refid="struct_m_l_vec2f"/>
+      </node>
+      <node id="1">
+        <label>MLGazeRecognitionState</label>
+        <link refid="struct_m_l_gaze_recognition_state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>eye_left</edgelabel>
+          <edgelabel>eye_right</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="104" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="104" bodyend="127"/>
+    <listofallmembers>
+      <member refid="group___gaze_recognition_1ga2870bdec332d06b2aae90a54d76de99d" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>amplitude_deg</name></member>
+      <member refid="group___gaze_recognition_1gaa92a414d3ffd7f7d16c14b99d53c046d" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>behavior</name></member>
+      <member refid="group___gaze_recognition_1ga3b4875f45b4b4b21e4129a9f78fb30a0" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>direction_radial</name></member>
+      <member refid="group___gaze_recognition_1gafd86bba38d819ac9b830f496186fa9a4" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>duration_s</name></member>
+      <member refid="group___gaze_recognition_1gad3d9a54b3bc86fe2fd5e5fc46498fa6d" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>error</name></member>
+      <member refid="group___gaze_recognition_1ga970dae2759a4fbd26bbc4f06bd49fef7" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>eye_left</name></member>
+      <member refid="group___gaze_recognition_1gaf3700f4c042cfb8a6ea692112562e086" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>eye_right</name></member>
+      <member refid="group___gaze_recognition_1ga34d787acade1fa243ec8b08e34053444" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>onset_s</name></member>
+      <member refid="group___gaze_recognition_1ga9b48f29d9ebe59833d82cfbf486bc031" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>timestamp</name></member>
+      <member refid="group___gaze_recognition_1gae1f783a2e17193f32c9a7bb05d9bae16" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>velocity_degps</name></member>
+      <member refid="group___gaze_recognition_1gae9d5c2a59a1a6614fbb620928f9b46ee" prot="public" virt="non-virtual"><scope>MLGazeRecognitionState</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

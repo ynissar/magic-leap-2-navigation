@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_spectral_analysis" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioSpectralAnalysis</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1gaaf2f27f2f3559abb7c5ca1822bc5af66" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* MLAudioSpectralAnalysis::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Magnitudes of the spectral energy in a column-major matrix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="450" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae84147eaafdb8446c23ba9cd877beb10" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLAudioSpectralAnalysis::num_columns</definition>
+        <argsstring></argsstring>
+        <name>num_columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bands of spectral energy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="452" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga55486fa185b62502a3674191051ce536" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLAudioSpectralAnalysis::num_rows</definition>
+        <argsstring></argsstring>
+        <name>num_rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of divisions of the time window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="454" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A representation of frequency spectrum energy over a window of time. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="448" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="448" bodyend="455"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1gae84147eaafdb8446c23ba9cd877beb10" prot="public" virt="non-virtual"><scope>MLAudioSpectralAnalysis</scope><name>num_columns</name></member>
+      <member refid="group___audio_defs_1ga55486fa185b62502a3674191051ce536" prot="public" virt="non-virtual"><scope>MLAudioSpectralAnalysis</scope><name>num_rows</name></member>
+      <member refid="group___audio_defs_1gaaf2f27f2f3559abb7c5ca1822bc5af66" prot="public" virt="non-virtual"><scope>MLAudioSpectralAnalysis</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

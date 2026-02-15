@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_mesh_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingMeshInfo</compoundname>
+    <includes refid="ml__meshing2_8h" local="no">ml_meshing2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_mesh_info_1aaf63b5d9f844ba470a6f03933ccfc150" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLMeshingMeshInfo::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The response timestamp to a earlier request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="138" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_mesh_info_1a8ddcd196f7be131c185182173c30997f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLMeshingMeshInfo::data_count</definition>
+        <argsstring></argsstring>
+        <name>data_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of responses in data pointer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="140" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_mesh_info_1ad105341c81cbd4e20e53120178d82382" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_meshing_block_info" kindref="compound">MLMeshingBlockInfo</ref> *</type>
+        <definition>MLMeshingBlockInfo* MLMeshingMeshInfo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The meshinfo returned by the system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="142" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Response structure for the mesh block info. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="1">
+        <label>MLMeshingMeshInfo</label>
+        <link refid="struct_m_l_meshing_mesh_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+      <node id="3">
+        <label>MLMeshingExtents</label>
+        <link refid="struct_m_l_meshing_extents"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>center</edgelabel>
+          <edgelabel>extents</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLMeshingBlockInfo</label>
+        <link refid="struct_m_l_meshing_block_info"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>extents</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="136" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="136" bodyend="143"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_mesh_info_1ad105341c81cbd4e20e53120178d82382" prot="public" virt="non-virtual"><scope>MLMeshingMeshInfo</scope><name>data</name></member>
+      <member refid="struct_m_l_meshing_mesh_info_1a8ddcd196f7be131c185182173c30997f" prot="public" virt="non-virtual"><scope>MLMeshingMeshInfo</scope><name>data_count</name></member>
+      <member refid="struct_m_l_meshing_mesh_info_1aaf63b5d9f844ba470a6f03933ccfc150" prot="public" virt="non-virtual"><scope>MLMeshingMeshInfo</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

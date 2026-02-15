@@ -630,7 +630,7 @@ void IRToolTracker::AddFrame(void* pAbImage, void* pDepth, UINT32 depthWidth, UI
 		delete m_CurrentFrame;
 	}
 
-	m_CurrentFrame = new AHATFrame { _timestamp, _pose, cvAbImage,  new UINT16[depthWidth * depthHeight], depthWidth, depthHeight };
+	m_CurrentFrame = new AHATFrame { _timestamp, _pose, c,  new UINT16[depthWidth * depthHeight], depthWidth, depthHeight };
 	memcpy(m_CurrentFrame->pDepth, pDepth, depthWidth * depthHeight * sizeof(UINT16));
 
 

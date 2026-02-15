@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000368"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000360"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000361"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000362"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000363"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000364"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000365"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000366"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000367"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000359"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000369"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000370"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000371"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000372"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000373"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000374"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000375"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000351"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000343"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000344"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000345"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000346"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000347"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000348"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000349"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000350"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000376"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000352"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000353"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000354"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000355"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000356"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000357"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000358"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000403"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000394"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000395"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000396"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_recorder_1gaa8c50226125b17a7c5f9127c67c38fdb" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaMuxerSampleData</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000397"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000399"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000400"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000401"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000402"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000393"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000404"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000405"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000406"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000407"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000408"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000409"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000410"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000385"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000377"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000378"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000379"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000380"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000381"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000382"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000383"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000384"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000342"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000386"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000387"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000388"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000389"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000390"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000391"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000392"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000300"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000292"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000293"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000294"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000295"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000296"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000297"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000298"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000299"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000291"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000301"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000302"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000303"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000304"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000305"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000306"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000307"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000283"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000274"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000275"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000277"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000278"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000279"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000280"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000281"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000282"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000308"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000284"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000285"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000286"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000287"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000288"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000289"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000290"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000334"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000326"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000327"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000328"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000329"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000330"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000331"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000332"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000333"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000325"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000335"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000336"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000337"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000338"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000339"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000340"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000341"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000317"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000309"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000310"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000311"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000312"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000313"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000314"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000315"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000316"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000411"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000318"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000319"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000320"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000321"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000322"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000323"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000324"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000505"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000497"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000498"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000499"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000500"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000501"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000502"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000503"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000504"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000496"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000508"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000509"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000510"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000511"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000513"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000514"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000515"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000488"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000480"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000481"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000482"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000483"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000484"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000485"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000486"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000487"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000516"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000489"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000490"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000491"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000492"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000493"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000494"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000495"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___planes_1ga3a857120d906c95607210d9f869b43fe" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))) struct MLPolygon</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000542"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000534"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000535"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000536"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000537"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000538"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000539"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000540"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000541"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000533"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___planes_1ga3a857120d906c95607210d9f869b43fe" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))) struct MLPolygon</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000543"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000544"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga8bfc7d235197c3596593b0363afe6435" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLSpaceLocalizationResult.&quot;))) struct MLSpatialAnchorLocalizationInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000547"/>Deprecated since 1.3.0. Scheduled for removal. Replaced by <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref>.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga1927726112c9a67eeb0fb2008f4a106d" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLSpaceLocalizationResultInit.&quot;))) static inline void MLSpatialAnchorLocalizationInfoInit(MLSpatialAnchorLocalizationInfo *inout_info)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000548"/>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationResultInit.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga3de3402fe1d5c9119a77f28a80f0f888" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLSpaceGetLocalizationResult.&quot;))) MLResult MLSpatialAnchorGetLocalizationInfo(MLHandle handle</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000549"/>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceGetLocalizationResult.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___web_view_1ga6b9a39d4c5d258e2b149898f048206d7" kindref="member">__attribute__</ref>  ((deprecated(&quot;Unimplemented and scheduled for removal.&quot;))) MLResult MLWebViewGetScrollSize(MLHandle web_view</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000550"/>Deprecated since 1.2.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000551"/>Deprecated since 1.2.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000525"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000517"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000518"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000519"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000520"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000521"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000522"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000523"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000524"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000479"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000526"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000527"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000528"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000529"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000530"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000531"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000532"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000437"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000429"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000430"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000431"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000432"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000433"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000434"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000435"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000436"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000428"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000438"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000439"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000440"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000441"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000442"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000443"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000444"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000420"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000412"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000413"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000414"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000415"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000416"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000417"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000418"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000419"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000445"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000421"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000422"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000423"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000424"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000425"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000426"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000427"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000471"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000463"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga5152787af81f779f5e2f5d9a13f45302" kindref="member">__attribute__</ref>  ((deprecated(&quot;This feature is not supported starting 1.2.0.&quot;))) MLResult MLMediaPlayerGetAudioHandle(MLHandle media_player</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000464"/>Unsupported since 1.2.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000465"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000466"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000467"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000468"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000469"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000470"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000462"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000472"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000473"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000474"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000475"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000476"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000477"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000478"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000454"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000446"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000447"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000448"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000449"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000450"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000451"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000452"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000453"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000276"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000455"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000456"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000457"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000458"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000459"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000460"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000461"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000102"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000117"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000116"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000115"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000114"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000113"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000112"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000111"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000110"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000109"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000108"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000107"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000106"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000105"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000104"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000103"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000118"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000101"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000100"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000099"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000098"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000097"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000096"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000095"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000094"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000093"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000092"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000091"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000090"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000089"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000088"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000137"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000152"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000151"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000150"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000149"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000148"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000147"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000146"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000145"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000144"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000143"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000142"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000141"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000140"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000139"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000087"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000136"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000134"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000133"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000131"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000130"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000129"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000128"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000127"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000124"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000123"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000122"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000121"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000120"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000119"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000023"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000037"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000036"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000035"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000034"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000033"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000032"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000031"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000030"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000029"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000028"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000027"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000026"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000025"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000024"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000038"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000022"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000021"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000020"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000019"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000015"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_calibration_1ga51d44b1461b1f979bf58031cef2aa018" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLEyeCalibrationState</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000012"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000011"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000010"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000009"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000008"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1gaea6198bd2c8f0077f133352316c0ddb7" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLControllerGetStateEx.&quot;))) MLResult MLControllerGetState(MLHandle handle</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000006"/>Deprecated since 1.1.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1ga733f36d56cdd156e2a0a8ca78543c4eb" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLControllerSystemStateEx.&quot;))) struct MLControllerSystemState</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000005"/>Deprecated since 1.1.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1gab3b3a91c6620c686ae6709ab599d16d4" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLControllerStateEx.&quot;))) struct MLControllerStream</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000004"/>Deprecated since 1.1.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000003"/>Deprecated since 1.1.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000061"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000086"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1ga3c3a2a1bcaa612fe73467b61e600dc02" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLInputGetControllerStateEx.&quot;))) MLResult MLInputGetControllerState(MLHandle handle</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000076"/>Deprecated since 1.1.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___input_1gab805f6fdc1657bac57abd2f413debe05" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLInputControllerStateEx.&quot;))) struct MLInputControllerState</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000075"/>Deprecated since 1.1.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_calibration_1ga51d44b1461b1f979bf58031cef2aa018" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLEyeCalibrationState</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000074"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000073"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000072"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000071"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___headset_fit_1ga7910a9a7e289f738b54fcdf642d9e412" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLHeadsetFitState</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000070"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000068"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000067"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1ga2f7a91c022f91c26ac5ae7ad47bcd185" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLHeadTrackingGetStateEx.&quot;))) MLResult MLHeadTrackingGetState(MLHandle head_tracker</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000066"/>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingGetStateEx.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000065"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000064"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000063"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000272"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000060"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000059"/>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStateEx.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___hand_tracking_1ga50ca9662498141eccf3859fb65833109" kindref="member">__attribute__</ref>  ((deprecated(&quot;Replaced by MLHandTrackingCreateEx.&quot;))) MLResult MLHandTrackingCreate(MLHandle *out_handle)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000054"/>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLHandTrackingCreateEx.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000052"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000051"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_utilities_1gad6feebe7c24c843d6ba0568a2ea47434" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsImportedMediaSurface</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000048"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000046"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000045"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000044"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000043"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000042"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000041"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000040"/>Deprecated since 1.6.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000039"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000226"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000241"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000240"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000239"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000238"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000237"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000236"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000235"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000234"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000233"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000232"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000231"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000230"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000229"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000228"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000227"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000242"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000225"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000224"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000223"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000222"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000221"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000220"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000219"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000218"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000217"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000216"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000215"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000214"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000213"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000212"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000211"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000257"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000273"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000271"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000270"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000269"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000268"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000267"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000266"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000265"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000264"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000263"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000262"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000261"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000260"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000259"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000258"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000154"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000256"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000255"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000254"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000253"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000252"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000251"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000250"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000249"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000248"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000247"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000246"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000245"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000244"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000243"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000180"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000172"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000173"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000174"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000175"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000176"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000177"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000178"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000179"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000171"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000181"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000182"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000183"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000184"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000185"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000186"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000187"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000188"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000162"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000153"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000155"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000156"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000157"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000158"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000159"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000160"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000161"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000209"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000163"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000164"/>Deprecated since 1.4.0. Scheduled for removal.</para>
+<para><anchor id="deprecated_1_deprecated000165"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000166"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000167"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000168"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000169"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000170"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000202"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000197"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000198"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000199"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000196"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000195"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000194"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000193"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000200"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gaa27222e72f479ca369b9a96dd62b040a" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK APIs.&quot;))) struct MLCea608CaptionStyleColor</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000192"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000191"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga547b46e690d7ff392a20b5ba5cff1d07" kindref="member">__attribute__</ref>  ((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaCodecInputBufferInfo</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000190"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000203"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000189"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000204"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000205"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000206"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000207"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000208"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+<para><anchor id="deprecated_1_deprecated000210"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>  (&quot;Use standard Android SDK and NDK APIs.&quot;) struct MLPSSHEntry</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000506"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1gad55bf07cfcd73ad5a58095524dccf1e2" kindref="member">MLControllerCalibAccuracy</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>Deprecated since 1.1.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___controller_1gae379d425f99a413623e64b00aa81d823" kindref="member">MLControllerMode</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>Deprecated since 1.1.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___eye_calibration_1gab72dabce431e60915e5d15acba128c83" kindref="member">MLEyeCalibrationStatus</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000007"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga9a54e9455a9d8252df9b636975e77cf4" kindref="member">MLGraphicsEnvironmentBlendMode</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000018"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga5bbceb34daf35097c0713b262c2c841b" kindref="member">MLGraphicsFlags</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000013"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga726d73b45bccae7719d06f5424fbd866" kindref="member">MLGraphicsProjectionType</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000017"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga86f9ffe743ab49bb71ce3d9ae5654e7c" kindref="member">MLGraphicsVirtualCameraName</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000016"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___headset_fit_1ga133f9a9984e180bf3c13edb190c901ea" kindref="member">MLHeadsetFitStatus</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000069"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1gac06253f5b4c411b908d59c6052bb8ab4" kindref="member">MLHeadTrackingError</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000055"/>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingErrorFlag.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1ga582faec053d2f24a8723a035119590a4" kindref="member">MLHeadTrackingErrorFlag</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000056"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1ga6f3f6b950bb1da91f71928aa13c22ff1" kindref="member">MLHeadTrackingMapEvent</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000062"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1ga44226ee307189172bd761be58a57f845" kindref="member">MLHeadTrackingMode</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000057"/>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStatus.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___head_tracking_1ga33dee337004d5b0f9d782bee9573fd62" kindref="member">MLHeadTrackingStatus</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000058"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga43c6cdf23c9a49e652465fa4a5d3e839" kindref="member">MLMarkerTrackerArucoDictionaryName</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000084"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga0e2f537e7c4f8816bb613f3a12aeaed6" kindref="member">MLMarkerTrackerCameraHint</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000081"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gaf1837a91b03e82d9763bbcb702d9b26f" kindref="member">MLMarkerTrackerCornerRefineMethod</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000082"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga25376787e949da256981c7c4cd3a5032" kindref="member">MLMarkerTrackerDetectorType</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000077"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga09a8839248a725a18de84dd720c77f67" kindref="member">MLMarkerTrackerFullAnalysisIntervalHint</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000083"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga2082c473a77f48d52659a7a30775e1ab" kindref="member">MLMarkerTrackerProfile</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000078"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga5260fbc4b6f0472ef4aee9067a738f09" kindref="member">MLMarkerTrackingDecodedDataType</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000085"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1ga207fa28eb93654b0bde3858373d98a9f" kindref="member">MLMarkerTrackingFpsHint</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000079"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___marker_tracking_1gaf55678d3f1c27246a63db60e3298f26e" kindref="member">MLMarkerTrackingResolutionHint</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000080"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga8f77cff4d1a919bd37053731885c344b" kindref="member">MLMediaCodecBufferFlag</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000125"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga6c5d8f0de05a8b372130f092dcb3c4f6" kindref="member">MLMediaCodecCallbacksExInit</ref>  (MLMediaCodecCallbacksEx *inout_callbacks)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000132"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga19d1e989a70442cf8d5e664fbfea9b10" kindref="member">MLMediaCodecCryptoInfoInit</ref>  (MLMediaCodecCryptoInfo *inout_crypto_info)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000138"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga5d0a3e31e7592291ff22d132e9f9bd9d" kindref="member">MLMediaCodecOutputBufferStatus</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000126"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga5e02d4d15557b1321f6ab8a855e7fe01" kindref="member">MLMediaCodecOutputFrameListenerInit</ref>  (MLMediaCodecOutputFrameListener *inout_callbacks)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000135"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga674e73e0cb2b3de30a08740faf17da16" kindref="member">MLMediaDRMEventCallbacksInit</ref>  (MLMediaDRMEventCallbacks *inout_callbacks)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000201"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_recorder_1ga84cd66bca542ecaaeab51d52913b1a01" kindref="member">MLMediaMuxerSampleDataInit</ref>  (MLMediaMuxerSampleData *inout_sampledata)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000398"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_utilities_1ga6f02429f6773212be655be801869f774" kindref="member">MLMeshingDepthBufferInfo</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000050"/>Deprecated since 1.2.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_utilities_1gacde005f762f87954e333465eed005261" kindref="member">MLMeshingPopulateDepth</ref>  (MLHandle client_handle, const <ref refid="struct_m_l_meshing_depth_buffer_info" kindref="compound">MLMeshingDepthBufferInfo</ref> *info, const <ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref> *meshes)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000053"/>Deprecated since 1.2.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_utilities_1gaa594c5b5994d1f58bce920626e12860a" kindref="member">MLMeshingPopulateDepthFlags</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000047"/>Deprecated since 1.2.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_utilities_1ga8a93c58f8e4cf86203deb448f2a19618" kindref="member">MLMeshingVirtualCameraBufferInfo</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000049"/>Deprecated since 1.2.0. Scheduled for removal. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1ga243ac04f1684ae0d4b9f6a2221fe6061" kindref="member">MLNativeSurfaceOnFrameAvailableCallbackInit</ref>  (MLNativeSurfaceOnFrameAvailableCallback *inout_callbacks)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000512"/>Deprecated since 1.4.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1gaccfb917a4daac57ac7ffa437c0082b83" kindref="member">MLSpatialAnchorLocalizationStatus</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000545"/>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationStatus.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___spatial_anchor_1ga9172403a170ffb883541abede56651a4" kindref="member">MLSpatialAnchorMappingMode</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000546"/>Deprecated since 1.3.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___graphics_1ga3b9e734e3bb6b54b60b224987a4257e9" kindref="member">MLSurfaceFormat</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000014"/>Deprecated since 1.6.0. Scheduled for removal.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group___media_player_1gade5300a430d67f81903c2c2eced74421" kindref="member">MLWebVTTAlign</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000507"/>Deprecated since 1.4.0. Scheduled for removal. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="deprecated"/>
+  </compounddef>
+</doxygen>

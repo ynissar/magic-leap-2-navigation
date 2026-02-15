@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___output_allocation" kind="group">
+    <compoundname>OutputAllocation</compoundname>
+    <title>Allocation</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___output_allocation_1ga516a9b93576a3b0cbf3a664cd82e9bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioCreateSoundWithLoadedFile</definition>
+        <argsstring>(int file, bool auto_destroy, bool dynamic_decode, MLHandle *out_handle)</argsstring>
+        <name>MLAudioCreateSoundWithLoadedFile</name>
+        <param>
+          <type>int</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>auto_destroy</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic_decode</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a sound output that uses audio data loaded from a file descriptor into memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Once created, the sound output can be configured and controlled by calling other MLAudio API calls, passing the sound ID (MLHandle) provided by this function via out_handle. Playback can be started by calling MLAudioStartSound. Files can be of type WAV, FLAC, MP3 and OGG, can be stereo or mono, can have 16kHz to 48kHz sample rate, and can be represented as 16-bit, 24-bit, and 32-bit integers or 32-bit floats.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File descriptor specifying the audio file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auto_destroy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the sound output is destroyed when playback reaches end of file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dynamic_decode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not currently implemented. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to be used in subsequent calls.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_FileNotRecognized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because file was not recognized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBitsPerSample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to invalid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidChannelCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid channel count. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidValidBits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to invalid valid bits. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_ResourceNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because resource was not found.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000014"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="903" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="903" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_allocation_1gadf79c93ef8d9c0de4c9e325c7e19a0ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioCreateSoundWithStreamedFile</definition>
+        <argsstring>(int file, bool auto_destroy, MLHandle *out_handle)</argsstring>
+        <name>MLAudioCreateSoundWithStreamedFile</name>
+        <param>
+          <type>int</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>auto_destroy</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a sound output that streams audio data from flash memory via a file descriptor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Once created, the sound output can be configured and controlled by calling other MLAudio API calls, passing the sound ID (MLHandle) provided by this function via out_handle. Playback can be started by calling MLAudioStartSound. Files can be of type WAV, FLAC, MP3 and OGG, can be stereo or mono, can have 16kHz to 48kHz sample rate, and can be represented as 16-bit, 24-bit, and 32-bit integers or 32-bit floats.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File descriptor specifying the audio file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auto_destroy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, the sound output is destroyed when playback reaches end of file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to be used in subsequent calls.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_FileNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because file was missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_ResourceDiscarded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because file was closed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_ResourceNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because resource was not found.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000015"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="930" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="930" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_allocation_1gae617c6d07a3511a1db9e9c6abb292753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioCreateSoundWithBufferedOutput</definition>
+        <argsstring>(const MLAudioBufferFormat *format, uint32_t buffer_size_in_bytes, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</argsstring>
+        <name>MLAudioCreateSoundWithBufferedOutput</name>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>buffer_size_in_bytes</declname>
+        </param>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga2a3527d903d9e8c4911d76f0432a0e10" kindref="member">MLAudioBufferCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a sound output that plays a client-provided stream of buffered audio data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sound output allocates a double buffer that the caller is responsible for continuously filling with audio data. This can be done within a callback of type MLAudioBufferCallback that is set via the &apos;callback&apos; argument or by polling MLAudioGetOutputBuffer if no callback is set. When polling, a return value of MLAudioResult_BufferNotReady indicates the sound output is not ready and the caller must wait. Setting the &apos;buffer_size_in_bytes&apos; argument to 0 will utilize the system-preferred buffer size. Double-buffers can optionally be pre-filled prior to starting the sound. Once created, a sound output can be configured and controlled by calling other MLAudio API calls, passing the sound ID (MLHandle) provided by this function via out_handle. Playback can be started by calling MLAudioStartSound. Audio data can be mono, stereo, 4-channel (ambisonics), 6-channel (5.1), 8-channel (7.1), or 12-channel (7.1.4). It can have 16kHz to 48kHz sample rate, and must be 16-bit integer.</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> struct specifying the format properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size_in_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested size in bytes for each of the output buffers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to be used in subsequent calls.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid buffer size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidChannelCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid channel count. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidValidBits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to invalid valid bits.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000016"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="970" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="970" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_allocation_1ga5772ae3be742d0d329a2d4c2886e1769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioDestroySound</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLAudioDestroySound</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a previously created sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy sound output due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy sound output due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy sound output because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000017"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="984" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="984" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ALLOCATION. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

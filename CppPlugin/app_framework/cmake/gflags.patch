@@ -1,0 +1,12 @@
+diff -ur gflags-src-orig/CMakeLists.txt gflags-src/CMakeLists.txt
+--- gflags-src-orig/CMakeLists.txt	2018-11-11 16:21:00.000000000 -0500
++++ gflags-src/CMakeLists.txt	2021-09-09 11:01:11.663138991 -0400
+@@ -409,7 +409,7 @@
+ endif ()
+ # Set postfixes for generated libraries based on buildtype.
+ set(CMAKE_RELEASE_POSTFIX "")
+-set(CMAKE_DEBUG_POSTFIX "_debug")
++set(CMAKE_DEBUG_POSTFIX "")
+ 
+ # ----------------------------------------------------------------------------
+ # installation directories

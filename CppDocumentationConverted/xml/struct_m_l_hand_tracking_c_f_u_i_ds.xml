@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_hand_tracking_c_f_u_i_ds" kind="struct" language="C++" prot="public">
+    <compoundname>MLHandTrackingCFUIDs</compoundname>
+    <includes refid="ml__hand__tracking_8h" local="no">ml_hand_tracking.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_c_f_u_i_ds_1af015d4df685fbce46fb4826d21f615ae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLHandTrackingCFUIDs::keypoint_cfuids[MLHandTrackingStaticData_MaxKeyPoints]</definition>
+        <argsstring>[MLHandTrackingStaticData_MaxKeyPoints]</argsstring>
+        <name>keypoint_cfuids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="100" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MLCoordinateFrameUIDs for the keypoints. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>See <ref refid="group___hand_tracking_1ga76e1b1d3094ac576264f95493e90e4f0" kindref="member">MLHandTrackingKeyPoint</ref> for more details.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLHandTrackingCFUIDs</label>
+        <link refid="struct_m_l_hand_tracking_c_f_u_i_ds"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>keypoint_cfuids</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="99" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="99" bodyend="101"/>
+    <listofallmembers>
+      <member refid="struct_m_l_hand_tracking_c_f_u_i_ds_1af015d4df685fbce46fb4826d21f615ae" prot="public" virt="non-virtual"><scope>MLHandTrackingCFUIDs</scope><name>keypoint_cfuids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

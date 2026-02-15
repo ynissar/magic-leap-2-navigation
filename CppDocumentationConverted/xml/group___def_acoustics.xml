@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_acoustics" kind="group">
+    <compoundname>DefAcoustics</compoundname>
+    <title>Acoustics</title>
+    <innerclass refid="struct_m_l_audio_dispersion_properties" prot="public">MLAudioDispersionProperties</innerclass>
+    <innerclass refid="struct_m_l_audio_reverb_properties" prot="public">MLAudioReverbProperties</innerclass>
+    <innergroup refid="group___def_spatial_sound">Spatial Sound</innergroup>
+    <innergroup refid="group___def_buffering">Buffering</innergroup>
+    <innergroup refid="group___def_analysis">Analysis</innergroup>
+    <innergroup refid="group___def_result_codes">Result Codes</innergroup>
+    <innergroup refid="group___def_callbacks">Callbacks</innergroup>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_acoustics_1gae560e7ef91d0ab2a68e843dbf780406c" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_dispersion_properties" kindref="compound">MLAudioDispersionProperties</ref></type>
+        <definition>typedef struct MLAudioDispersionProperties MLAudioDispersionProperties</definition>
+        <argsstring></argsstring>
+        <name>MLAudioDispersionProperties</name>
+        <briefdescription>
+<para>Properties specifying acoustic dispersion (clustered reflections). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="232" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_acoustics_1ga312d27d5cb62a5400e0143ee1eeb9eed" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_reverb_properties" kindref="compound">MLAudioReverbProperties</ref></type>
+        <definition>typedef struct MLAudioReverbProperties MLAudioReverbProperties</definition>
+        <argsstring></argsstring>
+        <name>MLAudioReverbProperties</name>
+        <briefdescription>
+<para>Properties specifying acoustic reverberation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="250" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ACOUSTICS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

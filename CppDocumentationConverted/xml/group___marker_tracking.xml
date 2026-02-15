@@ -1,0 +1,1602 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___marker_tracking" kind="group">
+    <compoundname>MarkerTracking</compoundname>
+    <title>Fiducial Marker Tracking</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___marker_tracking_1ga8b2e44c3240bb9992b02e0c32fb68091" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackerDetectorType</name>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a2b743efaff7888f6d2d79094ab9565c6" prot="public">
+          <name>MLMarkerTrackerDetectorType_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Represents no marker type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a89aac2ee154072d94d08c035e0d44b31" prot="public">
+          <name>MLMarkerTrackerDetectorType_QR</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QR code. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a0ac3969f886513142b0cf932b6975ec3" prot="public">
+          <name>MLMarkerTrackerDetectorType_Aruco</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Aruco and AprilTag. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a90983cd134e87b70ee48ef1676f2783c" prot="public">
+          <name>MLMarkerTrackerDetectorType_EAN_13</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EAN-13 (experimental). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a16095d70f7f93cb46e39be0f325513d3" prot="public">
+          <name>MLMarkerTrackerDetectorType_UPC_A</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UPC-A (experimental). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a725738152716906556e91f29e2e49785" prot="public">
+          <name>MLMarkerTrackerDetectorType_Code_128</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Code 128 decoded data (experimental). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091a3db2fdfa8cdf8c5fcb7e189887a000fa" prot="public">
+          <name>MLMarkerTrackerDetectorType_All</name>
+          <initializer>= 0x3FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>All supported marker types. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga8b2e44c3240bb9992b02e0c32fb68091ab981d72e83c84856d34a5fdc9abda9a8" prot="public">
+          <name>MLMarkerTrackerDetectorType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the different detector types supported by the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000077"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="81" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1ga6248da30eced18572814b1728814be01" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackerProfile</name>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01a6947b97dbcdb5bd0d2c191643cf7dc00" prot="public">
+          <name>MLMarkerTrackerProfile_Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Generic tracker profile. Tracker profile that covers standard use cases. If this does not suite the needs of the application try the other profiles listed below. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01af585154cab8be935061f3f10e4760aab" prot="public">
+          <name>MLMarkerTrackerProfile_Custom</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Customer Tracker Profile. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Application can define a custom traker profiler. See <ref refid="group___marker_tracking_1ga5d60649958009b757e6a6bdf709fdb96" kindref="member">MLMarkerTrackerCustomProfile</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01a489cb757af0f6f38ac3923c08a217b7a" prot="public">
+          <name>MLMarkerTrackerProfile_Speed</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Optimized for speed. Use this profile to reduce the compute load and increase detection/tracker speed. This can result poor poses. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01a0094622e8ed6b2e5746bd55a04c51173" prot="public">
+          <name>MLMarkerTrackerProfile_Accuracy</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Optimized for accuracy. Use this profile to optimize for accurate marker poses. This can cause increased load on the compute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01a68b4c8cce6151bad65403e452220b929" prot="public">
+          <name>MLMarkerTrackerProfile_SmallTargets</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Optimized for small targets. Use this profile to optimize for markers that are small or for larger markers that need to detected from far. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01aca9deb2e91e5d8eb7f2815299b633856" prot="public">
+          <name>MLMarkerTrackerProfile_Large_FoV</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Optimized for FoV. Use this profile to be able to detect markers across a larger FoV. Marker Tracker system will attempt to use multiple cameras to detect the markers. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga6248da30eced18572814b1728814be01a780aa3c62901126f1e974e48dcd7f11e" prot="public">
+          <name>MLMarkerTrackerProfile_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the different tracker profiles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000078"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="106" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="106" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1ga60219bc32996235aec62b480e87e15cd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackingFpsHint</name>
+        <enumvalue id="group___marker_tracking_1gga60219bc32996235aec62b480e87e15cda053f72f6da73d9e3f13bbb79b96304ee" prot="public">
+          <name>MLMarkerTrackingFpsHint_Low</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Low FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga60219bc32996235aec62b480e87e15cda92aba15d80a83ab53f0a2c5eb09f399c" prot="public">
+          <name>MLMarkerTrackingFpsHint_Medium</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Medium FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga60219bc32996235aec62b480e87e15cda30983c6855e50d15ecdb085be3abda61" prot="public">
+          <name>MLMarkerTrackingFpsHint_High</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>High FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga60219bc32996235aec62b480e87e15cda70738958085bb15ef4149e5a4d427d12" prot="public">
+          <name>MLMarkerTrackingFpsHint_Max</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max possible FPS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga60219bc32996235aec62b480e87e15cda98bc5d1aa4c8c53f0fedfae94fb23a25" prot="public">
+          <name>MLMarkerTrackingFpsHint_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Marker tracker FPS hint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000079"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The MLMarkerTrackingFpsHint enum values are used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers.</para>
+<para>CPU load is a combination of enabled detector types, FpsHint and ResolutionHint. More detectors and a higher fps and resolution hints will result in a higher CPU load. High CPU load can affect the performance of your system.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="166" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="166" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1gaa76c8bfa6ef6b80ef8954f377f42c8ba" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackingResolutionHint</name>
+        <enumvalue id="group___marker_tracking_1ggaa76c8bfa6ef6b80ef8954f377f42c8baadb4c23eee77638f72ebabda422ca006f" prot="public">
+          <name>MLMarkerTrackingResolutionHint_Low</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Low Resolution. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaa76c8bfa6ef6b80ef8954f377f42c8baac4debc925e0c8ea3de814f494b954c51" prot="public">
+          <name>MLMarkerTrackingResolutionHint_Medium</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Medium Resolution. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaa76c8bfa6ef6b80ef8954f377f42c8baaeeba1cd94d00096bd6dce0eb682b4615" prot="public">
+          <name>MLMarkerTrackingResolutionHint_High</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>High Resolution. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaa76c8bfa6ef6b80ef8954f377f42c8baaad55f6cb5bc0c15fc3693772ecd5ce60" prot="public">
+          <name>MLMarkerTrackingResolutionHint_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Marker tracker resolution hint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000080"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The MLMarkerTrackingResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTrackerCustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors.</para>
+<para>CPU load is a combination of enabled detector types, FpsHint and ResolutionHint. More detectors and a higher fps and resolution hints will result in a higher CPU load. High CPU load can affect the performance of your system.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="196" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="196" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1gaae6aed300b2d7c089400dcd0105e1c1a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackerCameraHint</name>
+        <enumvalue id="group___marker_tracking_1ggaae6aed300b2d7c089400dcd0105e1c1aa9f6105733050d8f8a1da777d73678b1e" prot="public">
+          <name>MLMarkerTrackerCameraHint_RGB_Camera</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Single RGB camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaae6aed300b2d7c089400dcd0105e1c1aadcad497cb227d5b754b0b58e9125de1f" prot="public">
+          <name>MLMarkerTrackerCameraHint_World_Cameras</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>One or more world cameras. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaae6aed300b2d7c089400dcd0105e1c1aa8b65002f8a52d0a91c7a996e631c9b6c" prot="public">
+          <name>MLMarkerTrackerCameraHint_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Marker tracker camera hint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000081"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The MLMarkerTrackerCameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTrackerCustomProfile structure and this setting currently only applies to the aruco detectors.</para>
+<para>RGB camera has higher resolution than world cameras and are better suited for use cases where the target to be tracked is small or needs to be detected from far.</para>
+<para>World cameras make use of multiple world cameras to improve accuracy and increase the FoV for detection.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="224" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="224" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1ga3b24600ec60163103066f7f617cc890d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackerCornerRefineMethod</name>
+        <enumvalue id="group___marker_tracking_1gga3b24600ec60163103066f7f617cc890dae0a5a11a4c0aa1e815f788c9cc03051b" prot="public">
+          <name>MLMarkerTrackerCornerRefineMethod_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No refinement. Inaccurate corners. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga3b24600ec60163103066f7f617cc890da1154e993acdd68a74ad97b21b4a698dc" prot="public">
+          <name>MLMarkerTrackerCornerRefineMethod_Subpix</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subpixel refinement. Corners have subpixel coordinates. High detection rate, very fast, reasonable accuracy. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga3b24600ec60163103066f7f617cc890da0571c361ae2e528bd5aad56b968d2f38" prot="public">
+          <name>MLMarkerTrackerCornerRefineMethod_Contour</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contour refinement. High detection rate, fast, reasonable accuracy. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga3b24600ec60163103066f7f617cc890dab2fbaebbfbe7a8e66638330e7fd89c33" prot="public">
+          <name>MLMarkerTrackerCornerRefineMethod_AprilTag</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AprilTag refinement. Reasonable detection rate, slowest, but very accurate. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga3b24600ec60163103066f7f617cc890da112f462acfe8200fcb64821eba15d3f5" prot="public">
+          <name>MLMarkerTrackerCornerRefineMethod_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Corner Refinement Method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000082"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The Aruco/April tag detector comes with several corner refinement methods. Choosing the right corner refinement method has an impact on the accuracy and speed trade-off that comes with each detection pipeline.</para>
+<para><simplesect kind="note"><para>Corner refinement only applies to Aruco and April tags, not QR codes.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="246" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="246" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1ga1a3f162a2ad271c63af3ce332a720d3e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackerFullAnalysisIntervalHint</name>
+        <enumvalue id="group___marker_tracking_1gga1a3f162a2ad271c63af3ce332a720d3eac8e52e4a472120f33e320783d93f3952" prot="public">
+          <name>MLMarkerTrackerFullAnalysisIntervalHint_Max</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Detector analyzes every frame fully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga1a3f162a2ad271c63af3ce332a720d3ea632eb373df6925b16a7718cedd0f53fb" prot="public">
+          <name>MLMarkerTrackerFullAnalysisIntervalHint_Fast</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Detector analyzes frame fully very often. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga1a3f162a2ad271c63af3ce332a720d3ea27066851d1b9e1c03cd737bfb3097c0e" prot="public">
+          <name>MLMarkerTrackerFullAnalysisIntervalHint_Medium</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Detector analyzes frame fully a few times per second. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga1a3f162a2ad271c63af3ce332a720d3ea8fa88131ecdae9853a59b318df014c08" prot="public">
+          <name>MLMarkerTrackerFullAnalysisIntervalHint_Slow</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Detector analyzes frame fully about every second. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1gga1a3f162a2ad271c63af3ce332a720d3ea9a72e7547650d2d1909c226bbb5f62f1" prot="public">
+          <name>MLMarkerTrackerFullAnalysisIntervalHint_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Full Frame Analysis Time Interval. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000083"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>In order to improve performance, the detectors don&apos;t always run on the full frame. Full frame analysis is however necessary to detect new markers that weren&apos;t detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="272" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="272" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1gaedaf449b27cd0d63aea32ac48a54f1fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackerArucoDictionaryName</name>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda300d5aadbcea47f4b8900cf774fdaf17" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_NotInitialized</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default value. Nothing will be detected. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fdaff126f781a5d964cf928ebbb1ec20cfd" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_4X4_50</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 by 4 pixel Aruco marker dictionary with 50 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda29393556db98239cc552ca3afcdc8518" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_4X4_100</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 by 4 pixel Aruco marker dictionary with 100 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda0bf6130d6ad147302981e48b00ba773f" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_4X4_250</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 by 4 pixel Aruco marker dictionary with 250 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda8d18473a0565a77fc434b5325fed4681" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_4X4_1000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 by 4 pixel Aruco marker dictionary with 1000 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fdafcd3784df82c108265cfc138037c1061" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_5X5_50</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 by 5 pixel Aruco marker dictionary with 50 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda639993213c209b1780bd785f8a0a1296" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_5X5_100</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 by 5 pixel Aruco marker dictionary with 100 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda2328659ab0805d404e69782276fcca46" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_5X5_250</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 by 5 pixel Aruco marker dictionary with 250 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fdae677a91e327a7bfd2e0c27e2e8a0fd58" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_5X5_1000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 by 5 pixel Aruco marker dictionary with 1000 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda60795d6ef4d4e31c962d705ccf741155" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_6X6_50</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 by 6 pixel Aruco marker dictionary with 50 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda135195802b7cd53886b201fca54a37bc" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_6X6_100</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 by 6 pixel Aruco marker dictionary with 100 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda056fb7088bf305795141d2a28d9617b0" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_6X6_250</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 by 6 pixel Aruco marker dictionary with 250 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda1e03f0c272182ec6adbc8c178399dc9f" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_6X6_1000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 by 6 pixel Aruco marker dictionary with 1000 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda4641eba5b17efeecf28165c2abb9a12b" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_7X7_50</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>7 by 7 pixel Aruco marker dictionary with 50 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda4d21444a96df1b511d90192ce5065a03" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_7X7_100</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>7 by 7 pixel Aruco marker dictionary with 100 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda1eed673033883b7d20d2354f208f554f" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_7X7_250</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>7 by 7 pixel Aruco marker dictionary with 250 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda0d57e0df08cff7526155f5a6f64f3cb4" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_7X7_1000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>7 by 7 pixel Aruco marker dictionary with 1000 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda3bda89ac20f3a9f8d5981b9f2e5d68c9" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_ARUCO_ORIGINAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 by 5 pixel Aruco marker dictionary with 1024 IDs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda89ec14efd10503206443032ec73d2acf" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_16h5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 by 4 bits, minimum hamming distance between any two codes = 5, 30 codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fdaed758416736c781434c7db96c708e423" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_25h9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 by 5 bits, minimum hamming distance between any two codes = 9, 35 codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fdae8f380f99d122d72acb5fe62ecdd44ab" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_36h10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 by 6 bits, minimum hamming distance between any two codes = 10, 2320 codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fdaf7d0787ad73b62c3901f6882b7910eb6" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_36h11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 by 6 bits, minimum hamming distance between any two codes = 11, 587 codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaedaf449b27cd0d63aea32ac48a54f1fda0c5622a6854c18bdb1437fb575af241f" prot="public">
+          <name>MLMarkerTrackerArucoDictionaryName_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Supported pre-defined Aruco dictionary and AprilTags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000084"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Marker Tracker supports pre-defined Aruco dictionary and AprilTags. Aruco dictionaries can be looked up and markers can be generated for them here: <ref refid="" kindref="compound">http://chev.me/arucogen/</ref></para>
+<para><simplesect kind="note"><para>: Due to the 4X4 and the &apos;Aruco Original&apos; dictionaries suffering from frequent false detections, we discourage their use.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="297" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="297" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___marker_tracking_1gaad2d6c75feb3a37806336752b65d4170" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMarkerTrackingDecodedDataType</name>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a2bb93f9039be65f4a509faf37f282863" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Represents no decoded data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a452c82aea2836dbd586297578ccc0aa9" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_Aruco</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Aruco and AprilTag decoded data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a9f923a3db40898c7029d4c20029a8179" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_QR</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QR decoded data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a9315b78d943489ecb5af82579f3a21d6" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_EAN_13</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EAN-13 decoded data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a109ac1eb9a41497f72f8be2130c834ed" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_UPC_A</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UPC-A decoded data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a53da78ff15a4f9a1b20072e28956ad5e" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_Code_128</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Code 128 decoded data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___marker_tracking_1ggaad2d6c75feb3a37806336752b65d4170a366e987350cb11f9d5f89ed3d3af688a" prot="public">
+          <name>MLMarkerTrackingDecodedDataType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Decoded Data Type enumeration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000085"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Each decoder may output different types of decoded data structures. The type field of #MLMarkerTrackingDecodedTypedData holds this enum and can be used to cast #MLMarkerTrackingDecodedTypedData to the correct sub type.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="357" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="357" bodyend="372"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___marker_tracking_1ga25376787e949da256981c7c4cd3a5032" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1ga8b2e44c3240bb9992b02e0c32fb68091" kindref="member">MLMarkerTrackerDetectorType</ref></type>
+        <definition>typedef enum MLMarkerTrackerDetectorType MLMarkerTrackerDetectorType</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerDetectorType</name>
+        <briefdescription>
+<para>Represents the different detector types supported by the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000077"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="98" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1ga2082c473a77f48d52659a7a30775e1ab" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1ga6248da30eced18572814b1728814be01" kindref="member">MLMarkerTrackerProfile</ref></type>
+        <definition>typedef enum MLMarkerTrackerProfile MLMarkerTrackerProfile</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerProfile</name>
+        <briefdescription>
+<para>Represents the different tracker profiles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000078"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="147" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1ga207fa28eb93654b0bde3858373d98a9f" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1ga60219bc32996235aec62b480e87e15cd" kindref="member">MLMarkerTrackingFpsHint</ref></type>
+        <definition>typedef enum MLMarkerTrackingFpsHint MLMarkerTrackingFpsHint</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackingFpsHint</name>
+        <briefdescription>
+<para>Marker tracker FPS hint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000079"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The MLMarkerTrackingFpsHint enum values are used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers.</para>
+<para>CPU load is a combination of enabled detector types, FpsHint and ResolutionHint. More detectors and a higher fps and resolution hints will result in a higher CPU load. High CPU load can affect the performance of your system.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="177" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1gaf55678d3f1c27246a63db60e3298f26e" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1gaa76c8bfa6ef6b80ef8954f377f42c8ba" kindref="member">MLMarkerTrackingResolutionHint</ref></type>
+        <definition>typedef enum MLMarkerTrackingResolutionHint MLMarkerTrackingResolutionHint</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackingResolutionHint</name>
+        <briefdescription>
+<para>Marker tracker resolution hint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000080"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The MLMarkerTrackingResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTrackerCustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors.</para>
+<para>CPU load is a combination of enabled detector types, FpsHint and ResolutionHint. More detectors and a higher fps and resolution hints will result in a higher CPU load. High CPU load can affect the performance of your system.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="205" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1ga0e2f537e7c4f8816bb613f3a12aeaed6" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1gaae6aed300b2d7c089400dcd0105e1c1a" kindref="member">MLMarkerTrackerCameraHint</ref></type>
+        <definition>typedef enum MLMarkerTrackerCameraHint MLMarkerTrackerCameraHint</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerCameraHint</name>
+        <briefdescription>
+<para>Marker tracker camera hint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000081"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The MLMarkerTrackerCameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTrackerCustomProfile structure and this setting currently only applies to the aruco detectors.</para>
+<para>RGB camera has higher resolution than world cameras and are better suited for use cases where the target to be tracked is small or needs to be detected from far.</para>
+<para>World cameras make use of multiple world cameras to improve accuracy and increase the FoV for detection.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="231" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1gaf1837a91b03e82d9763bbcb702d9b26f" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1ga3b24600ec60163103066f7f617cc890d" kindref="member">MLMarkerTrackerCornerRefineMethod</ref></type>
+        <definition>typedef enum MLMarkerTrackerCornerRefineMethod MLMarkerTrackerCornerRefineMethod</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerCornerRefineMethod</name>
+        <briefdescription>
+<para>Corner Refinement Method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000082"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The Aruco/April tag detector comes with several corner refinement methods. Choosing the right corner refinement method has an impact on the accuracy and speed trade-off that comes with each detection pipeline.</para>
+<para><simplesect kind="note"><para>Corner refinement only applies to Aruco and April tags, not QR codes.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="259" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1ga09a8839248a725a18de84dd720c77f67" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1ga1a3f162a2ad271c63af3ce332a720d3e" kindref="member">MLMarkerTrackerFullAnalysisIntervalHint</ref></type>
+        <definition>typedef enum MLMarkerTrackerFullAnalysisIntervalHint MLMarkerTrackerFullAnalysisIntervalHint</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerFullAnalysisIntervalHint</name>
+        <briefdescription>
+<para>Full Frame Analysis Time Interval. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000083"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>In order to improve performance, the detectors don&apos;t always run on the full frame. Full frame analysis is however necessary to detect new markers that weren&apos;t detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="283" column="41"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1ga43c6cdf23c9a49e652465fa4a5d3e839" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1gaedaf449b27cd0d63aea32ac48a54f1fd" kindref="member">MLMarkerTrackerArucoDictionaryName</ref></type>
+        <definition>typedef enum MLMarkerTrackerArucoDictionaryName MLMarkerTrackerArucoDictionaryName</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerArucoDictionaryName</name>
+        <briefdescription>
+<para>Supported pre-defined Aruco dictionary and AprilTags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000084"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Marker Tracker supports pre-defined Aruco dictionary and AprilTags. Aruco dictionaries can be looked up and markers can be generated for them here: <ref refid="" kindref="compound">http://chev.me/arucogen/</ref></para>
+<para><simplesect kind="note"><para>: Due to the 4X4 and the &apos;Aruco Original&apos; dictionaries suffering from frequent false detections, we discourage their use.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="344" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___marker_tracking_1ga5260fbc4b6f0472ef4aee9067a738f09" prot="public" static="no">
+        <type>enum <ref refid="group___marker_tracking_1gaad2d6c75feb3a37806336752b65d4170" kindref="member">MLMarkerTrackingDecodedDataType</ref></type>
+        <definition>typedef enum MLMarkerTrackingDecodedDataType MLMarkerTrackingDecodedDataType</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackingDecodedDataType</name>
+        <briefdescription>
+<para>Decoded Data Type enumeration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000085"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Each decoder may output different types of decoded data structures. The type field of #MLMarkerTrackingDecodedTypedData holds this enum and can be used to cast #MLMarkerTrackingDecodedTypedData to the correct sub type.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="372" column="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___marker_tracking_1ga04b59cfa3aa5f0fef6a7f8c1a4f9f086" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerDecodedTypedData</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerDecodedTypedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="396" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga78b4b30b7a9cea4c28de7b62c6570a63" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerDecodedArucoData</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerDecodedArucoData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="411" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga961a3ed1ccf821451d34247ee095f902" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerDecodedBinaryData</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerDecodedBinaryData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="435" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga8824413dbed33e106d6c76eb27c70bba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerDecodedData</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerDecodedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="492" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga072a098c8a5f1e8ca766a31a15916400" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerResult</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="540" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1gae093ac0ef692f3ba85720f91cdbcb21d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerResultArray</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerResultArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="559" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga5d60649958009b757e6a6bdf709fdb96" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerCustomProfile</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerCustomProfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="641" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga57740275bdfab737a505dd022a2cb0eb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMarkerTrackerSettings</definition>
+        <argsstring></argsstring>
+        <name>MLMarkerTrackerSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="721" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+        <definition>MLNativeSurfaceTextureBackend MLHandle * out_handle</definition>
+        <argsstring></argsstring>
+        <name>out_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="782" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1ga78ad64755a415557fc03c6e699f6f7d6" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___marker_tracking_1ga57740275bdfab737a505dd022a2cb0eb" kindref="member">MLMarkerTrackerSettings</ref> *</type>
+        <definition>const MLMarkerTrackerSettings* tracker_settings</definition>
+        <argsstring></argsstring>
+        <name>tracker_settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="802" column="84" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___marker_tracking_1gaf0079932b9418315c867b585485e2d0b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___marker_tracking_1gae093ac0ef692f3ba85720f91cdbcb21d" kindref="member">MLMarkerTrackerResultArray</ref> *</type>
+        <definition>MLMarkerTrackerResultArray* out_data</definition>
+        <argsstring></argsstring>
+        <name>out_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="840" column="76" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="840" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___marker_tracking_1gafe8999772cf0768fdb09e110db18ceb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))) struct MLMarkerTrackerDecodedTypedData</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use XR_ML_marker_understanding OpenXR extention.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Structure type selector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Release the resources for the results array.</para>
+<para>Get the results for Marker Tracking.</para>
+<para>Destroy an Marker Tracker.</para>
+<para>Update the Marker Tracker with new settings.</para>
+<para>Create a Marker Tracker.</para>
+<para>Initializes default values for MLMarkerTrackerSettings.</para>
+<para>Marker Tracker Settings.</para>
+<para>Marker Tracker Custom Profile.</para>
+<para>Initializes default values for MLMarkerTrackerResultArray.</para>
+<para>An array of all the marker results from the Marker Tracker.</para>
+<para>Represents the result for a single marker.</para>
+<para>Represents the decoded data.</para>
+<para>Code 128 data.</para>
+<para>UPC-A data.</para>
+<para>EAN-13 data.</para>
+<para>QR Code data.</para>
+<para>Binary decoded data.</para>
+<para>Aruco decoded data.</para>
+<para><xrefsect id="deprecated_1_deprecated000086"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Different Marker Decoders will produce different data. Use this structure to find what the data structure is. <programlisting><codeline><highlight class="normal">switch<sp/>(<sp/>data-&gt;type<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>case<sp/>MLMarkerTrackingDecodedDataType_Aruco:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MLMarkerTrackerDecodedArucoData<sp/>*<sp/>aruco<sp/>=<sp/>reinterpret_cast&lt;MLMarkerTrackerDecodedArucoData*&gt;(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MLog(Verbose,<sp/>&quot;Received<sp/>Aruco<sp/>Code<sp/>%u&quot;,<sp/>aruco-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>default:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MLog(Verbose,<sp/>&quot;Unhandled<sp/>type<sp/>received&quot;);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000087"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000088"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000089"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000090"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000091"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000092"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 25</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000093"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The different detectors will have different decoded outputs. See <ref refid="group___marker_tracking_1ga04b59cfa3aa5f0fef6a7f8c1a4f9f086" kindref="member">MLMarkerTrackerDecodedTypedData</ref> for details on the output formats supported.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000094"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>A list of these detections will be returned by the Marker Tracker, after processing a camera frame succesfully.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000095"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Free this array with #MLMarkerTrackerReleaseResult.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000096"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_result_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize to an empty result array.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to init result array due to pointer being NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully initialized the marker tracking result array.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000097"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Marker Tracker system provides a set of standard tracking profiles (see <ref refid="group___marker_tracking_1ga6248da30eced18572814b1728814be01" kindref="member">MLMarkerTrackerProfile</ref>) to configure the tracker settings. If this does not meet the application&apos;s needs then the application can choose to define a custom tracker profile using MLMarkerTrackerCustomProfile.</para>
+<para><xrefsect id="deprecated_1_deprecated000098"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>When creating a Marker Tracker, this list of settings needs to be passed to configure the tracker properly. The tracker will only output detections of markers that belong to the defined dictionary and the estimated poses will only be correct if the marker length has been set correctly.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000099"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>This call initializes a setting struct with default values. Default values will not start any tracking as the API user needs to add which detector types should be enabled and in case of Aruco/April tag tracking also the corresponding dictionary.</para>
+<para>Default marker size is 10cm, but smaller or larger sizes are supported as long as they are detectable with the camera.</para>
+<para>Default corner refinement method is &apos;Contour&apos;. Edge refinement is deactivated.</para>
+<para>Max time between fully analyzed frames is 1s.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to init settings array due to pointer being NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully initialized the marker tracking settings array.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000100"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="note"><para>Only one marker tracker is allowed per app/session. This call will fail when called multiple times. Use MLMarkerTrackerUpdateSettings and update values if you want to change the detector.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of settings of type MLMarkerTrackerSettings that configure the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an MLHandle to the newly created Marker Tracker. If this operation fails, out_handle will be ML_INVALID_HANDLE.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create Marker Tracker due to invalid out_handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created Marker Tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create tracker due to lack of permission(s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the Marker Tracker due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000344"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.MARKER_TRACKING (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000101"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tracker_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the Marker Tracker created by MLMarkerTrackerCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tracker_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of new Marker Tracker settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to update the settings due to invalid tracker_settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully updated the Marker Tracker settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to update the settings due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000345"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000102"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tracker_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the Marker Tracker created by MLMarkerTrackerCreate().</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the Marker Tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the tracker due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000346"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000103"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tracker_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to the Marker Tracker created by MLMarkerTrackerCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an array of pointers to MLMarkerTrackerResult. The content will be freed by the MLMarkerTrackerReleaseResult.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return detection data due to invalid out_data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully fetched and returned all detections. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return detections due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000347"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000104"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of detections to be freed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvaldParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to free structure due to invalid data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully freed data structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to free data due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000348"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Type selector for the structure.</para>
+<para>Type selector for the structure.</para>
+<para>Dictionary used by the Aruco Marker.</para>
+<para>Aruco marker Id.</para>
+<para>Type selector for the structure.</para>
+<para>Binary data size.</para>
+<para>Binary data.</para>
+<para>This is the binary data directly from the scanned code. This typically does not include a terminating null character. When using this as a string, either always specify the length or manually add a null terminator after copying.</para>
+<para>Data decoded from a detected marker.</para>
+<para>Where data field contents depends on the detected marker, and data-&gt;type indicates which structure this actually contains.</para>
+<para>Length of the decoded data.</para>
+<para>The data which was encoded in the marker.</para>
+<para>The detector type that created this result.</para>
+<para>This indicates if coord_frame_marker holds a valid pose.</para>
+<para>If false do not use coord_frame_marker.</para>
+<para><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref> of the marker.</para>
+<para>When valid_pose is true, this can be passed to the <ref refid="group___perception_1gaca4197ebdb7cb75b07423fd45debc738" kindref="member">MLSnapshotGetTransform()</ref> function to get the 6 DOF pose of the marker.</para>
+<para>The reprojection error of this marker detection in meters.</para>
+<para>A high reprojection error means that the estimated pose of the marker doesn&apos;t match well with the 2D detection on the processed video frame and thus the pose might be inaccurate. The error is given in meters, representing the displacement between real marker and its estimated pose. This means this is a normalized number, independent of marker distance or length.</para>
+<para>Version of this structure.</para>
+<para>Pointer to an array of pointers for MLMarkerTrackerResult.</para>
+<para>Number of markers being tracked.</para>
+<para>Framerate hint used for all detectors. See <ref refid="group___marker_tracking_1ga60219bc32996235aec62b480e87e15cd" kindref="member">MLMarkerTrackingFpsHint</ref> for details.</para>
+<para>The resolution hint. See <ref refid="group___marker_tracking_1gaa76c8bfa6ef6b80ef8954f377f42c8ba" kindref="member">MLMarkerTrackingResolutionHint</ref> for details.</para>
+<para>Camera hint used for all detectors. See <ref refid="group___marker_tracking_1gaae6aed300b2d7c089400dcd0105e1c1a" kindref="member">MLMarkerTrackerCameraHint</ref> for details.</para>
+<para>Corner refinement method for Aruco/April tag detector.</para>
+<para>This option provides control over corner refinement methods and a way to balance detection rate, speed and pose accuracy. Always available and applicable for Aruco and April tags.</para>
+<para>See <ref refid="group___marker_tracking_1ga3b24600ec60163103066f7f617cc890d" kindref="member">MLMarkerTrackerCornerRefineMethod</ref> for details.</para>
+<para>Activate Edge Refinement. Run refinement step that uses marker edges to generate even more accurate corners, but slow down tracking rate overall by consuming more compute. Aruco/April tags only.</para>
+<para><simplesect kind="note"><para>Recommended in combination with Contour Corner Refine method for best balance between performance and accuracy.</para>
+</simplesect>
+Time interval between fully analyzed frames.</para>
+<para>For faster tracking not every single frame is fully analyzed. Increasing this time will improve tracking speed but negatively impact detection latency of new markers.</para>
+<para>Version of this structure.</para>
+<para>If <computeroutput>true</computeroutput>, Marker Tracker will detect and track the enabled marker types.</para>
+<para>Marker Tracker should be disabled when app is paused and enabled when app resumes. When enabled, Marker Tracker will gain access to the camera and start analysing camera frames. When disabled Marker Tracker will release the camera and stop tracking markers. Internal state of the tracker will be maintained.</para>
+<para>The detector types that are enabled.</para>
+<para>Enable detector types by combining any number of <ref refid="group___marker_tracking_1ga8b2e44c3240bb9992b02e0c32fb68091" kindref="member">MLMarkerTrackerDetectorType</ref> flags using &apos;|&apos; (bitwise &apos;or&apos;).</para>
+<para>Aruco Dictionary or April Tag name from which markers shall be tracked.</para>
+<para>Unused if Aruco detector is not enabled.</para>
+<para>The length of the Aruco markers that shall be tracked.</para>
+<para>The marker length is important to know, because once a marker is detected we can only determine its 3D position if we know how large it is in real life. The length of a marker is given in meters and represents the length of a single side of the marker square.</para>
+<para>Unused if Aruco detector is not enabled.</para>
+<para>The length of the QR code that shall be tracked.</para>
+<para>The marker length is important to know, because once a QR code is detected we can only determine its 3D position if we know how large it is in real life. The length of a QR code is given in meters and represents the length of a single side of the QR code square.</para>
+<para>Unused if QR detector is not enabled.</para>
+<para>Tracker profile to be used.</para>
+<para>See <ref refid="group___marker_tracking_1ga6248da30eced18572814b1728814be01" kindref="member">MLMarkerTrackerProfile</ref> for details.</para>
+<para>Custom tracker profile to be used.</para>
+<para>See <ref refid="group___marker_tracking_1ga5d60649958009b757e6a6bdf709fdb96" kindref="member">MLMarkerTrackerCustomProfile</ref> for details. This custom profile will only be used when MLMarkerTrackerProfile is set to MLMarkerTrackerProfile_Custom and ignored for all other cases.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" line="393" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" bodystart="393" bodyend="396" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h" declline="857" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Marker Tracking system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="warning"><para>THIS API IS DEPRECATED IN FAVOR OF OPENXR XR_ML_marker_understanding EXTENSION: <ulink url="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_ML_marker_understanding">https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_ML_marker_understanding</ulink></para>
+</simplesect>
+This API can be used to track fiducial markers like QR codes, April tags and Aruco markers. For fiducial markers, this API provides 6DOF poses, and the encoded information.</para>
+<para>The scanner supports up to 16 markers. Identical QR codes will be treated as separate targets and reported individually, identical Aruco markers or April tags will lead to a collision and won&apos;t be reported separately.</para>
+<para>List of supported, trackable markers (with pose info):<itemizedlist>
+<listitem><para>Aruco markers.</para>
+</listitem><listitem><para>AprilTag v2.</para>
+</listitem><listitem><para>QR codes (model 1 &amp; 2).</para>
+</listitem></itemizedlist>
+</para>
+<para>List of supported, detectable markers (no pose info):<itemizedlist>
+<listitem><para>EAN-13 (experimental).</para>
+</listitem><listitem><para>UPC-A (experimental).</para>
+</listitem><listitem><para>Code 128 (experimental).</para>
+</listitem></itemizedlist>
+</para>
+<para>Starting at API level 28 all ArUco marker, QR code and April tag poses reported from this API are consistently following the convention below.</para>
+<para>Marker axes convention: The marker has its own coordinate system (which in the case of a marker coplanar with the image plane and facing the camera means a 180° rotation around the vertical axis).</para>
+<para>In RUB coordinates, this means that we will have: <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>^</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>__|___</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>|<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">x<sp/>&lt;--|--+<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>|_____|</highlight></codeline>
+</programlisting> Z-axis pointing backwards away from the camera. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

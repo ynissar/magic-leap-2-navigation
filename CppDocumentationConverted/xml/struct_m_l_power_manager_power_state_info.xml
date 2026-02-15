@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_power_manager_power_state_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLPowerManagerPowerStateInfo</compoundname>
+    <includes refid="ml__power__manager_8h" local="no">ml_power_manager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_power_manager_power_state_info_1af6f42d61871ce7606c0827281f5cfc06" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLPowerManagerPowerStateInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="398" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate info data used by the Power Manager when getting the current power state. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___power_manager_1ga9e5b3e45551aa000f8529b5b2330f4e5" kindref="member">MLPowerManagerPowerStateInfoInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="396" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="396" bodyend="400"/>
+    <listofallmembers>
+      <member refid="struct_m_l_power_manager_power_state_info_1af6f42d61871ce7606c0827281f5cfc06" prot="public" virt="non-virtual"><scope>MLPowerManagerPowerStateInfo</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

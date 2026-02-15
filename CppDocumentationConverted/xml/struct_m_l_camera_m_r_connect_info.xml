@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_m_r_connect_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraMRConnectInfo</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_m_r_connect_info_1a27ff82feadc36c4768d9cf098f037669" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gaecfd52a3b73c83aaa0c29f3984d55a09" kindref="member">MLCameraMRQuality</ref></type>
+        <definition>MLCameraMRQuality MLCameraMRConnectInfo::quality</definition>
+        <argsstring></argsstring>
+        <name>quality</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video quality. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="278" column="21" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_m_r_connect_info_1a7b7152eaf596b8db883d44a734bf4e19" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gacfcf29e1881c7476797133b5aac52871" kindref="member">MLCameraMRBlendType</ref></type>
+        <definition>MLCameraMRBlendType MLCameraMRConnectInfo::blend_type</definition>
+        <argsstring></argsstring>
+        <name>blend_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blending type for mixed reality capture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="280" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_m_r_connect_info_1a548f3a1981b9eabe821a1ddf0443b080" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gad81cc93a1ef01d7eeecb663d8dabb632" kindref="member">MLCameraCaptureFrameRate</ref></type>
+        <definition>MLCameraCaptureFrameRate MLCameraMRConnectInfo::frame_rate</definition>
+        <argsstring></argsstring>
+        <name>frame_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Capture frame rate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="282" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to encapsulate connection settings for MR capture. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="276" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="276" bodyend="283"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_m_r_connect_info_1a7b7152eaf596b8db883d44a734bf4e19" prot="public" virt="non-virtual"><scope>MLCameraMRConnectInfo</scope><name>blend_type</name></member>
+      <member refid="struct_m_l_camera_m_r_connect_info_1a548f3a1981b9eabe821a1ddf0443b080" prot="public" virt="non-virtual"><scope>MLCameraMRConnectInfo</scope><name>frame_rate</name></member>
+      <member refid="struct_m_l_camera_m_r_connect_info_1a27ff82feadc36c4768d9cf098f037669" prot="public" virt="non-virtual"><scope>MLCameraMRConnectInfo</scope><name>quality</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,992 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___hand_tracking" kind="group">
+    <compoundname>HandTracking</compoundname>
+    <title>Hand Tracking</title>
+    <innerclass refid="struct_m_l_hand_tracking_c_f_u_i_ds" prot="public">MLHandTrackingCFUIDs</innerclass>
+    <innerclass refid="struct_m_l_hand_tracking_static_data" prot="public">MLHandTrackingStaticData</innerclass>
+    <innerclass refid="struct_m_l_hand_tracking_hand_state" prot="public">MLHandTrackingHandState</innerclass>
+    <innerclass refid="struct_m_l_hand_tracking_data" prot="public">MLHandTrackingData</innerclass>
+    <innerclass refid="struct_m_l_hand_tracking_settings" prot="public">MLHandTrackingSettings</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___hand_tracking_1ga71a03f9ef948b7394fefb7f387861da1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHandTrackingHandType</name>
+        <enumvalue id="group___hand_tracking_1gga71a03f9ef948b7394fefb7f387861da1abc53899816a10bb9a6ebf376095a9ae4" prot="public">
+          <name>MLHandTrackingHandType_Left</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga71a03f9ef948b7394fefb7f387861da1a105215293dd20a637ac1fdc7c50e4a99" prot="public">
+          <name>MLHandTrackingHandType_Right</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga71a03f9ef948b7394fefb7f387861da1a4e420ed6a115b5c6d1ea8dbcea291a33" prot="public">
+          <name>MLHandTrackingHandType_Count</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of hands. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga71a03f9ef948b7394fefb7f387861da1a4edb7d30cf30334f0f6cbaa6c7fc4083" prot="public">
+          <name>MLHandTrackingHandType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available hand types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="31" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="31" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___hand_tracking_1gac36f475ca5b446f4fde4c9b90bec77c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@12</name>
+        <enumvalue id="group___hand_tracking_1ggac36f475ca5b446f4fde4c9b90bec77c8aaa77ead2811d744a59a3f4d19bdfb1cf" prot="public">
+          <name>MLHandTrackingStaticData_MaxKeyPoints</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum number of key points per hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="42" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___hand_tracking_1ga78ae701c3b1758109d74b443504b0d51" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHandTrackingKeyPoint</name>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a2e9d885d343ae528c64a32c50798685a" prot="public">
+          <name>MLHandTrackingKeyPoint_Thumb_Tip</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a2a1c8dd95023c83fa4ff457722b07136" prot="public">
+          <name>MLHandTrackingKeyPoint_Thumb_IP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a571227093c6a813e34cd967ae6e9da8c" prot="public">
+          <name>MLHandTrackingKeyPoint_Thumb_MCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a31d0c60f75aefe6df56d54c4c6e1ce76" prot="public">
+          <name>MLHandTrackingKeyPoint_Thumb_CMC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ad01533789c7d12471905c6ca338a6efd" prot="public">
+          <name>MLHandTrackingKeyPoint_Index_Tip</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a03470c17e4d94d35ade54b80bade0904" prot="public">
+          <name>MLHandTrackingKeyPoint_Index_DIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51abc1240ccb948493dac039bf3901bdac1" prot="public">
+          <name>MLHandTrackingKeyPoint_Index_PIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ae796b2f9417f4c3d931a84fc36914d3e" prot="public">
+          <name>MLHandTrackingKeyPoint_Index_MCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a92429f5fe37e5ea422a1af54cdf1329f" prot="public">
+          <name>MLHandTrackingKeyPoint_Middle_Tip</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51aad3e029569d24439b8ec5b60b1db9273" prot="public">
+          <name>MLHandTrackingKeyPoint_Middle_DIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ab994bb9f633c843d1dc6c7e05d708f85" prot="public">
+          <name>MLHandTrackingKeyPoint_Middle_PIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a5a6c87cd3d7e2e16a261b5ed961ec964" prot="public">
+          <name>MLHandTrackingKeyPoint_Middle_MCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ab148635d23bfbf89929cd01637c444d1" prot="public">
+          <name>MLHandTrackingKeyPoint_Ring_Tip</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a81c416aa71b79d66441b319c5f4ec595" prot="public">
+          <name>MLHandTrackingKeyPoint_Ring_DIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51af6c4d13715de48e1da7b3c9981f10aa1" prot="public">
+          <name>MLHandTrackingKeyPoint_Ring_PIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ac2f53541e68568cc217e38ac585f7817" prot="public">
+          <name>MLHandTrackingKeyPoint_Ring_MCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a5828d4d107baed2930cd6e89ebf9557e" prot="public">
+          <name>MLHandTrackingKeyPoint_Pinky_Tip</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a4f15016819f298098747bf99c311daa6" prot="public">
+          <name>MLHandTrackingKeyPoint_Pinky_DIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a424e6e709d7301f15c2c1f97fb2e2412" prot="public">
+          <name>MLHandTrackingKeyPoint_Pinky_PIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51addfed5d191b5ce745391b18a75abadbf" prot="public">
+          <name>MLHandTrackingKeyPoint_Pinky_MCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a379fca55d99e2fff1becf7fc837d4b13" prot="public">
+          <name>MLHandTrackingKeyPoint_Wrist_Center</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51af0774d3684de58a0cff9febdd2d80015" prot="public">
+          <name>MLHandTrackingKeyPoint_Wrist_Ulnar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a30a9a10250521c55fb33f269ea4d1534" prot="public">
+          <name>MLHandTrackingKeyPoint_Wrist_Radial</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a6c11edd72652a86b8ea10d9f7b962331" prot="public">
+          <name>MLHandTrackingKeyPoint_Hand_Center</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a02f4367d0d7059b2db2ddf6e3b050d9c" prot="public">
+          <name>MLHandTrackingKeyPoint_Index_Meta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51aef38d9b9c01444472a75db61814f1465" prot="public">
+          <name>MLHandTrackingKeyPoint_Middle_Meta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ad52f9dc9e870794cbbbb18b32d357fc4" prot="public">
+          <name>MLHandTrackingKeyPoint_Ring_Meta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ab124e365986a0228d21b6cc7a825c101" prot="public">
+          <name>MLHandTrackingKeyPoint_Pinky_Meta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51ab22dc2393f43f6c47567cb8aae96480f" prot="public">
+          <name>MLHandTrackingKeyPoint_Count</name>
+          <initializer>= MLHandTrackingStaticData_MaxKeyPoints</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum number of key points per gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1gga78ae701c3b1758109d74b443504b0d51a8850be4760e95dfa0e3942ab2e335d0a" prot="public">
+          <name>MLHandTrackingKeyPoint_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Keypoint index ordering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackingStaticData_MaxKeyPoints] and left_frame/right_frame[MLHandTrackingStaticData_MaxKeyPoints].</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="56" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="56" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___hand_tracking_1gad81cdde4f18373e05c55fb9f1c16c72f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHandTrackingSettingsFlags</name>
+        <enumvalue id="group___hand_tracking_1ggad81cdde4f18373e05c55fb9f1c16c72fab03e7ebef303d8f1dfd73447645c22f0" prot="public">
+          <name>MLHandTrackingSettingsFlags_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No additional settings used. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1ggad81cdde4f18373e05c55fb9f1c16c72fa51fae01913de1451716c939f26b8980e" prot="public">
+          <name>MLHandTrackingSettingsFlags_UnfilteredKeypoints</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable unfiltered keypoints. See <ref refid="group___hand_tracking_1ga8bbc7420798fece88fcae6a43388e7da" kindref="member">MLHandTrackingGetStaticData</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___hand_tracking_1ggad81cdde4f18373e05c55fb9f1c16c72fa3c263c087be512edec49b0ffc15e9e74" prot="public">
+          <name>MLHandTrackingSettingsFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of flags to select settings related to hand tracking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Filtered keypoints are always available, no matter the settings.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="205" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="205" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___hand_tracking_1ga0b2a753605fa314875df383c5259eeb9" prot="public" static="no">
+        <type>enum <ref refid="group___hand_tracking_1ga71a03f9ef948b7394fefb7f387861da1" kindref="member">MLHandTrackingHandType</ref></type>
+        <definition>typedef enum MLHandTrackingHandType MLHandTrackingHandType</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingHandType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available hand types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="40" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1ga76e1b1d3094ac576264f95493e90e4f0" prot="public" static="no">
+        <type>enum <ref refid="group___hand_tracking_1ga78ae701c3b1758109d74b443504b0d51" kindref="member">MLHandTrackingKeyPoint</ref></type>
+        <definition>typedef enum MLHandTrackingKeyPoint MLHandTrackingKeyPoint</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingKeyPoint</name>
+        <briefdescription>
+<para>Keypoint index ordering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackingStaticData_MaxKeyPoints] and left_frame/right_frame[MLHandTrackingStaticData_MaxKeyPoints].</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="88" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1gab280883fcfb6bca21732f22154bcc1c8" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_hand_tracking_c_f_u_i_ds" kindref="compound">MLHandTrackingCFUIDs</ref></type>
+        <definition>typedef struct MLHandTrackingCFUIDs MLHandTrackingCFUIDs</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingCFUIDs</name>
+        <briefdescription>
+<para>MLCoordinateFrameUIDs for the keypoints. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___hand_tracking_1ga76e1b1d3094ac576264f95493e90e4f0" kindref="member">MLHandTrackingKeyPoint</ref> for more details.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="101" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1gaf1fa427462b92beecf92e85e41243fef" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_hand_tracking_static_data" kindref="compound">MLHandTrackingStaticData</ref></type>
+        <definition>typedef struct MLHandTrackingStaticData MLHandTrackingStaticData</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingStaticData</name>
+        <briefdescription>
+<para>Static information about a hand tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___hand_tracking_1ga43080df224e48b6e49ce33f64e6abc66" kindref="member">MLHandTrackingStaticDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="121" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1gab39830f8deac8adbaeb13d3eec4c339a" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_hand_tracking_hand_state" kindref="compound">MLHandTrackingHandState</ref></type>
+        <definition>typedef struct MLHandTrackingHandState MLHandTrackingHandState</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingHandState</name>
+        <briefdescription>
+<para>State of a single hand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Same for both filtered and unfiltered keypoints.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="159" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1gae829dbb18a9a950d202dd9164ab38ab5" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_hand_tracking_data" kindref="compound">MLHandTrackingData</ref></type>
+        <definition>typedef struct MLHandTrackingData MLHandTrackingData</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingData</name>
+        <briefdescription>
+<para>Data which is received when querying hand tracker from <ref refid="group___hand_tracking_1ga8604087b02ed433174ff23fc25add2ee" kindref="member">MLHandTrackingGetData()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___hand_tracking_1gaeefbabfc86130ef4d8d24cc53f2cf69c" kindref="member">MLHandTrackingDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="182" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1ga63a0f61f02f6d4486d25a9dc03f9adfc" prot="public" static="no">
+        <type>enum <ref refid="group___hand_tracking_1gad81cdde4f18373e05c55fb9f1c16c72f" kindref="member">MLHandTrackingSettingsFlags</ref></type>
+        <definition>typedef enum MLHandTrackingSettingsFlags MLHandTrackingSettingsFlags</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingSettingsFlags</name>
+        <briefdescription>
+<para>Enumeration of flags to select settings related to hand tracking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Filtered keypoints are always available, no matter the settings.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="212" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___hand_tracking_1gabcb3236f1f0fc6cc9190ed7ec40b15ae" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref></type>
+        <definition>typedef struct MLHandTrackingSettings MLHandTrackingSettings</definition>
+        <argsstring></argsstring>
+        <name>MLHandTrackingSettings</name>
+        <briefdescription>
+<para>Settings of the hand tracking system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___hand_tracking_1gae63e36c0e2634f51605f1da05e379f0d" kindref="member">MLHandTrackingSettingsInit()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="226" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___hand_tracking_1ga43080df224e48b6e49ce33f64e6abc66" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLHandTrackingStaticDataInit</definition>
+        <argsstring>(MLHandTrackingStaticData *inout_attr)</argsstring>
+        <name>MLHandTrackingStaticDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_hand_tracking_static_data" kindref="compound">MLHandTrackingStaticData</ref> *</type>
+          <declname>inout_attr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_hand_tracking_static_data" kindref="compound">MLHandTrackingStaticData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="130" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="130" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1gaeefbabfc86130ef4d8d24cc53f2cf69c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLHandTrackingDataInit</definition>
+        <argsstring>(MLHandTrackingData *inout_attr)</argsstring>
+        <name>MLHandTrackingDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_hand_tracking_data" kindref="compound">MLHandTrackingData</ref> *</type>
+          <declname>inout_attr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes values for <ref refid="struct_m_l_hand_tracking_data" kindref="compound">MLHandTrackingData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="191" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="191" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1gae63e36c0e2634f51605f1da05e379f0d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLHandTrackingSettingsInit</definition>
+        <argsstring>(MLHandTrackingSettings *inout_settings)</argsstring>
+        <name>MLHandTrackingSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="235" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="235" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1ga50ca9662498141eccf3859fb65833109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLHandTrackingCreateEx.&quot;))) MLResult MLHandTrackingCreate(MLHandle *out_handle)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLHandTrackingCreateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Creates a hand tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000054"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.3.0. Scheduled for removal. Replaced by MLHandTrackingCreateEx. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle of the hand tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tracker was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks the required permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000314"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.HAND_TRACKING (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="259" column="1" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" declline="259" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1ga51ea0e2bbd50d210531154f12869f737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLHandTrackingCreateEx</definition>
+        <argsstring>(const MLHandTrackingSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLHandTrackingCreateEx</name>
+        <param>
+          <type>const <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a hand tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a previously initialized <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle of the hand tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tracker was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks the required permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000315"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.HAND_TRACKING (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="278" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" declline="278" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1gad9eb02864e383e77de3ec9c4ffe676cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLHandTrackingUpdateSettings</definition>
+        <argsstring>(MLHandle hand_tracker, const MLHandTrackingSettings *settings)</argsstring>
+        <name>MLHandTrackingUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>hand_tracker</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Updates settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hand_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Hand Tracker created by <ref refid="group___hand_tracking_1ga51ea0e2bbd50d210531154f12869f737" kindref="member">MLHandTrackingCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a previously initialized <ref refid="struct_m_l_hand_tracking_settings" kindref="compound">MLHandTrackingSettings</ref> struct.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The settings were updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to update the settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000316"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="294" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" declline="294" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1gab1bc7a76607208a5b66692be24285cd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLHandTrackingDestroy</definition>
+        <argsstring>(MLHandle hand_tracker)</argsstring>
+        <name>MLHandTrackingDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>hand_tracker</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a hand tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hand_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Hand Tracker created by <ref refid="group___hand_tracking_1ga51ea0e2bbd50d210531154f12869f737" kindref="member">MLHandTrackingCreateEx()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>It successfully destroyed the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000317"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="308" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" declline="308" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1ga8604087b02ed433174ff23fc25add2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLHandTrackingGetData</definition>
+        <argsstring>(MLHandle hand_tracker, MLHandTrackingData *out_data)</argsstring>
+        <name>MLHandTrackingGetData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>hand_tracker</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_hand_tracking_data" kindref="compound">MLHandTrackingData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Queries the state of the hand tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_m_l_hand_tracking_data" kindref="compound">MLHandTrackingData</ref> is the same for both filtered and unfiltered keypoints.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hand_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Hand Tracker created by <ref refid="group___hand_tracking_1ga51ea0e2bbd50d210531154f12869f737" kindref="member">MLHandTrackingCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a variable that receives information about the tracked hands.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hand information was available and the information in out_data is valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the hand information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000318"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="326" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" declline="326" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___hand_tracking_1ga8bbc7420798fece88fcae6a43388e7da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLHandTrackingGetStaticData</definition>
+        <argsstring>(MLHandle hand_tracker, MLHandTrackingStaticData *out_data)</argsstring>
+        <name>MLHandTrackingGetStaticData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>hand_tracker</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_hand_tracking_static_data" kindref="compound">MLHandTrackingStaticData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Gets static information about hand tracking system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="struct_m_l_hand_tracking_static_data" kindref="compound">MLHandTrackingStaticData</ref> for more details.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hand_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Hand Tracker created by <ref refid="group___hand_tracking_1ga51ea0e2bbd50d210531154f12869f737" kindref="member">MLHandTrackingCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a variable that receives static data about the hand tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hand information was available and the information in out_data is valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the hand information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000319"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="344" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" declline="344" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Hand Tracking system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

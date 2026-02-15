@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_intrinsic_calibration_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraIntrinsicCalibrationParameters</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1afa15b7326be9ae99bfcc56b9631f69b5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraIntrinsicCalibrationParameters::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="419" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1a1d77048cec727d653fd606bc79ea9fb5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraIntrinsicCalibrationParameters::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera width. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="421" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1a7c4a5a0cbf6a611427aea129a9444dd5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraIntrinsicCalibrationParameters::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera height. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="423" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1ac0fda3257189966541f33ebdbf01df85" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>MLVec2f MLCameraIntrinsicCalibrationParameters::focal_length</definition>
+        <argsstring></argsstring>
+        <name>focal_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera focal length. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="425" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1a859dd3610f11415220b893ad7445a229" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>MLVec2f MLCameraIntrinsicCalibrationParameters::principal_point</definition>
+        <argsstring></argsstring>
+        <name>principal_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera principal point. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="427" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1a66a812e30085d50131550e271acae914" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLCameraIntrinsicCalibrationParameters::fov</definition>
+        <argsstring></argsstring>
+        <name>fov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field of view in degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="429" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_intrinsic_calibration_parameters_1a7853721cf5b6be3d71a5f8705a351e57" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MLCameraIntrinsicCalibrationParameters::distortion[MLCameraIntrinsics_MaxDistortionCoefficients]</definition>
+        <argsstring>[MLCameraIntrinsics_MaxDistortionCoefficients]</argsstring>
+        <name>distortion</name>
+        <briefdescription>
+<para>Distortion vector. The distortion co-efficients are in the following order: <linebreak/>
+[k1, k2, p1, p2, k3]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="434" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Camera intrinsic parameter. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec2f</label>
+        <link refid="struct_m_l_vec2f"/>
+      </node>
+      <node id="1">
+        <label>MLCameraIntrinsicCalibrationParameters</label>
+        <link refid="struct_m_l_camera_intrinsic_calibration_parameters"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>focal_length</edgelabel>
+          <edgelabel>principal_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="417" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="417" bodyend="435"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1a7853721cf5b6be3d71a5f8705a351e57" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>distortion</name></member>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1ac0fda3257189966541f33ebdbf01df85" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>focal_length</name></member>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1a66a812e30085d50131550e271acae914" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>fov</name></member>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1a7c4a5a0cbf6a611427aea129a9444dd5" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>height</name></member>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1a859dd3610f11415220b893ad7445a229" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>principal_point</name></member>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1afa15b7326be9ae99bfcc56b9631f69b5" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>version</name></member>
+      <member refid="struct_m_l_camera_intrinsic_calibration_parameters_1a1d77048cec727d653fd606bc79ea9fb5" prot="public" virt="non-virtual"><scope>MLCameraIntrinsicCalibrationParameters</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

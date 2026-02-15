@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_virtual_camera_buffer_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingVirtualCameraBufferInfo</compoundname>
+    <includes refid="ml__graphics__utils_8h" local="no">ml_graphics_utils.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_virtual_camera_buffer_info_1a7ad01e2d7ff41a08fcc93c72da244b96" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref></type>
+        <definition>MLMat4f MLMeshingVirtualCameraBufferInfo::projection</definition>
+        <argsstring></argsstring>
+        <name>projection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The projection matrix for the camera. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="99" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_virtual_camera_buffer_info_1a4defd35d53b8ef21cf898327ead837b3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref></type>
+        <definition>MLTransform MLMeshingVirtualCameraBufferInfo::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The local space (relative to world) camera transform needed to render content, inverse is view matrix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="101" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Per virtual camera information needed to render depth. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000049"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="3">
+        <label>MLTransform</label>
+        <link refid="struct_m_l_transform"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLMeshingVirtualCameraBufferInfo</label>
+        <link refid="struct_m_l_meshing_virtual_camera_buffer_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>projection</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+      <node id="2">
+        <label>MLMat4f</label>
+        <link refid="struct_m_l_mat4f"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="97" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="97" bodyend="102"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_virtual_camera_buffer_info_1a7ad01e2d7ff41a08fcc93c72da244b96" prot="public" virt="non-virtual"><scope>MLMeshingVirtualCameraBufferInfo</scope><name>projection</name></member>
+      <member refid="struct_m_l_meshing_virtual_camera_buffer_info_1a4defd35d53b8ef21cf898327ead837b3" prot="public" virt="non-virtual"><scope>MLMeshingVirtualCameraBufferInfo</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___headset_fit" kind="group">
+    <compoundname>HeadsetFit</compoundname>
+    <title>Headset Fit</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___headset_fit_1gad38f97a6b3a2c86e431795c5d092f5cb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHeadsetFitStatus</name>
+        <enumvalue id="group___headset_fit_1ggad38f97a6b3a2c86e431795c5d092f5cba36e58265a4f98f230a13985fb6b4f9f0" prot="public">
+          <name>MLHeadsetFitStatus_Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Headset fit status not available for unknown reason. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___headset_fit_1ggad38f97a6b3a2c86e431795c5d092f5cbafe9c5b7ea1686687f4123b25d1301ae6" prot="public">
+          <name>MLHeadsetFitStatus_NotWorn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Headset not worn. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___headset_fit_1ggad38f97a6b3a2c86e431795c5d092f5cbae521c0b7bd901a3a7030f6cf0c1307a7" prot="public">
+          <name>MLHeadsetFitStatus_GoodFit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Good fit. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___headset_fit_1ggad38f97a6b3a2c86e431795c5d092f5cba572b7c7baeb65d376ff2ebf2a6a423c6" prot="public">
+          <name>MLHeadsetFitStatus_BadFit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bad fit. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___headset_fit_1ggad38f97a6b3a2c86e431795c5d092f5cba76c05cb6300696e1c06fce74dc1ee1af" prot="public">
+          <name>MLHeadsetFitStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the different fit status that the system can report. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000069"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>If status is neither NotWorn nor Unknown, then headset is being worn.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" line="49" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" bodystart="49" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___headset_fit_1ga133f9a9984e180bf3c13edb190c901ea" prot="public" static="no">
+        <type>enum <ref refid="group___headset_fit_1gad38f97a6b3a2c86e431795c5d092f5cb" kindref="member">MLHeadsetFitStatus</ref></type>
+        <definition>typedef enum MLHeadsetFitStatus MLHeadsetFitStatus</definition>
+        <argsstring></argsstring>
+        <name>MLHeadsetFitStatus</name>
+        <briefdescription>
+<para>Represents the different fit status that the system can report. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000069"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>If status is neither NotWorn nor Unknown, then headset is being worn.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" line="60" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___headset_fit_1ga5acc26b9eb56f63fc6d42f5ce9de95d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLHeadsetFitState</definition>
+        <argsstring></argsstring>
+        <name>MLHeadsetFitState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" line="75" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___headset_fit_1ga80fe42d0f0ad83c4ac50f381b11ee86e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___headset_fit_1ga5acc26b9eb56f63fc6d42f5ce9de95d5" kindref="member">MLHeadsetFitState</ref> *</type>
+        <definition>MLHeadsetFitState* out_state</definition>
+        <argsstring></argsstring>
+        <name>out_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" line="143" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___headset_fit_1ga7910a9a7e289f738b54fcdf642d9e412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLHeadsetFitState</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Headset fit state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets information about the user&apos;s current headset fit.</para>
+<para>Destroys headset fit client.</para>
+<para>Creates a headset fit client.</para>
+<para>Initialize MLHeadsetFitState.</para>
+<para><xrefsect id="deprecated_1_deprecated000070"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000071"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_state and zero all other fields.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000072"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an MLHandle to the newly created headset fit client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create headset fit client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created headset fit client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create headset fit client due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000327"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000073"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the headset fit client created by #MLHeadsetFitCreateClient.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed headset fit client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy headset fit client due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000328"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000074"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the headset fit information created by #MLHeadsetFitCreateClient. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about headset fit state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive headset fit state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully returned headset fit state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive headset fit state due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000329"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Version of this structure.</para>
+<para>Headset fit status as defined in <ref refid="group___headset_fit_1gad38f97a6b3a2c86e431795c5d092f5cb" kindref="member">MLHeadsetFitStatus</ref>.</para>
+<para>The epoch time of the last update in microseconds.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" line="68" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" bodystart="68" bodyend="75" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h" declline="124" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>API to query the status of the Headset fit. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="warning"><para>THIS API IS DEPRECATED IN FAVOR OF OPENXR XR_ML_user_calibration EXTENSION: <ulink url="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_ML_user_calibration">https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_ML_user_calibration</ulink></para>
+</simplesect>
+This API can be used to determine the fit of the headset on the user. The API will only look to see if the pupil location corresponding to the neutral gaze is centered on the image. What this means is that we can only look for a certain type of bad fits. However this covers majority of the bad fit cases. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

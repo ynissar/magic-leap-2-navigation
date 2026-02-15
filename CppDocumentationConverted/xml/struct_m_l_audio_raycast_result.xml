@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_raycast_result" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioRaycastResult</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1ga70c064db715decc9f35ffcec6ee55b94" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastResult::source_id</definition>
+        <argsstring></argsstring>
+        <name>source_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="336" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0f6d70127f4d934bb769f928c59785da" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastResult::image_id</definition>
+        <argsstring></argsstring>
+        <name>image_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="338" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga808ca1e3e567f6175a52ef9fc38d3179" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioRaycastResult::leg_index</definition>
+        <argsstring></argsstring>
+        <name>leg_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="340" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga5cf4278fad7092918666327b08056847" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_raycast" kindref="compound">MLAudioRaycast</ref></type>
+        <definition>MLAudioRaycast MLAudioRaycastResult::ray</definition>
+        <argsstring></argsstring>
+        <name>ray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raycast tested for obstruction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="342" column="20" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga95f4f5d1b2ab1132f53879a871aeb242" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref></type>
+        <definition>MLAudioObstruction MLAudioRaycastResult::obstruction</definition>
+        <argsstring></argsstring>
+        <name>obstruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result of obstruction test. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="344" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ID-tracked result for a single raycast operation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLAudioRaycastResult</label>
+        <link refid="struct_m_l_audio_raycast_result"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ray</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>obstruction</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="2">
+        <label>MLAudioRaycast</label>
+        <link refid="struct_m_l_audio_raycast"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>end_point</edgelabel>
+          <edgelabel>eye_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MLAudioObstruction</label>
+        <link refid="struct_m_l_audio_obstruction"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>hit_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="334" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="334" bodyend="345"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1ga0f6d70127f4d934bb769f928c59785da" prot="public" virt="non-virtual"><scope>MLAudioRaycastResult</scope><name>image_id</name></member>
+      <member refid="group___audio_defs_1ga808ca1e3e567f6175a52ef9fc38d3179" prot="public" virt="non-virtual"><scope>MLAudioRaycastResult</scope><name>leg_index</name></member>
+      <member refid="group___audio_defs_1ga95f4f5d1b2ab1132f53879a871aeb242" prot="public" virt="non-virtual"><scope>MLAudioRaycastResult</scope><name>obstruction</name></member>
+      <member refid="group___audio_defs_1ga5cf4278fad7092918666327b08056847" prot="public" virt="non-virtual"><scope>MLAudioRaycastResult</scope><name>ray</name></member>
+      <member refid="group___audio_defs_1ga70c064db715decc9f35ffcec6ee55b94" prot="public" virt="non-virtual"><scope>MLAudioRaycastResult</scope><name>source_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

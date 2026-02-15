@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_controller_state_ex" kind="struct" language="C++" prot="public">
+    <compoundname>MLControllerStateEx</compoundname>
+    <includes refid="ml__controller_8h" local="no">ml_controller.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_controller_state_ex_1a55d6a71118374642415a878683311b99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLControllerStateEx::controller_id</definition>
+        <argsstring></argsstring>
+        <name>controller_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of this controller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="134" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_controller_state_ex_1a281a58851e8149f29c1287a6bcce8767" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLControllerStateEx::coord_frame_controller</definition>
+        <argsstring></argsstring>
+        <name>coord_frame_controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smooth filtered coordinate frame identifier for this Controller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="136" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_controller_state_ex_1aa1b225d715a26e9a70d15f778029e715" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLControllerStateEx::raw_coord_frame_controller</definition>
+        <argsstring></argsstring>
+        <name>raw_coord_frame_controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw coordinate frame identifier for this Controller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="138" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_controller_state_ex_1a83e6cdcc5f8f32b6237ea1b7dd283fbb" prot="public" static="no" mutable="no">
+        <type><ref refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" kindref="member">MLControllerStatus</ref></type>
+        <definition>MLControllerStatus MLControllerStateEx::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current controller stream status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="140" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the current state of this controller. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLControllerStateEx</label>
+        <link refid="struct_m_l_controller_state_ex"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coord_frame_controller</edgelabel>
+          <edgelabel>raw_coord_frame_controller</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="132" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="132" bodyend="141"/>
+    <listofallmembers>
+      <member refid="struct_m_l_controller_state_ex_1a55d6a71118374642415a878683311b99" prot="public" virt="non-virtual"><scope>MLControllerStateEx</scope><name>controller_id</name></member>
+      <member refid="struct_m_l_controller_state_ex_1a281a58851e8149f29c1287a6bcce8767" prot="public" virt="non-virtual"><scope>MLControllerStateEx</scope><name>coord_frame_controller</name></member>
+      <member refid="struct_m_l_controller_state_ex_1aa1b225d715a26e9a70d15f778029e715" prot="public" virt="non-virtual"><scope>MLControllerStateEx</scope><name>raw_coord_frame_controller</name></member>
+      <member refid="struct_m_l_controller_state_ex_1a83e6cdcc5f8f32b6237ea1b7dd283fbb" prot="public" virt="non-virtual"><scope>MLControllerStateEx</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

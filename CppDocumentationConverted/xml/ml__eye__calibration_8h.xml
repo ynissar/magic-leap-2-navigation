@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__eye__calibration_8h" kind="file" language="C++">
+    <compoundname>ml_eye_calibration.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h</label>
+        <link refid="ml__eye__calibration_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___eye_calibration_1gaff0d7e5fa15097bd81bb118ab3a1c436" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLEyeCalibrationStatus</name>
+        <enumvalue id="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a364eb30a85c5f982c8e30ff4adf22413" prot="public">
+          <name>MLEyeCalibrationStatus_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No valid calibration was found for eyes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436abb72766f3ac2dab69689e19d600b42f8" prot="public">
+          <name>MLEyeCalibrationStatus_Coarse</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Calibration is of lower accuracy. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a8ec305683afeb32f155cf7504887e9c4" prot="public">
+          <name>MLEyeCalibrationStatus_Fine</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Calibration is of higher accuracy. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a98a5edfd4e814b42c5061feac1ac52e0" prot="public">
+          <name>MLEyeCalibrationStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible eye calibration codes that the eye calibration system can report. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000007"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Has a calibration occurred. If so, what was the granularity.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" line="44" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" bodystart="44" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___eye_calibration_1gab72dabce431e60915e5d15acba128c83" prot="public" static="no">
+        <type>enum <ref refid="group___eye_calibration_1gaff0d7e5fa15097bd81bb118ab3a1c436" kindref="member">MLEyeCalibrationStatus</ref></type>
+        <definition>typedef enum MLEyeCalibrationStatus MLEyeCalibrationStatus</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCalibrationStatus</name>
+        <briefdescription>
+<para>A set of possible eye calibration codes that the eye calibration system can report. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000007"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Has a calibration occurred. If so, what was the granularity.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" line="53" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLEyeCalibrationState</definition>
+        <argsstring></argsstring>
+        <name>MLEyeCalibrationState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" line="68" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___eye_calibration_1gad16771fe1ad1397ca2dc1223a24daa53" prot="public" static="no" mutable="no">
+        <type><ref refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" kindref="member">MLEyeCalibrationState</ref> *</type>
+        <definition>MLEyeCalibrationState* out_state</definition>
+        <argsstring></argsstring>
+        <name>out_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" line="136" column="32" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___eye_calibration_1ga51d44b1461b1f979bf58031cef2aa018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))) struct MLEyeCalibrationState</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use XR_ML_user_calibration OpenXR extention.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A struct representing the eye calibration state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets information about the user&apos;s current headset fit.</para>
+<para>Destroys headset fit client.</para>
+<para>Creates a headset fit client.</para>
+<para>Initialize MLHeadsetFitState.</para>
+<para>Gets information about the user&apos;s current eye calibration.</para>
+<para>Destroys an eye calibration client.</para>
+<para>Creates an eye calibration client.</para>
+<para>Initialize MLEyeCalibrationState with version.</para>
+<para><xrefsect id="deprecated_1_deprecated000008"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000009"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_state and zero all other fields.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000010"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an MLHandle to the newly created eye calibration client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create eye calibration client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created eye calibration client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFaiure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create eye calibration client due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000265"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000011"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the eye calibration cleint created by #MLEyeCalibrationCreateClient.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed eye calibration client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFaiure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy eye calibration client due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000266"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000012"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to an Eye calibration client created by #MLEyeCalibrationCreateClient. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to MLEyeCalibrationState where information about the eye calibration state is to be stored.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive eye calibration state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully received eye calibration state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive eye calibration state due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000267"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000071"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_state and zero all other fields.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000072"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an MLHandle to the newly created headset fit client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create headset fit client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created headset fit client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create headset fit client due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000327"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000073"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the headset fit client created by #MLHeadsetFitCreateClient.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed headset fit client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy headset fit client due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000328"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000074"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the headset fit information created by #MLHeadsetFitCreateClient. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about headset fit state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive headset fit state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully returned headset fit state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive headset fit state due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000329"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Version of this structure.</para>
+<para>MLEyeCalibrationStatus enum defined above.</para>
+<para>Epoch timestamp of last calibration in microseconds.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" line="61" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" bodystart="61" bodyend="68" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h" declline="117" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group___eye_calibration_1gaff0d7e5fa15097bd81bb118ab3a1c436" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___eye_calibration_1gaff0d7e5fa15097bd81bb118ab3a1c436" kindref="member">MLEyeCalibrationStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a364eb30a85c5f982c8e30ff4adf22413" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a364eb30a85c5f982c8e30ff4adf22413" kindref="member">MLEyeCalibrationStatus_None</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="48" refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436abb72766f3ac2dab69689e19d600b42f8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436abb72766f3ac2dab69689e19d600b42f8" kindref="member">MLEyeCalibrationStatus_Coarse</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="50" refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a8ec305683afeb32f155cf7504887e9c4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a8ec305683afeb32f155cf7504887e9c4" kindref="member">MLEyeCalibrationStatus_Fine</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="group___eye_calibration_1ggaff0d7e5fa15097bd81bb118ab3a1c436a98a5edfd4e814b42c5061feac1ac52e0" kindref="member">MLEyeCalibrationStatus_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="53" refid="group___eye_calibration_1gab72dabce431e60915e5d15acba128c83" refkind="member"><highlight class="normal">}<sp/><ref refid="group___eye_calibration_1gaff0d7e5fa15097bd81bb118ab3a1c436" kindref="member">MLEyeCalibrationStatus</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="group___eye_calibration_1ga51d44b1461b1f979bf58031cef2aa018" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_ML_user_calibration<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" kindref="member">MLEyeCalibrationState</ref><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="group___eye_calibration_1gaff0d7e5fa15097bd81bb118ab3a1c436" kindref="member">MLEyeCalibrationStatus</ref><sp/>eye_calibration;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>int64_t<sp/>epoch_timestamp_us;</highlight></codeline>
+<codeline lineno="68" refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" refkind="member"><highlight class="normal">}<sp/><ref refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" kindref="member">MLEyeCalibrationState</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_ML_user_calibration<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MLEyeCalibrationStateInit(<ref refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" kindref="member">MLEyeCalibrationState</ref><sp/>*inout_state)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_state)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_state,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" kindref="member">MLEyeCalibrationState</ref>));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_state-&gt;version<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_ML_user_calibration<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLEyeCalibrationCreateClient(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>XR_ML_user_calibration<sp/>OpenXR<sp/>extention.&quot;)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLEyeCalibrationDestroyClient(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>XR_ML_user_calibration<sp/>OpenXR<sp/>extention.&quot;)</highlight></codeline>
+<codeline lineno="136" refid="group___eye_calibration_1gad16771fe1ad1397ca2dc1223a24daa53" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLEyeCalibrationGetState(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="group___eye_calibration_1ga4e13ae5a8e27eb3ad7a5696912556fcc" kindref="member">MLEyeCalibrationState</ref><sp/>*<ref refid="group___eye_calibration_1gad16771fe1ad1397ca2dc1223a24daa53" kindref="member">out_state</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h"/>
+  </compounddef>
+</doxygen>

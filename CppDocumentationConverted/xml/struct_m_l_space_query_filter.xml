@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_query_filter" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceQueryFilter</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_query_filter_1a750760e1bb6c9e392d8794ed7497d67e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceQueryFilter::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="277" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling <ref refid="group___space_1ga8671dc4dddec350ff713efa55f88a295" kindref="member">MLSpaceQueryFilterInit</ref> before use. There is no support for filters at this time. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="275" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="275" bodyend="278"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_query_filter_1a750760e1bb6c9e392d8794ed7497d67e" prot="public" virt="non-virtual"><scope>MLSpaceQueryFilter</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

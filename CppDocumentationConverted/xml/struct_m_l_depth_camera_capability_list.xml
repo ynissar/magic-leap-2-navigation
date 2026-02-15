@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_depth_camera_capability_list" kind="struct" language="C++" prot="public">
+    <compoundname>MLDepthCameraCapabilityList</compoundname>
+    <includes refid="ml__depth__camera_8h" local="no">ml_depth_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_depth_camera_capability_list_1a6f6ab6468c644b87b35c7096bd89f2f1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLDepthCameraCapabilityList::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of <ref refid="struct_m_l_depth_camera_capability_list_1ab696401f4e30907c58b11b8fa7e6981a" kindref="member">capabilities</ref> array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="503" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_capability_list_1ab696401f4e30907c58b11b8fa7e6981a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_depth_camera_capability" kindref="compound">MLDepthCameraCapability</ref> *</type>
+        <definition>MLDepthCameraCapability* MLDepthCameraCapabilityList::capabilities</definition>
+        <argsstring></argsstring>
+        <name>capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of <ref refid="struct_m_l_depth_camera_capability" kindref="compound">MLDepthCameraCapability</ref> elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="505" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to encapsulate a list of possible stream configurations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>User should be able to use any of the capabilities from the list. They are grouped in usable sets of configurations - one set may contain different <ref refid="struct_m_l_depth_camera_stream_capability" kindref="compound">MLDepthCameraStreamCapability</ref> for different streams. For more information see <ref refid="struct_m_l_depth_camera_capability" kindref="compound">MLDepthCameraCapability</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLDepthCameraCapabilityList</label>
+        <link refid="struct_m_l_depth_camera_capability_list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>capabilities</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLDepthCameraStreamCapability</label>
+        <link refid="struct_m_l_depth_camera_stream_capability"/>
+      </node>
+      <node id="2">
+        <label>MLDepthCameraCapability</label>
+        <link refid="struct_m_l_depth_camera_capability"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>stream_capabilities</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="501" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="501" bodyend="506"/>
+    <listofallmembers>
+      <member refid="struct_m_l_depth_camera_capability_list_1ab696401f4e30907c58b11b8fa7e6981a" prot="public" virt="non-virtual"><scope>MLDepthCameraCapabilityList</scope><name>capabilities</name></member>
+      <member refid="struct_m_l_depth_camera_capability_list_1a6f6ab6468c644b87b35c7096bd89f2f1" prot="public" virt="non-virtual"><scope>MLDepthCameraCapabilityList</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

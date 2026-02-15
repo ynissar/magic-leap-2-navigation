@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_block_request" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingBlockRequest</compoundname>
+    <includes refid="ml__meshing2_8h" local="no">ml_meshing2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_block_request_1aace174a43c79760d49b5ed0f1bdd3463" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLMeshingBlockRequest::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The UID to represent the block. Note: Not for use with perception snapshot system, purely a unique identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="148" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_block_request_1a5a295b7d94b765b59732db0e2cabc637" prot="public" static="no" mutable="no">
+        <type><ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref></type>
+        <definition>MLMeshingLOD MLMeshingBlockRequest::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LOD level to request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="150" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Request structure to get the actual mesh for a block. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLMeshingBlockRequest</label>
+        <link refid="struct_m_l_meshing_block_request"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="146" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="146" bodyend="151"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_block_request_1aace174a43c79760d49b5ed0f1bdd3463" prot="public" virt="non-virtual"><scope>MLMeshingBlockRequest</scope><name>id</name></member>
+      <member refid="struct_m_l_meshing_block_request_1a5a295b7d94b765b59732db0e2cabc637" prot="public" virt="non-virtual"><scope>MLMeshingBlockRequest</scope><name>level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

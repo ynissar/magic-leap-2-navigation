@@ -1,0 +1,2535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__media__recorder_8h" kind="file" language="C++">
+    <compoundname>ml_media_recorder.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h</label>
+        <link refid="ml__media__recorder_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderVideoSource</name>
+        <enumvalue id="group___media_recorder_1gga401d2abb3b54f2263f06638d0862815aa4b06e7bf830257a970772f4b706cae17" prot="public">
+          <name>MLMediaRecorderVideoSource_Camera</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Camera video source. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga401d2abb3b54f2263f06638d0862815aa99864cc3b45646d23ea01abb0dfe5793" prot="public">
+          <name>MLMediaRecorderVideoSource_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media recorder video source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="34" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderAudioSource</name>
+        <enumvalue id="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a388b0b20deceb40ea0bef4e57db93271" prot="public">
+          <name>MLMediaRecorderAudioSource_Voice</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Recording voice. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a97bf7a8807f3360ae5f8ae42c2b1a471" prot="public">
+          <name>MLMediaRecorderAudioSource_World</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Recording ambient sounds. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a7876b002a7e4e320ef6d7f78c3754388" prot="public">
+          <name>MLMediaRecorderAudioSource_Virtual</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Recording digital sounds. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a0daa4a68d75d1340ee35f714deae7629" prot="public">
+          <name>MLMediaRecorderAudioSource_Mixed</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mixed reality mode: digital + ambient. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a4be75fed693754b781775f34e76210fb" prot="public">
+          <name>MLMediaRecorderAudioSource_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media recorder audio source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="42" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="42" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1ga1b09cb81c791ffdccf051a7bde0b9f71" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderEvent</name>
+        <enumvalue id="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71a6e2f0b2bac593bf25d5eba33c13e07ef" prot="public">
+          <name>MLMediaRecorderEvent_Error</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Media recorder error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71abbf195ddbfce989de13f2cf57eb829a8" prot="public">
+          <name>MLMediaRecorderEvent_Info</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Media recorder info. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71aa344f9ad98b58238ec4483abf20e87b5" prot="public">
+          <name>MLMediaRecorderTrackEvent_Error</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Media recorder track error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71a4df4c9d4e6ec2f91dbe6f64f6e4b3226" prot="public">
+          <name>MLMediaRecorderTrackEvent_Info</name>
+          <initializer>= 101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Media recorder track info. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71af0dc4e5120dada323ab52fbb3eea4f5f" prot="public">
+          <name>MLMediaRecorderTrackEvent_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media recorder events. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="56" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="56" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1ga6e1cca64d290af9cff5d5b73ea07303a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderInfo</name>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa2c02c8665bbaa1caac38dbc303e7abe7" prot="public">
+          <name>MLMediaRecorderInfo_Unknown</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa8e7312c294b2176dbe2bbca2250e648e" prot="public">
+          <name>MLMediaRecorderInfo_MaxDurationReached</name>
+          <initializer>= 800</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max duration of the clip is reached. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa0d3239df374cc23931cd17cf9f5185d1" prot="public">
+          <name>MLMediaRecorderInfo_MaxFileSizeReached</name>
+          <initializer>= 801</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max file size is reached. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa1f975706afc38f0277e3e099ca0efc7a" prot="public">
+          <name>MLMediaRecorderInfo_MaxFileSizeApproaching</name>
+          <initializer>= 802</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max file size is approaching. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa15685927a72629cfd4843db39788ca2f" prot="public">
+          <name>MLMediaRecorderTrackInfo_CompletionStatus</name>
+          <initializer>= 1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Next output file has started.</para>
+<para>The info about completion status. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa4a0651fd9cb06d81d8f8e3e8b8c8a62c" prot="public">
+          <name>MLMediaRecorderTrackInfo_ProgressInTime</name>
+          <initializer>= 1001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The info about progress in time. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aab22b894d425e1f9daadfd5989eb9221c" prot="public">
+          <name>MLMediaRecorderTrackInfo_Type</name>
+          <initializer>= 1002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Track info. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa51d55b34a5da78d6da47443d8fc24c1e" prot="public">
+          <name>MLMediaRecorderTrackInfo_DurationMs</name>
+          <initializer>= 1003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The info about track duration. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa6b076259308befa585a13b70a73e7bf8" prot="public">
+          <name>MLMediaRecorderTrackInfo_MaxChunkDurationMs</name>
+          <initializer>= 1004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The time to measure the max chunk duration. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aaa5b4044679568554f29aa1f54c62f654" prot="public">
+          <name>MLMediaRecorderTrackInfo_EncodedFrames</name>
+          <initializer>= 1005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The info about encoded frames. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa79d61a9c6ad9acfd4bfafbe0493ca5d3" prot="public">
+          <name>MLMediaRecorderTrackInfo_InterChunkTimeUs</name>
+          <initializer>= 1006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The time to measure how well the audio and video track data interleaved. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa62488b711e920e3f6f70cf5498597586" prot="public">
+          <name>MLMediaRecorderTrackInfo_InitialDelayMs</name>
+          <initializer>= 1007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The time to measure system response. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa48d39cb3076211882024eed7cbe92b49" prot="public">
+          <name>MLMediaRecorderTrackInfo_StartOffsetMs</name>
+          <initializer>= 1008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The time used to compensate for initial A/V sync. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa0eace9f7c461e07bc453ba7ff54d0cdd" prot="public">
+          <name>MLMediaRecorderTrackInfo_DataKBytes</name>
+          <initializer>= 1009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Total number of bytes of the media data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aae2bec656d38d3aaebb800fead2e95b06" prot="public">
+          <name>MLMediaRecorderTrackInfo_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="69" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1gadc6daa68e76b2e4dc29dacb0ec0967d2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderError</name>
+        <enumvalue id="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a880cd315d58ad854cdddd484c9e914ae" prot="public">
+          <name>MLMediaRecorderError_Unknown</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2af400c34c522ea8754e44812702bdf63c" prot="public">
+          <name>MLMediaRecorderError_ServerDied</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2aed8b7b1ed26e65e5e221928df7fbd9ef" prot="public">
+          <name>MLMediaRecorderTrackError_General</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a98ee3b53adc1ccc5c797b5c0174e4a14" prot="public">
+          <name>MLMediaRecorderError_VideoNoSyncFrame</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a427553fc69896566e553aa45cd72c212" prot="public">
+          <name>MLMediaRecorderTrackError_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Video recorder error types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderOutputFormat</name>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca17fae2fa3beedc2d47b06b040110deb4" prot="public">
+          <name>MLMediaRecorderOutputFormat_DEFAULT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca84b7ea247ef7216a58e75d23a11ced43" prot="public">
+          <name>MLMediaRecorderOutputFormat_THREE_GPP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3gpp format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca7194abf92fae94b9800c45a77f3c3e6e" prot="public">
+          <name>MLMediaRecorderOutputFormat_MPEG_4</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MP4 format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca8915ef2d85961f63d51b3b5f4e2a8dcf" prot="public">
+          <name>MLMediaRecorderOutputFormat_AMR_NB</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AMR NB. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca8efa0f30458222e95e464ce77e2c8f77" prot="public">
+          <name>MLMediaRecorderOutputFormat_AMR_WB</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AMR WB. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca4797504f5c7bbfa4fbe855fe96d045b9" prot="public">
+          <name>MLMediaRecorderOutputFormat_AAC_ADIF</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AAC_ADIF. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1acaa88a4b040deb0475de88211f83fc7e93" prot="public">
+          <name>MLMediaRecorderOutputFormat_AAC_ADTS</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AAC_ADTS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca53ec554ba67234e3f88014a8c175db70" prot="public">
+          <name>MLMediaRecorderOutputFormat_RTP_AVP</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stream over a socket, limited to a single stream. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca18860f29e5da56ae303f3fbf5f424c4e" prot="public">
+          <name>MLMediaRecorderOutputFormat_MPEG2TS</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H.264/AAC data encapsulated in MPEG2/TS. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca1c2d5a3fbd9f4a979853043fe9391f25" prot="public">
+          <name>MLMediaRecorderOutputFormat_WEBM</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VP8/VORBIS data in a WEBM container. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca22cb194381fab9642a6392ad7197cfc9" prot="public">
+          <name>MLMediaRecorderOutputFormat_HEIF</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HEIC data in a HEIF container. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca5b5f8556f0e9d8bf8a8b24cb5b89f1b5" prot="public">
+          <name>MLMediaRecorderOutputFormat_OGG</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Opus data in a OGG container. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1acaf56f492bf6f5c95244936520c4759785" prot="public">
+          <name>MLMediaRecorderOutputFormat_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="142" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="142" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderVideoEncoder</name>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83cae58288f09c1aa78842e8a45937e16c21" prot="public">
+          <name>MLMediaRecorderVideoEncoder_Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca8c1a5b4d781c36c7bf58e24368791767" prot="public">
+          <name>MLMediaRecorderVideoEncoder_H263</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H263. This format has support for software encoder. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83cabc8bc2f4a5a551563d086476d053e24f" prot="public">
+          <name>MLMediaRecorderVideoEncoder_H264</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H264. This format has support for hardware encoder. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca227f97a8d6c96d6fa51a438e2793675f" prot="public">
+          <name>MLMediaRecorderVideoEncoder_MPEG_4_SP</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MPEG4 SP. This format has support for software encoder. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca3597f8815f9ed030bd2aa82bae1b4217" prot="public">
+          <name>MLMediaRecorderVideoEncoder_VP8</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VP8. This format has support for software encoder. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca29794cef5626b6500ebf30d32ee01446" prot="public">
+          <name>MLMediaRecorderVideoEncoder_HEVC</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HEVC. This format has support for hardware encoder. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca4cae39eb387917bbd86020b02e65268f" prot="public">
+          <name>MLMediaRecorderVideoEncoder_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="170" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="170" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaRecorderAudioEncoder</name>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3aee0952a4184be6b950ced84038d2f253" prot="public">
+          <name>MLMediaRecorderAudioEncoder_Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a49675f27d5ffc3b58320280c4a8128b7" prot="public">
+          <name>MLMediaRecorderAudioEncoder_AMR_NB</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AMR NB. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a774a3053eefe1029eb8434b1c7ba1895" prot="public">
+          <name>MLMediaRecorderAudioEncoder_AMR_WB</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AMR WB. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3aa64082903af810b5e6338d5b49000fff" prot="public">
+          <name>MLMediaRecorderAudioEncoder_AAC</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AAC. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a98d072d1265de8485440b7b782d929eb" prot="public">
+          <name>MLMediaRecorderAudioEncoder_HE_AAC</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HE AAC. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a5e72f28783b5dd4cd210b6e04be1c1f3" prot="public">
+          <name>MLMediaRecorderAudioEncoder_AAC_ELD</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AAC ELD. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a248353d3117f3f189c2030bf7aab1897" prot="public">
+          <name>MLMediaRecorderAudioEncoder_VORBIS</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vorbis. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a759584246000e8d8e7534358d317b39c" prot="public">
+          <name>MLMediaRecorderAudioEncoder_OPUS</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Opus. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a38db79bbcaaea2a67810ae7d6ddd9407" prot="public">
+          <name>MLMediaRecorderAudioEncoder_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="186" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="186" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___media_recorder_1gaa7838ec3b1e0b76e3cf94be24ce69855" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" kindref="member">MLMediaRecorderVideoSource</ref></type>
+        <definition>typedef enum MLMediaRecorderVideoSource MLMediaRecorderVideoSource</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderVideoSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media recorder video source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="39" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1ga11999ea904b6c125965213038569f0f8" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" kindref="member">MLMediaRecorderAudioSource</ref></type>
+        <definition>typedef enum MLMediaRecorderAudioSource MLMediaRecorderAudioSource</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderAudioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media recorder audio source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="53" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1ga847eb7771cd5e949cab544f218019663" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga1b09cb81c791ffdccf051a7bde0b9f71" kindref="member">MLMediaRecorderEvent</ref></type>
+        <definition>typedef enum MLMediaRecorderEvent MLMediaRecorderEvent</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media recorder events. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="67" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1gac2f01a93bf87a049decf380e2a9a1694" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga6e1cca64d290af9cff5d5b73ea07303a" kindref="member">MLMediaRecorderInfo</ref></type>
+        <definition>typedef enum MLMediaRecorderInfo MLMediaRecorderInfo</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="101" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1gad201bdc128f0e0ec4aba7b3f39028e0a" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1gadc6daa68e76b2e4dc29dacb0ec0967d2" kindref="member">MLMediaRecorderError</ref></type>
+        <definition>typedef enum MLMediaRecorderError MLMediaRecorderError</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderError</name>
+        <briefdescription>
+<para>Video recorder error types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="127" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1ga5e5590f14981f10db28684c90862f1dd" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" kindref="member">MLMediaRecorderOutputFormat</ref></type>
+        <definition>typedef enum MLMediaRecorderOutputFormat MLMediaRecorderOutputFormat</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderOutputFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="168" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1ga99bc39fa0b04433660c7b6a6a732a140" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" kindref="member">MLMediaRecorderVideoEncoder</ref></type>
+        <definition>typedef enum MLMediaRecorderVideoEncoder MLMediaRecorderVideoEncoder</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderVideoEncoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="184" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_recorder_1ga02041c805ff79e25b48a24b71e2cfc1a" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" kindref="member">MLMediaRecorderAudioEncoder</ref></type>
+        <definition>typedef enum MLMediaRecorderAudioEncoder MLMediaRecorderAudioEncoder</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderAudioEncoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="204" column="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___media_recorder_1gad77ce2af3b412c68fc1ddb2a11eade3d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMediaRecorderOnInfo</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderOnInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="114" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gaf5a7384e5c9ba9e7e3902d567b3ec972" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMediaRecorderOnError</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderOnError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="140" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMediaRecorderEventCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLMediaRecorderEventCallbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="237" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga4a05f54831975728fbdcadcb6fc4d40e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="307" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga3b02c6de5c049804444a246f7fdf46b4" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="328" column="21" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga88abffa90e6d32bd53e728c37c632a4c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref> *</type>
+        <definition>const MLMediaRecorderEventCallbacks* callbacks</definition>
+        <argsstring></argsstring>
+        <name>callbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="349" column="46" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga9bd0511d311dcc498952d6ec5ae49b05" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref> void *</type>
+        <definition>const MLMediaRecorderEventCallbacks void* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="349" column="61" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga513d96f555c042c8cf8538b8292cec80" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" kindref="member">MLMediaRecorderVideoSource</ref></type>
+        <definition>MLMediaRecorderVideoSource in_video_source</definition>
+        <argsstring></argsstring>
+        <name>in_video_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="370" column="37" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga3ac27a5c81c004de2cff9f6d6367dfc9" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" kindref="member">MLMediaRecorderAudioSource</ref></type>
+        <definition>MLMediaRecorderAudioSource in_audio_source</definition>
+        <argsstring></argsstring>
+        <name>in_audio_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="391" column="37" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga62397351ba536121aa80ab3ad3f27ee9" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" kindref="member">MLMediaRecorderOutputFormat</ref></type>
+        <definition>MLMediaRecorderOutputFormat in_format</definition>
+        <argsstring></argsstring>
+        <name>in_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="410" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gaad8354864a52746f37fe7cafab95422a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" kindref="member">MLMediaRecorderVideoEncoder</ref></type>
+        <definition>MLMediaRecorderVideoEncoder in_video_encoder</definition>
+        <argsstring></argsstring>
+        <name>in_video_encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="435" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gaf23925238af9bb2b97302453b26db513" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" kindref="member">MLMediaRecorderAudioEncoder</ref></type>
+        <definition>MLMediaRecorderAudioEncoder in_audio_encoder</definition>
+        <argsstring></argsstring>
+        <name>in_audio_encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="457" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga0c305e01c7d11085f73316d40b6acb7d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t in_max_duration_msec</definition>
+        <argsstring></argsstring>
+        <name>in_max_duration_msec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="483" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gab953baf9d7bb5cd2a8303bd91446f0ae" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t in_max_file_size</definition>
+        <argsstring></argsstring>
+        <name>in_max_file_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="509" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gad0f185d2bf9b084b8cda9df9c2d70782" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t in_latitude10000</definition>
+        <argsstring></argsstring>
+        <name>in_latitude10000</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="529" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gaaabf20cc8ebaa437c6afcbf2903b5c4c" prot="public" static="no" mutable="no">
+        <type>int64_t int64_t</type>
+        <definition>int64_t int64_t in_longitude10000</definition>
+        <argsstring></argsstring>
+        <name>in_longitude10000</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="529" column="43" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga701d4c69a2747ecf4a81593e83754d1a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="567" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gacd8d6a6a81a05a16862618b7a29db53f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+        <definition>MLHandle* out_input_surface_handle</definition>
+        <argsstring></argsstring>
+        <name>out_input_surface_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="619" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gade610b0a733f52e82abd3a97087d6359" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* inout_max_amp</definition>
+        <argsstring></argsstring>
+        <name>inout_max_amp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="640" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga05498622634c1af8a5b0a5f0afdf6b73" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle input_surface_handle</definition>
+        <argsstring></argsstring>
+        <name>input_surface_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="681" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___media_recorder_1ga01bbf74d0680f6d6cb04b739233d21d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Use standard Android SDK APIs.&quot;))) MLResult MLMediaRecorderCreate(MLHandle *out_handle)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use standard Android SDK APIs.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Create a new MediaRecorder object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Restarts the MediaRecorder to its idle state.</para>
+<para>Release the surface that was returned by MLMediaRecorderGetInputSurface.</para>
+<para>Stops recording.</para>
+<para>Returns the maximum absolute amplitude that was sampled since the last call to this method.</para>
+<para>Gets the input surface to record from when using SURFACE video source.</para>
+<para>Begins capturing and encoding data to the specified file.</para>
+<para>Prepares the recorder to begin capturing and encoding data for input mediaformat.</para>
+<para>Sets the GEO location for recording.</para>
+<para>Sets the maximum filesize (in bytes) of the recording session.</para>
+<para>Sets the maximum duration (in ms) of the recording session.</para>
+<para>Sets the audio encoder to be used for recording.</para>
+<para>Sets the video encoder to be used for recording.</para>
+<para>Sets the format of the output file produced during recording.</para>
+<para>Set MediaRecorder audio source.</para>
+<para>Sets MediaRecorder default video source.</para>
+<para>Sets the MediaRecorderListener object that will receive MediaRecorder notifications.</para>
+<para>Sets the path of the output file to be produced.</para>
+<para>Pass in the file descriptor of the file to be written.</para>
+<para>Destroy a MediaRecorder object.</para>
+<para><xrefsect id="deprecated_1_deprecated000479"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the new MediaRecorder object created. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Could not allocate internal MediaRecorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Passed out_handle was NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MediaRecorder was created successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000556"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000480"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder object to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MediaRecorder was destroyed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000557"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000481"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Call this after MLMediaRecorderSetOutputFormat() but before MLMediaRecorderprepare().</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file descriptor for the file you want to write into.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Passed fd does no refer to a valid,open file descriptor or &apos;media_recorder&apos; was NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data source was correctly set to passed file descriptor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000558"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000482"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Call this after MLMediaRecorderSetOutputFormat() but before MLMediaRecorderprepare().</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The linux-style path of the file. Must be a valid and existing path.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data source was correctly set to passed file path. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000559"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000483"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of event callbacks. Can be set to NULL to unset the callbacks altogether. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when any callback is fired.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The specified callbacks were successfully set/unset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000560"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000484"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Cannot be called twice (without calling MLMediaRecorderReset() in between) because it triggers internal initialization.</para>
+<para>Current implementation supports only camera as video source from MediaRecorderVideoSource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_video_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the MediaRecorderVideoSource.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found or in_video_source is not MLMediaRecorderVideoSource_Camera. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set default video source successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000561"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000485"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Cannot be called twice (without calling MLMediaRecorderReset() in between) because it triggers internal initialization.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_audio_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the MediaRecorderAudioSource.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set audio source successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000562"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000486"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the MLMediaRecorderOutputFormat.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set output format successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000563"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000487"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>If this method is not called, the output file will not contain an video track. Call this after MLMediaRecorderSetOutputFormat() and before MLMediaRecorderPrepare().</para>
+<para>The video source is always set to camera by default.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_video_encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the VideoEncoder to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set video encoder successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaResult_InvalidCodecParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>requested width height is not supported. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000564"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000488"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>If this method is not called, the output file will not contain an audio track. Call this after MLMediaRecorderSetOutputFormat() and before MLMediaRecorderPrepare().</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_audio_encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the MLMediaRecorderAudioEncoder to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set audio encoder successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000565"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000489"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Call this after MLMediaRecorderSetOutputFormat() and before MLMediaRecorderPrepare(). After recording reaches the specified duration, a notification will be sent via the callback with a MLMediaRecorderInfo code of MLMediaRecorderInfo_MaxDurationReached and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_max_duration_msec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum duration in ms (if zero or negative, disables the duration limit).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max duration was successfully set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000566"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000490"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+Call this after MLMediaRecorderSetOutputFormat() and before MLMediaRecorderPrepare(). After recording reaches the specified filesize, a notification will be sent via the callback with a MLMediaRecorderInfo code of MLMediaRecorderInfo_MaxFileSizeReached and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_max_file_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MaxFilesizeBytes The maximum filesize in bytes (if zero or negative, disables the limit).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max file size was successfully set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000567"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000491"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_latitude10000</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 10000 multiplies latitude of location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_longitude10000</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 10000 multiplies longitude of location.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GEO location was successfully set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000568"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000492"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>This method must be called after setting up the desired audio and video sources, encoders, but before start.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to the MediaFormat. MediaFormat object can be created with:<itemizedlist>
+<listitem><para>#MLMediaFormatCreateVideo if we want to record video only.</para>
+</listitem><listitem><para>#MLMediaFormatCreateAudio if we want to record audio only.</para>
+</listitem><listitem><para>#MLMediaFormatCreate if we want to record both video and audio.</para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Following parameters can be added to MediaFormat handle. Audio Specific parametes:<itemizedlist>
+<listitem><para>#MLMediaFormat_Key_Bit_Rate for audio &quot;bitrate&quot;.</para>
+</listitem><listitem><para>#MLMediaFormat_Key_Channel_Count for audio &quot;channel-count&quot;.</para>
+</listitem><listitem><para>#MLMediaFormat_Key_Sample_Rate for audio &quot;sample-rate&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para>Video Specific parametes:<itemizedlist>
+<listitem><para>#MLMediaFormat_Key_Width for video frame &quot;width&quot;.</para>
+</listitem><listitem><para>#MLMediaFormat_Key_Height for video frame &quot;height&quot;.</para>
+</listitem><listitem><para>#MLMediaFormat_Key_Frame_Rate for video &quot;frame-rate&quot;.</para>
+</listitem><listitem><para>#MLMediaFormat_Key_Parameter_Video_Bitrate for &quot;video-bitrate&quot;.</para>
+</listitem><listitem><para>#MLMediaFormat_Key_I_Frame_Interval for &quot;i-frame-interval&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Recorder was prepared successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000569"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000493"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Call this after MLMediaRecorderPrepare(). The apps should not start another recording session during recording.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Recorder was started successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000570"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000494"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>May only be called after MLMediaRecorderPrepare. Frames rendered to the producer before MLMediaRecorderStart() is called will be discarded.</para>
+<para>When using an input surface, there are no accessible input buffers, as buffers are automatically passed from the other modules to this surface.</para>
+<para>The returned input surface can also be passed as a destination surface to<itemizedlist>
+<listitem><para>a video/mixed reality video capture session when calling <ref refid="group___camera_1ga302cdb13a5782ebb384ba0bf0fa145a5" kindref="member">MLCameraPrepareCapture()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>Captured raw video frames will be consumed directly as input to an encoder without copying. Caller of this API should release the surface using MLMediaRecorderReleaseInputSurface() on the Surface handle after usage.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the Media Recorder instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_input_surface_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the created input native surface.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input surface was correctly returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000571"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000495"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Call this only after the MLMediaRecorderSetAudioSource().</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MediaRecorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_max_amp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum absolute amplitude measured since the last call, or 0 when called for the first time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mmedia recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum amplitude was returned successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000572"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000496"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Call this after MLMediaRecorderStart(). Once recording is stopped, you will have to configure it again as if it has just been constructed.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MediaRecorder.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Recorder was stopped successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000573"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000497"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MediaRecorder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">input_surface_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the internal surface object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Surface object was successfully released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_NoInit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLMediaCodec was not initialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000574"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None</para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000498"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>After calling this method, you will have to configure it again as if it had just been constructed.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the media recorder.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media recorder handle was not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Recorder was resetted successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method was called from the wrong state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000575"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Holds valid track id only for track specific info (returned via on_track_info callback.). Holds 0 for the generic info (returned via on_info callback). Refer to MLMediaRecorderInfo for the info.</para>
+<para>The info of MLMediaRecorderInfo.</para>
+<para>The extra info.</para>
+<para>User data as passed to MLMediaRecorderSetEventCallbacks.</para>
+<para>Holds valid track id only for track specific errors (returned via on_track_error callback). Holds 0 for the generic errors (returned via on_error callback). Refer to MLMediaRecorderError for the errors.</para>
+<para>The error of MLMediaRecorderError.</para>
+<para>The extra info.</para>
+<para>User data as passed to MLMediaRecorderSetEventCallbacks.</para>
+<para>MediaRecorder received a general info/warning message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle is a MediaRecorder instance on which callback was set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to MLMediaRecorderOnInfo.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+MediaRecorder received a track-related info/warning message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle is a MediaRecorder instance on which callback was set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">track_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to MLMediaRecorderOnInfo.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+MediaRecorder received a general error message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle is a MediaRecorder instance on which callback was set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to MLMediaRecorderOnError.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+MediaRecorder received a track-related error message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_recorder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle is a MediaRecorder instance on which callback was set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to MLMediaRecorderError.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="103" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="103" bodyend="114" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" declline="701" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media_recorder_1gace874e782c1325c3d6b7fbf741a3efba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLMediaRecorderEventCallbacksInit</definition>
+        <argsstring>(MLMediaRecorderEventCallbacks *inout_callbacks)</argsstring>
+        <name>MLMediaRecorderEventCallbacksInit</name>
+        <param>
+          <type><ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref> *</type>
+          <declname>inout_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initializes MediaRecorderEventCallbacks with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media Recorder Callback structure defined by MLMediaRecorderEventCallbacks that needs to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" line="244" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h" bodystart="244" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="34" refid="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" kindref="member">MLMediaRecorderVideoSource</ref><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="group___media_recorder_1gga401d2abb3b54f2263f06638d0862815aa4b06e7bf830257a970772f4b706cae17" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga401d2abb3b54f2263f06638d0862815aa4b06e7bf830257a970772f4b706cae17" kindref="member">MLMediaRecorderVideoSource_Camera</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga401d2abb3b54f2263f06638d0862815aa99864cc3b45646d23ea01abb0dfe5793" kindref="member">MLMediaRecorderVideoSource_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="39" refid="group___media_recorder_1gaa7838ec3b1e0b76e3cf94be24ce69855" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" kindref="member">MLMediaRecorderVideoSource</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" kindref="member">MLMediaRecorderAudioSource</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a388b0b20deceb40ea0bef4e57db93271" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a388b0b20deceb40ea0bef4e57db93271" kindref="member">MLMediaRecorderAudioSource_Voice</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="46" refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a97bf7a8807f3360ae5f8ae42c2b1a471" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a97bf7a8807f3360ae5f8ae42c2b1a471" kindref="member">MLMediaRecorderAudioSource_World</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="48" refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a7876b002a7e4e320ef6d7f78c3754388" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a7876b002a7e4e320ef6d7f78c3754388" kindref="member">MLMediaRecorderAudioSource_Virtual</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="50" refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a0daa4a68d75d1340ee35f714deae7629" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a0daa4a68d75d1340ee35f714deae7629" kindref="member">MLMediaRecorderAudioSource_Mixed</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga275f281fb2df2a94cf685e18b24346e3a4be75fed693754b781775f34e76210fb" kindref="member">MLMediaRecorderAudioSource_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="53" refid="group___media_recorder_1ga11999ea904b6c125965213038569f0f8" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" kindref="member">MLMediaRecorderAudioSource</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="group___media_recorder_1ga1b09cb81c791ffdccf051a7bde0b9f71" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga1b09cb81c791ffdccf051a7bde0b9f71" kindref="member">MLMediaRecorderEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71a6e2f0b2bac593bf25d5eba33c13e07ef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71a6e2f0b2bac593bf25d5eba33c13e07ef" kindref="member">MLMediaRecorderEvent_Error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="60" refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71abbf195ddbfce989de13f2cf57eb829a8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71abbf195ddbfce989de13f2cf57eb829a8" kindref="member">MLMediaRecorderEvent_Info</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="62" refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71aa344f9ad98b58238ec4483abf20e87b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71aa344f9ad98b58238ec4483abf20e87b5" kindref="member">MLMediaRecorderTrackEvent_Error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>100,</highlight></codeline>
+<codeline lineno="64" refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71a4df4c9d4e6ec2f91dbe6f64f6e4b3226" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71a4df4c9d4e6ec2f91dbe6f64f6e4b3226" kindref="member">MLMediaRecorderTrackEvent_Info</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>101,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga1b09cb81c791ffdccf051a7bde0b9f71af0dc4e5120dada323ab52fbb3eea4f5f" kindref="member">MLMediaRecorderTrackEvent_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="67" refid="group___media_recorder_1ga847eb7771cd5e949cab544f218019663" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga1b09cb81c791ffdccf051a7bde0b9f71" kindref="member">MLMediaRecorderEvent</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="group___media_recorder_1ga6e1cca64d290af9cff5d5b73ea07303a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga6e1cca64d290af9cff5d5b73ea07303a" kindref="member">MLMediaRecorderInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="70" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa2c02c8665bbaa1caac38dbc303e7abe7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa2c02c8665bbaa1caac38dbc303e7abe7" kindref="member">MLMediaRecorderInfo_Unknown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="72" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa8e7312c294b2176dbe2bbca2250e648e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa8e7312c294b2176dbe2bbca2250e648e" kindref="member">MLMediaRecorderInfo_MaxDurationReached</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>800,</highlight></codeline>
+<codeline lineno="74" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa0d3239df374cc23931cd17cf9f5185d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa0d3239df374cc23931cd17cf9f5185d1" kindref="member">MLMediaRecorderInfo_MaxFileSizeReached</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>801,</highlight></codeline>
+<codeline lineno="76" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa1f975706afc38f0277e3e099ca0efc7a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa1f975706afc38f0277e3e099ca0efc7a" kindref="member">MLMediaRecorderInfo_MaxFileSizeApproaching</ref><sp/><sp/>=<sp/>802,</highlight></codeline>
+<codeline lineno="80" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa15685927a72629cfd4843db39788ca2f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa15685927a72629cfd4843db39788ca2f" kindref="member">MLMediaRecorderTrackInfo_CompletionStatus</ref><sp/><sp/><sp/>=<sp/>1000,</highlight></codeline>
+<codeline lineno="82" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa4a0651fd9cb06d81d8f8e3e8b8c8a62c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa4a0651fd9cb06d81d8f8e3e8b8c8a62c" kindref="member">MLMediaRecorderTrackInfo_ProgressInTime</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1001,</highlight></codeline>
+<codeline lineno="84" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aab22b894d425e1f9daadfd5989eb9221c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aab22b894d425e1f9daadfd5989eb9221c" kindref="member">MLMediaRecorderTrackInfo_Type</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1002,</highlight></codeline>
+<codeline lineno="86" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa51d55b34a5da78d6da47443d8fc24c1e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa51d55b34a5da78d6da47443d8fc24c1e" kindref="member">MLMediaRecorderTrackInfo_DurationMs</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1003,</highlight></codeline>
+<codeline lineno="88" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa6b076259308befa585a13b70a73e7bf8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa6b076259308befa585a13b70a73e7bf8" kindref="member">MLMediaRecorderTrackInfo_MaxChunkDurationMs</ref><sp/>=<sp/>1004,</highlight></codeline>
+<codeline lineno="90" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aaa5b4044679568554f29aa1f54c62f654" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aaa5b4044679568554f29aa1f54c62f654" kindref="member">MLMediaRecorderTrackInfo_EncodedFrames</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1005,</highlight></codeline>
+<codeline lineno="92" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa79d61a9c6ad9acfd4bfafbe0493ca5d3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa79d61a9c6ad9acfd4bfafbe0493ca5d3" kindref="member">MLMediaRecorderTrackInfo_InterChunkTimeUs</ref><sp/><sp/><sp/>=<sp/>1006,</highlight></codeline>
+<codeline lineno="94" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa62488b711e920e3f6f70cf5498597586" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa62488b711e920e3f6f70cf5498597586" kindref="member">MLMediaRecorderTrackInfo_InitialDelayMs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1007,</highlight></codeline>
+<codeline lineno="96" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa48d39cb3076211882024eed7cbe92b49" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa48d39cb3076211882024eed7cbe92b49" kindref="member">MLMediaRecorderTrackInfo_StartOffsetMs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1008,</highlight></codeline>
+<codeline lineno="98" refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa0eace9f7c461e07bc453ba7ff54d0cdd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aa0eace9f7c461e07bc453ba7ff54d0cdd" kindref="member">MLMediaRecorderTrackInfo_DataKBytes</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1009,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6e1cca64d290af9cff5d5b73ea07303aae2bec656d38d3aaebb800fead2e95b06" kindref="member">MLMediaRecorderTrackInfo_Ensure32Bits</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="101" refid="group___media_recorder_1gac2f01a93bf87a049decf380e2a9a1694" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga6e1cca64d290af9cff5d5b73ea07303a" kindref="member">MLMediaRecorderInfo</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="group___media_recorder_1ga01bbf74d0680f6d6cb04b739233d21d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___media_recorder_1gad77ce2af3b412c68fc1ddb2a11eade3d" kindref="member">MLMediaRecorderOnInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>uint32_t<sp/>track_id;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ga6e1cca64d290af9cff5d5b73ea07303a" kindref="member">MLMediaRecorderInfo</ref><sp/>info;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>extra;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1ga9bd0511d311dcc498952d6ec5ae49b05" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="114" refid="group___media_recorder_1gad77ce2af3b412c68fc1ddb2a11eade3d" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1gad77ce2af3b412c68fc1ddb2a11eade3d" kindref="member">MLMediaRecorderOnInfo</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="group___media_recorder_1gadc6daa68e76b2e4dc29dacb0ec0967d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gadc6daa68e76b2e4dc29dacb0ec0967d2" kindref="member">MLMediaRecorderError</ref><sp/>{</highlight></codeline>
+<codeline lineno="120" refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a880cd315d58ad854cdddd484c9e914ae" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a880cd315d58ad854cdddd484c9e914ae" kindref="member">MLMediaRecorderError_Unknown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="121" refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2af400c34c522ea8754e44812702bdf63c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2af400c34c522ea8754e44812702bdf63c" kindref="member">MLMediaRecorderError_ServerDied</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2aed8b7b1ed26e65e5e221928df7fbd9ef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2aed8b7b1ed26e65e5e221928df7fbd9ef" kindref="member">MLMediaRecorderTrackError_General</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>100,</highlight></codeline>
+<codeline lineno="124" refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a98ee3b53adc1ccc5c797b5c0174e4a14" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a98ee3b53adc1ccc5c797b5c0174e4a14" kindref="member">MLMediaRecorderError_VideoNoSyncFrame</ref><sp/><sp/>=<sp/>200,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggadc6daa68e76b2e4dc29dacb0ec0967d2a427553fc69896566e553aa45cd72c212" kindref="member">MLMediaRecorderTrackError_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="127" refid="group___media_recorder_1gad201bdc128f0e0ec4aba7b3f39028e0a" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1gadc6daa68e76b2e4dc29dacb0ec0967d2" kindref="member">MLMediaRecorderError</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___media_recorder_1gaf5a7384e5c9ba9e7e3902d567b3ec972" kindref="member">MLMediaRecorderOnError</ref><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>uint32_t<sp/>track_id;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gadc6daa68e76b2e4dc29dacb0ec0967d2" kindref="member">MLMediaRecorderError</ref><sp/>error;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>extra;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1ga9bd0511d311dcc498952d6ec5ae49b05" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="140" refid="group___media_recorder_1gaf5a7384e5c9ba9e7e3902d567b3ec972" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1gaf5a7384e5c9ba9e7e3902d567b3ec972" kindref="member">MLMediaRecorderOnError</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" kindref="member">MLMediaRecorderOutputFormat</ref><sp/>{</highlight></codeline>
+<codeline lineno="143" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca17fae2fa3beedc2d47b06b040110deb4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca17fae2fa3beedc2d47b06b040110deb4" kindref="member">MLMediaRecorderOutputFormat_DEFAULT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="145" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca84b7ea247ef7216a58e75d23a11ced43" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca84b7ea247ef7216a58e75d23a11ced43" kindref="member">MLMediaRecorderOutputFormat_THREE_GPP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="147" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca7194abf92fae94b9800c45a77f3c3e6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca7194abf92fae94b9800c45a77f3c3e6e" kindref="member">MLMediaRecorderOutputFormat_MPEG_4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="149" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca8915ef2d85961f63d51b3b5f4e2a8dcf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca8915ef2d85961f63d51b3b5f4e2a8dcf" kindref="member">MLMediaRecorderOutputFormat_AMR_NB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="151" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca8efa0f30458222e95e464ce77e2c8f77" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca8efa0f30458222e95e464ce77e2c8f77" kindref="member">MLMediaRecorderOutputFormat_AMR_WB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="153" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca4797504f5c7bbfa4fbe855fe96d045b9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca4797504f5c7bbfa4fbe855fe96d045b9" kindref="member">MLMediaRecorderOutputFormat_AAC_ADIF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="155" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1acaa88a4b040deb0475de88211f83fc7e93" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1acaa88a4b040deb0475de88211f83fc7e93" kindref="member">MLMediaRecorderOutputFormat_AAC_ADTS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="157" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca53ec554ba67234e3f88014a8c175db70" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca53ec554ba67234e3f88014a8c175db70" kindref="member">MLMediaRecorderOutputFormat_RTP_AVP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="159" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca18860f29e5da56ae303f3fbf5f424c4e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca18860f29e5da56ae303f3fbf5f424c4e" kindref="member">MLMediaRecorderOutputFormat_MPEG2TS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="161" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca1c2d5a3fbd9f4a979853043fe9391f25" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca1c2d5a3fbd9f4a979853043fe9391f25" kindref="member">MLMediaRecorderOutputFormat_WEBM</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="163" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca22cb194381fab9642a6392ad7197cfc9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca22cb194381fab9642a6392ad7197cfc9" kindref="member">MLMediaRecorderOutputFormat_HEIF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="165" refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca5b5f8556f0e9d8bf8a8b24cb5b89f1b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1aca5b5f8556f0e9d8bf8a8b24cb5b89f1b5" kindref="member">MLMediaRecorderOutputFormat_OGG</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1ggad3bad446d7bd29df80f2eaff6f17c1acaf56f492bf6f5c95244936520c4759785" kindref="member">MLMediaRecorderOutputFormat_Ensure32Bits</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="168" refid="group___media_recorder_1ga5e5590f14981f10db28684c90862f1dd" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" kindref="member">MLMediaRecorderOutputFormat</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" kindref="member">MLMediaRecorderVideoEncoder</ref><sp/>{</highlight></codeline>
+<codeline lineno="171" refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83cae58288f09c1aa78842e8a45937e16c21" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83cae58288f09c1aa78842e8a45937e16c21" kindref="member">MLMediaRecorderVideoEncoder_Default</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="173" refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca8c1a5b4d781c36c7bf58e24368791767" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca8c1a5b4d781c36c7bf58e24368791767" kindref="member">MLMediaRecorderVideoEncoder_H263</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="175" refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83cabc8bc2f4a5a551563d086476d053e24f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83cabc8bc2f4a5a551563d086476d053e24f" kindref="member">MLMediaRecorderVideoEncoder_H264</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="177" refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca227f97a8d6c96d6fa51a438e2793675f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca227f97a8d6c96d6fa51a438e2793675f" kindref="member">MLMediaRecorderVideoEncoder_MPEG_4_SP</ref><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="179" refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca3597f8815f9ed030bd2aa82bae1b4217" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca3597f8815f9ed030bd2aa82bae1b4217" kindref="member">MLMediaRecorderVideoEncoder_VP8</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="181" refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca29794cef5626b6500ebf30d32ee01446" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca29794cef5626b6500ebf30d32ee01446" kindref="member">MLMediaRecorderVideoEncoder_HEVC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga8f9ec6130a89d1d8f1a1913e8637b83ca4cae39eb387917bbd86020b02e65268f" kindref="member">MLMediaRecorderVideoEncoder_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="184" refid="group___media_recorder_1ga99bc39fa0b04433660c7b6a6a732a140" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" kindref="member">MLMediaRecorderVideoEncoder</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" kindref="member">MLMediaRecorderAudioEncoder</ref><sp/>{</highlight></codeline>
+<codeline lineno="187" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3aee0952a4184be6b950ced84038d2f253" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3aee0952a4184be6b950ced84038d2f253" kindref="member">MLMediaRecorderAudioEncoder_Default</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="189" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a49675f27d5ffc3b58320280c4a8128b7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a49675f27d5ffc3b58320280c4a8128b7" kindref="member">MLMediaRecorderAudioEncoder_AMR_NB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="191" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a774a3053eefe1029eb8434b1c7ba1895" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a774a3053eefe1029eb8434b1c7ba1895" kindref="member">MLMediaRecorderAudioEncoder_AMR_WB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="193" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3aa64082903af810b5e6338d5b49000fff" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3aa64082903af810b5e6338d5b49000fff" kindref="member">MLMediaRecorderAudioEncoder_AAC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="195" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a98d072d1265de8485440b7b782d929eb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a98d072d1265de8485440b7b782d929eb" kindref="member">MLMediaRecorderAudioEncoder_HE_AAC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="197" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a5e72f28783b5dd4cd210b6e04be1c1f3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a5e72f28783b5dd4cd210b6e04be1c1f3" kindref="member">MLMediaRecorderAudioEncoder_AAC_ELD</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="199" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a248353d3117f3f189c2030bf7aab1897" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a248353d3117f3f189c2030bf7aab1897" kindref="member">MLMediaRecorderAudioEncoder_VORBIS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="201" refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a759584246000e8d8e7534358d317b39c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a759584246000e8d8e7534358d317b39c" kindref="member">MLMediaRecorderAudioEncoder_OPUS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga88c190785ff3bccec6b3f3ee45f6abc3a38db79bbcaaea2a67810ae7d6ddd9407" kindref="member">MLMediaRecorderAudioEncoder_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="204" refid="group___media_recorder_1ga02041c805ff79e25b48a24b71e2cfc1a" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" kindref="member">MLMediaRecorderAudioEncoder</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>void<sp/>(*on_info)(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gad77ce2af3b412c68fc1ddb2a11eade3d" kindref="member">MLMediaRecorderOnInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>void<sp/>(*on_track_info)(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gad77ce2af3b412c68fc1ddb2a11eade3d" kindref="member">MLMediaRecorderOnInfo</ref><sp/>*<ref refid="group___media_player_1gad6a848e72c8e35b810419eb4868686de" kindref="member">track_info</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>void<sp/>(*on_error)(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gaf5a7384e5c9ba9e7e3902d567b3ec972" kindref="member">MLMediaRecorderOnError</ref><sp/>*error);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>void<sp/>(*on_track_error)(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gaf5a7384e5c9ba9e7e3902d567b3ec972" kindref="member">MLMediaRecorderOnError</ref><sp/>*track_error);</highlight></codeline>
+<codeline lineno="237" refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="group___media_recorder_1gace874e782c1325c3d6b7fbf741a3efba" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gace874e782c1325c3d6b7fbf741a3efba" kindref="member">MLMediaRecorderEventCallbacksInit</ref>(<ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref><sp/>*inout_callbacks)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_callbacks)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;version<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;on_info<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;on_error<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;on_track_error<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;on_track_info<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderCreate(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderDestroy(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="307" refid="group___media_recorder_1ga4a05f54831975728fbdcadcb6fc4d40e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetOutputFileForFD(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>int32_t<sp/><ref refid="group___media_recorder_1ga4a05f54831975728fbdcadcb6fc4d40e" kindref="member">fd</ref>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="328" refid="group___media_recorder_1ga3b02c6de5c049804444a246f7fdf46b4" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetOutputFileForPath(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1ga3b02c6de5c049804444a246f7fdf46b4" kindref="member">path</ref>);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="349" refid="group___media_recorder_1ga88abffa90e6d32bd53e728c37c632a4c" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetEventCallbacks(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>const<sp/><ref refid="group___media_recorder_1ga2743bf11951e299b083b8f4ed17aeb06" kindref="member">MLMediaRecorderEventCallbacks</ref><sp/>*<ref refid="group___media_recorder_1ga88abffa90e6d32bd53e728c37c632a4c" kindref="member">callbacks</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1ga9bd0511d311dcc498952d6ec5ae49b05" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="370" refid="group___media_recorder_1ga513d96f555c042c8cf8538b8292cec80" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetVideoSource(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___media_recorder_1ga401d2abb3b54f2263f06638d0862815a" kindref="member">MLMediaRecorderVideoSource</ref><sp/><ref refid="group___media_recorder_1ga513d96f555c042c8cf8538b8292cec80" kindref="member">in_video_source</ref>);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="391" refid="group___media_recorder_1ga3ac27a5c81c004de2cff9f6d6367dfc9" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetAudioSource(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___media_recorder_1ga275f281fb2df2a94cf685e18b24346e3" kindref="member">MLMediaRecorderAudioSource</ref><sp/><ref refid="group___media_recorder_1ga3ac27a5c81c004de2cff9f6d6367dfc9" kindref="member">in_audio_source</ref>);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="410" refid="group___media_recorder_1ga62397351ba536121aa80ab3ad3f27ee9" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetOutputFormat(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___media_recorder_1gad3bad446d7bd29df80f2eaff6f17c1ac" kindref="member">MLMediaRecorderOutputFormat</ref><sp/><ref refid="group___media_recorder_1ga62397351ba536121aa80ab3ad3f27ee9" kindref="member">in_format</ref>);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="435" refid="group___media_recorder_1gaad8354864a52746f37fe7cafab95422a" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetVideoEncoder(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___media_recorder_1ga8f9ec6130a89d1d8f1a1913e8637b83c" kindref="member">MLMediaRecorderVideoEncoder</ref><sp/><ref refid="group___media_recorder_1gaad8354864a52746f37fe7cafab95422a" kindref="member">in_video_encoder</ref>);</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="457" refid="group___media_recorder_1gaf23925238af9bb2b97302453b26db513" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetAudioEncoder(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___media_recorder_1ga88c190785ff3bccec6b3f3ee45f6abc3" kindref="member">MLMediaRecorderAudioEncoder</ref><sp/><ref refid="group___media_recorder_1gaf23925238af9bb2b97302453b26db513" kindref="member">in_audio_encoder</ref>);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="483" refid="group___media_recorder_1ga0c305e01c7d11085f73316d40b6acb7d" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetMaxDuration(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>int32_t<sp/><ref refid="group___media_recorder_1ga0c305e01c7d11085f73316d40b6acb7d" kindref="member">in_max_duration_msec</ref>);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="509" refid="group___media_recorder_1gab953baf9d7bb5cd2a8303bd91446f0ae" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetMaxFileSize(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>int64_t<sp/><ref refid="group___media_recorder_1gab953baf9d7bb5cd2a8303bd91446f0ae" kindref="member">in_max_file_size</ref>);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="529" refid="group___media_recorder_1gad0f185d2bf9b084b8cda9df9c2d70782" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderSetGeoLocation(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>int64_t<sp/><ref refid="group___media_recorder_1gad0f185d2bf9b084b8cda9df9c2d70782" kindref="member">in_latitude10000</ref>,<sp/>int64_t<sp/><ref refid="group___media_recorder_1gaaabf20cc8ebaa437c6afcbf2903b5c4c" kindref="member">in_longitude10000</ref>);</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="567" refid="group___media_recorder_1ga701d4c69a2747ecf4a81593e83754d1a" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderPrepare(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___media_recorder_1ga701d4c69a2747ecf4a81593e83754d1a" kindref="member">format</ref>);</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderStart(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="619" refid="group___media_recorder_1gacd8d6a6a81a05a16862618b7a29db53f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderGetInputSurface(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___media_recorder_1gacd8d6a6a81a05a16862618b7a29db53f" kindref="member">out_input_surface_handle</ref>);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="640" refid="group___media_recorder_1gade610b0a733f52e82abd3a97087d6359" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderGetMaxAmplitude(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/>int32_t<sp/>*<ref refid="group___media_recorder_1gade610b0a733f52e82abd3a97087d6359" kindref="member">inout_max_amp</ref>);</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderStop(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder);</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="681" refid="group___media_recorder_1ga05498622634c1af8a5b0a5f0afdf6b73" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderReleaseInputSurface(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___media_recorder_1ga05498622634c1af8a5b0a5f0afdf6b73" kindref="member">input_surface_handle</ref>);</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaRecorderReset(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_recorder);</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h"/>
+  </compounddef>
+</doxygen>

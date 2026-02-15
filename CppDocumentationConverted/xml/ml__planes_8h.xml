@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__planes_8h" kind="file" language="C++">
+    <compoundname>ml_planes.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h</label>
+        <link refid="ml__planes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLPlanesQueryFlags</name>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea0e1f1b8b6bd225083fd6398b92bffbd7" prot="public">
+          <name>MLPlanesQueryFlag_Vertical</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes whose normal is perpendicular to gravity. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea60b55e7e846213aa7a4bdcea05917d62" prot="public">
+          <name>MLPlanesQueryFlag_Horizontal</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes whose normal is parallel to gravity. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eead2345dd555c0d0587fbfef3d575d76c6" prot="public">
+          <name>MLPlanesQueryFlag_Arbitrary</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes with arbitrary normals. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa6fc64fb64939159ce9075ab9495a74a" prot="public">
+          <name>MLPlanesQueryFlag_AllOrientations</name>
+          <initializer>= MLPlanesQueryFlag_Vertical |
+                                       MLPlanesQueryFlag_Horizontal |
+                                       MLPlanesQueryFlag_Arbitrary</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include all plane orientations. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa8c99e029ad1a15c72597546e8f4d1a0" prot="public">
+          <name>MLPlanesQueryFlag_OrientToGravity</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>For non-horizontal planes, setting this flag will result in the top of the plane rectangle being perpendicular to gravity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea3ab38887babe9a4b625837cae39a5594" prot="public">
+          <name>MLPlanesQueryFlag_Inner</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>If this flag is set, inner planes will be returned; if it is not set, outer planes will be returned. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea19e986a3f2282eb345ec33aca954a0a9" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_Ceiling</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes semantically tagged as ceiling. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea310257726f108387fd8c430219aac835" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_Floor</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes semantically tagged as floor. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea22d1746a12c90914092288e2b4e3a909" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_Wall</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes semantically tagged as wall. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea43a95995b61b03911143121bdcab6ecb" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_All</name>
+          <initializer>= MLPlanesQueryFlag_Semantic_Ceiling |
+                                       MLPlanesQueryFlag_Semantic_Floor |
+                                       MLPlanesQueryFlag_Semantic_Wall</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include all planes that are semantically tagged. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea27dd0e7f9145e6e040d9c713338bb8dd" prot="public">
+          <name>MLPlanesQueryFlag_Polygons</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+<para>Include polygonal planes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When this flag is set:</para>
+<para><itemizedlist>
+<listitem><para>MLPlanesQueryGetResultsWithBoundaries returns polygons along with other applicable rectangular planes. MLPlanesReleaseBoundariesList MUST be called before the next call to MLPlanesQueryGetResultsWithBoundaries, otherwise UnspecifiedFailure will be returned.</para>
+</listitem></itemizedlist>
+</para>
+<para>When this flag is not set:</para>
+<para><itemizedlist>
+<listitem><para>MLPlanesQueryGetResultsWithBoundaries returns just rectangular planes. No need to call MLPlanesReleaseBoundariesList.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea55f603fb2a0a028048df1d462ac9b617" prot="public">
+          <name>MLPlanesQueryFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control flags for plane queries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="33" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="33" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___planes_1ga3d1fa8e56a2fb1ca58e6ffba7bd021e4" prot="public" static="no">
+        <type>enum <ref refid="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" kindref="member">MLPlanesQueryFlags</ref></type>
+        <definition>typedef enum MLPlanesQueryFlags MLPlanesQueryFlags</definition>
+        <argsstring></argsstring>
+        <name>MLPlanesQueryFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control flags for plane queries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="84" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlane</definition>
+        <argsstring></argsstring>
+        <name>MLPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="105" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPolygon</definition>
+        <argsstring></argsstring>
+        <name>MLPolygon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="119" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gac04c4217032fcdd850e1f9c5f1c449d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlaneBoundary</definition>
+        <argsstring></argsstring>
+        <name>MLPlaneBoundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="134" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlaneBoundaries</definition>
+        <argsstring></argsstring>
+        <name>MLPlaneBoundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="149" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlaneBoundariesList</definition>
+        <argsstring></argsstring>
+        <name>MLPlaneBoundariesList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="171" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga50791a10a1791be810696d83645d5381" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlanesQuery</definition>
+        <argsstring></argsstring>
+        <name>MLPlanesQuery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="227" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga1aad2db0af5f1cde3b8ecf0128a35bb7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref> *</type>
+        <definition>const MLPlanesQuery* query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="287" column="30" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gab62413291ac149ca04bd6cdde3a68eea" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref> <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+        <definition>const MLPlanesQuery MLHandle* out_handle</definition>
+        <argsstring></argsstring>
+        <name>out_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="287" column="45" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga328cd4774644d87f0ff6a740999e85ff" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle planes_query</definition>
+        <argsstring></argsstring>
+        <name>planes_query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gafee686fa7a96fa061e838a9d9354423c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> *</type>
+        <definition>MLHandle MLPlane* out_results</definition>
+        <argsstring></argsstring>
+        <name>out_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="40" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga8b7158805ea8b40d78609117b265b1aa" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> uint32_t *</type>
+        <definition>MLHandle MLPlane uint32_t* out_num_results</definition>
+        <argsstring></argsstring>
+        <name>out_num_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="61" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gaf1d315c2fdea072bc4a2e1732147b2d3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> uint32_t <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> *</type>
+        <definition>MLHandle MLPlane uint32_t MLPlaneBoundariesList* out_boundaries</definition>
+        <argsstring></argsstring>
+        <name>out_boundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="99" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga80c83d7e9664b7c268d2c97fdc381e1f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> *</type>
+        <definition>MLPlaneBoundariesList* plane_boundaries</definition>
+        <argsstring></argsstring>
+        <name>plane_boundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="333" column="32" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___planes_1ga3a857120d906c95607210d9f869b43fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))) struct MLPolygon</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Coplanar connected line segments representing the outer boundary of a polygon, an <emphasis>n</emphasis>-sided polygon where <emphasis>n</emphasis> is the number of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Releases the polygons data owned by the <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref>. Also, check MLPlanesQueryFlag_Polygons description for this API&apos;s further behavior.</para>
+<para>Gets the result of a plane query with boundaries on each plane. After this function has returned successfully, the handle is invalid and should be discarded. Also check MLPlanesQueryFlag_Polygons description for this API&apos;s further behavior.</para>
+<para>Initiates a plane query.</para>
+<para>Destroys a planes tracker.</para>
+<para>Creates a planes tracker.</para>
+<para>Type used to represent a plane query.</para>
+<para>Initializes an MLPlaneBoundariesList structure.</para>
+<para>Type to represent polygons of all returned planes.</para>
+<para>Type to represent multiple regions on a 2D plane.</para>
+<para>Type used to represent a region boundary on a 2D plane.</para>
+<para>A plane with width and height.</para>
+<para><xrefsect id="deprecated_1_deprecated000534"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000535"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000536"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000537"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000538"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_boundaries_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> structure which is initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000625"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000539"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000540"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle to the planes tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create planes tracker due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created planes tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create planes tracker due to an unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000626"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000541"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to planes tracker to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed planes tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000627"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000542"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>One of the following flags must be set for the query to be considered valid:<itemizedlist>
+<listitem><para>MLPlanesQueryFlag_Vertical flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Horizontal flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Arbitrary flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Semantic_Ceiling flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Semantic_Floor flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Semantic_Wall flag.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref> structure containing query parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle to the query. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to initiate plane query due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully initiated plane query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000628"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000543"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesQueryBegin(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> structures. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_num_results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The count of results pointed to by out_results. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_boundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> for the returned polygons. If out_boundaries is NULL, the function call will not return any polygons, otherwise *out_boundaries must be zero initialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully completed query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Query completion is pending. This is not a failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Query timed out due to unknown reason. Make a new query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to complete query due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000629"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000544"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">plane_boundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polygons pointer to the #MLPlaneBoundariessList.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to release memory due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released memory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000630"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Plane center.</para>
+<para>Plane rotation.</para>
+<para>Plane width.</para>
+<para>Plane height.</para>
+<para>Flags which describe this plane.</para>
+<para>Plane ID. All inner planes within an outer plane will have the same ID (outer plane&apos;s ID). These IDs are persistent across plane queries unless a map merge occurs. On a map merge, IDs could be different.</para>
+<para>Vertices of all line segments.</para>
+<para>Number of vertices.</para>
+<para>The polygon that defines the region, the boundary vertices in MLPolygon will be in CCW order.</para>
+<para>A polygon may contains multiple holes, the boundary vertices in MLPolygon will be in CW order.</para>
+<para>Count of the holes.</para>
+<para>Plane ID, the same value associating to the ID in <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> if they belong to the same plane.</para>
+<para>The boundaries in a plane.</para>
+<para>Count of boundaries. A plane may contain multiple boundaries each of which defines a region.</para>
+<para>List of <ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+Count of <ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref> in the array.</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+The flags to apply to this query.</para>
+<para>The center of the bounding box which defines where planes extraction should occur.</para>
+<para>The rotation of the bounding box where planes extraction will occur.</para>
+<para>The size of the bounding box where planes extraction will occur. Only planes within 10 meters of the device will be extracted. The maximum value is 20 meters in each direction. A value of (0, 0, 0) will be treated as (20, 20, 20).</para>
+<para>The maximum number of results that should be returned. This is also the minimum expected size of the array of results passed to the MLPlanesGetResult function. In the case where the number of rectangular planes exceed this value, only the largest max_results planes will be returned. This can cause the number of polygons returned to be smaller than max_results, as there can be multiple inner planes per planar surface but only one polygon, and if the rectangular plane of a planar surface is not being returned because max_results have been reached, the corresponding polygon won&apos;t be returned.</para>
+<para>The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). A good default value is 0.25.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="87" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="87" bodyend="105" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" declline="258" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" kindref="member">MLPlanesQueryFlags</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea0e1f1b8b6bd225083fd6398b92bffbd7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea0e1f1b8b6bd225083fd6398b92bffbd7" kindref="member">MLPlanesQueryFlag_Vertical</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="37" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea60b55e7e846213aa7a4bdcea05917d62" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea60b55e7e846213aa7a4bdcea05917d62" kindref="member">MLPlanesQueryFlag_Horizontal</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="39" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eead2345dd555c0d0587fbfef3d575d76c6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eead2345dd555c0d0587fbfef3d575d76c6" kindref="member">MLPlanesQueryFlag_Arbitrary</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa6fc64fb64939159ce9075ab9495a74a" kindref="member">MLPlanesQueryFlag_AllOrientations</ref><sp/><sp/>=<sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea0e1f1b8b6bd225083fd6398b92bffbd7" kindref="member">MLPlanesQueryFlag_Vertical</ref><sp/>|</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea60b55e7e846213aa7a4bdcea05917d62" kindref="member">MLPlanesQueryFlag_Horizontal</ref><sp/>|</highlight></codeline>
+<codeline lineno="43" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa6fc64fb64939159ce9075ab9495a74a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eead2345dd555c0d0587fbfef3d575d76c6" kindref="member">MLPlanesQueryFlag_Arbitrary</ref>,</highlight></codeline>
+<codeline lineno="48" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa8c99e029ad1a15c72597546e8f4d1a0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa8c99e029ad1a15c72597546e8f4d1a0" kindref="member">MLPlanesQueryFlag_OrientToGravity</ref><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="53" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea3ab38887babe9a4b625837cae39a5594" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea3ab38887babe9a4b625837cae39a5594" kindref="member">MLPlanesQueryFlag_Inner</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="55" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea19e986a3f2282eb345ec33aca954a0a9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea19e986a3f2282eb345ec33aca954a0a9" kindref="member">MLPlanesQueryFlag_Semantic_Ceiling</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>6,</highlight></codeline>
+<codeline lineno="57" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea310257726f108387fd8c430219aac835" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea310257726f108387fd8c430219aac835" kindref="member">MLPlanesQueryFlag_Semantic_Floor</ref><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>7,</highlight></codeline>
+<codeline lineno="59" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea22d1746a12c90914092288e2b4e3a909" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea22d1746a12c90914092288e2b4e3a909" kindref="member">MLPlanesQueryFlag_Semantic_Wall</ref><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>8,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea43a95995b61b03911143121bdcab6ecb" kindref="member">MLPlanesQueryFlag_Semantic_All</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea19e986a3f2282eb345ec33aca954a0a9" kindref="member">MLPlanesQueryFlag_Semantic_Ceiling</ref><sp/>|</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea310257726f108387fd8c430219aac835" kindref="member">MLPlanesQueryFlag_Semantic_Floor</ref><sp/>|</highlight></codeline>
+<codeline lineno="63" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea43a95995b61b03911143121bdcab6ecb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea22d1746a12c90914092288e2b4e3a909" kindref="member">MLPlanesQueryFlag_Semantic_Wall</ref>,</highlight></codeline>
+<codeline lineno="81" refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea27dd0e7f9145e6e040d9c713338bb8dd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea27dd0e7f9145e6e040d9c713338bb8dd" kindref="member">MLPlanesQueryFlag_Polygons</ref><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>9,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea55f603fb2a0a028048df1d462ac9b617" kindref="member">MLPlanesQueryFlags_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="84" refid="group___planes_1ga3d1fa8e56a2fb1ca58e6ffba7bd021e4" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" kindref="member">MLPlanesQueryFlags</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="group___planes_1ga3a857120d906c95607210d9f869b43fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>position;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref><sp/>rotation;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1ga2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gadc7b4b8a6ef510e136071efbc9cd9a58" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="group___media_player_1gace6a61fd33b9fb0bbf1fd9b6418c0731" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___media_player_1ga3670f4bed50c88882ceba330ffeb095c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="105" refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" kindref="member">MLPolygon</ref><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>*vertices;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>uint32_t<sp/>vertices_count;</highlight></codeline>
+<codeline lineno="119" refid="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" kindref="member">MLPolygon</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___planes_1gac04c4217032fcdd850e1f9c5f1c449d5" kindref="member">MLPlaneBoundary</ref><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" kindref="member">MLPolygon</ref><sp/>*polygon;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" kindref="member">MLPolygon</ref><sp/>*holes;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>uint32_t<sp/>holes_count;</highlight></codeline>
+<codeline lineno="134" refid="group___planes_1gac04c4217032fcdd850e1f9c5f1c449d5" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1gac04c4217032fcdd850e1f9c5f1c449d5" kindref="member">MLPlaneBoundary</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___media_player_1ga3670f4bed50c88882ceba330ffeb095c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1gac04c4217032fcdd850e1f9c5f1c449d5" kindref="member">MLPlaneBoundary</ref><sp/>*boundaries;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>uint32_t<sp/>boundaries_count;</highlight></codeline>
+<codeline lineno="149" refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref><sp/>*<ref refid="group___planes_1ga80c83d7e9664b7c268d2c97fdc381e1f" kindref="member">plane_boundaries</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>uint32_t<sp/>plane_boundaries_count;</highlight></codeline>
+<codeline lineno="171" refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MLPlaneBoundariesListInit(<ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref><sp/>*inout_boundaries_list)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>inout_boundaries_list-&gt;version<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>inout_boundaries_list-&gt;plane_boundaries<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>inout_boundaries_list-&gt;plane_boundaries_count<sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="group___media_player_1gace6a61fd33b9fb0bbf1fd9b6418c0731" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>bounds_center;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref><sp/>bounds_rotation;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>bounds_extents;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>uint32_t<sp/>max_results;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_plane_area;</highlight></codeline>
+<codeline lineno="227" refid="group___planes_1ga50791a10a1791be810696d83645d5381" refkind="member"><highlight class="normal">}<sp/><ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLPlanesCreate(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___planes_1gab62413291ac149ca04bd6cdde3a68eea" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLPlanesDestroy(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>planes_tracker);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;)</highlight></codeline>
+<codeline lineno="287" refid="group___planes_1gab62413291ac149ca04bd6cdde3a68eea" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLPlanesQueryBegin(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>planes_tracker,<sp/>const<sp/><ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref><sp/>*<ref refid="group___planes_1ga1aad2db0af5f1cde3b8ecf0128a35bb7" kindref="member">query</ref>,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___planes_1gab62413291ac149ca04bd6cdde3a68eea" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;)</highlight></codeline>
+<codeline lineno="314" refid="group___planes_1gaf1d315c2fdea072bc4a2e1732147b2d3" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLPlanesQueryGetResultsWithBoundaries(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>planes_tracker,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___planes_1ga328cd4774644d87f0ff6a740999e85ff" kindref="member">planes_query</ref>,<sp/><ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref><sp/>*<ref refid="group___planes_1gafee686fa7a96fa061e838a9d9354423c" kindref="member">out_results</ref>,<sp/>uint32_t<sp/>*<ref refid="group___planes_1ga8b7158805ea8b40d78609117b265b1aa" kindref="member">out_num_results</ref>,<sp/><ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref><sp/>*<ref refid="group___planes_1gaf1d315c2fdea072bc4a2e1732147b2d3" kindref="member">out_boundaries</ref>);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>XR_EXT_plane_detection<sp/>OpenXR<sp/>extention.&quot;)</highlight></codeline>
+<codeline lineno="333" refid="group___planes_1ga80c83d7e9664b7c268d2c97fdc381e1f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLPlanesReleaseBoundariesList(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>planes_tracker,<sp/><ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref><sp/>*<ref refid="group___planes_1ga80c83d7e9664b7c268d2c97fdc381e1f" kindref="member">plane_boundaries</ref>);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h"/>
+  </compounddef>
+</doxygen>

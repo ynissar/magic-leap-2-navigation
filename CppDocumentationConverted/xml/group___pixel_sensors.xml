@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___pixel_sensors" kind="group">
+    <compoundname>PixelSensors</compoundname>
+    <title>Pixel Sensors</title>
+    <innergroup refid="group___d_cam">Depth Camera</innergroup>
+    <innergroup refid="group___e_cam">Eye Camera</innergroup>
+    <innergroup refid="group___w_cam">World Camera</innergroup>
+    <briefdescription>
+<para>APIs to access pixel sensors data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

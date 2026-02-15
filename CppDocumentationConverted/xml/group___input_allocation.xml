@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___input_allocation" kind="group">
+    <compoundname>InputAllocation</compoundname>
+    <title>Allocation</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___input_allocation_1gac42552ba225847fda65163a6d16cb719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioCreateInputFromMicCapture</definition>
+        <argsstring>(MLAudioMicCaptureType mic_capture_type, const MLAudioBufferFormat *format, uint32_t buffer_size_in_bytes, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</argsstring>
+        <name>MLAudioCreateInputFromMicCapture</name>
+        <param>
+          <type><ref refid="group___audio_defs_1gafe7c4c8100eeea232e42cf1d9a289c73" kindref="member">MLAudioMicCaptureType</ref></type>
+          <declname>mic_capture_type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>buffer_size_in_bytes</declname>
+        </param>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga2a3527d903d9e8c4911d76f0432a0e10" kindref="member">MLAudioBufferCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new sound input that provides audio from the wearable microphones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The various mic capture streams represent different configurations of the input from the wearable microphones, intended for different purposes. The &apos;format&apos; argument must be populated with the correct settings for the mic capture type being requested:</para>
+<para>MLAudioMicCaptureType_VoiceComm is intended for remote communications, and uses a channel count of 1 and a sample rate of 16,000.</para>
+<para>MLAudioMicCaptureType_VoiceCapture is intended for device-local applications involving user voice, and uses a channel count of 1 and a sample rate of 48,000.</para>
+<para>MLAudioMicCaptureType_WorldCapture provides a stereo capture of the user&apos;s physical environment, and uses a channel count of 2 and a sample rate of 48,000.</para>
+<para>MLAudioMicCaptureType_RawMicsAndAECRef provides a 6-channel capture comprising all 4 mics (unprocessed) plus the AEC reference signal from the amplifier, and uses a channel count of 6 and a sample rate of 48,000.</para>
+<para>After creation, the input is started by calling MLAudioStartInput. After the input has been started, the next available full buffer is retrieved by calling MLAudioGetInputBuffer. This can be done on a polling basis, or a callback can be set using the &apos;callback&apos; argument of the present function to notify when a buffer is available. After retrieving and consuming the next available buffer, MLAudioReleaseInputBuffer must be called to indicate that the buffer has been consumed and is ready to be refilled. MLAudioGetInputBuffer and MLAudioReleaseInputBuffer are valid to call within the callback. The &apos;buffer_size&apos; argument will use the recommended size if 0 is passed in.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mic_capture_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLAudioMicCaptureType enum specifying the type of mic capture created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> struct specifying the format properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested size in bytes for each of the two stream buffers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to be used in subsequent calls.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created a sound input. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to lack of permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBitsPerSample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid buffer size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidChannelCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid channel count. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidValidBits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid valid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000091"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2995" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2995" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_allocation_1ga3430b86b2f2b30ff549c1814c530a077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioCreateInputFromVirtualCapture</definition>
+        <argsstring>(const MLAudioBufferFormat *format, uint32_t buffer_size, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</argsstring>
+        <name>MLAudioCreateInputFromVirtualCapture</name>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga2a3527d903d9e8c4911d76f0432a0e10" kindref="member">MLAudioBufferCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new sound input that provides a virtual capture stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Virtual Capture stream is a stereo stream capturing the combined audio output mix of the capture-eligible sounds (typically app-generated) currently being played by the audio rendering engine. The &apos;format&apos; argument must be populated with the correct settings for virtual capture, which uses a channel count of 2 and a sample rate of 48,000.</para>
+<para>After creation, the input is started by calling MLAudioStartInput. After the input has been started, the next available full buffer is retrieved by calling MLAudioGetInputBuffer. This can be done on a polling basis, or a callback can be set using the &apos;callback&apos; argument of the present function to notify when a buffer is available. After retrieving and consuming the next available buffer, MLAudioReleaseInputBuffer must be called to indicate that the buffer has been consumed and is ready to be refilled. MLAudioGetInputBuffer and MLAudioReleaseInputBuffer are valid to call within the callback. The &apos;buffer_size&apos; argument will use the recommended size if 0 is passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> struct specifying the format properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested size in bytes of the buffers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to be used in subsequent calls.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created sound input. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to lack of permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBitsPerSample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid buffer size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidChannelCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid channel count. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidValidBits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid valid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000092"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="3036" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="3036" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_allocation_1ga0ba4afe1cb3144b6ada4ebce8ef1430b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioCreateInputFromMixedCapture</definition>
+        <argsstring>(const MLAudioBufferFormat *format, uint32_t buffer_size, MLAudioBufferCallback callback, void *context, MLHandle *out_handle)</argsstring>
+        <name>MLAudioCreateInputFromMixedCapture</name>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type><ref refid="group___def_callbacks_1ga2a3527d903d9e8c4911d76f0432a0e10" kindref="member">MLAudioBufferCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new sound input that provides a mixed capture stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mixed Capture stream is intended for capturing the audible user experience, including both sounds from the physical environment and sounds produced by the device. The stream includes a mix of the &apos;Virtual Capture&apos; stream, the MLAudioMicCaptureType_VoiceCapture stream, and the MLAudioMicCaptureType_WorldCapture stream. By default the World Capture stream is silent and the other two streams are full volume. These levels can be adjusted by calling MLAudioSetMixedCaptureMix. Independent of the specified MixedCaptureMix, the Voice Capture and World Capture mic signals are scaled on a curve based on the current setting of Master Volume to keep the real and virtual signals in good balance. The Mixed Capture stream uses a channel count of 2 and a sample rate of 48,000.</para>
+<para>After creation, the input is started by calling MLAudioStartInput. After the input has been started, the next available full buffer is retrieved by calling MLAudioGetInputBuffer. This can be done on a polling basis, or a callback can be set using the &apos;callback&apos; argument of the present function to notify when a buffer is available. After retrieving and consuming the next available buffer, MLAudioReleaseInputBuffer must be called to indicate that the buffer has been consumed and is ready to be refilled. MLAudioGetInputBuffer and MLAudioReleaseInputBuffer are valid to call within the callback. The &apos;buffer_size&apos; argument will use the recommended size if 0 is passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> struct specifying the format properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested size in bytes of the buffers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic data pointer passed back through the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to be used in subsequent calls.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to memory allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created sound input. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to lack of permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBitsPerSample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidBufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid buffer size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidChannelCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid channel count. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidValidBits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid valid bits per sample. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000093"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>android.permission.RECORD_AUDIO (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="3082" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="3082" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_allocation_1gaccef2b0b7deb18847b9e5bdbb58d3469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioDestroyInput</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLAudioDestroyInput</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a sound input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound input.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed a sound input. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000094"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="3096" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="3096" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ALLOCATION. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

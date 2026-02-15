@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_dispersion_properties" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioDispersionProperties</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1ga3d779fd7d3200ca3c78f194cd24946b6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref></type>
+        <definition>MLAudioMultibandLevel MLAudioDispersionProperties::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dispersion output mix level. Range is [0, 0, 0, 0] to [8, 2, 2, 2]. Default is [0.25, 1, 1, 1]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="229" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga0e063c570a676230493d103a1f082fc7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioDispersionProperties::pre_delay</definition>
+        <argsstring></argsstring>
+        <name>pre_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delay (secs) from direct sound to earliest reflection cluster onset. Must be &lt;= reverb pre_delay. Range is 0.005 to 0.1. Default is 0.01. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="231" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties specifying acoustic dispersion (clustered reflections). </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLAudioMultibandLevel</label>
+        <link refid="struct_m_l_audio_multiband_level"/>
+      </node>
+      <node id="1">
+        <label>MLAudioDispersionProperties</label>
+        <link refid="struct_m_l_audio_dispersion_properties"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gain</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="227" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="227" bodyend="232"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1ga3d779fd7d3200ca3c78f194cd24946b6" prot="public" virt="non-virtual"><scope>MLAudioDispersionProperties</scope><name>gain</name></member>
+      <member refid="group___audio_defs_1ga0e063c570a676230493d103a1f082fc7" prot="public" virt="non-virtual"><scope>MLAudioDispersionProperties</scope><name>pre_delay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

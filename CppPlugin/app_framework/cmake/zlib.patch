@@ -1,0 +1,13 @@
+diff -ur zlib-orig/CMakeLists.txt zlib/CMakeLists.txt
+--- zlib-orig/CMakeLists.txt	2022-03-01 14:14:37.760866596 -0500
++++ zlib/CMakeLists.txt	2022-03-01 14:14:49.540771270 -0500
+@@ -226,6 +226,9 @@
+     install(FILES ${ZLIB_PC} DESTINATION "${INSTALL_PKGCONFIG_DIR}")
+ endif()
+
++target_include_directories(zlib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR})
++target_include_directories(zlibstatic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR})
++
+ #============================================================================
+ # Example binaries
+ #============================================================================

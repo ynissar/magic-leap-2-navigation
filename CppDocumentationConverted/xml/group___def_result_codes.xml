@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_result_codes" kind="group">
+    <compoundname>DefResultCodes</compoundname>
+    <title>Result Codes</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___def_result_codes_1gabc6126af1d45847bc59afa0aa3216b04" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@3</name>
+        <enumvalue id="group___def_result_codes_1ggabc6126af1d45847bc59afa0aa3216b04a1d42ccdda1bfa07a2514241b91db7ac0" prot="public">
+          <name>MLResultAPIPrefix_Audio</name>
+          <initializer>= ( 0x9e11  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLAudioResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="469" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="469" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___def_result_codes_1ga76589cc22538e22b54ea99bb79688a64" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioResult</name>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64aaaf2ebd6d30d77b9df56829d18028002" prot="public">
+          <name>MLAudioResult_NotImplemented</name>
+          <initializer>= MLResultAPIPrefix_Audio</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Function not implemented. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a002978bd8faeb4ce2a375d07a4b653ea" prot="public">
+          <name>MLAudioResult_HandleNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Not a valid MLHandle for a sound or input. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a8ff47e35989a364d9807545e8cd36f32" prot="public">
+          <name>MLAudioResult_InvalidSampleRate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample rate not supported. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a16eb63aefd67af3414bd3a9529730d41" prot="public">
+          <name>MLAudioResult_InvalidBitsPerSample</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bits per sample not supported. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a55b5e4ea4e2dee7f9ef82470c3b95c19" prot="public">
+          <name>MLAudioResult_InvalidValidBits</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid bits per sample not supported. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a5c863e8b9b7aded3c5aa5f18df3b181b" prot="public">
+          <name>MLAudioResult_InvalidSampleFormat</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample format not supported. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a64704c4c923f8e8f8360145d96e3de55" prot="public">
+          <name>MLAudioResult_InvalidChannelCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel count not supported. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a316669a6315cb0d4967f96fe1aada10d" prot="public">
+          <name>MLAudioResult_InvalidBufferSize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Buffer size too small. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a8b5b96125b88a7793d6a6e45afaa3bb1" prot="public">
+          <name>MLAudioResult_BufferNotReady</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Buffer not ready for read or write. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a9d2998a23f84a7313192429cdbf84a0a" prot="public">
+          <name>MLAudioResult_FileNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified file not found. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64a9455d6bce1f2778dd3f47a2b39298b3d" prot="public">
+          <name>MLAudioResult_FileNotRecognized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified file has unsupported format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64af66a6c768024c9c28982ea8df9cd0b66" prot="public">
+          <name>MLAudioResult_ResourceNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified resource is not on the list. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64ab15c407a18f2b9bde98ec58631d320d3" prot="public">
+          <name>MLAudioResult_ResourceDiscarded</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data was unloaded or file was closed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64ad189c45e93e807aa53b8aebbc1d1eaeb" prot="public">
+          <name>MLAudioResult_OperationUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Requested operation not possible for given item. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64aa9cabd59e45b2e73e2209e91049cb2d9" prot="public">
+          <name>MLAudioResult_OperationNotReady</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Requested operation has not yet been processed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64aaf534c00a9b4ad571f6c1f06ca210227" prot="public">
+          <name>MLAudioResult_InternalConfigError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Internal configuration problem was detected. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_result_codes_1gga76589cc22538e22b54ea99bb79688a64ac335c7ca870c6ccb449ea3057eda4b4e" prot="public">
+          <name>MLAudioResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return values for Audio Service API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="479" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="479" bodyend="514"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_result_codes_1ga7dd2cd315b4586d6c0f3878cdd02a1d5" prot="public" static="no">
+        <type>enum <ref refid="group___def_result_codes_1ga76589cc22538e22b54ea99bb79688a64" kindref="member">MLAudioResult</ref></type>
+        <definition>typedef enum MLAudioResult MLAudioResult</definition>
+        <argsstring></argsstring>
+        <name>MLAudioResult</name>
+        <briefdescription>
+<para>Return values for Audio Service API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="514" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___def_result_codes_1ga07474a59264ea1cb88707bd97005d7f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLAudioGetResultString</definition>
+        <argsstring>(MLResult result_code)</argsstring>
+        <name>MLAudioGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result_code</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for each result code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>MLResult and MLAudioResult codes are converted to more detailed descriptions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLResult to be converted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="525" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="525" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RESULT CODES. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

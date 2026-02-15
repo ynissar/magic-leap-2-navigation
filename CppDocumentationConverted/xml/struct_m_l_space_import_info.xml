@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_import_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceImportInfo</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_import_info_1a9c603ce1fbb29b44c4b58522b5928c8a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceImportInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="420" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_import_info_1aa2bac223c5bcfcd30a8a314135348b1d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t MLSpaceImportInfo::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Binary data size in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="422" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_import_info_1a63d4dd60535d54528d0729d21ec7121b" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MLSpaceImportInfo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Binary data obtained from <ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="424" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling <ref refid="group___space_1ga9802e8653b9eddae5b33a61233fde414" kindref="member">MLSpaceImportInfoInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="418" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="418" bodyend="425"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_import_info_1a63d4dd60535d54528d0729d21ec7121b" prot="public" virt="non-virtual"><scope>MLSpaceImportInfo</scope><name>data</name></member>
+      <member refid="struct_m_l_space_import_info_1aa2bac223c5bcfcd30a8a314135348b1d" prot="public" virt="non-virtual"><scope>MLSpaceImportInfo</scope><name>size</name></member>
+      <member refid="struct_m_l_space_import_info_1a9c603ce1fbb29b44c4b58522b5928c8a" prot="public" virt="non-virtual"><scope>MLSpaceImportInfo</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

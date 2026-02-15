@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__perception_8h" kind="file" language="C++">
+    <compoundname>ml_perception.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__snapshot_8h" local="yes">ml_snapshot.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="10">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</label>
+        <link refid="ml__perception_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_snapshot.h</label>
+        <link refid="ml__snapshot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_m_l_perception_settings" prot="public">MLPerceptionSettings</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___perception_1ga9b49dff9482ce3d0d37d84d45206c331" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref></type>
+        <definition>typedef struct MLPerceptionSettings MLPerceptionSettings</definition>
+        <argsstring></argsstring>
+        <name>MLPerceptionSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Settings for initializing the perception system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="32" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___perception_1ga4dbc63fcb5cee6e7a611c2112e72d344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPerceptionInitSettings</definition>
+        <argsstring>(MLPerceptionSettings *out_settings)</argsstring>
+        <name>MLPerceptionInitSettings</name>
+        <param>
+          <type><ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref> *</type>
+          <declname>out_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the perception system with the passed in settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initializes the perception system with these settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to initialize the perception settings due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully initialized the perception settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to initialize the perception settings due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000619"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="45" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" declline="45" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gae3a8d4f9078ec8618ae822703061ae75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPerceptionStartup</definition>
+        <argsstring>(MLPerceptionSettings *settings)</argsstring>
+        <name>MLPerceptionStartup</name>
+        <param>
+          <type><ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Starts the perception system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called before any perception functions are called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The perception system starts with these settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully started perception system. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start perception system due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000620"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="59" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" declline="59" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1ga9f73adaced184926e98e683d987f7ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPerceptionShutdown</definition>
+        <argsstring>()</argsstring>
+        <name>MLPerceptionShutdown</name>
+        <briefdescription>
+<para>Shuts down the perception system and cleans up all resources used by it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called prior to exiting the program if a call to <computeroutput><ref refid="group___perception_1gae3a8d4f9078ec8618ae822703061ae75" kindref="member">MLPerceptionStartup()</ref></computeroutput> was called.</para>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully shut down the perception system. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to shut down the perception system because of an uknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000621"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="72" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" declline="72" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPerceptionGetSnapshot</definition>
+        <argsstring>(MLSnapshot **out_snapshot)</argsstring>
+        <name>MLPerceptionGetSnapshot</name>
+        <param>
+          <type><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> **</type>
+          <declname>out_snapshot</declname>
+        </param>
+        <briefdescription>
+<para>Pulls in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to <computeroutput><ref refid="group___perception_1ga9ecc623e84bd956436108024a0ad68bb" kindref="member">MLPerceptionReleaseSnapshot()</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_snapshot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer containing an <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> on success.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created snapshot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out_snapshot parameter was not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000622"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="90" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" declline="90" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1ga603052db7983ada2c2914808bbfe5556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPerceptionGetPredictedSnapshot</definition>
+        <argsstring>(MLTime timestamp, MLSnapshot **out_snapshot)</argsstring>
+        <name>MLPerceptionGetPredictedSnapshot</name>
+        <param>
+          <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> **</type>
+          <declname>out_snapshot</declname>
+        </param>
+        <briefdescription>
+<para>Pulls in the state of all persistent transforms and all enabled trackers extrapolated to the provided timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This timestamp typically comes from out_frame_info.predicted_display_time out parameter from the MLGraphicsBeginFrameEx function.</para>
+<para>Returns a <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to <computeroutput><ref refid="group___perception_1ga9ecc623e84bd956436108024a0ad68bb" kindref="member">MLPerceptionReleaseSnapshot()</ref></computeroutput>.</para>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp representing the time for which to predict poses. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_snapshot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer containing an <ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> on success.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created snapshot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidTimestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp is either more than 100ms in the future or too old for cached state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output parameter was not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000623"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="115" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" declline="115" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___perception_1ga9ecc623e84bd956436108024a0ad68bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPerceptionReleaseSnapshot</definition>
+        <argsstring>(MLSnapshot *snap)</argsstring>
+        <name>MLPerceptionReleaseSnapshot</name>
+        <param>
+          <type><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref> *</type>
+          <declname>snap</declname>
+        </param>
+        <briefdescription>
+<para>Releases specified <computeroutput>#MLSnapshot</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called exactly once for each call to <computeroutput><ref refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" kindref="member">MLPerceptionGetSnapshot()</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">snap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid snap object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released snapshot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>snapshot parameter was not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000624"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" line="130" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h" declline="130" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__snapshot_8h" kindref="compound">ml_snapshot.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_m_l_perception_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="struct_m_l_perception_settings_1a1e139dc34620e981ec83fafd6f806e5f" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_m_l_perception_settings_1a1e139dc34620e981ec83fafd6f806e5f" kindref="member">override_port</ref>;</highlight></codeline>
+<codeline lineno="32" refid="group___perception_1ga9b49dff9482ce3d0d37d84d45206c331" refkind="member"><highlight class="normal">}<sp/><ref refid="group___perception_1ga9b49dff9482ce3d0d37d84d45206c331" kindref="member">MLPerceptionSettings</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="group___perception_1ga4dbc63fcb5cee6e7a611c2112e72d344" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1ga4dbc63fcb5cee6e7a611c2112e72d344" kindref="member">MLPerceptionInitSettings</ref>(<ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref><sp/>*out_settings);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___perception_1gae3a8d4f9078ec8618ae822703061ae75" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1gae3a8d4f9078ec8618ae822703061ae75" kindref="member">MLPerceptionStartup</ref>(<ref refid="struct_m_l_perception_settings" kindref="compound">MLPerceptionSettings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="group___perception_1ga9f73adaced184926e98e683d987f7ea3" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1ga9f73adaced184926e98e683d987f7ea3" kindref="member">MLPerceptionShutdown</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1gaf8fac3fc76a2fc1b32351d4787359eb0" kindref="member">MLPerceptionGetSnapshot</ref>(<ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/>**out_snapshot);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="group___perception_1ga603052db7983ada2c2914808bbfe5556" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1ga603052db7983ada2c2914808bbfe5556" kindref="member">MLPerceptionGetPredictedSnapshot</ref>(<ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/>timestamp,<sp/><ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/>**out_snapshot);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="group___perception_1ga9ecc623e84bd956436108024a0ad68bb" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___perception_1ga9ecc623e84bd956436108024a0ad68bb" kindref="member">MLPerceptionReleaseSnapshot</ref>(<ref refid="group___perception_1gaa14a3ce2de93527687c615433aad4d23" kindref="member">MLSnapshot</ref><sp/>*snap);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h"/>
+  </compounddef>
+</doxygen>

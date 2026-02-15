@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_hand_tracking_hand_state" kind="struct" language="C++" prot="public">
+    <compoundname>MLHandTrackingHandState</compoundname>
+    <includes refid="ml__hand__tracking_8h" local="no">ml_hand_tracking.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_hand_state_1a35437a46e195a861e6d92679686bb4a7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLHandTrackingHandState::is_hand_detected</definition>
+        <argsstring></argsstring>
+        <name>is_hand_detected</name>
+        <briefdescription>
+<para>Specifies if the hand is detected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="148" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_hand_state_1a6883a5b5ce5a71165f0279be62999abe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLHandTrackingHandState::hand_confidence</definition>
+        <argsstring></argsstring>
+        <name>hand_confidence</name>
+        <briefdescription>
+<para>The confidence level of a hand is present in the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Value is between [0, 1], 0 is low, 1 is high degree of confidence. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="154" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_hand_state_1a6a171076e7332f05ad77b9ef5a228228" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLHandTrackingHandState::keypoints_mask[MLHandTrackingStaticData_MaxKeyPoints]</definition>
+        <argsstring>[MLHandTrackingStaticData_MaxKeyPoints]</argsstring>
+        <name>keypoints_mask</name>
+        <briefdescription>
+<para>Mask indicates if a keypoint is present or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="158" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>State of a single hand. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Same for both filtered and unfiltered keypoints.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="144" bodyend="159"/>
+    <listofallmembers>
+      <member refid="struct_m_l_hand_tracking_hand_state_1a6883a5b5ce5a71165f0279be62999abe" prot="public" virt="non-virtual"><scope>MLHandTrackingHandState</scope><name>hand_confidence</name></member>
+      <member refid="struct_m_l_hand_tracking_hand_state_1a35437a46e195a861e6d92679686bb4a7" prot="public" virt="non-virtual"><scope>MLHandTrackingHandState</scope><name>is_hand_detected</name></member>
+      <member refid="struct_m_l_hand_tracking_hand_state_1a6a171076e7332f05ad77b9ef5a228228" prot="public" virt="non-virtual"><scope>MLHandTrackingHandState</scope><name>keypoints_mask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1761 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__camera__metadata__tags__v2_8h" kind="file" language="C++">
+    <compoundname>ml_camera_metadata_tags_v2.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includedby refid="ml__camera__metadata__v2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_v2.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h</label>
+        <link refid="ml__camera__metadata__tags__v2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h</label>
+        <link refid="ml__camera__metadata__tags__v2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_v2.h</label>
+        <link refid="ml__camera__metadata__v2_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___camera_metadata_1ga4cd9ec2a8040070140d27f130ff72767" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataColorCorrectionMode</name>
+        <enumvalue id="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767af7beaa39311c6a9406a10936dd73527e" prot="public">
+          <name>MLCameraMetadataColorCorrectionMode_TransformMatrix</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Uses data provided by the High Quality or Fast method to provide a picture with the same white point as the previous frame. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a129af1e10a0df9634d89919950b3079f" prot="public">
+          <name>MLCameraMetadataColorCorrectionMode_Fast</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The camera device will not slow down capture rate when applying color correction. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a596b075b06ee068b8f1dd05493886f69" prot="public">
+          <name>MLCameraMetadataColorCorrectionMode_HighQuality</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The camera device will use the highest-quality color correction algorithm, at the expense of capture rate speed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a863f03423ca1cf1f3ad822e1e460679f" prot="public">
+          <name>MLCameraMetadataColorCorrectionMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color correction mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="33" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="33" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gaca7e97ee1ad139c964eed81842a9a632" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataColorCorrectionAberrationMode</name>
+        <enumvalue id="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a3afc1f4f0158a752cb04dc58da4202e2" prot="public">
+          <name>MLCameraMetadataColorCorrectionAberrationMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No aberration correction is applied. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a7d9e967f291b7b0b16abea12b265c403" prot="public">
+          <name>MLCameraMetadataColorCorrectionAberrationMode_Fast</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The camera device will not slow down capture rate when applying aberration correction. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a781c63cdd6cd4d9f7d239155d3d7940f" prot="public">
+          <name>MLCameraMetadataColorCorrectionAberrationMode_HighQuality</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The camera device will use the highest-quality aberration correction algorithm, at the expense of capture rate speed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a221b498d8ef073fafbcb3dc38294be5b" prot="public">
+          <name>MLCameraMetadataColorCorrectionAberrationMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color correction aberration mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gae2489140c87625a5ed49919155397e6b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAEAntibandingMode</name>
+        <enumvalue id="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba54fce60ca11200b94c0a56268bbd426a" prot="public">
+          <name>MLCameraMetadataControlAEAntibandingMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE antibanding is disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba943fde5601d34b18e9096ea74151a565" prot="public">
+          <name>MLCameraMetadataControlAEAntibandingMode_50Hz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>50Hz. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba45d6f599a1a7268193fdb887d3ff02ef" prot="public">
+          <name>MLCameraMetadataControlAEAntibandingMode_60Hz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>60Hz. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6bac534df1d219322a8c22b5790f27cd388" prot="public">
+          <name>MLCameraMetadataControlAEAntibandingMode_Auto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Auto. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba334674da01990ada9a62cf2b2fef8fd5" prot="public">
+          <name>MLCameraMetadataControlAEAntibandingMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The list of auto-exposure (AE) antibanding modes. These controls prevent the appearance of vertical lines when capturing TV screens or monitors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="57" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga7a423c65eeab14b4087886f690552a6f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAELock</name>
+        <enumvalue id="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6fa2a3cede967956570c97a2d5e4f910044" prot="public">
+          <name>MLCameraMetadataControlAELock_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Auto-exposure lock is disabled. The algorithm can update exposure parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6faedfaee30ccd944ddb72df34157857651" prot="public">
+          <name>MLCameraMetadataControlAELock_On</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Auto-exposure lock is enabled. The algorithm cannot update exposure parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6fa88984d2812773911acac10be269d2941" prot="public">
+          <name>MLCameraMetadataControlAELock_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-exposure (AE) lockc controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="71" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga479ea00e7246175933feece48436bb1e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAEMode</name>
+        <enumvalue id="group___camera_metadata_1gga479ea00e7246175933feece48436bb1ea1eb344368a26f2aef6bb7798f0a381f5" prot="public">
+          <name>MLCameraMetadataControlAEMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disables the camera device&apos;s auto-exposure routine. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga479ea00e7246175933feece48436bb1ea28487333fc7d8b6674f05ee2157d04ab" prot="public">
+          <name>MLCameraMetadataControlAEMode_On</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enables the camera device&apos;s auto-exposure routine. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga479ea00e7246175933feece48436bb1eabd7910d08bd98032aa5b8c294083f4c7" prot="public">
+          <name>MLCameraMetadataControlAEMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-exposure (AE) mode controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gabdc0630fc39fae36631f1630c31a4f65" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAWBLock</name>
+        <enumvalue id="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a51ecd737070df82fbe51214b1053040a" prot="public">
+          <name>MLCameraMetadataControlAWBLock_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disables the auto-white balance lock. AWB algorithm is free to update its parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a7d9eadb1574939cc56eb7f2c1fddc091" prot="public">
+          <name>MLCameraMetadataControlAWBLock_On</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enables the auto-white balance lock. AWB algorithm cannot update its parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a5188041a7044d808794ce0520a93b15b" prot="public">
+          <name>MLCameraMetadataControlAWBLock_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control AWB lock. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="91" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga17948cb26d104878ba06e1fbf23ac3dd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAWBMode</name>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac8b5e26e0a00945948eea6443c0e94b9" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disables the camera device&apos;s auto-white balance routine. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda2da7742178bab746173660e892fee559" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Auto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sets the camera device&apos;s auto-white balance routine to automatic. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda0b7ce57f49a4840d3ac95e65b0334ebf" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Incandescent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Incandescent light is assumed for the white balance. Auto-white balance is disabled. White balance transforms will approximately match the CIE standard illuminant A. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac6380f26763541fb9ebb42250abb62c1" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Fluorescent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Fluorescent light is assumed for the white balance. Auto-white balance is disabled. White balance transforms will approximately match the CIE standard illuminant F2. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac0f0ebdc8390625b09d01155984a8826" prot="public">
+          <name>MLCameraMetadataControlAWBMode_WarmFluorescent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Warm fluorescent light is assumed for the white balance. Auto-white balance is disabled. White balance transforms will approximately match the CIE standard illuminant F4. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda0d909ee20fcf24b6ced9af1aa2bf2921" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Daylight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Daylight light is assumed for the white balance. Auto-white balance is disabled. White balance transforms will approximately match the CIE standard illuminant D65. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddaebeeeca33158e937f42c4ffe11d95ad6" prot="public">
+          <name>MLCameraMetadataControlAWBMode_CloudyDaylight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cloudy daylight is assumed for the white balance. Auto-white balance is disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda5c931cb47990b25e87cbf664177a525b" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Twilight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Twilight light is assumed for the white balance. Auto-white balance is disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddaf4df2181dab50ab6e525efb3dc1bbbc6" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Shade</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Shade light is assumed for the white balance. Auto-white balance is disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddace3a63675d5ebe7b959642035b740bc0" prot="public">
+          <name>MLCameraMetadataControlAWBMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-white-balance (AWB) mode controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="101" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="101" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga0db9acf1813a64e2fc76e5dfd205030a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAFMode</name>
+        <enumvalue id="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa8e968282b30cc62765edec0abc3d4e26" prot="public">
+          <name>MLCameraMetadataControlAFMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disables the camera device&apos;s auto-focus routine. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aab5f741e2a600843a38c108860f557de0" prot="public">
+          <name>MLCameraMetadataControlAFMode_Auto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sets the camera device&apos;s auto-focus routine to automatic. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aac39dc1fcf6113de7cd8f65c0dfddd63b" prot="public">
+          <name>MLCameraMetadataControlAFMode_Macro</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sets the camera device&apos;s auto-focus routine to close-up focusing mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa290a8cbb397a0903d0737e7344a7af62" prot="public">
+          <name>MLCameraMetadataControlAFMode_ContinuousVideo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sets the camera device&apos;s auto-focus routine to Continuous Video Mode. The focusing behavior should be suitable for good quality video recording. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa9bc9134e38eac704acc38daaf802798a" prot="public">
+          <name>MLCameraMetadataControlAFMode_ContinuousPicture</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sets the camera device&apos;s auto-focus routine to Continuous Picture Mode. The focusing behavior should be suitable for still image capture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa4322224d9a050b0f3fa0ff9ba3d11a84" prot="public">
+          <name>MLCameraMetadataControlAFMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-focus (AF) mode controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="125" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="125" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga82cc17a9b170dba2e5e81daa0bf027b9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAFTrigger</name>
+        <enumvalue id="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9abd421c7cfd9a9250bfcb0389eab3431c" prot="public">
+          <name>MLCameraMetadataControlAFTrigger_Idle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF trigger is idle. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9a0329e16f765c8e1346afe10495a1f884" prot="public">
+          <name>MLCameraMetadataControlAFTrigger_Start</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF will trigger now. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9ad3e60c6c179a082a037bb8f0517f00dd" prot="public">
+          <name>MLCameraMetadataControlAFTrigger_Cancel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cancel any currently active AF trigger. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9a9444727e6568a0b1a8be102a84be71b6" prot="public">
+          <name>MLCameraMetadataControlAFTrigger_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-focus (AF) trigger. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="141" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="141" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga23122e7cc560f3bdf7a1d7349b4dbe83" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlMode</name>
+        <enumvalue id="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83ab9d679c4eced72ff31489f8ceee5784f" prot="public">
+          <name>MLCameraMetadataControlMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disables control of the device&apos;s metering and focusing routines (3A). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a4dae60be50fac6fb090182e54be98471" prot="public">
+          <name>MLCameraMetadataControlMode_Auto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Manual control of capture parameters is disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83afaf31369afd40b79df058a19b21effb2" prot="public">
+          <name>MLCameraMetadataControlMode_UseSceneMode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use a specific scene mode. This setting is available only if scene mode is supported. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a106602d1014eb5d0609de09fbc482f10" prot="public">
+          <name>MLCameraMetadataControlMode_OffKeepState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Same as <computeroutput>MLCameraMetadataControlMode_Off</computeroutput> mode, except any statistics or state updates collected from manual captures will be discarded by the camera device. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a88fb791960eb5d7aa255158ad1790648" prot="public">
+          <name>MLCameraMetadataControlMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overall control mode of the 3A (auto-white balance, auto-focus, auto-exposure) parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="153" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="153" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gaa4bffc218d9203597d724662b7d6b0de" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlSceneMode</name>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea9b3688c6cf875411ce2c083674ffe693" prot="public">
+          <name>MLCameraMetadataControlSceneMode_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scene mode not used. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deaf5512463f4ca73d6d625b3a70ddc2055" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Action</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Action mode – optimized for photos of quickly moving objects. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deae8344aff8207eedc4f8a2ba2053e364e" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Portrait</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Portrait mode – optimized for still photos of people. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea1fc67b1d6f4ee09673c44388937f06cb" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Landscape</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Landscape mode – optimized for photos of distant macroscopic objects. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea34301578e902e2e9592bad3c0ea3fdab" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Theatre</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Theatre mode – ptimized for dim, indoor settings without flash. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deafde2fca059d95de75bc2c71ed8fa2a15" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Sports</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sports mode – similar to Action mode, and optimized for photos of quickly moving people. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea745d3a8da4967bb6c8d9bbb61d17df20" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Party</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Party mode – optimized for dim, indoor settings with multiple moving people. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deabefa6f93dc2432d11cdaad98c813dbd6" prot="public">
+          <name>MLCameraMetadataControlSceneMode_CandleLight</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CandleLight mode – optimized for extremely dim settings with a single light source. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deab23460072d1bad90fdf62b0da15a299c" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Barcode</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Barcode mode. This mode is optimized for accurately capturing barcode images with the intent of processing the barcode value. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea9a6e1348c16e7ceee3e3b61ab6d9f14f" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Medical</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Medical mode. This mode is optimized for brightly lit settings (100-200K lux) such as an operation theater. <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea3df73908ef16a65e635633ee5e48dded" prot="public">
+          <name>MLCameraMetadataControlSceneMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scene mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="167" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="167" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gac2cf7dbd0f1609d7ca1d8b34cd2637f2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlEffectMode</name>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a0c538e6b32b6917e5a616a59c21a2d7c" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Off. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2afd10b361997f87dc21cd808517cadbbe" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Grayscale</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>GrayScale – maps the image into grayscale colors. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a82339612198d46a8c0980015cb595f4d" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Negative</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Negative – inverts the colors of the image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a41b8e573d0dd8bcc86bc68910f6e80fa" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Sepia</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sepia – maps the image into warm gray, red, and brown tones. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2aad6f9a7dba9e5b5f5c4e4aac9aaa33be" prot="public">
+          <name>MLCameraMetadataControlEffectMode_ColorSelection</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ColorSelection. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2ad89e33d221e57a8280b6c9732caf66de" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Sharpening</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpening – emphasises the edges of adjacent areas with tonal contrast to one another. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a930607a7dc463069dca6ddea8f459e98" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Emboss</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Emboss – applies an emboss filter, replacing each pixel with shadow or highlight depending on its light or dark boundaries. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2af9651967b683f56fdb52fdc17759ba19" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Sketch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sketch. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2afd86e67d398bf234a2b52466dc26b5e5" prot="public">
+          <name>MLCameraMetadataControlEffectMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Effect mode. Applies color effects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="193" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="193" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga1179ec630cb860653f45df76777c9933" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAEState</name>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a9c92bcdc69c7f4d92d97c70bca259f3e" prot="public">
+          <name>MLCameraMetadataControlAEState_Inactive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE is off or recently reset. The camera device begins in this mode. Device may fail to report this state. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a6a8eec690e3e16e8a91dd9dc39625a59" prot="public">
+          <name>MLCameraMetadataControlAEState_Searching</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE does not yet have a good set of control values for the current scene. Device may fail to report this state. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a8596607db0f8cc6e2f224ca2ddebfedb" prot="public">
+          <name>MLCameraMetadataControlAEState_Converged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE has a good set of control values for the current scene. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a996692d84e9baf83848032a750e9681e" prot="public">
+          <name>MLCameraMetadataControlAEState_Locked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE is locked. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933aeedcb10fe0d0a445c46af4c65f40f368" prot="public">
+          <name>MLCameraMetadataControlAEState_FlashRequired</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE has a good set of control values, but flash is required for good quality still capture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a8bafdb3ba7a67064a38dcf1cbf29b501" prot="public">
+          <name>MLCameraMetadataControlAEState_PreCapture</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AE has been asked to do a precapture sequence and is currently executing it. Once this mode is complete, AE will transition to <computeroutput>MLCameraMetadataControlAEState_Converged</computeroutput> or <computeroutput>MLCameraMetadataControlAEState_FlashRequired</computeroutput>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a94e5f0de5e974f2978c41e06210e1baf" prot="public">
+          <name>MLCameraMetadataControlAEState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currents state of auto-exposure (AE) controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="215" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="215" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gaa2b352a31efa610c6b3edc677a58933c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAWBState</name>
+        <enumvalue id="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca95d1c3097e416a1cca8008efb9329f1b" prot="public">
+          <name>MLCameraMetadataControlAWBState_Inactive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AWB is in not in automatic mode or has not yet started metering. The camera device begins in this mode. Device may fail to report this state. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca4ddbcbcf8392e6126ccf809117fddb16" prot="public">
+          <name>MLCameraMetadataControlAWBState_Searching</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AWB does not yet have a good set of control values for the current scene. Device may fail to report this state. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933caf590515ee9e67001c2e8e4f6cdc7b9c1" prot="public">
+          <name>MLCameraMetadataControlAWBState_Converged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AWB has a good set of control values for the current scene. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca5d1dcc9ad41dbb71b399ac6a0845f536" prot="public">
+          <name>MLCameraMetadataControlAWBState_Locked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AWB is locked. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933cadf00dc26cf9fe5558f941ba9dd6c015d" prot="public">
+          <name>MLCameraMetadataControlAWBState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state of auto-white-balance (AWB) controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="233" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="233" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga3a7171fff7a4f7a61beb832a303d901e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAFState</name>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea0b7292081837226650230abea54d2e24" prot="public">
+          <name>MLCameraMetadataControlAFState_Inactive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF is off or has not yet tried to scan. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eae7aba1f1d70f56010e1bd4785599528b" prot="public">
+          <name>MLCameraMetadataControlAFState_PassiveScan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF is currently performing an AF scan initiated by the camera device in a continuous autofocus mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eac6323850b120f65d75359ac7509017ea" prot="public">
+          <name>MLCameraMetadataControlAFState_PassiveFocussed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF currently is in focus, but may restart scanning at any time. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea980f9a187455f40c4878c64d0a4c78c9" prot="public">
+          <name>MLCameraMetadataControlAFState_ActiveScan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF is performing an AF scan triggered by AF trigger. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea94158a0d0807b4b640a60b5640dd5ca9" prot="public">
+          <name>MLCameraMetadataControlAFState_FocusedLocked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF is focused correctly and has locked focus. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eac6dd462092d450f98a18f966c1d42a85" prot="public">
+          <name>MLCameraMetadataControlAFState_NotFocusedLocked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF has failed to focus successfully and has locked focus. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea34d144429e8b8d0ded117099fc586f1c" prot="public">
+          <name>MLCameraMetadataControlAFState_PassiveUnFocussed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AF finished a passive scan without finding focus,and may restart scanning at any time. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea70420c06737f3f9c547a68a9308eb4dd" prot="public">
+          <name>MLCameraMetadataControlAFState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state of auto-focus (AF) routine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="247" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="247" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gaca47dfe1ecabf022fff5e638eaaba08f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlAFSceneChange</name>
+        <enumvalue id="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fae435025af624991507f5ec258b85641e" prot="public">
+          <name>MLCameraMetadataControlAFSceneChange_NotDetected</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No scene change detected by AF. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fa92c164371b759b385c7abbd4cbd80dbd" prot="public">
+          <name>MLCameraMetadataControlAFSceneChange_Detected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scene change detected by AF. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fad11418879536c13b92c12d7283d1e512" prot="public">
+          <name>MLCameraMetadataControlAFSceneChange_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether a significant scene change is detected by AF algorithm. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="267" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="267" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1ga041793aa1770a57d9991643629d7844a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataLensState</name>
+        <enumvalue id="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aa576b393c0af033bfebefb04b087481f1" prot="public">
+          <name>MLCameraMetadataLensState_Stationary</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lens focal length is not changing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aaa77caae9ad5c87ec0c16748d0bbe02e0" prot="public">
+          <name>MLCameraMetadataLensState_Moving</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lens focal length is changing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aa07a00ee4b86e0bceb2d1ca078d219020" prot="public">
+          <name>MLCameraMetadataLensState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Lens status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="277" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="277" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gaea082f56eed295e8f746c4c7babd91d2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataScalerAvailableFormats</name>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a7f704694e3a18c55bd9122595407360d" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_RAW16</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw16. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a95772fac5053e4ff5ee777577fd6b3e2" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_RAW_OPAQUE</name>
+          <initializer>= 0x24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw opaque. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a7c8467c0e9a235c303833f3b8a4b20bc" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_YV12</name>
+          <initializer>= 0x32315659</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TV12. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2aedc3cf36a6cebe66b02fe08f81fc21e7" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_YCrCb_420_SP</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>YCrCb 420 SP. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a50bfe233bbfea2edb26fe7ccf15e9f03" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_IMPLEMENTATION_DEFINED</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Implementation defined. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a6a27ebb2678fc5319ec58a49611717d7" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_YCbCr_420_888</name>
+          <initializer>= 0x23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>YCrCb 420 888. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a8a682ff7c0a94e8378cd317305a41e19" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_BLOB</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BLOB. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a07119e80f51a4e2e3841ccb1f5487263" prot="public">
+          <name>MLCameraMetadataScalerAvailableFormats_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scaler available formats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="287" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="287" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gad9cf7ea25c13f88f66eca1ee91759a21" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataScalerAvailableStreamConfigurations</name>
+        <enumvalue id="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a5222d4975fc3402fe6db08f16093cbcd" prot="public">
+          <name>MLCameraMetadataScalerAvailableStreamConfigurations_OUTPUT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Output. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a2fb1a5b8bc4e6dbbe9d9545f9145bc42" prot="public">
+          <name>MLCameraMetadataScalerAvailableStreamConfigurations_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Input. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a64a7f58b3ed054cf13967293e14298ea" prot="public">
+          <name>MLCameraMetadataScalerAvailableStreamConfigurations_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The available stream configurations . </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="307" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="307" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gadedcabe87f32b318e8bb5e605345392c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataJpegThumbnailSize</name>
+        <enumvalue id="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca2fdf4d8b9b10032f6adda1acc81365e0" prot="public">
+          <name>MLCameraMetadataJpegThumbnailSize_160x120</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>160x120. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca23a586def8b94991ea6c4d9d5e22a952" prot="public">
+          <name>MLCameraMetadataJpegThumbnailSize_240x135</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>240x135. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca225b82ebf9c2ba722f11c151c06cbc99" prot="public">
+          <name>MLCameraMetadataJpegThumbnailSize_256x135</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>256x135. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392cacc79355f4cfa72d199aada10db6e7f86" prot="public">
+          <name>MLCameraMetadataJpegThumbnailSize_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>JPEG Thumbnail Size. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="317" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="317" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___camera_metadata_1gab61121802cb323ceb95e9069051d4cae" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLCameraMetadataControlForceApplyMode</name>
+        <enumvalue id="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caeacb721e9c408346ef0aa016dccdde2395" prot="public">
+          <name>MLCameraMetadataControlForceApplyMode_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Off. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caeaef70a3a6c7da25cf8f1b42a81e521248" prot="public">
+          <name>MLCameraMetadataControlForceApplyMode_On</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>On. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caea7c2f9a2b674bacbf9837850a2da2e771" prot="public">
+          <name>MLCameraMetadataControlForceApplyMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force Apply Metadata Settings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="329" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" bodystart="329" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___camera_metadata_1gab11545752a7c8b787c97b242641f481f" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga4cd9ec2a8040070140d27f130ff72767" kindref="member">MLCameraMetadataColorCorrectionMode</ref></type>
+        <definition>typedef enum MLCameraMetadataColorCorrectionMode MLCameraMetadataColorCorrectionMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataColorCorrectionMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color correction mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="42" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1gab90de0c0bff11fbd29d5cda7b6ba9b83" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gaca7e97ee1ad139c964eed81842a9a632" kindref="member">MLCameraMetadataColorCorrectionAberrationMode</ref></type>
+        <definition>typedef enum MLCameraMetadataColorCorrectionAberrationMode MLCameraMetadataColorCorrectionAberrationMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataColorCorrectionAberrationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color correction aberration mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="54" column="47"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga49dcc2f749ce63882c9d23ac5e7f72b4" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gae2489140c87625a5ed49919155397e6b" kindref="member">MLCameraMetadataControlAEAntibandingMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAEAntibandingMode MLCameraMetadataControlAEAntibandingMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAEAntibandingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The list of auto-exposure (AE) antibanding modes. These controls prevent the appearance of vertical lines when capturing TV screens or monitors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="68" column="42"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga576deaa67934ed6879e6753ed9fd186c" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga7a423c65eeab14b4087886f690552a6f" kindref="member">MLCameraMetadataControlAELock</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAELock MLCameraMetadataControlAELock</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAELock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-exposure (AE) lockc controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="78" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga774bf8e651481b62519ca6e6a3e8275d" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga479ea00e7246175933feece48436bb1e" kindref="member">MLCameraMetadataControlAEMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAEMode MLCameraMetadataControlAEMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAEMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-exposure (AE) mode controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="88" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga5e9096cc1ebdd646197d87086b3c5664" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gabdc0630fc39fae36631f1630c31a4f65" kindref="member">MLCameraMetadataControlAWBLock</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAWBLock MLCameraMetadataControlAWBLock</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAWBLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control AWB lock. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="98" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga0595edfac598b62e49daf936fb082899" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga17948cb26d104878ba06e1fbf23ac3dd" kindref="member">MLCameraMetadataControlAWBMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAWBMode MLCameraMetadataControlAWBMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAWBMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-white-balance (AWB) mode controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="122" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga513e245040049ed799610a61f57e6e2b" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga0db9acf1813a64e2fc76e5dfd205030a" kindref="member">MLCameraMetadataControlAFMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAFMode MLCameraMetadataControlAFMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAFMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-focus (AF) mode controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="138" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga976d5ef79dc9c4e096c9d8c0385e1a23" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga82cc17a9b170dba2e5e81daa0bf027b9" kindref="member">MLCameraMetadataControlAFTrigger</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAFTrigger MLCameraMetadataControlAFTrigger</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAFTrigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current auto-focus (AF) trigger. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="150" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga1bfc0508a72ed45a5765094e33998bf0" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga23122e7cc560f3bdf7a1d7349b4dbe83" kindref="member">MLCameraMetadataControlMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlMode MLCameraMetadataControlMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overall control mode of the 3A (auto-white balance, auto-focus, auto-exposure) parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="164" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1gaf220b1ca6620f6bf262b79eef75b888c" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gaa4bffc218d9203597d724662b7d6b0de" kindref="member">MLCameraMetadataControlSceneMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlSceneMode MLCameraMetadataControlSceneMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlSceneMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scene mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="190" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1gae21c94f5f82f600f3df81d320dd6539e" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gac2cf7dbd0f1609d7ca1d8b34cd2637f2" kindref="member">MLCameraMetadataControlEffectMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlEffectMode MLCameraMetadataControlEffectMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlEffectMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Effect mode. Applies color effects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="212" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga61a957c73f9467c8882cb65469969d16" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga1179ec630cb860653f45df76777c9933" kindref="member">MLCameraMetadataControlAEState</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAEState MLCameraMetadataControlAEState</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAEState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currents state of auto-exposure (AE) controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="230" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga87fc30ee65057f51a49a14dbb77f7124" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gaa2b352a31efa610c6b3edc677a58933c" kindref="member">MLCameraMetadataControlAWBState</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAWBState MLCameraMetadataControlAWBState</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAWBState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state of auto-white-balance (AWB) controls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="244" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1gafccb6fa9bb295ab41b6e2bb44c916c09" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga3a7171fff7a4f7a61beb832a303d901e" kindref="member">MLCameraMetadataControlAFState</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAFState MLCameraMetadataControlAFState</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAFState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state of auto-focus (AF) routine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="264" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1gaaa3f7543f31fa0bdb6941bba07536608" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gaca47dfe1ecabf022fff5e638eaaba08f" kindref="member">MLCameraMetadataControlAFSceneChange</ref></type>
+        <definition>typedef enum MLCameraMetadataControlAFSceneChange MLCameraMetadataControlAFSceneChange</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlAFSceneChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether a significant scene change is detected by AF algorithm. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="274" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1gad6c0ada1da2f52b54e444ab3727b5b8e" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1ga041793aa1770a57d9991643629d7844a" kindref="member">MLCameraMetadataLensState</ref></type>
+        <definition>typedef enum MLCameraMetadataLensState MLCameraMetadataLensState</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataLensState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Lens status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="284" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga929fb4d5951de2d8562dd47e185588fd" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gaea082f56eed295e8f746c4c7babd91d2" kindref="member">MLCameraMetadataScalerAvailableFormats</ref></type>
+        <definition>typedef enum MLCameraMetadataScalerAvailableFormats MLCameraMetadataScalerAvailableFormats</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataScalerAvailableFormats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scaler available formats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="304" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga24e45984825030cbf8942fe629857b4f" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gad9cf7ea25c13f88f66eca1ee91759a21" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations</ref></type>
+        <definition>typedef enum MLCameraMetadataScalerAvailableStreamConfigurations MLCameraMetadataScalerAvailableStreamConfigurations</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataScalerAvailableStreamConfigurations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The available stream configurations . </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="314" column="53"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga0aa104bd3469b3d4cd43463d41e5bfe2" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gadedcabe87f32b318e8bb5e605345392c" kindref="member">MLCameraMetadataJpegThumbnailSize</ref></type>
+        <definition>typedef enum MLCameraMetadataJpegThumbnailSize MLCameraMetadataJpegThumbnailSize</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataJpegThumbnailSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>JPEG Thumbnail Size. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="326" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___camera_metadata_1ga1b3f61a076ef9941894c6d9cfed7484e" prot="public" static="no">
+        <type>enum <ref refid="group___camera_metadata_1gab61121802cb323ceb95e9069051d4cae" kindref="member">MLCameraMetadataControlForceApplyMode</ref></type>
+        <definition>typedef enum MLCameraMetadataControlForceApplyMode MLCameraMetadataControlForceApplyMode</definition>
+        <argsstring></argsstring>
+        <name>MLCameraMetadataControlForceApplyMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force Apply Metadata Settings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h" line="336" column="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="group___camera_metadata_1ga4cd9ec2a8040070140d27f130ff72767" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga4cd9ec2a8040070140d27f130ff72767" kindref="member">MLCameraMetadataColorCorrectionMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767af7beaa39311c6a9406a10936dd73527e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767af7beaa39311c6a9406a10936dd73527e" kindref="member">MLCameraMetadataColorCorrectionMode_TransformMatrix</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="37" refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a129af1e10a0df9634d89919950b3079f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a129af1e10a0df9634d89919950b3079f" kindref="member">MLCameraMetadataColorCorrectionMode_Fast</ref>,</highlight></codeline>
+<codeline lineno="39" refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a596b075b06ee068b8f1dd05493886f69" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a596b075b06ee068b8f1dd05493886f69" kindref="member">MLCameraMetadataColorCorrectionMode_HighQuality</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga4cd9ec2a8040070140d27f130ff72767a863f03423ca1cf1f3ad822e1e460679f" kindref="member">MLCameraMetadataColorCorrectionMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="42" refid="group___camera_metadata_1gab11545752a7c8b787c97b242641f481f" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga4cd9ec2a8040070140d27f130ff72767" kindref="member">MLCameraMetadataColorCorrectionMode</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="group___camera_metadata_1gaca7e97ee1ad139c964eed81842a9a632" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gaca7e97ee1ad139c964eed81842a9a632" kindref="member">MLCameraMetadataColorCorrectionAberrationMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a3afc1f4f0158a752cb04dc58da4202e2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a3afc1f4f0158a752cb04dc58da4202e2" kindref="member">MLCameraMetadataColorCorrectionAberrationMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="49" refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a7d9e967f291b7b0b16abea12b265c403" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a7d9e967f291b7b0b16abea12b265c403" kindref="member">MLCameraMetadataColorCorrectionAberrationMode_Fast</ref>,</highlight></codeline>
+<codeline lineno="51" refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a781c63cdd6cd4d9f7d239155d3d7940f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a781c63cdd6cd4d9f7d239155d3d7940f" kindref="member">MLCameraMetadataColorCorrectionAberrationMode_HighQuality</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca7e97ee1ad139c964eed81842a9a632a221b498d8ef073fafbcb3dc38294be5b" kindref="member">MLCameraMetadataColorCorrectionAberrationMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="54" refid="group___camera_metadata_1gab90de0c0bff11fbd29d5cda7b6ba9b83" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gaca7e97ee1ad139c964eed81842a9a632" kindref="member">MLCameraMetadataColorCorrectionAberrationMode</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group___camera_metadata_1gae2489140c87625a5ed49919155397e6b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gae2489140c87625a5ed49919155397e6b" kindref="member">MLCameraMetadataControlAEAntibandingMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="59" refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba54fce60ca11200b94c0a56268bbd426a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba54fce60ca11200b94c0a56268bbd426a" kindref="member">MLCameraMetadataControlAEAntibandingMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="61" refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba943fde5601d34b18e9096ea74151a565" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba943fde5601d34b18e9096ea74151a565" kindref="member">MLCameraMetadataControlAEAntibandingMode_50Hz</ref>,</highlight></codeline>
+<codeline lineno="63" refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba45d6f599a1a7268193fdb887d3ff02ef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba45d6f599a1a7268193fdb887d3ff02ef" kindref="member">MLCameraMetadataControlAEAntibandingMode_60Hz</ref>,</highlight></codeline>
+<codeline lineno="65" refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6bac534df1d219322a8c22b5790f27cd388" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6bac534df1d219322a8c22b5790f27cd388" kindref="member">MLCameraMetadataControlAEAntibandingMode_Auto</ref>,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggae2489140c87625a5ed49919155397e6ba334674da01990ada9a62cf2b2fef8fd5" kindref="member">MLCameraMetadataControlAEAntibandingMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="68" refid="group___camera_metadata_1ga49dcc2f749ce63882c9d23ac5e7f72b4" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gae2489140c87625a5ed49919155397e6b" kindref="member">MLCameraMetadataControlAEAntibandingMode</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___camera_metadata_1ga7a423c65eeab14b4087886f690552a6f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga7a423c65eeab14b4087886f690552a6f" kindref="member">MLCameraMetadataControlAELock</ref><sp/>{</highlight></codeline>
+<codeline lineno="73" refid="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6fa2a3cede967956570c97a2d5e4f910044" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6fa2a3cede967956570c97a2d5e4f910044" kindref="member">MLCameraMetadataControlAELock_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="75" refid="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6faedfaee30ccd944ddb72df34157857651" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6faedfaee30ccd944ddb72df34157857651" kindref="member">MLCameraMetadataControlAELock_On</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga7a423c65eeab14b4087886f690552a6fa88984d2812773911acac10be269d2941" kindref="member">MLCameraMetadataControlAELock_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="78" refid="group___camera_metadata_1ga576deaa67934ed6879e6753ed9fd186c" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga7a423c65eeab14b4087886f690552a6f" kindref="member">MLCameraMetadataControlAELock</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="group___camera_metadata_1ga479ea00e7246175933feece48436bb1e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga479ea00e7246175933feece48436bb1e" kindref="member">MLCameraMetadataControlAEMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="83" refid="group___camera_metadata_1gga479ea00e7246175933feece48436bb1ea1eb344368a26f2aef6bb7798f0a381f5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga479ea00e7246175933feece48436bb1ea1eb344368a26f2aef6bb7798f0a381f5" kindref="member">MLCameraMetadataControlAEMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="85" refid="group___camera_metadata_1gga479ea00e7246175933feece48436bb1ea28487333fc7d8b6674f05ee2157d04ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga479ea00e7246175933feece48436bb1ea28487333fc7d8b6674f05ee2157d04ab" kindref="member">MLCameraMetadataControlAEMode_On</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga479ea00e7246175933feece48436bb1eabd7910d08bd98032aa5b8c294083f4c7" kindref="member">MLCameraMetadataControlAEMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="88" refid="group___camera_metadata_1ga774bf8e651481b62519ca6e6a3e8275d" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga479ea00e7246175933feece48436bb1e" kindref="member">MLCameraMetadataControlAEMode</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="group___camera_metadata_1gabdc0630fc39fae36631f1630c31a4f65" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gabdc0630fc39fae36631f1630c31a4f65" kindref="member">MLCameraMetadataControlAWBLock</ref><sp/>{</highlight></codeline>
+<codeline lineno="93" refid="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a51ecd737070df82fbe51214b1053040a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a51ecd737070df82fbe51214b1053040a" kindref="member">MLCameraMetadataControlAWBLock_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="95" refid="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a7d9eadb1574939cc56eb7f2c1fddc091" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a7d9eadb1574939cc56eb7f2c1fddc091" kindref="member">MLCameraMetadataControlAWBLock_On</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggabdc0630fc39fae36631f1630c31a4f65a5188041a7044d808794ce0520a93b15b" kindref="member">MLCameraMetadataControlAWBLock_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="98" refid="group___camera_metadata_1ga5e9096cc1ebdd646197d87086b3c5664" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gabdc0630fc39fae36631f1630c31a4f65" kindref="member">MLCameraMetadataControlAWBLock</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="group___camera_metadata_1ga17948cb26d104878ba06e1fbf23ac3dd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga17948cb26d104878ba06e1fbf23ac3dd" kindref="member">MLCameraMetadataControlAWBMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="103" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac8b5e26e0a00945948eea6443c0e94b9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac8b5e26e0a00945948eea6443c0e94b9" kindref="member">MLCameraMetadataControlAWBMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="105" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda2da7742178bab746173660e892fee559" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda2da7742178bab746173660e892fee559" kindref="member">MLCameraMetadataControlAWBMode_Auto</ref>,</highlight></codeline>
+<codeline lineno="107" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda0b7ce57f49a4840d3ac95e65b0334ebf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda0b7ce57f49a4840d3ac95e65b0334ebf" kindref="member">MLCameraMetadataControlAWBMode_Incandescent</ref>,</highlight></codeline>
+<codeline lineno="109" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac6380f26763541fb9ebb42250abb62c1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac6380f26763541fb9ebb42250abb62c1" kindref="member">MLCameraMetadataControlAWBMode_Fluorescent</ref>,</highlight></codeline>
+<codeline lineno="111" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac0f0ebdc8390625b09d01155984a8826" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddac0f0ebdc8390625b09d01155984a8826" kindref="member">MLCameraMetadataControlAWBMode_WarmFluorescent</ref>,</highlight></codeline>
+<codeline lineno="113" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda0d909ee20fcf24b6ced9af1aa2bf2921" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda0d909ee20fcf24b6ced9af1aa2bf2921" kindref="member">MLCameraMetadataControlAWBMode_Daylight</ref>,</highlight></codeline>
+<codeline lineno="115" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddaebeeeca33158e937f42c4ffe11d95ad6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddaebeeeca33158e937f42c4ffe11d95ad6" kindref="member">MLCameraMetadataControlAWBMode_CloudyDaylight</ref>,</highlight></codeline>
+<codeline lineno="117" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda5c931cb47990b25e87cbf664177a525b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3dda5c931cb47990b25e87cbf664177a525b" kindref="member">MLCameraMetadataControlAWBMode_Twilight</ref>,</highlight></codeline>
+<codeline lineno="119" refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddaf4df2181dab50ab6e525efb3dc1bbbc6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddaf4df2181dab50ab6e525efb3dc1bbbc6" kindref="member">MLCameraMetadataControlAWBMode_Shade</ref>,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga17948cb26d104878ba06e1fbf23ac3ddace3a63675d5ebe7b959642035b740bc0" kindref="member">MLCameraMetadataControlAWBMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="122" refid="group___camera_metadata_1ga0595edfac598b62e49daf936fb082899" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga17948cb26d104878ba06e1fbf23ac3dd" kindref="member">MLCameraMetadataControlAWBMode</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="group___camera_metadata_1ga0db9acf1813a64e2fc76e5dfd205030a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga0db9acf1813a64e2fc76e5dfd205030a" kindref="member">MLCameraMetadataControlAFMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="127" refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa8e968282b30cc62765edec0abc3d4e26" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa8e968282b30cc62765edec0abc3d4e26" kindref="member">MLCameraMetadataControlAFMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="129" refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aab5f741e2a600843a38c108860f557de0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aab5f741e2a600843a38c108860f557de0" kindref="member">MLCameraMetadataControlAFMode_Auto</ref>,</highlight></codeline>
+<codeline lineno="131" refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aac39dc1fcf6113de7cd8f65c0dfddd63b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aac39dc1fcf6113de7cd8f65c0dfddd63b" kindref="member">MLCameraMetadataControlAFMode_Macro</ref>,</highlight></codeline>
+<codeline lineno="133" refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa290a8cbb397a0903d0737e7344a7af62" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa290a8cbb397a0903d0737e7344a7af62" kindref="member">MLCameraMetadataControlAFMode_ContinuousVideo</ref>,</highlight></codeline>
+<codeline lineno="135" refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa9bc9134e38eac704acc38daaf802798a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa9bc9134e38eac704acc38daaf802798a" kindref="member">MLCameraMetadataControlAFMode_ContinuousPicture</ref>,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga0db9acf1813a64e2fc76e5dfd205030aa4322224d9a050b0f3fa0ff9ba3d11a84" kindref="member">MLCameraMetadataControlAFMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="138" refid="group___camera_metadata_1ga513e245040049ed799610a61f57e6e2b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga0db9acf1813a64e2fc76e5dfd205030a" kindref="member">MLCameraMetadataControlAFMode</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="group___camera_metadata_1ga82cc17a9b170dba2e5e81daa0bf027b9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga82cc17a9b170dba2e5e81daa0bf027b9" kindref="member">MLCameraMetadataControlAFTrigger</ref><sp/>{</highlight></codeline>
+<codeline lineno="143" refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9abd421c7cfd9a9250bfcb0389eab3431c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9abd421c7cfd9a9250bfcb0389eab3431c" kindref="member">MLCameraMetadataControlAFTrigger_Idle</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="145" refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9a0329e16f765c8e1346afe10495a1f884" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9a0329e16f765c8e1346afe10495a1f884" kindref="member">MLCameraMetadataControlAFTrigger_Start</ref>,</highlight></codeline>
+<codeline lineno="147" refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9ad3e60c6c179a082a037bb8f0517f00dd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9ad3e60c6c179a082a037bb8f0517f00dd" kindref="member">MLCameraMetadataControlAFTrigger_Cancel</ref>,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga82cc17a9b170dba2e5e81daa0bf027b9a9444727e6568a0b1a8be102a84be71b6" kindref="member">MLCameraMetadataControlAFTrigger_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="150" refid="group___camera_metadata_1ga976d5ef79dc9c4e096c9d8c0385e1a23" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga82cc17a9b170dba2e5e81daa0bf027b9" kindref="member">MLCameraMetadataControlAFTrigger</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group___camera_metadata_1ga23122e7cc560f3bdf7a1d7349b4dbe83" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga23122e7cc560f3bdf7a1d7349b4dbe83" kindref="member">MLCameraMetadataControlMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="155" refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83ab9d679c4eced72ff31489f8ceee5784f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83ab9d679c4eced72ff31489f8ceee5784f" kindref="member">MLCameraMetadataControlMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="157" refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a4dae60be50fac6fb090182e54be98471" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a4dae60be50fac6fb090182e54be98471" kindref="member">MLCameraMetadataControlMode_Auto</ref>,</highlight></codeline>
+<codeline lineno="159" refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83afaf31369afd40b79df058a19b21effb2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83afaf31369afd40b79df058a19b21effb2" kindref="member">MLCameraMetadataControlMode_UseSceneMode</ref>,</highlight></codeline>
+<codeline lineno="161" refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a106602d1014eb5d0609de09fbc482f10" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a106602d1014eb5d0609de09fbc482f10" kindref="member">MLCameraMetadataControlMode_OffKeepState</ref>,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga23122e7cc560f3bdf7a1d7349b4dbe83a88fb791960eb5d7aa255158ad1790648" kindref="member">MLCameraMetadataControlMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="164" refid="group___camera_metadata_1ga1bfc0508a72ed45a5765094e33998bf0" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga23122e7cc560f3bdf7a1d7349b4dbe83" kindref="member">MLCameraMetadataControlMode</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="group___camera_metadata_1gaa4bffc218d9203597d724662b7d6b0de" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gaa4bffc218d9203597d724662b7d6b0de" kindref="member">MLCameraMetadataControlSceneMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="169" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea9b3688c6cf875411ce2c083674ffe693" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea9b3688c6cf875411ce2c083674ffe693" kindref="member">MLCameraMetadataControlSceneMode_None</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="171" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deaf5512463f4ca73d6d625b3a70ddc2055" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deaf5512463f4ca73d6d625b3a70ddc2055" kindref="member">MLCameraMetadataControlSceneMode_Action</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="173" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deae8344aff8207eedc4f8a2ba2053e364e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deae8344aff8207eedc4f8a2ba2053e364e" kindref="member">MLCameraMetadataControlSceneMode_Portrait</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="175" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea1fc67b1d6f4ee09673c44388937f06cb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea1fc67b1d6f4ee09673c44388937f06cb" kindref="member">MLCameraMetadataControlSceneMode_Landscape</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="177" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea34301578e902e2e9592bad3c0ea3fdab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea34301578e902e2e9592bad3c0ea3fdab" kindref="member">MLCameraMetadataControlSceneMode_Theatre</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="179" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deafde2fca059d95de75bc2c71ed8fa2a15" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deafde2fca059d95de75bc2c71ed8fa2a15" kindref="member">MLCameraMetadataControlSceneMode_Sports</ref><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="181" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea745d3a8da4967bb6c8d9bbb61d17df20" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea745d3a8da4967bb6c8d9bbb61d17df20" kindref="member">MLCameraMetadataControlSceneMode_Party</ref><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="183" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deabefa6f93dc2432d11cdaad98c813dbd6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deabefa6f93dc2432d11cdaad98c813dbd6" kindref="member">MLCameraMetadataControlSceneMode_CandleLight</ref><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="185" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deab23460072d1bad90fdf62b0da15a299c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0deab23460072d1bad90fdf62b0da15a299c" kindref="member">MLCameraMetadataControlSceneMode_Barcode</ref><sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="187" refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea9a6e1348c16e7ceee3e3b61ab6d9f14f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea9a6e1348c16e7ceee3e3b61ab6d9f14f" kindref="member">MLCameraMetadataControlSceneMode_Medical</ref><sp/>=<sp/>100,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa4bffc218d9203597d724662b7d6b0dea3df73908ef16a65e635633ee5e48dded" kindref="member">MLCameraMetadataControlSceneMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="190" refid="group___camera_metadata_1gaf220b1ca6620f6bf262b79eef75b888c" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gaa4bffc218d9203597d724662b7d6b0de" kindref="member">MLCameraMetadataControlSceneMode</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="group___camera_metadata_1gac2cf7dbd0f1609d7ca1d8b34cd2637f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gac2cf7dbd0f1609d7ca1d8b34cd2637f2" kindref="member">MLCameraMetadataControlEffectMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="195" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a0c538e6b32b6917e5a616a59c21a2d7c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a0c538e6b32b6917e5a616a59c21a2d7c" kindref="member">MLCameraMetadataControlEffectMode_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="197" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2afd10b361997f87dc21cd808517cadbbe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2afd10b361997f87dc21cd808517cadbbe" kindref="member">MLCameraMetadataControlEffectMode_Grayscale</ref>,</highlight></codeline>
+<codeline lineno="199" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a82339612198d46a8c0980015cb595f4d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a82339612198d46a8c0980015cb595f4d" kindref="member">MLCameraMetadataControlEffectMode_Negative</ref>,</highlight></codeline>
+<codeline lineno="201" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a41b8e573d0dd8bcc86bc68910f6e80fa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a41b8e573d0dd8bcc86bc68910f6e80fa" kindref="member">MLCameraMetadataControlEffectMode_Sepia</ref>,</highlight></codeline>
+<codeline lineno="203" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2aad6f9a7dba9e5b5f5c4e4aac9aaa33be" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2aad6f9a7dba9e5b5f5c4e4aac9aaa33be" kindref="member">MLCameraMetadataControlEffectMode_ColorSelection</ref>,</highlight></codeline>
+<codeline lineno="205" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2ad89e33d221e57a8280b6c9732caf66de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2ad89e33d221e57a8280b6c9732caf66de" kindref="member">MLCameraMetadataControlEffectMode_Sharpening</ref>,</highlight></codeline>
+<codeline lineno="207" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a930607a7dc463069dca6ddea8f459e98" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2a930607a7dc463069dca6ddea8f459e98" kindref="member">MLCameraMetadataControlEffectMode_Emboss</ref>,</highlight></codeline>
+<codeline lineno="209" refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2af9651967b683f56fdb52fdc17759ba19" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2af9651967b683f56fdb52fdc17759ba19" kindref="member">MLCameraMetadataControlEffectMode_Sketch</ref>,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggac2cf7dbd0f1609d7ca1d8b34cd2637f2afd86e67d398bf234a2b52466dc26b5e5" kindref="member">MLCameraMetadataControlEffectMode_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="212" refid="group___camera_metadata_1gae21c94f5f82f600f3df81d320dd6539e" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gac2cf7dbd0f1609d7ca1d8b34cd2637f2" kindref="member">MLCameraMetadataControlEffectMode</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="group___camera_metadata_1ga1179ec630cb860653f45df76777c9933" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga1179ec630cb860653f45df76777c9933" kindref="member">MLCameraMetadataControlAEState</ref><sp/>{</highlight></codeline>
+<codeline lineno="217" refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a9c92bcdc69c7f4d92d97c70bca259f3e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a9c92bcdc69c7f4d92d97c70bca259f3e" kindref="member">MLCameraMetadataControlAEState_Inactive</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="219" refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a6a8eec690e3e16e8a91dd9dc39625a59" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a6a8eec690e3e16e8a91dd9dc39625a59" kindref="member">MLCameraMetadataControlAEState_Searching</ref>,</highlight></codeline>
+<codeline lineno="221" refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a8596607db0f8cc6e2f224ca2ddebfedb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a8596607db0f8cc6e2f224ca2ddebfedb" kindref="member">MLCameraMetadataControlAEState_Converged</ref>,</highlight></codeline>
+<codeline lineno="223" refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a996692d84e9baf83848032a750e9681e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a996692d84e9baf83848032a750e9681e" kindref="member">MLCameraMetadataControlAEState_Locked</ref>,</highlight></codeline>
+<codeline lineno="225" refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933aeedcb10fe0d0a445c46af4c65f40f368" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933aeedcb10fe0d0a445c46af4c65f40f368" kindref="member">MLCameraMetadataControlAEState_FlashRequired</ref>,</highlight></codeline>
+<codeline lineno="227" refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a8bafdb3ba7a67064a38dcf1cbf29b501" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a8bafdb3ba7a67064a38dcf1cbf29b501" kindref="member">MLCameraMetadataControlAEState_PreCapture</ref>,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga1179ec630cb860653f45df76777c9933a94e5f0de5e974f2978c41e06210e1baf" kindref="member">MLCameraMetadataControlAEState_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="230" refid="group___camera_metadata_1ga61a957c73f9467c8882cb65469969d16" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga1179ec630cb860653f45df76777c9933" kindref="member">MLCameraMetadataControlAEState</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="group___camera_metadata_1gaa2b352a31efa610c6b3edc677a58933c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gaa2b352a31efa610c6b3edc677a58933c" kindref="member">MLCameraMetadataControlAWBState</ref><sp/>{</highlight></codeline>
+<codeline lineno="235" refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca95d1c3097e416a1cca8008efb9329f1b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca95d1c3097e416a1cca8008efb9329f1b" kindref="member">MLCameraMetadataControlAWBState_Inactive</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="237" refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca4ddbcbcf8392e6126ccf809117fddb16" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca4ddbcbcf8392e6126ccf809117fddb16" kindref="member">MLCameraMetadataControlAWBState_Searching</ref>,</highlight></codeline>
+<codeline lineno="239" refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933caf590515ee9e67001c2e8e4f6cdc7b9c1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933caf590515ee9e67001c2e8e4f6cdc7b9c1" kindref="member">MLCameraMetadataControlAWBState_Converged</ref>,</highlight></codeline>
+<codeline lineno="241" refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca5d1dcc9ad41dbb71b399ac6a0845f536" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933ca5d1dcc9ad41dbb71b399ac6a0845f536" kindref="member">MLCameraMetadataControlAWBState_Locked</ref>,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaa2b352a31efa610c6b3edc677a58933cadf00dc26cf9fe5558f941ba9dd6c015d" kindref="member">MLCameraMetadataControlAWBState_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="244" refid="group___camera_metadata_1ga87fc30ee65057f51a49a14dbb77f7124" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gaa2b352a31efa610c6b3edc677a58933c" kindref="member">MLCameraMetadataControlAWBState</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="group___camera_metadata_1ga3a7171fff7a4f7a61beb832a303d901e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga3a7171fff7a4f7a61beb832a303d901e" kindref="member">MLCameraMetadataControlAFState</ref><sp/>{</highlight></codeline>
+<codeline lineno="249" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea0b7292081837226650230abea54d2e24" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea0b7292081837226650230abea54d2e24" kindref="member">MLCameraMetadataControlAFState_Inactive</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="251" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eae7aba1f1d70f56010e1bd4785599528b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eae7aba1f1d70f56010e1bd4785599528b" kindref="member">MLCameraMetadataControlAFState_PassiveScan</ref>,</highlight></codeline>
+<codeline lineno="253" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eac6323850b120f65d75359ac7509017ea" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eac6323850b120f65d75359ac7509017ea" kindref="member">MLCameraMetadataControlAFState_PassiveFocussed</ref>,</highlight></codeline>
+<codeline lineno="255" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea980f9a187455f40c4878c64d0a4c78c9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea980f9a187455f40c4878c64d0a4c78c9" kindref="member">MLCameraMetadataControlAFState_ActiveScan</ref>,</highlight></codeline>
+<codeline lineno="257" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea94158a0d0807b4b640a60b5640dd5ca9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea94158a0d0807b4b640a60b5640dd5ca9" kindref="member">MLCameraMetadataControlAFState_FocusedLocked</ref>,</highlight></codeline>
+<codeline lineno="259" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eac6dd462092d450f98a18f966c1d42a85" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901eac6dd462092d450f98a18f966c1d42a85" kindref="member">MLCameraMetadataControlAFState_NotFocusedLocked</ref>,</highlight></codeline>
+<codeline lineno="261" refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea34d144429e8b8d0ded117099fc586f1c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea34d144429e8b8d0ded117099fc586f1c" kindref="member">MLCameraMetadataControlAFState_PassiveUnFocussed</ref>,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga3a7171fff7a4f7a61beb832a303d901ea70420c06737f3f9c547a68a9308eb4dd" kindref="member">MLCameraMetadataControlAFState_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="264" refid="group___camera_metadata_1gafccb6fa9bb295ab41b6e2bb44c916c09" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga3a7171fff7a4f7a61beb832a303d901e" kindref="member">MLCameraMetadataControlAFState</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="group___camera_metadata_1gaca47dfe1ecabf022fff5e638eaaba08f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gaca47dfe1ecabf022fff5e638eaaba08f" kindref="member">MLCameraMetadataControlAFSceneChange</ref><sp/>{</highlight></codeline>
+<codeline lineno="269" refid="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fae435025af624991507f5ec258b85641e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fae435025af624991507f5ec258b85641e" kindref="member">MLCameraMetadataControlAFSceneChange_NotDetected</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="271" refid="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fa92c164371b759b385c7abbd4cbd80dbd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fa92c164371b759b385c7abbd4cbd80dbd" kindref="member">MLCameraMetadataControlAFSceneChange_Detected</ref>,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaca47dfe1ecabf022fff5e638eaaba08fad11418879536c13b92c12d7283d1e512" kindref="member">MLCameraMetadataControlAFSceneChange_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="274" refid="group___camera_metadata_1gaaa3f7543f31fa0bdb6941bba07536608" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gaca47dfe1ecabf022fff5e638eaaba08f" kindref="member">MLCameraMetadataControlAFSceneChange</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="group___camera_metadata_1ga041793aa1770a57d9991643629d7844a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1ga041793aa1770a57d9991643629d7844a" kindref="member">MLCameraMetadataLensState</ref><sp/>{</highlight></codeline>
+<codeline lineno="279" refid="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aa576b393c0af033bfebefb04b087481f1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aa576b393c0af033bfebefb04b087481f1" kindref="member">MLCameraMetadataLensState_Stationary</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="281" refid="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aaa77caae9ad5c87ec0c16748d0bbe02e0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aaa77caae9ad5c87ec0c16748d0bbe02e0" kindref="member">MLCameraMetadataLensState_Moving</ref>,</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1gga041793aa1770a57d9991643629d7844aa07a00ee4b86e0bceb2d1ca078d219020" kindref="member">MLCameraMetadataLensState_Ensure32Bits</ref><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="284" refid="group___camera_metadata_1gad6c0ada1da2f52b54e444ab3727b5b8e" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1ga041793aa1770a57d9991643629d7844a" kindref="member">MLCameraMetadataLensState</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="group___camera_metadata_1gaea082f56eed295e8f746c4c7babd91d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gaea082f56eed295e8f746c4c7babd91d2" kindref="member">MLCameraMetadataScalerAvailableFormats</ref><sp/>{</highlight></codeline>
+<codeline lineno="289" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a7f704694e3a18c55bd9122595407360d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a7f704694e3a18c55bd9122595407360d" kindref="member">MLCameraMetadataScalerAvailableFormats_RAW16</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x20,</highlight></codeline>
+<codeline lineno="291" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a95772fac5053e4ff5ee777577fd6b3e2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a95772fac5053e4ff5ee777577fd6b3e2" kindref="member">MLCameraMetadataScalerAvailableFormats_RAW_OPAQUE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x24,</highlight></codeline>
+<codeline lineno="293" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a7c8467c0e9a235c303833f3b8a4b20bc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a7c8467c0e9a235c303833f3b8a4b20bc" kindref="member">MLCameraMetadataScalerAvailableFormats_YV12</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x32315659,</highlight></codeline>
+<codeline lineno="295" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2aedc3cf36a6cebe66b02fe08f81fc21e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2aedc3cf36a6cebe66b02fe08f81fc21e7" kindref="member">MLCameraMetadataScalerAvailableFormats_YCrCb_420_SP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x11,</highlight></codeline>
+<codeline lineno="297" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a50bfe233bbfea2edb26fe7ccf15e9f03" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a50bfe233bbfea2edb26fe7ccf15e9f03" kindref="member">MLCameraMetadataScalerAvailableFormats_IMPLEMENTATION_DEFINED</ref><sp/>=<sp/>0x22,</highlight></codeline>
+<codeline lineno="299" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a6a27ebb2678fc5319ec58a49611717d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a6a27ebb2678fc5319ec58a49611717d7" kindref="member">MLCameraMetadataScalerAvailableFormats_YCbCr_420_888</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x23,</highlight></codeline>
+<codeline lineno="301" refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a8a682ff7c0a94e8378cd317305a41e19" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a8a682ff7c0a94e8378cd317305a41e19" kindref="member">MLCameraMetadataScalerAvailableFormats_BLOB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x21,</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggaea082f56eed295e8f746c4c7babd91d2a07119e80f51a4e2e3841ccb1f5487263" kindref="member">MLCameraMetadataScalerAvailableFormats_Ensure32Bits</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="304" refid="group___camera_metadata_1ga929fb4d5951de2d8562dd47e185588fd" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gaea082f56eed295e8f746c4c7babd91d2" kindref="member">MLCameraMetadataScalerAvailableFormats</ref>;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="group___camera_metadata_1gad9cf7ea25c13f88f66eca1ee91759a21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gad9cf7ea25c13f88f66eca1ee91759a21" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations</ref><sp/>{</highlight></codeline>
+<codeline lineno="309" refid="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a5222d4975fc3402fe6db08f16093cbcd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a5222d4975fc3402fe6db08f16093cbcd" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations_OUTPUT</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="311" refid="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a2fb1a5b8bc4e6dbbe9d9545f9145bc42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a2fb1a5b8bc4e6dbbe9d9545f9145bc42" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations_INPUT</ref>,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggad9cf7ea25c13f88f66eca1ee91759a21a64a7f58b3ed054cf13967293e14298ea" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="314" refid="group___camera_metadata_1ga24e45984825030cbf8942fe629857b4f" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gad9cf7ea25c13f88f66eca1ee91759a21" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations</ref>;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="group___camera_metadata_1gadedcabe87f32b318e8bb5e605345392c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gadedcabe87f32b318e8bb5e605345392c" kindref="member">MLCameraMetadataJpegThumbnailSize</ref><sp/>{</highlight></codeline>
+<codeline lineno="319" refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca2fdf4d8b9b10032f6adda1acc81365e0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca2fdf4d8b9b10032f6adda1acc81365e0" kindref="member">MLCameraMetadataJpegThumbnailSize_160x120</ref><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="321" refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca23a586def8b94991ea6c4d9d5e22a952" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca23a586def8b94991ea6c4d9d5e22a952" kindref="member">MLCameraMetadataJpegThumbnailSize_240x135</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="323" refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca225b82ebf9c2ba722f11c151c06cbc99" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392ca225b82ebf9c2ba722f11c151c06cbc99" kindref="member">MLCameraMetadataJpegThumbnailSize_256x135</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggadedcabe87f32b318e8bb5e605345392cacc79355f4cfa72d199aada10db6e7f86" kindref="member">MLCameraMetadataJpegThumbnailSize_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="326" refid="group___camera_metadata_1ga0aa104bd3469b3d4cd43463d41e5bfe2" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gadedcabe87f32b318e8bb5e605345392c" kindref="member">MLCameraMetadataJpegThumbnailSize</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="group___camera_metadata_1gab61121802cb323ceb95e9069051d4cae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___camera_metadata_1gab61121802cb323ceb95e9069051d4cae" kindref="member">MLCameraMetadataControlForceApplyMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="331" refid="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caeacb721e9c408346ef0aa016dccdde2395" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caeacb721e9c408346ef0aa016dccdde2395" kindref="member">MLCameraMetadataControlForceApplyMode_Off</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="333" refid="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caeaef70a3a6c7da25cf8f1b42a81e521248" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caeaef70a3a6c7da25cf8f1b42a81e521248" kindref="member">MLCameraMetadataControlForceApplyMode_On</ref><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><ref refid="group___camera_metadata_1ggab61121802cb323ceb95e9069051d4caea7c2f9a2b674bacbf9837850a2da2e771" kindref="member">MLCameraMetadataControlForceApplyMode_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="336" refid="group___camera_metadata_1ga1b3f61a076ef9941894c6d9cfed7484e" refkind="member"><highlight class="normal">}<sp/><ref refid="group___camera_metadata_1gab61121802cb323ceb95e9069051d4cae" kindref="member">MLCameraMetadataControlForceApplyMode</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h"/>
+  </compounddef>
+</doxygen>

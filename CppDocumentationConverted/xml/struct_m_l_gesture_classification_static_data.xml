@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_gesture_classification_static_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLGestureClassificationStaticData</compoundname>
+    <includes refid="ml__gesture__classification_8h" local="no">ml_gesture_classification.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_static_data_1a4673364b16fac4add987fc1e5ff0beaa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLGestureClassificationStaticData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="95" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_static_data_1a2079da7bfb10fc390b7efe122232169b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLGestureClassificationStaticData::hand_interaction[MLGestureClassificationHandType_Count]</definition>
+        <argsstring>[MLGestureClassificationHandType_Count]</argsstring>
+        <name>hand_interaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CFUID for hands&apos; interaction point transform based on the current posture type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="97" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_static_data_1ae389b4966289f784bdf6f3c976256276" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLGestureClassificationStaticData::hand_transform[MLGestureClassificationHandType_Count]</definition>
+        <argsstring>[MLGestureClassificationHandType_Count]</argsstring>
+        <name>hand_transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CFUID for hands&apos; center point transform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="99" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static information about the gesture classification. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Populate with <ref refid="group___gesture_classification_1ga5e78cbddfa008b226b51d5ce17db6828" kindref="member">MLGestureClassificationGetStaticData()</ref>. This structure must be initialized by calling <ref refid="group___gesture_classification_1ga4090d5515fd93c8c38804a8d1f18fc69" kindref="member">MLGestureClassificationStaticDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLGestureClassificationStaticData</label>
+        <link refid="struct_m_l_gesture_classification_static_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hand_interaction</edgelabel>
+          <edgelabel>hand_transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="93" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="93" bodyend="100"/>
+    <listofallmembers>
+      <member refid="struct_m_l_gesture_classification_static_data_1a2079da7bfb10fc390b7efe122232169b" prot="public" virt="non-virtual"><scope>MLGestureClassificationStaticData</scope><name>hand_interaction</name></member>
+      <member refid="struct_m_l_gesture_classification_static_data_1ae389b4966289f784bdf6f3c976256276" prot="public" virt="non-virtual"><scope>MLGestureClassificationStaticData</scope><name>hand_transform</name></member>
+      <member refid="struct_m_l_gesture_classification_static_data_1a4673364b16fac4add987fc1e5ff0beaa" prot="public" virt="non-virtual"><scope>MLGestureClassificationStaticData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_gaze_recognition_static_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLGazeRecognitionStaticData</compoundname>
+    <includes refid="ml__gaze__recognition_8h" local="no">ml_gaze_recognition.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___gaze_recognition_1gace0a86ddbae640b69c3adef09c96b769" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLGazeRecognitionStaticData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="75" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga00a20bdb9a810aecf4c9af4502816537" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionStaticData::eye_height_max</definition>
+        <argsstring></argsstring>
+        <name>eye_height_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum value for the height of the eye_left and eye_right vector. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="77" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1ga5061f15059e49c34f8e6b20aaf1827a9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLGazeRecognitionStaticData::eye_width_max</definition>
+        <argsstring></argsstring>
+        <name>eye_width_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum value for the width of the eye_left and eye_right vector. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="79" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___gaze_recognition_1gae786b135262df2c3e7a3d8fa8d81f563" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLGazeRecognitionStaticData::vergence</definition>
+        <argsstring></argsstring>
+        <name>vergence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Location of the 3D vergence point, intersection of 3D gaze vectors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="81" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static information about the Gaze Recognition system. Populate with <ref refid="group___gaze_recognition_1gadd83562daefbc8506640498b27f0dcb4" kindref="member">MLGazeRecognitionGetStaticData()</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+      <node id="1">
+        <label>MLGazeRecognitionStaticData</label>
+        <link refid="struct_m_l_gaze_recognition_static_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>vergence</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" line="73" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h" bodystart="73" bodyend="82"/>
+    <listofallmembers>
+      <member refid="group___gaze_recognition_1ga00a20bdb9a810aecf4c9af4502816537" prot="public" virt="non-virtual"><scope>MLGazeRecognitionStaticData</scope><name>eye_height_max</name></member>
+      <member refid="group___gaze_recognition_1ga5061f15059e49c34f8e6b20aaf1827a9" prot="public" virt="non-virtual"><scope>MLGazeRecognitionStaticData</scope><name>eye_width_max</name></member>
+      <member refid="group___gaze_recognition_1gae786b135262df2c3e7a3d8fa8d81f563" prot="public" virt="non-virtual"><scope>MLGazeRecognitionStaticData</scope><name>vergence</name></member>
+      <member refid="group___gaze_recognition_1gace0a86ddbae640b69c3adef09c96b769" prot="public" virt="non-virtual"><scope>MLGazeRecognitionStaticData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

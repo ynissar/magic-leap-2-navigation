@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___eye_tracking" kind="group">
+    <compoundname>EyeTracking</compoundname>
+    <title>Eye Tracking</title>
+    <innerclass refid="struct_m_l_eye_tracking_static_data" prot="public">MLEyeTrackingStaticData</innerclass>
+    <innerclass refid="struct_m_l_eye_tracking_state_ex" prot="public">MLEyeTrackingStateEx</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___eye_tracking_1gae44812d3173b83123e40863c233ab782" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLEyeTrackingError</name>
+        <enumvalue id="group___eye_tracking_1ggae44812d3173b83123e40863c233ab782ac552761ac36e228c2ca1d4599af178c4" prot="public">
+          <name>MLEyeTrackingError_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No error, tracking is nominal. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___eye_tracking_1ggae44812d3173b83123e40863c233ab782a00d539038a5dfb68232bedc14869e33b" prot="public">
+          <name>MLEyeTrackingError_Generic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Eye Tracker failed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___eye_tracking_1ggae44812d3173b83123e40863c233ab782a26112a982540fc50e0561b73c769afeb" prot="public">
+          <name>MLEyeTrackingError_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A set of possible error codes that the Eye Tracking system can report. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="32" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="32" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___eye_tracking_1ga32ad02f30ebd09c1454b637c1dd1213c" prot="public" static="no">
+        <type>enum <ref refid="group___eye_tracking_1gae44812d3173b83123e40863c233ab782" kindref="member">MLEyeTrackingError</ref></type>
+        <definition>typedef enum MLEyeTrackingError MLEyeTrackingError</definition>
+        <argsstring></argsstring>
+        <name>MLEyeTrackingError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A set of possible error codes that the Eye Tracking system can report. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="39" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___eye_tracking_1ga2abf3df4b774cb0a86cf3e0178255a17" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_eye_tracking_static_data" kindref="compound">MLEyeTrackingStaticData</ref></type>
+        <definition>typedef struct MLEyeTrackingStaticData MLEyeTrackingStaticData</definition>
+        <argsstring></argsstring>
+        <name>MLEyeTrackingStaticData</name>
+        <briefdescription>
+<para>Static information about the eye tracking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Populate with <ref refid="group___eye_tracking_1gab06d1af555599ebe9c2194888cbab102" kindref="member">MLEyeTrackingGetStaticData()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="65" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___eye_tracking_1gae5aeeab0132c63435664869981dbca4f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_eye_tracking_state_ex" kindref="compound">MLEyeTrackingStateEx</ref></type>
+        <definition>typedef struct MLEyeTrackingStateEx MLEyeTrackingStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLEyeTrackingStateEx</name>
+        <briefdescription>
+<para>Information about the state of the eye tracking system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___eye_tracking_1gaa7dbc442b5106466eef753ee6ff4269f" kindref="member">MLEyeTrackingStateInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="116" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___eye_tracking_1gaa7dbc442b5106466eef753ee6ff4269f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLEyeTrackingStateInit</definition>
+        <argsstring>(MLEyeTrackingStateEx *inout_state)</argsstring>
+        <name>MLEyeTrackingStateInit</name>
+        <param>
+          <type><ref refid="struct_m_l_eye_tracking_state_ex" kindref="compound">MLEyeTrackingStateEx</ref> *</type>
+          <declname>inout_state</declname>
+        </param>
+        <briefdescription>
+<para>Initialize <ref refid="struct_m_l_eye_tracking_state_ex" kindref="compound">MLEyeTrackingStateEx</ref> with version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_state and zero all other fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="125" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="group___eye_tracking_1ga580b6f27b900c12aa1bf2d24fe697591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeTrackingCreate</definition>
+        <argsstring>(MLHandle *out_handle)</argsstring>
+        <name>MLEyeTrackingCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates an eye tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle of the eye tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create eye tracker due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created eye tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFaiure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create eye tracker due to an unknown failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks permission.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000274"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.EYE_TRACKING (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="146" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" declline="146" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___eye_tracking_1ga4e6637050fa140f2086f51d5ec746c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeTrackingDestroy</definition>
+        <argsstring>(MLHandle eye_tracker)</argsstring>
+        <name>MLEyeTrackingDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>eye_tracker</declname>
+        </param>
+        <briefdescription>
+<para>Destroys an eye tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eye_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to an Eye Tracker created by <ref refid="group___eye_tracking_1ga580b6f27b900c12aa1bf2d24fe697591" kindref="member">MLEyeTrackingCreate()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed eye tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFaiure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy eye tracker due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000275"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="158" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" declline="158" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___eye_tracking_1gab06d1af555599ebe9c2194888cbab102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeTrackingGetStaticData</definition>
+        <argsstring>(MLHandle eye_tracker, MLEyeTrackingStaticData *out_data)</argsstring>
+        <name>MLEyeTrackingGetStaticData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>eye_tracker</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_eye_tracking_static_data" kindref="compound">MLEyeTrackingStaticData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Gets static information about the eye tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eye_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to an Eye Tracker created by <ref refid="group___eye_tracking_1ga580b6f27b900c12aa1bf2d24fe697591" kindref="member">MLEyeTrackingCreate()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target to populate the data about the eye tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The out_data parameter was not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eye tracking static data was successfully received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive eye tracking static data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000276"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="174" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" declline="174" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___eye_tracking_1gaeadd17327f07cce7b8dc8b4d4209195a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLEyeTrackingGetStateEx</definition>
+        <argsstring>(MLHandle eye_tracker, MLEyeTrackingStateEx *out_state)</argsstring>
+        <name>MLEyeTrackingGetStateEx</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>eye_tracker</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_eye_tracking_state_ex" kindref="compound">MLEyeTrackingStateEx</ref> *</type>
+          <declname>out_state</declname>
+        </param>
+        <briefdescription>
+<para>Gets information about the user&apos;s eyes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: To ensure a clean trace of any eye state, it is important to monitor the confidence value of that eye to reject frames where confidence is 0 (or employ another fallback strategy like propagating the last high confidence value).</para>
+<para><simplesect kind="par"><title>API Level:\n 9</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eye_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to an Eye Tracker created by <ref refid="group___eye_tracking_1ga580b6f27b900c12aa1bf2d24fe697591" kindref="member">MLEyeTrackingCreate()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the eyes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive eye tracking state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully received eye tracking state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive eye tracking state due to an unknown failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000277"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="194" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" declline="194" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Eye Tracking system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

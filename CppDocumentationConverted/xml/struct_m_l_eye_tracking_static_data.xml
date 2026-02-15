@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_eye_tracking_static_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLEyeTrackingStaticData</compoundname>
+    <includes refid="ml__eye__tracking_8h" local="no">ml_eye_tracking.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_static_data_1a0f6a3738581e6923af0e662e1b5311bd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLEyeTrackingStaticData::vergence</definition>
+        <argsstring></argsstring>
+        <name>vergence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Location of the 3D vergence point, intersection of 3D gaze vectors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="50" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_static_data_1ae46932c804ca1bb87db88a946f266b05" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLEyeTrackingStaticData::left_center</definition>
+        <argsstring></argsstring>
+        <name>left_center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Left center. The rotation component is the left gaze w.r.t. -Z (RUB) Note: Prior to API Level 7 rotation will only return identity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="57" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_tracking_static_data_1a0dbc037debcc195ab810161843828fe7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLEyeTrackingStaticData::right_center</definition>
+        <argsstring></argsstring>
+        <name>right_center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Right center. The rotation component is the right gaze w.r.t. -Z (RUB) Note: Prior to API Level 7 rotation will only return identity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="64" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static information about the eye tracking. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Populate with <ref refid="group___eye_tracking_1gab06d1af555599ebe9c2194888cbab102" kindref="member">MLEyeTrackingGetStaticData()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLEyeTrackingStaticData</label>
+        <link refid="struct_m_l_eye_tracking_static_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>left_center</edgelabel>
+          <edgelabel>right_center</edgelabel>
+          <edgelabel>vergence</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h" bodystart="48" bodyend="65"/>
+    <listofallmembers>
+      <member refid="struct_m_l_eye_tracking_static_data_1ae46932c804ca1bb87db88a946f266b05" prot="public" virt="non-virtual"><scope>MLEyeTrackingStaticData</scope><name>left_center</name></member>
+      <member refid="struct_m_l_eye_tracking_static_data_1a0dbc037debcc195ab810161843828fe7" prot="public" virt="non-virtual"><scope>MLEyeTrackingStaticData</scope><name>right_center</name></member>
+      <member refid="struct_m_l_eye_tracking_static_data_1a0f6a3738581e6923af0e662e1b5311bd" prot="public" virt="non-virtual"><scope>MLEyeTrackingStaticData</scope><name>vergence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

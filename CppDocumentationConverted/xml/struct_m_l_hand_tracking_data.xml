@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_hand_tracking_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLHandTrackingData</compoundname>
+    <includes refid="ml__hand__tracking_8h" local="no">ml_hand_tracking.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_data_1af7234dae7075e7ed438c3cfd1408fc0c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLHandTrackingData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="170" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_data_1ac656da699f991a8c6729dbf693f27a1e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_hand_tracking_hand_state" kindref="compound">MLHandTrackingHandState</ref></type>
+        <definition>MLHandTrackingHandState MLHandTrackingData::hand_state[MLHandTrackingHandType_Count]</definition>
+        <argsstring>[MLHandTrackingHandType_Count]</argsstring>
+        <name>hand_state</name>
+        <briefdescription>
+<para>Hand tracker states of the hands. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___hand_tracking_1ga0b2a753605fa314875df383c5259eeb9" kindref="member">MLHandTrackingHandType</ref> for more details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="177" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_data_1a1149dcd96166d446aa00c93a98d5ffd3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLHandTrackingData::timestamp_ns</definition>
+        <argsstring></argsstring>
+        <name>timestamp_ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timestamp of last measurement in nanoseconds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="180" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data which is received when querying hand tracker from <ref refid="group___hand_tracking_1ga8604087b02ed433174ff23fc25add2ee" kindref="member">MLHandTrackingGetData()</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___hand_tracking_1gaeefbabfc86130ef4d8d24cc53f2cf69c" kindref="member">MLHandTrackingDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLHandTrackingHandState</label>
+        <link refid="struct_m_l_hand_tracking_hand_state"/>
+      </node>
+      <node id="1">
+        <label>MLHandTrackingData</label>
+        <link refid="struct_m_l_hand_tracking_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hand_state</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="168" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="168" bodyend="182"/>
+    <listofallmembers>
+      <member refid="struct_m_l_hand_tracking_data_1ac656da699f991a8c6729dbf693f27a1e" prot="public" virt="non-virtual"><scope>MLHandTrackingData</scope><name>hand_state</name></member>
+      <member refid="struct_m_l_hand_tracking_data_1a1149dcd96166d446aa00c93a98d5ffd3" prot="public" virt="non-virtual"><scope>MLHandTrackingData</scope><name>timestamp_ns</name></member>
+      <member refid="struct_m_l_hand_tracking_data_1af7234dae7075e7ed438c3cfd1408fc0c" prot="public" virt="non-virtual"><scope>MLHandTrackingData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

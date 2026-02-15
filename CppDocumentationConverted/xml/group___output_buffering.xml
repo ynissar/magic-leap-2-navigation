@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___output_buffering" kind="group">
+    <compoundname>OutputBuffering</compoundname>
+    <title>Buffering</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___output_buffering_1ga9c6a88b8deb7ccbd99246c00ed9a43bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetBufferedOutputDefaults</definition>
+        <argsstring>(uint32_t channel_count, uint32_t samples_per_second, float max_pitch_change, MLAudioBufferFormat *out_format, uint32_t *out_recommended_size_in_bytes, uint32_t *out_min_size_in_bytes)</argsstring>
+        <name>MLAudioGetBufferedOutputDefaults</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel_count</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>samples_per_second</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_pitch_change</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> *</type>
+          <declname>out_format</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_recommended_size_in_bytes</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_min_size_in_bytes</declname>
+        </param>
+        <briefdescription>
+<para>Queries the minimum and recommended settings for buffered sound outputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is typically called before MLAudioCreateSoundWithBufferedOutput. It queries the minimum and recommended buffer sizes for the specified settings of channel count, sample rate, and &apos;max pitch change&apos;. The max pitch change parameter determines the additional buffer size required to support pitch values greater than 1. Applying a pitch change to a buffered output that is greater than the specified max pitch change can lead to undesirable results.</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of audio channels. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">samples_per_second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sample rate for the buffered output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_pitch_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Top pitch (1.0 - 2.0) for this sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref> struct to be filled with recommended format properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_recommended_size_in_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved recommended size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_min_size_in_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved minimum allowable size.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidChannelCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid channel count. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InvalidSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid sample rate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000082"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2738" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2738" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_buffering_1ga2e2a0b2f408fe9e492daca94a4996e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetBufferedOutputLatency</definition>
+        <argsstring>(MLHandle handle, float *out_latency_in_msec)</argsstring>
+        <name>MLAudioGetBufferedOutputLatency</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_latency_in_msec</declname>
+        </param>
+        <briefdescription>
+<para>Queries the latency for a buffered sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The latency for a buffered sound output is the time between when a buffer is enqueued via MLAudioReleaseOutputBuffer and when the corresponding audio is heard from the active audio output device. Note that output latency may change depending on which output device is active (for example, Bluetooth earbuds typically add latency compared to the built-in speakers in the headset).</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_latency_in_msec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved latency in milliseconds.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because operation is unavailable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000083"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2763" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2763" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_buffering_1ga90f0cab4330cbfbb75969aa82a613f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetBufferedOutputFramesPlayed</definition>
+        <argsstring>(MLHandle handle, uint64_t *out_frames_played)</argsstring>
+        <name>MLAudioGetBufferedOutputFramesPlayed</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>out_frames_played</declname>
+        </param>
+        <briefdescription>
+<para>Queries the number of audio frames played by a buffered output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This call queries the number of audio frames played by a buffered output since the last call to MLAudioStartSound. A subsequent call to MLAudioStartSound sets the count back to 0.</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_frames_played</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved number of audio frames played.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000084"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2784" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2784" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_buffering_1gaf0c944fc0dd2635f63d6f6cccce56714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetOutputBuffer</definition>
+        <argsstring>(MLHandle handle, MLAudioBuffer *out_buf)</argsstring>
+        <name>MLAudioGetOutputBuffer</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_buffer" kindref="compound">MLAudioBuffer</ref> *</type>
+          <declname>out_buf</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves an empty buffer for writing audio data for a buffered sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard usage is to call this function by polling or within a callback of type MLAudioBufferCallback registered with MLAudioCreateSoundWithBufferedOutput. This call returns MLAudioResult_BufferNotReady if a buffer is not available for writing audio data, informing the caller to wait. Once filled, the buffer must be released by calling MLAudioReleaseOutputBuffer.</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Retrieved <ref refid="struct_m_l_audio_buffer" kindref="compound">MLAudioBuffer</ref> struct pointer to buffer for writing audio data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_BufferNotReady</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because buffer was not ready. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because operation is unavailable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000085"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2810" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2810" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_buffering_1ga2f7add2955010cb02d125374fa22543a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioReleaseOutputBuffer</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLAudioReleaseOutputBuffer</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Releases a filled audio output buffer for playback through a buffered sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>After filling a buffer retrieved by MLAudioGetOutputBuffer, the buffer must be released using this function in order to be played through a sound output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_BufferNotReady</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because buffer was not ready. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because operation is unavailable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000086"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2832" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2832" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>BUFFERING. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

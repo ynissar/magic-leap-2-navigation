@@ -1,0 +1,2030 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__space_8h" kind="file" language="C++">
+    <compoundname>ml_space.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h</label>
+        <link refid="ml__space_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_m_l_space_manager_settings" prot="public">MLSpaceManagerSettings</innerclass>
+    <innerclass refid="struct_m_l_space" prot="public">MLSpace</innerclass>
+    <innerclass refid="struct_m_l_space_list" prot="public">MLSpaceList</innerclass>
+    <innerclass refid="struct_m_l_space_query_filter" prot="public">MLSpaceQueryFilter</innerclass>
+    <innerclass refid="struct_m_l_space_localization_info" prot="public">MLSpaceLocalizationInfo</innerclass>
+    <innerclass refid="struct_m_l_space_localization_result" prot="public">MLSpaceLocalizationResult</innerclass>
+    <innerclass refid="struct_m_l_space_callbacks" prot="public">MLSpaceCallbacks</innerclass>
+    <innerclass refid="struct_m_l_space_import_info" prot="public">MLSpaceImportInfo</innerclass>
+    <innerclass refid="struct_m_l_space_import_out_data" prot="public">MLSpaceImportOutData</innerclass>
+    <innerclass refid="struct_m_l_space_export_info" prot="public">MLSpaceExportInfo</innerclass>
+    <innerclass refid="struct_m_l_space_export_out_data" prot="public">MLSpaceExportOutData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___space_1ga5d76b81b0ad4c19007a781d4edb8181f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@28</name>
+        <enumvalue id="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fab4875ca595400bcc4e19413753775454" prot="public">
+          <name>MLResultAPIPrefix_Space</name>
+          <initializer>= ( 0x10cc  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLSpaceResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fa12e2e2fbb3bbc4331c77d7f8c3170d37" prot="public">
+          <name>MLSpace_MaxSpaceNameLength</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum size for the name of a Magic Leap Space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceResult</name>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fae281467e5cb9a001029d796e10def93a" prot="public">
+          <name>MLSpaceResult_ServerError</name>
+          <initializer>= MLResultAPIPrefix_Space</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There was an error communicating with the server. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa1dda1ec9559c0b87f780ab071818127e" prot="public">
+          <name>MLSpaceResult_ServiceUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The operation failed because the underlying service is not yet available, retry later. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa50a654cb4ef69fe50d417b903e21eb43" prot="public">
+          <name>MLSpaceResult_UnavailableSpace</name>
+          <briefdescription>
+<para>Space is not available. This can happen when the selected space is in AR Cloud but the device is configured for On Device spaces or vice-versa. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa8a1f726b10454d10273c8e6de6febc11" prot="public">
+          <name>MLSpaceResult_IncompatibleSpace</name>
+          <briefdescription>
+<para>Space is not compatible with the current OS version. This can happen when a space exported from an older version of the OS is imported to a device running a newer version of the OS. Refer to the documentation at the top of this header for more notes on Space compatibility. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9bd0f60af766a3c92bc8b7e00cb6867a" prot="public">
+          <name>MLSpaceResult_SpaceAlreadyExists</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The operation failed because the Space being imported already exists in the device. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9d7cc4da7a67b4c018ebda6ce821e530" prot="public">
+          <name>MLSpaceResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Magic Leap Space specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="75" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="75" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceType</name>
+        <enumvalue id="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579af4d93d4596d83070d41400bc937e4d99" prot="public">
+          <name>MLSpaceType_OnDevice</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>On device space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a226c571e56632e1631d9e1e3082bf5a2" prot="public">
+          <name>MLSpaceType_ARCloud</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AR Cloud based space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a6d3af31beb78da2e1a94fabedd449e73" prot="public">
+          <name>MLSpaceType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Space type. Indicates the type of the Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceLocalizationStatus</name>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a249b114ada9ecd922fba7bf9194c6c8e" prot="public">
+          <name>MLSpaceLocalizationStatus_NotLocalized</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device is currently not localized. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a7e03da1fb1146ad9211aa2835b20bfb4" prot="public">
+          <name>MLSpaceLocalizationStatus_Localized</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device has localized successfully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a292b333dedb44c43d798ae2ea6f5e19b" prot="public">
+          <name>MLSpaceLocalizationStatus_LocalizationPending</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization attempt is currently in progress. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9aab9a87eb7c92ed643eb8fb580942e9a4" prot="public">
+          <name>MLSpaceLocalizationStatus_SleepingBeforeRetry</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device will attempt to localize after sleep duration is complete. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a1aa16b499d0bfb0520a9abdd81981ad8" prot="public">
+          <name>MLSpaceLocalizationStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The current localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="119" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceLocalizationConfidence</name>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfa3ab532e02bed4b81370d9a7c62e8e608" prot="public">
+          <name>MLSpaceLocalizationConfidence_Poor</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization confidence is very poor and should be reattempted. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfadaa0e4cf424d761aa8456ccc67148a2f" prot="public">
+          <name>MLSpaceLocalizationConfidence_Fair</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The confidence is low, current environmental conditions may adversely affect localization. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfaeb87e24ffb7710370d527c0344076d57" prot="public">
+          <name>MLSpaceLocalizationConfidence_Good</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The confidence is high, persistent content should be stable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfacb50cce11b85cd2b5ecd96d1378b288e" prot="public">
+          <name>MLSpaceLocalizationConfidence_Excellent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This is a very high-confidence localization, persistent content will be very stable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfae1ecdee4cf0084c9266165c69926ff0c" prot="public">
+          <name>MLSpaceLocalizationConfidence_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The confidence of the current localization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="137" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1ga2234eb12a0d2158d124ce61bf130b849" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceLocalizationErrorFlag</name>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae735b5621a3a3a9846cf9a1a8779f06f" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No error, localization was successful. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a479450b6e738d9ad34547b7a25c6c1df" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_Unknown</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed for an unknown reason. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849ac72356ea8e21753b116c3330c314d975" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_OutOfMappedArea</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed becuase the user is outside of the mapped area. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a412add897ca45e01ea1e8413e9bab33b" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_LowFeatureCount</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There are not enough features in the environment to successfully localize. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8e435865bf691650eb2c3b457e812545" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_ExcessiveMotion</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed due to excessive motion. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae228af314813632e5b26033065aefa4c" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_LowLight</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed because the lighting levels are too low in the environment. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8704b7a16a4fa9835b5134f1f45e04f7" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_HeadposeFailure</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A headpose failure caused localization to be unsuccessful. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a24f55aa6c64257928d91fedc186b1c8a" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_AlgorithmFailure</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There was an internal algorithm failure that prevented localization. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a6ff0ee1752c08f575b12695d12fea2fa" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible reasons that a localization attempt may be unsuccessful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="155" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="155" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___space_1ga69594569e3db4d344e1410a8686ef22b" prot="public" static="no">
+        <type>enum <ref refid="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" kindref="member">MLSpaceResult</ref></type>
+        <definition>typedef enum MLSpaceResult MLSpaceResult</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceResult</name>
+        <briefdescription>
+<para>Magic Leap Space specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="97" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga063238e8906003f54bf99304d82ec76c" prot="public" static="no">
+        <type>enum <ref refid="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" kindref="member">MLSpaceType</ref></type>
+        <definition>typedef enum MLSpaceType MLSpaceType</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceType</name>
+        <briefdescription>
+<para>Space type. Indicates the type of the Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="112" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga09b8a0fc69ea23283c2421071851a859" prot="public" static="no">
+        <type>enum <ref refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" kindref="member">MLSpaceLocalizationStatus</ref></type>
+        <definition>typedef enum MLSpaceLocalizationStatus MLSpaceLocalizationStatus</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationStatus</name>
+        <briefdescription>
+<para>The current localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="130" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga7ce03ebadf91d56e5728c42cfdc3fdb4" prot="public" static="no">
+        <type>enum <ref refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" kindref="member">MLSpaceLocalizationConfidence</ref></type>
+        <definition>typedef enum MLSpaceLocalizationConfidence MLSpaceLocalizationConfidence</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationConfidence</name>
+        <briefdescription>
+<para>The confidence of the current localization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="148" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga0d00e1631e936463dc7ad3312a7498ec" prot="public" static="no">
+        <type>enum <ref refid="group___space_1ga2234eb12a0d2158d124ce61bf130b849" kindref="member">MLSpaceLocalizationErrorFlag</ref></type>
+        <definition>typedef enum MLSpaceLocalizationErrorFlag MLSpaceLocalizationErrorFlag</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationErrorFlag</name>
+        <briefdescription>
+<para>A set of possible reasons that a localization attempt may be unsuccessful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="174" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga01d85574666314ac73905e71ab18e066" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref></type>
+        <definition>typedef struct MLSpaceManagerSettings MLSpaceManagerSettings</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceManagerSettings</name>
+        <briefdescription>
+<para>A structure containing settings for the space manager. This structure must be initialized by calling <ref refid="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" kindref="member">MLSpaceManagerSettingsInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="185" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga3d82c210fb782993ab2c853261c378d5" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref></type>
+        <definition>typedef struct MLSpace MLSpace</definition>
+        <argsstring></argsstring>
+        <name>MLSpace</name>
+        <briefdescription>
+<para>A structure containing information about a Magic Leap Space. This structure must be initialized by calling <ref refid="group___space_1gae215ee4fefd36959893a2f1856d05a7d" kindref="member">MLSpaceInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="218" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga8d7fb2a7889d1841bc8da87c2383778d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref></type>
+        <definition>typedef struct MLSpaceList MLSpaceList</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceList</name>
+        <briefdescription>
+<para>A structure containing list of <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref>. This structure must be initialized by calling <ref refid="group___space_1ga550978af81a1086eceba4e12d484e24e" kindref="member">MLSpaceListInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="250" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga3fafbd3962645a9d7b243d80a42bad91" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref></type>
+        <definition>typedef struct MLSpaceQueryFilter MLSpaceQueryFilter</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceQueryFilter</name>
+        <briefdescription>
+<para>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling <ref refid="group___space_1ga8671dc4dddec350ff713efa55f88a295" kindref="member">MLSpaceQueryFilterInit</ref> before use. There is no support for filters at this time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="278" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1gaa9ad7b5e96924fae6d089f3d187c605f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref></type>
+        <definition>typedef struct MLSpaceLocalizationInfo MLSpaceLocalizationInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationInfo</name>
+        <briefdescription>
+<para>A collection of parameters to be used for localization request. This structure must be initialized by calling <ref refid="group___space_1gad15116e35a8c009cef4218608c0a07cc" kindref="member">MLSpaceLocalizationInfoInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="307" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga5060646bdc2857a82ec37b720f0a2296" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref></type>
+        <definition>typedef struct MLSpaceLocalizationResult MLSpaceLocalizationResult</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationResult</name>
+        <briefdescription>
+<para>A structure containing information about the device&apos;s localization state. This structure must be initialized by calling <ref refid="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" kindref="member">MLSpaceLocalizationResultInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="353" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga2da76f4e83c1ca4eac5d42a69482ae6d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref></type>
+        <definition>typedef struct MLSpaceCallbacks MLSpaceCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceCallbacks</name>
+        <briefdescription>
+<para>A structure containing callbacks for events related to the Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___space_1ga17ae1607ebe52d2f202652086e5522ad" kindref="member">MLSpaceCallbacksInit</ref> before use. Application can unregister (stop receiving callbacks) at any time by setting the corresponding callback to NULL.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="394" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga0d0386fbb73afe1e530f9fdb75a5847b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref></type>
+        <definition>typedef struct MLSpaceImportInfo MLSpaceImportInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceImportInfo</name>
+        <briefdescription>
+<para>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling <ref refid="group___space_1ga9802e8653b9eddae5b33a61233fde414" kindref="member">MLSpaceImportInfoInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="425" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga004f356258f200ec0d53976ef7c20381" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref></type>
+        <definition>typedef struct MLSpaceImportOutData MLSpaceImportOutData</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceImportOutData</name>
+        <briefdescription>
+<para>A structure containing information about the imported Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="451" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga00aba4c61695e3eaf0129170cc7a2ea9" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref></type>
+        <definition>typedef struct MLSpaceExportInfo MLSpaceExportInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceExportInfo</name>
+        <briefdescription>
+<para>A structure containing information about the Space export settings. This structure must be initialized by calling <ref refid="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" kindref="member">MLSpaceExportInfoInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="466" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1gab25c375b8ef9340fa1338d5fe9972e16" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref></type>
+        <definition>typedef struct MLSpaceExportOutData MLSpaceExportOutData</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceExportOutData</name>
+        <briefdescription>
+<para>A structure containing information about the exported Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="498" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceManagerSettingsInit</definition>
+        <argsstring>(MLSpaceManagerSettings *inout_info)</argsstring>
+        <name>MLSpaceManagerSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000649"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="196" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="196" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gae215ee4fefd36959893a2f1856d05a7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceInit</definition>
+        <argsstring>(MLSpace *inout_info)</argsstring>
+        <name>MLSpaceInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000650"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="229" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="229" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga550978af81a1086eceba4e12d484e24e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceListInit</definition>
+        <argsstring>(MLSpaceList *inout_info)</argsstring>
+        <name>MLSpaceListInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000651"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="261" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="261" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga8671dc4dddec350ff713efa55f88a295" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceQueryFilterInit</definition>
+        <argsstring>(MLSpaceQueryFilter *inout_query_filter)</argsstring>
+        <name>MLSpaceQueryFilterInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref> *</type>
+          <declname>inout_query_filter</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the default values for a query filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_query_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000652"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="289" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="289" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gad15116e35a8c009cef4218608c0a07cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceLocalizationInfoInit</definition>
+        <argsstring>(MLSpaceLocalizationInfo *inout_info)</argsstring>
+        <name>MLSpaceLocalizationInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the default values for localization info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000653"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="318" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="318" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceLocalizationResultInit</definition>
+        <argsstring>(MLSpaceLocalizationResult *inout_info)</argsstring>
+        <name>MLSpaceLocalizationResultInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The localization result to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000654"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="364" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="364" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga17ae1607ebe52d2f202652086e5522ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceCallbacksInit</definition>
+        <argsstring>(MLSpaceCallbacks *inout_callbacks)</argsstring>
+        <name>MLSpaceCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> *</type>
+          <declname>inout_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initialize defaults for <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000655"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="405" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="405" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga9802e8653b9eddae5b33a61233fde414" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceImportInfoInit</definition>
+        <argsstring>(MLSpaceImportInfo *inout_info)</argsstring>
+        <name>MLSpaceImportInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000656"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="436" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="436" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceExportInfoInit</definition>
+        <argsstring>(MLSpaceExportInfo *inout_info)</argsstring>
+        <name>MLSpaceExportInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000657"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="477" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="477" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gaf6a7a19e6e4c3eeb9a47f853f29757e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLSpaceGetResultString</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>MLSpaceGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLSpaceResult and MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref> functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000658"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="511" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="511" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceManagerCreate</definition>
+        <argsstring>(const MLSpaceManagerSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLSpaceManagerCreate</name>
+        <param>
+          <type>const <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a Magic Leap Space manager handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application can create only one Magic Leap Space manager handle. Multiple calls to create a manager handle will result in a failure. The handle is valid for the lifecycle of the application.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings that configures the space manager. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to be created.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_ClientLimitExceeded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an existing manager. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle was successfully created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000659"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPACE_MANAGER (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="535" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="535" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga1d6c8bac9696044516fc36b0e0e2ef9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceSetCallbacks</definition>
+        <argsstring>(MLHandle handle, const MLSpaceCallbacks *callbacks, void *user_data)</argsstring>
+        <name>MLSpaceSetCallbacks</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> *</type>
+          <declname>callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+<para>Set the callbacks for events related to the Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> structure containing the callbacks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that will be returned in the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callbacks were registered successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="550" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="550" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceGetSpaceList</definition>
+        <argsstring>(MLHandle handle, const MLSpaceQueryFilter *query_filter, MLSpaceList *out_space_list)</argsstring>
+        <name>MLSpaceGetSpaceList</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref> *</type>
+          <declname>query_filter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *</type>
+          <declname>out_space_list</declname>
+        </param>
+        <briefdescription>
+<para>Get the list of available spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call. Device mapping mode can be changed via the system application(s).</para>
+<para>The list memory is owned by the library, call <ref refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" kindref="member">MLSpaceReleaseSpaceList</ref> to release the memory. Each get <ref refid="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" kindref="member">MLSpaceGetSpaceList</ref> should have a corresponding <ref refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" kindref="member">MLSpaceReleaseSpaceList</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter structure for the query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_space_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of Spaces currently available to the device.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of spaces retrieved successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due to server side error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServiceUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because service is not ready.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000660"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="578" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="578" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceReleaseSpaceList</definition>
+        <argsstring>(MLHandle handle, MLSpaceList *space_list)</argsstring>
+        <name>MLSpaceReleaseSpaceList</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *</type>
+          <declname>space_list</declname>
+        </param>
+        <briefdescription>
+<para>Release the list of available spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">space_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List Magic Leap Spaces that needs to be released.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List resources was successfully released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000661"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="594" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="594" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga2465fe8e9cda7d4e873b30be446ad59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceRequestLocalization</definition>
+        <argsstring>(MLHandle handle, const MLSpaceLocalizationInfo *localization_info)</argsstring>
+        <name>MLSpaceRequestLocalization</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref> *</type>
+          <declname>localization_info</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to localize to a given Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an asynchronous request. Use <ref refid="group___space_1ga25f4671a9ed8c725e6e711b462089088" kindref="member">MLSpaceGetLocalizationResult</ref> to get the results of the localization or use <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> to listen to on_localization_changed events.</para>
+<para>A new request for localization will override all the past requests for localization that are yet to be completed.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">localization_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Magic Leap Space to localize into.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Localization request was submitted successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_UnavailableSpace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due an unavailable Space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due to server side error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServiceUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because service is not ready.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000662"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="622" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="622" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga25f4671a9ed8c725e6e711b462089088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceGetLocalizationResult</definition>
+        <argsstring>(MLHandle handle, MLSpaceLocalizationResult *out_localization_result)</argsstring>
+        <name>MLSpaceGetLocalizationResult</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref> *</type>
+          <declname>out_localization_result</declname>
+        </param>
+        <briefdescription>
+<para>Get the localization results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the results of the most recent localization request.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_localization_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the result of the localization request.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Localization result was retrieved successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000663"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="641" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="641" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga4ca5fd11d5c0bd1f9dfbc02db8b27350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceManagerDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLSpaceManagerDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a Space manager handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to be destroyed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle was successfully destroyed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000664"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="655" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="655" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga0584f9886bb1d1408c3e672556f01b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceImportSpace</definition>
+        <argsstring>(const MLSpaceImportInfo *import_info, MLSpaceImportOutData *out_data)</argsstring>
+        <name>MLSpaceImportSpace</name>
+        <param>
+          <type>const <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> *</type>
+          <declname>import_info</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Import a Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> memory is owned by the app and the app should make sure to release the memory once the API call has returned.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">import_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information need to import the space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the imported space.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_IncompatibleSpace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due an incompatible Space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_SpaceAlreadyExists</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because Space being imported already exists.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000665"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="676" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="676" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceExportSpace</definition>
+        <argsstring>(const MLSpaceExportInfo *export_info, MLSpaceExportOutData *out_data)</argsstring>
+        <name>MLSpaceExportSpace</name>
+        <param>
+          <type>const <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref> *</type>
+          <declname>export_info</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Export an on device Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> is owned by the library, call <ref refid="group___space_1gae1f897eee7002fb943de6609da0f0873" kindref="member">MLSpaceReleaseExportData</ref> to release the memory. Each <ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref> call should have a corresponding <ref refid="group___space_1gae1f897eee7002fb943de6609da0f0873" kindref="member">MLSpaceReleaseExportData</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">export_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information needed to export the space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exported space data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_UnavailableSpace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due an unavailable Space.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000666"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="698" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="698" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gae1f897eee7002fb943de6609da0f0873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceReleaseExportData</definition>
+        <argsstring>(MLSpaceExportOutData *space_data)</argsstring>
+        <name>MLSpaceReleaseExportData</name>
+        <param>
+          <type><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> *</type>
+          <declname>space_data</declname>
+        </param>
+        <briefdescription>
+<para>Release resources acquired in <ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">space_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> that needs to be released.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List resources was successfully released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000667"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="713" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="713" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65" refid="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fab4875ca595400bcc4e19413753775454" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fab4875ca595400bcc4e19413753775454" kindref="member">MLResultAPIPrefix_Space</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x10cc),</highlight></codeline>
+<codeline lineno="67" refid="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fa12e2e2fbb3bbc4331c77d7f8c3170d37" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fa12e2e2fbb3bbc4331c77d7f8c3170d37" kindref="member">MLSpace_MaxSpaceNameLength</ref><sp/>=<sp/>64,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" kindref="member">MLSpaceResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="77" refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fae281467e5cb9a001029d796e10def93a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fae281467e5cb9a001029d796e10def93a" kindref="member">MLSpaceResult_ServerError</ref><sp/>=<sp/><ref refid="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fab4875ca595400bcc4e19413753775454" kindref="member">MLResultAPIPrefix_Space</ref>,</highlight></codeline>
+<codeline lineno="79" refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa1dda1ec9559c0b87f780ab071818127e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa1dda1ec9559c0b87f780ab071818127e" kindref="member">MLSpaceResult_ServiceUnavailable</ref>,</highlight></codeline>
+<codeline lineno="85" refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa50a654cb4ef69fe50d417b903e21eb43" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa50a654cb4ef69fe50d417b903e21eb43" kindref="member">MLSpaceResult_UnavailableSpace</ref>,</highlight></codeline>
+<codeline lineno="92" refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa8a1f726b10454d10273c8e6de6febc11" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa8a1f726b10454d10273c8e6de6febc11" kindref="member">MLSpaceResult_IncompatibleSpace</ref>,</highlight></codeline>
+<codeline lineno="94" refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9bd0f60af766a3c92bc8b7e00cb6867a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9bd0f60af766a3c92bc8b7e00cb6867a" kindref="member">MLSpaceResult_SpaceAlreadyExists</ref>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9d7cc4da7a67b4c018ebda6ce821e530" kindref="member">MLSpaceResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="97" refid="group___space_1ga69594569e3db4d344e1410a8686ef22b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" kindref="member">MLSpaceResult</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" kindref="member">MLSpaceType</ref><sp/>{</highlight></codeline>
+<codeline lineno="107" refid="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579af4d93d4596d83070d41400bc937e4d99" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579af4d93d4596d83070d41400bc937e4d99" kindref="member">MLSpaceType_OnDevice</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="109" refid="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a226c571e56632e1631d9e1e3082bf5a2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a226c571e56632e1631d9e1e3082bf5a2" kindref="member">MLSpaceType_ARCloud</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a6d3af31beb78da2e1a94fabedd449e73" kindref="member">MLSpaceType_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="112" refid="group___space_1ga063238e8906003f54bf99304d82ec76c" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" kindref="member">MLSpaceType</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" kindref="member">MLSpaceLocalizationStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="121" refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a249b114ada9ecd922fba7bf9194c6c8e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a249b114ada9ecd922fba7bf9194c6c8e" kindref="member">MLSpaceLocalizationStatus_NotLocalized</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="123" refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a7e03da1fb1146ad9211aa2835b20bfb4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a7e03da1fb1146ad9211aa2835b20bfb4" kindref="member">MLSpaceLocalizationStatus_Localized</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="125" refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a292b333dedb44c43d798ae2ea6f5e19b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a292b333dedb44c43d798ae2ea6f5e19b" kindref="member">MLSpaceLocalizationStatus_LocalizationPending</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="127" refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9aab9a87eb7c92ed643eb8fb580942e9a4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9aab9a87eb7c92ed643eb8fb580942e9a4" kindref="member">MLSpaceLocalizationStatus_SleepingBeforeRetry</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a1aa16b499d0bfb0520a9abdd81981ad8" kindref="member">MLSpaceLocalizationStatus_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="130" refid="group___space_1ga09b8a0fc69ea23283c2421071851a859" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" kindref="member">MLSpaceLocalizationStatus</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" kindref="member">MLSpaceLocalizationConfidence</ref><sp/>{</highlight></codeline>
+<codeline lineno="139" refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfa3ab532e02bed4b81370d9a7c62e8e608" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfa3ab532e02bed4b81370d9a7c62e8e608" kindref="member">MLSpaceLocalizationConfidence_Poor</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="141" refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfadaa0e4cf424d761aa8456ccc67148a2f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfadaa0e4cf424d761aa8456ccc67148a2f" kindref="member">MLSpaceLocalizationConfidence_Fair</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="143" refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfaeb87e24ffb7710370d527c0344076d57" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfaeb87e24ffb7710370d527c0344076d57" kindref="member">MLSpaceLocalizationConfidence_Good</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="145" refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfacb50cce11b85cd2b5ecd96d1378b288e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfacb50cce11b85cd2b5ecd96d1378b288e" kindref="member">MLSpaceLocalizationConfidence_Excellent</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfae1ecdee4cf0084c9266165c69926ff0c" kindref="member">MLSpaceLocalizationConfidence_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="148" refid="group___space_1ga7ce03ebadf91d56e5728c42cfdc3fdb4" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" kindref="member">MLSpaceLocalizationConfidence</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group___space_1ga2234eb12a0d2158d124ce61bf130b849" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga2234eb12a0d2158d124ce61bf130b849" kindref="member">MLSpaceLocalizationErrorFlag</ref><sp/>{</highlight></codeline>
+<codeline lineno="157" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae735b5621a3a3a9846cf9a1a8779f06f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae735b5621a3a3a9846cf9a1a8779f06f" kindref="member">MLSpaceLocalizationErrorFlag_None</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="159" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a479450b6e738d9ad34547b7a25c6c1df" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a479450b6e738d9ad34547b7a25c6c1df" kindref="member">MLSpaceLocalizationErrorFlag_Unknown</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="161" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849ac72356ea8e21753b116c3330c314d975" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849ac72356ea8e21753b116c3330c314d975" kindref="member">MLSpaceLocalizationErrorFlag_OutOfMappedArea</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="163" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a412add897ca45e01ea1e8413e9bab33b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a412add897ca45e01ea1e8413e9bab33b" kindref="member">MLSpaceLocalizationErrorFlag_LowFeatureCount</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="165" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8e435865bf691650eb2c3b457e812545" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8e435865bf691650eb2c3b457e812545" kindref="member">MLSpaceLocalizationErrorFlag_ExcessiveMotion</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="167" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae228af314813632e5b26033065aefa4c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae228af314813632e5b26033065aefa4c" kindref="member">MLSpaceLocalizationErrorFlag_LowLight</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="169" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8704b7a16a4fa9835b5134f1f45e04f7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8704b7a16a4fa9835b5134f1f45e04f7" kindref="member">MLSpaceLocalizationErrorFlag_HeadposeFailure</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>5,</highlight></codeline>
+<codeline lineno="171" refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a24f55aa6c64257928d91fedc186b1c8a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a24f55aa6c64257928d91fedc186b1c8a" kindref="member">MLSpaceLocalizationErrorFlag_AlgorithmFailure</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>6,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gga2234eb12a0d2158d124ce61bf130b849a6ff0ee1752c08f575b12695d12fea2fa" kindref="member">MLSpaceLocalizationErrorFlag_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="174" refid="group___space_1ga0d00e1631e936463dc7ad3312a7498ec" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga2234eb12a0d2158d124ce61bf130b849" kindref="member">MLSpaceLocalizationErrorFlag</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="struct_m_l_space_manager_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="184" refid="struct_m_l_space_manager_settings_1a20ae0d75ec161f6b40d08c6824e55eab" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_manager_settings_1a20ae0d75ec161f6b40d08c6824e55eab" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="185" refid="group___space_1ga01d85574666314ac73905e71ab18e066" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga01d85574666314ac73905e71ab18e066" kindref="member">MLSpaceManagerSettings</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" kindref="member">MLSpaceManagerSettingsInit</ref>(<ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref>));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_manager_settings_1a20ae0d75ec161f6b40d08c6824e55eab" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="struct_m_l_space" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref><sp/>{</highlight></codeline>
+<codeline lineno="211" refid="struct_m_l_space_1a0f5ee16414553d26db2719788e3f156e" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_1a0f5ee16414553d26db2719788e3f156e" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="213" refid="struct_m_l_space_1aa663c0f71061f6257b05bac048379b6e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_1aa663c0f71061f6257b05bac048379b6e" kindref="member">space_name</ref>[<ref refid="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fa12e2e2fbb3bbc4331c77d7f8c3170d37" kindref="member">MLSpace_MaxSpaceNameLength</ref>];</highlight></codeline>
+<codeline lineno="215" refid="struct_m_l_space_1a648d7f4c7f5899789450fac32924710f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref><sp/><ref refid="struct_m_l_space_1a648d7f4c7f5899789450fac32924710f" kindref="member">space_id</ref>;</highlight></codeline>
+<codeline lineno="217" refid="struct_m_l_space_1a390a3caa0d98d5e24c486beb81119a22" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" kindref="member">MLSpaceType</ref><sp/><ref refid="struct_m_l_space_1a390a3caa0d98d5e24c486beb81119a22" kindref="member">space_type</ref>;</highlight></codeline>
+<codeline lineno="218" refid="group___space_1ga3d82c210fb782993ab2c853261c378d5" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga3d82c210fb782993ab2c853261c378d5" kindref="member">MLSpace</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="group___space_1gae215ee4fefd36959893a2f1856d05a7d" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1gae215ee4fefd36959893a2f1856d05a7d" kindref="member">MLSpaceInit</ref>(<ref refid="struct_m_l_space" kindref="compound">MLSpace</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space" kindref="compound">MLSpace</ref>));</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_1a0f5ee16414553d26db2719788e3f156e" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="struct_m_l_space_list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref><sp/>{</highlight></codeline>
+<codeline lineno="245" refid="struct_m_l_space_list_1a6ab9e1c1975a4da98ef61fbbf7025f44" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_list_1a6ab9e1c1975a4da98ef61fbbf7025f44" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="247" refid="struct_m_l_space_list_1ae1c532f2ef0452bcd980762e1c7839c3" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_list_1ae1c532f2ef0452bcd980762e1c7839c3" kindref="member">space_count</ref>;</highlight></codeline>
+<codeline lineno="249" refid="struct_m_l_space_list_1a3a0e1edec22b6c863867bcd19faca9dd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref><sp/>*<ref refid="struct_m_l_space_list_1a3a0e1edec22b6c863867bcd19faca9dd" kindref="member">spaces</ref>;</highlight></codeline>
+<codeline lineno="250" refid="group___space_1ga8d7fb2a7889d1841bc8da87c2383778d" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga8d7fb2a7889d1841bc8da87c2383778d" kindref="member">MLSpaceList</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="group___space_1ga550978af81a1086eceba4e12d484e24e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga550978af81a1086eceba4e12d484e24e" kindref="member">MLSpaceListInit</ref>(<ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref>));</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_list_1a6ab9e1c1975a4da98ef61fbbf7025f44" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="struct_m_l_space_query_filter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref><sp/>{</highlight></codeline>
+<codeline lineno="277" refid="struct_m_l_space_query_filter_1a750760e1bb6c9e392d8794ed7497d67e" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_query_filter_1a750760e1bb6c9e392d8794ed7497d67e" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="278" refid="group___space_1ga3fafbd3962645a9d7b243d80a42bad91" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga3fafbd3962645a9d7b243d80a42bad91" kindref="member">MLSpaceQueryFilter</ref>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="group___space_1ga8671dc4dddec350ff713efa55f88a295" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga8671dc4dddec350ff713efa55f88a295" kindref="member">MLSpaceQueryFilterInit</ref>(<ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref><sp/>*inout_query_filter)<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_query_filter<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_query_filter,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref>));</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_query_filter-&gt;<ref refid="struct_m_l_space_query_filter_1a750760e1bb6c9e392d8794ed7497d67e" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="struct_m_l_space_localization_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="304" refid="struct_m_l_space_localization_info_1a1ea351923f473fdcbf85deebdacac727" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_localization_info_1a1ea351923f473fdcbf85deebdacac727" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="306" refid="struct_m_l_space_localization_info_1a86166fa6c75af4bf0b212481a46ec3d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref><sp/><ref refid="struct_m_l_space_localization_info_1a86166fa6c75af4bf0b212481a46ec3d0" kindref="member">space_id</ref>;</highlight></codeline>
+<codeline lineno="307" refid="group___space_1gaa9ad7b5e96924fae6d089f3d187c605f" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1gaa9ad7b5e96924fae6d089f3d187c605f" kindref="member">MLSpaceLocalizationInfo</ref><sp/>;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="group___space_1gad15116e35a8c009cef4218608c0a07cc" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1gad15116e35a8c009cef4218608c0a07cc" kindref="member">MLSpaceLocalizationInfoInit</ref>(<ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref>));</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_localization_info_1a1ea351923f473fdcbf85deebdacac727" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="struct_m_l_space_localization_result" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="333" refid="struct_m_l_space_localization_result_1ad1a0e218605f654069f6b2feedaa83f8" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_localization_result_1ad1a0e218605f654069f6b2feedaa83f8" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="335" refid="struct_m_l_space_localization_result_1a80668994dab2932aa8edbb71ea84e803" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" kindref="member">MLSpaceLocalizationStatus</ref><sp/><ref refid="struct_m_l_space_localization_result_1a80668994dab2932aa8edbb71ea84e803" kindref="member">localization_status</ref>;</highlight></codeline>
+<codeline lineno="341" refid="struct_m_l_space_localization_result_1ad9220fe849cf66fbe30ffef990e1fac4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref><sp/><ref refid="struct_m_l_space_localization_result_1ad9220fe849cf66fbe30ffef990e1fac4" kindref="member">space</ref>;</highlight></codeline>
+<codeline lineno="348" refid="struct_m_l_space_localization_result_1a8612aa1d3dfa2084c0ef442e1aa93822" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_space_localization_result_1a8612aa1d3dfa2084c0ef442e1aa93822" kindref="member">target_space_origin</ref>;</highlight></codeline>
+<codeline lineno="350" refid="struct_m_l_space_localization_result_1ae4f21ed583bfb8b9c57d8bfae64540a7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" kindref="member">MLSpaceLocalizationConfidence</ref><sp/><ref refid="struct_m_l_space_localization_result_1ae4f21ed583bfb8b9c57d8bfae64540a7" kindref="member">localization_confidence</ref>;</highlight></codeline>
+<codeline lineno="352" refid="struct_m_l_space_localization_result_1a10b7a5ef6a9f728765e3763e5db7d185" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_localization_result_1a10b7a5ef6a9f728765e3763e5db7d185" kindref="member">error</ref>;</highlight></codeline>
+<codeline lineno="353" refid="group___space_1ga5060646bdc2857a82ec37b720f0a2296" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga5060646bdc2857a82ec37b720f0a2296" kindref="member">MLSpaceLocalizationResult</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364" refid="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" kindref="member">MLSpaceLocalizationResultInit</ref>(<ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref>));</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_localization_result_1ad1a0e218605f654069f6b2feedaa83f8" kindref="member">version</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="struct_m_l_space_callbacks" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref><sp/>{</highlight></codeline>
+<codeline lineno="382" refid="struct_m_l_space_callbacks_1ac52e4513e23dd9b6aa92bbdc5c045c78" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_callbacks_1ac52e4513e23dd9b6aa92bbdc5c045c78" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="393" refid="struct_m_l_space_callbacks_1ab360157fa311696890b4ae47abb41070" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="struct_m_l_space_callbacks_1ab360157fa311696890b4ae47abb41070" kindref="member">on_localization_changed</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref><sp/>*localization_result,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group___media_player_1ga4185e0c7bf37206c25dea35c4db9cb07" kindref="member">user_data</ref>);</highlight></codeline>
+<codeline lineno="394" refid="group___space_1ga2da76f4e83c1ca4eac5d42a69482ae6d" refkind="member"><highlight class="normal"><sp/>}<sp/><ref refid="group___space_1ga2da76f4e83c1ca4eac5d42a69482ae6d" kindref="member">MLSpaceCallbacks</ref>;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="group___space_1ga17ae1607ebe52d2f202652086e5522ad" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga17ae1607ebe52d2f202652086e5522ad" kindref="member">MLSpaceCallbacksInit</ref>(<ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref><sp/>*inout_callbacks)<sp/>{</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_callbacks<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;<ref refid="struct_m_l_space_callbacks_1ac52e4513e23dd9b6aa92bbdc5c045c78" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_callbacks-&gt;<ref refid="struct_m_l_space_callbacks_1ab360157fa311696890b4ae47abb41070" kindref="member">on_localization_changed</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418" refid="struct_m_l_space_import_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="420" refid="struct_m_l_space_import_info_1a9c603ce1fbb29b44c4b58522b5928c8a" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_import_info_1a9c603ce1fbb29b44c4b58522b5928c8a" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="422" refid="struct_m_l_space_import_info_1aa2bac223c5bcfcd30a8a314135348b1d" refkind="member"><highlight class="normal"><sp/><sp/>uint64_t<sp/><ref refid="struct_m_l_space_import_info_1aa2bac223c5bcfcd30a8a314135348b1d" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="424" refid="struct_m_l_space_import_info_1a63d4dd60535d54528d0729d21ec7121b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_m_l_space_import_info_1a63d4dd60535d54528d0729d21ec7121b" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="425" refid="group___space_1ga0d0386fbb73afe1e530f9fdb75a5847b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga0d0386fbb73afe1e530f9fdb75a5847b" kindref="member">MLSpaceImportInfo</ref>;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436" refid="group___space_1ga9802e8653b9eddae5b33a61233fde414" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1ga9802e8653b9eddae5b33a61233fde414" kindref="member">MLSpaceImportInfoInit</ref>(<ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref>));</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_import_info_1a9c603ce1fbb29b44c4b58522b5928c8a" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448" refid="struct_m_l_space_import_out_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref><sp/>{</highlight></codeline>
+<codeline lineno="450" refid="struct_m_l_space_import_out_data_1af1744644a624b1d76ef1045dd55d8433" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref><sp/><ref refid="struct_m_l_space_import_out_data_1af1744644a624b1d76ef1045dd55d8433" kindref="member">space_id</ref>;</highlight></codeline>
+<codeline lineno="451" refid="group___space_1ga004f356258f200ec0d53976ef7c20381" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga004f356258f200ec0d53976ef7c20381" kindref="member">MLSpaceImportOutData</ref>;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461" refid="struct_m_l_space_export_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="463" refid="struct_m_l_space_export_info_1acf3d6b2ba5ca80afd20efc0a978d4d73" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_space_export_info_1acf3d6b2ba5ca80afd20efc0a978d4d73" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="465" refid="struct_m_l_space_export_info_1ad0de876379ff557dd520f66acaeaac16" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref><sp/><ref refid="struct_m_l_space_export_info_1ad0de876379ff557dd520f66acaeaac16" kindref="member">space_id</ref>;</highlight></codeline>
+<codeline lineno="466" refid="group___space_1ga00aba4c61695e3eaf0129170cc7a2ea9" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1ga00aba4c61695e3eaf0129170cc7a2ea9" kindref="member">MLSpaceExportInfo</ref>;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477" refid="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" kindref="member">MLSpaceExportInfoInit</ref>(<ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref><sp/>*inout_info)<sp/>{</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_info<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref>));</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_info-&gt;<ref refid="struct_m_l_space_export_info_1acf3d6b2ba5ca80afd20efc0a978d4d73" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="482"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489" refid="struct_m_l_space_export_out_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref><sp/>{</highlight></codeline>
+<codeline lineno="491" refid="struct_m_l_space_export_out_data_1af64e67546ebe7dfec202008ed7b9d2c6" refkind="member"><highlight class="normal"><sp/><sp/>uint64_t<sp/><ref refid="struct_m_l_space_export_out_data_1af64e67546ebe7dfec202008ed7b9d2c6" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="497" refid="struct_m_l_space_export_out_data_1a19f9ba28f1358f427495ba6e8f7544e6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_m_l_space_export_out_data_1a19f9ba28f1358f427495ba6e8f7544e6" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="498" refid="group___space_1gab25c375b8ef9340fa1338d5fe9972e16" refkind="member"><highlight class="normal">}<sp/><ref refid="group___space_1gab25c375b8ef9340fa1338d5fe9972e16" kindref="member">MLSpaceExportOutData</ref>;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511" refid="group___space_1gaf6a7a19e6e4c3eeb9a47f853f29757e1" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1gaf6a7a19e6e4c3eeb9a47f853f29757e1" kindref="member">MLSpaceGetResultString</ref>(<ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/>result);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535" refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref>*<sp/>settings,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref>*<sp/><ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550" refid="group___space_1ga1d6c8bac9696044516fc36b0e0e2ef9d" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga1d6c8bac9696044516fc36b0e0e2ef9d" kindref="member">MLSpaceSetCallbacks</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref><sp/>*<ref refid="group___media_player_1ga893ed90bc5f35e8450f799283c5e0574" kindref="member">callbacks</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="group___media_player_1ga4185e0c7bf37206c25dea35c4db9cb07" kindref="member">user_data</ref>);</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578" refid="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" kindref="member">MLSpaceGetSpaceList</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref>*<sp/>query_filter,<sp/><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref>*<sp/>out_space_list);</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594" refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" kindref="member">MLSpaceReleaseSpaceList</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref>*<sp/>space_list);</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622" refid="group___space_1ga2465fe8e9cda7d4e873b30be446ad59b" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga2465fe8e9cda7d4e873b30be446ad59b" kindref="member">MLSpaceRequestLocalization</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref>*<sp/>localization_info);</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641" refid="group___space_1ga25f4671a9ed8c725e6e711b462089088" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga25f4671a9ed8c725e6e711b462089088" kindref="member">MLSpaceGetLocalizationResult</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref>*<sp/>out_localization_result);</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="655" refid="group___space_1ga4ca5fd11d5c0bd1f9dfbc02db8b27350" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga4ca5fd11d5c0bd1f9dfbc02db8b27350" kindref="member">MLSpaceManagerDestroy</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="676" refid="group___space_1ga0584f9886bb1d1408c3e672556f01b1b" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1ga0584f9886bb1d1408c3e672556f01b1b" kindref="member">MLSpaceImportSpace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref>*<sp/>import_info,<sp/><ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref>*<sp/><ref refid="group___head_tracking_1gae4da65ee1780df8124e20ab4ca2b8758" kindref="member">out_data</ref>);</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="698" refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref>*<sp/>export_info,<sp/><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref>*<sp/><ref refid="group___head_tracking_1gae4da65ee1780df8124e20ab4ca2b8758" kindref="member">out_data</ref>);</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="713" refid="group___space_1gae1f897eee7002fb943de6609da0f0873" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___space_1gae1f897eee7002fb943de6609da0f0873" kindref="member">MLSpaceReleaseExportData</ref>(<ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref>*<sp/>space_data);</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_power_manager_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLPowerManagerCallbacks</compoundname>
+    <includes refid="ml__power__manager_8h" local="no">ml_power_manager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_power_manager_callbacks_1a1a06c26555c35366ca4032e309a3bac3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLPowerManagerCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="443" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_power_manager_callbacks_1a69849503c980bb33e9d0cb8486041e47" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLPowerManagerCallbacks::on_power_state_changed) (MLPowerManagerPowerState state, void *user_data)</definition>
+        <argsstring>)(MLPowerManagerPowerState state, void *user_data)</argsstring>
+        <name>on_power_state_changed</name>
+        <briefdescription>
+<para>This callback will be invoked when <ref refid="group___power_manager_1ga9ae517fbba90494f451bf38fcfac7a89" kindref="member">MLPowerManagerPowerState</ref> changes while a component is connected. If a component is disconnecting or is powering off, this callback does not get triggered. Instead, detecting a disconnected component can be done through the on_properties_changed callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___power_manager_1ga9ae517fbba90494f451bf38fcfac7a89" kindref="member">MLPowerManagerPowerState</ref> representing the new power state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to the <ref refid="group___power_manager_1gafd4bc89d539a0de46b072fc8d2f06e98" kindref="member">MLPowerManagerSetCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="455" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_power_manager_callbacks_1a4895efbaa398576ca9ccee3e9820167e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLPowerManagerCallbacks::on_properties_changed) (const MLPowerManagerPropertyData *properties, void *user_data)</definition>
+        <argsstring>)(const MLPowerManagerPropertyData *properties, void *user_data)</argsstring>
+        <name>on_properties_changed</name>
+        <briefdescription>
+<para>This callback will be invoked when <ref refid="struct_m_l_power_manager_property_data" kindref="compound">MLPowerManagerPropertyData</ref> of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_power_manager_property_data" kindref="compound">MLPowerManagerPropertyData</ref> struct encapsulating the properties changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to the <ref refid="group___power_manager_1gafd4bc89d539a0de46b072fc8d2f06e98" kindref="member">MLPowerManagerSetCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="465" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_power_manager_callbacks_1a46b5afde018c1ef93326288aacf2f2eb" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLPowerManagerCallbacks::on_error_occurred) (MLPowerManagerError error, void *user_data)</definition>
+        <argsstring>)(MLPowerManagerError error, void *user_data)</argsstring>
+        <name>on_error_occurred</name>
+        <briefdescription>
+<para>This callback will be invoked when an <ref refid="group___power_manager_1ga3a1e161fd47ea2bfa76263c96bfbcd4d" kindref="member">MLPowerManagerError</ref> occurs on one of the components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error which has occurred. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to the <ref refid="group___power_manager_1gafd4bc89d539a0de46b072fc8d2f06e98" kindref="member">MLPowerManagerSetCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="473" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="441" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="441" bodyend="475"/>
+    <listofallmembers>
+      <member refid="struct_m_l_power_manager_callbacks_1a46b5afde018c1ef93326288aacf2f2eb" prot="public" virt="non-virtual"><scope>MLPowerManagerCallbacks</scope><name>on_error_occurred</name></member>
+      <member refid="struct_m_l_power_manager_callbacks_1a69849503c980bb33e9d0cb8486041e47" prot="public" virt="non-virtual"><scope>MLPowerManagerCallbacks</scope><name>on_power_state_changed</name></member>
+      <member refid="struct_m_l_power_manager_callbacks_1a4895efbaa398576ca9ccee3e9820167e" prot="public" virt="non-virtual"><scope>MLPowerManagerCallbacks</scope><name>on_properties_changed</name></member>
+      <member refid="struct_m_l_power_manager_callbacks_1a1a06c26555c35366ca4032e309a3bac3" prot="public" virt="non-virtual"><scope>MLPowerManagerCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

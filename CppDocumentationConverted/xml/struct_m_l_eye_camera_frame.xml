@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_eye_camera_frame" kind="struct" language="C++" prot="public">
+    <compoundname>MLEyeCameraFrame</compoundname>
+    <includes refid="ml__eye__camera_8h" local="no">ml_eye_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_eye_camera_frame_1a7629208e2730178de7d9c58cbb24d4db" prot="public" static="no" mutable="no">
+        <type><ref refid="group___e_cam_1ga2dd74db1696fc691271b70977088f02c" kindref="member">MLEyeCameraIdentifier</ref></type>
+        <definition>MLEyeCameraIdentifier MLEyeCameraFrame::camera_id</definition>
+        <argsstring></argsstring>
+        <name>camera_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera Identifier specifies which camera is associated with this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="132" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_camera_frame_1a76e7d5ee1a9d815ed28d0d270f8dae2c" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t MLEyeCameraFrame::frame_number</definition>
+        <argsstring></argsstring>
+        <name>frame_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame number associated with this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="134" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_camera_frame_1ac3935c77cf7ecd14c2e39a20bcedbb77" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLEyeCameraFrame::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame timestamp specifies the time at which the frame was captured. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="136" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_eye_camera_frame_1a0d23a28321dab17d090a27d2ca5e531e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_eye_camera_frame_buffer" kindref="compound">MLEyeCameraFrameBuffer</ref></type>
+        <definition>MLEyeCameraFrameBuffer MLEyeCameraFrame::frame_buffer</definition>
+        <argsstring></argsstring>
+        <name>frame_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame buffer data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="138" column="26" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate output data for each camera sensor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLEyeCameraFrameBuffer</label>
+        <link refid="struct_m_l_eye_camera_frame_buffer"/>
+      </node>
+      <node id="1">
+        <label>MLEyeCameraFrame</label>
+        <link refid="struct_m_l_eye_camera_frame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>frame_buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" line="130" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h" bodystart="130" bodyend="139"/>
+    <listofallmembers>
+      <member refid="struct_m_l_eye_camera_frame_1a7629208e2730178de7d9c58cbb24d4db" prot="public" virt="non-virtual"><scope>MLEyeCameraFrame</scope><name>camera_id</name></member>
+      <member refid="struct_m_l_eye_camera_frame_1a0d23a28321dab17d090a27d2ca5e531e" prot="public" virt="non-virtual"><scope>MLEyeCameraFrame</scope><name>frame_buffer</name></member>
+      <member refid="struct_m_l_eye_camera_frame_1a76e7d5ee1a9d815ed28d0d270f8dae2c" prot="public" virt="non-virtual"><scope>MLEyeCameraFrame</scope><name>frame_number</name></member>
+      <member refid="struct_m_l_eye_camera_frame_1ac3935c77cf7ecd14c2e39a20bcedbb77" prot="public" virt="non-virtual"><scope>MLEyeCameraFrame</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

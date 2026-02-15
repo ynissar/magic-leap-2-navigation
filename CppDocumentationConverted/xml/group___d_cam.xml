@@ -1,0 +1,1334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___d_cam" kind="group">
+    <compoundname>DCam</compoundname>
+    <title>Depth Camera</title>
+    <innerclass refid="struct_m_l_depth_camera_stream_config" prot="public">MLDepthCameraStreamConfig</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_settings" prot="public">MLDepthCameraSettings</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_intrinsics" prot="public">MLDepthCameraIntrinsics</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_frame_buffer" prot="public">MLDepthCameraFrameBuffer</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_frame" prot="public">MLDepthCameraFrame</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_data" prot="public">MLDepthCameraData</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_stream_capability" prot="public">MLDepthCameraStreamCapability</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_capability" prot="public">MLDepthCameraCapability</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_capability_list" prot="public">MLDepthCameraCapabilityList</innerclass>
+    <innerclass refid="struct_m_l_depth_camera_capability_filter" prot="public">MLDepthCameraCapabilityFilter</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___d_cam_1gabed82baf7f470b522273a3e37c24c600" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@8</name>
+        <enumvalue id="group___d_cam_1ggabed82baf7f470b522273a3e37c24c600aacc9198846da7663f08f05c31c2272d6" prot="public">
+          <name>MLDepthCameraIntrinsics_MaxDistortionCoefficients</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default distortion vector size. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="44" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___d_cam_1gadbca1796d5abbb3c2c7a0d6b3c67806b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLDepthCameraStream</name>
+        <enumvalue id="group___d_cam_1ggadbca1796d5abbb3c2c7a0d6b3c67806ba3c3450651512759ccc612aba31128aad" prot="public">
+          <name>MLDepthCameraStream_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1ggadbca1796d5abbb3c2c7a0d6b3c67806ba52b4fbae1f18925c99a930e971ff4481" prot="public">
+          <name>MLDepthCameraStream_LongRange</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Long range stream. Under normal operations long range stream has a maximum frequency of 5fps and a range from 1m up to 5m, in some cases this can go as far 7.5m. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1ggadbca1796d5abbb3c2c7a0d6b3c67806ba9ae0fa048503185f91cf2d4545dd2e1d" prot="public">
+          <name>MLDepthCameraStream_ShortRange</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Short range stream. Under normal operations short range stream has a maximum frequency of 60fps and a range from 0.2m up to 0.9m. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1ggadbca1796d5abbb3c2c7a0d6b3c67806ba337a49e012ebea88fa85e19482f18404" prot="public">
+          <name>MLDepthCameraStream_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of depth camera streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="54" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___d_cam_1gaea020248a0d7250f529b456654531612" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLDepthCameraFrameType</name>
+        <enumvalue id="group___d_cam_1ggaea020248a0d7250f529b456654531612a780f6ad0bb04aa16a885f8a3c84203f0" prot="public">
+          <name>MLDepthCameraFrameType_LongRange</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Frame captured using <ref refid="group___d_cam_1ggadbca1796d5abbb3c2c7a0d6b3c67806ba52b4fbae1f18925c99a930e971ff4481" kindref="member">MLDepthCameraStream_LongRange</ref> stream. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1ggaea020248a0d7250f529b456654531612a8ce4eeffbfbf8e88cce71782d3365c1f" prot="public">
+          <name>MLDepthCameraFrameType_ShortRange</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Frame captured using <ref refid="group___d_cam_1ggadbca1796d5abbb3c2c7a0d6b3c67806ba9ae0fa048503185f91cf2d4545dd2e1d" kindref="member">MLDepthCameraStream_ShortRange</ref> stream. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1ggaea020248a0d7250f529b456654531612aea6288eaf3ed2c73c347d81c69309fec" prot="public">
+          <name>MLDepthCameraFrameType_Count</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1ggaea020248a0d7250f529b456654531612a5303ed705a91651539e254f7c8c53907" prot="public">
+          <name>MLDepthCameraFrameType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of camera stream used when capturing a frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="78" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___d_cam_1ga220e1a2733378e7ea8eeb2eca457eb95" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLDepthCameraFrameRate</name>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95a96a5ca9be98f6782a465eca44572ac2c" prot="public">
+          <name>MLDepthCameraFrameRate_1FPS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95a0db79bd949857760fcc172af3dba5ac5" prot="public">
+          <name>MLDepthCameraFrameRate_5FPS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95a29620b5e8c6db69ba5396abd8ee38be1" prot="public">
+          <name>MLDepthCameraFrameRate_25FPS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95aa44c0bf82a5a9c5b61e61cabb28ea261" prot="public">
+          <name>MLDepthCameraFrameRate_30FPS</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95a15cd48c06d18990f7f4ddf316d3bb483" prot="public">
+          <name>MLDepthCameraFrameRate_50FPS</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95af085cb23e460fc02a899dbb84e352867" prot="public">
+          <name>MLDepthCameraFrameRate_60FPS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga220e1a2733378e7ea8eeb2eca457eb95abf3a4e7faa8e0eb19c0d158bbcdf31c1" prot="public">
+          <name>MLDepthCameraFrameRate_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of possible frame rates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="97" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="97" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___d_cam_1ga2c3baa3a1355d2c2ed82af3d70baa042" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLDepthCameraFlags</name>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042a04ca7cc37b9cd3e75240ae93e66f91dd" prot="public">
+          <name>MLDepthCameraFlags_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042a60b4ce4df4bed785b82f8ade7fa8dae8" prot="public">
+          <name>MLDepthCameraFlags_DepthImage</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable MLDepthCameraDepthImage. See <ref refid="group___d_cam_1gaeb4018ba28194aa4847760ab2fd92b95" kindref="member">MLDepthCameraDepthImage</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042a6723e2480f2ec1e636374d1a3d5af31f" prot="public">
+          <name>MLDepthCameraFlags_Confidence</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable MLDepthCameraConfidenceBuffer. See <ref refid="group___d_cam_1ga4ba9c02f0735f85a960c575faf243922" kindref="member">MLDepthCameraConfidenceBuffer</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042a75da7cbd7fd389b89083fd1caf66d930" prot="public">
+          <name>MLDepthCameraFlags_DepthFlags</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable MLDepthCameraDepthFlagsBuffer. See <ref refid="group___d_cam_1ga1de1c53541ca3182e994898de978c4ea" kindref="member">MLDepthCameraDepthFlagsBuffer</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042aa7afeb5ceb145d87b19c788e349161b6" prot="public">
+          <name>MLDepthCameraFlags_AmbientRawDepthImage</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable MLDepthCameraAmbientRawDepthImage. See <ref refid="group___d_cam_1ga042e8323aa036dbf9b388400724fd9bc" kindref="member">MLDepthCameraAmbientRawDepthImage</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042a47ec9e5e5a321c4191136ceaadab1c29" prot="public">
+          <name>MLDepthCameraFlags_RawDepthImage</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable MLDepthCameraRawDepthImage. See <ref refid="group___d_cam_1ga91a2068470abc94e61ac24ec3461b70b" kindref="member">MLDepthCameraRawDepthImage</ref> for more details. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga2c3baa3a1355d2c2ed82af3d70baa042af5fee97610259abfddfe991f078ca2c6" prot="public">
+          <name>MLDepthCameraFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of flags to select data requested from depth camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="111" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="111" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___d_cam_1ga57e777fa0f3144fd6826e5a23687d6ca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLDepthCameraDepthFlags</name>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa1520981f4df6f7fdf979bc41cb988400" prot="public">
+          <name>MLDepthCameraDepthFlags_Valid</name>
+          <initializer>= 0 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Valid pixel. Indicates that there is no additional flag data for this pixel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caaad0a8535c530137d13e577a9c9124280" prot="public">
+          <name>MLDepthCameraDepthFlags_Invalid</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Invalid. This bit is set to one to indicate that one or more flags from below have been set. Depending on the use case the application can correlate the flag data and corresponding pixel data to determine how to handle the pixel data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa02c7d5497cbe4db56778e46d917991a2" prot="public">
+          <name>MLDepthCameraDepthFlags_Saturated</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Pixel saturated. The pixel intensity is either below the min or the max threshold value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa86043b3e0da54832129d4062ceb99700" prot="public">
+          <name>MLDepthCameraDepthFlags_Inconsistent</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Inconsistent data. Inconsistent data received when capturing frames. This can happen due to fast motion. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caaa6187f2583e9fa1b1413818eec729b6b" prot="public">
+          <name>MLDepthCameraDepthFlags_LowSignal</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Low signal. Pixel has very low signal to noise ratio. One example of when this can happen is for pixels in far end of the range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa7bbd757cc9a15e8830b985d9e9d0d097" prot="public">
+          <name>MLDepthCameraDepthFlags_FlyingPixel</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>Flying pixel. This typically happens when there is step jump in the distance of adjoining pixels in the scene. Example: When you open a door looking into the room the edges along the door&apos;s edges can cause flying pixels. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa630a6e20f83835359f523ce1602ec22e" prot="public">
+          <name>MLDepthCameraDepthFlags_Masked</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>Masked. If this bit is on it indicates that the corresponding pixel may not be within the illuminator&apos;s illumination cone. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa2e49c358b4eef1ab8cc78086ae7dab3d" prot="public">
+          <name>MLDepthCameraDepthFlags_SBI</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+<para>SBI. This bit will be set when there is high noise. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caac19d1e28be7e584a8ff80527660b6cb8" prot="public">
+          <name>MLDepthCameraDepthFlags_StrayLight</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+<para>Stray light. This could happen when there is another light source apart from the depth camera illuminator. This could also lead to MLDepthCameraDepthFlags_LowSignal. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caa8d9adbca6e05210c1c582902257b4dbc" prot="public">
+          <name>MLDepthCameraDepthFlags_ConnectedComponent</name>
+          <initializer>= 1 &lt;&lt; 10</initializer>
+          <briefdescription>
+<para>Connected component. If a small group of MLDepthCameraDepthFlags_Valid is surrounded by a set of MLDepthCameraDepthFlags_Invalid then this bit will be set to 1. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___d_cam_1gga57e777fa0f3144fd6826e5a23687d6caad570b84c9d01f05f28601b532fc266f9" prot="public">
+          <name>MLDepthCameraDepthFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of flags to select data requested from depth camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="131" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___d_cam_1ga80cd3148e1f2cb24ed2e90f0bab9fb1c" prot="public" static="no">
+        <type>enum <ref refid="group___d_cam_1gadbca1796d5abbb3c2c7a0d6b3c67806b" kindref="member">MLDepthCameraStream</ref></type>
+        <definition>typedef enum MLDepthCameraStream MLDepthCameraStream</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraStream</name>
+        <briefdescription>
+<para>Enumeration of depth camera streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="71" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga5f2c5af9cc3a3b87e1dfd8152943dd46" prot="public" static="no">
+        <type>enum <ref refid="group___d_cam_1gaea020248a0d7250f529b456654531612" kindref="member">MLDepthCameraFrameType</ref></type>
+        <definition>typedef enum MLDepthCameraFrameType MLDepthCameraFrameType</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraFrameType</name>
+        <briefdescription>
+<para>Enumeration of camera stream used when capturing a frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="90" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1gab4c314b4eb2ae1da73d977244d8da77d" prot="public" static="no">
+        <type>enum <ref refid="group___d_cam_1ga220e1a2733378e7ea8eeb2eca457eb95" kindref="member">MLDepthCameraFrameRate</ref></type>
+        <definition>typedef enum MLDepthCameraFrameRate MLDepthCameraFrameRate</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraFrameRate</name>
+        <briefdescription>
+<para>Enumeration of possible frame rates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="106" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1gadecd0ca85699988426e0c8940cc016b2" prot="public" static="no">
+        <type>enum <ref refid="group___d_cam_1ga2c3baa3a1355d2c2ed82af3d70baa042" kindref="member">MLDepthCameraFlags</ref></type>
+        <definition>typedef enum MLDepthCameraFlags MLDepthCameraFlags</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraFlags</name>
+        <briefdescription>
+<para>Enumeration of flags to select data requested from depth camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="126" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga30c1197209fc3913727db057c0b57717" prot="public" static="no">
+        <type>enum <ref refid="group___d_cam_1ga57e777fa0f3144fd6826e5a23687d6ca" kindref="member">MLDepthCameraDepthFlags</ref></type>
+        <definition>typedef enum MLDepthCameraDepthFlags MLDepthCameraDepthFlags</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraDepthFlags</name>
+        <briefdescription>
+<para>Enumeration of flags to select data requested from depth camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="194" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga55dac2fbcb26bebe04c73f6ec416736d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_stream_config" kindref="compound">MLDepthCameraStreamConfig</ref></type>
+        <definition>typedef struct MLDepthCameraStreamConfig MLDepthCameraStreamConfig</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraStreamConfig</name>
+        <briefdescription>
+<para>Structure to encapsulate the camera config for a specific stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="208" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga46260bbea200645f5ef052ee6c6c987e" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref></type>
+        <definition>typedef struct MLDepthCameraSettings MLDepthCameraSettings</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraSettings</name>
+        <briefdescription>
+<para>Structure to encapsulate the camera settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___d_cam_1ga1aed943f1ad81c5299171f91b8938427" kindref="member">MLDepthCameraSettingsInit</ref> before use.</para>
+<para>These are supported configurations: <table rows="0" cols="0"><caption>Streams Exposure limits [us] Frame rate [FPS] Long Range 250 - 2000 1, 5 Short Range 50 - 375 On 50Hz PLC: 5, 25, 50On 60Hz PLC: 5, 30, 60  Use <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities</ref> to get a list of available configurations. \note The system may not be able to service all the requested streams at any given time. This parameter is treated as a hint and data will be provided for the requested streams if available. \note The API only supports a single stream. In a future release support for multiple streams will be added. @par API Level:\n 29 </caption>
+</table>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="252" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga3c727a071a42ad784e2142afa0956d8f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_intrinsics" kindref="compound">MLDepthCameraIntrinsics</ref></type>
+        <definition>typedef struct MLDepthCameraIntrinsics MLDepthCameraIntrinsics</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraIntrinsics</name>
+        <briefdescription>
+<para>Depth camera intrinsic parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="303" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga67c019626396e24a737307f5ed25911f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_frame_buffer" kindref="compound">MLDepthCameraFrameBuffer</ref></type>
+        <definition>typedef struct MLDepthCameraFrameBuffer MLDepthCameraFrameBuffer</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraFrameBuffer</name>
+        <briefdescription>
+<para>Structure to encapsulate per plane info for each camera frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="323" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1gaeb4018ba28194aa4847760ab2fd92b95" prot="public" static="no">
+        <type><ref refid="struct_m_l_depth_camera_frame_buffer" kindref="compound">MLDepthCameraFrameBuffer</ref></type>
+        <definition>typedef MLDepthCameraFrameBuffer MLDepthCameraDepthImage</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraDepthImage</name>
+        <briefdescription>
+<para>Depth image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depth image stores the depth data from the depth camera. Depth is represented in meters and gives the radial distance of the real world location from the depth camera coordinate frame. See <ref refid="struct_m_l_depth_camera_intrinsics" kindref="compound">MLDepthCameraIntrinsics</ref> and MLDepthCameraData.camera_pose for more details.</para>
+<para>Cast the <ref refid="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" kindref="member">MLDepthCameraFrameBuffer.data</ref> to float data type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="336" column="34" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga4ba9c02f0735f85a960c575faf243922" prot="public" static="no">
+        <type><ref refid="struct_m_l_depth_camera_frame_buffer" kindref="compound">MLDepthCameraFrameBuffer</ref></type>
+        <definition>typedef MLDepthCameraFrameBuffer MLDepthCameraConfidenceBuffer</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraConfidenceBuffer</name>
+        <briefdescription>
+<para>Confidence score. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Confidence buffer stores the confidence values for each pixel in the MLDepthCameraDepthImage. The confidence score is derived from the sensor noise and it is not normalized. The higher the value the higher the confidence. Applications can determine what confidence threshold to use based on their use case.</para>
+<para>Cast the <ref refid="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" kindref="member">MLDepthCameraFrameBuffer.data</ref> to float data type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="349" column="34" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga1de1c53541ca3182e994898de978c4ea" prot="public" static="no">
+        <type><ref refid="struct_m_l_depth_camera_frame_buffer" kindref="compound">MLDepthCameraFrameBuffer</ref></type>
+        <definition>typedef MLDepthCameraFrameBuffer MLDepthCameraDepthFlagsBuffer</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraDepthFlagsBuffer</name>
+        <briefdescription>
+<para>Flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each pixel in the MLDepthCameraDepthImage will have an associated set of flags.</para>
+<para>Cast the <ref refid="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" kindref="member">MLDepthCameraFrameBuffer.data</ref> to uint32_t data type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="358" column="34" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga042e8323aa036dbf9b388400724fd9bc" prot="public" static="no">
+        <type><ref refid="struct_m_l_depth_camera_frame_buffer" kindref="compound">MLDepthCameraFrameBuffer</ref></type>
+        <definition>typedef MLDepthCameraFrameBuffer MLDepthCameraAmbientRawDepthImage</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraAmbientRawDepthImage</name>
+        <briefdescription>
+<para>Ambient raw depth image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the raw depth camera sensor data captured without the depth camera illumination and corresponds to the amount of ambient light incident on the sensor.</para>
+<para>Cast the <ref refid="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" kindref="member">MLDepthCameraFrameBuffer.data</ref> to float data type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="369" column="34" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga91a2068470abc94e61ac24ec3461b70b" prot="public" static="no">
+        <type><ref refid="struct_m_l_depth_camera_frame_buffer" kindref="compound">MLDepthCameraFrameBuffer</ref></type>
+        <definition>typedef MLDepthCameraFrameBuffer MLDepthCameraRawDepthImage</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraRawDepthImage</name>
+        <briefdescription>
+<para>Raw depth image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the raw depth camera sensor data captured with the depth camera illumination and corresponds to the amount of total light incident on the sensor.</para>
+<para>Cast the <ref refid="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" kindref="member">MLDepthCameraFrameBuffer.data</ref> to float data type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="380" column="34" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga67e4411c63c4954aed7cb8e570070813" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_frame" kindref="compound">MLDepthCameraFrame</ref></type>
+        <definition>typedef struct MLDepthCameraFrame MLDepthCameraFrame</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraFrame</name>
+        <briefdescription>
+<para>Structure to encapsulate output data for each camera sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="416" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1gac87b043898f256cf01d2f04282487fff" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref></type>
+        <definition>typedef struct MLDepthCameraData MLDepthCameraData</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraData</name>
+        <briefdescription>
+<para>Structure to encapsulate output data for each camera stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___d_cam_1gaf41f457b608e1bea68dbfdf3965342ea" kindref="member">MLDepthCameraDataInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="433" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga829157654e5ab9af5815b4f372b7d16c" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_stream_capability" kindref="compound">MLDepthCameraStreamCapability</ref></type>
+        <definition>typedef struct MLDepthCameraStreamCapability MLDepthCameraStreamCapability</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraStreamCapability</name>
+        <briefdescription>
+<para>Structure to encapsulate a possible configuration for a single stream. Can be used to understand possible values for a specific #stream_configs element in <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The capabilities supported by the depth camera can be queried with <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="468" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga61999814cb415f7ef96a42b7bc22f8a2" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_capability" kindref="compound">MLDepthCameraCapability</ref></type>
+        <definition>typedef struct MLDepthCameraCapability MLDepthCameraCapability</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraCapability</name>
+        <briefdescription>
+<para>Structure to encapsulate a possible set of streams configuration. Such set describes a possible way of setting #stream_configs in <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> and may hold multiple <ref refid="struct_m_l_depth_camera_stream_capability" kindref="compound">MLDepthCameraStreamCapability</ref> for different streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whole #stream_capabilities array describe a single configuration. Using only part of it is not recommended.</para>
+<para>The capabilities supported by the depth camera can be queried with <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="489" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1ga778abe282db42ea6443faed7d68572cf" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref></type>
+        <definition>typedef struct MLDepthCameraCapabilityList MLDepthCameraCapabilityList</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraCapabilityList</name>
+        <briefdescription>
+<para>Structure to encapsulate a list of possible stream configurations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>User should be able to use any of the capabilities from the list. They are grouped in usable sets of configurations - one set may contain different <ref refid="struct_m_l_depth_camera_stream_capability" kindref="compound">MLDepthCameraStreamCapability</ref> for different streams. For more information see <ref refid="struct_m_l_depth_camera_capability" kindref="compound">MLDepthCameraCapability</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="506" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_cam_1gaecc5748e33c8f720c90140b32b891d28" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref></type>
+        <definition>typedef struct MLDepthCameraCapabilityFilter MLDepthCameraCapabilityFilter</definition>
+        <argsstring></argsstring>
+        <name>MLDepthCameraCapabilityFilter</name>
+        <briefdescription>
+<para>Structure to encapsulate camera capabilities filtering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The capabilities supported by the depth camera can be queried with <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="525" column="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_cam_1ga1aed943f1ad81c5299171f91b8938427" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLDepthCameraSettingsInit</definition>
+        <argsstring>(MLDepthCameraSettings *inout_handle)</argsstring>
+        <name>MLDepthCameraSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> *</type>
+          <declname>inout_handle</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the connect handle structure. Shall be called before calling <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000256"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="264" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="264" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1gaf41f457b608e1bea68dbfdf3965342ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLDepthCameraDataInit</definition>
+        <argsstring>(MLDepthCameraData *inout_depth_camera_data)</argsstring>
+        <name>MLDepthCameraDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> *</type>
+          <declname>inout_depth_camera_data</declname>
+        </param>
+        <briefdescription>
+<para>Initialize <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> with version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_depth_camera_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set up the version for inout_depth_camera_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="442" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="442" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1gabaa73bd82279e9baadb4e4f3d29299a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLDepthCameraCapabilityFilterInit</definition>
+        <argsstring>(MLDepthCameraCapabilityFilter *inout_handle)</argsstring>
+        <name>MLDepthCameraCapabilityFilterInit</name>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref> *</type>
+          <declname>inout_handle</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the capabilities filtering structure. Shall be called before calling <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref> structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000257"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="537" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="537" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraConnect</definition>
+        <argsstring>(const MLDepthCameraSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLDepthCameraConnect</name>
+        <param>
+          <type>const <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Connect to depth camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to camera handle to be used in later APIs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connected to camera device(s) successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000258"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.DEPTH_CAMERA (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="559" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="559" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1ga415a73bfe115db7960366752b9a82159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraUpdateSettings</definition>
+        <argsstring>(MLHandle handle, const MLDepthCameraSettings *settings)</argsstring>
+        <name>MLDepthCameraUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Update the depth camera settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_depth_camera_settings" kindref="compound">MLDepthCameraSettings</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000259"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="575" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="575" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraGetCapabilities</definition>
+        <argsstring>(MLHandle handle, const MLDepthCameraCapabilityFilter *filter, MLDepthCameraCapabilityList *out_caps)</argsstring>
+        <name>MLDepthCameraGetCapabilities</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref> *</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref> *</type>
+          <declname>out_caps</declname>
+        </param>
+        <briefdescription>
+<para>Query the depth camera stream capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the capabilities supported by the depth camera based on the provided filter. Overview of the capabilities can be seen in the <ref refid="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h_1configs_table" kindref="member">configuration table</ref>.</para>
+<para>After each call, a corresponding call to <ref refid="group___d_cam_1ga4755187bb8ca046c1c7c8bff0da99ee1" kindref="member">MLDepthCameraReleaseCapabilities</ref> should be made to release allocated resources.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to initialized <ref refid="struct_m_l_depth_camera_capability_filter" kindref="compound">MLDepthCameraCapabilityFilter</ref> structure. Used for filtering. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to initialized <ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref> structure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>API call completed successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000260"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="597" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="597" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1ga4755187bb8ca046c1c7c8bff0da99ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraReleaseCapabilities</definition>
+        <argsstring>(MLHandle handle, MLDepthCameraCapabilityList *out_caps)</argsstring>
+        <name>MLDepthCameraReleaseCapabilities</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref> *</type>
+          <declname>out_caps</declname>
+        </param>
+        <briefdescription>
+<para>Release resources allocated with <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_depth_camera_capability_list" kindref="compound">MLDepthCameraCapabilityList</ref> filled by the call to <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>API call completed successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000261"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="612" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="612" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1ga60600fdd4d7d666758d9be4acf7ba524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraGetLatestDepthData</definition>
+        <argsstring>(MLHandle handle, uint64_t timeout_ms, MLDepthCameraData *out_data)</argsstring>
+        <name>MLDepthCameraGetLatestDepthData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Poll for Frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache it and then release the memory by calling #MLDepthCameraReleaseCameraData.</para>
+<para>This is a blocking call. API is not thread safe.</para>
+<para>If there are no new depth data frames within the timeout_ms duration then the API will return MLResult_Timeout.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth camera data. Should be an initialized <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth camera data fetched successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returned because no new frame available at this time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000262"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="639" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="639" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1ga9a65008cb2d8bbb5754b22295f80264e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraReleaseDepthData</definition>
+        <argsstring>(MLHandle handle, MLDepthCameraData *depth_camera_data)</argsstring>
+        <name>MLDepthCameraReleaseDepthData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> *</type>
+          <declname>depth_camera_data</declname>
+        </param>
+        <briefdescription>
+<para>Releases specified <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called exactly once for each successfull call to #MLDepthCameraGetLatestCameraData.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">depth_camera_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid <ref refid="struct_m_l_depth_camera_data" kindref="compound">MLDepthCameraData</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released depth camera data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth_camera_data parameter was not valid (NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000263"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="656" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="656" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_cam_1ga0574a26bcd11a3aa3fe19fff2d683a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLDepthCameraDisconnect</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLDepthCameraDisconnect</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect from depth camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will disconnect from the depth camera.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera handle obtained from <ref refid="group___d_cam_1ga207e9b9c73b2e9372c50544b9c719729" kindref="member">MLDepthCameraConnect</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disconnected camera successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to disconnect camera.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000264"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="673" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" declline="673" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs to access the depth camera data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\experimental This is an experimental API which may be modified or removed without any prior notice.</para>
+<para>Using the depth camera may result in the following APIs returning stale data:<itemizedlist>
+<listitem><para>Meshing (<ref refid="ml__meshing2_8h" kindref="compound">ml_meshing2.h</ref>).</para>
+</listitem><listitem><para>Planes (<ref refid="ml__planes_8h" kindref="compound">ml_planes.h</ref>). </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

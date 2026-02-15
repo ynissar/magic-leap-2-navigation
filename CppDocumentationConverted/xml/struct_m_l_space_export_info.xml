@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_export_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceExportInfo</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_export_info_1acf3d6b2ba5ca80afd20efc0a978d4d73" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceExportInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="463" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_export_info_1ad0de876379ff557dd520f66acaeaac16" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>MLUUID MLSpaceExportInfo::space_id</definition>
+        <argsstring></argsstring>
+        <name>space_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref> of the Space that needs to be exported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="465" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the Space export settings. This structure must be initialized by calling <ref refid="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" kindref="member">MLSpaceExportInfoInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLSpaceExportInfo</label>
+        <link refid="struct_m_l_space_export_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>space_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="461" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="461" bodyend="466"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_export_info_1ad0de876379ff557dd520f66acaeaac16" prot="public" virt="non-virtual"><scope>MLSpaceExportInfo</scope><name>space_id</name></member>
+      <member refid="struct_m_l_space_export_info_1acf3d6b2ba5ca80afd20efc0a978d4d73" prot="public" virt="non-virtual"><scope>MLSpaceExportInfo</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

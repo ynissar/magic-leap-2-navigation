@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_transform_derivatives" kind="struct" language="C++" prot="public">
+    <compoundname>MLTransformDerivatives</compoundname>
+    <includes refid="ml__snapshot_8h" local="no">ml_snapshot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_transform_derivatives_1a5b3ec32570659ff639c84066970e4477" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLTransformDerivatives::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="51" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLTransformDerivatives::linear_velocity_m_s</definition>
+        <argsstring></argsstring>
+        <name>linear_velocity_m_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Linear velocity in meters per second, expressed in destination frame coordinates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="54" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLTransformDerivatives::linear_acceleration_m_s2</definition>
+        <argsstring></argsstring>
+        <name>linear_acceleration_m_s2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Linear acceleration in meters per second squared, expressed in destination frame coordinates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="57" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLTransformDerivatives::angular_velocity_r_s</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity_r_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angular velocity in radians per second, expressed in destination frame coordinates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="60" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLTransformDerivatives::angular_acceleration_r_s2</definition>
+        <argsstring></argsstring>
+        <name>angular_acceleration_r_s2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angular acceleration in radians per second squared, expressed in destination frame coordinates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="63" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Velocity and acceleration derivatives for a related transform. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="1">
+        <label>MLTransformDerivatives</label>
+        <link refid="struct_m_l_transform_derivatives"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>angular_acceleration_r_s2</edgelabel>
+          <edgelabel>angular_velocity_r_s</edgelabel>
+          <edgelabel>linear_acceleration_m_s2</edgelabel>
+          <edgelabel>linear_velocity_m_s</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" line="49" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h" bodystart="49" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct_m_l_transform_derivatives_1a3cb94b8e2a51498951dd7843d9112c7c" prot="public" virt="non-virtual"><scope>MLTransformDerivatives</scope><name>angular_acceleration_r_s2</name></member>
+      <member refid="struct_m_l_transform_derivatives_1a5c3ae449341d9e827bef801195d48140" prot="public" virt="non-virtual"><scope>MLTransformDerivatives</scope><name>angular_velocity_r_s</name></member>
+      <member refid="struct_m_l_transform_derivatives_1a258a11c77b370e947aae4233371ab754" prot="public" virt="non-virtual"><scope>MLTransformDerivatives</scope><name>linear_acceleration_m_s2</name></member>
+      <member refid="struct_m_l_transform_derivatives_1a36b2b926f56c76736c000f14a3e79f32" prot="public" virt="non-virtual"><scope>MLTransformDerivatives</scope><name>linear_velocity_m_s</name></member>
+      <member refid="struct_m_l_transform_derivatives_1a5b3ec32570659ff639c84066970e4477" prot="public" virt="non-virtual"><scope>MLTransformDerivatives</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

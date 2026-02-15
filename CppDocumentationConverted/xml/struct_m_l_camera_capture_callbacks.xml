@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_capture_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraCaptureCallbacks</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1aeb2af27813f893880e3dc1f1430e819e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraCaptureCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="537" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1a9c9c8979ea72ba8ee721a2bc6841767f" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraCaptureCallbacks::on_capture_failed) (const MLCameraResultExtras *extra, void *data)</definition>
+        <argsstring>)(const MLCameraResultExtras *extra, void *data)</argsstring>
+        <name>on_capture_failed</name>
+        <briefdescription>
+<para>Callback is invoked when a capture has failed when the camera device failed to produce a capture result for the request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">extra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Carries capture result information of current captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="546" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1a9710f47c8c1f31b92517e95825f1c26e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraCaptureCallbacks::on_capture_aborted) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>on_capture_aborted</name>
+        <briefdescription>
+<para>Callback is invoked when an ongoing video or preview capture or both are aborted due to an error. This is not valid for MR Capture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="554" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1aec8effaf2638c899dcd1d3b4e94fc1f3" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraCaptureCallbacks::on_capture_completed) (MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</definition>
+        <argsstring>)(MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</argsstring>
+        <name>on_capture_completed</name>
+        <briefdescription>
+<para>Callback is invoked when capturing single frame is completed and result is available. For MRCapture null metadata handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_metadata_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Represents camera result metadata which could be used as input handle for camera result metadata related functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">extra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Carries capture result information of current captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="565" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1a167b2b180595a13b45f2f44fd1b01625" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraCaptureCallbacks::on_image_buffer_available) (const MLCameraOutput *output, const MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</definition>
+        <argsstring>)(const MLCameraOutput *output, const MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</argsstring>
+        <name>on_image_buffer_available</name>
+        <briefdescription>
+<para>Callback is invoked when a captured image buffer is available with <ref refid="group___camera_1gga81f72e27351fa8c140dd141bd7004828ad1b446a22c383da2167e9479d81c3b68" kindref="member">MLCameraCaptureType_Image</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides image properties and buffer pointer to image data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">result_metadata_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to metadata of captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">extra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Carries capture result information of current captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="575" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1a42dda9b1ab037d7a69cbad2d7ee902da" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraCaptureCallbacks::on_video_buffer_available) (const MLCameraOutput *output, const MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</definition>
+        <argsstring>)(const MLCameraOutput *output, const MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</argsstring>
+        <name>on_video_buffer_available</name>
+        <briefdescription>
+<para>Callback is invoked when a captured video frame buffer is available with <ref refid="group___camera_1gga81f72e27351fa8c140dd141bd7004828aadc39bdf67d1ad611d115150b9ad06ba" kindref="member">MLCameraCaptureType_Video</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides video frame properties and buffer pointer to video frame data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">result_metadata_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to metadata of captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">extra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Carries capture result information of current captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="585" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_capture_callbacks_1ae7b602f1e4d770c0bdd72d5c50b8dee0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraCaptureCallbacks::on_preview_buffer_available) (const MLHandle buffer_handle, const MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</definition>
+        <argsstring>)(const MLHandle buffer_handle, const MLHandle result_metadata_handle, const MLCameraResultExtras *extra, void *data)</argsstring>
+        <name>on_preview_buffer_available</name>
+        <briefdescription>
+<para>Callback is invoked when a preview video frame buffer is available with <ref refid="group___camera_1gga81f72e27351fa8c140dd141bd7004828a66f710eb5cd17e7d54846cb5bf26914c" kindref="member">MLCameraCaptureType_Preview</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback is not valid for MR Capture since it does not have preview support.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of preview buffer allocated for preview. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">result_metadata_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to metadata of captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">extra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Carries capture result information of current captured frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom data to be returned when callback is triggered. This data passed in <ref refid="group___camera_1gac97ec7063117126c48d9d3bcb5258822" kindref="member">MLCameraSetCaptureCallbacks</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="597" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___camera_1ga8b0aad8a6839cab3499b7f716b1b43e1" kindref="member">MLCameraCaptureCallbacksInit()</ref> before use. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="535" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="535" bodyend="598"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_capture_callbacks_1a9710f47c8c1f31b92517e95825f1c26e" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>on_capture_aborted</name></member>
+      <member refid="struct_m_l_camera_capture_callbacks_1aec8effaf2638c899dcd1d3b4e94fc1f3" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>on_capture_completed</name></member>
+      <member refid="struct_m_l_camera_capture_callbacks_1a9c9c8979ea72ba8ee721a2bc6841767f" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>on_capture_failed</name></member>
+      <member refid="struct_m_l_camera_capture_callbacks_1a167b2b180595a13b45f2f44fd1b01625" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>on_image_buffer_available</name></member>
+      <member refid="struct_m_l_camera_capture_callbacks_1ae7b602f1e4d770c0bdd72d5c50b8dee0" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>on_preview_buffer_available</name></member>
+      <member refid="struct_m_l_camera_capture_callbacks_1a42dda9b1ab037d7a69cbad2d7ee902da" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>on_video_buffer_available</name></member>
+      <member refid="struct_m_l_camera_capture_callbacks_1aeb2af27813f893880e3dc1f1430e819e" prot="public" virt="non-virtual"><scope>MLCameraCaptureCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

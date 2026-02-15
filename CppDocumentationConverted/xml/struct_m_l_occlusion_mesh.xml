@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_occlusion_mesh" kind="struct" language="C++" prot="public">
+    <compoundname>MLOcclusionMesh</compoundname>
+    <includes refid="ml__occlusion_8h" local="no">ml_occlusion.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_1a7a78e0800d006f0cab2f94d152118c0e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLOcclusionMesh::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="84" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_1a8033895ae9272b39260f8718b75aa302" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLOcclusionMesh::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The timestamp when data was generated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="86" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_1ade21ae807bfb382aef60ec2e7eb37906" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLOcclusionMesh::index_count</definition>
+        <argsstring></argsstring>
+        <name>index_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of indices in index buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="88" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_1aee0068d359a4efdac7e7fc401b577ed1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLOcclusionMesh::vertex_count</definition>
+        <argsstring></argsstring>
+        <name>vertex_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of vertices in vertex buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="90" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_1a22c5a974093025a33314149374ab16c8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *</type>
+        <definition>MLVec3f* MLOcclusionMesh::vertex</definition>
+        <argsstring></argsstring>
+        <name>vertex</name>
+        <briefdescription>
+<para>Pointer to the vertex buffer. All vertices are placed w.r.t. world origin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="95" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_mesh_1acefd1f5ba146fecb057b46eea8799065" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* MLOcclusionMesh::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>Pointer to index buffer. In the index buffer each value is the index of a vertex in the vertex buffer. Three indices define one triangle. For example, the first triangle will have the vertices: vertex[index[0]], vertex[index[1]], vertex[index[2]]. Index order is CW. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="103" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure for occlusion mesh data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="1">
+        <label>MLOcclusionMesh</label>
+        <link refid="struct_m_l_occlusion_mesh"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>vertex</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="82" bodyend="104"/>
+    <listofallmembers>
+      <member refid="struct_m_l_occlusion_mesh_1acefd1f5ba146fecb057b46eea8799065" prot="public" virt="non-virtual"><scope>MLOcclusionMesh</scope><name>index</name></member>
+      <member refid="struct_m_l_occlusion_mesh_1ade21ae807bfb382aef60ec2e7eb37906" prot="public" virt="non-virtual"><scope>MLOcclusionMesh</scope><name>index_count</name></member>
+      <member refid="struct_m_l_occlusion_mesh_1a8033895ae9272b39260f8718b75aa302" prot="public" virt="non-virtual"><scope>MLOcclusionMesh</scope><name>timestamp</name></member>
+      <member refid="struct_m_l_occlusion_mesh_1a7a78e0800d006f0cab2f94d152118c0e" prot="public" virt="non-virtual"><scope>MLOcclusionMesh</scope><name>version</name></member>
+      <member refid="struct_m_l_occlusion_mesh_1a22c5a974093025a33314149374ab16c8" prot="public" virt="non-virtual"><scope>MLOcclusionMesh</scope><name>vertex</name></member>
+      <member refid="struct_m_l_occlusion_mesh_1aee0068d359a4efdac7e7fc401b577ed1" prot="public" virt="non-virtual"><scope>MLOcclusionMesh</scope><name>vertex_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

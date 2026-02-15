@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_occlusion_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLOcclusionSettings</compoundname>
+    <includes refid="ml__occlusion_8h" local="no">ml_occlusion.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_occlusion_settings_1ae76585855ddfe3294b0bf36ae771a39d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLOcclusionSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="46" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_settings_1a1d142560fde066a6db4a0081bc909cdb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLOcclusionSettings::min_distance</definition>
+        <argsstring></argsstring>
+        <name>min_distance</name>
+        <briefdescription>
+<para>Minimum distance in meters to occlude objects. Possible values ranges from 0.3m up to 7.5m. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="51" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_occlusion_settings_1a8b988823022f9e6a46a63012046221aa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLOcclusionSettings::max_distance</definition>
+        <argsstring></argsstring>
+        <name>max_distance</name>
+        <briefdescription>
+<para>Maximum distance in meters to occlude objects. Possible values ranges from 0.3m up to 7.5m. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="56" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mesh Settings for the underlying system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="44" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="44" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_m_l_occlusion_settings_1a8b988823022f9e6a46a63012046221aa" prot="public" virt="non-virtual"><scope>MLOcclusionSettings</scope><name>max_distance</name></member>
+      <member refid="struct_m_l_occlusion_settings_1a1d142560fde066a6db4a0081bc909cdb" prot="public" virt="non-virtual"><scope>MLOcclusionSettings</scope><name>min_distance</name></member>
+      <member refid="struct_m_l_occlusion_settings_1ae76585855ddfe3294b0bf36ae771a39d" prot="public" virt="non-virtual"><scope>MLOcclusionSettings</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

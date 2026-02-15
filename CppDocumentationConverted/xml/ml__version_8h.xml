@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__version_8h" kind="file" language="C++">
+    <compoundname>ml_version.h</compoundname>
+    <includedby refid="ml__api_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h</includedby>
+    <invincdepgraph>
+      <node id="24">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h</label>
+        <link refid="ml__hand__tracking_8h"/>
+      </node>
+      <node id="3">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h</label>
+        <link refid="ml__audio_8h"/>
+      </node>
+      <node id="45">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_native_surface.h</label>
+        <link refid="ml__native__surface_8h"/>
+      </node>
+      <node id="50">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h</label>
+        <link refid="ml__space_8h"/>
+      </node>
+      <node id="53">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h</label>
+        <link refid="ml__time_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h</label>
+        <link refid="ml__media__error_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h</label>
+        <link refid="ml__power__manager_8h"/>
+      </node>
+      <node id="34">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</label>
+        <link refid="ml__media__player_8h"/>
+      </node>
+      <node id="31">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_codeclist.h</label>
+        <link refid="ml__media__codeclist_8h"/>
+      </node>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h</label>
+        <link refid="ml__audio__channel__mask_8h"/>
+      </node>
+      <node id="22">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</label>
+        <link refid="ml__graphics__utils_8h"/>
+      </node>
+      <node id="9">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</label>
+        <link refid="ml__zi__graphics_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h</label>
+        <link refid="ml__version_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea608_caption.h</label>
+        <link refid="ml__media__cea608__caption_8h"/>
+      </node>
+      <node id="30">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_codec.h</label>
+        <link refid="ml__media__codec_8h"/>
+      </node>
+      <node id="13">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h</label>
+        <link refid="ml__cv__camera_8h"/>
+      </node>
+      <node id="44">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</label>
+        <link refid="ml__meshing2_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h</label>
+        <link refid="ml__gesture__classification_8h"/>
+      </node>
+      <node id="15">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h</label>
+        <link refid="ml__eye__calibration_8h"/>
+      </node>
+      <node id="5">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h</label>
+        <link refid="ml__camera__metadata__tags__v2_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h</label>
+        <link refid="ml__media__muxer_8h"/>
+      </node>
+      <node id="17">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h</label>
+        <link refid="ml__eye__tracking_8h"/>
+      </node>
+      <node id="35">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_drm.h</label>
+        <link refid="ml__media__drm_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h</label>
+        <link refid="ml__planes_8h"/>
+      </node>
+      <node id="48">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h</label>
+        <link refid="ml__platform_8h"/>
+      </node>
+      <node id="57">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h</label>
+        <link refid="ml__voice_8h"/>
+      </node>
+      <node id="16">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h</label>
+        <link refid="ml__eye__camera_8h"/>
+      </node>
+      <node id="41">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_stream_source.h</label>
+        <link refid="ml__media__stream__source_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h</label>
+        <link refid="ml__facial__expression_8h"/>
+      </node>
+      <node id="7">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h</label>
+        <link refid="ml__camera__v2_8h"/>
+      </node>
+      <node id="42">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_ttml.h</label>
+        <link refid="ml__media__ttml_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_crypto.h</label>
+        <link refid="ml__media__crypto_8h"/>
+      </node>
+      <node id="59">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h</label>
+        <link refid="ml__zi__permissions_8h"/>
+      </node>
+      <node id="55">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h</label>
+        <link refid="ml__webview_8h"/>
+      </node>
+      <node id="46">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h</label>
+        <link refid="ml__occlusion_8h"/>
+      </node>
+      <node id="12">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</label>
+        <link refid="ml__perception_8h"/>
+      </node>
+      <node id="40">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h</label>
+        <link refid="ml__media__recorder_8h"/>
+      </node>
+      <node id="11">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</label>
+        <link refid="ml__snapshot_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h</label>
+        <link refid="ml__world__camera_8h"/>
+      </node>
+      <node id="10">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h</label>
+        <link refid="ml__marker__tracking_8h"/>
+      </node>
+      <node id="27">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h</label>
+        <link refid="ml__input_8h"/>
+      </node>
+      <node id="51">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h</label>
+        <link refid="ml__spatial__anchor_8h"/>
+      </node>
+      <node id="54">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</label>
+        <link refid="ml__graphics_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea708_caption.h</label>
+        <link refid="ml__media__cea708__caption_8h"/>
+      </node>
+      <node id="19">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h</label>
+        <link refid="ml__gaze__recognition_8h"/>
+      </node>
+      <node id="33">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</label>
+        <link refid="ml__media__extractor_8h"/>
+      </node>
+      <node id="6">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_v2.h</label>
+        <link refid="ml__camera__metadata__v2_8h"/>
+      </node>
+      <node id="25">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h</label>
+        <link refid="ml__head__tracking_8h"/>
+      </node>
+      <node id="43">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_webvtt.h</label>
+        <link refid="ml__media__webvtt_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_system_notification_manager.h</label>
+        <link refid="ml__system__notification__manager_8h"/>
+      </node>
+      <node id="26">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h</label>
+        <link refid="ml__headset__fit_8h"/>
+      </node>
+      <node id="32">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_data_source.h</label>
+        <link refid="ml__media__data__source_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h</label>
+        <link refid="ml__controller_8h"/>
+      </node>
+      <node id="38">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_format.h</label>
+        <link refid="ml__media__format_8h"/>
+      </node>
+      <node id="14">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h</label>
+        <link refid="ml__depth__camera_8h"/>
+      </node>
+      <node id="58">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h</label>
+        <link refid="ml__zi_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ml__version_8h_1af6105f3e75975a78975d285e351da6ad" prot="public" static="no">
+        <name>MLSDK_VERSION_MAJOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="16" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__version_8h_1aa96cd28782f9aa2d5937c0978bcffb70" prot="public" static="no">
+        <name>MLSDK_VERSION_MINOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="17" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__version_8h_1a1bc6ab813f88d37e32d719b9b9f13a71" prot="public" static="no">
+        <name>MLSDK_VERSION_REVISION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="18" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__version_8h_1a2b177e21927a393e814a550ee831d8a7" prot="public" static="no">
+        <name>MLSDK_VERSION_BUILD_ID</name>
+        <initializer>&quot;0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="19" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__version_8h_1ae7741f2c4886e2e79f7b4c1dd5b0cb63" prot="public" static="no">
+        <name>MLSDK_STRINGIFYX</name>
+        <param><defname>x</defname></param>
+        <initializer><ref refid="ml__version_8h_1afe60a6979d1d407552ad0b9309dd6672" kindref="member">MLSDK_STRINGIFY</ref>(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="20" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__version_8h_1afe60a6979d1d407552ad0b9309dd6672" prot="public" static="no">
+        <name>MLSDK_STRINGIFY</name>
+        <param><defname>x</defname></param>
+        <initializer>#x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="21" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__version_8h_1a4427b1d9a48a152099d0b1a24d34af23" prot="public" static="no">
+        <name>MLSDK_VERSION_NAME</name>
+        <initializer>  <ref refid="ml__version_8h_1ae7741f2c4886e2e79f7b4c1dd5b0cb63" kindref="member">MLSDK_STRINGIFYX</ref>(<ref refid="ml__version_8h_1af6105f3e75975a78975d285e351da6ad" kindref="member">MLSDK_VERSION_MAJOR</ref>) \
+  &quot;.&quot; <ref refid="ml__version_8h_1ae7741f2c4886e2e79f7b4c1dd5b0cb63" kindref="member">MLSDK_STRINGIFYX</ref>(<ref refid="ml__version_8h_1aa96cd28782f9aa2d5937c0978bcffb70" kindref="member">MLSDK_VERSION_MINOR</ref>) \
+  &quot;.&quot; <ref refid="ml__version_8h_1ae7741f2c4886e2e79f7b4c1dd5b0cb63" kindref="member">MLSDK_STRINGIFYX</ref>(<ref refid="ml__version_8h_1a1bc6ab813f88d37e32d719b9b9f13a71" kindref="member">MLSDK_VERSION_REVISION</ref>) \
+  &quot;.&quot; <ref refid="ml__version_8h_1a2b177e21927a393e814a550ee831d8a7" kindref="member">MLSDK_VERSION_BUILD_ID</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" line="22" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="ml__version_8h_1af6105f3e75975a78975d285e351da6ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_VERSION_MAJOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="ml__version_8h_1aa96cd28782f9aa2d5937c0978bcffb70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_VERSION_MINOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="ml__version_8h_1a1bc6ab813f88d37e32d719b9b9f13a71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_VERSION_REVISION<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="ml__version_8h_1a2b177e21927a393e814a550ee831d8a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_VERSION_BUILD_ID<sp/>&quot;0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="ml__version_8h_1ae7741f2c4886e2e79f7b4c1dd5b0cb63" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_STRINGIFYX(x)<sp/>MLSDK_STRINGIFY(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="ml__version_8h_1afe60a6979d1d407552ad0b9309dd6672" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_STRINGIFY(x)<sp/>#x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="ml__version_8h_1a4427b1d9a48a152099d0b1a24d34af23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLSDK_VERSION_NAME<sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/>MLSDK_STRINGIFYX(MLSDK_VERSION_MAJOR)<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/>&quot;.&quot;</highlight><highlight class="normal"><sp/>MLSDK_STRINGIFYX(MLSDK_VERSION_MINOR)<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>&quot;.&quot;<sp/>MLSDK_STRINGIFYX(MLSDK_VERSION_REVISION)<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>&quot;.&quot;<sp/>MLSDK_VERSION_BUILD_ID</highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_version.h"/>
+  </compounddef>
+</doxygen>

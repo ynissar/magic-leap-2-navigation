@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="union_m_l_power_manager_component_property_8____unnamed26____" kind="union" language="C++" prot="public">
+    <compoundname>MLPowerManagerComponentProperty.__unnamed26__</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_m_l_power_manager_component_property_8____unnamed26_____1a167a595634f3b93cc74205f87a3b9d49" prot="public" static="no" mutable="no">
+        <type><ref refid="group___power_manager_1ga66162fa86aaf2629d08a9676ca4f94a3" kindref="member">MLPowerManagerBatteryInfo</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>battery_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra info about battery. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="252" column="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_m_l_power_manager_component_property_8____unnamed26_____1abd2fc65a60afb7f3792338b098e83d64" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>battery_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Battery level. Range is between 0 and 100. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="255" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_m_l_power_manager_component_property_8____unnamed26_____1a62d968f74d4d06682eb8a9ccd46ca70e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___power_manager_1ga580551ce32113e2bc789ebb99b4d7f0b" kindref="member">MLPowerManagerChargingState</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>charging_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Charging state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="258" column="33"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_m_l_power_manager_component_property_8____unnamed26_____1ac1e5c3084b2750fbff27a04d7cd9dbd7" prot="public" static="no" mutable="no">
+        <type><ref refid="group___power_manager_1gaa6ece80b562ad9a0ca2354b5e22a1a55" kindref="member">MLPowerManagerConnectionState</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>connection_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="261" column="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="250" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="250" bodyend="262"/>
+    <listofallmembers>
+      <member refid="union_m_l_power_manager_component_property_8____unnamed26_____1a167a595634f3b93cc74205f87a3b9d49" prot="public" virt="non-virtual"><scope>MLPowerManagerComponentProperty.__unnamed26__</scope><name>battery_info</name></member>
+      <member refid="union_m_l_power_manager_component_property_8____unnamed26_____1abd2fc65a60afb7f3792338b098e83d64" prot="public" virt="non-virtual"><scope>MLPowerManagerComponentProperty.__unnamed26__</scope><name>battery_level</name></member>
+      <member refid="union_m_l_power_manager_component_property_8____unnamed26_____1a62d968f74d4d06682eb8a9ccd46ca70e" prot="public" virt="non-virtual"><scope>MLPowerManagerComponentProperty.__unnamed26__</scope><name>charging_state</name></member>
+      <member refid="union_m_l_power_manager_component_property_8____unnamed26_____1ac1e5c3084b2750fbff27a04d7cd9dbd7" prot="public" virt="non-virtual"><scope>MLPowerManagerComponentProperty.__unnamed26__</scope><name>connection_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

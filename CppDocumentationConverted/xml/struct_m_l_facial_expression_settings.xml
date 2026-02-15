@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_facial_expression_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLFacialExpressionSettings</compoundname>
+    <includes refid="ml__facial__expression_8h" local="no">ml_facial_expression.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_facial_expression_settings_1abdb0e1e0b037124f0179ca6cbff5a0c8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLFacialExpressionSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this settings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="133" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_facial_expression_settings_1ac86d0c6c0a062cfd53507c572daf1770" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLFacialExpressionSettings::enable_eye_expression</definition>
+        <argsstring></argsstring>
+        <name>enable_eye_expression</name>
+        <briefdescription>
+<para>Enable <ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, facial expressions will detect <ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref> and the same can queried using <ref refid="group___facial_expression_1ga02fdbd66d8739b9eab0d90475224344a" kindref="member">MLFacialExpressionGetEyeData</ref>.</para>
+<para>This should be disabled when app does not need facial expression data. Internal state of the system will be maintained. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="143" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing settings for the facial expressions. This structure must be initialized by calling <ref refid="group___facial_expression_1ga71abdb68af410132b9c99b9b2ffc8744" kindref="member">MLFacialExpressionSettingsInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="131" bodyend="144"/>
+    <listofallmembers>
+      <member refid="struct_m_l_facial_expression_settings_1ac86d0c6c0a062cfd53507c572daf1770" prot="public" virt="non-virtual"><scope>MLFacialExpressionSettings</scope><name>enable_eye_expression</name></member>
+      <member refid="struct_m_l_facial_expression_settings_1abdb0e1e0b037124f0179ca6cbff5a0c8" prot="public" virt="non-virtual"><scope>MLFacialExpressionSettings</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

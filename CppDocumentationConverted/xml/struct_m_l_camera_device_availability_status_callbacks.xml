@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_device_availability_status_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraDeviceAvailabilityStatusCallbacks</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_device_availability_status_callbacks_1a688f590ca5ba901d910399f42faf68a5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraDeviceAvailabilityStatusCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="464" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_availability_status_callbacks_1a21dd0c0655ed86a7b5ec583c3ec898ed" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraDeviceAvailabilityStatusCallbacks::on_device_available) (const MLCameraDeviceAvailabilityInfo *info)</definition>
+        <argsstring>)(const MLCameraDeviceAvailabilityInfo *info)</argsstring>
+        <name>on_device_available</name>
+        <briefdescription>
+<para>Callback is invoked when the camera becomes available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the camera availability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="470" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_availability_status_callbacks_1a1467283b0d3b4846957320de2907e9a5" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLCameraDeviceAvailabilityStatusCallbacks::on_device_unavailable) (const MLCameraDeviceAvailabilityInfo *info)</definition>
+        <argsstring>)(const MLCameraDeviceAvailabilityInfo *info)</argsstring>
+        <name>on_device_unavailable</name>
+        <briefdescription>
+<para>Callback is invoked when the camera becomes unavailable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the camera availability </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="476" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Device availability status callbacks to be implemented by client to receive device availability status. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="462" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="462" bodyend="477"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_device_availability_status_callbacks_1a21dd0c0655ed86a7b5ec583c3ec898ed" prot="public" virt="non-virtual"><scope>MLCameraDeviceAvailabilityStatusCallbacks</scope><name>on_device_available</name></member>
+      <member refid="struct_m_l_camera_device_availability_status_callbacks_1a1467283b0d3b4846957320de2907e9a5" prot="public" virt="non-virtual"><scope>MLCameraDeviceAvailabilityStatusCallbacks</scope><name>on_device_unavailable</name></member>
+      <member refid="struct_m_l_camera_device_availability_status_callbacks_1a688f590ca5ba901d910399f42faf68a5" prot="public" virt="non-virtual"><scope>MLCameraDeviceAvailabilityStatusCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

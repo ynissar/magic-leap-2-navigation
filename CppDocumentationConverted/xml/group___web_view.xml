@@ -1,0 +1,3176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___web_view" kind="group">
+    <compoundname>WebView</compoundname>
+    <title>WebView</title>
+    <innerclass refid="struct_m_l_web_view_cursor_state" prot="public">MLWebViewCursorState</innerclass>
+    <innerclass refid="struct_m_l_web_view_event_callbacks" prot="public">MLWebViewEventCallbacks</innerclass>
+    <innerclass refid="struct_m_l_web_view_settings" prot="public">MLWebViewSettings</innerclass>
+    <innerclass refid="struct_m_l_web_view_process_settings" prot="public">MLWebViewProcessSettings</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___web_view_1ga1f0ea362db078b9b5c2588f986b4069c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWebViewTextInputType</name>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca7d86c35ca0fd4142ff9197a5feff82d5" prot="public">
+          <name>MLWebViewTextInputType_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca48896df39fbec13da569cf6051d35e5e" prot="public">
+          <name>MLWebViewTextInputType_Text</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069cac2ba20228238bc96d4f769b25c370526" prot="public">
+          <name>MLWebViewTextInputType_Password</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca1aecaa32d036564fcf2e80d24a74711f" prot="public">
+          <name>MLWebViewTextInputType_Search</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca11843b851def687d2b7b86c841269608" prot="public">
+          <name>MLWebViewTextInputType_Email</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca76d9c3438cace0d4a384134d1d3c04fe" prot="public">
+          <name>MLWebViewTextInputType_Number</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca263ed3607e2e05759b386f885b8d7985" prot="public">
+          <name>MLWebViewTextInputType_Telephone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069cacbaba465ae961c9e7ca642d2680f54b4" prot="public">
+          <name>MLWebViewTextInputType_URL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069caee692fefe8a9ebc26c39de753f0707ee" prot="public">
+          <name>MLWebViewTextInputType_Date</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069cab70c9b9c74e650feb132e245ab74bbc8" prot="public">
+          <name>MLWebViewTextInputType_DateTime</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca4f0e9c71e1c5a7d8eabc2391a5cb0e4b" prot="public">
+          <name>MLWebViewTextInputType_DateTimeLocal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca4dea67f6d55421e5f1565845903dff87" prot="public">
+          <name>MLWebViewTextInputType_Month</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069cab01980a3cdca4112a30b96215502a2b3" prot="public">
+          <name>MLWebViewTextInputType_Time</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca3fcb3a86c0fb135aa21c20e5f7c67ec3" prot="public">
+          <name>MLWebViewTextInputType_Week</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca588d98a952110ea26b6539d32e3506b9" prot="public">
+          <name>MLWebViewTextInputType_TextArea</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca761a7e290410f05c024c7902823b50b1" prot="public">
+          <name>MLWebViewTextInputType_ContentEditable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069cabd559034724c7d6a38692526bd6a0528" prot="public">
+          <name>MLWebViewTextInputType_DateTimeField</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1f0ea362db078b9b5c2588f986b4069ca35d1276cb5aab27dee7e556aa10ecfab" prot="public">
+          <name>MLWebViewTextInputType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of text entry selected when on_show_keyboard is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="41" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="41" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___web_view_1ga630f6dd31d8b0fcd468c62d6f188e392" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWebViewTextInputFlags</name>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a2ea995a7b168441c5dd3f91778fb9990" prot="public">
+          <name>MLWebViewTextInputFlags_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a37ee2dd86ced2a45820925f7a1c35c8c" prot="public">
+          <name>MLWebViewTextInputFlags_AutocompleteOn</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392adf3663731c0bac03128ec006d02a8c26" prot="public">
+          <name>MLWebViewTextInputFlags_AutocompleteOff</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392afaf68debf251d52964d57ae28dfd8975" prot="public">
+          <name>MLWebViewTextInputFlags_AutocorrectOn</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392aec7a7aedbee2c02838365aa206c17191" prot="public">
+          <name>MLWebViewTextInputFlags_AutocorrectOff</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a790b28358b2e6f497b556b78d2876d81" prot="public">
+          <name>MLWebViewTextInputFlags_SpellcheckOn</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392af939fb4933d8b0e6cdba8f57d5f5efd6" prot="public">
+          <name>MLWebViewTextInputFlags_SpellcheckOff</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a5205b7987e12f567652970ba7ec58fe3" prot="public">
+          <name>MLWebViewTextInputFlags_AutocapitalizeNone</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a0de7c6fc3411ef4fc2ca3462d0dc8d65" prot="public">
+          <name>MLWebViewTextInputFlags_AutocapitalizeCharacters</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392afef5b8bb702b83f2a06041d6ce98feec" prot="public">
+          <name>MLWebViewTextInputFlags_AutocapitalizeWords</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a6a45b553eaca56ccf6d2af2bae5ea63f" prot="public">
+          <name>MLWebViewTextInputFlags_AutocapitalizeSentences</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392ac4e2a7d4a1cdbb6bff1af38e8bb80585" prot="public">
+          <name>MLWebViewTextInputFlags_HaveNextFocusableElement</name>
+          <initializer>= 1 &lt;&lt; 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a20625f7662f242c375354a92bba10cd4" prot="public">
+          <name>MLWebViewTextInputFlags_HavePreviousFocusableElement</name>
+          <initializer>= 1 &lt;&lt; 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a7fb046a2f31a37f5f5a4da08ec3070e3" prot="public">
+          <name>MLWebViewTextInputFlags_HasBeenPasswordField</name>
+          <initializer>= 1 &lt;&lt; 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga630f6dd31d8b0fcd468c62d6f188e392a113e17ee208023ba19f2b38f1e17c2bd" prot="public">
+          <name>MLWebViewTextInputFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags related to a text entry field passed when on_show_keyboard is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="67" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___web_view_1ga1611bc512e80358ea04875446f79d321" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWebViewEventFlags</name>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321affb9115ebc32a566bb468b94b1280f5c" prot="public">
+          <name>MLWebViewEventFlags_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321ac245317861a61b4749012f38190356cc" prot="public">
+          <name>MLWebViewEventFlags_CapsLockOn</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321ae161f7465b82d6dfed7879252a48c0f1" prot="public">
+          <name>MLWebViewEventFlags_ShiftDown</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a2474ac7e15ee29b945dbe99ec24aec16" prot="public">
+          <name>MLWebViewEventFlags_ControlDown</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a181ef3207a16ec0e9712da3ce5cfd7b4" prot="public">
+          <name>MLWebViewEventFlags_AltDown</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a384dd6810c0e29e5ac339fcf4769dc6f" prot="public">
+          <name>MLWebViewEventFlags_LeftMouseButton</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a889d54e4676878998d0243df7f41ad5d" prot="public">
+          <name>MLWebViewEventFlags_MiddleMouseButton</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321abfcdabc7d0b5d2c59f9809494c4953cf" prot="public">
+          <name>MLWebViewEventFlags_RightMouseButton</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321ad8e62b787d964911b9f7bc8dd556bd0f" prot="public">
+          <name>MLWebViewEventFlags_CommandDown</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a0ce4dcea96d01f2c16150b3c3c84de19" prot="public">
+          <name>MLWebViewEventFlags_NumLockOn</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a7727818e1021fbbf8c7a39b9c0fc9198" prot="public">
+          <name>MLWebViewEventFlags_IsKeyPad</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321ab15ac026fe51e0a461fceb695b9b8df8" prot="public">
+          <name>MLWebViewEventFlags_IsLeft</name>
+          <initializer>= 1 &lt;&lt; 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a2a95ed3d990c268f2c43c19a8f79282c" prot="public">
+          <name>MLWebViewEventFlags_IsRight</name>
+          <initializer>= 1 &lt;&lt; 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a972ae85cb7e9805334d3f7d1829efeeb" prot="public">
+          <name>MLWebViewEventFlags_AltGRDown</name>
+          <initializer>= 1 &lt;&lt; 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga1611bc512e80358ea04875446f79d321a43937732f1e8378f4ac4a450e7a71c87" prot="public">
+          <name>MLWebViewEventFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags to set special key states during input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="90" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="90" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___web_view_1ga0944a4353780132eeab7b06e3e42291d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@31</name>
+        <enumvalue id="group___web_view_1gga0944a4353780132eeab7b06e3e42291dacdba8fe4af94b82d8a5246ae8ca61bc9" prot="public">
+          <name>MLResultAPIPrefix_WebView</name>
+          <initializer>= ( 0xebf7  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for <ref refid="group___web_view_1gacf3cc3d7a3d80d31d2d75d12e139792e" kindref="member">MLWebViewResult</ref> codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="108" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___web_view_1gacf3cc3d7a3d80d31d2d75d12e139792e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWebViewResult</name>
+        <enumvalue id="group___web_view_1ggacf3cc3d7a3d80d31d2d75d12e139792ea646c55e2c4e2b9ea27463354735a2450" prot="public">
+          <name>MLWebViewResult_ZoomLimitReached</name>
+          <initializer>= MLResultAPIPrefix_WebView</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1ggacf3cc3d7a3d80d31d2d75d12e139792ea346127e1435a20f90c5575e795a0f3d2" prot="public">
+          <name>MLWebViewResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return values for the WebView API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="118" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___web_view_1ga4fbbf26184aa317058af4c778169d1d2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWebViewProcessSettingFlags</name>
+        <enumvalue id="group___web_view_1gga4fbbf26184aa317058af4c778169d1d2a8ed03379952300c16634a1f9a86b900c" prot="public">
+          <name>MLWebViewProcessSettingFlags_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga4fbbf26184aa317058af4c778169d1d2a92050810d5db034f0aeaee97e32308a1" prot="public">
+          <name>MLWebViewProcessSettingFlags_WebInspectorOn</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The bit to enable (1) or disable (0) web inspector. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1gga4fbbf26184aa317058af4c778169d1d2a7faca184482372295d88173e29f1e31f" prot="public">
+          <name>MLWebViewProcessSettingFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags set for the process using webview. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___web_view_1gaf9be960f81752eac4bd92b14fd1ec668" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLWebViewPauseType</name>
+        <enumvalue id="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668acd375099246db983ae90f8958c66d432" prot="public">
+          <name>MLWebViewPauseType_Multimedia</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pause all multimedia activities of the webview. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668a18df55c6320047972fc514fdd42f8938" prot="public">
+          <name>MLWebViewPauseType_Timers</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pause javascript timers of the webview. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668a2405eed9f57899534d7c773dba0cd6eb" prot="public">
+          <name>MLWebViewPauseType_Discard</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pause and discard the webview rendering process. But keep alive the MLWebView handle. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668a113e6ef60670fea4f7a54e0c52687bf4" prot="public">
+          <name>MLWebViewPauseType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of the webview pause. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="946" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="946" bodyend="955"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___web_view_1gadec127060bd128e88988340ca6456cad" prot="public" static="no">
+        <type>enum <ref refid="group___web_view_1ga1f0ea362db078b9b5c2588f986b4069c" kindref="member">MLWebViewTextInputType</ref></type>
+        <definition>typedef enum MLWebViewTextInputType MLWebViewTextInputType</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewTextInputType</name>
+        <briefdescription>
+<para>The type of text entry selected when on_show_keyboard is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="60" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga26227ab49b713a26184e433d7359a166" prot="public" static="no">
+        <type>enum <ref refid="group___web_view_1ga630f6dd31d8b0fcd468c62d6f188e392" kindref="member">MLWebViewTextInputFlags</ref></type>
+        <definition>typedef enum MLWebViewTextInputFlags MLWebViewTextInputFlags</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewTextInputFlags</name>
+        <briefdescription>
+<para>Flags related to a text entry field passed when on_show_keyboard is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="83" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga830533d5293d083d6d79f9ef4ac86843" prot="public" static="no">
+        <type>enum <ref refid="group___web_view_1ga1611bc512e80358ea04875446f79d321" kindref="member">MLWebViewEventFlags</ref></type>
+        <definition>typedef enum MLWebViewEventFlags MLWebViewEventFlags</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewEventFlags</name>
+        <briefdescription>
+<para>Flags to set special key states during input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="106" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga2afe2f91af59e4abb9806037effe78ce" prot="public" static="no">
+        <type>enum <ref refid="group___web_view_1gacf3cc3d7a3d80d31d2d75d12e139792e" kindref="member">MLWebViewResult</ref></type>
+        <definition>typedef enum MLWebViewResult MLWebViewResult</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewResult</name>
+        <briefdescription>
+<para>Return values for the WebView API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="122" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga4d16c3f0ce61c672b7b2a37bd0e162cf" prot="public" static="no">
+        <type>enum <ref refid="group___web_view_1ga4fbbf26184aa317058af4c778169d1d2" kindref="member">MLWebViewProcessSettingFlags</ref></type>
+        <definition>typedef enum MLWebViewProcessSettingFlags MLWebViewProcessSettingFlags</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewProcessSettingFlags</name>
+        <briefdescription>
+<para>Flags set for the process using webview. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="135" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga128bb516b7e8e778d723d6a342835378" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref></type>
+        <definition>typedef struct MLWebViewCursorState MLWebViewCursorState</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewCursorState</name>
+        <briefdescription>
+<para>Struct to define the cursor&apos;s state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1ga93a93605df5f0016f88a49e75ea35370" kindref="member">MLWebViewCursorStateInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="152" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga18e16a1fcba0e31e1ae903705f470e53" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref></type>
+        <definition>typedef struct MLWebViewEventCallbacks MLWebViewEventCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewEventCallbacks</name>
+        <briefdescription>
+<para>Event handler for MLWebView callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1gac67c0e330756c3859d0bf70d54e09161" kindref="member">MLWebViewEventCallbacksInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="295" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1ga47e32febe6da994cf73b745088e85eaa" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_web_view_settings" kindref="compound">MLWebViewSettings</ref></type>
+        <definition>typedef struct MLWebViewSettings MLWebViewSettings</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewSettings</name>
+        <briefdescription>
+<para>Struct to define webview initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1gaa5db486d68d7e91604288136c92f3a40" kindref="member">MLWebViewSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="349" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1gad51f18880883e78efcef98ce483c9eb2" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_web_view_process_settings" kindref="compound">MLWebViewProcessSettings</ref></type>
+        <definition>typedef struct MLWebViewProcessSettings MLWebViewProcessSettings</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewProcessSettings</name>
+        <briefdescription>
+<para>Struct to define webview process initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___web_view_1ga0debf195a5e7fda653faba2370d4507d" kindref="member">MLWebViewProcessSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="384" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___web_view_1gaa699400073077f7a7111362b49b9b623" prot="public" static="no">
+        <type>enum <ref refid="group___web_view_1gaf9be960f81752eac4bd92b14fd1ec668" kindref="member">MLWebViewPauseType</ref></type>
+        <definition>typedef enum MLWebViewPauseType MLWebViewPauseType</definition>
+        <argsstring></argsstring>
+        <name>MLWebViewPauseType</name>
+        <briefdescription>
+<para>The type of the webview pause. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="955" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___web_view_1ga970f515cccb02bc226ed400a411e8da1" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* out_width</definition>
+        <argsstring></argsstring>
+        <name>out_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="774" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___web_view_1ga7f498720dfdaa96e65fef5494043297a" prot="public" static="no" mutable="no">
+        <type>int32_t int32_t *</type>
+        <definition>int32_t int32_t* out_height</definition>
+        <argsstring></argsstring>
+        <name>out_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="774" column="36" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___web_view_1ga406bc2719c8127ce4a81a4695507cc3f" prot="public" static="no" mutable="no">
+        <type>int32_t *</type>
+        <definition>int32_t* out_x</definition>
+        <argsstring></argsstring>
+        <name>out_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="792" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___web_view_1gaac4802bc0998796a81aabb962b9fdebd" prot="public" static="no" mutable="no">
+        <type>int32_t int32_t *</type>
+        <definition>int32_t int32_t* out_y</definition>
+        <argsstring></argsstring>
+        <name>out_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="792" column="32" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___web_view_1ga93a93605df5f0016f88a49e75ea35370" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLWebViewCursorStateInit</definition>
+        <argsstring>(MLWebViewCursorState *inout_cursor_state)</argsstring>
+        <name>MLWebViewCursorStateInit</name>
+        <param>
+          <type><ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *</type>
+          <declname>inout_cursor_state</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> with the default parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_cursor_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000698"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="163" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="163" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gac67c0e330756c3859d0bf70d54e09161" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLWebViewEventCallbacksInit</definition>
+        <argsstring>(MLWebViewEventCallbacks *inout_callback)</argsstring>
+        <name>MLWebViewEventCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref> *</type>
+          <declname>inout_callback</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a <ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref> with the default parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000699"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="306" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="306" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gaa5db486d68d7e91604288136c92f3a40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLWebViewSettingsInit</definition>
+        <argsstring>(MLWebViewSettings *inout_settings)</argsstring>
+        <name>MLWebViewSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_web_view_settings" kindref="compound">MLWebViewSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a <ref refid="struct_m_l_web_view_settings" kindref="compound">MLWebViewSettings</ref> with the default parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000700"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="360" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="360" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga0debf195a5e7fda653faba2370d4507d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLWebViewProcessSettingsInit</definition>
+        <argsstring>(MLWebViewProcessSettings *inout_settings)</argsstring>
+        <name>MLWebViewProcessSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_web_view_process_settings" kindref="compound">MLWebViewProcessSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a <ref refid="struct_m_l_web_view_process_settings" kindref="compound">MLWebViewProcessSettings</ref> with the default parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000701"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="395" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" bodystart="395" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gabcfe0c92d9aa64f2301853a6dad80426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewSetProcessSettings</definition>
+        <argsstring>(const MLWebViewProcessSettings *settings)</argsstring>
+        <name>MLWebViewSetProcessSettings</name>
+        <param>
+          <type>const <ref refid="struct_m_l_web_view_process_settings" kindref="compound">MLWebViewProcessSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Specify the process settings to be used for webviews. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Current implementation only supports enabling and disabling web inspector before first call to MLWebViewCreate. If all webviews have been destroyed, it is possible to call this with effect again. Default is to disable.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The settings to be used for webviews.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000702"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If settings is null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If called after MLWebViewCreate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If settings is not null. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="418" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="418" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga08232e58b87d14aa8ee7e1ddcd5e2430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewCreate</definition>
+        <argsstring>(MLHandle *out_handle, const MLWebViewSettings *in_settings)</argsstring>
+        <name>MLWebViewCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_web_view_settings" kindref="compound">MLWebViewSettings</ref> *</type>
+          <declname>in_settings</declname>
+        </param>
+        <briefdescription>
+<para>Create a MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The MLWebView will be ready to use once this function returns with MLResult_OK.</para>
+<para><simplesect kind="note"><para>In version &gt;= 2 for MLWebViewCallbacks struct, MLWebViewCreate launches a separate thread to create a webview. If creation fails and the on_service_failed callback is not null the MLResult code will be passed into the on_service_failed callback. The on_service_connected callback will be called if it is not null and creation was successful. For version &lt; 2 of MLWebViewCallbacks struct, MLWebViewCallbacks will create in synchronous mode.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle that is ready to use with all other MLWebView API calls. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initialization paramaters for the webview.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out_handle, in_settings, or application_vm pointer was null. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If version &gt;= 2, returns MLResult_Ok for successful start of asynchronous operation, but any eventual failure will be reported through on_service_failed. If version &lt; 2, this indicates that synchronous creation was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Missing required permission(s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to create the MLWebView, MLWebViewCallbacks struct version &lt; 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000703"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.WEBVIEW (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="439" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="439" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga42e80641406db9bff09e23b005e6fc79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLWebViewDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The MLWebView will be terminated by this function call and the handle shall no longer be valid.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to invalidate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLWebView was destroyed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An error occurred destroying the MLWebView.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000704"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="457" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="457" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gac3513bd78b38b89b4dfa7a0ce068989c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewSetEventCallbacks</definition>
+        <argsstring>(MLHandle web_view, const MLWebViewEventCallbacks *callbacks)</argsstring>
+        <name>MLWebViewSetEventCallbacks</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_web_view_event_callbacks" kindref="compound">MLWebViewEventCallbacks</ref> *</type>
+          <declname>callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Specify the callbacks for a MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLWebView to link the event handler. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event handler to link to the MLWebView.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLWebView event handler was set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000705"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="473" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="473" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga019115da7292ae0df862309ff381061d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewAcquireNextAvailableFrame</definition>
+        <argsstring>(MLHandle web_view, struct AHardwareBuffer **out_native_buffer)</argsstring>
+        <name>MLWebViewAcquireNextAvailableFrame</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>struct AHardwareBuffer **</type>
+          <declname>out_native_buffer</declname>
+        </param>
+        <briefdescription>
+<para>Acquires next available frame buffer for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_native_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an AHardwareBuffer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame is ready. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>To use with OpenGL, EGL, and Vulkan please see: <ulink url="https://developer.android.com/ndk/reference/group/a-hardware-buffer">https://developer.android.com/ndk/reference/group/a-hardware-buffer</ulink> for details.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000706"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="494" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="494" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gaf32d53b91802f066aa7df38a554dc0e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewReleaseFrame</definition>
+        <argsstring>(MLHandle web_view, struct AHardwareBuffer *native_buffer)</argsstring>
+        <name>MLWebViewReleaseFrame</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>struct AHardwareBuffer *</type>
+          <declname>native_buffer</declname>
+        </param>
+        <briefdescription>
+<para>Release a frame acquired by <ref refid="group___web_view_1ga019115da7292ae0df862309ff381061d" kindref="member">MLWebViewAcquireNextAvailableFrame</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">native_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame being released.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame successfully released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An error occurred releasing the frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000707"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="512" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="512" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga18caf102c825abb7bf513a044df9e80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewGoTo</definition>
+        <argsstring>(MLHandle web_view, const char *url)</argsstring>
+        <name>MLWebViewGoTo</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Go to a URL with the specified MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that success with this call only indicates that a load will be attempted. Caller can be notified about issues loading the URL via the event handler on_load_error.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL that will be loaded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. <ref refid="group___web_view_1ga0012b5c7111e5525d88037578d96068f" kindref="member">MLWebViewResume</ref> should be called before this function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WebView is attempting to load the specified URL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000708"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="532" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="532" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga6ec019a289bc4ae10e1d2ac4b556239c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewGoBack</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewGoBack</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Trigger a &quot;Back&quot; action in the MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Query <ref refid="group___web_view_1ga10a4a19aa51fff7c8aa459335a99f92a" kindref="member">MLWebViewCanGoBack</ref> before calling this method. If there is no valid page to go back to, this method will be no-op.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WebView Back action was initiated or cannot go back any further. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. <ref refid="group___web_view_1ga0012b5c7111e5525d88037578d96068f" kindref="member">MLWebViewResume</ref> should be called before this function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000709"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="551" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="551" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga54b398539ade12af8825d0f0c6a33cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewGoForward</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewGoForward</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Trigger a &quot;Forward&quot; action in the MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Query <ref refid="group___web_view_1gacace6fc8da82f30f6823d0d7af1e17bc" kindref="member">MLWebViewCanGoForward</ref> before calling this method. If there is no valid page to go forward to, this method will be no-op.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. <ref refid="group___web_view_1ga0012b5c7111e5525d88037578d96068f" kindref="member">MLWebViewResume</ref> should be called before this function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WebView Forward action was initiated or cannot go forward any further. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000710"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="570" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="570" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gad5e92884af2623407a8cc93c1809a97b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewReload</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewReload</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Trigger a &quot;Reload&quot; action in the MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. <ref refid="group___web_view_1ga0012b5c7111e5525d88037578d96068f" kindref="member">MLWebViewResume</ref> should be called before this function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WebView Reload action was initiated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000711"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="586" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="586" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gac86a6c40e1e99f56e3ec3f873aca215e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewGetUrl</definition>
+        <argsstring>(MLHandle web_view, uint32_t *inout_size, char *inout_url)</argsstring>
+        <name>MLWebViewGetUrl</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>inout_size</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>inout_url</declname>
+        </param>
+        <briefdescription>
+<para>Get the current URL. Set out_url to NULL to get the length of the current URL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size that has been allocated in out_url to hold the URL. This will be set to the actual length of URL if inout_size and size needed for the URL are different. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL up to inout_size of characters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The WebView URL was acquired. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000712"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="604" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="604" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga10a4a19aa51fff7c8aa459335a99f92a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewCanGoBack</definition>
+        <argsstring>(MLHandle web_view, bool *out_can_go_back)</argsstring>
+        <name>MLWebViewCanGoBack</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_can_go_back</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the &quot;Back&quot; action is currently valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_can_go_back</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if &quot;Back&quot; has a valid page to go to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of going &quot;Back&quot; was acquired. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000713"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="621" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="621" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gacace6fc8da82f30f6823d0d7af1e17bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewCanGoForward</definition>
+        <argsstring>(MLHandle web_view, bool *out_can_go_forward)</argsstring>
+        <name>MLWebViewCanGoForward</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_can_go_forward</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the &quot;Forward&quot; action is currently valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_can_go_forward</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if &quot;Forward&quot; has a valid page to go to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of going &quot;Forward&quot; was acquired. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000714"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="638" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="638" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga6636283750030f7a525b7b1f5fdb11ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewInjectMouseMove</definition>
+        <argsstring>(MLHandle web_view, const MLWebViewCursorState *cursor_state)</argsstring>
+        <name>MLWebViewInjectMouseMove</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *</type>
+          <declname>cursor_state</declname>
+        </param>
+        <briefdescription>
+<para>Moves the WebView mouse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cursor_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the mouse movement.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The internal mouse was moved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Please see MLWebViewInjectMouseButtonDown for behavior.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000715"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="657" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="657" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga3b19a18f3e4bbaa618566b2c4cf7697f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewInjectMouseButtonDown</definition>
+        <argsstring>(MLHandle web_view, const MLWebViewCursorState *cursor_state)</argsstring>
+        <name>MLWebViewInjectMouseButtonDown</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *</type>
+          <declname>cursor_state</declname>
+        </param>
+        <briefdescription>
+<para>Sends a mouse button down/pressed event on a specific location on screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cursor_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the mouse button event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Behavior: (1) Click behavior: On mouse down, (x, y) is saved and mouse down sent. When mouse up received within 200ms, mouse up sent to previous mouse down (x, y) position so Chromium interprets as click. (2) Drag behavior: On mouse down (x, y) is saved and mouse down sent. When mouse moves within timeout period of 200ms, webview will continue to wait. Otherwise, mouse move sent to current (x, y) location to let Chromium interpret as drag. (3) These click and drag behaviors make it possible to just send mouse events as they are received and the underlying Chromium implementation will work as expected.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000716"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="684" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="684" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gab57456f6587b527603c42cc1f5369f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewInjectMouseButtonUp</definition>
+        <argsstring>(MLHandle web_view, const MLWebViewCursorState *cursor_state)</argsstring>
+        <name>MLWebViewInjectMouseButtonUp</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_web_view_cursor_state" kindref="compound">MLWebViewCursorState</ref> *</type>
+          <declname>cursor_state</declname>
+        </param>
+        <briefdescription>
+<para>Sends a mouse button up/released event on a specific location on screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cursor_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the mouse button event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Please see MLWebViewInjectMouseButtonDown for behavior.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000717"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="702" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="702" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gab27ed1886ee0bb3d557a844fc731b793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewInjectChar</definition>
+        <argsstring>(MLHandle web_view, uint32_t char_utf32)</argsstring>
+        <name>MLWebViewInjectChar</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>char_utf32</declname>
+        </param>
+        <briefdescription>
+<para>Sends a printable char keyboard event to MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target webview. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">char_utf32</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Printable char utf code.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key event was injected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000718"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="720" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="720" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga3602cc9b0a9e6723124e970acdbe00b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewInjectKeyDown</definition>
+        <argsstring>(MLHandle web_view, int32_t key_code, uint32_t modifier_mask)</argsstring>
+        <name>MLWebViewInjectKeyDown</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>key_code</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>modifier_mask</declname>
+        </param>
+        <briefdescription>
+<para>Sends a key down/pressed event to MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target webview. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">modifier_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should be one or combination of <ref refid="group___web_view_1ga1611bc512e80358ea04875446f79d321" kindref="member">MLWebViewEventFlags</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key event was injected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000719"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="738" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="738" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga1c6337f50a8b33776aec9b867b6b6bb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewInjectKeyUp</definition>
+        <argsstring>(MLHandle web_view, int32_t key_code, uint32_t modifier_mask)</argsstring>
+        <name>MLWebViewInjectKeyUp</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>key_code</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>modifier_mask</declname>
+        </param>
+        <briefdescription>
+<para>Sends a key up/release event to MLWebView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target webview. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">modifier_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should be one or combination of <ref refid="group___web_view_1ga1611bc512e80358ea04875446f79d321" kindref="member">MLWebViewEventFlags</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key event was injected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000720"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="756" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="756" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga6b9a39d4c5d258e2b149898f048206d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Unimplemented and scheduled for removal.&quot;))) MLResult MLWebViewGetScrollSize(MLHandle web_view</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Unimplemented and scheduled for removal.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>This API is stubbed out and translates to a no-op. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000550"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number representing the entire width of the webview, in pixels. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number representing the entire height of the webview, in pixels.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This API is stubbed out and translates to a no-op.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000721"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000551"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number representing the horizontal offset of the webview, in pixels. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number representing the vertical offset of the webview, in pixels.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This API is stubbed out and translates to a no-op.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000722"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="773" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga16079029367531074d1ff3381f294073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewScrollBy</definition>
+        <argsstring>(MLHandle web_view, const int32_t x_pixels, const int32_t y_pixels)</argsstring>
+        <name>MLWebViewScrollBy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>x_pixels</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>y_pixels</declname>
+        </param>
+        <briefdescription>
+<para>Triggers a mouse &quot;Scroll&quot; event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of pixels to scroll on the x axis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of pixels to scroll on the y axis.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLWebView was scrolled. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000723"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="810" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="810" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga8b4dceb6d237c547fcb0a11ddf2af131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewGetZoomFactor</definition>
+        <argsstring>(MLHandle web_view, double *out_zoom_factor)</argsstring>
+        <name>MLWebViewGetZoomFactor</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_zoom_factor</declname>
+        </param>
+        <briefdescription>
+<para>Get the current zoom factor. The default zoom factor is 1.0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_zoom_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current numeric value for zoom factor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The out_zoom_factor parameter was updated with the current zoom value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the zoom factor due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000724"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="828" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="828" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1gaaebd61092f959f4b074e6e4321f1e61c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewZoomIn</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewZoomIn</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Zoom in one level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLWebView zoomed in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to zoom in due to an internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLWebViewResult_ZoomLimitReached</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if cannot zoom in any further.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000725"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="846" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="846" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga29494b983dbd9a80662f4dfa8c9867d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewZoomOut</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewZoomOut</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Zoom out one level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLWebView zoomed out. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to zoom out due to an internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLWebViewResult_ZoomLimitReached</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if cannot zoom out any further.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000726"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="864" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="864" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga960c3f12d9837a19c86fb6237ebac8a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewResetZoom</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewResetZoom</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Reset zoom level to 1.0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLWebView zoom was reset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to reset zoom due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000727"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="881" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="881" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga40aec2ee90cba86d42f213f3c2f8af48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewGetFrameTransformMatrix</definition>
+        <argsstring>(MLHandle web_view, MLMat4f *out_matrix)</argsstring>
+        <name>MLWebViewGetFrameTransformMatrix</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref> *</type>
+          <declname>out_matrix</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the 4x4 texture coordinate transform matrix used by all MLWebView frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This transform matrix maps 2D homogeneous texture coordinates of the form (s, t, 0, 1) with s and t in the inclusive range [0, 1] to the texture coordinate that should be used to sample that location from the texture. Sampling the texture outside of the range of this transform is undefined.</para>
+<para>The matrix is stored in column-major order so that it may be passed directly to OpenGL ES via the glLoadMatrixf or glUniformMatrix4fv functions.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The retrieved matrix.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant matrix was retrieved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000728"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="905" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="905" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga24eab1b5aac297d0b60adb724e500da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewRemoveAllCookies</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewRemoveAllCookies</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Remove all webview cookies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If all cookies removed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Removing all cookies failed due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000729"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="922" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="922" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga149e0398123225701f613cafab536408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewClearCache</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewClearCache</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Clear the webview cache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WebView was paused. See <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If cache cleared successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version &gt;= 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clearing cache failed due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000730"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="939" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="939" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewPause</definition>
+        <argsstring>(MLHandle web_view, MLWebViewPauseType pause_type)</argsstring>
+        <name>MLWebViewPause</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <param>
+          <type><ref refid="group___web_view_1gaf9be960f81752eac4bd92b14fd1ec668" kindref="member">MLWebViewPauseType</ref></type>
+          <declname>pause_type</declname>
+        </param>
+        <briefdescription>
+<para>Pause the webview. Call <ref refid="group___web_view_1ga0012b5c7111e5525d88037578d96068f" kindref="member">MLWebViewResume</ref> to resume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method provides a multiple pause types to the webview.</para>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pause_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview pause type <ref refid="group___web_view_1gaf9be960f81752eac4bd92b14fd1ec668" kindref="member">MLWebViewPauseType</ref>. <ref refid="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668acd375099246db983ae90f8958c66d432" kindref="member">MLWebViewPauseType_Multimedia</ref> Is a simple pause for all multimedia of the webview. <ref refid="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668a18df55c6320047972fc514fdd42f8938" kindref="member">MLWebViewPauseType_Timers</ref> Intended to stop animation of the webview content. <ref refid="group___web_view_1ggaf9be960f81752eac4bd92b14fd1ec668a2405eed9f57899534d7c773dba0cd6eb" kindref="member">MLWebViewPauseType_Discard</ref> Uses to free the webview rendering process but keep alive the MLWebView handle.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle or invalid MLWebViewPauseType value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If paused successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLWebView handle is not ready to use. See an asynchronous mode of the <ref refid="group___web_view_1ga08232e58b87d14aa8ee7e1ddcd5e2430" kindref="member">MLWebViewCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pause failed due to an internal error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="975" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="975" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___web_view_1ga0012b5c7111e5525d88037578d96068f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLWebViewResume</definition>
+        <argsstring>(MLHandle web_view)</argsstring>
+        <name>MLWebViewResume</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>web_view</declname>
+        </param>
+        <briefdescription>
+<para>Resumes a webview after a previous call of the <ref refid="group___web_view_1ga4ad18d4e589ecb5f8aec04522d34a314" kindref="member">MLWebViewPause</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resume webview to the normal operation for all webview pause types.</para>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">web_view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The webview being accessed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find the specified MLWebView handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If resumed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLWebView handle is not ready to use. See an asynchronous mode of the <ref refid="group___web_view_1ga08232e58b87d14aa8ee7e1ddcd5e2430" kindref="member">MLWebViewCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resume failed due to an internal error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" line="991" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h" declline="991" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the WebView component. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n webview.magicleap</title><para></para>
+</simplesect>
+This interface allows an application to instantiate a WebView and interact with it (via &quot;mouse&quot; and &quot;keyboard&quot; events).</para>
+<para><simplesect kind="note"><para>MLWebView methods use re-entrant JNI monitors to provide a thread-safe API. See: <ulink url="https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/functions.html#wp5256">https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/functions.html#wp5256</ulink> for details. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

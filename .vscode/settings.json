@@ -1,0 +1,13 @@
+{
+    "cmake.sourceDirectory": "/Users/yusufnissar/Repos/magic-leap-2-navigation/CppPlugin/depth_camera/app/src/main/cpp",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}",
+        "--background-index",
+        "--clang-tidy",
+        "--completion-style=detailed",
+        "--header-insertion=iwyu",
+        "--pch-storage=memory"
+    ],
+    "clangd.path": "clangd",
+    "C_Cpp.intelliSenseEngine": "Disabled"
+}

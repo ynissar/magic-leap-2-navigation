@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_world_camera_frame" kind="struct" language="C++" prot="public">
+    <compoundname>MLWorldCameraFrame</compoundname>
+    <includes refid="ml__world__camera_8h" local="no">ml_world_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1a96527209608963bc11b58b900dfdf6f9" prot="public" static="no" mutable="no">
+        <type><ref refid="group___w_cam_1gaaad348fdb437d75c84efb0e306b88d2b" kindref="member">MLWorldCameraIdentifier</ref></type>
+        <definition>MLWorldCameraIdentifier MLWorldCameraFrame::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera Identifier specifies which camera is associated with this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="225" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1a22b2cc6cf1300b15ccc698f3976ac897" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t MLWorldCameraFrame::frame_number</definition>
+        <argsstring></argsstring>
+        <name>frame_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 64bit integer to index the frame number associated with this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="227" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1ab1eb96df04a248b823e940f0cf4d414a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLWorldCameraFrame::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame timestamp specifies the time at which the frame was captured. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="229" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1a859417cb62bef2f505cd436cfac4543b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_world_camera_intrinsics" kindref="compound">MLWorldCameraIntrinsics</ref></type>
+        <definition>MLWorldCameraIntrinsics MLWorldCameraFrame::intrinsics</definition>
+        <argsstring></argsstring>
+        <name>intrinsics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera intrinsic parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="231" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1aaa3d0ec8739f9931342966f6f84e4f52" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref></type>
+        <definition>MLTransform MLWorldCameraFrame::camera_pose</definition>
+        <argsstring></argsstring>
+        <name>camera_pose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>World camera pose in the world co-ordinate system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="233" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1a761d5408264e8f93a2c54d557f04d0b7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_world_camera_frame_buffer" kindref="compound">MLWorldCameraFrameBuffer</ref></type>
+        <definition>MLWorldCameraFrameBuffer MLWorldCameraFrame::frame_buffer</definition>
+        <argsstring></argsstring>
+        <name>frame_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame buffer data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="235" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_1af8b6de9bc781235495205380fef67304" prot="public" static="no" mutable="no">
+        <type><ref refid="group___w_cam_1ga40fed248dca3971adb718208aa3f79f6" kindref="member">MLWorldCameraFrameType</ref></type>
+        <definition>MLWorldCameraFrameType MLWorldCameraFrame::frame_type</definition>
+        <argsstring></argsstring>
+        <name>frame_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>World camera mode used for capturing the camera frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="237" column="26" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate output data for each camera sensor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="5">
+        <label>MLTransform</label>
+        <link refid="struct_m_l_transform"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLVec2f</label>
+        <link refid="struct_m_l_vec2f"/>
+      </node>
+      <node id="2">
+        <label>MLWorldCameraIntrinsics</label>
+        <link refid="struct_m_l_world_camera_intrinsics"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>focal_length</edgelabel>
+          <edgelabel>principal_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLWorldCameraFrame</label>
+        <link refid="struct_m_l_world_camera_frame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>intrinsics</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>frame_buffer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>camera_pose</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+      <node id="4">
+        <label>MLWorldCameraFrameBuffer</label>
+        <link refid="struct_m_l_world_camera_frame_buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="223" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="223" bodyend="238"/>
+    <listofallmembers>
+      <member refid="struct_m_l_world_camera_frame_1aaa3d0ec8739f9931342966f6f84e4f52" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>camera_pose</name></member>
+      <member refid="struct_m_l_world_camera_frame_1a761d5408264e8f93a2c54d557f04d0b7" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>frame_buffer</name></member>
+      <member refid="struct_m_l_world_camera_frame_1a22b2cc6cf1300b15ccc698f3976ac897" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>frame_number</name></member>
+      <member refid="struct_m_l_world_camera_frame_1af8b6de9bc781235495205380fef67304" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>frame_type</name></member>
+      <member refid="struct_m_l_world_camera_frame_1a96527209608963bc11b58b900dfdf6f9" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>id</name></member>
+      <member refid="struct_m_l_world_camera_frame_1a859417cb62bef2f505cd436cfac4543b" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>intrinsics</name></member>
+      <member refid="struct_m_l_world_camera_frame_1ab1eb96df04a248b823e940f0cf4d414a" prot="public" virt="non-virtual"><scope>MLWorldCameraFrame</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

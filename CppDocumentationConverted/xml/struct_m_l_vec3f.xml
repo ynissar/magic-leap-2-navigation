@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_vec3f" kind="struct" language="C++" prot="public">
+    <compoundname>MLVec3f</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLVec3f::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="52" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLVec3f::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="53" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLVec3f::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="54" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>3D vector represented with X, Y, and Z floats. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="45" bodyend="59"/>
+    <listofallmembers>
+      <member refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" prot="public" virt="non-virtual"><scope>MLVec3f</scope><name>x</name></member>
+      <member refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" prot="public" virt="non-virtual"><scope>MLVec3f</scope><name>y</name></member>
+      <member refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" prot="public" virt="non-virtual"><scope>MLVec3f</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

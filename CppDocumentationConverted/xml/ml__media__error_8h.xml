@@ -1,0 +1,934 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__media__error_8h" kind="file" language="C++">
+    <compoundname>ml_media_error.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includedby refid="ml__media__extractor_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</includedby>
+    <includedby refid="ml__media__player_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h</label>
+        <link refid="ml__media__error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h</label>
+        <link refid="ml__media__error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</label>
+        <link refid="ml__media__player_8h"/>
+      </node>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</label>
+        <link refid="ml__media__extractor_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___media_error_1gaf9bdc3014f3d54c426b6d2df10de4960" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@19</name>
+        <enumvalue id="group___media_error_1ggaf9bdc3014f3d54c426b6d2df10de4960af8339ca1a64a821c46a59197bf54b89c" prot="public">
+          <name>MLResultAPIPrefix_MediaGeneric</name>
+          <initializer>= ( 0xbf3b  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLMediaGenericResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="33" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1gad03a82ec9a2d32baa4d86003c9c97e00" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaGenericResult</name>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a04fc59f66163bafc50761b55e3b850b9" prot="public">
+          <name>MLMediaGenericResult_InvalidOperation</name>
+          <initializer>= MLResultAPIPrefix_MediaGeneric</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a78dd74d955708f839df30411e4207467" prot="public">
+          <name>MLMediaGenericResult_BadType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a3501fc778461e6cae7035ca50a0ad6cc" prot="public">
+          <name>MLMediaGenericResult_NameNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a1839167d8fe3a67429200e5690c5b6d4" prot="public">
+          <name>MLMediaGenericResult_HandleNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a9cd6a51f7ac46a131acc5405288e0374" prot="public">
+          <name>MLMediaGenericResult_NoInit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a818f36946cfc4ebd2a00edb03ba98c3c" prot="public">
+          <name>MLMediaGenericResult_AlreadyExists</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a5c2c1420868a4b344eda1c56ef76e6a3" prot="public">
+          <name>MLMediaGenericResult_DeadObject</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a5e00c14088fce53d3e51c1e2f52fdd0d" prot="public">
+          <name>MLMediaGenericResult_FailedTransaction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a10d3f26ec3f0235d68a6a9fe8a6bc1e2" prot="public">
+          <name>MLMediaGenericResult_BadIndex</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a8bdf4d7a48c29d082298b97428cf83b4" prot="public">
+          <name>MLMediaGenericResult_NotEnoughData</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a4131b99b6d8e98d137d7503748a2f98a" prot="public">
+          <name>MLMediaGenericResult_WouldBlock</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aa5043eb61a14ff6dba86a8260c1d266e" prot="public">
+          <name>MLMediaGenericResult_UnknownTransaction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a22cca1c4ec2308521f76d163a3f02b8f" prot="public">
+          <name>MLMediaGenericResult_FDSNotAllowed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aa0377b60a9f4ec506cb33d8ef9d02053" prot="public">
+          <name>MLMediaGenericResult_UnexpectedNull</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aff0d78291416b71884710ae19a71c4a6" prot="public">
+          <name>MLMediaGenericResult_NotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a368625257ba73b16327d5010a2b2ce01" prot="public">
+          <name>MLMediaGenericResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="39" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="39" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1gadb49720dc49f7d4e4cf9adbf2948e409" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@20</name>
+        <enumvalue id="group___media_error_1ggadb49720dc49f7d4e4cf9adbf2948e409ad852b0a9d9a881494888ef056c46a611" prot="public">
+          <name>MLResultAPIPrefix_Media</name>
+          <initializer>= ( 0x4184  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLMediaResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="60" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1gada82631e0cff8514ce6b527d34e3c45c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaResult</name>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caff77119d7a02dcea532bf6bae9b22bc1" prot="public">
+          <name>MLMediaResult_AlreadyConnected</name>
+          <initializer>= MLResultAPIPrefix_Media</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca9f83d17013b9f0a92c6387f185e635f6" prot="public">
+          <name>MLMediaResult_NotConnected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cabc1e9454481a2d813c4d9ec72444c590" prot="public">
+          <name>MLMediaResult_UnknownHost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca86dde361a533505c777300ed2272b92b" prot="public">
+          <name>MLMediaResult_CannotConnect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca521aaea376718f5dc6c3ca10ba7d1f7f" prot="public">
+          <name>MLMediaResult_IO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cacc236c46e70b25ea46b3eea4caf4cdaf" prot="public">
+          <name>MLMediaResult_ConnectionLost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca42c44f3e873f7d599b38c00ff74bb0b0" prot="public">
+          <name>MLMediaResult_Legacy1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caf7484c9d24c5985d8908214deace20ee" prot="public">
+          <name>MLMediaResult_Malformed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cae94ebf744971e95a1ea1b22a6f4f5991" prot="public">
+          <name>MLMediaResult_OutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca8c3cec12441f8b6f929142fb84286091" prot="public">
+          <name>MLMediaResult_BufferTooSmall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca77234a6c5c4de5a049d8c7e97c8e9995" prot="public">
+          <name>MLMediaResult_Unsupported</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cafd04e831c2ba205844b50abe3d78fcf3" prot="public">
+          <name>MLMediaResult_EndOfStream</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca28b8980eb95a56bb482d0e99e294666e" prot="public">
+          <name>MLMediaResult_FormatChanged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca6aa4804377a6d175fc97d22bf3f4260c" prot="public">
+          <name>MLMediaResult_Discontinuity</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca83028381b615873fb276f40963a6c4d2" prot="public">
+          <name>MLMediaResult_OutputBuffersChanged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca11d6117d222a6ddfcaae5c2ef2ee2fc6" prot="public">
+          <name>MLMediaResult_PermissionRevoked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cadc95ab48835e6dd9b7c3100dd4127340" prot="public">
+          <name>MLMediaResult_UnsupportedAudioFormat</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cad9d476a2400e91632fd2b4b1604e8949" prot="public">
+          <name>MLMediaResult_HeartbeatTerminateRequested</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca464a781953eb9a8411c888af80b089a9" prot="public">
+          <name>MLMediaResult_UnknownResource</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unknown Media Codec Resource Request Error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca3909e03e3b44296e83f916ff7e937cb9" prot="public">
+          <name>MLMediaResult_InvalidResourceRequest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid Request on Media Codec Resources. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca453ee9cd02b636bc3c880368222ed0aa" prot="public">
+          <name>MLMediaResult_OnlyHWResourceAvailable</name>
+          <briefdescription>
+<para>Only Hardware Media Codec Resources are available. This error code is a result of requesting for Software Media Codec Resource that is not available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca362fec3612f87ac3368056ec897f32bf" prot="public">
+          <name>MLMediaResult_OnlySWResourceAvailable</name>
+          <briefdescription>
+<para>Only Software Media Codec Resources are available. This error code is a result of requesting for Hardware Media Codec Resource that is not available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca7716ce5df62b95d699798520ac8efd85" prot="public">
+          <name>MLMediaResult_NoMoreResources</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No more (Hardware or Software) Media Codec Resources available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca250855cb234952fd82c79cd7636a3aa1" prot="public">
+          <name>MLMediaResult_NoMoreHWResources</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No more Hardware Media Codec Resources available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caecbdc8eeefb020786cee616ce6f8463b" prot="public">
+          <name>MLMediaResult_NoMoreSWResources</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No more Software Media Codec Resources available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca9615e1599c606e009125117573eec89e" prot="public">
+          <name>MLMediaResult_InvalidCodecParam</name>
+          <briefdescription>
+<para>Media Codec Resource request made with Invalid Codec parameters. This error code could be a result of one of these cases (not limited to): </para>
+          </briefdescription>
+          <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Requested video frame width or height is beyond the maximum resolution (width or height) supported.</para>
+</listitem><listitem><para>Requested Framerate/Sample rate/Bitratre/Channel count is not supported. </para>
+</listitem></itemizedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca82581382ef52a3ab51ce4f71c86186c5" prot="public">
+          <name>MLMediaResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detailed return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="66" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1gaae05225933a42f81e7c4a9fb286596f9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@21</name>
+        <enumvalue id="group___media_error_1ggaae05225933a42f81e7c4a9fb286596f9a9f272b12d3cb313b70638a6a793c1fff" prot="public">
+          <name>MLResultAPIPrefix_MediaDRM</name>
+          <initializer>= ( 0x62ce  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLMediaDRMResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="117" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1ga3e7fe0de2c13301b85632ab5443e4c7d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaDRMResult</name>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dade3a6cc4fca6b8d49c4fe06f0ceabcec" prot="public">
+          <name>MLMediaDRMResult_Unknown</name>
+          <initializer>= MLResultAPIPrefix_MediaDRM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for undefined type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dad1b2aaf38992ec22eea233d666097424" prot="public">
+          <name>MLMediaDRMResult_NoLicense</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for no DRM license. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da423e111c4c86e2a8e0a0ef66cbea4072" prot="public">
+          <name>MLMediaDRMResult_LicenseExpired</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for DRM license expired. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dac7fc1b9513ba6f15ba9acb5d9cee7dd5" prot="public">
+          <name>MLMediaDRMResult_SessionNotOpened</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for DRM session not expired. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da4700cc7188e1310130b10042ef53ad32" prot="public">
+          <name>MLMediaDRMResult_DecryptUnitNotInitialized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for DRM when decrypt unit is not initialized. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da70e81093a269f8495d1d8ff4aec79386" prot="public">
+          <name>MLMediaDRMResult_Decrypt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for DRM when failed to decrypt data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dac98aae2128a121dd2610ec3a929f8312" prot="public">
+          <name>MLMediaDRMResult_CannotHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for DRM can not handle the operation. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dafde7bc8689465c2f0ff5ff9b4e2645ab" prot="public">
+          <name>MLMediaDRMResult_TamperDetect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for DRM when data is tampered. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7daf22a7e809dcf345b520486a9108ca754" prot="public">
+          <name>MLMediaDRMResult_NotProvisioned</name>
+          <briefdescription>
+<para>Error Code when an operation on a MLMediaDRM handle is attempted and the device does not have a certificate. The app should obtain and install a certificate using the MLMediaDRM provisioning methods then retry the operation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dade2254de7923bf4dd5960b956d444e76" prot="public">
+          <name>MLMediaDRMResult_DeviceRevoked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for Device License Revoked. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dad745dc656e94c92a239318f33185a8f6" prot="public">
+          <name>MLMediaDRMResult_ResourceBusy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code if the MLMediaDRM operation fails when the required resources are in use. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da2f877b6594d5dfb0be4ec0ec57d3217a" prot="public">
+          <name>MLMediaDRMResult_InsufficientOutputProtection</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error code for insufficient output protection. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da1e3272d17602a427f91a7caec945f24a" prot="public">
+          <name>MLMediaDRMResult_LastUsedErrorCode</name>
+          <initializer>= MLMediaDRMResult_InsufficientOutputProtection</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da8249ed8e6bcbc3ee251fc50aedd55d9a" prot="public">
+          <name>MLMediaDRMResult_VendorMin</name>
+          <initializer>= MLResultAPIPrefix_MediaDRM + 500</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Range for vendor specific DRM errors. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da6a753518ae31fe56ad117001bbd78f6e" prot="public">
+          <name>MLMediaDRMResult_VendorMax</name>
+          <initializer>= MLResultAPIPrefix_MediaDRM + 999</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da269d979c6fc44e7ab98f2ee6a541c70f" prot="public">
+          <name>MLMediaDRMResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM related return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="123" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="123" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1ga39fca1837c5ce7715cbf571669660c13" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@22</name>
+        <enumvalue id="group___media_error_1gga39fca1837c5ce7715cbf571669660c13a9cd85608fbbd76d033c7621a008fecb0" prot="public">
+          <name>MLResultAPIPrefix_MediaOMX</name>
+          <initializer>= ( 0x5f76  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for OMX specific error codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga39fca1837c5ce7715cbf571669660c13a6b78026407e2913436027775be796a79" prot="public">
+          <name>MLResultAPIPrefix_MediaOMXExtensions</name>
+          <initializer>= ( 0x11d9  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for OMX extensions specific error codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga39fca1837c5ce7715cbf571669660c13aacfd7e8998853427c63a487ac1933dc9" prot="public">
+          <name>MLResultAPIPrefix_MediaOMXVendors</name>
+          <initializer>= ( 0xe4d0  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for OMX vendor specific error codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="163" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1gaaf8fd5f0e57d456151c951e0f3715fc4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@23</name>
+        <enumvalue id="group___media_error_1ggaaf8fd5f0e57d456151c951e0f3715fc4aa50fac34ad478c4abfb552d270066d47" prot="public">
+          <name>MLResultAPIPrefix_MediaPlayer</name>
+          <initializer>= ( 0xc435  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLMediaPlayerResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="172" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media_error_1ga06f9efcad537ea28233b667c0011e340" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaPlayerResult</name>
+        <enumvalue id="group___media_error_1gga06f9efcad537ea28233b667c0011e340a992004e1d3f95f5627ca2e1e8c6f95cd" prot="public">
+          <name>MLMediaPlayerResult_ServerDied</name>
+          <initializer>= MLResultAPIPrefix_MediaPlayer</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Media errors (eg. Codec not supported). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga06f9efcad537ea28233b667c0011e340a6befed88dfa23386ab606d9645d413c1" prot="public">
+          <name>MLMediaPlayerResult_NotValidForProgressivePlayback</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Runtime errors. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_error_1gga06f9efcad537ea28233b667c0011e340af4180e669af5b6b08155b9f46cf115a3" prot="public">
+          <name>MLMediaPlayerResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media player related return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="178" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" bodystart="178" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___media_error_1ga0509105a1638bffdfc623ec8394ab0ce" prot="public" static="no">
+        <type>enum <ref refid="group___media_error_1gad03a82ec9a2d32baa4d86003c9c97e00" kindref="member">MLMediaGenericResult</ref></type>
+        <definition>typedef enum MLMediaGenericResult MLMediaGenericResult</definition>
+        <argsstring></argsstring>
+        <name>MLMediaGenericResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="58" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_error_1ga720b6a5b87b498c5ab2c63530f7adb97" prot="public" static="no">
+        <type>enum <ref refid="group___media_error_1gada82631e0cff8514ce6b527d34e3c45c" kindref="member">MLMediaResult</ref></type>
+        <definition>typedef enum MLMediaResult MLMediaResult</definition>
+        <argsstring></argsstring>
+        <name>MLMediaResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detailed return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="115" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_error_1gaeb8b8562f439f520d7d6e29b7136afd2" prot="public" static="no">
+        <type>enum <ref refid="group___media_error_1ga3e7fe0de2c13301b85632ab5443e4c7d" kindref="member">MLMediaDRMResult</ref></type>
+        <definition>typedef enum MLMediaDRMResult MLMediaDRMResult</definition>
+        <argsstring></argsstring>
+        <name>MLMediaDRMResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM related return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="161" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media_error_1ga7e482ab30f99f7925309b21ba6587900" prot="public" static="no">
+        <type>enum <ref refid="group___media_error_1ga06f9efcad537ea28233b667c0011e340" kindref="member">MLMediaPlayerResult</ref></type>
+        <definition>typedef enum MLMediaPlayerResult MLMediaPlayerResult</definition>
+        <argsstring></argsstring>
+        <name>MLMediaPlayerResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media player related return values for Multimedia API calls. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="186" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___media_error_1gafacc84c24ec3eac1bdd17b7659ada1a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) const char *MLMediaResultGetString(MLResult code)</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Translate a media error code into a human-readable string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code to translate to a string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>C-style ASCII string containing readable version of result code. Note that user should not keep a reference to the returned char pointer for future use as subsequent calls to MLMediaResultGetString will overwrite its content. Consequently, user <emphasis>must not</emphasis> explicitly free the returned pointer.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000443"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" line="200" column="1" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h" declline="200" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggaf9bdc3014f3d54c426b6d2df10de4960af8339ca1a64a821c46a59197bf54b89c" kindref="member">MLResultAPIPrefix_MediaGeneric</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0xbf3b)</highlight></codeline>
+<codeline lineno="36" refid="group___media_error_1ggaf9bdc3014f3d54c426b6d2df10de4960af8339ca1a64a821c46a59197bf54b89c" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="group___media_error_1gad03a82ec9a2d32baa4d86003c9c97e00" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_error_1gad03a82ec9a2d32baa4d86003c9c97e00" kindref="member">MLMediaGenericResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a04fc59f66163bafc50761b55e3b850b9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a04fc59f66163bafc50761b55e3b850b9" kindref="member">MLMediaGenericResult_InvalidOperation</ref><sp/>=<sp/><ref refid="group___media_error_1ggaf9bdc3014f3d54c426b6d2df10de4960af8339ca1a64a821c46a59197bf54b89c" kindref="member">MLResultAPIPrefix_MediaGeneric</ref>,</highlight></codeline>
+<codeline lineno="41" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a78dd74d955708f839df30411e4207467" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a78dd74d955708f839df30411e4207467" kindref="member">MLMediaGenericResult_BadType</ref>,</highlight></codeline>
+<codeline lineno="42" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a3501fc778461e6cae7035ca50a0ad6cc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a3501fc778461e6cae7035ca50a0ad6cc" kindref="member">MLMediaGenericResult_NameNotFound</ref>,</highlight></codeline>
+<codeline lineno="43" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a1839167d8fe3a67429200e5690c5b6d4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a1839167d8fe3a67429200e5690c5b6d4" kindref="member">MLMediaGenericResult_HandleNotFound</ref>,</highlight></codeline>
+<codeline lineno="44" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a9cd6a51f7ac46a131acc5405288e0374" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a9cd6a51f7ac46a131acc5405288e0374" kindref="member">MLMediaGenericResult_NoInit</ref>,</highlight></codeline>
+<codeline lineno="45" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a818f36946cfc4ebd2a00edb03ba98c3c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a818f36946cfc4ebd2a00edb03ba98c3c" kindref="member">MLMediaGenericResult_AlreadyExists</ref>,</highlight></codeline>
+<codeline lineno="46" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a5c2c1420868a4b344eda1c56ef76e6a3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a5c2c1420868a4b344eda1c56ef76e6a3" kindref="member">MLMediaGenericResult_DeadObject</ref>,</highlight></codeline>
+<codeline lineno="47" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a5e00c14088fce53d3e51c1e2f52fdd0d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a5e00c14088fce53d3e51c1e2f52fdd0d" kindref="member">MLMediaGenericResult_FailedTransaction</ref>,</highlight></codeline>
+<codeline lineno="48" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a10d3f26ec3f0235d68a6a9fe8a6bc1e2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a10d3f26ec3f0235d68a6a9fe8a6bc1e2" kindref="member">MLMediaGenericResult_BadIndex</ref>,</highlight></codeline>
+<codeline lineno="49" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a8bdf4d7a48c29d082298b97428cf83b4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a8bdf4d7a48c29d082298b97428cf83b4" kindref="member">MLMediaGenericResult_NotEnoughData</ref>,</highlight></codeline>
+<codeline lineno="50" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a4131b99b6d8e98d137d7503748a2f98a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a4131b99b6d8e98d137d7503748a2f98a" kindref="member">MLMediaGenericResult_WouldBlock</ref>,</highlight></codeline>
+<codeline lineno="51" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aa5043eb61a14ff6dba86a8260c1d266e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aa5043eb61a14ff6dba86a8260c1d266e" kindref="member">MLMediaGenericResult_UnknownTransaction</ref>,</highlight></codeline>
+<codeline lineno="52" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a22cca1c4ec2308521f76d163a3f02b8f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a22cca1c4ec2308521f76d163a3f02b8f" kindref="member">MLMediaGenericResult_FDSNotAllowed</ref>,</highlight></codeline>
+<codeline lineno="53" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aa0377b60a9f4ec506cb33d8ef9d02053" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aa0377b60a9f4ec506cb33d8ef9d02053" kindref="member">MLMediaGenericResult_UnexpectedNull</ref>,</highlight></codeline>
+<codeline lineno="54" refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aff0d78291416b71884710ae19a71c4a6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00aff0d78291416b71884710ae19a71c4a6" kindref="member">MLMediaGenericResult_NotAvailable</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggad03a82ec9a2d32baa4d86003c9c97e00a368625257ba73b16327d5010a2b2ce01" kindref="member">MLMediaGenericResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="58" refid="group___media_error_1ga0509105a1638bffdfc623ec8394ab0ce" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_error_1gad03a82ec9a2d32baa4d86003c9c97e00" kindref="member">MLMediaGenericResult</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggadb49720dc49f7d4e4cf9adbf2948e409ad852b0a9d9a881494888ef056c46a611" kindref="member">MLResultAPIPrefix_Media</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x4184)</highlight></codeline>
+<codeline lineno="63" refid="group___media_error_1ggadb49720dc49f7d4e4cf9adbf2948e409ad852b0a9d9a881494888ef056c46a611" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="group___media_error_1gada82631e0cff8514ce6b527d34e3c45c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_error_1gada82631e0cff8514ce6b527d34e3c45c" kindref="member">MLMediaResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="67" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caff77119d7a02dcea532bf6bae9b22bc1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caff77119d7a02dcea532bf6bae9b22bc1" kindref="member">MLMediaResult_AlreadyConnected</ref><sp/>=<sp/><ref refid="group___media_error_1ggadb49720dc49f7d4e4cf9adbf2948e409ad852b0a9d9a881494888ef056c46a611" kindref="member">MLResultAPIPrefix_Media</ref>,</highlight></codeline>
+<codeline lineno="68" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca9f83d17013b9f0a92c6387f185e635f6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca9f83d17013b9f0a92c6387f185e635f6" kindref="member">MLMediaResult_NotConnected</ref>,</highlight></codeline>
+<codeline lineno="69" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cabc1e9454481a2d813c4d9ec72444c590" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cabc1e9454481a2d813c4d9ec72444c590" kindref="member">MLMediaResult_UnknownHost</ref>,</highlight></codeline>
+<codeline lineno="70" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca86dde361a533505c777300ed2272b92b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca86dde361a533505c777300ed2272b92b" kindref="member">MLMediaResult_CannotConnect</ref>,</highlight></codeline>
+<codeline lineno="71" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca521aaea376718f5dc6c3ca10ba7d1f7f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca521aaea376718f5dc6c3ca10ba7d1f7f" kindref="member">MLMediaResult_IO</ref>,</highlight></codeline>
+<codeline lineno="72" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cacc236c46e70b25ea46b3eea4caf4cdaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cacc236c46e70b25ea46b3eea4caf4cdaf" kindref="member">MLMediaResult_ConnectionLost</ref>,</highlight></codeline>
+<codeline lineno="73" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca42c44f3e873f7d599b38c00ff74bb0b0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca42c44f3e873f7d599b38c00ff74bb0b0" kindref="member">MLMediaResult_Legacy1</ref>,</highlight></codeline>
+<codeline lineno="74" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caf7484c9d24c5985d8908214deace20ee" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caf7484c9d24c5985d8908214deace20ee" kindref="member">MLMediaResult_Malformed</ref>,</highlight></codeline>
+<codeline lineno="75" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cae94ebf744971e95a1ea1b22a6f4f5991" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cae94ebf744971e95a1ea1b22a6f4f5991" kindref="member">MLMediaResult_OutOfRange</ref>,</highlight></codeline>
+<codeline lineno="76" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca8c3cec12441f8b6f929142fb84286091" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca8c3cec12441f8b6f929142fb84286091" kindref="member">MLMediaResult_BufferTooSmall</ref>,</highlight></codeline>
+<codeline lineno="77" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca77234a6c5c4de5a049d8c7e97c8e9995" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca77234a6c5c4de5a049d8c7e97c8e9995" kindref="member">MLMediaResult_Unsupported</ref>,</highlight></codeline>
+<codeline lineno="78" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cafd04e831c2ba205844b50abe3d78fcf3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cafd04e831c2ba205844b50abe3d78fcf3" kindref="member">MLMediaResult_EndOfStream</ref>,</highlight></codeline>
+<codeline lineno="79" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca28b8980eb95a56bb482d0e99e294666e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca28b8980eb95a56bb482d0e99e294666e" kindref="member">MLMediaResult_FormatChanged</ref>,</highlight></codeline>
+<codeline lineno="80" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca6aa4804377a6d175fc97d22bf3f4260c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca6aa4804377a6d175fc97d22bf3f4260c" kindref="member">MLMediaResult_Discontinuity</ref>,</highlight></codeline>
+<codeline lineno="81" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca83028381b615873fb276f40963a6c4d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca83028381b615873fb276f40963a6c4d2" kindref="member">MLMediaResult_OutputBuffersChanged</ref>,</highlight></codeline>
+<codeline lineno="82" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca11d6117d222a6ddfcaae5c2ef2ee2fc6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca11d6117d222a6ddfcaae5c2ef2ee2fc6" kindref="member">MLMediaResult_PermissionRevoked</ref>,</highlight></codeline>
+<codeline lineno="83" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cadc95ab48835e6dd9b7c3100dd4127340" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cadc95ab48835e6dd9b7c3100dd4127340" kindref="member">MLMediaResult_UnsupportedAudioFormat</ref>,</highlight></codeline>
+<codeline lineno="84" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cad9d476a2400e91632fd2b4b1604e8949" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45cad9d476a2400e91632fd2b4b1604e8949" kindref="member">MLMediaResult_HeartbeatTerminateRequested</ref>,</highlight></codeline>
+<codeline lineno="86" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca464a781953eb9a8411c888af80b089a9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca464a781953eb9a8411c888af80b089a9" kindref="member">MLMediaResult_UnknownResource</ref>,</highlight></codeline>
+<codeline lineno="88" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca3909e03e3b44296e83f916ff7e937cb9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca3909e03e3b44296e83f916ff7e937cb9" kindref="member">MLMediaResult_InvalidResourceRequest</ref>,</highlight></codeline>
+<codeline lineno="93" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca453ee9cd02b636bc3c880368222ed0aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca453ee9cd02b636bc3c880368222ed0aa" kindref="member">MLMediaResult_OnlyHWResourceAvailable</ref>,</highlight></codeline>
+<codeline lineno="98" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca362fec3612f87ac3368056ec897f32bf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca362fec3612f87ac3368056ec897f32bf" kindref="member">MLMediaResult_OnlySWResourceAvailable</ref>,</highlight></codeline>
+<codeline lineno="100" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca7716ce5df62b95d699798520ac8efd85" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca7716ce5df62b95d699798520ac8efd85" kindref="member">MLMediaResult_NoMoreResources</ref>,</highlight></codeline>
+<codeline lineno="102" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca250855cb234952fd82c79cd7636a3aa1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca250855cb234952fd82c79cd7636a3aa1" kindref="member">MLMediaResult_NoMoreHWResources</ref>,</highlight></codeline>
+<codeline lineno="104" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caecbdc8eeefb020786cee616ce6f8463b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45caecbdc8eeefb020786cee616ce6f8463b" kindref="member">MLMediaResult_NoMoreSWResources</ref>,</highlight></codeline>
+<codeline lineno="111" refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca9615e1599c606e009125117573eec89e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca9615e1599c606e009125117573eec89e" kindref="member">MLMediaResult_InvalidCodecParam</ref>,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggada82631e0cff8514ce6b527d34e3c45ca82581382ef52a3ab51ce4f71c86186c5" kindref="member">MLMediaResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="115" refid="group___media_error_1ga720b6a5b87b498c5ab2c63530f7adb97" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_error_1gada82631e0cff8514ce6b527d34e3c45c" kindref="member">MLMediaResult</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggaae05225933a42f81e7c4a9fb286596f9a9f272b12d3cb313b70638a6a793c1fff" kindref="member">MLResultAPIPrefix_MediaDRM</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x62ce)</highlight></codeline>
+<codeline lineno="120" refid="group___media_error_1ggaae05225933a42f81e7c4a9fb286596f9a9f272b12d3cb313b70638a6a793c1fff" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="group___media_error_1ga3e7fe0de2c13301b85632ab5443e4c7d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_error_1ga3e7fe0de2c13301b85632ab5443e4c7d" kindref="member">MLMediaDRMResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="125" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dade3a6cc4fca6b8d49c4fe06f0ceabcec" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dade3a6cc4fca6b8d49c4fe06f0ceabcec" kindref="member">MLMediaDRMResult_Unknown</ref><sp/>=<sp/><ref refid="group___media_error_1ggaae05225933a42f81e7c4a9fb286596f9a9f272b12d3cb313b70638a6a793c1fff" kindref="member">MLResultAPIPrefix_MediaDRM</ref>,</highlight></codeline>
+<codeline lineno="127" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dad1b2aaf38992ec22eea233d666097424" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dad1b2aaf38992ec22eea233d666097424" kindref="member">MLMediaDRMResult_NoLicense</ref>,</highlight></codeline>
+<codeline lineno="129" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da423e111c4c86e2a8e0a0ef66cbea4072" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da423e111c4c86e2a8e0a0ef66cbea4072" kindref="member">MLMediaDRMResult_LicenseExpired</ref>,</highlight></codeline>
+<codeline lineno="131" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dac7fc1b9513ba6f15ba9acb5d9cee7dd5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dac7fc1b9513ba6f15ba9acb5d9cee7dd5" kindref="member">MLMediaDRMResult_SessionNotOpened</ref>,</highlight></codeline>
+<codeline lineno="133" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da4700cc7188e1310130b10042ef53ad32" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da4700cc7188e1310130b10042ef53ad32" kindref="member">MLMediaDRMResult_DecryptUnitNotInitialized</ref>,</highlight></codeline>
+<codeline lineno="135" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da70e81093a269f8495d1d8ff4aec79386" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da70e81093a269f8495d1d8ff4aec79386" kindref="member">MLMediaDRMResult_Decrypt</ref>,</highlight></codeline>
+<codeline lineno="137" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dac98aae2128a121dd2610ec3a929f8312" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dac98aae2128a121dd2610ec3a929f8312" kindref="member">MLMediaDRMResult_CannotHandle</ref>,</highlight></codeline>
+<codeline lineno="139" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dafde7bc8689465c2f0ff5ff9b4e2645ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dafde7bc8689465c2f0ff5ff9b4e2645ab" kindref="member">MLMediaDRMResult_TamperDetect</ref>,</highlight></codeline>
+<codeline lineno="146" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7daf22a7e809dcf345b520486a9108ca754" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7daf22a7e809dcf345b520486a9108ca754" kindref="member">MLMediaDRMResult_NotProvisioned</ref>,</highlight></codeline>
+<codeline lineno="148" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dade2254de7923bf4dd5960b956d444e76" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dade2254de7923bf4dd5960b956d444e76" kindref="member">MLMediaDRMResult_DeviceRevoked</ref>,</highlight></codeline>
+<codeline lineno="150" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dad745dc656e94c92a239318f33185a8f6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7dad745dc656e94c92a239318f33185a8f6" kindref="member">MLMediaDRMResult_ResourceBusy</ref>,</highlight></codeline>
+<codeline lineno="152" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da2f877b6594d5dfb0be4ec0ec57d3217a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da2f877b6594d5dfb0be4ec0ec57d3217a" kindref="member">MLMediaDRMResult_InsufficientOutputProtection</ref>,</highlight></codeline>
+<codeline lineno="153" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da1e3272d17602a427f91a7caec945f24a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da1e3272d17602a427f91a7caec945f24a" kindref="member">MLMediaDRMResult_LastUsedErrorCode</ref><sp/>=<sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da2f877b6594d5dfb0be4ec0ec57d3217a" kindref="member">MLMediaDRMResult_InsufficientOutputProtection</ref>,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da8249ed8e6bcbc3ee251fc50aedd55d9a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da8249ed8e6bcbc3ee251fc50aedd55d9a" kindref="member">MLMediaDRMResult_VendorMin</ref><sp/>=<sp/><ref refid="group___media_error_1ggaae05225933a42f81e7c4a9fb286596f9a9f272b12d3cb313b70638a6a793c1fff" kindref="member">MLResultAPIPrefix_MediaDRM</ref><sp/>+<sp/>500,</highlight></codeline>
+<codeline lineno="157" refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da6a753518ae31fe56ad117001bbd78f6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da6a753518ae31fe56ad117001bbd78f6e" kindref="member">MLMediaDRMResult_VendorMax</ref><sp/>=<sp/><ref refid="group___media_error_1ggaae05225933a42f81e7c4a9fb286596f9a9f272b12d3cb313b70638a6a793c1fff" kindref="member">MLResultAPIPrefix_MediaDRM</ref><sp/>+<sp/>999,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga3e7fe0de2c13301b85632ab5443e4c7da269d979c6fc44e7ab98f2ee6a541c70f" kindref="member">MLMediaDRMResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="161" refid="group___media_error_1gaeb8b8562f439f520d7d6e29b7136afd2" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_error_1ga3e7fe0de2c13301b85632ab5443e4c7d" kindref="member">MLMediaDRMResult</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="165" refid="group___media_error_1gga39fca1837c5ce7715cbf571669660c13a9cd85608fbbd76d033c7621a008fecb0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga39fca1837c5ce7715cbf571669660c13a9cd85608fbbd76d033c7621a008fecb0" kindref="member">MLResultAPIPrefix_MediaOMX</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x5f76),</highlight></codeline>
+<codeline lineno="167" refid="group___media_error_1gga39fca1837c5ce7715cbf571669660c13a6b78026407e2913436027775be796a79" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga39fca1837c5ce7715cbf571669660c13a6b78026407e2913436027775be796a79" kindref="member">MLResultAPIPrefix_MediaOMXExtensions</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x11d9),</highlight></codeline>
+<codeline lineno="169" refid="group___media_error_1gga39fca1837c5ce7715cbf571669660c13aacfd7e8998853427c63a487ac1933dc9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga39fca1837c5ce7715cbf571669660c13aacfd7e8998853427c63a487ac1933dc9" kindref="member">MLResultAPIPrefix_MediaOMXVendors</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0xe4d0),</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="174" refid="group___media_error_1ggaaf8fd5f0e57d456151c951e0f3715fc4aa50fac34ad478c4abfb552d270066d47" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1ggaaf8fd5f0e57d456151c951e0f3715fc4aa50fac34ad478c4abfb552d270066d47" kindref="member">MLResultAPIPrefix_MediaPlayer</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0xc435),</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="group___media_error_1ga06f9efcad537ea28233b667c0011e340" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_error_1ga06f9efcad537ea28233b667c0011e340" kindref="member">MLMediaPlayerResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="180" refid="group___media_error_1gga06f9efcad537ea28233b667c0011e340a992004e1d3f95f5627ca2e1e8c6f95cd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga06f9efcad537ea28233b667c0011e340a992004e1d3f95f5627ca2e1e8c6f95cd" kindref="member">MLMediaPlayerResult_ServerDied</ref><sp/>=<sp/><ref refid="group___media_error_1ggaaf8fd5f0e57d456151c951e0f3715fc4aa50fac34ad478c4abfb552d270066d47" kindref="member">MLResultAPIPrefix_MediaPlayer</ref>,</highlight></codeline>
+<codeline lineno="182" refid="group___media_error_1gga06f9efcad537ea28233b667c0011e340a6befed88dfa23386ab606d9645d413c1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga06f9efcad537ea28233b667c0011e340a6befed88dfa23386ab606d9645d413c1" kindref="member">MLMediaPlayerResult_NotValidForProgressivePlayback</ref>,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><ref refid="group___media_error_1gga06f9efcad537ea28233b667c0011e340af4180e669af5b6b08155b9f46cf115a3" kindref="member">MLMediaPlayerResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="186" refid="group___media_error_1ga7e482ab30f99f7925309b21ba6587900" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_error_1ga06f9efcad537ea28233b667c0011e340" kindref="member">MLMediaPlayerResult</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="group___media_error_1gafacc84c24ec3eac1bdd17b7659ada1a4" refkind="member"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaResultGetString(<ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/>code);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h"/>
+  </compounddef>
+</doxygen>

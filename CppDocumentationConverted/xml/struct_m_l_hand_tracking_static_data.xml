@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_hand_tracking_static_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLHandTrackingStaticData</compoundname>
+    <includes refid="ml__hand__tracking_8h" local="no">ml_hand_tracking.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_static_data_1a226779e9e2ec96cb5ad594ecb54347e7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLHandTrackingStaticData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="112" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_static_data_1a2a532ad08cbeabf455b18d573f7b64cc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_hand_tracking_c_f_u_i_ds" kindref="compound">MLHandTrackingCFUIDs</ref></type>
+        <definition>MLHandTrackingCFUIDs MLHandTrackingStaticData::hand_cfuids[MLHandTrackingHandType_Count]</definition>
+        <argsstring>[MLHandTrackingHandType_Count]</argsstring>
+        <name>hand_cfuids</name>
+        <briefdescription>
+<para>Smooth filtered coordinate frame identifiers of left and right hands. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___hand_tracking_1ga0b2a753605fa314875df383c5259eeb9" kindref="member">MLHandTrackingHandType</ref> for more details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="118" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_hand_tracking_static_data_1aba74a30e7acfe1e745182608ad8a858d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_hand_tracking_c_f_u_i_ds" kindref="compound">MLHandTrackingCFUIDs</ref></type>
+        <definition>MLHandTrackingCFUIDs MLHandTrackingStaticData::unfiltered_hand_cfuids[MLHandTrackingHandType_Count]</definition>
+        <argsstring>[MLHandTrackingHandType_Count]</argsstring>
+        <name>unfiltered_hand_cfuids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unfiltered coordinate frame identifiers of left and right hands. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="120" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static information about a hand tracker. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___hand_tracking_1ga43080df224e48b6e49ce33f64e6abc66" kindref="member">MLHandTrackingStaticDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLHandTrackingCFUIDs</label>
+        <link refid="struct_m_l_hand_tracking_c_f_u_i_ds"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>keypoint_cfuids</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLHandTrackingStaticData</label>
+        <link refid="struct_m_l_hand_tracking_static_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hand_cfuids</edgelabel>
+          <edgelabel>unfiltered_hand_cfuids</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" line="110" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h" bodystart="110" bodyend="121"/>
+    <listofallmembers>
+      <member refid="struct_m_l_hand_tracking_static_data_1a2a532ad08cbeabf455b18d573f7b64cc" prot="public" virt="non-virtual"><scope>MLHandTrackingStaticData</scope><name>hand_cfuids</name></member>
+      <member refid="struct_m_l_hand_tracking_static_data_1aba74a30e7acfe1e745182608ad8a858d" prot="public" virt="non-virtual"><scope>MLHandTrackingStaticData</scope><name>unfiltered_hand_cfuids</name></member>
+      <member refid="struct_m_l_hand_tracking_static_data_1a226779e9e2ec96cb5ad594ecb54347e7" prot="public" virt="non-virtual"><scope>MLHandTrackingStaticData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

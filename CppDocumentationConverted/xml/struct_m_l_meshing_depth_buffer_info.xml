@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_depth_buffer_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingDepthBufferInfo</compoundname>
+    <includes refid="ml__graphics__utils_8h" local="no">ml_graphics_utils.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1a122ea5748be9383b6584313f9a8876e9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLMeshingDepthBufferInfo::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional flags for Populate Depth. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="111" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1ac7b33a2f492cd60c5da1591f82bd2f2b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLMeshingDepthBufferInfo::buffer_count</definition>
+        <argsstring></argsstring>
+        <name>buffer_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of buffers to render to for the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="113" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1a8b481cd3ca73120d2d32a779cb84834d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLMeshingDepthBufferInfo::color_id</definition>
+        <argsstring></argsstring>
+        <name>color_id</name>
+        <briefdescription>
+<para>The handle (ID) of the color surface to render to for the buffer. Expects handle of a Texture2d Array [DEBUG_ONLY]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="118" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1add07b10ef14f969df5905a361c19b5bc" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLMeshingDepthBufferInfo::depth_id</definition>
+        <argsstring></argsstring>
+        <name>depth_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The handle (ID) of the depth surface to render to for the buffer. Expects handle of a Texture2d Array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="120" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1ae186a729557a7032d2d0a4c2f58bf8e7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_rectf" kindref="compound">MLRectf</ref></type>
+        <definition>MLRectf MLMeshingDepthBufferInfo::viewport</definition>
+        <argsstring></argsstring>
+        <name>viewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The origin and extents to render to for the camera. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="122" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1a1ce4981a39a46590669c8804c6f19baf" prot="public" static="no" mutable="no">
+        <type><ref refid="group___graphics_1ga4ea89742cd547a41e17d296797543c73" kindref="member">MLGraphicsProjectionType</ref></type>
+        <definition>MLGraphicsProjectionType MLMeshingDepthBufferInfo::projection_type</definition>
+        <argsstring></argsstring>
+        <name>projection_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls use of far_clip and directionality of z in projection model. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="124" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_depth_buffer_info_1a98f70ad47c3acf586661009693ee1603" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_meshing_virtual_camera_buffer_info" kindref="compound">MLMeshingVirtualCameraBufferInfo</ref></type>
+        <definition>MLMeshingVirtualCameraBufferInfo MLMeshingDepthBufferInfo::buffers[MLGraphicsVirtualCameraName_Count]</definition>
+        <argsstring>[MLGraphicsVirtualCameraName_Count]</argsstring>
+        <name>buffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The array of buffers to render to for the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="126" column="36" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>To be passed to PopulateDepth. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000050"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="4">
+        <label>MLTransform</label>
+        <link refid="struct_m_l_transform"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLMeshingDepthBufferInfo</label>
+        <link refid="struct_m_l_meshing_depth_buffer_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buffers</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>viewport</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MLRectf</label>
+        <link refid="struct_m_l_rectf"/>
+      </node>
+      <node id="2">
+        <label>MLMeshingVirtualCameraBufferInfo</label>
+        <link refid="struct_m_l_meshing_virtual_camera_buffer_info"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>projection</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MLQuaternionf</label>
+        <link refid="struct_m_l_quaternionf"/>
+      </node>
+      <node id="3">
+        <label>MLMat4f</label>
+        <link refid="struct_m_l_mat4f"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="109" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="109" bodyend="127"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1ac7b33a2f492cd60c5da1591f82bd2f2b" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>buffer_count</name></member>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1a98f70ad47c3acf586661009693ee1603" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>buffers</name></member>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1a8b481cd3ca73120d2d32a779cb84834d" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>color_id</name></member>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1add07b10ef14f969df5905a361c19b5bc" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>depth_id</name></member>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1a122ea5748be9383b6584313f9a8876e9" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>flags</name></member>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1a1ce4981a39a46590669c8804c6f19baf" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>projection_type</name></member>
+      <member refid="struct_m_l_meshing_depth_buffer_info_1ae186a729557a7032d2d0a4c2f58bf8e7" prot="public" virt="non-virtual"><scope>MLMeshingDepthBufferInfo</scope><name>viewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

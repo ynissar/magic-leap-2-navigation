@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___head_tracking" kind="group">
+    <compoundname>HeadTracking</compoundname>
+    <title>Head Tracking</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___head_tracking_1gae382becaf00e32c3cf28d337a8f7be7f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHeadTrackingError</name>
+        <enumvalue id="group___head_tracking_1ggae382becaf00e32c3cf28d337a8f7be7fa60894afc93e2d19122b3e79f9c6153d8" prot="public">
+          <name>MLHeadTrackingError_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No error, tracking is nominal. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggae382becaf00e32c3cf28d337a8f7be7fa55f6cbab8aedb990e01d956c7963d0fb" prot="public">
+          <name>MLHeadTrackingError_NotEnoughFeatures</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There are not enough features in the environment. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggae382becaf00e32c3cf28d337a8f7be7fa69aadd4cdc4788263107e62527efe2f4" prot="public">
+          <name>MLHeadTrackingError_LowLight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lighting in the environment is not sufficient to track accurately. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggae382becaf00e32c3cf28d337a8f7be7fa6e990240a871a97d430498ada2c01bc6" prot="public">
+          <name>MLHeadTrackingError_Unknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking failed for an unknown reason. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggae382becaf00e32c3cf28d337a8f7be7faaaf3a579034fd7d810546066a080e9c0" prot="public">
+          <name>MLHeadTrackingError_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible error conditions that can cause Head Tracking to be less than ideal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000055"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingErrorFlag. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 1</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="47" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="47" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___head_tracking_1gadb32d4dfa4c46557f38cb7b030119b39" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHeadTrackingErrorFlag</name>
+        <enumvalue id="group___head_tracking_1ggadb32d4dfa4c46557f38cb7b030119b39a51461dd4ca061f81ad0063b1514a32f2" prot="public">
+          <name>MLHeadTrackingErrorFlag_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No error, tracking is nominal. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggadb32d4dfa4c46557f38cb7b030119b39af2a1c116fea9b55df23dfd0c125817a2" prot="public">
+          <name>MLHeadTrackingErrorFlag_Unknown</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking failed for an unknown reason. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggadb32d4dfa4c46557f38cb7b030119b39a0f6f4e3a52a79004ec40336b0f36f551" prot="public">
+          <name>MLHeadTrackingErrorFlag_NotEnoughFeatures</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There are not enough features in the environment. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggadb32d4dfa4c46557f38cb7b030119b39af2584dff48222c42a698b0e2ef7819b3" prot="public">
+          <name>MLHeadTrackingErrorFlag_LowLight</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lighting in the environment is not sufficient to track accurately. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggadb32d4dfa4c46557f38cb7b030119b39a496c331861a4b76424909a104bdbecba" prot="public">
+          <name>MLHeadTrackingErrorFlag_ExcessiveMotion</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking failed due to excessive motion. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1ggadb32d4dfa4c46557f38cb7b030119b39a4f55f44bad7351ffe62dd4a3bfa14586" prot="public">
+          <name>MLHeadTrackingErrorFlag_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible error conditions that can cause Head Tracking to be less than ideal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000056"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="66" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___head_tracking_1ga413c43da9b38f13343fb50d12f2bc5cd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHeadTrackingMode</name>
+        <enumvalue id="group___head_tracking_1gga413c43da9b38f13343fb50d12f2bc5cda4d13e578aa9f6bb9ec6c57a29c348162" prot="public">
+          <name>MLHeadTrackingMode_6DOF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full 6 degrees of freedom tracking (position and orientation). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga413c43da9b38f13343fb50d12f2bc5cda68e32bdfefd0aea2710230d770965e90" prot="public">
+          <name>MLHeadTrackingMode_Unavailable</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking is unavailable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga413c43da9b38f13343fb50d12f2bc5cda6c34000ee85773ef3a7d1cde002fcb95" prot="public">
+          <name>MLHeadTrackingMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible tracking modes the Head Tracking system can be in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000057"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStatus. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 1</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___head_tracking_1ga57cb2495f9392309dc74461b8f7ae147" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHeadTrackingStatus</name>
+        <enumvalue id="group___head_tracking_1gga57cb2495f9392309dc74461b8f7ae147ab62316ebc0411b867dd31793dbd07745" prot="public">
+          <name>MLHeadTrackingStatus_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking is unavailable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga57cb2495f9392309dc74461b8f7ae147ad8ada7bc575373c7e9693a7d696464fa" prot="public">
+          <name>MLHeadTrackingStatus_Initializing</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking is initializing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga57cb2495f9392309dc74461b8f7ae147ad5d4a35f639e3958728372b167fd1d2d" prot="public">
+          <name>MLHeadTrackingStatus_Relocalizing</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Head tracking is relocalizing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga57cb2495f9392309dc74461b8f7ae147a15c108f04c1d3fb26dedb7e02839a613" prot="public">
+          <name>MLHeadTrackingStatus_Valid</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid head tracking data is available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga57cb2495f9392309dc74461b8f7ae147a9a14327ecaf7f26d4d010445997f9726" prot="public">
+          <name>MLHeadTrackingStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible tracking status for the Head Tracking system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000058"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="102" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___head_tracking_1ga79402a2b3f035a5a439c686e3c30c897" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLHeadTrackingMapEvent</name>
+        <enumvalue id="group___head_tracking_1gga79402a2b3f035a5a439c686e3c30c897a1c1d8bbf31bbc04812c7c79cbeb1ec3a" prot="public">
+          <name>MLHeadTrackingMapEvent_Lost</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Map was lost. It could possibly recover. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga79402a2b3f035a5a439c686e3c30c897a63afa77ff20994e3bdebdc1907ef84df" prot="public">
+          <name>MLHeadTrackingMapEvent_Recovered</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Previous map was recovered. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga79402a2b3f035a5a439c686e3c30c897aee0950d05d58ffa9a94fb1ef2df11cbf" prot="public">
+          <name>MLHeadTrackingMapEvent_RecoveryFailed</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Failed to recover previous map. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga79402a2b3f035a5a439c686e3c30c897ab8e1e479af4acee8d7fa6d59f30cf31a" prot="public">
+          <name>MLHeadTrackingMapEvent_NewSession</name>
+          <initializer>= (1 &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>New map session created. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___head_tracking_1gga79402a2b3f035a5a439c686e3c30c897a3c9eee75a5ce8e3696120a30b81c147b" prot="public">
+          <name>MLHeadTrackingMapEvent_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Different types of map events that can occur that a developer may have to handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000062"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="173" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="173" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___head_tracking_1gac06253f5b4c411b908d59c6052bb8ab4" prot="public" static="no">
+        <type>enum <ref refid="group___head_tracking_1gae382becaf00e32c3cf28d337a8f7be7f" kindref="member">MLHeadTrackingError</ref></type>
+        <definition>typedef enum MLHeadTrackingError MLHeadTrackingError</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingError</name>
+        <briefdescription>
+<para>A set of possible error conditions that can cause Head Tracking to be less than ideal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000055"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingErrorFlag. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 1</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="58" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___head_tracking_1ga582faec053d2f24a8723a035119590a4" prot="public" static="no">
+        <type>enum <ref refid="group___head_tracking_1gadb32d4dfa4c46557f38cb7b030119b39" kindref="member">MLHeadTrackingErrorFlag</ref></type>
+        <definition>typedef enum MLHeadTrackingErrorFlag MLHeadTrackingErrorFlag</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingErrorFlag</name>
+        <briefdescription>
+<para>A set of possible error conditions that can cause Head Tracking to be less than ideal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000056"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="79" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___head_tracking_1ga44226ee307189172bd761be58a57f845" prot="public" static="no">
+        <type>enum <ref refid="group___head_tracking_1ga413c43da9b38f13343fb50d12f2bc5cd" kindref="member">MLHeadTrackingMode</ref></type>
+        <definition>typedef enum MLHeadTrackingMode MLHeadTrackingMode</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingMode</name>
+        <briefdescription>
+<para>A set of possible tracking modes the Head Tracking system can be in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000057"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStatus. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 1</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="94" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___head_tracking_1ga33dee337004d5b0f9d782bee9573fd62" prot="public" static="no">
+        <type>enum <ref refid="group___head_tracking_1ga57cb2495f9392309dc74461b8f7ae147" kindref="member">MLHeadTrackingStatus</ref></type>
+        <definition>typedef enum MLHeadTrackingStatus MLHeadTrackingStatus</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingStatus</name>
+        <briefdescription>
+<para>A set of possible tracking status for the Head Tracking system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000058"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="113" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___head_tracking_1ga6f3f6b950bb1da91f71928aa13c22ff1" prot="public" static="no">
+        <type>enum <ref refid="group___head_tracking_1ga79402a2b3f035a5a439c686e3c30c897" kindref="member">MLHeadTrackingMapEvent</ref></type>
+        <definition>typedef enum MLHeadTrackingMapEvent MLHeadTrackingMapEvent</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingMapEvent</name>
+        <briefdescription>
+<para>Different types of map events that can occur that a developer may have to handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000062"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="184" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___head_tracking_1ga8db24a548cbba13ee0f3e42486e975d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLHeadTrackingStaticData</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingStaticData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="39" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___head_tracking_1gac2a45a992db89822eec1724b3da7f584" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLHeadTrackingState</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="129" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___head_tracking_1ga11a6a071e1e97510ef4d39f42678399b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLHeadTrackingStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLHeadTrackingStateEx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="147" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___head_tracking_1gae4da65ee1780df8124e20ab4ca2b8758" prot="public" static="no" mutable="no">
+        <type><ref refid="group___head_tracking_1ga8db24a548cbba13ee0f3e42486e975d4" kindref="member">MLHeadTrackingStaticData</ref> *</type>
+        <definition>MLHeadTrackingStaticData* out_data</definition>
+        <argsstring></argsstring>
+        <name>out_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="230" column="35" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___head_tracking_1gab99f8c950fa643d00580922efb77c113" prot="public" static="no" mutable="no">
+        <type><ref refid="group___head_tracking_1gac2a45a992db89822eec1724b3da7f584" kindref="member">MLHeadTrackingState</ref> *</type>
+        <definition>MLHeadTrackingStateEx* out_state</definition>
+        <argsstring></argsstring>
+        <name>out_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="246" column="30" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___head_tracking_1gad0fc0029fd4e2f694dc10c3f96f97d85" prot="public" static="no" mutable="no">
+        <type>uint64_t *</type>
+        <definition>uint64_t* out_map_events</definition>
+        <argsstring></argsstring>
+        <name>out_map_events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="290" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___head_tracking_1ga8c1943bb8c2aec21b82dd7ec609198e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLHeadTrackingState</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use OpenXR APIs.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information on the current state of the Head Tracking system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets map events.</para>
+<para>Returns the most recent head tracking state.</para>
+<para>Returns static information about the Head Tracker.</para>
+<para>Destroys a Head Tracker.</para>
+<para>Creates a Head Tracker.</para>
+<para>Initialize default values for a <ref refid="group___head_tracking_1ga11a6a071e1e97510ef4d39f42678399b" kindref="member">MLHeadTrackingStateEx</ref> structure.</para>
+<para>Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling #MLHeadTrackingStateExInit before use.</para>
+<para>Static information about a Head Tracker. Populate this structure with MLHeadTrackingGetStaticData().</para>
+<para><xrefsect id="deprecated_1_deprecated000059"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStateEx. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 1</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000060"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000061"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000320"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000063"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an MLHandle which will contain the handle of the head tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created head tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create head tracker due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks permission.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000321"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000064"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Head Tracker created by MLHeadTrackingCreate().</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed head tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy head tracker due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000322"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000065"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target to populate the data about that Head Tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive static data due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully received static data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive static data due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000323"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000067"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid <ref refid="group___head_tracking_1ga11a6a071e1e97510ef4d39f42678399b" kindref="member">MLHeadTrackingStateEx</ref> object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return the most recent head tracking state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully returned the most recent head tracking state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return the most recent head tracking state due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000325"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000068"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>A developer must be aware of certain events that can occur under degenerative conditions in order to cleanly handle it. The most important event to be aware of is when a map changes.</para>
+<para>In the case that a new map session begins, or recovery fails, all formerly cached transform and world reconstruction data (planes, mesh) is invalidated and must be updated.</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_map_events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a uint64_t representing a bitmask of MLHeadTrackingMapEvent, allocated by the caller.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get map events due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully got map events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get map events due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000326"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Coordinate frame ID.</para>
+<para>What tracking mode the Head Tracking system is currently in.</para>
+<para>A confidence value (from [0, 1]) representing the confidence in the current pose estimation.</para>
+<para>Represents what tracking error (if any) is present.</para>
+<para>Version of this structure.</para>
+<para>Current status of the Head Tracking system.</para>
+<para>Confidence value (from [0, 1]) representing the confidence in the current pose.</para>
+<para>Represents a bitmask of <ref refid="group___head_tracking_1gadb32d4dfa4c46557f38cb7b030119b39" kindref="member">MLHeadTrackingErrorFlag</ref>.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="36" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" bodystart="36" bodyend="39" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" declline="213" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___head_tracking_1ga2f7a91c022f91c26ac5ae7ad47bcd185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLHeadTrackingGetStateEx.&quot;))) MLResult MLHeadTrackingGetState(MLHandle head_tracker</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLHeadTrackingGetStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Returns the most recent head tracking state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000066"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingGetStateEx. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid <ref refid="group___head_tracking_1gac2a45a992db89822eec1724b3da7f584" kindref="member">MLHeadTrackingState</ref> object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return the most recent head tracking state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully returned the most recent head tracking state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return the most recent head tracking state due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000324"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h" line="245" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Head Tracking system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="warning"><para>THIS API IS DEPRECATED IN FAVOR OF OPENXR APIs: <ulink url="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html">https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

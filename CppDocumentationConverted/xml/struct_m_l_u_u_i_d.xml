@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_u_u_i_d" kind="struct" language="C++" prot="public">
+    <compoundname>MLUUID</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_u_u_i_d_1ab7528178d2eebb140f062c27cb6d1f2d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLUUID::time_low</definition>
+        <argsstring></argsstring>
+        <name>time_low</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="140" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_u_u_i_d_1a14d5b9831f7aecbc31e073c3f8db032e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MLUUID::time_mid</definition>
+        <argsstring></argsstring>
+        <name>time_mid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="141" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_u_u_i_d_1a84046460930d839738975d7eabcab498" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MLUUID::time_hi_and_version</definition>
+        <argsstring></argsstring>
+        <name>time_hi_and_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="142" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_u_u_i_d_1a0ae02129ddcb949e3dbd7bd1230716ef" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLUUID::clock_seq_hi_and_reserved</definition>
+        <argsstring></argsstring>
+        <name>clock_seq_hi_and_reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="143" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_u_u_i_d_1a2f3eb99b284ee038b94a4bf1ad326976" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLUUID::clock_seq_low</definition>
+        <argsstring></argsstring>
+        <name>clock_seq_low</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="144" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_u_u_i_d_1abbc169fdbbf19daad462efba0aec02dd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLUUID::node[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="145" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Universally Unique Identifier. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="135" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="135" bodyend="151"/>
+    <listofallmembers>
+      <member refid="struct_m_l_u_u_i_d_1a0ae02129ddcb949e3dbd7bd1230716ef" prot="public" virt="non-virtual"><scope>MLUUID</scope><name>clock_seq_hi_and_reserved</name></member>
+      <member refid="struct_m_l_u_u_i_d_1a2f3eb99b284ee038b94a4bf1ad326976" prot="public" virt="non-virtual"><scope>MLUUID</scope><name>clock_seq_low</name></member>
+      <member refid="struct_m_l_u_u_i_d_1abbc169fdbbf19daad462efba0aec02dd" prot="public" virt="non-virtual"><scope>MLUUID</scope><name>node</name></member>
+      <member refid="struct_m_l_u_u_i_d_1a84046460930d839738975d7eabcab498" prot="public" virt="non-virtual"><scope>MLUUID</scope><name>time_hi_and_version</name></member>
+      <member refid="struct_m_l_u_u_i_d_1ab7528178d2eebb140f062c27cb6d1f2d" prot="public" virt="non-virtual"><scope>MLUUID</scope><name>time_low</name></member>
+      <member refid="struct_m_l_u_u_i_d_1a14d5b9831f7aecbc31e073c3f8db032e" prot="public" virt="non-virtual"><scope>MLUUID</scope><name>time_mid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_localization_result" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceLocalizationResult</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_localization_result_1ad1a0e218605f654069f6b2feedaa83f8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceLocalizationResult::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="333" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_localization_result_1a80668994dab2932aa8edbb71ea84e803" prot="public" static="no" mutable="no">
+        <type><ref refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" kindref="member">MLSpaceLocalizationStatus</ref></type>
+        <definition>MLSpaceLocalizationStatus MLSpaceLocalizationResult::localization_status</definition>
+        <argsstring></argsstring>
+        <name>localization_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The localization status at the time this structure was returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="335" column="29" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_localization_result_1ad9220fe849cf66fbe30ffef990e1fac4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref></type>
+        <definition>MLSpace MLSpaceLocalizationResult::space</definition>
+        <argsstring></argsstring>
+        <name>space</name>
+        <briefdescription>
+<para>Space information. If localized (<ref refid="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a7e03da1fb1146ad9211aa2835b20bfb4" kindref="member">MLSpaceLocalizationStatus_Localized</ref>) this will contain valid Space information. If not localized this field should be ignored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="341" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_localization_result_1a8612aa1d3dfa2084c0ef442e1aa93822" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MLSpaceLocalizationResult::target_space_origin</definition>
+        <argsstring></argsstring>
+        <name>target_space_origin</name>
+        <briefdescription>
+<para>Target space&apos;s origin relative to world origin. If localized this will contain the identifier of the transform of the target space&apos;s origin relative to the world origin. If not localized this will be null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="348" column="24" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_localization_result_1ae4f21ed583bfb8b9c57d8bfae64540a7" prot="public" static="no" mutable="no">
+        <type><ref refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" kindref="member">MLSpaceLocalizationConfidence</ref></type>
+        <definition>MLSpaceLocalizationConfidence MLSpaceLocalizationResult::localization_confidence</definition>
+        <argsstring></argsstring>
+        <name>localization_confidence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The confidence level of this localization result. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="350" column="33" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_localization_result_1a10b7a5ef6a9f728765e3763e5db7d185" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceLocalizationResult::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents a bitmask of <ref refid="group___space_1ga0d00e1631e936463dc7ad3312a7498ec" kindref="member">MLSpaceLocalizationErrorFlag</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="352" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the device&apos;s localization state. This structure must be initialized by calling <ref refid="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" kindref="member">MLSpaceLocalizationResultInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLSpace</label>
+        <link refid="struct_m_l_space"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>space_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+      <node id="1">
+        <label>MLSpaceLocalizationResult</label>
+        <link refid="struct_m_l_space_localization_result"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>space</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>target_space_origin</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MLCoordinateFrameUID</label>
+        <link refid="struct_m_l_coordinate_frame_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="331" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="331" bodyend="353"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_localization_result_1a10b7a5ef6a9f728765e3763e5db7d185" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationResult</scope><name>error</name></member>
+      <member refid="struct_m_l_space_localization_result_1ae4f21ed583bfb8b9c57d8bfae64540a7" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationResult</scope><name>localization_confidence</name></member>
+      <member refid="struct_m_l_space_localization_result_1a80668994dab2932aa8edbb71ea84e803" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationResult</scope><name>localization_status</name></member>
+      <member refid="struct_m_l_space_localization_result_1ad9220fe849cf66fbe30ffef990e1fac4" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationResult</scope><name>space</name></member>
+      <member refid="struct_m_l_space_localization_result_1a8612aa1d3dfa2084c0ef442e1aa93822" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationResult</scope><name>target_space_origin</name></member>
+      <member refid="struct_m_l_space_localization_result_1ad1a0e218605f654069f6b2feedaa83f8" prot="public" virt="non-virtual"><scope>MLSpaceLocalizationResult</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

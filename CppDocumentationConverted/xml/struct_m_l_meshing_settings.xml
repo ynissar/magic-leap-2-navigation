@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_meshing_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLMeshingSettings</compoundname>
+    <includes refid="ml__meshing2_8h" local="no">ml_meshing2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_meshing_settings_1ad8507fa095be3592630b48cd4cbbf9c2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLMeshingSettings::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request flags that are a combination of MLMeshingFlags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="94" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_settings_1aed79498988f6e9c882ac9431746f6938" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLMeshingSettings::fill_hole_length</definition>
+        <argsstring></argsstring>
+        <name>fill_hole_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Any hole which has perimeter (in meters) less than fill_hole_length will be filled. The maximum hole perimeter is limited to 5 meters. Also The maximum area of the hole should not exceed 0.5 square meters. If the hole overlaps with neighboring mesh block/s, it won&apos;t be filled in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="100" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_meshing_settings_1af834d203859dac68cd706d2b927f32ea" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLMeshingSettings::disconnected_component_area</definition>
+        <argsstring></argsstring>
+        <name>disconnected_component_area</name>
+        <briefdescription>
+<para>Any component that is disconnected from the main mesh which has an area (in meters^2) less than disconnected_component_area will be removed. The maximum area is limited to 2 square meters, and the area needs to exist fully within a mesh block boundary without skirt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="107" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mesh Settings for the underlying system. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="92" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="92" bodyend="108"/>
+    <listofallmembers>
+      <member refid="struct_m_l_meshing_settings_1af834d203859dac68cd706d2b927f32ea" prot="public" virt="non-virtual"><scope>MLMeshingSettings</scope><name>disconnected_component_area</name></member>
+      <member refid="struct_m_l_meshing_settings_1aed79498988f6e9c882ac9431746f6938" prot="public" virt="non-virtual"><scope>MLMeshingSettings</scope><name>fill_hole_length</name></member>
+      <member refid="struct_m_l_meshing_settings_1ad8507fa095be3592630b48cd4cbbf9c2" prot="public" virt="non-virtual"><scope>MLMeshingSettings</scope><name>flags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

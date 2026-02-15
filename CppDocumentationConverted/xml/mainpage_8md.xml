@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Magic<sp/>Leap<sp/>Native<sp/>SDK<sp/>(C-API)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Magic<sp/>Leap<sp/>Native<sp/>SDK<sp/>exposes<sp/>interfaces<sp/>to<sp/>our<sp/>services<sp/>and<sp/>platform<sp/>features<sp/>so<sp/>that<sp/>you<sp/>can<sp/>integrate<sp/>them<sp/>with<sp/>your<sp/>3D<sp/>engine<sp/>or<sp/>application.<sp/>This<sp/>SDK<sp/>is<sp/>intended<sp/>for<sp/>use<sp/>with<sp/>the<sp/>Magic<sp/>Leap<sp/>2<sp/>hardware.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>See<sp/>[Native<sp/>Development](https://developer-docs.magicleap.cloud/docs/category/native)<sp/>for<sp/>all<sp/>the<sp/>details<sp/>on<sp/>how<sp/>to<sp/>use<sp/>the<sp/>SDK.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**NOTE:**<sp/>Experimental<sp/>APIs<sp/>(APIs<sp/>marked<sp/>with<sp/>the<sp/>`\experimental`<sp/>doxygen<sp/>tag)<sp/>does<sp/>not<sp/>guarantee<sp/>backwards<sp/>compatablity<sp/>and<sp/>the<sp/>feature<sp/>can<sp/>be<sp/>completely<sp/>removed<sp/>in<sp/>a<sp/>future<sp/>release<sp/>without<sp/>any<sp/>alternate<sp/>APIs<sp/>to<sp/>replace<sp/>their<sp/>functionality.<sp/>So,<sp/>please<sp/>use<sp/>these<sp/>experimental<sp/>APIs<sp/>with<sp/>caution.<sp/>The<sp/>goal<sp/>of<sp/>these<sp/>experimental<sp/>APIs<sp/>is<sp/>to<sp/>collect<sp/>developer<sp/>feedback.<sp/>Once<sp/>the<sp/>API<sp/>reaches<sp/>a<sp/>steady<sp/>state<sp/>and<sp/>is<sp/>ready<sp/>for<sp/>production<sp/>use<sp/>cases<sp/>the<sp/>`\experimental`<sp/>tag<sp/>will<sp/>be<sp/>removed.</highlight></codeline>
+    </programlisting>
+    <location file="mainpage.md"/>
+  </compounddef>
+</doxygen>

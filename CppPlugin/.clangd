@@ -1,0 +1,13 @@
+CompileFlags:
+  Add:
+    - "-I/Users/yusufnissar/Repos/magic-leap-2-navigation/CppPlugin/app_framework/include"
+    - "-I/Users/yusufnissar/Library/Android/sdk/ndk/26.2.11394342/sources/android/native_app_glue"
+    - "-I/Users/yusufnissar/Repos/magic-leap-2-navigation/CppPlugin/app_framework/include/app_framework/render"
+    - "-DML_LUMIN"
+    - "-std=c++17"
+
+Diagnostics:
+  UnusedIncludes: None
+
+Index:
+  Background: Build

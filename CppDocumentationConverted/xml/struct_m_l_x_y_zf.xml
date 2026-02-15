@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_x_y_zf" kind="struct" language="C++" prot="public">
+    <compoundname>MLXYZf</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_x_y_zf_1a7dd26068ac2c0a5b8eb5933eec7b16bd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLXYZf::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="39" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_x_y_zf_1abd1eddcbfbbe9b02735cf84db80dba45" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLXYZf::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="40" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_x_y_zf_1a6f553fad19f5426bd5c39bd19d7f0b69" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLXYZf::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="41" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal structure used to simplify access of <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref>. Do not create this structure directly and always use <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> instead. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="38" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="38" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct_m_l_x_y_zf_1a7dd26068ac2c0a5b8eb5933eec7b16bd" prot="public" virt="non-virtual"><scope>MLXYZf</scope><name>x</name></member>
+      <member refid="struct_m_l_x_y_zf_1abd1eddcbfbbe9b02735cf84db80dba45" prot="public" virt="non-virtual"><scope>MLXYZf</scope><name>y</name></member>
+      <member refid="struct_m_l_x_y_zf_1a6f553fad19f5426bd5c39bd19d7f0b69" prot="public" virt="non-virtual"><scope>MLXYZf</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

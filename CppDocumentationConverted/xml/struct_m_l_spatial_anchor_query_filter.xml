@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_spatial_anchor_query_filter" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpatialAnchorQueryFilter</compoundname>
+    <includes refid="ml__spatial__anchor_8h" local="no">ml_spatial_anchor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1ab818d679e2ad9b4106d4bdfb04f26768" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpatialAnchorQueryFilter::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>Version of the structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="327" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1a1398787bf2e117e935e1d2ba13fa7508" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLSpatialAnchorQueryFilter::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+<para>The center point of where a spatial query will originate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="332" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1a25ea75abed487e504ead90b7e23e22c7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLSpatialAnchorQueryFilter::radius_m</definition>
+        <argsstring></argsstring>
+        <name>radius_m</name>
+        <briefdescription>
+<para>The radius in meters used for a spatial query, relative to the specified center. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only anchors inside this radius will be returned. Set to 0 for unbounded results. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="339" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1aad606951f6ebfb1f6185daaf8278f910" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref> *</type>
+        <definition>const MLUUID* MLSpatialAnchorQueryFilter::ids</definition>
+        <argsstring></argsstring>
+        <name>ids</name>
+        <briefdescription>
+<para>A list of Spatial Anchor IDs to query for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="344" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1a1c1a2e7fe579a026f700f3838aea0054" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpatialAnchorQueryFilter::ids_count</definition>
+        <argsstring></argsstring>
+        <name>ids_count</name>
+        <briefdescription>
+<para>The number of IDs provided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="349" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1a648e9166bd0159fa4a246099fc8b685f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpatialAnchorQueryFilter::max_results</definition>
+        <argsstring></argsstring>
+        <name>max_results</name>
+        <briefdescription>
+<para>The upper bound of expected results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set to 0 for unbounded results. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="356" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_spatial_anchor_query_filter_1a48b4ac1691ba4cb4942b796aa4b72965" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLSpatialAnchorQueryFilter::sorted</definition>
+        <argsstring></argsstring>
+        <name>sorted</name>
+        <briefdescription>
+<para>Indicate whether the results will be returned sorted by distance from center. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sorting results by distance will incur a performance penalty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="363" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A collection of filters for Spatial Anchor queries. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Filters that have been set will be combined via logical conjunction. E.g. results must match the ids filter AND fall within the radius constraint when both have been set.</para>
+<para>This struct must be initialized by calling <ref refid="group___spatial_anchor_1ga366c74107d4e7696ea4609902d75966b" kindref="member">MLSpatialAnchorQueryFilterInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLSpatialAnchorQueryFilter</label>
+        <link refid="struct_m_l_spatial_anchor_query_filter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>center</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ids</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="3">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" line="323" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h" bodystart="323" bodyend="364"/>
+    <listofallmembers>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1a1398787bf2e117e935e1d2ba13fa7508" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>center</name></member>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1aad606951f6ebfb1f6185daaf8278f910" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>ids</name></member>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1a1c1a2e7fe579a026f700f3838aea0054" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>ids_count</name></member>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1a648e9166bd0159fa4a246099fc8b685f" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>max_results</name></member>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1a25ea75abed487e504ead90b7e23e22c7" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>radius_m</name></member>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1a48b4ac1691ba4cb4942b796aa4b72965" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>sorted</name></member>
+      <member refid="struct_m_l_spatial_anchor_query_filter_1ab818d679e2ad9b4106d4bdfb04f26768" prot="public" virt="non-virtual"><scope>MLSpatialAnchorQueryFilter</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

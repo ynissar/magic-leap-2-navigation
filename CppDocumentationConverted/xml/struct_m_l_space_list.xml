@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_list" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceList</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_list_1a6ab9e1c1975a4da98ef61fbbf7025f44" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceList::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="245" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_list_1ae1c532f2ef0452bcd980762e1c7839c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceList::space_count</definition>
+        <argsstring></argsstring>
+        <name>space_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of Magic Leap Spaces. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="247" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_list_1a3a0e1edec22b6c863867bcd19faca9dd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref> *</type>
+        <definition>MLSpace* MLSpaceList::spaces</definition>
+        <argsstring></argsstring>
+        <name>spaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of Magic Leap Spaces. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="249" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing list of <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref>. This structure must be initialized by calling <ref refid="group___space_1ga550978af81a1086eceba4e12d484e24e" kindref="member">MLSpaceListInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLSpaceList</label>
+        <link refid="struct_m_l_space_list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>spaces</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLSpace</label>
+        <link refid="struct_m_l_space"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>space_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MLUUID</label>
+        <link refid="struct_m_l_u_u_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="243" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="243" bodyend="250"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_list_1ae1c532f2ef0452bcd980762e1c7839c3" prot="public" virt="non-virtual"><scope>MLSpaceList</scope><name>space_count</name></member>
+      <member refid="struct_m_l_space_list_1a3a0e1edec22b6c863867bcd19faca9dd" prot="public" virt="non-virtual"><scope>MLSpaceList</scope><name>spaces</name></member>
+      <member refid="struct_m_l_space_list_1a6ab9e1c1975a4da98ef61fbbf7025f44" prot="public" virt="non-virtual"><scope>MLSpaceList</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

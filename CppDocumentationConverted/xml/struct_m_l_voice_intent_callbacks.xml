@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_voice_intent_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLVoiceIntentCallbacks</compoundname>
+    <includes refid="ml__voice_8h" local="no">ml_voice.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_voice_intent_callbacks_1ae40b5722c18979662015cd7f5a759a04" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLVoiceIntentCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="148" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_callbacks_1a6f3d80c07057089f8ecc5f9b26722ba0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLVoiceIntentCallbacks::on_voice_event) (const MLVoiceIntentEvent *event, void *data)</definition>
+        <argsstring>)(const MLVoiceIntentEvent *event, void *data)</argsstring>
+        <name>on_voice_event</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a voice intent event is detected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voice intent event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data as passed to <ref refid="group___input_1gaa7f88ecd8baa0dcfa5b5bde41b960fdd" kindref="member">MLVoiceIntentSetCallbacks()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="155" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing callbacks for voice intent events. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLVoiceIntentSetCallbacks. Individual callbacks which are not required by the client can be NULL.</para>
+<para>This structure must be initialized by calling <ref refid="group___input_1ga4aa987614762db01434d36b7beafaa23" kindref="member">MLVoiceIntentCallbacksInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="146" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="146" bodyend="156"/>
+    <listofallmembers>
+      <member refid="struct_m_l_voice_intent_callbacks_1a6f3d80c07057089f8ecc5f9b26722ba0" prot="public" virt="non-virtual"><scope>MLVoiceIntentCallbacks</scope><name>on_voice_event</name></member>
+      <member refid="struct_m_l_voice_intent_callbacks_1ae40b5722c18979662015cd7f5a759a04" prot="public" virt="non-virtual"><scope>MLVoiceIntentCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

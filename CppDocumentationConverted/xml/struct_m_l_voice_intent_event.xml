@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_voice_intent_event" kind="struct" language="C++" prot="public">
+    <compoundname>MLVoiceIntentEvent</compoundname>
+    <includes refid="ml__voice_8h" local="no">ml_voice.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1a4922520a9382be2b8c7486ecf4fbdc6f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLVoiceIntentEvent::is_success</definition>
+        <argsstring></argsstring>
+        <name>is_success</name>
+        <briefdescription>
+<para>Voice event handling result in the voice intent event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In case of false, other member variables should be ignored (text will be NULL). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="116" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1ae68a2722da73058b1ee8688cf26a82fc" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1ga0d608a9e6df8a2795d407440d33e005d" kindref="member">MLVoiceState</ref></type>
+        <definition>MLVoiceState MLVoiceIntentEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Voice state when generating the voice intent event. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="118" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1af3d4988aebfd8c06788c8f263ed648ed" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1gac93a8c76f3d22bb024e4685c6995dd13" kindref="member">MLVoiceIntentNoIntentReason</ref></type>
+        <definition>MLVoiceIntentNoIntentReason MLVoiceIntentEvent::no_intent_reason</definition>
+        <argsstring></argsstring>
+        <name>no_intent_reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If intent is not detected, it contains the reason, otherwise the value is MLVoiceIntentNoIntentReason_NoReason. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="121" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1aff33b9e41ca225eb2513e090cb08e723" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MLVoiceIntentEvent::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The C string carrying identifier data which is UTF-8 and null terminated. And the memory of this variable is managed by system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="124" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1a6ed84483d3c91560538d5c56ac7131a8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLVoiceIntentEvent::intent_id</definition>
+        <argsstring></argsstring>
+        <name>intent_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User defined intent index which is detected. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="126" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1a2da103a9c645e756c74b4ac374e90c18" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_input_voice_app_intent_slot" kindref="compound">MLInputVoiceAppIntentSlot</ref> *</type>
+        <definition>MLInputVoiceAppIntentSlot* MLVoiceIntentEvent::app_intent_slots</definition>
+        <argsstring></argsstring>
+        <name>app_intent_slots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of app-intent slot, array count is set in app_intent_slot_count. And the memory of this variable is managed by system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="129" column="29" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_voice_intent_event_1aaa58d71700c3b59122b3124e5e43a61b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLVoiceIntentEvent::app_intent_slot_count</definition>
+        <argsstring></argsstring>
+        <name>app_intent_slot_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count of an array app_intent_slots. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="131" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing voice intent event. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLInputVoiceAppIntentSlot</label>
+        <link refid="struct_m_l_input_voice_app_intent_slot"/>
+      </node>
+      <node id="1">
+        <label>MLVoiceIntentEvent</label>
+        <link refid="struct_m_l_voice_intent_event"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>app_intent_slots</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="110" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="110" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_m_l_voice_intent_event_1aaa58d71700c3b59122b3124e5e43a61b" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>app_intent_slot_count</name></member>
+      <member refid="struct_m_l_voice_intent_event_1a2da103a9c645e756c74b4ac374e90c18" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>app_intent_slots</name></member>
+      <member refid="struct_m_l_voice_intent_event_1a6ed84483d3c91560538d5c56ac7131a8" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>intent_id</name></member>
+      <member refid="struct_m_l_voice_intent_event_1a4922520a9382be2b8c7486ecf4fbdc6f" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>is_success</name></member>
+      <member refid="struct_m_l_voice_intent_event_1af3d4988aebfd8c06788c8f263ed648ed" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>no_intent_reason</name></member>
+      <member refid="struct_m_l_voice_intent_event_1ae68a2722da73058b1ee8688cf26a82fc" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>state</name></member>
+      <member refid="struct_m_l_voice_intent_event_1aff33b9e41ca225eb2513e090cb08e723" prot="public" virt="non-virtual"><scope>MLVoiceIntentEvent</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

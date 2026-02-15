@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__occlusion_8h" kind="file" language="C++">
+    <compoundname>ml_occlusion.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h</label>
+        <link refid="ml__occlusion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_m_l_occlusion_settings" prot="public">MLOcclusionSettings</innerclass>
+    <innerclass refid="struct_m_l_occlusion_mesh" prot="public">MLOcclusionMesh</innerclass>
+    <innerclass refid="struct_m_l_occlusion_mesh_query" prot="public">MLOcclusionMeshQuery</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___occlusion_1gabc908f6ef1dfb5556e0f6e2222813c95" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref></type>
+        <definition>typedef struct MLOcclusionSettings MLOcclusionSettings</definition>
+        <argsstring></argsstring>
+        <name>MLOcclusionSettings</name>
+        <briefdescription>
+<para>Mesh Settings for the underlying system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="57" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___occlusion_1gadc61488d096d4409733d2298f93da4d3" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref></type>
+        <definition>typedef struct MLOcclusionMesh MLOcclusionMesh</definition>
+        <argsstring></argsstring>
+        <name>MLOcclusionMesh</name>
+        <briefdescription>
+<para>Structure for occlusion mesh data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="104" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___occlusion_1ga9692e1fd34a5c76775924514d2594323" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref></type>
+        <definition>typedef struct MLOcclusionMeshQuery MLOcclusionMeshQuery</definition>
+        <argsstring></argsstring>
+        <name>MLOcclusionMeshQuery</name>
+        <briefdescription>
+<para>Structure for occlusion mesh query. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="130" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___occlusion_1gab700c727d2350d714227fd9e2db67298" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLOcclusionSettingsInit</definition>
+        <argsstring>(MLOcclusionSettings *inout_settings)</argsstring>
+        <name>MLOcclusionSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the occlusion settings with system defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial settings to be used for occlusion.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000611"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="68" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1ga55129ccd07bce4349f4014980c944844" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLOcclusionMeshInit</definition>
+        <argsstring>(MLOcclusionMesh *inout_mesh)</argsstring>
+        <name>MLOcclusionMeshInit</name>
+        <param>
+          <type><ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> *</type>
+          <declname>inout_mesh</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the occlusion mesh with system defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial mesh structure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000612"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="115" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1gaecdfef7ed0923cb61ff20e78e30272bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLOcclusionMeshQueryInit</definition>
+        <argsstring>(MLOcclusionMeshQuery *inout_mesh_query)</argsstring>
+        <name>MLOcclusionMeshQueryInit</name>
+        <param>
+          <type><ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref> *</type>
+          <declname>inout_mesh_query</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the occlusion mesh query with system defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_mesh_query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial mesh query structure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000613"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="141" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" bodystart="141" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1ga1be12f16433f201195084d3d7fd5bd07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLOcclusionCreateClient</definition>
+        <argsstring>(const MLOcclusionSettings *settings, MLHandle *out_client_handle)</argsstring>
+        <name>MLOcclusionCreateClient</name>
+        <param>
+          <type>const <ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_client_handle</declname>
+        </param>
+        <briefdescription>
+<para>Create the occlusion client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial settings to be used for occlusion. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Occlusion client was not created due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Occlusion client was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Missing required permission(s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Occlusion client was not created due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000614"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="164" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" declline="164" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1gaf0f669710fa5e91a8eb1c19ec7c983ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLOcclusionDestroyClient</definition>
+        <argsstring>(MLHandle client_handle)</argsstring>
+        <name>MLOcclusionDestroyClient</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <briefdescription>
+<para>Free the client resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Occlusion client was not destroyed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Occlusion client was destroyed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000615"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="179" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" declline="179" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1ga9c0fc3e0820308c7c0202b0a93a2c5bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLOcclusionUpdateSettings</definition>
+        <argsstring>(MLHandle handle, const MLOcclusionSettings *settings)</argsstring>
+        <name>MLOcclusionUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Update the occlusion settings at runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The updated settings to be used for occlusion.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings were not updated due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings were updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000616"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="195" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" declline="195" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1ga587477a06bf01038c6a61d9222a2284c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLOcclusionGetLatestMesh</definition>
+        <argsstring>(MLHandle handle, const MLOcclusionMeshQuery *mesh_query, MLOcclusionMesh *out_mesh_data)</argsstring>
+        <name>MLOcclusionGetLatestMesh</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref> *</type>
+          <declname>mesh_query</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> *</type>
+          <declname>out_mesh_data</declname>
+        </param>
+        <briefdescription>
+<para>Get the latest occlusion mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> with its latest data. When doing consecutive calls and there was no mesh update, the same data will be returned. The memory is owned by the system. Application should copy the data it needs to cache.</para>
+<para>Every call to <ref refid="group___occlusion_1ga587477a06bf01038c6a61d9222a2284c" kindref="member">MLOcclusionGetLatestMesh()</ref> must be followed by a matching call to <ref refid="group___occlusion_1gaa567e649b61cc2fdf29101a068126130" kindref="member">MLOcclusionReleaseMesh()</ref>, otherwise this method will return an error.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mesh_query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to intialized <ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref> struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_mesh_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to intialized <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> struct.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current mesh must be released before acquiring the next one. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh data was not returned due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh data was returned successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000617"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="220" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" declline="220" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___occlusion_1gaa567e649b61cc2fdf29101a068126130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLOcclusionReleaseMesh</definition>
+        <argsstring>(MLHandle handle, MLOcclusionMesh *mesh_data)</argsstring>
+        <name>MLOcclusionReleaseMesh</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> *</type>
+          <declname>mesh_data</declname>
+        </param>
+        <briefdescription>
+<para>Releases specified <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called exactly once for each call to <ref refid="group___occlusion_1ga587477a06bf01038c6a61d9222a2284c" kindref="member">MLOcclusionGetLatestMesh()</ref>. After a successful call, the contents of #mesh_data are no longer valid and should not be used.</para>
+<para><simplesect kind="par"><title>API Level:\n 28</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mesh_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a filled <ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref> struct.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released mesh data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000618"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" line="240" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h" declline="240" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="struct_m_l_occlusion_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="struct_m_l_occlusion_settings_1ae76585855ddfe3294b0bf36ae771a39d" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_occlusion_settings_1ae76585855ddfe3294b0bf36ae771a39d" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="51" refid="struct_m_l_occlusion_settings_1a1d142560fde066a6db4a0081bc909cdb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_occlusion_settings_1a1d142560fde066a6db4a0081bc909cdb" kindref="member">min_distance</ref>;</highlight></codeline>
+<codeline lineno="56" refid="struct_m_l_occlusion_settings_1a8b988823022f9e6a46a63012046221aa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_occlusion_settings_1a8b988823022f9e6a46a63012046221aa" kindref="member">max_distance</ref>;</highlight></codeline>
+<codeline lineno="57" refid="group___occlusion_1gabc908f6ef1dfb5556e0f6e2222813c95" refkind="member"><highlight class="normal">}<sp/><ref refid="group___occlusion_1gabc908f6ef1dfb5556e0f6e2222813c95" kindref="member">MLOcclusionSettings</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group___occlusion_1gab700c727d2350d714227fd9e2db67298" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___occlusion_1gab700c727d2350d714227fd9e2db67298" kindref="member">MLOcclusionSettingsInit</ref>(<ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref><sp/>*inout_settings)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_settings)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_settings,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref>));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_settings-&gt;<ref refid="struct_m_l_occlusion_settings_1ae76585855ddfe3294b0bf36ae771a39d" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_settings-&gt;<ref refid="struct_m_l_occlusion_settings_1a1d142560fde066a6db4a0081bc909cdb" kindref="member">min_distance</ref><sp/>=<sp/>0.3f;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_settings-&gt;<ref refid="struct_m_l_occlusion_settings_1a8b988823022f9e6a46a63012046221aa" kindref="member">max_distance</ref><sp/>=<sp/>5.f;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="struct_m_l_occlusion_mesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="84" refid="struct_m_l_occlusion_mesh_1a7a78e0800d006f0cab2f94d152118c0e" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_occlusion_mesh_1a7a78e0800d006f0cab2f94d152118c0e" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="86" refid="struct_m_l_occlusion_mesh_1a8033895ae9272b39260f8718b75aa302" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_occlusion_mesh_1a8033895ae9272b39260f8718b75aa302" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="88" refid="struct_m_l_occlusion_mesh_1ade21ae807bfb382aef60ec2e7eb37906" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_occlusion_mesh_1ade21ae807bfb382aef60ec2e7eb37906" kindref="member">index_count</ref>;</highlight></codeline>
+<codeline lineno="90" refid="struct_m_l_occlusion_mesh_1aee0068d359a4efdac7e7fc401b577ed1" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_occlusion_mesh_1aee0068d359a4efdac7e7fc401b577ed1" kindref="member">vertex_count</ref>;</highlight></codeline>
+<codeline lineno="95" refid="struct_m_l_occlusion_mesh_1a22c5a974093025a33314149374ab16c8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>*<ref refid="struct_m_l_occlusion_mesh_1a22c5a974093025a33314149374ab16c8" kindref="member">vertex</ref>;</highlight></codeline>
+<codeline lineno="103" refid="struct_m_l_occlusion_mesh_1acefd1f5ba146fecb057b46eea8799065" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/>*<ref refid="struct_m_l_occlusion_mesh_1acefd1f5ba146fecb057b46eea8799065" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="104" refid="group___occlusion_1gadc61488d096d4409733d2298f93da4d3" refkind="member"><highlight class="normal">}<sp/><ref refid="group___occlusion_1gadc61488d096d4409733d2298f93da4d3" kindref="member">MLOcclusionMesh</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="group___occlusion_1ga55129ccd07bce4349f4014980c944844" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___occlusion_1ga55129ccd07bce4349f4014980c944844" kindref="member">MLOcclusionMeshInit</ref>(<ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref><sp/>*inout_mesh)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_mesh)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_mesh,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref>));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_mesh-&gt;<ref refid="struct_m_l_occlusion_mesh_1a7a78e0800d006f0cab2f94d152118c0e" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="struct_m_l_occlusion_mesh_query" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref><sp/>{</highlight></codeline>
+<codeline lineno="129" refid="struct_m_l_occlusion_mesh_query_1a1e2819d8fabb588276010e0330938b70" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_occlusion_mesh_query_1a1e2819d8fabb588276010e0330938b70" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="130" refid="group___occlusion_1ga9692e1fd34a5c76775924514d2594323" refkind="member"><highlight class="normal">}<sp/><ref refid="group___occlusion_1ga9692e1fd34a5c76775924514d2594323" kindref="member">MLOcclusionMeshQuery</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="group___occlusion_1gaecdfef7ed0923cb61ff20e78e30272bb" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___occlusion_1gaecdfef7ed0923cb61ff20e78e30272bb" kindref="member">MLOcclusionMeshQueryInit</ref>(<ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref><sp/>*inout_mesh_query)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_mesh_query)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_mesh_query,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref>));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_mesh_query-&gt;<ref refid="struct_m_l_occlusion_mesh_query_1a1e2819d8fabb588276010e0330938b70" kindref="member">version</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="group___occlusion_1ga1be12f16433f201195084d3d7fd5bd07" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___occlusion_1ga1be12f16433f201195084d3d7fd5bd07" kindref="member">MLOcclusionCreateClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref><sp/>*settings,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*out_client_handle);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="group___occlusion_1gaf0f669710fa5e91a8eb1c19ec7c983ec" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___occlusion_1gaf0f669710fa5e91a8eb1c19ec7c983ec" kindref="member">MLOcclusionDestroyClient</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="group___occlusion_1ga9c0fc3e0820308c7c0202b0a93a2c5bb" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___occlusion_1ga9c0fc3e0820308c7c0202b0a93a2c5bb" kindref="member">MLOcclusionUpdateSettings</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_occlusion_settings" kindref="compound">MLOcclusionSettings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="group___occlusion_1ga587477a06bf01038c6a61d9222a2284c" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___occlusion_1ga587477a06bf01038c6a61d9222a2284c" kindref="member">MLOcclusionGetLatestMesh</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_occlusion_mesh_query" kindref="compound">MLOcclusionMeshQuery</ref>*<sp/>mesh_query,<sp/><ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref><sp/>*out_mesh_data);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="group___occlusion_1gaa567e649b61cc2fdf29101a068126130" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___occlusion_1gaa567e649b61cc2fdf29101a068126130" kindref="member">MLOcclusionReleaseMesh</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="struct_m_l_occlusion_mesh" kindref="compound">MLOcclusionMesh</ref><sp/>*mesh_data);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h"/>
+  </compounddef>
+</doxygen>

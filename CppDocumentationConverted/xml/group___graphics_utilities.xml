@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___graphics_utilities" kind="group">
+    <compoundname>GraphicsUtilities</compoundname>
+    <title>Graphics Utilities</title>
+    <innerclass refid="struct_m_l_meshing_virtual_camera_buffer_info" prot="public">MLMeshingVirtualCameraBufferInfo</innerclass>
+    <innerclass refid="struct_m_l_meshing_depth_buffer_info" prot="public">MLMeshingDepthBufferInfo</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___graphics_utilities_1ga31f4515e2be75aa3abdce0ba3afb896e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMeshingPopulateDepthFlags</name>
+        <enumvalue id="group___graphics_utilities_1gga31f4515e2be75aa3abdce0ba3afb896ea1ad5da91440f42a94b13148f3dffa2da" prot="public">
+          <name>MLMeshingPopulateDepthFlags_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_utilities_1gga31f4515e2be75aa3abdce0ba3afb896eaa0069d8feab8f71c0adedf21239dd03e" prot="public">
+          <name>MLMeshingPopulateDepthFlags_EnableVisualization</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, will fill the color buffer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_utilities_1gga31f4515e2be75aa3abdce0ba3afb896eabed4554589cf95d7d80902b0048ca0ec" prot="public">
+          <name>MLMeshingPopulateDepthFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags for <ref refid="struct_m_l_meshing_depth_buffer_info" kindref="compound">MLMeshingDepthBufferInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000047"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="45" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___graphics_utilities_1gaa594c5b5994d1f58bce920626e12860a" prot="public" static="no">
+        <type>enum <ref refid="group___graphics_utilities_1ga31f4515e2be75aa3abdce0ba3afb896e" kindref="member">MLMeshingPopulateDepthFlags</ref></type>
+        <definition>typedef enum MLMeshingPopulateDepthFlags MLMeshingPopulateDepthFlags</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingPopulateDepthFlags</name>
+        <briefdescription>
+<para>Flags for <ref refid="struct_m_l_meshing_depth_buffer_info" kindref="compound">MLMeshingDepthBufferInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000047"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="52" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_utilities_1ga8a93c58f8e4cf86203deb448f2a19618" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_virtual_camera_buffer_info" kindref="compound">MLMeshingVirtualCameraBufferInfo</ref></type>
+        <definition>typedef struct MLMeshingVirtualCameraBufferInfo MLMeshingVirtualCameraBufferInfo</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingVirtualCameraBufferInfo</name>
+        <briefdescription>
+<para>Per virtual camera information needed to render depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000049"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="102" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_utilities_1ga6f02429f6773212be655be801869f774" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_depth_buffer_info" kindref="compound">MLMeshingDepthBufferInfo</ref></type>
+        <definition>typedef struct MLMeshingDepthBufferInfo MLMeshingDepthBufferInfo</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingDepthBufferInfo</name>
+        <briefdescription>
+<para>To be passed to PopulateDepth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000050"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="127" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___graphics_utilities_1ga5509101aff8563455f8d61fdfecd4f36" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsImportedMediaSurface</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsImportedMediaSurface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="89" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_utilities_1ga513dbde66ee2100e5ff6184a661db379" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* out_extension_property_count</definition>
+        <argsstring></argsstring>
+        <name>out_extension_property_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="148" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_utilities_1gaa92e9f283c4390cd294e1bb2fe09d5cd" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t media_handle</definition>
+        <argsstring></argsstring>
+        <name>media_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="170" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_utilities_1ga4331f906cd6f8d6c164623d2db5a4c6b" prot="public" static="no" mutable="no">
+        <type>uint64_t <ref refid="group___graphics_utilities_1ga5509101aff8563455f8d61fdfecd4f36" kindref="member">MLGraphicsImportedMediaSurface</ref> *</type>
+        <definition>uint64_t MLGraphicsImportedMediaSurface* out_imported_surface_info</definition>
+        <argsstring></argsstring>
+        <name>out_imported_surface_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="170" column="69" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___graphics_utilities_1gad6feebe7c24c843d6ba0568a2ea47434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsImportedMediaSurface</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use OpenXR APIs.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Handles to and information about an imported surface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Import a surface as a VkImage from a media api handle.</para>
+<para>Returns a list of required VkDevice extension names.</para>
+<para><xrefsect id="deprecated_1_deprecated000048"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Populated by #MLGraphicsImportVkImageFromMediaHandle. Provides all information, necessary for creating a VkImageView and VkSampler for the imported surface.</para>
+<para>Refer to the Vulkan specification&apos;s equivalent parameters in VkAndroidHardwareBufferFormatPropertiesANDROID. Also refer to usage of VkExternalFormatANDROID and VkSamplerYcbcrConversionCreateInfo.</para>
+<para><xrefsect id="deprecated_1_deprecated000051"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>If out_required_extension_properties is NULL then the number of required extension is returned in out_extension_property_count. Otherwise, out_extension_property_count must point to a variable set to the number of elements in the out_required_extension_properties array, and on return the variable is overwritten with the number of strings actually written to out_required_extension_properties.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_required_extension_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either NULL or a pointer to an array of VkExtensionProperties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_extension_property_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an integer related to the number of extensions required or queried.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of extensions or number of required extensions was returned successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000311"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000052"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Creates VkImage and VkDeviceMemory objects refrencing a surface referred to by a handle obtained from a media API. The resulting image will be owned by the VkDevice provided.This VkDevice must be created with the extensions specified by MLGraphicsEnumerateRequiredVkDeviceExtensionsForMediaHandleImport enabled. This call does not depend on a Graphics Client and can be used independent of other graphics APIs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vulkan_logical_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Vulkan logical device to use for resource creation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">media_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The media api handle referring to the surface to import. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_imported_surface_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A struct containing the resulting resource handles and information for sampler creation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Import was not performed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Surface was imported successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Import was not performed due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000312"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>The VkImage bound to the imported surface.</para>
+<para>The VkDevice memory representing the imported surface.</para>
+<para>The Vulkan format corresponding to the imported surface’s format, or VK_FORMAT_UNDEFINED if there isn’t an equivalent Vulkan format.</para>
+<para>An implementation-defined external format identifier for use with VkExternalFormatANDROID.</para>
+<para>Describes the capabilities of this external format.</para>
+<para>The component swizzle that should be used in VkSamplerYcbcrConversionCreateInfo.</para>
+<para>Suggested color model to use in the VkSamplerYcbcrConversionCreateInfo.</para>
+<para>Suggested numerical value range to use in VkSamplerYcbcrConversionCreateInfo.</para>
+<para>Suggested X chroma offset to use in VkSamplerYcbcrConversionCreateInfo.</para>
+<para>Suggested Y chroma offset to use in VkSamplerYcbcrConversionCreateInfo.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="65" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" bodystart="65" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_utilities_1gacde005f762f87954e333465eed005261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingPopulateDepth</definition>
+        <argsstring>(MLHandle client_handle, const MLMeshingDepthBufferInfo *info, const MLMeshingMesh *meshes)</argsstring>
+        <name>MLMeshingPopulateDepth</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_meshing_depth_buffer_info" kindref="compound">MLMeshingDepthBufferInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref> *</type>
+          <declname>meshes</declname>
+        </param>
+        <briefdescription>
+<para>Populates the depth buffer (passed as a Texture2D array) with the meshes given by a user. It has to be called after MLGraphicsBeginFrame which provides the handles for the depth/color buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000053"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The per virtual camera info for rendering depth. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meshes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The meshes for which the depth info needs to be populated.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth buffers were not populated due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth buffer was populated successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000313"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" line="189" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h" declline="189" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Optional graphics utility functionality. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n graphics_utils.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="warning"><para>THIS API IS DEPRECATED IN FAVOR OF OPENXR APIs: <ulink url="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html">https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html</ulink></para>
+</simplesect>
+<itemizedlist>
+<listitem><para>The graphics utility library is not necessary to create an application using the ML SDK. It contains a collection of useful code that can optionally be used to make development easier.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="attention"><para>EXPERIMENTAL. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___audio" kind="group">
+    <compoundname>Audio</compoundname>
+    <title>Audio</title>
+    <innergroup refid="group___audio_defs">Audio Definitions</innergroup>
+    <briefdescription>
+<para>APIs for the Audio Service. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n audio.magicleap</title><para></para>
+</simplesect>
+The Audio Service supports audio input (capture) and audio output (render).</para>
+<para>The audio capture capabilities of the Audio Service include capturing:</para>
+<para><itemizedlist>
+<listitem><para>Mono mic signal focused on the user&apos;s voice (Voice Comm &amp; Voice Capture).</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>Stereo mic signal of the ambient environment (World Capture).</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>Stereo mix of the audio output currently being rendered (Virtual Capture).</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>Six-channel mix of unprocessed raw mic data (Raw Mics &amp; AEC Reference).</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>Mix of voice capture, world capture and virtual capture (Mixed Capture).</para>
+</listitem>
+</itemizedlist>
+To initiate a capture input, the client allocates an &apos;input&apos; using one of the create functions, followed by a &apos;start&apos; call to initiate the input. The audio input streaming can be accomplished either by polling or callbacks.</para>
+<para>The audio render capabilities for the Audio Service include rendering:</para>
+<para><itemizedlist>
+<listitem><para>An audio file fully loaded into memory (Loaded File).</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>An audio file streamed from flash memory in chunks (Streamed File).</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>A buffered stream of audio output (Buffered Output).</para>
+</listitem>
+</itemizedlist>
+To initiate a render output, the client allocates a &apos;sound&apos; using one of the create functions, followed by a &apos;start&apos; call to play the audio. For the first two rendering options, the audio file can either be passed to the create function of a specific sound, or pre-loaded as a persistent &apos;resource&apos; to be used by multiple sounds that get created and destroyed. For the third rendering option, buffered streaming can be accomplished either by polling or callbacks. For sounds where audio spatialization is desired, the client must enable &apos;spatial sound&apos; for that sound and set its position along with other optional spatial sound parameters. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

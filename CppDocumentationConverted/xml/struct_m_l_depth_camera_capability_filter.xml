@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_depth_camera_capability_filter" kind="struct" language="C++" prot="public">
+    <compoundname>MLDepthCameraCapabilityFilter</compoundname>
+    <includes refid="ml__depth__camera_8h" local="no">ml_depth_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_depth_camera_capability_filter_1af5aaa986087d4d6c21eb9ac98720a2eb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraCapabilityFilter::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="518" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_capability_filter_1aa13f4abec7be05fa51d60ab01c6d4e39" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraCapabilityFilter::streams</definition>
+        <argsstring></argsstring>
+        <name>streams</name>
+        <briefdescription>
+<para>Streams for which capabilities will be filtered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can hold multiple <ref refid="group___d_cam_1ga80cd3148e1f2cb24ed2e90f0bab9fb1c" kindref="member">MLDepthCameraStream</ref> values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="524" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to encapsulate camera capabilities filtering. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The capabilities supported by the depth camera can be queried with <ref refid="group___d_cam_1gaf68bfbf8b5b1bcee305f026a7de4db6d" kindref="member">MLDepthCameraGetCapabilities()</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="516" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="516" bodyend="525"/>
+    <listofallmembers>
+      <member refid="struct_m_l_depth_camera_capability_filter_1aa13f4abec7be05fa51d60ab01c6d4e39" prot="public" virt="non-virtual"><scope>MLDepthCameraCapabilityFilter</scope><name>streams</name></member>
+      <member refid="struct_m_l_depth_camera_capability_filter_1af5aaa986087d4d6c21eb9ac98720a2eb" prot="public" virt="non-virtual"><scope>MLDepthCameraCapabilityFilter</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

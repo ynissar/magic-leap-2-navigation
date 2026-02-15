@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_depth_camera_frame_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>MLDepthCameraFrameBuffer</compoundname>
+    <includes refid="ml__depth__camera_8h" local="no">ml_depth_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_buffer_1a016693e18bc72266c787e2935a1f7e6a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraFrameBuffer::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the buffer in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="312" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_buffer_1a414e0055e3f8500337c77593f1503d62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraFrameBuffer::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the buffer in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="314" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_buffer_1a3ead86efc053f4b4ec12db502001a960" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraFrameBuffer::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stride of the buffer in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="316" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_buffer_1ae34bbbc58f03ac4d19292777568ac22d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraFrameBuffer::bytes_per_unit</definition>
+        <argsstring></argsstring>
+        <name>bytes_per_unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes used to represent a single value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="318" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_buffer_1aed490ccb75667708730a8764186f04f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLDepthCameraFrameBuffer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes in the buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="320" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MLDepthCameraFrameBuffer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="322" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to encapsulate per plane info for each camera frame. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" line="310" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h" bodystart="310" bodyend="323"/>
+    <listofallmembers>
+      <member refid="struct_m_l_depth_camera_frame_buffer_1ae34bbbc58f03ac4d19292777568ac22d" prot="public" virt="non-virtual"><scope>MLDepthCameraFrameBuffer</scope><name>bytes_per_unit</name></member>
+      <member refid="struct_m_l_depth_camera_frame_buffer_1a8d55c836a2538f92d48beaaee6edcda8" prot="public" virt="non-virtual"><scope>MLDepthCameraFrameBuffer</scope><name>data</name></member>
+      <member refid="struct_m_l_depth_camera_frame_buffer_1a414e0055e3f8500337c77593f1503d62" prot="public" virt="non-virtual"><scope>MLDepthCameraFrameBuffer</scope><name>height</name></member>
+      <member refid="struct_m_l_depth_camera_frame_buffer_1aed490ccb75667708730a8764186f04f2" prot="public" virt="non-virtual"><scope>MLDepthCameraFrameBuffer</scope><name>size</name></member>
+      <member refid="struct_m_l_depth_camera_frame_buffer_1a3ead86efc053f4b4ec12db502001a960" prot="public" virt="non-virtual"><scope>MLDepthCameraFrameBuffer</scope><name>stride</name></member>
+      <member refid="struct_m_l_depth_camera_frame_buffer_1a016693e18bc72266c787e2935a1f7e6a" prot="public" virt="non-virtual"><scope>MLDepthCameraFrameBuffer</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

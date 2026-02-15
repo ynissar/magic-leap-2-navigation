@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_input_controller_state_ex" kind="struct" language="C++" prot="public">
+    <compoundname>MLInputControllerStateEx</compoundname>
+    <includes refid="ml__input_8h" local="no">ml_input.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1aafae5595e9ece78337f5ae964314a6b5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLInputControllerStateEx::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="382" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1ada8dc707e0c6858018abdb1d49ce2142" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1ga147431fbf325e7146705a8d46dded5a2" kindref="member">MLInputControllerType</ref></type>
+        <definition>MLInputControllerType MLInputControllerStateEx::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of this controller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="384" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a7eca9e0c754661d69be69afb9bd66687" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1gae58ff4e595b9c2d633f36f46d594dc6a" kindref="member">MLInputControllerHand</ref></type>
+        <definition>MLInputControllerHand MLInputControllerStateEx::hand</definition>
+        <argsstring></argsstring>
+        <name>hand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controller holding hand. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="386" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1acfcafdb64e980f092165083adaa9cf69" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLInputControllerStateEx::touch_pos_and_force[MLInput_MaxControllerTouchpadTouches]</definition>
+        <argsstring>[MLInput_MaxControllerTouchpadTouches]</argsstring>
+        <name>touch_pos_and_force</name>
+        <briefdescription>
+<para>Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="391" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a3d8134e765cc5c59773f5fc4eae70ef1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLInputControllerStateEx::trigger_normalized</definition>
+        <argsstring></argsstring>
+        <name>trigger_normalized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalized trigger value [0.0,1.0]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="393" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a652baac4222b674d8de6f4d7653cab81" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLInputControllerStateEx::button_state[MLInputControllerButton_Count]</definition>
+        <argsstring>[MLInputControllerButton_Count]</argsstring>
+        <name>button_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Button states. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="395" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a3846a68968915e41af7b0018f6f5e1d6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLInputControllerStateEx::is_touch_active[MLInput_MaxControllerTouchpadTouches]</definition>
+        <argsstring>[MLInput_MaxControllerTouchpadTouches]</argsstring>
+        <name>is_touch_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this controller&apos;s touch is active. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="397" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a79e4aa02d0d2cfe3a27190db7adb05be" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLInputControllerStateEx::is_connected</definition>
+        <argsstring></argsstring>
+        <name>is_connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this controller is connected. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="399" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a3a053765dfd6abc388c6ea959b7e9bcb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_input_controller_touchpad_gesture" kindref="compound">MLInputControllerTouchpadGesture</ref></type>
+        <definition>MLInputControllerTouchpadGesture MLInputControllerStateEx::touchpad_gesture</definition>
+        <argsstring></argsstring>
+        <name>touchpad_gesture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current touchpad gesture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="401" column="36" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1a074c7922737e8e0c233ce592eceff40e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1ga0196579e696d41a6270b087f8d62721a" kindref="member">MLInputControllerTouchpadGestureState</ref></type>
+        <definition>MLInputControllerTouchpadGestureState MLInputControllerStateEx::touchpad_gesture_state</definition>
+        <argsstring></argsstring>
+        <name>touchpad_gesture_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current touchpad gesture state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="403" column="41" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_state_ex_1aa56e61d250b3c3c6c1978d1efccd7b35" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLInputControllerStateEx::hardware_index</definition>
+        <argsstring></argsstring>
+        <name>hardware_index</name>
+        <briefdescription>
+<para>Hardware index of this controller. For ML2 physical controller this value will always be 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="408" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the current state of an input controller. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="3">
+        <label>MLInputControllerTouchpadGesture</label>
+        <link refid="struct_m_l_input_controller_touchpad_gesture"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pos_and_force</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLInputControllerStateEx</label>
+        <link refid="struct_m_l_input_controller_state_ex"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>touch_pos_and_force</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>touchpad_gesture</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="380" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="380" bodyend="409"/>
+    <listofallmembers>
+      <member refid="struct_m_l_input_controller_state_ex_1a652baac4222b674d8de6f4d7653cab81" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>button_state</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1a7eca9e0c754661d69be69afb9bd66687" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>hand</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1aa56e61d250b3c3c6c1978d1efccd7b35" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>hardware_index</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1a79e4aa02d0d2cfe3a27190db7adb05be" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>is_connected</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1a3846a68968915e41af7b0018f6f5e1d6" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>is_touch_active</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1acfcafdb64e980f092165083adaa9cf69" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>touch_pos_and_force</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1a3a053765dfd6abc388c6ea959b7e9bcb" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>touchpad_gesture</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1a074c7922737e8e0c233ce592eceff40e" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>touchpad_gesture_state</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1a3d8134e765cc5c59773f5fc4eae70ef1" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>trigger_normalized</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1ada8dc707e0c6858018abdb1d49ce2142" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>type</name></member>
+      <member refid="struct_m_l_input_controller_state_ex_1aafae5595e9ece78337f5ae964314a6b5" prot="public" virt="non-virtual"><scope>MLInputControllerStateEx</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

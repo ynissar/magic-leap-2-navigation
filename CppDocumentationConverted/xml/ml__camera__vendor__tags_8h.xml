@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__camera__vendor__tags_8h" kind="file" language="C++">
+    <compoundname>ml_camera_vendor_tags.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a44fcebffd91675840a40f3da5633213b" prot="public" static="no">
+        <name>ML_CONTROL_CAMERA_FORCEAPPLY_MODE</name>
+        <initializer>0x80000000</initializer>
+        <briefdescription>
+<para>Definition of metadata tags for MagicLeap specific extensions to Camera Metadata. The metadata tags can be used with NDK apis to get and set camera metadata. The NDK apis lack the functionality to query metadata tag from name, which makes it difficult to work with vendor tags without having these definitions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Three Camera Devices are supported: Camera Id 0, Camera Id 1, Camera Id 3. Camera Id 0 and 1 support Camera_Only capture. Camera Id 3 supports Mixed_Reality capture, Virtual_Only capture, Camera_Only capture. Camera Id 0 and Camera Id 1 support a total of 3 streams. Streams are dynamically allocated between Camera Id 0 and Camera Id 1. Camera Id 0 and Camera Id 3 are conflicting devices, a higher priority application using Camera Id 3 will evict client using Camera Id 0. Camera Id 3(Mixed Reality Camera) only supports 1 stream. All the cameras are back cameras (LENS_FACING_BACK) and there are no front cameras. On ML2 Camera has landscape orientation and Display has portrait orientation, the applications should not try to match preview aspect ratio and display aspect ratio. When using Manual exposure mode, applications can expect a delay of 3-4 frames between application issuing a request and receiving the result with manual exposure parameters applied for the request because of latencies in configuring sensor on wearable. On ML2 a custom scene mode (Medical - 100) is implemented for the Operation theater environment (high intensity lights). The application can set the scene mode using standard tag (CONTROL_SCENE_MODE).</para>
+<para>Tags for camera id 0 and camera id 1</para>
+<para>ML_CONTROL_CAMERA_FORCEAPPLY_MODE can be used to force apply camera settings. Camera Id 0 and Camera Id 1 share the same camera hardware resources. It is recommended that applications try to use as much as possible the default template metadata otherwise metadata properties from one camera can affect the other. When both cameras are streaming, request metadata settings for both cameras are merged and then applied. While merging, the metadata settings from Camera Id 0 take precedence over Camera Id 1. The Force Apply mode setting can be used to override this. If Camera Id 1 Request metadata has force apply mode on, the Camera Id 1 metadata settings take precedence over Camera Id 0 properties. The tag is available in both Capture Request and Capture Result metadata. The tag has data type int32 and can be set to 1 to force apply the camera settings. The name for this tag is &quot;com.amd.control.forceapply&quot; which can be used with android java camera API. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="48" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1af49ff0099e4c1649373727ee40659fb2" prot="public" static="no">
+        <name>ML_CONTROL_CAMERA_EFFECT_MODE</name>
+        <initializer>0x80000002</initializer>
+        <briefdescription>
+<para>ML_CONTROL_CAMERA_EFFECT_MODE can be used to configure special effects. The tag is available in both Capture Request and Capture Result metadata. The tag has data type uint8 and can be set to the following values for configuring effect modes: 0 - Off, 1 - Grayscale, 2 - Negative, 3 - Sepia, 4 - Color Selection, 5 - Sharpen, 6 - Emboss, 7 - Sketch. The name for this tag is &quot;com.amd.control.effectmode&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="57" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a1c534a594872c57218ca71f78e2c2336" prot="public" static="no">
+        <name>ML_CONTROL_CAMERA_APP_EXPOSURE_UPPER_TIME_LIMIT</name>
+        <initializer>0x80000004</initializer>
+        <briefdescription>
+<para>ML_CONTROL_CAMERA_APP_EXPOSURE_UPPER_TIME_LIMIT can be used to limit the max exposure time selected by auto exposure algorithm. The tag can be used to limit exposure time in a high motion environment to reduce motion blur. The auto exposure algorithm uses max time of 16ms/20ms in 60Hz/50Hz env, any value less than 16ms/20ms can be used. The tag is available in both Capture Request and Capture Result metadata. The tag has data type int64 and can be used to set max exposure time in nanoseconds. The name for this tag is &quot;com.amd.control.app_exposure_time_upper_limit&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="67" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a3f1234e73fd7e09f6e3e7676b1457739" prot="public" static="no">
+        <name>ML_CONTROL_CAMERA_MLTIME_TIMESTAMPS</name>
+        <initializer>0x8000000B</initializer>
+        <briefdescription>
+<para>ML_CONTROL_CAMERA_MLTIME_TIMESTAMPS can be used to query MLTime timestamps. The tag can be used to query MLTime timestamps and can be used for synchronizing with other data like head pose which has MLTime timestamps. The tag is available in Capture Result metadata. The tag has data type int64 and returns an array of 4 timestamps [StartOfFrameTransfer, CentreOfExposure, EndOfFrameTransfer, ExternalCameraSync]. StartOfFrameTransfer, EndOfFrameTransfer, ExternalCameraSync are not useful for applications. The CentreOfExposure timestamp can be used for synchronizing with other data that has MLTime timestamps. MLTimeConvertMLTimeToSystemTime API can be used to convert MLTime to System Time. The name for this tag is &quot;com.amd.control.cvip_timestamps&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="79" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a60c5ac89a577773b82faa3d31dd5462e" prot="public" static="no">
+        <name>ML_CONTROL_CAMERA_NUM_INTRINSICS</name>
+        <initializer>0x8000001B</initializer>
+        <briefdescription>
+<para>ML_CONTROL_CAMERA_NUM_INTRINSICS can be used to query no. of camera intrinsics in Capture Result Metadata. The tag can be used to query no. of intrinsics which is the no. of streams configured for camera. The tag is available in Capture Result metadata. The tag has data type int32. The name for this tag is &quot;com.amd.control.num_intrinsics&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="88" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a12f0d04a404de3cbfbb7270cb05ec7f8" prot="public" static="no">
+        <name>ML_CONTROL_CAMERA_INTRINSICS</name>
+        <initializer>0x8000001C</initializer>
+        <briefdescription>
+<para>ML_CONTROL_CAMERA_INTRINSICS can be used to query the camera intrinsics in Capture Result Metadata. The tag can be used to query intrinsics for camera. The tag is available in Capture Result metadata. The tag has data type float and returns an array of floats which can be interpreted as: num_intrinsics * {width, height, focal_length_x, focal_length_y, principal_point_x, principal_point_y, field_of_view, k1, k2, p1, p2, k3}. The name for this tag is &quot;com.amd.control.intrinsics&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="98" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1af17e69b59ba0c449a426bd925d4e37d6" prot="public" static="no">
+        <name>ML_CONTROL_MRCAMERA_TINT</name>
+        <initializer>0x80000103</initializer>
+        <briefdescription>
+<para>ML_CONTROL_MRCAMERA_TINT can be used to control tint for virtual and camera frames composition. The tag is available in Capture Request and Capture Result metadata. The tag has data type float and can be set between 0.0 to 1.0 to control the tint of mixed reality content. The name for this tag is &quot;com.ml.control.tint&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tags for camera id 3 (Mixed Reality Capture) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="108" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a0cbdb20715f07398c173c44515d3bf03" prot="public" static="no">
+        <name>ML_CONTROL_MRCAMERA_ALPHA_BIAS</name>
+        <initializer>0x80000104</initializer>
+        <briefdescription>
+<para>ML_CONTROL_MRCAMERA_ALPHA_BIAS can be used to control alpha for virtual and camera frames composition. The tag is available in Capture Request and Capture Result metadata. The tag has data type float and can be set between -1.0 to 1.0 to control the opacity/transparency of virtual content. The name for this tag is &quot;com.ml.control.alpha_bias&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="116" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a867c37d657319895a6d83f921d6e8233" prot="public" static="no">
+        <name>ML_CONTROL_MRCAMERA_CAPTURE_MODE</name>
+        <initializer>0x80000105</initializer>
+        <briefdescription>
+<para>ML_CONTROL_MRCAMERA_CAPTURE_MODE can be used to set the capture mode for mixed reality capture. The tag is available in Capture Request and Capture Result metadata. The tag has data type uint8_t and can be set to 0 for Mixed_Reality capture, 1 for Virtual_Only capture, 2 for Camera_Only capture. The name for this tag is &quot;com.ml.control.capture_mode&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="124" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a38fb164d5216c1705fec39c4af29bb33" prot="public" static="no">
+        <name>ML_CONTROL_MRCAMERA_MLTIME_TIMESTAMPS</name>
+        <initializer>0x80000106</initializer>
+        <briefdescription>
+<para>ML_CONTROL_MRCAMERA_MLTIME_TIMESTAMPS can be used to query MLTime timestamps. The tag can be used to query MLTime timestamps and can be used for synchronizing with other data like head pose which has MLTime timestamps. The tag is available in Capture Result metadata. The tag has data type int64 and returns an array of 4 timestamps [StartOfFrameTransfer, CentreOfExposure, EndOfFrameTransfer, ExternalCameraSync]. StartOfFrameTransfer, EndOfFrameTransfer, ExternalCameraSync are not useful for applications. The CentreOfExposure timestamp can be used for synchronizing with other data that has MLTime timestamps. MLTimeConvertMLTimeToSystemTime API can be used to convert MLTime to System Time. The name for this tag is &quot;com.ml.control.cvip_timestamps&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="136" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a2db1ee89b8306f4460a3065e84c110fd" prot="public" static="no">
+        <name>ML_CONTROL_MRCAMERA_NUM_INTRINSICS</name>
+        <initializer>0x80000112</initializer>
+        <briefdescription>
+<para>ML_CONTROL_MRCAMERA_NUM_INTRINSICS can be used to query no. of camera intrinsics in Capture Result Metadata. The tag can be used to query no. of intrinsics which is the no. of streams configured for camera. The tag is available in Capture Result metadata. The tag has data type int32. The name for this tag is &quot;com.ml.control.num_intrinsics&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="145" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__camera__vendor__tags_8h_1a099c9916025a3f76999ec4cd9b23f3a2" prot="public" static="no">
+        <name>ML_CONTROL_MRCAMERA_INTRINSICS</name>
+        <initializer>0x80000113</initializer>
+        <briefdescription>
+<para>ML_CONTROL_MRCAMERA_INTRINSICS can be used to query the camera intrinsics in Capture Result Metadata. The tag can be used to query intrinsics for camera. The tag is available in Capture Result metadata. The tag has data type float and returns an array of floats which can be interpreted as: num_intrinsics * {width, height, focal_length_x, focal_length_y, principal_point_x, principal_point_y, field_of_view, k1, k2, p1, p2, k3}. The name for this tag is &quot;com.ml.control.intrinsics&quot; which can be used with android java camera API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" line="155" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="ml__camera__vendor__tags_8h_1a44fcebffd91675840a40f3da5633213b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_CAMERA_FORCEAPPLY_MODE<sp/>0x80000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="ml__camera__vendor__tags_8h_1af49ff0099e4c1649373727ee40659fb2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_CAMERA_EFFECT_MODE<sp/>0x80000002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="ml__camera__vendor__tags_8h_1a1c534a594872c57218ca71f78e2c2336" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_CAMERA_APP_EXPOSURE_UPPER_TIME_LIMIT<sp/>0x80000004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="ml__camera__vendor__tags_8h_1a3f1234e73fd7e09f6e3e7676b1457739" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_CAMERA_MLTIME_TIMESTAMPS<sp/>0x8000000B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="ml__camera__vendor__tags_8h_1a60c5ac89a577773b82faa3d31dd5462e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_CAMERA_NUM_INTRINSICS<sp/>0x8000001B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="ml__camera__vendor__tags_8h_1a12f0d04a404de3cbfbb7270cb05ec7f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_CAMERA_INTRINSICS<sp/>0x8000001C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="ml__camera__vendor__tags_8h_1af17e69b59ba0c449a426bd925d4e37d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_MRCAMERA_TINT<sp/>0x80000103</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="ml__camera__vendor__tags_8h_1a0cbdb20715f07398c173c44515d3bf03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_MRCAMERA_ALPHA_BIAS<sp/>0x80000104</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="ml__camera__vendor__tags_8h_1a867c37d657319895a6d83f921d6e8233" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_MRCAMERA_CAPTURE_MODE<sp/>0x80000105</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="ml__camera__vendor__tags_8h_1a38fb164d5216c1705fec39c4af29bb33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_MRCAMERA_MLTIME_TIMESTAMPS<sp/>0x80000106</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="ml__camera__vendor__tags_8h_1a2db1ee89b8306f4460a3065e84c110fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_MRCAMERA_NUM_INTRINSICS<sp/>0x80000112</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="ml__camera__vendor__tags_8h_1a099c9916025a3f76999ec4cd9b23f3a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CONTROL_MRCAMERA_INTRINSICS<sp/>0x80000113</highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_vendor_tags.h"/>
+  </compounddef>
+</doxygen>

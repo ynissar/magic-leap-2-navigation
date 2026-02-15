@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_input_custom_haptics" kind="struct" language="C++" prot="public">
+    <compoundname>MLInputCustomHaptics</compoundname>
+    <includes refid="ml__input_8h" local="no">ml_input.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_input_custom_haptics_1a1010dc19515deb41626b95a72e04af3c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1gae27aef07c1fc1b92389d025b500b88ca" kindref="member">MLInputCustomHapticsType</ref></type>
+        <definition>MLInputCustomHapticsType MLInputCustomHaptics::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the pattern to be set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="536" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_custom_haptics_1a3390e09a1179d966aa0fc12eea3c15dd" prot="public" static="no" mutable="no">
+        <type>union MLInputCustomHaptics::@15</type>
+        <definition>union MLInputCustomHaptics::@15 MLInputCustomHaptics::MLInputCustomHapticsPattern</definition>
+        <argsstring></argsstring>
+        <name>MLInputCustomHapticsPattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Either buzz command or pre-defined pattern. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="541" column="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_custom_haptics_1aa906e59e6b0462481e3457404172a7e3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLInputCustomHaptics::duration_ms</definition>
+        <argsstring></argsstring>
+        <name>duration_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration of the pattern in millisecond (ms). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="543" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the Buzz command and/or pre-defined pattern to be played. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. A <ref refid="group___input_1ga252f2fe2010b06e9970229e8d2791aca" kindref="member">MLInputCustomHapticsType</ref> should be set while initializing the struct to indicate whether the to-be set pattern is a buzz command or a pre-defined pattern.</para>
+<para>The #duration will set the time for which a pattern is played:<itemizedlist>
+<listitem><para>If the inherited duration of a pre-defined pattern is greater, then it will be cut short and the next pattern will start playing.</para>
+</listitem><listitem><para>If the inherited duration of a pre-defined pattern is smaller, then it will not repeat itself and will wait for the #duration to complete before starting to play the next pattern.</para>
+</listitem><listitem><para>Buzz command&apos;s duration will supersede the #duration. Above caveat is true in case buzz command&apos;s duration is smaller.</para>
+</listitem><listitem><para>The last pattern of the array will continue playing even if the inherited duration is longer than #duration unless the pattern is interrupted by another pattern in the pipeline. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="534" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="534" bodyend="544"/>
+    <listofallmembers>
+      <member refid="struct_m_l_input_custom_haptics_1aa906e59e6b0462481e3457404172a7e3" prot="public" virt="non-virtual"><scope>MLInputCustomHaptics</scope><name>duration_ms</name></member>
+      <member refid="struct_m_l_input_custom_haptics_1a3390e09a1179d966aa0fc12eea3c15dd" prot="public" virt="non-virtual"><scope>MLInputCustomHaptics</scope><name>MLInputCustomHapticsPattern</name></member>
+      <member refid="struct_m_l_input_custom_haptics_1a1010dc19515deb41626b95a72e04af3c" prot="public" virt="non-virtual"><scope>MLInputCustomHaptics</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

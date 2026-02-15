@@ -1,0 +1,1263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__meshing2_8h" kind="file" language="C++">
+    <compoundname>ml_meshing2.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includedby refid="ml__graphics__utils_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</label>
+        <link refid="ml__meshing2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</label>
+        <link refid="ml__graphics__utils_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</label>
+        <link refid="ml__meshing2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_m_l_meshing_settings" prot="public">MLMeshingSettings</innerclass>
+    <innerclass refid="struct_m_l_meshing_extents" prot="public">MLMeshingExtents</innerclass>
+    <innerclass refid="struct_m_l_meshing_block_info" prot="public">MLMeshingBlockInfo</innerclass>
+    <innerclass refid="struct_m_l_meshing_mesh_info" prot="public">MLMeshingMeshInfo</innerclass>
+    <innerclass refid="struct_m_l_meshing_block_request" prot="public">MLMeshingBlockRequest</innerclass>
+    <innerclass refid="struct_m_l_meshing_mesh_request" prot="public">MLMeshingMeshRequest</innerclass>
+    <innerclass refid="struct_m_l_meshing_block_mesh" prot="public">MLMeshingBlockMesh</innerclass>
+    <innerclass refid="struct_m_l_meshing_mesh" prot="public">MLMeshingMesh</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___meshing2_1ga9fdbf43d8c6f12e870eaaeb0b8de4bb5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMeshingFlags</name>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5abc70a6b2cdd422bc6382260e34abab2b" prot="public">
+          <name>MLMeshingFlags_PointCloud</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, will return a point cloud instead of a triangle mesh. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a5e864f37894ec8e7916aeb67eb0eb269" prot="public">
+          <name>MLMeshingFlags_ComputeNormals</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, the system will compute the normals for the triangle vertices. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5aab48a9e4cd6adb7cc6ea4d14b87594d0" prot="public">
+          <name>MLMeshingFlags_ComputeConfidence</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, the system will compute the confidence values. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a49688f9f9b9d6075447e3f5bcf57a089" prot="public">
+          <name>MLMeshingFlags_Planarize</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, the system will planarize the returned mesh (planar regions will be smoothed out). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5ab8c265c2363446fe638f2ea9abfe40aa" prot="public">
+          <name>MLMeshingFlags_RemoveMeshSkirt</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, the mesh skirt (overlapping area between two mesh blocks) will be removed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a4ec10ca47d71b44e9f59542ec845f4f6" prot="public">
+          <name>MLMeshingFlags_IndexOrderCW</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>If set, winding order of indices will be be changed from counter clockwise to clockwise. This could be useful for face culling process in different engines. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a8e45438c946b190bd3bde37c8f538cbd" prot="public">
+          <name>MLMeshingFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request flags for the meshing system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="31" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="31" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___meshing2_1gab1039d0229050dfae419790fb52e4927" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMeshingLOD</name>
+        <enumvalue id="group___meshing2_1ggab1039d0229050dfae419790fb52e4927ab9c7d5c494798201379b3a5a0301d0ad" prot="public">
+          <name>MLMeshingLOD_Minimum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Minimum Level of Detail (LOD) for the mesh. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1ggab1039d0229050dfae419790fb52e4927af3ba733ba1e0f2ae6a5c481bd9f3b6ea" prot="public">
+          <name>MLMeshingLOD_Medium</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Medium Level of Detail (LOD) for the mesh. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1ggab1039d0229050dfae419790fb52e4927adf9b32ef513dc53b21951eb5f791ee94" prot="public">
+          <name>MLMeshingLOD_Maximum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum Level of Detail (LOD) for the mesh. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1ggab1039d0229050dfae419790fb52e4927ac7d745ff0cec9aa293075bef63858d86" prot="public">
+          <name>MLMeshingLOD_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level of detail of the block mesh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="52" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMeshingResult</name>
+        <enumvalue id="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7abc084b47681645be3b26449a5426dda2" prot="public">
+          <name>MLMeshingResult_Success</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh request has succeeded. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7a1ecaf5d5fc55eb7b6267df1f21c96ee4" prot="public">
+          <name>MLMeshingResult_Failed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh request has failed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7aad9e4d4fc62739bd5578fc81a06f5609" prot="public">
+          <name>MLMeshingResult_Pending</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh request is pending. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7a7bad74e72fbf1e3d6f80879a37f8c077" prot="public">
+          <name>MLMeshingResult_PartialUpdate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There are partial updates on the mesh request. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7adf89e2f48475adabe7a9abd393b0565f" prot="public">
+          <name>MLMeshingResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result of a mesh request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___meshing2_1ga613d571b2aa4ffa70d77fdb7b0f559be" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMeshingMeshState</name>
+        <enumvalue id="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea3db7bc9027ae06e14df0c60cb6e1ede9" prot="public">
+          <name>MLMeshingMeshState_New</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh has been created. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea84202be3a1dc32274c66230cd9ad2115" prot="public">
+          <name>MLMeshingMeshState_Updated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh has been updated. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559beaf4cedaeda8b4f44b61a4891d675e7aa0" prot="public">
+          <name>MLMeshingMeshState_Deleted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh has been deleted. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559beaa36989b91038457d89b7ad4fa8767f63" prot="public">
+          <name>MLMeshingMeshState_Unchanged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mesh is unchanged. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea5d8aebcf7ce63ee962deb18c6bfeaa2c" prot="public">
+          <name>MLMeshingMeshState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of a block mesh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" bodystart="78" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___meshing2_1gac0400d8d6eafae864a6f9d84342b1a71" prot="public" static="no">
+        <type>enum <ref refid="group___meshing2_1ga9fdbf43d8c6f12e870eaaeb0b8de4bb5" kindref="member">MLMeshingFlags</ref></type>
+        <definition>typedef enum MLMeshingFlags MLMeshingFlags</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request flags for the meshing system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="49" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga3f093137cdb42de32242b28e3b217279" prot="public" static="no">
+        <type>enum <ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref></type>
+        <definition>typedef enum MLMeshingLOD MLMeshingLOD</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingLOD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level of detail of the block mesh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="61" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1gabc9ec7ae246a07dbec2db16de871f28f" prot="public" static="no">
+        <type>enum <ref refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" kindref="member">MLMeshingResult</ref></type>
+        <definition>typedef enum MLMeshingResult MLMeshingResult</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result of a mesh request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="75" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga24dfe48994ad5f70478ef44b245935f8" prot="public" static="no">
+        <type>enum <ref refid="group___meshing2_1ga613d571b2aa4ffa70d77fdb7b0f559be" kindref="member">MLMeshingMeshState</ref></type>
+        <definition>typedef enum MLMeshingMeshState MLMeshingMeshState</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingMeshState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of a block mesh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="89" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga27b2d0a7fe81fa2156b2e75fedaf8214" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref></type>
+        <definition>typedef struct MLMeshingSettings MLMeshingSettings</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mesh Settings for the underlying system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="108" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga042ce268837e41961a9998d756581d8b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_extents" kindref="compound">MLMeshingExtents</ref></type>
+        <definition>typedef struct MLMeshingExtents MLMeshingExtents</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingExtents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Axis aligned bounding box for querying updated mesh info. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="121" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga327203278d03340faf27e7968aea8277" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_block_info" kindref="compound">MLMeshingBlockInfo</ref></type>
+        <definition>typedef struct MLMeshingBlockInfo MLMeshingBlockInfo</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingBlockInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Representation of a mesh block. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="133" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga125b01c79d8b1e825364790f6ede0de4" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_mesh_info" kindref="compound">MLMeshingMeshInfo</ref></type>
+        <definition>typedef struct MLMeshingMeshInfo MLMeshingMeshInfo</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingMeshInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Response structure for the mesh block info. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="143" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga90028e14c0f81ecbab608e0c4a61d0ab" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_block_request" kindref="compound">MLMeshingBlockRequest</ref></type>
+        <definition>typedef struct MLMeshingBlockRequest MLMeshingBlockRequest</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingBlockRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request structure to get the actual mesh for a block. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="151" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga3a6f9ed489039f511d24cb1ea7bf8183" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_mesh_request" kindref="compound">MLMeshingMeshRequest</ref></type>
+        <definition>typedef struct MLMeshingMeshRequest MLMeshingMeshRequest</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingMeshRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request structure to get the actual mesh for a set of blocks. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="159" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1ga7822a2986213f74e497280fdb0f5ccb2" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_block_mesh" kindref="compound">MLMeshingBlockMesh</ref></type>
+        <definition>typedef struct MLMeshingBlockMesh MLMeshingBlockMesh</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingBlockMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Final structure for a block mesh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="189" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___meshing2_1gaa5dff044165f75155dfea2c8e8c6fb45" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref></type>
+        <definition>typedef struct MLMeshingMesh MLMeshingMesh</definition>
+        <argsstring></argsstring>
+        <name>MLMeshingMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result of a Mesh request. See <ref refid="group___meshing2_1gad4e26f458f33e4185749819953f344bc" kindref="member">MLMeshingGetMeshResult()</ref> for details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="201" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___meshing2_1ga6a30bf2be428ffac2561d092cccf82bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingCreateClient</definition>
+        <argsstring>(MLHandle *out_client_handle, const MLMeshingSettings *settings)</argsstring>
+        <name>MLMeshingCreateClient</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_client_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Create the meshing client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this will be the only function in the meshing API that will return MLResult_PermissionDenied. Trying to call the other functions with an invalid MLHandle will result in MLResult_InvalidParam.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial settings to be used for meshing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshing Client was not created due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshing Client was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Missing required permission(s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshing Client was not created due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000581"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="220" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="220" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1ga216e0caf2132e3356c3b675bddf25b7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingDestroyClient</definition>
+        <argsstring>(MLHandle client_handle)</argsstring>
+        <name>MLMeshingDestroyClient</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <briefdescription>
+<para>Free the client resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshing Client was not destroyed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshing Client was destroyed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000582"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="233" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="233" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1ga5fcfcf1b5a992440dac8c586aaf4a9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingInitSettings</definition>
+        <argsstring>(MLMeshingSettings *out_settings)</argsstring>
+        <name>MLMeshingInitSettings</name>
+        <param>
+          <type><ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref> *</type>
+          <declname>out_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the meshing settings with system defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial settings to be used for meshing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Settings were not initialized due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Settings were initialized successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000583"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="246" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="246" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1ga2a4834bba566c15a3eb1e66b460d1d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingUpdateSettings</definition>
+        <argsstring>(MLHandle client_handle, const MLMeshingSettings *settings)</argsstring>
+        <name>MLMeshingUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Update the meshing settings at runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The updated settings to be used for meshing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Settings were not updated due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Settings were updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000584"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="260" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="260" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1ga0d26d31532d3e4110fb19e85bb84f3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingRequestMeshInfo</definition>
+        <argsstring>(MLHandle client_handle, const MLMeshingExtents *extents, MLHandle *out_request_handle)</argsstring>
+        <name>MLMeshingRequestMeshInfo</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_meshing_extents" kindref="compound">MLMeshingExtents</ref> *</type>
+          <declname>extents</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_request_handle</declname>
+        </param>
+        <briefdescription>
+<para>Request the Mesh Info which includes CFUIDs and bounding extents of the blocks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">extents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region of interest for meshing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_request_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle for the current request. Needs to be passed to query the result of the request.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh info was not requested due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Info was requested successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000585"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="275" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="275" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1gab3f62af8d22ef3ac2386bdb9e6cb367b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingGetMeshInfoResult</definition>
+        <argsstring>(MLHandle client_handle, MLHandle request_handle, MLMeshingMeshInfo *out_info)</argsstring>
+        <name>MLMeshingGetMeshInfoResult</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>request_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_meshing_mesh_info" kindref="compound">MLMeshingMeshInfo</ref> *</type>
+          <declname>out_info</declname>
+        </param>
+        <briefdescription>
+<para>Get the Result of a previous MeshInfo request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">request_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle populated in a prev MLMeshingGetMeshInfo. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The final result which will be populated only if the result is successful.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Settings were not updated due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Info was populated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Peding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh Info is pending update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000586"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="291" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="291" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1ga751aeddf04c6a646cf673ce29287cb5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingRequestMesh</definition>
+        <argsstring>(MLHandle client_handle, const MLMeshingMeshRequest *request, MLHandle *out_request_handle)</argsstring>
+        <name>MLMeshingRequestMesh</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_meshing_mesh_request" kindref="compound">MLMeshingMeshRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_request_handle</declname>
+        </param>
+        <briefdescription>
+<para>Request the Mesh for all CFUIDs populated in request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request for meshes of interest. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_request_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle for the current request. Needs to be passed to query the result of the request.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshes were not requested due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshes were requested successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000587"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="306" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="306" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1gad4e26f458f33e4185749819953f344bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingGetMeshResult</definition>
+        <argsstring>(MLHandle client_handle, MLHandle request_handle, MLMeshingMesh *out_mesh)</argsstring>
+        <name>MLMeshingGetMeshResult</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>request_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref> *</type>
+          <declname>out_mesh</declname>
+        </param>
+        <briefdescription>
+<para>Get the Result of a previous Mesh request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">request_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle populated in a prev MLMeshingGetMesh. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The final result which will be populated only if the result is successful.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshes were not updated due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshes was populated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Peding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Meshes pending update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000588"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="322" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="322" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___meshing2_1gaf31a70ba3e796a3809d2e0efffb2f308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLMeshingFreeResource</definition>
+        <argsstring>(MLHandle client_handle, MLHandle *request_handle)</argsstring>
+        <name>MLMeshingFreeResource</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>client_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>request_handle</declname>
+        </param>
+        <briefdescription>
+<para>Free resources created by the meshing APIS. Needs to be called whenever MLMeshingGetMeshInfoResult, MLMeshingGetMeshResult return a success. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">request_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle populated in a prev request.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resources were not freed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resources were freed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000589"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" line="337" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h" declline="337" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="group___meshing2_1ga9fdbf43d8c6f12e870eaaeb0b8de4bb5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___meshing2_1ga9fdbf43d8c6f12e870eaaeb0b8de4bb5" kindref="member">MLMeshingFlags</ref><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5abc70a6b2cdd422bc6382260e34abab2b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5abc70a6b2cdd422bc6382260e34abab2b" kindref="member">MLMeshingFlags_PointCloud</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="35" refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a5e864f37894ec8e7916aeb67eb0eb269" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a5e864f37894ec8e7916aeb67eb0eb269" kindref="member">MLMeshingFlags_ComputeNormals</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="37" refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5aab48a9e4cd6adb7cc6ea4d14b87594d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5aab48a9e4cd6adb7cc6ea4d14b87594d0" kindref="member">MLMeshingFlags_ComputeConfidence</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="39" refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a49688f9f9b9d6075447e3f5bcf57a089" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a49688f9f9b9d6075447e3f5bcf57a089" kindref="member">MLMeshingFlags_Planarize</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="41" refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5ab8c265c2363446fe638f2ea9abfe40aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5ab8c265c2363446fe638f2ea9abfe40aa" kindref="member">MLMeshingFlags_RemoveMeshSkirt</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="46" refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a4ec10ca47d71b44e9f59542ec845f4f6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a4ec10ca47d71b44e9f59542ec845f4f6" kindref="member">MLMeshingFlags_IndexOrderCW</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>5,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga9fdbf43d8c6f12e870eaaeb0b8de4bb5a8e45438c946b190bd3bde37c8f538cbd" kindref="member">MLMeshingFlags_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="49" refid="group___meshing2_1gac0400d8d6eafae864a6f9d84342b1a71" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga9fdbf43d8c6f12e870eaaeb0b8de4bb5" kindref="member">MLMeshingFlags</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref><sp/>{</highlight></codeline>
+<codeline lineno="54" refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927ab9c7d5c494798201379b3a5a0301d0ad" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927ab9c7d5c494798201379b3a5a0301d0ad" kindref="member">MLMeshingLOD_Minimum</ref>,</highlight></codeline>
+<codeline lineno="56" refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927af3ba733ba1e0f2ae6a5c481bd9f3b6ea" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927af3ba733ba1e0f2ae6a5c481bd9f3b6ea" kindref="member">MLMeshingLOD_Medium</ref>,</highlight></codeline>
+<codeline lineno="58" refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927adf9b32ef513dc53b21951eb5f791ee94" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927adf9b32ef513dc53b21951eb5f791ee94" kindref="member">MLMeshingLOD_Maximum</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ggab1039d0229050dfae419790fb52e4927ac7d745ff0cec9aa293075bef63858d86" kindref="member">MLMeshingLOD_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="61" refid="group___meshing2_1ga3f093137cdb42de32242b28e3b217279" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" kindref="member">MLMeshingResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="66" refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7abc084b47681645be3b26449a5426dda2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7abc084b47681645be3b26449a5426dda2" kindref="member">MLMeshingResult_Success</ref>,</highlight></codeline>
+<codeline lineno="68" refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7a1ecaf5d5fc55eb7b6267df1f21c96ee4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7a1ecaf5d5fc55eb7b6267df1f21c96ee4" kindref="member">MLMeshingResult_Failed</ref>,</highlight></codeline>
+<codeline lineno="70" refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7aad9e4d4fc62739bd5578fc81a06f5609" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7aad9e4d4fc62739bd5578fc81a06f5609" kindref="member">MLMeshingResult_Pending</ref>,</highlight></codeline>
+<codeline lineno="72" refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7a7bad74e72fbf1e3d6f80879a37f8c077" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7a7bad74e72fbf1e3d6f80879a37f8c077" kindref="member">MLMeshingResult_PartialUpdate</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga85e23cc7121444600ca08a3497e068f7adf89e2f48475adabe7a9abd393b0565f" kindref="member">MLMeshingResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="75" refid="group___meshing2_1gabc9ec7ae246a07dbec2db16de871f28f" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" kindref="member">MLMeshingResult</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group___meshing2_1ga613d571b2aa4ffa70d77fdb7b0f559be" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___meshing2_1ga613d571b2aa4ffa70d77fdb7b0f559be" kindref="member">MLMeshingMeshState</ref><sp/>{</highlight></codeline>
+<codeline lineno="80" refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea3db7bc9027ae06e14df0c60cb6e1ede9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea3db7bc9027ae06e14df0c60cb6e1ede9" kindref="member">MLMeshingMeshState_New</ref>,</highlight></codeline>
+<codeline lineno="82" refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea84202be3a1dc32274c66230cd9ad2115" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea84202be3a1dc32274c66230cd9ad2115" kindref="member">MLMeshingMeshState_Updated</ref>,</highlight></codeline>
+<codeline lineno="84" refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559beaf4cedaeda8b4f44b61a4891d675e7aa0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559beaf4cedaeda8b4f44b61a4891d675e7aa0" kindref="member">MLMeshingMeshState_Deleted</ref>,</highlight></codeline>
+<codeline lineno="86" refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559beaa36989b91038457d89b7ad4fa8767f63" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559beaa36989b91038457d89b7ad4fa8767f63" kindref="member">MLMeshingMeshState_Unchanged</ref>,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gga613d571b2aa4ffa70d77fdb7b0f559bea5d8aebcf7ce63ee962deb18c6bfeaa2c" kindref="member">MLMeshingMeshState_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="89" refid="group___meshing2_1ga24dfe48994ad5f70478ef44b245935f8" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga613d571b2aa4ffa70d77fdb7b0f559be" kindref="member">MLMeshingMeshState</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="struct_m_l_meshing_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="94" refid="struct_m_l_meshing_settings_1ad8507fa095be3592630b48cd4cbbf9c2" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_meshing_settings_1ad8507fa095be3592630b48cd4cbbf9c2" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="100" refid="struct_m_l_meshing_settings_1aed79498988f6e9c882ac9431746f6938" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_settings_1aed79498988f6e9c882ac9431746f6938" kindref="member">fill_hole_length</ref>;</highlight></codeline>
+<codeline lineno="107" refid="struct_m_l_meshing_settings_1af834d203859dac68cd706d2b927f32ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_settings_1af834d203859dac68cd706d2b927f32ea" kindref="member">disconnected_component_area</ref>;</highlight></codeline>
+<codeline lineno="108" refid="group___meshing2_1ga27b2d0a7fe81fa2156b2e75fedaf8214" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga27b2d0a7fe81fa2156b2e75fedaf8214" kindref="member">MLMeshingSettings</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="struct_m_l_meshing_extents" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_extents" kindref="compound">MLMeshingExtents</ref><sp/>{</highlight></codeline>
+<codeline lineno="113" refid="struct_m_l_meshing_extents_1a02a0085efa40fe3fbe43dc544559f327" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_meshing_extents_1a02a0085efa40fe3fbe43dc544559f327" kindref="member">center</ref>;</highlight></codeline>
+<codeline lineno="115" refid="struct_m_l_meshing_extents_1aef08c50becbb063256890848fc64d68a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref><sp/><ref refid="struct_m_l_meshing_extents_1aef08c50becbb063256890848fc64d68a" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="120" refid="struct_m_l_meshing_extents_1a254fb201e318ccd315e0b81ff326b837" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_meshing_extents_1a254fb201e318ccd315e0b81ff326b837" kindref="member">extents</ref>;</highlight></codeline>
+<codeline lineno="121" refid="group___meshing2_1ga042ce268837e41961a9998d756581d8b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga042ce268837e41961a9998d756581d8b" kindref="member">MLMeshingExtents</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="struct_m_l_meshing_block_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_block_info" kindref="compound">MLMeshingBlockInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="126" refid="struct_m_l_meshing_block_info_1ac7e79b1551be7ce9980ba3c864306926" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_meshing_block_info_1ac7e79b1551be7ce9980ba3c864306926" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="128" refid="struct_m_l_meshing_block_info_1a1b66898d7e1d3692876d1ac1d77b87a3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_meshing_extents" kindref="compound">MLMeshingExtents</ref><sp/><ref refid="struct_m_l_meshing_block_info_1a1b66898d7e1d3692876d1ac1d77b87a3" kindref="member">extents</ref>;</highlight></codeline>
+<codeline lineno="130" refid="struct_m_l_meshing_block_info_1a58d326de464863f4463d069169f5e357" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_meshing_block_info_1a58d326de464863f4463d069169f5e357" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="132" refid="struct_m_l_meshing_block_info_1a790e4ad385143be7ebbc8837c5e90898" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ga613d571b2aa4ffa70d77fdb7b0f559be" kindref="member">MLMeshingMeshState</ref><sp/><ref refid="struct_m_l_meshing_block_info_1a790e4ad385143be7ebbc8837c5e90898" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="133" refid="group___meshing2_1ga327203278d03340faf27e7968aea8277" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga327203278d03340faf27e7968aea8277" kindref="member">MLMeshingBlockInfo</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="struct_m_l_meshing_mesh_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_mesh_info" kindref="compound">MLMeshingMeshInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="138" refid="struct_m_l_meshing_mesh_info_1aaf63b5d9f844ba470a6f03933ccfc150" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_meshing_mesh_info_1aaf63b5d9f844ba470a6f03933ccfc150" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_m_l_meshing_mesh_info_1a8ddcd196f7be131c185182173c30997f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_meshing_mesh_info_1a8ddcd196f7be131c185182173c30997f" kindref="member">data_count</ref>;</highlight></codeline>
+<codeline lineno="142" refid="struct_m_l_meshing_mesh_info_1ad105341c81cbd4e20e53120178d82382" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_meshing_block_info" kindref="compound">MLMeshingBlockInfo</ref><sp/>*<ref refid="struct_m_l_meshing_mesh_info_1ad105341c81cbd4e20e53120178d82382" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="143" refid="group___meshing2_1ga125b01c79d8b1e825364790f6ede0de4" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga125b01c79d8b1e825364790f6ede0de4" kindref="member">MLMeshingMeshInfo</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="struct_m_l_meshing_block_request" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_block_request" kindref="compound">MLMeshingBlockRequest</ref><sp/>{</highlight></codeline>
+<codeline lineno="148" refid="struct_m_l_meshing_block_request_1aace174a43c79760d49b5ed0f1bdd3463" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_meshing_block_request_1aace174a43c79760d49b5ed0f1bdd3463" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="150" refid="struct_m_l_meshing_block_request_1a5a295b7d94b765b59732db0e2cabc637" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref><sp/><ref refid="struct_m_l_meshing_block_request_1a5a295b7d94b765b59732db0e2cabc637" kindref="member">level</ref>;</highlight></codeline>
+<codeline lineno="151" refid="group___meshing2_1ga90028e14c0f81ecbab608e0c4a61d0ab" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga90028e14c0f81ecbab608e0c4a61d0ab" kindref="member">MLMeshingBlockRequest</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="struct_m_l_meshing_mesh_request" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_mesh_request" kindref="compound">MLMeshingMeshRequest</ref><sp/>{</highlight></codeline>
+<codeline lineno="156" refid="struct_m_l_meshing_mesh_request_1a69344d5b643c942b51401d9279430da1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_mesh_request_1a69344d5b643c942b51401d9279430da1" kindref="member">request_count</ref>;</highlight></codeline>
+<codeline lineno="158" refid="struct_m_l_meshing_mesh_request_1a32930b4a3cebf630f135cf078b7efe6c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_meshing_block_request" kindref="compound">MLMeshingBlockRequest</ref><sp/>*<ref refid="struct_m_l_meshing_mesh_request_1a32930b4a3cebf630f135cf078b7efe6c" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="159" refid="group___meshing2_1ga3a6f9ed489039f511d24cb1ea7bf8183" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga3a6f9ed489039f511d24cb1ea7bf8183" kindref="member">MLMeshingMeshRequest</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="struct_m_l_meshing_block_mesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_block_mesh" kindref="compound">MLMeshingBlockMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="164" refid="struct_m_l_meshing_block_mesh_1ad8cd2995f6fa7ba8da49ca9baa3704aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" kindref="member">MLMeshingResult</ref><sp/><ref refid="struct_m_l_meshing_block_mesh_1ad8cd2995f6fa7ba8da49ca9baa3704aa" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="166" refid="struct_m_l_meshing_block_mesh_1a075d781aa2cd940c88d71afff0331da5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref><sp/><ref refid="struct_m_l_meshing_block_mesh_1a075d781aa2cd940c88d71afff0331da5" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="168" refid="struct_m_l_meshing_block_mesh_1a81268d86875876487b84f32706e84979" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1gab1039d0229050dfae419790fb52e4927" kindref="member">MLMeshingLOD</ref><sp/><ref refid="struct_m_l_meshing_block_mesh_1a81268d86875876487b84f32706e84979" kindref="member">level</ref>;</highlight></codeline>
+<codeline lineno="170" refid="struct_m_l_meshing_block_mesh_1a791e908ab4a97055aa17cc66be399af0" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_meshing_block_mesh_1a791e908ab4a97055aa17cc66be399af0" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="172" refid="struct_m_l_meshing_block_mesh_1a51ca9c102a571665a24ffa8106acc8a9" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_m_l_meshing_block_mesh_1a51ca9c102a571665a24ffa8106acc8a9" kindref="member">index_count</ref>;</highlight></codeline>
+<codeline lineno="174" refid="struct_m_l_meshing_block_mesh_1aba92124110f06b88bac38293d34e57ce" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_meshing_block_mesh_1aba92124110f06b88bac38293d34e57ce" kindref="member">vertex_count</ref>;</highlight></codeline>
+<codeline lineno="176" refid="struct_m_l_meshing_block_mesh_1a171aa6b402c44105bfd023fa323627b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>*<ref refid="struct_m_l_meshing_block_mesh_1a171aa6b402c44105bfd023fa323627b5" kindref="member">vertex</ref>;</highlight></codeline>
+<codeline lineno="184" refid="struct_m_l_meshing_block_mesh_1aadce473e3a9b7bfa3078b5831032c37b" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/>*<ref refid="struct_m_l_meshing_block_mesh_1aadce473e3a9b7bfa3078b5831032c37b" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="186" refid="struct_m_l_meshing_block_mesh_1a4a6a070a5c4c0c0cffd3caaa829aa56d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>*<ref refid="struct_m_l_meshing_block_mesh_1a4a6a070a5c4c0c0cffd3caaa829aa56d" kindref="member">normal</ref>;</highlight></codeline>
+<codeline lineno="188" refid="struct_m_l_meshing_block_mesh_1a2ab8694bbfad25ef7808d437bf9d5754" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="struct_m_l_meshing_block_mesh_1a2ab8694bbfad25ef7808d437bf9d5754" kindref="member">confidence</ref>;</highlight></codeline>
+<codeline lineno="189" refid="group___meshing2_1ga7822a2986213f74e497280fdb0f5ccb2" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1ga7822a2986213f74e497280fdb0f5ccb2" kindref="member">MLMeshingBlockMesh</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="struct_m_l_meshing_mesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="194" refid="struct_m_l_meshing_mesh_1a81d2ddbcbdd74077cc1c84fcbff8ccb7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___meshing2_1ga85e23cc7121444600ca08a3497e068f7" kindref="member">MLMeshingResult</ref><sp/><ref refid="struct_m_l_meshing_mesh_1a81d2ddbcbdd74077cc1c84fcbff8ccb7" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="196" refid="struct_m_l_meshing_mesh_1ae3ce1b5df89ba16c43530ec2fd83dd6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_meshing_mesh_1ae3ce1b5df89ba16c43530ec2fd83dd6e" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="198" refid="struct_m_l_meshing_mesh_1a0402c8896896be4ed7520c2480b5936c" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_meshing_mesh_1a0402c8896896be4ed7520c2480b5936c" kindref="member">data_count</ref>;</highlight></codeline>
+<codeline lineno="200" refid="struct_m_l_meshing_mesh_1a718bc0d7c0a4b5a6ba06c8021dff710b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_meshing_block_mesh" kindref="compound">MLMeshingBlockMesh</ref><sp/>*<ref refid="struct_m_l_meshing_mesh_1a718bc0d7c0a4b5a6ba06c8021dff710b" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="201" refid="group___meshing2_1gaa5dff044165f75155dfea2c8e8c6fb45" refkind="member"><highlight class="normal">}<sp/><ref refid="group___meshing2_1gaa5dff044165f75155dfea2c8e8c6fb45" kindref="member">MLMeshingMesh</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="group___meshing2_1ga6a30bf2be428ffac2561d092cccf82bb" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1ga6a30bf2be428ffac2561d092cccf82bb" kindref="member">MLMeshingCreateClient</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*out_client_handle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="group___meshing2_1ga216e0caf2132e3356c3b675bddf25b7a" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1ga216e0caf2132e3356c3b675bddf25b7a" kindref="member">MLMeshingDestroyClient</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="group___meshing2_1ga5fcfcf1b5a992440dac8c586aaf4a9ac" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1ga5fcfcf1b5a992440dac8c586aaf4a9ac" kindref="member">MLMeshingInitSettings</ref>(<ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref><sp/>*out_settings);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="group___meshing2_1ga2a4834bba566c15a3eb1e66b460d1d9e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1ga2a4834bba566c15a3eb1e66b460d1d9e" kindref="member">MLMeshingUpdateSettings</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_settings" kindref="compound">MLMeshingSettings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="group___meshing2_1ga0d26d31532d3e4110fb19e85bb84f3f3" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1ga0d26d31532d3e4110fb19e85bb84f3f3" kindref="member">MLMeshingRequestMeshInfo</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_extents" kindref="compound">MLMeshingExtents</ref><sp/>*extents,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*out_request_handle);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="group___meshing2_1gab3f62af8d22ef3ac2386bdb9e6cb367b" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1gab3f62af8d22ef3ac2386bdb9e6cb367b" kindref="member">MLMeshingGetMeshInfoResult</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>request_handle,<sp/><ref refid="struct_m_l_meshing_mesh_info" kindref="compound">MLMeshingMeshInfo</ref><sp/>*<ref refid="group___graphics_1ga74142268a0036200008535cea053c24b" kindref="member">out_info</ref>);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="group___meshing2_1ga751aeddf04c6a646cf673ce29287cb5b" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1ga751aeddf04c6a646cf673ce29287cb5b" kindref="member">MLMeshingRequestMesh</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_meshing_mesh_request" kindref="compound">MLMeshingMeshRequest</ref><sp/>*request,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*out_request_handle);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="group___meshing2_1gad4e26f458f33e4185749819953f344bc" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1gad4e26f458f33e4185749819953f344bc" kindref="member">MLMeshingGetMeshResult</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>request_handle,<sp/><ref refid="struct_m_l_meshing_mesh" kindref="compound">MLMeshingMesh</ref><sp/>*out_mesh);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="group___meshing2_1gaf31a70ba3e796a3809d2e0efffb2f308" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___meshing2_1gaf31a70ba3e796a3809d2e0efffb2f308" kindref="member">MLMeshingFreeResource</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>client_handle,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*request_handle);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h"/>
+  </compounddef>
+</doxygen>

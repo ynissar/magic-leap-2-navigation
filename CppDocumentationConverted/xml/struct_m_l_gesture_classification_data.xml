@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_gesture_classification_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLGestureClassificationData</compoundname>
+    <includes refid="ml__gesture__classification_8h" local="no">ml_gesture_classification.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_data_1a7584d981376f0024ace11c5ced5dc313" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLGestureClassificationData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="240" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_gesture_classification_data_1aa5ab945695f08d3c462e36df5878a047" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_gesture_classification_state" kindref="compound">MLGestureClassificationState</ref></type>
+        <definition>MLGestureClassificationState MLGestureClassificationData::hand_state[MLGestureClassificationHandType_Count]</definition>
+        <argsstring>[MLGestureClassificationHandType_Count]</argsstring>
+        <name>hand_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gesture classification state of the left and right hand. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="242" column="32" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data which is received when querying tracker from <ref refid="group___gesture_classification_1gac7e60930b12b0805a6e2e7841d8317dc" kindref="member">MLGestureClassificationGetData()</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___gesture_classification_1ga6c70f9ecd2d7542645fbaa1a1699dfe2" kindref="member">MLGestureClassificationDataInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>MLGestureClassificationFingerState</label>
+        <link refid="struct_m_l_gesture_classification_finger_state"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>posture_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MLGestureClassificationData</label>
+        <link refid="struct_m_l_gesture_classification_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hand_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MLGestureClassificationPostureFingerData</label>
+        <link refid="struct_m_l_gesture_classification_posture_finger_data"/>
+      </node>
+      <node id="2">
+        <label>MLGestureClassificationState</label>
+        <link refid="struct_m_l_gesture_classification_state"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>index</edgelabel>
+          <edgelabel>middle</edgelabel>
+          <edgelabel>pinky</edgelabel>
+          <edgelabel>ring</edgelabel>
+          <edgelabel>thumb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" line="238" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h" bodystart="238" bodyend="243"/>
+    <listofallmembers>
+      <member refid="struct_m_l_gesture_classification_data_1aa5ab945695f08d3c462e36df5878a047" prot="public" virt="non-virtual"><scope>MLGestureClassificationData</scope><name>hand_state</name></member>
+      <member refid="struct_m_l_gesture_classification_data_1a7584d981376f0024ace11c5ced5dc313" prot="public" virt="non-virtual"><scope>MLGestureClassificationData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

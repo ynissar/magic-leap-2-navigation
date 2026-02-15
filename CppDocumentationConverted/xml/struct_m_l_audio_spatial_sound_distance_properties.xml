@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_spatial_sound_distance_properties" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioSpatialSoundDistanceProperties</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1ga84727707f19895248b3c863d450b5282" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundDistanceProperties::min_distance</definition>
+        <argsstring></argsstring>
+        <name>min_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance until which sound is at full volume. Range is 0 to FLT_MAX. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="266" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae738d79fcd8be8b986fcd07a88c4689c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundDistanceProperties::max_distance</definition>
+        <argsstring></argsstring>
+        <name>max_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance beyond which sound gets no quieter. Range is min_distance to FLT_MAX. Default is FLT_MAX. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="268" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga64e714fc416e1a2b8a4a31f24034ff4f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioSpatialSoundDistanceProperties::rolloff_factor</definition>
+        <argsstring></argsstring>
+        <name>rolloff_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale factor relative to real-world distance attenuation. Range is 0 to FLT_MAX. Default is 1 (real world). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="270" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Properties describing the distance attenuation of a spatial sound using two distances, between which attention values are interpolated. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="264" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="264" bodyend="271"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1gae738d79fcd8be8b986fcd07a88c4689c" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundDistanceProperties</scope><name>max_distance</name></member>
+      <member refid="group___audio_defs_1ga84727707f19895248b3c863d450b5282" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundDistanceProperties</scope><name>min_distance</name></member>
+      <member refid="group___audio_defs_1ga64e714fc416e1a2b8a4a31f24034ff4f" prot="public" virt="non-virtual"><scope>MLAudioSpatialSoundDistanceProperties</scope><name>rolloff_factor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

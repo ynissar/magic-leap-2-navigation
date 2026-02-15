@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_export_out_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceExportOutData</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_export_out_data_1af64e67546ebe7dfec202008ed7b9d2c6" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t MLSpaceExportOutData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Binary data size in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="491" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_export_out_data_1a19f9ba28f1358f427495ba6e8f7544e6" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MLSpaceExportOutData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Space data. This is binary data and typically does not include a terminating null character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="497" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the exported Space. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="489" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="489" bodyend="498"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_export_out_data_1a19f9ba28f1358f427495ba6e8f7544e6" prot="public" virt="non-virtual"><scope>MLSpaceExportOutData</scope><name>data</name></member>
+      <member refid="struct_m_l_space_export_out_data_1af64e67546ebe7dfec202008ed7b9d2c6" prot="public" virt="non-virtual"><scope>MLSpaceExportOutData</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

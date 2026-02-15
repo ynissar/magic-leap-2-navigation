@@ -1,0 +1,122 @@
+# Copyright 2021 (c) Magic Leap Inc.
+
+#[=======================================================================[.rst:
+FindMagicLeapAppFramework.cmake
+-------
+
+sets up a app_framework library target.
+
+#]=======================================================================]
+find_package(MagicLeap REQUIRED)
+
+if (MagicLeapAppFramework_FOUND)
+  return()
+endif()
+
+find_package(MagicLeapNativeAppGlue REQUIRED)
+find_package(MagicLeapOpenGL REQUIRED)
+
+set(ML_APP_FRAMEWORK_FOUND "FALSE")
+
+if (IS_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/../lib/${ML_TARGET}")
+    set(ML_APP_FRAMEWORK_ROOT "${CMAKE_CURRENT_LIST_DIR}/..")
+    set(ML_APP_FRAMEWORK_LIBRARY_PATHS "${ML_APP_FRAMEWORK_ROOT}/lib/${CMAKE_BUILD_TYPE}/${ML_TARGET}")
+    set(ML_APP_FRAMEWORK_INCLUDE_PATHS "${ML_APP_FRAMEWORK_ROOT}/${CMAKE_BUILD_TYPE}/include")
+    set(ML_APP_FRAMEWORK_FOUND "TRUE")
+endif()
+
+# Can we find the appframework anywhere? INSTALL STYLE
+if ( "${ML_APP_FRAMEWORK_FOUND}" STREQUAL "FALSE" )
+    if (IS_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/../${ML_TARGET}")
+        set(ML_APP_FRAMEWORK_ROOT "${CMAKE_CURRENT_LIST_DIR}/..")
+        set(ML_APP_FRAMEWORK_LIBRARY_PATHS "${ML_APP_FRAMEWORK_ROOT}/${ML_TARGET}/${CMAKE_BUILD_TYPE}/lib")
+        set(ML_APP_FRAMEWORK_INCLUDE_PATHS "${ML_APP_FRAMEWORK_ROOT}/${ML_TARGET}/${CMAKE_BUILD_TYPE}/include")
+        set(ML_APP_FRAMEWORK_FOUND "TRUE")
+    endif()
+endif()
+
+if (NOT "${ML_APP_FRAMEWORK_FOUND}" STREQUAL "TRUE" )
+  message(FATAL_ERROR "Unable to use the Application Framework, likely install corruption, please reinstall.")
+endif()
+
+message(VERBOSE "MagicLeap Application Framework Library path = ${ML_APP_FRAMEWORK_LIBRARY_PATHS}")
+message(VERBOSE "MagicLeap Application Framework Include path = ${ML_APP_FRAMEWORK_INCLUDE_PATHS}")
+message(VERBOSE "A Config Flag = ${CMAKE_BUILD_TYPE}")
+
+SET(ML_APP_FRAMEWORK_LIBS
+    native_app_glue
+    gl.magicleap
+    graphics.magicleap
+    perception.magicleap
+    input.magicleap
+    imgui
+    stb
+    glad
+)
+
+if(ML_TARGET STREQUAL ml2)
+    list(APPEND ML_APP_FRAMEWORK_LIBS assimp gflags_nothreads z)
+elseif(ML_TARGET STREQUAL osx)
+    list(APPEND ML_APP_FRAMEWORK_LIBS assimp gflags_nothreads zlibstatic zi.magicleap glfw3 "-framework Cocoa" "-framework IOKit" "-framework CoreFoundation" "-framework CoreVideo")
+elseif(ML_TARGET STREQUAL linux)
+    list(APPEND ML_APP_FRAMEWORK_LIBS assimp gflags_nothreads zlibstatic zi.magicleap glfw3 X11 Xrandr Xcursor Xinerama Xxf86vm)
+elseif(ML_TARGET STREQUAL win)
+    if(MSVC_TOOLSET_VERSION)
+        list(APPEND ML_APP_FRAMEWORK_LIBS assimp-vc${MSVC_TOOLSET_VERSION}-mt gflags_nothreads_static shlwapi zlibstatic zi.magicleap glfw3)
+    else()
+        list(APPEND ML_APP_FRAMEWORK_LIBS assimp-vc140-mt gflags_nothreads_static shlwapi zlibstatic zi.magicleap glfw3)
+    endif()
+else()
+    message(FATAL_ERROR "Unsupported platform")
+endif()
+
+
+# ************************************************************************
+#
+# Interface definition.
+#
+# ************************************************************************
+add_library(app_framework INTERFACE)
+add_library(ML::app_framework ALIAS app_framework)
+
+target_include_directories(app_framework
+    INTERFACE
+    ${ML_APP_FRAMEWORK_INCLUDE_PATHS}
+)
+
+target_link_directories(app_framework
+    INTERFACE
+    ${ML_APP_FRAMEWORK_LIBRARY_PATHS}
+)
+
+target_link_libraries(app_framework
+    INTERFACE
+    $<IF:$<STREQUAL:${ML_TARGET},win>,app_framework.lib,-lapp_framework>
+    ${ML_APP_FRAMEWORK_LIBS}
+)
+
+
+# asks for -Wall/-Werror
+if(ML_TARGET STREQUAL ml2)
+    target_compile_options(app_framework INTERFACE -Wall -Werror )
+else()
+  # Really we should not be supressing these errors, even for App Sim.
+    target_compile_options(app_framework INTERFACE
+      $<$<CXX_COMPILER_ID:MSVC>:/W2 /WX /wd4068>
+      $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror -Wno-format -Wno-unused-function -Wno-deprecated-declarations>
+    )
+endif()
+
+# asks for C++17
+target_compile_features(app_framework INTERFACE cxx_std_17)
+
+# keep cmake happy, it's already installed.
+add_library(nlohmann_json INTERFACE)
+
+unset(ML_APP_FRAMEWORK_ROOT)
+unset(ML_APP_FRAMEWORK_LIBRARY_PATHS)
+unset(ML_APP_FRAMEWORK_INCLUDE_PATHS)
+unset(ML_APP_FRAMEWORK_LIBS)
+unset(ML_APP_FRAMEWORK_FOUND)
+
+set(MagicLeapAppFramework_FOUND TRUE)

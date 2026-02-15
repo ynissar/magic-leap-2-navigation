@@ -1,0 +1,1154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__media__muxer_8h" kind="file" language="C++">
+    <compoundname>ml_media_muxer.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h</label>
+        <link refid="ml__media__muxer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLMediaMuxerOutputFormat</name>
+        <enumvalue id="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a28ae08e36c0aeb2dbac58f13fc36e8e5" prot="public">
+          <name>MLMediaMuxerOutputFormat_MPEG4</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MP4 format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273ad2550c1696f2a3d906a136e94bdfcf2f" prot="public">
+          <name>MLMediaMuxerOutputFormat_WEBM</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VP8/VORBIS data in a WEBM container. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a4bbb9631cc73bcb8abeb4d0e226a4daa" prot="public">
+          <name>MLMediaMuxerOutputFormat_3GPP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3gpp format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a85ba299677d861dce397fad529cbcb86" prot="public">
+          <name>MLMediaMuxerOutputFormat_HEIF</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HEIC data in a HEIF container. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273aa8e082417528bc78fa4b3f965b78b6bf" prot="public">
+          <name>MLMediaMuxerOutputFormat_OGG</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Opus data in a OGG container. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273ac4dbe98237cffd02fb47d90a6cbe3b75" prot="public">
+          <name>MLMediaMuxerOutputFormat_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Output formats for MediaMuxer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumarates list of all the possibly supported output formats for the muxer across all the releases/Platform.</para>
+<para>Use #MLMediaMuxerGetSupportedOutputFormats to query for all supported Output formats on the Platform.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="46" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___media_recorder_1ga57f9fc790d432d686270d164efbfbc1b" prot="public" static="no">
+        <type>enum <ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref></type>
+        <definition>typedef enum MLMediaMuxerOutputFormat MLMediaMuxerOutputFormat</definition>
+        <argsstring></argsstring>
+        <name>MLMediaMuxerOutputFormat</name>
+        <briefdescription>
+<para>Output formats for MediaMuxer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumarates list of all the possibly supported output formats for the muxer across all the releases/Platform.</para>
+<para>Use #MLMediaMuxerGetSupportedOutputFormats to query for all supported Output formats on the Platform.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="59" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLMediaMuxerSampleData</definition>
+        <argsstring></argsstring>
+        <name>MLMediaMuxerSampleData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="88" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gae94321a7c5f818766f6a16dab945f52f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref> *</type>
+        <definition>const MLMediaMuxerOutputFormat* out_format_list[]</definition>
+        <argsstring>[]</argsstring>
+        <name>out_format_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="163" column="41" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gaf690925182411e18c8fcd75a7d1d1c42" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref> size_t *</type>
+        <definition>const MLMediaMuxerOutputFormat size_t* out_format_list_size</definition>
+        <argsstring></argsstring>
+        <name>out_format_list_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="163" column="64" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref></type>
+        <definition>MLMediaMuxerOutputFormat format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="187" column="35" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gacdd817a5b622fcc938317ab36968ec72" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref> const char *const  *</type>
+        <definition>MLMediaMuxerOutputFormat const char* const* out_mime_list[]</definition>
+        <argsstring>[]</argsstring>
+        <name>out_mime_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="187" column="59" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gab2a504eb4cae2f7dec63d8842b3c625e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref> const char *const size_t *</type>
+        <definition>MLMediaMuxerOutputFormat const char* const size_t* out_mime_list_size</definition>
+        <argsstring></argsstring>
+        <name>out_mime_list_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="187" column="80" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga271d1f7915670ad4e92979d61b487f1d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref> const char *</type>
+        <definition>MLMediaMuxerOutputFormat const char* path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="209" column="53" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga8e8fb5041dd76145b66ceb0176e0790a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle media_format</definition>
+        <argsstring></argsstring>
+        <name>media_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="284" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga9a3dda9ca34f3666c8bdf58f74a4a46c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> size_t *</type>
+        <definition>MLHandle size_t* out_track_index</definition>
+        <argsstring></argsstring>
+        <name>out_track_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="284" column="39" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga23ee956c105b73b2a5da7e3a2d32ae2f" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t degrees</definition>
+        <argsstring></argsstring>
+        <name>degrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="313" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1gad9e643bc6bd5a62b9b5011cf1c93629e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float latitude</definition>
+        <argsstring></argsstring>
+        <name>latitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="339" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga74754d9c8e753395a0b07b7e4f1fd7ca" prot="public" static="no" mutable="no">
+        <type>float float</type>
+        <definition>float float longitude</definition>
+        <argsstring></argsstring>
+        <name>longitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="339" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_recorder_1ga39a273b78f2cc1d772dd8c28c15cb808" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref> *</type>
+        <definition>const MLMediaMuxerSampleData* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="393" column="39" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___media_recorder_1gaa8c50226125b17a7c5f9127c67c38fdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))) struct MLMediaMuxerSampleData</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use standard Android SDK and NDK APIs.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Data type that encapsulates sample data to be written in to MLMediaMuxer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop muxing.</para>
+<para>Writes an encoded sample into the muxer.</para>
+<para>Start muxing.</para>
+<para>Set and store the geodata (latitude and longitude) in the output file.</para>
+<para>Set the orientation hint for output video playback.</para>
+<para>Add a track with given format information.</para>
+<para>Configure the MLMediaMuxer for a given Output format with output path.</para>
+<para>Get a list of all the supported mime-types for a given Media Muxer Output Format on the Platform.</para>
+<para>Get a list of all the supported Media Muxer Output Formats on the Platform.</para>
+<para>Release the MLMediaMuxer instance.</para>
+<para>Create a MLMediaMuxer instance.</para>
+<para><xrefsect id="deprecated_1_deprecated000397"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000399"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upon successful return will point to handle to the created MLMediaMuxer. Or else, it will point to <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLMediaMuxer object creation failed with resource allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLMediaMuxer object was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000490"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000400"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLMediaMuxer object was released successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000491"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000401"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>User doesn&apos;t own the memory/buffer returned from this API and MUST NOT be freeing or releasing the out_format_list.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_format_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to MLMediaMuxerOutputFormat. This should not be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_format_list_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the returned out_format_list. This should not be NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If one of the parameters are invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved all the supported Output Formats. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000492"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000402"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>User doesn&apos;t own the memory/buffer returned from this API and MUST NOT be freeing or releasing the out_mime_list.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Output format, to which we would like to know all the supported mime-types. The format should be one returned from #MLMediaMuxerGetSupportedOutputFormats. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_mime_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to array of mime-type (char array). This should not be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_mime_list_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the returned out_mime_list. This should not be NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If one of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved all the supported Output Formats. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000493"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000403"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the muxed output media file. The format should be one returned from #MLMediaMuxerGetSupportedOutputFormats. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The linux-style path for the output media file. This value cannot be empty or NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_AllocFailed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to configure the MLMediaMuxer object with resource allocation failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLMediaMuxer object was configured successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaResult_Unsupported</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the format is not supported.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000494"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000404"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>This should be called before #MLMediaMuxerStart() and after #MLMediaMuxerConfigure.</para>
+<para>The following media format keys are supported for Audio/Video and Metadata tracks.</para>
+<para><hruler/>
+ </para>
+<sect1 id="group___media_recorder_1autotoc_md7">
+<title>| Audio Track                     | Video Track                       | Metadata Track         |</title>
+<para>| MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | | MLMediaFormat_Key_Sample_Rate | MLMediaFormat_Key_Width | | | MLMediaFormat_Key_Channel_Count | MLMediaFormat_Key_Height | | | MLMediaFormat_Key_CSD0 | MLMediaFormat_Key_Bt_Rate | | | MLMediaFormat_Key_CSD1 | MLMediaFormat_Key_Frame_Rate | | | | MLMediaFormat_Key_Color_Range | | | | MLMediaFormat_Key_Color_Standard | | | | MLMediaFormat_Key_Color_Transfer | | | | MLMediaFormat_Key_HDR_Static_Info | | | | MLMediaFormat_Key_CSD0 | | </para>
+</sect1>
+<sect1 id="group___media_recorder_1autotoc_md8">
+<title>|                                 | MLMediaFormat_Key_CSD1            |                        |</title>
+<para>#MLMediaMuxerGetSupportedMimes can be used to query for all the supported MLMediaFormat_Key_Mime for a given Output Format.</para>
+<para>While MLMediaFormat_Key_Mime is must for all tracks, some of the keys aren&apos;t mandatory. For Audio track, MLMediaFormat_Key_SAMPLE_RATE and MLMediaFormat_Key_CHANNEL_COUNT is must. For Video track, MLMediaFormat_Key_WIDTH anb MLMediaFormat_Key_HEIGHT are must.</para>
+<para>Requierment of providing csd (Codec Specific Data) through MediaFormat is optional for some audio/video mimes where as it is mandatory for some other ones (for example vorbis).</para>
+<para>With mp4 container following audio/video and metadata mime types can be supported.</para>
+<para><hruler/>
+ </para>
+</sect1>
+<sect1 id="group___media_recorder_1autotoc_md10">
+<title>| Audio Mimes      | Video Mimes     | Metadata Mimes         |</title>
+<para>| audio/3gpp | video/3gpp | application/ | | audio/mp4a-latm | video/mp4v-es | image/vnd.android.heic | | audio/amr-wb | video/avc | | </para>
+</sect1>
+<sect1 id="group___media_recorder_1autotoc_md11">
+<title>|                  | video/hevc      |                        |</title>
+<para>With Webm container following audio/video mime types can be supported.</para>
+<para><hruler/>
+ </para>
+</sect1>
+<sect1 id="group___media_recorder_1autotoc_md13">
+<title>| Audio Mimes      | Video Mimes           |</title>
+<para>| audio/vorbis | video/x-vnd.on2.vp8 | </para>
+</sect1>
+<sect1 id="group___media_recorder_1autotoc_md14">
+<title>| audio/opus       | video/x-vnd.on2.vp9   |</title>
+<para>With Ogg container, only supported mime is &quot;audio/opus&quot;.</para>
+<para>If a mime passed through the MLMediaFormat is not supported, it will return MLMediaResult_Unsupported.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">media_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to the MLMediaFormat that contains the track&apos;s format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_track_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upon successful return, this will conatin the index of the track added.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the operation completes successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaResult_Unsupported</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If one of the keys in the format is not supported.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000495"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000405"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>This should be called before #MLMediaMuxerStart() and after #MLMediaMuxerConfigure.</para>
+<para>Calling this method will not rotate the video frame when muxer is generating the file, but add a composition matrix containing the rotation angle in the output video if the output format is MLMediaMuxerOutputFormat_MPEG4 so that a video player can choose the proper orientation for playback.</para>
+<para>Note that some video players may choose to ignore the composition matrix in a video during playback. By default, the rotation degree is 0.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">degrees</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation degrees. It has to be either 0, 90, 180 or 270.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the operation completes successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation is invalid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000496"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000406"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>This should be called before #MLMediaMuxerStart() and after #MLMediaMuxerConfigure.</para>
+<para>The geodata is stored in udta box if the output format is MLMediaMuxerOutputFormat_MPEG4, and is ignored for other output formats. The geodata is stored according to ISO-6709 standard.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">latitude</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The latitude in degree. Its value must be in the range [-90, 90]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">longitude</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The longitude in degree. Its value must be in the range [-180, 180].</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the operation completes successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation is invalid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000497"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000407"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Make sure all the tracks have been added (#MLMediaMuxerAddTrack) before calling this.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the operation completes successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation is invalid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000498"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000408"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The application needs to make sure that the samples are written into the right tracks. Also, it needs to make sure the samples for each track are written in chronological order (e.g. in the order they are provided by the encoder).</para>
+<para>For MPEG4 media format, the duration of the last sample in a track can be set by passing an additional empty buffer) with <ref refid="group___media_player_1gga8540dbe422378b32c0bffb5f5a627f59a33f95322f7ab8701cc26a2c1b9aa4b0b" kindref="member">MLMediaCodecBufferFlag_EOS</ref> flag and a suitable presentation timestamp set in time_us (of MLMediaMuxerSampleData structure) as the last sample of that track. This last sample&apos;s presentation timestamp shall be a sum of the presentation timestamp and the duration preferred for the original last sample. If no explicit END_OF_STREAM sample was passed, then the duration of the last sample would be the same as that of the sample before that.</para>
+<para>The buffer can be reused once this method returns.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample data to be written encapsulated in <ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the operation completes successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation is invalid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000499"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000409"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Once the muxer stops, it can not be restarted.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">media_muxer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the MLMediaMuxer instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the parameters is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the operation completes successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLMediaGenericResult_InvalidOperation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation is invalid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000500"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+<para>Version of this structure.</para>
+<para>The track index number, to which to write the sample data into. This should be one of the number returned by #MLMediaMuxerAddTrack.</para>
+<para>Pointer to the sample buffer/data.</para>
+<para>Size of the sample buuffer/data.</para>
+<para>The buffer&apos;s time stamp in microseconds.</para>
+<para>The flag about the data. The following flags are supported: <ref refid="group___media_player_1gga8540dbe422378b32c0bffb5f5a627f59aa5f9c19efd3669d07c2caf4224dda805" kindref="member">MLMediaCodecBufferFlag_KeyFrame</ref>: if its a sync/key frame. <ref refid="group___media_player_1gga8540dbe422378b32c0bffb5f5a627f59a33f95322f7ab8701cc26a2c1b9aa4b0b" kindref="member">MLMediaCodecBufferFlag_EOS</ref>: To notify end of stream. <ref refid="group___media_player_1gga8540dbe422378b32c0bffb5f5a627f59a696fa4f5b44f3b6e7a10efce4f1f4a86" kindref="member">MLMediaCodecBufferFlag_MuxerData</ref>: if it is muxer data (only Exif data block is supported).</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="67" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="67" bodyend="88" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" declline="412" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media_recorder_1ga84cd66bca542ecaaeab51d52913b1a01" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLMediaMuxerSampleDataInit</definition>
+        <argsstring>(MLMediaMuxerSampleData *inout_sampledata)</argsstring>
+        <name>MLMediaMuxerSampleDataInit</name>
+        <param>
+          <type><ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref> *</type>
+          <declname>inout_sampledata</declname>
+        </param>
+        <briefdescription>
+<para>Initializes MLMediaMuxerSampleData with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000398"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.4.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_sampledata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SampleData defined by <ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref> that needs to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" line="96" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h" bodystart="96" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a28ae08e36c0aeb2dbac58f13fc36e8e5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a28ae08e36c0aeb2dbac58f13fc36e8e5" kindref="member">MLMediaMuxerOutputFormat_MPEG4</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="50" refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273ad2550c1696f2a3d906a136e94bdfcf2f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273ad2550c1696f2a3d906a136e94bdfcf2f" kindref="member">MLMediaMuxerOutputFormat_WEBM</ref><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="52" refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a4bbb9631cc73bcb8abeb4d0e226a4daa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a4bbb9631cc73bcb8abeb4d0e226a4daa" kindref="member">MLMediaMuxerOutputFormat_3GPP</ref><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="54" refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a85ba299677d861dce397fad529cbcb86" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273a85ba299677d861dce397fad529cbcb86" kindref="member">MLMediaMuxerOutputFormat_HEIF</ref><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="56" refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273aa8e082417528bc78fa4b3f965b78b6bf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273aa8e082417528bc78fa4b3f965b78b6bf" kindref="member">MLMediaMuxerOutputFormat_OGG</ref><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="group___media_recorder_1gga6925abe30ac508953eb6ed5dd4280273ac4dbe98237cffd02fb47d90a6cbe3b75" kindref="member">MLMediaMuxerOutputFormat_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="59" refid="group___media_recorder_1ga57f9fc790d432d686270d164efbfbc1b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___media_recorder_1gaa8c50226125b17a7c5f9127c67c38fdb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>track_index;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="group___media_player_1ga0845ed40753484caafc15a8303ec8d12" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1ga9da43737dfdfa453249c7445d4668197" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>int64_t<sp/><ref refid="group___media_player_1ga846df5c95d97f5414c9f5b25436cf102" kindref="member">time_us</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="group___media_player_1gace6a61fd33b9fb0bbf1fd9b6418c0731" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="88" refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="group___media_recorder_1ga84cd66bca542ecaaeab51d52913b1a01" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga84cd66bca542ecaaeab51d52913b1a01" kindref="member">MLMediaMuxerSampleDataInit</ref>(<ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref><sp/>*inout_sampledata)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_sampledata)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_sampledata-&gt;version<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_sampledata-&gt;track_index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_sampledata-&gt;buffer<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_sampledata-&gt;size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_sampledata-&gt;time_us<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_sampledata-&gt;flags<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerCreate(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerRelease(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="163" refid="group___media_recorder_1gae94321a7c5f818766f6a16dab945f52f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerGetSupportedOutputFormats(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/>const<sp/><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref><sp/>*<ref refid="group___media_recorder_1gae94321a7c5f818766f6a16dab945f52f" kindref="member">out_format_list</ref>[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1gaf690925182411e18c8fcd75a7d1d1c42" kindref="member">out_format_list_size</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="187" refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerGetSupportedMimes(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref><sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*const<sp/>*<ref refid="group___media_recorder_1gacdd817a5b622fcc938317ab36968ec72" kindref="member">out_mime_list</ref>[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1gab2a504eb4cae2f7dec63d8842b3c625e" kindref="member">out_mime_list_size</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="209" refid="group___media_recorder_1ga271d1f7915670ad4e92979d61b487f1d" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerConfigure(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/><ref refid="group___media_recorder_1ga6925abe30ac508953eb6ed5dd4280273" kindref="member">MLMediaMuxerOutputFormat</ref><sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1ga271d1f7915670ad4e92979d61b487f1d" kindref="member">path</ref>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="284" refid="group___media_recorder_1ga8e8fb5041dd76145b66ceb0176e0790a" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerAddTrack(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___media_recorder_1ga8e8fb5041dd76145b66ceb0176e0790a" kindref="member">media_format</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*<ref refid="group___media_recorder_1ga9a3dda9ca34f3666c8bdf58f74a4a46c" kindref="member">out_track_index</ref>);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="313" refid="group___media_recorder_1ga23ee956c105b73b2a5da7e3a2d32ae2f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerSetOrientationHint(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/>int32_t<sp/><ref refid="group___media_recorder_1ga23ee956c105b73b2a5da7e3a2d32ae2f" kindref="member">degrees</ref>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="339" refid="group___media_recorder_1gad9e643bc6bd5a62b9b5011cf1c93629e" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerSetLocation(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1gad9e643bc6bd5a62b9b5011cf1c93629e" kindref="member">latitude</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group___media_recorder_1ga74754d9c8e753395a0b07b7e4f1fd7ca" kindref="member">longitude</ref>);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerStart(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="393" refid="group___media_recorder_1ga39a273b78f2cc1d772dd8c28c15cb808" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerWriteSampleData(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer,<sp/>const<sp/><ref refid="group___media_recorder_1gafc31ced432f66bcc3da9241eeeb0dc67" kindref="member">MLMediaMuxerSampleData</ref><sp/>*<ref refid="group___media_recorder_1ga39a273b78f2cc1d772dd8c28c15cb808" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>standard<sp/>Android<sp/>SDK<sp/>and<sp/>NDK<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLMediaMuxerStop(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>media_muxer);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h"/>
+  </compounddef>
+</doxygen>

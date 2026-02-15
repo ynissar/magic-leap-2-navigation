@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__audio__channel__mask_8h" kind="file" language="C++">
+    <compoundname>ml_audio_channel_mask.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h</label>
+        <link refid="ml__audio__channel__mask_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___media_player_1ga41851db3b4af2729d7125fbc2394ddee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioChannelOutMask</name>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" prot="public">
+          <name>MLAudioChannelOutMask_FrontLeft</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" prot="public">
+          <name>MLAudioChannelOutMask_FrontRight</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" prot="public">
+          <name>MLAudioChannelOutMask_FrontCenter</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" prot="public">
+          <name>MLAudioChannelOutMask_LowFrequency</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" prot="public">
+          <name>MLAudioChannelOutMask_BackLeft</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" prot="public">
+          <name>MLAudioChannelOutMask_BackRight</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae598dce3515273c52e4f4150007736b2" prot="public">
+          <name>MLAudioChannelOutMask_FrontLeftOfCenter</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea3f09d3f556c48ffc4130f8b72a5076fc" prot="public">
+          <name>MLAudioChannelOutMask_FrontRightOfCenter</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeab53197647a5feccbba68971374103240" prot="public">
+          <name>MLAudioChannelOutMask_BackCenter</name>
+          <initializer>= 0x100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea1fa53cf391b363016efbdcae81eec902" prot="public">
+          <name>MLAudioChannelOutMask_SideLeft</name>
+          <initializer>= 0x200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae55b581fcd6142f9e1ab83fc03bd2ff5" prot="public">
+          <name>MLAudioChannelOutMask_SideRight</name>
+          <initializer>= 0x400</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea44b76f3fc5a7d109ceb61a67a453d0c7" prot="public">
+          <name>MLAudioChannelOutMask_TopCenter</name>
+          <initializer>= 0x800</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea03d34cd3e8d664b63596944c2d1d0a4e" prot="public">
+          <name>MLAudioChannelOutMask_TopFrontLeft</name>
+          <initializer>= 0x1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea14efd53710ea6ddebb3c4e27d74ea12a" prot="public">
+          <name>MLAudioChannelOutMask_TopFrontCenter</name>
+          <initializer>= 0x2000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea0bc3ddd1d542bec2f9b0d75eb33361b8" prot="public">
+          <name>MLAudioChannelOutMask_TopFrontRight</name>
+          <initializer>= 0x4000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea7807d17d1ce3048100a5005096d90018" prot="public">
+          <name>MLAudioChannelOutMask_TopBackLeft</name>
+          <initializer>= 0x8000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaca910d88b07d51c68c58699ac83d4d41" prot="public">
+          <name>MLAudioChannelOutMask_TopBackCenter</name>
+          <initializer>= 0x10000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea5745c98590562834e38e749861ccc1d8" prot="public">
+          <name>MLAudioChannelOutMask_TopBackRight</name>
+          <initializer>= 0x20000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeadec3f2f7111521d674a992060f69a4a1" prot="public">
+          <name>MLAudioChannelOutMask_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Audio channel output mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For a channel position mask, each allowed channel position corresponds to a bit in the channel mask. If that channel position is present in the audio frame, that bit is set, otherwise it is zero. The order of the bits (from lsb to msb) corresponds to the order of that position&apos;s sample in the audio frame. The canonical channel position masks by channel count are as follows:</para>
+<para><hruler/>
+ </para>
+<sect1 id="group___media_player_1autotoc_md2">
+<title>channel count  channel position mask</title>
+<para>1 MLAudioChannelOutMono 2 MLAudioChannelOutStereo 3 MLAudioChannelOutStereo | MLAudioChannelOutMask_FrontCenter 4 MLAudioChannelOutQuad 5 MLAudioChannelOutQuad | MLAudioChannelOutMask_FrontCenter 6 MLAudioChannelOut5Point1 7 MLAudioChannelOut5Point1 | MLAudioChannelOutMask_BackCenter </para>
+</sect1>
+<sect1 id="group___media_player_1autotoc_md3">
+<title>8    MLAudioChannelOut7Point1Surround</title>
+<para>These masks are an ORed composite of individual channel masks. For example MLAudioChannelOutMask_Stereo is composed of MLAudioChannelOutMask_FrontLeft and MLAudioChannelOutMask_FrontRight.</para>
+<para>Reference:<itemizedlist>
+<listitem><para><ulink url="https://android.googlesource.com/platform/frameworks/base/+/b267554/media/java/android/media/AudioFormat.java">https://android.googlesource.com/platform/frameworks/base/+/b267554/media/java/android/media/AudioFormat.java</ulink></para>
+</listitem><listitem><para><ulink url="https://trac.ffmpeg.org/wiki/AudioChannelManipulation#Listchannelnamesandstandardchannellayouts">https://trac.ffmpeg.org/wiki/AudioChannelManipulation#Listchannelnamesandstandardchannellayouts</ulink> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="58" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___media_player_1gab00facbc2b8244fe38b26dc17d58ae52" prot="public" static="no">
+        <type>enum <ref refid="group___media_player_1ga41851db3b4af2729d7125fbc2394ddee" kindref="member">MLAudioChannelOutMask</ref></type>
+        <definition>typedef enum MLAudioChannelOutMask MLAudioChannelOutMask</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOutMask</name>
+        <briefdescription>
+<para>Audio channel output mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For a channel position mask, each allowed channel position corresponds to a bit in the channel mask. If that channel position is present in the audio frame, that bit is set, otherwise it is zero. The order of the bits (from lsb to msb) corresponds to the order of that position&apos;s sample in the audio frame. The canonical channel position masks by channel count are as follows:</para>
+<para><hruler/>
+ </para>
+<sect1 id="group___media_player_1autotoc_md2">
+<title>channel count  channel position mask</title>
+<para>1 MLAudioChannelOutMono 2 MLAudioChannelOutStereo 3 MLAudioChannelOutStereo | MLAudioChannelOutMask_FrontCenter 4 MLAudioChannelOutQuad 5 MLAudioChannelOutQuad | MLAudioChannelOutMask_FrontCenter 6 MLAudioChannelOut5Point1 7 MLAudioChannelOut5Point1 | MLAudioChannelOutMask_BackCenter </para>
+</sect1>
+<sect1 id="group___media_player_1autotoc_md3">
+<title>8    MLAudioChannelOut7Point1Surround</title>
+<para>These masks are an ORed composite of individual channel masks. For example MLAudioChannelOutMask_Stereo is composed of MLAudioChannelOutMask_FrontLeft and MLAudioChannelOutMask_FrontRight.</para>
+<para>Reference:<itemizedlist>
+<listitem><para><ulink url="https://android.googlesource.com/platform/frameworks/base/+/b267554/media/java/android/media/AudioFormat.java">https://android.googlesource.com/platform/frameworks/base/+/b267554/media/java/android/media/AudioFormat.java</ulink></para>
+</listitem><listitem><para><ulink url="https://trac.ffmpeg.org/wiki/AudioChannelManipulation#Listchannelnamesandstandardchannellayouts">https://trac.ffmpeg.org/wiki/AudioChannelManipulation#Listchannelnamesandstandardchannellayouts</ulink> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="79" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___media_player_1ga0a1aa2fce4b1b8d36da9bc79f4030d4b" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOutMono</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOutMono</name>
+        <initializer>= <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definition of some of the known Channel Layouts.</para>
+<para>Channel Layout for Mono. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="85" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_player_1ga72a4f4e3fd24dae2be17e497496a8cd6" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOutStereo</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOutStereo</name>
+        <initializer>= (<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Layout for Stereo. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="88" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_player_1ga20c07dc54a3dd1bde0fc9679aa61d738" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOutQuad</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOutQuad</name>
+        <initializer>= (<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref> |
+                                 <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Layout for Quad. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="91" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_player_1ga5badedb2b0b07c138881cdedf5da5146" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOutSurround</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOutSurround</name>
+        <initializer>= (<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref> |
+                                     <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeab53197647a5feccbba68971374103240" kindref="member">MLAudioChannelOutMask_BackCenter</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Layout for Surround. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="95" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_player_1ga8b0b64da554c5230fdb61da40b391d33" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOut5Point1</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOut5Point1</name>
+        <initializer>= (<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref> |
+                                    <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref> |
+                                    <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Layout for 5.1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="99" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_player_1gaaecbfc0389ba291207558c4c3ed088f2" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOut7Point1</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOut7Point1</name>
+        <initializer>= (<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref> |
+                                    <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref> |
+                                    <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref> |
+                                    <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae598dce3515273c52e4f4150007736b2" kindref="member">MLAudioChannelOutMask_FrontLeftOfCenter</ref> |
+                                    <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea3f09d3f556c48ffc4130f8b72a5076fc" kindref="member">MLAudioChannelOutMask_FrontRightOfCenter</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Layout for 7.1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="104" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___media_player_1ga55b0b652928a9c1f5c3191378bd1df52" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MLAudioChannelOut7Point1Surround</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelOut7Point1Surround</name>
+        <initializer>= (<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref> |
+                                            <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref> |
+                                            <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea1fa53cf391b363016efbdcae81eec902" kindref="member">MLAudioChannelOutMask_SideLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae55b581fcd6142f9e1ab83fc03bd2ff5" kindref="member">MLAudioChannelOutMask_SideRight</ref> |
+                                            <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref> | <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref> |
+                                            <ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Layout for 7.1 Surround. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" line="111" column="15" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___media_player_1ga41851db3b4af2729d7125fbc2394ddee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1ga41851db3b4af2729d7125fbc2394ddee" kindref="member">MLAudioChannelOutMask</ref><sp/>{</highlight></codeline>
+<codeline lineno="59" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="60" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="61" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="62" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x8,</highlight></codeline>
+<codeline lineno="63" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x10,</highlight></codeline>
+<codeline lineno="64" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x20,</highlight></codeline>
+<codeline lineno="65" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae598dce3515273c52e4f4150007736b2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae598dce3515273c52e4f4150007736b2" kindref="member">MLAudioChannelOutMask_FrontLeftOfCenter</ref><sp/><sp/>=<sp/>0x40,</highlight></codeline>
+<codeline lineno="66" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea3f09d3f556c48ffc4130f8b72a5076fc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea3f09d3f556c48ffc4130f8b72a5076fc" kindref="member">MLAudioChannelOutMask_FrontRightOfCenter</ref><sp/>=<sp/>0x80,</highlight></codeline>
+<codeline lineno="67" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeab53197647a5feccbba68971374103240" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeab53197647a5feccbba68971374103240" kindref="member">MLAudioChannelOutMask_BackCenter</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x100,</highlight></codeline>
+<codeline lineno="68" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea1fa53cf391b363016efbdcae81eec902" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea1fa53cf391b363016efbdcae81eec902" kindref="member">MLAudioChannelOutMask_SideLeft</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x200,</highlight></codeline>
+<codeline lineno="69" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae55b581fcd6142f9e1ab83fc03bd2ff5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae55b581fcd6142f9e1ab83fc03bd2ff5" kindref="member">MLAudioChannelOutMask_SideRight</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x400,</highlight></codeline>
+<codeline lineno="70" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea44b76f3fc5a7d109ceb61a67a453d0c7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea44b76f3fc5a7d109ceb61a67a453d0c7" kindref="member">MLAudioChannelOutMask_TopCenter</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x800,</highlight></codeline>
+<codeline lineno="71" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea03d34cd3e8d664b63596944c2d1d0a4e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea03d34cd3e8d664b63596944c2d1d0a4e" kindref="member">MLAudioChannelOutMask_TopFrontLeft</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x1000,</highlight></codeline>
+<codeline lineno="72" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea14efd53710ea6ddebb3c4e27d74ea12a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea14efd53710ea6ddebb3c4e27d74ea12a" kindref="member">MLAudioChannelOutMask_TopFrontCenter</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x2000,</highlight></codeline>
+<codeline lineno="73" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea0bc3ddd1d542bec2f9b0d75eb33361b8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea0bc3ddd1d542bec2f9b0d75eb33361b8" kindref="member">MLAudioChannelOutMask_TopFrontRight</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x4000,</highlight></codeline>
+<codeline lineno="74" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea7807d17d1ce3048100a5005096d90018" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea7807d17d1ce3048100a5005096d90018" kindref="member">MLAudioChannelOutMask_TopBackLeft</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x8000,</highlight></codeline>
+<codeline lineno="75" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaca910d88b07d51c68c58699ac83d4d41" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaca910d88b07d51c68c58699ac83d4d41" kindref="member">MLAudioChannelOutMask_TopBackCenter</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x10000,</highlight></codeline>
+<codeline lineno="76" refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea5745c98590562834e38e749861ccc1d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea5745c98590562834e38e749861ccc1d8" kindref="member">MLAudioChannelOutMask_TopBackRight</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x20000,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeadec3f2f7111521d674a992060f69a4a1" kindref="member">MLAudioChannelOutMask_Ensure32Bits</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="79" refid="group___media_player_1gab00facbc2b8244fe38b26dc17d58ae52" refkind="member"><highlight class="normal">}<sp/><ref refid="group___media_player_1ga41851db3b4af2729d7125fbc2394ddee" kindref="member">MLAudioChannelOutMask</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="group___media_player_1ga0a1aa2fce4b1b8d36da9bc79f4030d4b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1ga0a1aa2fce4b1b8d36da9bc79f4030d4b" kindref="member">MLAudioChannelOutMono</ref><sp/>=<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="group___media_player_1ga72a4f4e3fd24dae2be17e497496a8cd6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1ga72a4f4e3fd24dae2be17e497496a8cd6" kindref="member">MLAudioChannelOutStereo</ref><sp/>=<sp/>(<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="group___media_player_1ga20c07dc54a3dd1bde0fc9679aa61d738" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1ga20c07dc54a3dd1bde0fc9679aa61d738" kindref="member">MLAudioChannelOutQuad</ref><sp/>=<sp/>(<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group___media_player_1ga5badedb2b0b07c138881cdedf5da5146" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1ga5badedb2b0b07c138881cdedf5da5146" kindref="member">MLAudioChannelOutSurround</ref><sp/>=<sp/>(<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeab53197647a5feccbba68971374103240" kindref="member">MLAudioChannelOutMask_BackCenter</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="group___media_player_1ga8b0b64da554c5230fdb61da40b391d33" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1ga8b0b64da554c5230fdb61da40b391d33" kindref="member">MLAudioChannelOut5Point1</ref><sp/>=<sp/>(<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref><sp/>|</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="group___media_player_1gaaecbfc0389ba291207558c4c3ed088f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1gaaecbfc0389ba291207558c4c3ed088f2" kindref="member">MLAudioChannelOut7Point1</ref><sp/>=<sp/>(<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref><sp/>|</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae598dce3515273c52e4f4150007736b2" kindref="member">MLAudioChannelOutMask_FrontLeftOfCenter</ref><sp/>|</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea3f09d3f556c48ffc4130f8b72a5076fc" kindref="member">MLAudioChannelOutMask_FrontRightOfCenter</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="group___media_player_1ga55b0b652928a9c1f5c3191378bd1df52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___media_player_1ga55b0b652928a9c1f5c3191378bd1df52" kindref="member">MLAudioChannelOut7Point1Surround</ref><sp/>=<sp/>(<ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeabdfb1b6f1a03692175d4b064ccdbf1b1" kindref="member">MLAudioChannelOutMask_FrontLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeac18c44b0aa30c9183df6a0ec1183afdd" kindref="member">MLAudioChannelOutMask_FrontCenter</ref><sp/>|</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaeb8956848283c4ff15a065398481c712" kindref="member">MLAudioChannelOutMask_FrontRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea1fa53cf391b363016efbdcae81eec902" kindref="member">MLAudioChannelOutMask_SideLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeae55b581fcd6142f9e1ab83fc03bd2ff5" kindref="member">MLAudioChannelOutMask_SideRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeaf030cfd41c309ec70cf055bfe9fde45a" kindref="member">MLAudioChannelOutMask_BackLeft</ref><sp/>|<sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeea32eacbf3657c919e103dbb3b11314bbc" kindref="member">MLAudioChannelOutMask_BackRight</ref><sp/>|</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___media_player_1gga41851db3b4af2729d7125fbc2394ddeeacc02793c3d9e141a8c34bfef1ec30af4" kindref="member">MLAudioChannelOutMask_LowFrequency</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h"/>
+  </compounddef>
+</doxygen>

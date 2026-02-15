@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___planes" kind="group">
+    <compoundname>Planes</compoundname>
+    <title>Planes</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLPlanesQueryFlags</name>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea0e1f1b8b6bd225083fd6398b92bffbd7" prot="public">
+          <name>MLPlanesQueryFlag_Vertical</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes whose normal is perpendicular to gravity. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea60b55e7e846213aa7a4bdcea05917d62" prot="public">
+          <name>MLPlanesQueryFlag_Horizontal</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes whose normal is parallel to gravity. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eead2345dd555c0d0587fbfef3d575d76c6" prot="public">
+          <name>MLPlanesQueryFlag_Arbitrary</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes with arbitrary normals. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa6fc64fb64939159ce9075ab9495a74a" prot="public">
+          <name>MLPlanesQueryFlag_AllOrientations</name>
+          <initializer>= MLPlanesQueryFlag_Vertical |
+                                       MLPlanesQueryFlag_Horizontal |
+                                       MLPlanesQueryFlag_Arbitrary</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include all plane orientations. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eeaa8c99e029ad1a15c72597546e8f4d1a0" prot="public">
+          <name>MLPlanesQueryFlag_OrientToGravity</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>For non-horizontal planes, setting this flag will result in the top of the plane rectangle being perpendicular to gravity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea3ab38887babe9a4b625837cae39a5594" prot="public">
+          <name>MLPlanesQueryFlag_Inner</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>If this flag is set, inner planes will be returned; if it is not set, outer planes will be returned. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea19e986a3f2282eb345ec33aca954a0a9" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_Ceiling</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes semantically tagged as ceiling. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea310257726f108387fd8c430219aac835" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_Floor</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes semantically tagged as floor. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea22d1746a12c90914092288e2b4e3a909" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_Wall</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include planes semantically tagged as wall. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea43a95995b61b03911143121bdcab6ecb" prot="public">
+          <name>MLPlanesQueryFlag_Semantic_All</name>
+          <initializer>= MLPlanesQueryFlag_Semantic_Ceiling |
+                                       MLPlanesQueryFlag_Semantic_Floor |
+                                       MLPlanesQueryFlag_Semantic_Wall</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include all planes that are semantically tagged. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea27dd0e7f9145e6e040d9c713338bb8dd" prot="public">
+          <name>MLPlanesQueryFlag_Polygons</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+<para>Include polygonal planes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When this flag is set:</para>
+<para><itemizedlist>
+<listitem><para>MLPlanesQueryGetResultsWithBoundaries returns polygons along with other applicable rectangular planes. MLPlanesReleaseBoundariesList MUST be called before the next call to MLPlanesQueryGetResultsWithBoundaries, otherwise UnspecifiedFailure will be returned.</para>
+</listitem></itemizedlist>
+</para>
+<para>When this flag is not set:</para>
+<para><itemizedlist>
+<listitem><para>MLPlanesQueryGetResultsWithBoundaries returns just rectangular planes. No need to call MLPlanesReleaseBoundariesList.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___planes_1ggad84e5ef87b8e50b35ce8720d252ad8eea55f603fb2a0a028048df1d462ac9b617" prot="public">
+          <name>MLPlanesQueryFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control flags for plane queries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="33" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="33" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___planes_1ga3d1fa8e56a2fb1ca58e6ffba7bd021e4" prot="public" static="no">
+        <type>enum <ref refid="group___planes_1gad84e5ef87b8e50b35ce8720d252ad8ee" kindref="member">MLPlanesQueryFlags</ref></type>
+        <definition>typedef enum MLPlanesQueryFlags MLPlanesQueryFlags</definition>
+        <argsstring></argsstring>
+        <name>MLPlanesQueryFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control flags for plane queries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="84" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlane</definition>
+        <argsstring></argsstring>
+        <name>MLPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="105" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gad8e03a40aba45ad431a8bd41797cd6f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPolygon</definition>
+        <argsstring></argsstring>
+        <name>MLPolygon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="119" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gac04c4217032fcdd850e1f9c5f1c449d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlaneBoundary</definition>
+        <argsstring></argsstring>
+        <name>MLPlaneBoundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="134" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlaneBoundaries</definition>
+        <argsstring></argsstring>
+        <name>MLPlaneBoundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="149" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlaneBoundariesList</definition>
+        <argsstring></argsstring>
+        <name>MLPlaneBoundariesList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="171" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga50791a10a1791be810696d83645d5381" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLPlanesQuery</definition>
+        <argsstring></argsstring>
+        <name>MLPlanesQuery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="227" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga1aad2db0af5f1cde3b8ecf0128a35bb7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref> *</type>
+        <definition>const MLPlanesQuery* query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="287" column="30" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gab62413291ac149ca04bd6cdde3a68eea" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref> <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+        <definition>const MLPlanesQuery MLHandle* out_handle</definition>
+        <argsstring></argsstring>
+        <name>out_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="287" column="45" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga328cd4774644d87f0ff6a740999e85ff" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle planes_query</definition>
+        <argsstring></argsstring>
+        <name>planes_query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gafee686fa7a96fa061e838a9d9354423c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> *</type>
+        <definition>MLHandle MLPlane* out_results</definition>
+        <argsstring></argsstring>
+        <name>out_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="40" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga8b7158805ea8b40d78609117b265b1aa" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> uint32_t *</type>
+        <definition>MLHandle MLPlane uint32_t* out_num_results</definition>
+        <argsstring></argsstring>
+        <name>out_num_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="61" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1gaf1d315c2fdea072bc4a2e1732147b2d3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> uint32_t <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> *</type>
+        <definition>MLHandle MLPlane uint32_t MLPlaneBoundariesList* out_boundaries</definition>
+        <argsstring></argsstring>
+        <name>out_boundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="314" column="99" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___planes_1ga80c83d7e9664b7c268d2c97fdc381e1f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> *</type>
+        <definition>MLPlaneBoundariesList* plane_boundaries</definition>
+        <argsstring></argsstring>
+        <name>plane_boundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="333" column="32" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___planes_1ga3a857120d906c95607210d9f869b43fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))) struct MLPolygon</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use XR_EXT_plane_detection OpenXR extention.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Coplanar connected line segments representing the outer boundary of a polygon, an <emphasis>n</emphasis>-sided polygon where <emphasis>n</emphasis> is the number of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Releases the polygons data owned by the <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref>. Also, check MLPlanesQueryFlag_Polygons description for this API&apos;s further behavior.</para>
+<para>Gets the result of a plane query with boundaries on each plane. After this function has returned successfully, the handle is invalid and should be discarded. Also check MLPlanesQueryFlag_Polygons description for this API&apos;s further behavior.</para>
+<para>Initiates a plane query.</para>
+<para>Destroys a planes tracker.</para>
+<para>Creates a planes tracker.</para>
+<para>Type used to represent a plane query.</para>
+<para>Initializes an MLPlaneBoundariesList structure.</para>
+<para>Type to represent polygons of all returned planes.</para>
+<para>Type to represent multiple regions on a 2D plane.</para>
+<para>Type used to represent a region boundary on a 2D plane.</para>
+<para>A plane with width and height.</para>
+<para><xrefsect id="deprecated_1_deprecated000534"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000535"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000536"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000537"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000538"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_boundaries_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> structure which is initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000625"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000539"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000540"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle to the planes tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create planes tracker due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created planes tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks permission. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create planes tracker due to an unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000626"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000541"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to planes tracker to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed planes tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000627"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000542"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>One of the following flags must be set for the query to be considered valid:<itemizedlist>
+<listitem><para>MLPlanesQueryFlag_Vertical flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Horizontal flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Arbitrary flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Semantic_Ceiling flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Semantic_Floor flag.</para>
+</listitem><listitem><para>MLPlanesQueryFlag_Semantic_Wall flag.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="group___planes_1ga50791a10a1791be810696d83645d5381" kindref="member">MLPlanesQuery</ref> structure containing query parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will contain the handle to the query. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to initiate plane query due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully initiated plane query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000628"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000543"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesQueryBegin(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> structures. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_num_results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The count of results pointed to by out_results. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_boundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="group___planes_1gaa61bff559a7f2ed5788f7285f42ede2a" kindref="member">MLPlaneBoundariesList</ref> for the returned polygons. If out_boundaries is NULL, the function call will not return any polygons, otherwise *out_boundaries must be zero initialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully completed query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Query completion is pending. This is not a failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Query timed out due to unknown reason. Make a new query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to complete query due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000629"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000544"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">planes_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle produced by MLPlanesCreate(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">plane_boundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polygons pointer to the #MLPlaneBoundariessList.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to release memory due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released memory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000630"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Plane center.</para>
+<para>Plane rotation.</para>
+<para>Plane width.</para>
+<para>Plane height.</para>
+<para>Flags which describe this plane.</para>
+<para>Plane ID. All inner planes within an outer plane will have the same ID (outer plane&apos;s ID). These IDs are persistent across plane queries unless a map merge occurs. On a map merge, IDs could be different.</para>
+<para>Vertices of all line segments.</para>
+<para>Number of vertices.</para>
+<para>The polygon that defines the region, the boundary vertices in MLPolygon will be in CCW order.</para>
+<para>A polygon may contains multiple holes, the boundary vertices in MLPolygon will be in CW order.</para>
+<para>Count of the holes.</para>
+<para>Plane ID, the same value associating to the ID in <ref refid="group___planes_1ga92b8d16f037d0204f1f3dc87e5e9e125" kindref="member">MLPlane</ref> if they belong to the same plane.</para>
+<para>The boundaries in a plane.</para>
+<para>Count of boundaries. A plane may contain multiple boundaries each of which defines a region.</para>
+<para>List of <ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+Count of <ref refid="group___planes_1ga4054eab4b28c8c4f569747f5b03d889d" kindref="member">MLPlaneBoundaries</ref> in the array.</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+The flags to apply to this query.</para>
+<para>The center of the bounding box which defines where planes extraction should occur.</para>
+<para>The rotation of the bounding box where planes extraction will occur.</para>
+<para>The size of the bounding box where planes extraction will occur. Only planes within 10 meters of the device will be extracted. The maximum value is 20 meters in each direction. A value of (0, 0, 0) will be treated as (20, 20, 20).</para>
+<para>The maximum number of results that should be returned. This is also the minimum expected size of the array of results passed to the MLPlanesGetResult function. In the case where the number of rectangular planes exceed this value, only the largest max_results planes will be returned. This can cause the number of polygons returned to be smaller than max_results, as there can be multiple inner planes per planar surface but only one polygon, and if the rectangular plane of a planar surface is not being returned because max_results have been reached, the corresponding polygon won&apos;t be returned.</para>
+<para>The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). A good default value is 0.25.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" line="87" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" bodystart="87" bodyend="105" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h" declline="258" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Planes system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="warning"><para>THIS API IS DEPRECATED IN FAVOR OF OPENXR XR_EXT_plane_detection EXTENSION: <ulink url="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_plane_detection">https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_plane_detection</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

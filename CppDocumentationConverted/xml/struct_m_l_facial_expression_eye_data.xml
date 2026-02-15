@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_facial_expression_eye_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLFacialExpressionEyeData</compoundname>
+    <includes refid="ml__facial__expression_8h" local="no">ml_facial_expression.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_facial_expression_eye_data_1a82f70cc473f412625be68f71ca7102a2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLFacialExpressionEyeData::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="98" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_facial_expression_eye_data_1a6a4b79b690223d33f6a184a09d3ca9ac" prot="public" static="no" mutable="no">
+        <type><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref></type>
+        <definition>MLTime MLFacialExpressionEyeData::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref> timestamp when expression data was updated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="100" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_facial_expression_eye_data_1af4432cf3b2c357daee237c881b8c876d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLFacialExpressionEyeData::eye_expression_weights[MLFacialExpressionEyeExpressionType_Count]</definition>
+        <argsstring>[MLFacialExpressionEyeExpressionType_Count]</argsstring>
+        <name>eye_expression_weights</name>
+        <briefdescription>
+<para>Eye expression weights. The values are between 0 and 1 and ordered such that the array should be indexed using <ref refid="group___facial_expression_1ga5b9cb80070d89da8202c1155cff14971" kindref="member">MLFacialExpressionEyeExpressionType</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="106" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about facial expressions. This structure must be initialized by calling <ref refid="group___facial_expression_1gae76d323432fb31d325c3730389c7c1b8" kindref="member">MLFacialExpressionEyeDataInit</ref> before use. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="96" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="96" bodyend="107"/>
+    <listofallmembers>
+      <member refid="struct_m_l_facial_expression_eye_data_1af4432cf3b2c357daee237c881b8c876d" prot="public" virt="non-virtual"><scope>MLFacialExpressionEyeData</scope><name>eye_expression_weights</name></member>
+      <member refid="struct_m_l_facial_expression_eye_data_1a6a4b79b690223d33f6a184a09d3ca9ac" prot="public" virt="non-virtual"><scope>MLFacialExpressionEyeData</scope><name>timestamp</name></member>
+      <member refid="struct_m_l_facial_expression_eye_data_1a82f70cc473f412625be68f71ca7102a2" prot="public" virt="non-virtual"><scope>MLFacialExpressionEyeData</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

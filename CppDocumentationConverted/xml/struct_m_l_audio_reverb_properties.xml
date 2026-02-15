@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_reverb_properties" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioReverbProperties</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1ga7a485f53531542492a9f6adadc886fe0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref></type>
+        <definition>MLAudioMultibandLevel MLAudioReverbProperties::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverb output mix level. Range is [0, 0, 0, 0] to [8, 2, 2, 2]. Default is [0.16, 1, 1, 1]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="241" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gae8ee4c3f1c54a93f24f71fee745aeb90" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::pre_delay</definition>
+        <argsstring></argsstring>
+        <name>pre_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delay (secs) from direct sound to the late reverberation onset. Must be &gt;= dispersion pre_delay. Range is 0.02 to 0.1. Default is 0.03. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="243" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga54049cc54d29f8cec2e653435d509f39" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::decay_time</definition>
+        <argsstring></argsstring>
+        <name>decay_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decay time (secs) for late reverberation. Range is 0 to 20. Default is 0.7. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="245" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gacaa099a31b5c476995460dd8c30f5104" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::decay_time_lf_ratio</definition>
+        <argsstring></argsstring>
+        <name>decay_time_lf_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relative reverberation decay time multiplying factor for low frequencies. Range is 0.1 to 2. Default is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="247" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga587c82a51d58538f525f294671731cc2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioReverbProperties::decay_time_hf_ratio</definition>
+        <argsstring></argsstring>
+        <name>decay_time_hf_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relative reverberation decay time multiplying factor for high frequencies. Range is 0.1 to 2. Default is 0.6. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="249" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties specifying acoustic reverberation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLAudioMultibandLevel</label>
+        <link refid="struct_m_l_audio_multiband_level"/>
+      </node>
+      <node id="1">
+        <label>MLAudioReverbProperties</label>
+        <link refid="struct_m_l_audio_reverb_properties"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gain</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="239" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="239" bodyend="250"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1ga54049cc54d29f8cec2e653435d509f39" prot="public" virt="non-virtual"><scope>MLAudioReverbProperties</scope><name>decay_time</name></member>
+      <member refid="group___audio_defs_1ga587c82a51d58538f525f294671731cc2" prot="public" virt="non-virtual"><scope>MLAudioReverbProperties</scope><name>decay_time_hf_ratio</name></member>
+      <member refid="group___audio_defs_1gacaa099a31b5c476995460dd8c30f5104" prot="public" virt="non-virtual"><scope>MLAudioReverbProperties</scope><name>decay_time_lf_ratio</name></member>
+      <member refid="group___audio_defs_1ga7a485f53531542492a9f6adadc886fe0" prot="public" virt="non-virtual"><scope>MLAudioReverbProperties</scope><name>gain</name></member>
+      <member refid="group___audio_defs_1gae8ee4c3f1c54a93f24f71fee745aeb90" prot="public" virt="non-virtual"><scope>MLAudioReverbProperties</scope><name>pre_delay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

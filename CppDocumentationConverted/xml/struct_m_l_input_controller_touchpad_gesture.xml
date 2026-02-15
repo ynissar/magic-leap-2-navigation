@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_input_controller_touchpad_gesture" kind="struct" language="C++" prot="public">
+    <compoundname>MLInputControllerTouchpadGesture</compoundname>
+    <includes refid="ml__input_8h" local="no">ml_input.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1ae0414d116716aa6071e0d2d76a805371" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLInputControllerTouchpadGesture::pos_and_force</definition>
+        <argsstring></argsstring>
+        <name>pos_and_force</name>
+        <briefdescription>
+<para>Gesture position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="129" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1a23922f7aa4d2d44bd67581d4bc3d9027" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1ga6ed80c553ffffe76a5d3e5f3d09cd14a" kindref="member">MLInputControllerTouchpadGestureType</ref></type>
+        <definition>MLInputControllerTouchpadGestureType MLInputControllerTouchpadGesture::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of gesture. Supported gesture types are listed below: <itemizedlist>
+<listitem><para>Tap gesture. </para>
+</listitem>
+<listitem><para>Force tap down gesture. </para>
+</listitem>
+<listitem><para>Second force down gesture. </para>
+</listitem>
+<listitem><para>Force tap up gesture. </para>
+</listitem>
+<listitem><para>Force dwell gesture. </para>
+</listitem>
+<listitem><para>Radial scroll gesture. </para>
+</listitem>
+<listitem><para>Swipe gesture. </para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="139" column="40" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1a1d072a449461df6b1c6d4d050bfe03f3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___input_1ga7982b8f90bafa6c227c1924929689537" kindref="member">MLInputControllerTouchpadGestureDirection</ref></type>
+        <definition>MLInputControllerTouchpadGestureDirection MLInputControllerTouchpadGesture::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Direction of gesture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="141" column="45" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1a7706674e5591e13296b19c679bb1dbcc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLInputControllerTouchpadGesture::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+<para>Speed of gesture. Note that the value has different meanings depending on the gesture type being performed. For radial scroll the distance is the difference in angles between the start and the end of the gesture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="147" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1a80ba401a166086f6afb5612dd146f111" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLInputControllerTouchpadGesture::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+<para>For radial gestures, this is the absolute value of the angle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="151" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1a68f94584a8e2cabe3b712c11d2cbfbf7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLInputControllerTouchpadGesture::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+<para>For radial gestures, this is the radius of the gesture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="155" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_input_controller_touchpad_gesture_1ac1ef7435f35307b82c2e1ca7cca93c13" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLInputControllerTouchpadGesture::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle between the positive x axis and the ray to the finger point in radians. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="157" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure containing information about recognized touchpad gesture. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="1">
+        <label>MLInputControllerTouchpadGesture</label>
+        <link refid="struct_m_l_input_controller_touchpad_gesture"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pos_and_force</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="124" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="124" bodyend="158"/>
+    <listofallmembers>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1ac1ef7435f35307b82c2e1ca7cca93c13" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>angle</name></member>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1a1d072a449461df6b1c6d4d050bfe03f3" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>direction</name></member>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1a80ba401a166086f6afb5612dd146f111" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>distance</name></member>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1ae0414d116716aa6071e0d2d76a805371" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>pos_and_force</name></member>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1a68f94584a8e2cabe3b712c11d2cbfbf7" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>radius</name></member>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1a7706674e5591e13296b19c679bb1dbcc" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>speed</name></member>
+      <member refid="struct_m_l_input_controller_touchpad_gesture_1a23922f7aa4d2d44bd67581d4bc3d9027" prot="public" virt="non-virtual"><scope>MLInputControllerTouchpadGesture</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

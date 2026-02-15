@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___controller" kind="group">
+    <compoundname>Controller</compoundname>
+    <title>Controller</title>
+    <innerclass refid="struct_m_l_controller_configuration" prot="public">MLControllerConfiguration</innerclass>
+    <innerclass refid="struct_m_l_controller_state_ex" prot="public">MLControllerStateEx</innerclass>
+    <innerclass refid="struct_m_l_controller_system_state_ex" prot="public">MLControllerSystemStateEx</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___controller_1ga746afbca462f299091cf5b33e0462ed3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLControllerMode</name>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3a255068c46727d274c4ffc1e9191a92aa" prot="public">
+          <name>Deprecated_Mode_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3ae9d04937bc2e67979399283db205df1f" prot="public">
+          <name>Deprecated_Mode_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3ad443b96b55fdbc09501547b7a36a35f2" prot="public">
+          <name>MLControllerMode_Fused6Dof</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>High quality 6 degrees of freedom tracking (position and orientation). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3a4a60bc80908a3ba961c6d659ea4ad217" prot="public">
+          <name>MLControllerMode_Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Count of number of modes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga746afbca462f299091cf5b33e0462ed3a30d3518f77552e95388f0ce11048af39" prot="public">
+          <name>MLControllerMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible tracking modes for the Controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="35" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="35" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___controller_1ga0411cd49bb5b71852cecd93bcbf0ca2d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@7</name>
+        <enumvalue id="group___controller_1gga0411cd49bb5b71852cecd93bcbf0ca2dab70ed1599ebf5b001ea494af19a4471b" prot="public">
+          <name>MLController_MaxActive</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum number of active Controllers. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___controller_1gaa9844bb3b1027865353778872f8041a6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLControllerCalibAccuracy</name>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6ac8225236f2a245a6c5027f40e7b3710b" prot="public">
+          <name>MLControllerCalibAccuracy_Bad</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is Bad. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6a4985b72db520933aac15c76eaf232917" prot="public">
+          <name>MLControllerCalibAccuracy_Low</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is Low. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6a415b7792d88d6837afe75b5742c7e7eb" prot="public">
+          <name>MLControllerCalibAccuracy_Medium</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is Medium. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6a780289c241eb3d6d07bb447a5a245a54" prot="public">
+          <name>MLControllerCalibAccuracy_High</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CalAccuracy is High. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1ggaa9844bb3b1027865353778872f8041a6aeec1b793f7ea4284e2c1b5d2a27ff9e4" prot="public">
+          <name>MLControllerCalibAccuracy_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Calibration Accuracy levels for controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLControllerStatus</name>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a0fb43daad3715a2b3bfd0a2e22eff635" prot="public">
+          <name>MLControllerStatus_NotActive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller stream is not active. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a1e112607537481ff0da730fae06fcd29" prot="public">
+          <name>MLControllerStatus_Active_Rotation_Only</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller stream is active (rotation only). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0ab04eb74754b3762383820bdd847d3774" prot="public">
+          <name>MLControllerStatus_Active</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller stream is active (both position and rotation). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___controller_1gga90a3614e05f6ff5defd621e65b11d0d0a2b27c40f96769f7d6708e8d07568b109" prot="public">
+          <name>MLControllerStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Stream mode for controller stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="82" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___controller_1gae379d425f99a413623e64b00aa81d823" prot="public" static="no">
+        <type>enum <ref refid="group___controller_1ga746afbca462f299091cf5b33e0462ed3" kindref="member">MLControllerMode</ref></type>
+        <definition>typedef enum MLControllerMode MLControllerMode</definition>
+        <argsstring></argsstring>
+        <name>MLControllerMode</name>
+        <briefdescription>
+<para>A set of possible tracking modes for the Controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="44" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1ga7825168748283c4da6476e91f5cb13a0" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref></type>
+        <definition>typedef struct MLControllerConfiguration MLControllerConfiguration</definition>
+        <argsstring></argsstring>
+        <name>MLControllerConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure to configure controller&apos;s tracking-modes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="52" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1gad55bf07cfcd73ad5a58095524dccf1e2" prot="public" static="no">
+        <type>enum <ref refid="group___controller_1gaa9844bb3b1027865353778872f8041a6" kindref="member">MLControllerCalibAccuracy</ref></type>
+        <definition>typedef enum MLControllerCalibAccuracy MLControllerCalibAccuracy</definition>
+        <argsstring></argsstring>
+        <name>MLControllerCalibAccuracy</name>
+        <briefdescription>
+<para>Calibration Accuracy levels for controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="75" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1ga2db776b0c6e52fc5353d690069da6ad8" prot="public" static="no">
+        <type>enum <ref refid="group___controller_1ga90a3614e05f6ff5defd621e65b11d0d0" kindref="member">MLControllerStatus</ref></type>
+        <definition>typedef enum MLControllerStatus MLControllerStatus</definition>
+        <argsstring></argsstring>
+        <name>MLControllerStatus</name>
+        <briefdescription>
+<para>Stream mode for controller stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="91" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1ga305223f52b45cf93caa8ec16a79ca2b1" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_controller_state_ex" kindref="compound">MLControllerStateEx</ref></type>
+        <definition>typedef struct MLControllerStateEx MLControllerStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLControllerStateEx</name>
+        <briefdescription>
+<para>A structure containing information about the current state of this controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="141" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___controller_1gac1f3b6e09cc7c559f707b31d21596b53" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref></type>
+        <definition>typedef struct MLControllerSystemStateEx MLControllerSystemStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLControllerSystemStateEx</name>
+        <briefdescription>
+<para>A structure containing information about the current state of the controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="165" column="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___controller_1gaf16b4cb04263b0683f890dbfa0e230a3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLControllerStream</definition>
+        <argsstring></argsstring>
+        <name>MLControllerStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="111" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___controller_1gaa33b0991ce97fcc269bfda765dff24c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLControllerState</definition>
+        <argsstring></argsstring>
+        <name>MLControllerState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="125" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLControllerSystemState</definition>
+        <argsstring></argsstring>
+        <name>MLControllerSystemState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="153" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___controller_1ga91832a1550e0e295325f279945a3d0c4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="group___controller_1gaf3649f66aa97df0c500cf2c26a988aa9" kindref="member">MLControllerSystemState</ref> *</type>
+        <definition>MLHeadTrackingStateEx * out_state</definition>
+        <argsstring></argsstring>
+        <name>out_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="228" column="39" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___controller_1gab3b3a91c6620c686ae6709ab599d16d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLControllerStateEx.&quot;))) struct MLControllerStream</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLControllerStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information about the tracking-stream of this controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure containing information about the current state of this controller.</para>
+<para><xrefsect id="deprecated_1_deprecated000003"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Smooth filtered coordinate frame identifier for this Controller.</para>
+<para>Flag to indicate if tracking-stream is active.</para>
+<para>Mode of the given controller stream.</para>
+<para>Note that the controller mode can switch depending on current environmental conditions. In 6dof mode both rotation and translation are available. In 3dof mode only rotation is available.</para>
+<para>ID of this controller.</para>
+<para>Current controller&apos;s tracking streams.</para>
+<para>Calibration accuracy for the current controller.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="98" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="98" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga733f36d56cdd156e2a0a8ca78543c4eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLControllerSystemStateEx.&quot;))) struct MLControllerSystemState</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLControllerSystemStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information about the current state of the controller system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>State objects for each connected and active controller.</para>
+<para>Calibration accuracy for the lightwear.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="148" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1gaf5aaa202a816e80c8cc1a2405c74a51e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLControllerSystemStateExInit</definition>
+        <argsstring>(MLControllerSystemStateEx *inout_attr)</argsstring>
+        <name>MLControllerSystemStateExInit</name>
+        <param>
+          <type><ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> *</type>
+          <declname>inout_attr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes values for <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="174" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLControllerCreateEx</definition>
+        <argsstring>(const MLControllerConfiguration *mode, MLHandle *out_handle)</argsstring>
+        <name>MLControllerCreateEx</name>
+        <param>
+          <type>const <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref> *</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a controller tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="struct_m_l_controller_configuration" kindref="compound">MLControllerConfiguration</ref> struct which contains the tracking modes to use for this session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> which will the handle to the controller tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a controller tracker due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controller Succesfully created a controller tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a controller tracker due to lack of permission.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000249"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="197" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" declline="197" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga34269cc948d933f70f20709072e150be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLControllerDestroy</definition>
+        <argsstring>(MLHandle tracker)</argsstring>
+        <name>MLControllerDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>tracker</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a controller tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle to the tracker created by <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx()</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the controller tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the controller tracker due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000250"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="210" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" declline="210" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1gaea6198bd2c8f0077f133352316c0ddb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLControllerGetStateEx.&quot;))) MLResult MLControllerGetState(MLHandle handle</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLControllerGetStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Return the most recent controller state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the tracker created by <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid MLControllerSystemState object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the controller state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully filled out_state with current state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000251"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___controller_1ga68ddc37757f15ef54fab6cedf8fac610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLControllerGetStateEx</definition>
+        <argsstring>(MLHandle handle, MLControllerSystemStateEx *out_state)</argsstring>
+        <name>MLControllerGetStateEx</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> *</type>
+          <declname>out_state</declname>
+        </param>
+        <briefdescription>
+<para>Return the most recent controller state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the tracker created by <ref refid="group___controller_1ga3fc14c914e8d5a45543d2f4333b56df7" kindref="member">MLControllerCreateEx()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid <ref refid="struct_m_l_controller_system_state_ex" kindref="compound">MLControllerSystemStateEx</ref> object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the controller state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully filled out_state with current state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000252"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" line="245" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h" declline="245" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the direct access to the Controller system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n perception.magicleap</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

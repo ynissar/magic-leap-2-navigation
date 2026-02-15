@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_power_manager_power_state_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLPowerManagerPowerStateSettings</compoundname>
+    <includes refid="ml__power__manager_8h" local="no">ml_power_manager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_power_manager_power_state_settings_1a942d2f6f6048c5bd2057e65db3aa455a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLPowerManagerPowerStateSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="365" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_power_manager_power_state_settings_1a4dd4a530b1a5f690b5f13a39a82358ca" prot="public" static="no" mutable="no">
+        <type><ref refid="group___power_manager_1ga706d8b1415f91a519925ed1b672540b4" kindref="member">MLPowerManagerPowerState</ref></type>
+        <definition>MLPowerManagerPowerState MLPowerManagerPowerStateSettings::power_state</definition>
+        <argsstring></argsstring>
+        <name>power_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>New power state to request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="368" column="28" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___power_manager_1gacd97056257e39662a262a20488555427" kindref="member">MLPowerManagerPowerStateSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="363" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="363" bodyend="370"/>
+    <listofallmembers>
+      <member refid="struct_m_l_power_manager_power_state_settings_1a4dd4a530b1a5f690b5f13a39a82358ca" prot="public" virt="non-virtual"><scope>MLPowerManagerPowerStateSettings</scope><name>power_state</name></member>
+      <member refid="struct_m_l_power_manager_power_state_settings_1a942d2f6f6048c5bd2057e65db3aa455a" prot="public" virt="non-virtual"><scope>MLPowerManagerPowerStateSettings</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

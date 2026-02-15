@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_spatial_sound" kind="group">
+    <compoundname>DefSpatialSound</compoundname>
+    <title>Spatial Sound</title>
+    <innerclass refid="struct_m_l_audio_spatial_sound_distance_properties" prot="public">MLAudioSpatialSoundDistanceProperties</innerclass>
+    <innerclass refid="struct_m_l_audio_spatial_sound_radiation_properties" prot="public">MLAudioSpatialSoundRadiationProperties</innerclass>
+    <innerclass refid="struct_m_l_audio_raycast" prot="public">MLAudioRaycast</innerclass>
+    <innerclass refid="struct_m_l_audio_obstruction" prot="public">MLAudioObstruction</innerclass>
+    <innerclass refid="struct_m_l_audio_raycast_request" prot="public">MLAudioRaycastRequest</innerclass>
+    <innerclass refid="struct_m_l_audio_raycast_result" prot="public">MLAudioRaycastResult</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_spatial_sound_1ga6a78114667a88f22438292e5fa480c0c" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref></type>
+        <definition>typedef struct MLAudioSpatialSoundDistanceProperties MLAudioSpatialSoundDistanceProperties</definition>
+        <argsstring></argsstring>
+        <name>MLAudioSpatialSoundDistanceProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Properties describing the distance attenuation of a spatial sound using two distances, between which attention values are interpolated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="271" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_spatial_sound_1gaa59873dd274ea64b23fcb1a38d82a30c" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref></type>
+        <definition>typedef struct MLAudioSpatialSoundRadiationProperties MLAudioSpatialSoundRadiationProperties</definition>
+        <argsstring></argsstring>
+        <name>MLAudioSpatialSoundRadiationProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Properties describing the directionality of a spatial sound using two cones, between which attention values are interpolated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="287" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_spatial_sound_1gac732d7adfad7719a60e0f7c9e4601a40" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_raycast" kindref="compound">MLAudioRaycast</ref></type>
+        <definition>typedef struct MLAudioRaycast MLAudioRaycast</definition>
+        <argsstring></argsstring>
+        <name>MLAudioRaycast</name>
+        <briefdescription>
+<para>Two points in space describing a ray. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="299" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_spatial_sound_1gaa2f2e9774ea5d6d12ea18318fed9bef5" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref></type>
+        <definition>typedef struct MLAudioObstruction MLAudioObstruction</definition>
+        <argsstring></argsstring>
+        <name>MLAudioObstruction</name>
+        <briefdescription>
+<para>Obstruction along a ray. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="311" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_spatial_sound_1ga8c836e2bedd60c2e23f21784948571cc" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_raycast_request" kindref="compound">MLAudioRaycastRequest</ref></type>
+        <definition>typedef struct MLAudioRaycastRequest MLAudioRaycastRequest</definition>
+        <argsstring></argsstring>
+        <name>MLAudioRaycastRequest</name>
+        <briefdescription>
+<para>ID-tracked request for a single raycast operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="327" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_spatial_sound_1gaa9217e612437293766ac5d90f6536d62" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_raycast_result" kindref="compound">MLAudioRaycastResult</ref></type>
+        <definition>typedef struct MLAudioRaycastResult MLAudioRaycastResult</definition>
+        <argsstring></argsstring>
+        <name>MLAudioRaycastResult</name>
+        <briefdescription>
+<para>ID-tracked result for a single raycast operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="345" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPATIAL SOUND. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

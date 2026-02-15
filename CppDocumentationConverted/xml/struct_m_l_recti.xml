@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_recti" kind="struct" language="C++" prot="public">
+    <compoundname>MLRecti</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_recti_1a321f874b9dcf4aaf5730e7fd558cd152" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLRecti::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="103" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_recti_1a03e384dd4980736842f2fecb2fb013d5" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLRecti::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="104" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_recti_1aefd757b5708587c4eea86bd0240d13d4" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLRecti::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="105" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_recti_1a9e421da606b7bf48389b8646656ff2e7" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MLRecti::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="106" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A 2D integer rectangle. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="102" bodyend="107"/>
+    <listofallmembers>
+      <member refid="struct_m_l_recti_1a9e421da606b7bf48389b8646656ff2e7" prot="public" virt="non-virtual"><scope>MLRecti</scope><name>h</name></member>
+      <member refid="struct_m_l_recti_1aefd757b5708587c4eea86bd0240d13d4" prot="public" virt="non-virtual"><scope>MLRecti</scope><name>w</name></member>
+      <member refid="struct_m_l_recti_1a321f874b9dcf4aaf5730e7fd558cd152" prot="public" virt="non-virtual"><scope>MLRecti</scope><name>x</name></member>
+      <member refid="struct_m_l_recti_1a03e384dd4980736842f2fecb2fb013d5" prot="public" virt="non-virtual"><scope>MLRecti</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

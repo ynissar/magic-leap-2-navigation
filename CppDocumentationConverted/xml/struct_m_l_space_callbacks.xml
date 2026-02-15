@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_space_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MLSpaceCallbacks</compoundname>
+    <includes refid="ml__space_8h" local="no">ml_space.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_space_callbacks_1ac52e4513e23dd9b6aa92bbdc5c045c78" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLSpaceCallbacks::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="382" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_space_callbacks_1ab360157fa311696890b4ae47abb41070" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MLSpaceCallbacks::on_localization_changed) (const MLSpaceLocalizationResult *localization_result, void *user_data)</definition>
+        <argsstring>)(const MLSpaceLocalizationResult *localization_result, void *user_data)</argsstring>
+        <name>on_localization_changed</name>
+        <briefdescription>
+<para>This callback will be invoked whenever there is an update to the localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Localization events can occur when the application requests for localization via <ref refid="group___space_1ga2465fe8e9cda7d4e873b30be446ad59b" kindref="member">MLSpaceRequestLocalization</ref> or due to other events outside the control of the app such as head tracking failure, localization loss.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">localization_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the localization status. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user context data as set by <ref refid="group___space_1ga1d6c8bac9696044516fc36b0e0e2ef9d" kindref="member">MLSpaceSetCallbacks</ref> (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="393" column="3" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing callbacks for events related to the Space. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___space_1ga17ae1607ebe52d2f202652086e5522ad" kindref="member">MLSpaceCallbacksInit</ref> before use. Application can unregister (stop receiving callbacks) at any time by setting the corresponding callback to NULL.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="380" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="380" bodyend="394"/>
+    <listofallmembers>
+      <member refid="struct_m_l_space_callbacks_1ab360157fa311696890b4ae47abb41070" prot="public" virt="non-virtual"><scope>MLSpaceCallbacks</scope><name>on_localization_changed</name></member>
+      <member refid="struct_m_l_space_callbacks_1ac52e4513e23dd9b6aa92bbdc5c045c78" prot="public" virt="non-virtual"><scope>MLSpaceCallbacks</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

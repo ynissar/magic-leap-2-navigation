@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___audio_output" kind="group">
+    <compoundname>AudioOutput</compoundname>
+    <title>Audio Output</title>
+    <innergroup refid="group___output_resources">Resources</innergroup>
+    <innergroup refid="group___output_allocation">Allocation</innergroup>
+    <innergroup refid="group___output_control">Control</innergroup>
+    <innergroup refid="group___output_parameters">Parameters</innergroup>
+    <innergroup refid="group___output_acoustics">Acoustics</innergroup>
+    <innergroup refid="group___audio_input">Audio Input</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AUDIO OUTPUT. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

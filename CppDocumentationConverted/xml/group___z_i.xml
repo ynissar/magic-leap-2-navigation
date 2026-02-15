@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___z_i" kind="group">
+    <compoundname>ZI</compoundname>
+    <title>ZI</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___z_i_1ga65ce2bbe6bc817eb68473debf6067729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIIsServerConfigured</definition>
+        <argsstring>(bool *out_is_configured)</argsstring>
+        <name>MLZIIsServerConfigured</name>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_configured</declname>
+        </param>
+        <briefdescription>
+<para>Checks to see if the Zero Iteration server is running and configured properly to use by a host application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_configured</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a bool indicating whether the ZI server is running and is configured properly.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is_configured parameter is not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ZI server could not be reached. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error submitting the query.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000737"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h" line="49" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h" declline="49" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1gae81e497700c5d36b2b3749d70ab66698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZISetProgramLabel</definition>
+        <argsstring>(const char *in_label)</argsstring>
+        <name>MLZISetProgramLabel</name>
+        <param>
+          <type>const char *</type>
+          <declname>in_label</declname>
+        </param>
+        <briefdescription>
+<para>Set the human-readable label of the current project or library, to be used in UI display and diagnostic logs to indicate what is running. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When unset, The Lab and the ZI runtime refer to a program running under ZI by its process / executable name.</para>
+<para>A label must be set before the program calls one of the MLGraphicsCreate() functions in order to be reflected.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in_label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a C string indicating the label to use for the running program, or NULL or &quot;&quot; to reset the label. The string is copied. It is interpreted as UTF-8.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If label was accepted (always).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000738"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h" line="72" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h" declline="72" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1ga23b26792bf48fc5e589fe8518910fa23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIGraphicsEnumerateRequiredVkInstanceExtensions</definition>
+        <argsstring>(VkExtensionProperties *out_required_extension_properties, uint32_t *out_extension_property_count)</argsstring>
+        <name>MLZIGraphicsEnumerateRequiredVkInstanceExtensions</name>
+        <param>
+          <type>VkExtensionProperties *</type>
+          <declname>out_required_extension_properties</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_extension_property_count</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of required VkInstance extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If out_required_extension_properties is null then the number of required extension is returned in out_extension_property_count. Otherwise, out_extension_property_count must point to a variable set to the number of elements in the out_required_extension_properties array, and on return the variable is overwritten with the number of strings actually written to out_required_extension_properties.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_required_extension_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either null or a pointer to an array of VkExtensionProperties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_extension_property_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is a pointer to an integer related to the number of extensions required or queried.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error submitting the query.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000739"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h" line="52" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h" declline="52" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1gae7df7c75df42b89bcda76eed8146461e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIGraphicsEnumerateRequiredVkDeviceExtensions</definition>
+        <argsstring>(VkExtensionProperties *out_required_extension_properties, uint32_t *out_extension_property_count)</argsstring>
+        <name>MLZIGraphicsEnumerateRequiredVkDeviceExtensions</name>
+        <param>
+          <type>VkExtensionProperties *</type>
+          <declname>out_required_extension_properties</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_extension_property_count</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of required VkDevice extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If out_required_extension_properties is null then the number of required extension is returned in out_extension_property_count. Otherwise, out_extension_property_count must point to a variable set to the number of elements in the out_required_extension_properties array, and on return the variable is overwritten with the number of strings actually written to out_required_extension_properties.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_required_extension_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either null or a pointer to an array of VkExtensionProperties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_extension_property_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is a pointer to an integer related to the number of extensions required or queried.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error submitting the query.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000740"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h" line="70" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h" declline="70" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1ga31167d52a34374dc0739aa044067b651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsStart</definition>
+        <argsstring>()</argsstring>
+        <name>MLZIPermissionsStart</name>
+        <briefdescription>
+<para>Start the ZI permissions system. This must be called before other permissions calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000741"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="47" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="47" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1ga479a4f7042a5ec8debf0bfd865dbbce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsStop</definition>
+        <argsstring>()</argsstring>
+        <name>MLZIPermissionsStop</name>
+        <briefdescription>
+<para>Stop the ZI permission system. Call to clean up the ZI permission system at application termination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000742"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="59" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="59" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1gabe61cef9d7bb5ec4542521ec61559697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsIsGranted</definition>
+        <argsstring>(const char *permission_name)</argsstring>
+        <name>MLZIPermissionsIsGranted</name>
+        <param>
+          <type>const char *</type>
+          <declname>permission_name</declname>
+        </param>
+        <briefdescription>
+<para>Asks if the application has the given permission granted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://developer.android.com/training/permissions/requesting">https://developer.android.com/training/permissions/requesting</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">permission_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission_name parameter is not valid (or null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission is granted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If permission denied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Pending</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If permission request has not been resolved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000743"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>Any </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="78" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="78" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___z_i_1ga365b1fb09ac23d2d67d10cbdb45e1748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLZIPermissionsRequest</definition>
+        <argsstring>(const char *permission_name)</argsstring>
+        <name>MLZIPermissionsRequest</name>
+        <param>
+          <type>const char *</type>
+          <declname>permission_name</declname>
+        </param>
+        <briefdescription>
+<para>Request the given permission (blocking if pending until user either allows or denies permission). Client code can poll the permission state to see if the permission was granted, denied or still pending. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://developer.android.com/training/permissions/requesting">https://developer.android.com/training/permissions/requesting</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">permission_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permission_name parameter is not valid (or null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query was successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There was an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000744"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" line="96" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h" declline="96" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Zero Iteration on Host OS Platforms. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n zi.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="attention"><para>These APIs are meant to enable a better integration to ZI for engines running on Host OS Platforms. These APIs are not available on device.</para>
+</simplesect>
+<itemizedlist>
+<listitem><para>This header supports general Zero Iteation state queries.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>Shared Object:\n graphics.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="attention"><para>These APIs are meant to enable a better integration to ZI for engines running on Host OS Platforms. These APIs are not available on device.</para>
+</simplesect>
+<itemizedlist>
+<listitem><para>Provides ZI support for host-specific MLGraphics APIs.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>Shared Object:\n zi.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="attention"><para>These APIs are meant to enable a better integration to ZI for engines running on Host OS Platforms. These APIs are not available on device.</para>
+</simplesect>
+<itemizedlist>
+<listitem><para>These APIs support requesting and checking permissions from the C API rather than requiring ZI to emulate a full JNI layer. Programs should conditionally use these APIs when building for host instead of using Android APIs in order to simulate permissions requests and management. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

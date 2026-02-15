@@ -1,0 +1,1224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__api_8h" kind="file" language="C++">
+    <compoundname>ml_api.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="ml__coordinate__frame__uid_8h" local="yes">ml_coordinate_frame_uid.h</includes>
+    <includes refid="ml__version_8h" local="yes">ml_version.h</includes>
+    <includedby refid="ml__audio_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h</includedby>
+    <includedby refid="ml__audio__channel__mask_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h</includedby>
+    <includedby refid="ml__camera__metadata__tags__v2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h</includedby>
+    <includedby refid="ml__camera__metadata__v2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_v2.h</includedby>
+    <includedby refid="ml__camera__v2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h</includedby>
+    <includedby refid="ml__controller_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h</includedby>
+    <includedby refid="ml__coordinate__frame__uid_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h</includedby>
+    <includedby refid="ml__cv__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h</includedby>
+    <includedby refid="ml__depth__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h</includedby>
+    <includedby refid="ml__eye__calibration_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h</includedby>
+    <includedby refid="ml__eye__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h</includedby>
+    <includedby refid="ml__eye__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h</includedby>
+    <includedby refid="ml__facial__expression_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h</includedby>
+    <includedby refid="ml__gaze__recognition_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h</includedby>
+    <includedby refid="ml__gesture__classification_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h</includedby>
+    <includedby refid="ml__graphics_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</includedby>
+    <includedby refid="ml__graphics__utils_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</includedby>
+    <includedby refid="ml__hand__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h</includedby>
+    <includedby refid="ml__head__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h</includedby>
+    <includedby refid="ml__headset__fit_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h</includedby>
+    <includedby refid="ml__input_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h</includedby>
+    <includedby refid="ml__marker__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h</includedby>
+    <includedby refid="ml__media__cea608__caption_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea608_caption.h</includedby>
+    <includedby refid="ml__media__cea708__caption_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea708_caption.h</includedby>
+    <includedby refid="ml__media__codec_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_codec.h</includedby>
+    <includedby refid="ml__media__codeclist_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_codeclist.h</includedby>
+    <includedby refid="ml__media__data__source_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_data_source.h</includedby>
+    <includedby refid="ml__media__drm_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_drm.h</includedby>
+    <includedby refid="ml__media__error_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h</includedby>
+    <includedby refid="ml__media__extractor_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</includedby>
+    <includedby refid="ml__media__format_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_format.h</includedby>
+    <includedby refid="ml__media__muxer_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h</includedby>
+    <includedby refid="ml__media__player_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</includedby>
+    <includedby refid="ml__media__recorder_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h</includedby>
+    <includedby refid="ml__media__stream__source_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_stream_source.h</includedby>
+    <includedby refid="ml__media__ttml_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_ttml.h</includedby>
+    <includedby refid="ml__media__webvtt_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_webvtt.h</includedby>
+    <includedby refid="ml__meshing2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</includedby>
+    <includedby refid="ml__native__surface_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_native_surface.h</includedby>
+    <includedby refid="ml__occlusion_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h</includedby>
+    <includedby refid="ml__perception_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</includedby>
+    <includedby refid="ml__planes_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h</includedby>
+    <includedby refid="ml__platform_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h</includedby>
+    <includedby refid="ml__power__manager_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h</includedby>
+    <includedby refid="ml__snapshot_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</includedby>
+    <includedby refid="ml__space_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h</includedby>
+    <includedby refid="ml__spatial__anchor_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h</includedby>
+    <includedby refid="ml__system__notification__manager_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_system_notification_manager.h</includedby>
+    <includedby refid="ml__time_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h</includedby>
+    <includedby refid="ml__types_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h</includedby>
+    <includedby refid="ml__voice_8h" local="no">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h</includedby>
+    <includedby refid="ml__webview_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h</includedby>
+    <includedby refid="ml__world__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h</includedby>
+    <includedby refid="ml__zi_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h</includedby>
+    <includedby refid="ml__zi__graphics_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</includedby>
+    <includedby refid="ml__zi__permissions_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="23">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h</label>
+        <link refid="ml__hand__tracking_8h"/>
+      </node>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h</label>
+        <link refid="ml__audio_8h"/>
+      </node>
+      <node id="44">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_native_surface.h</label>
+        <link refid="ml__native__surface_8h"/>
+      </node>
+      <node id="49">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h</label>
+        <link refid="ml__space_8h"/>
+      </node>
+      <node id="52">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h</label>
+        <link refid="ml__time_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_error.h</label>
+        <link refid="ml__media__error_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h</label>
+        <link refid="ml__power__manager_8h"/>
+      </node>
+      <node id="33">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</label>
+        <link refid="ml__media__player_8h"/>
+      </node>
+      <node id="30">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_codeclist.h</label>
+        <link refid="ml__media__codeclist_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio_channel_mask.h</label>
+        <link refid="ml__audio__channel__mask_8h"/>
+      </node>
+      <node id="21">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</label>
+        <link refid="ml__graphics__utils_8h"/>
+      </node>
+      <node id="8">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</label>
+        <link refid="ml__zi__graphics_8h"/>
+      </node>
+      <node id="27">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea608_caption.h</label>
+        <link refid="ml__media__cea608__caption_8h"/>
+      </node>
+      <node id="29">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_codec.h</label>
+        <link refid="ml__media__codec_8h"/>
+      </node>
+      <node id="12">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h</label>
+        <link refid="ml__cv__camera_8h"/>
+      </node>
+      <node id="43">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</label>
+        <link refid="ml__meshing2_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h</label>
+        <link refid="ml__gesture__classification_8h"/>
+      </node>
+      <node id="14">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h</label>
+        <link refid="ml__eye__calibration_8h"/>
+      </node>
+      <node id="4">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_tags_v2.h</label>
+        <link refid="ml__camera__metadata__tags__v2_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h</label>
+        <link refid="ml__media__muxer_8h"/>
+      </node>
+      <node id="16">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h</label>
+        <link refid="ml__eye__tracking_8h"/>
+      </node>
+      <node id="34">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_drm.h</label>
+        <link refid="ml__media__drm_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h</label>
+        <link refid="ml__planes_8h"/>
+      </node>
+      <node id="47">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h</label>
+        <link refid="ml__platform_8h"/>
+      </node>
+      <node id="56">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h</label>
+        <link refid="ml__voice_8h"/>
+      </node>
+      <node id="15">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h</label>
+        <link refid="ml__eye__camera_8h"/>
+      </node>
+      <node id="40">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_stream_source.h</label>
+        <link refid="ml__media__stream__source_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h</label>
+        <link refid="ml__facial__expression_8h"/>
+      </node>
+      <node id="6">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h</label>
+        <link refid="ml__camera__v2_8h"/>
+      </node>
+      <node id="41">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_ttml.h</label>
+        <link refid="ml__media__ttml_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_crypto.h</label>
+        <link refid="ml__media__crypto_8h"/>
+      </node>
+      <node id="58">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_permissions.h</label>
+        <link refid="ml__zi__permissions_8h"/>
+      </node>
+      <node id="54">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h</label>
+        <link refid="ml__webview_8h"/>
+      </node>
+      <node id="45">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h</label>
+        <link refid="ml__occlusion_8h"/>
+      </node>
+      <node id="11">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</label>
+        <link refid="ml__perception_8h"/>
+      </node>
+      <node id="39">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_recorder.h</label>
+        <link refid="ml__media__recorder_8h"/>
+      </node>
+      <node id="10">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</label>
+        <link refid="ml__snapshot_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h</label>
+        <link refid="ml__world__camera_8h"/>
+      </node>
+      <node id="9">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h</label>
+        <link refid="ml__marker__tracking_8h"/>
+      </node>
+      <node id="26">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h</label>
+        <link refid="ml__input_8h"/>
+      </node>
+      <node id="50">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h</label>
+        <link refid="ml__spatial__anchor_8h"/>
+      </node>
+      <node id="53">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</label>
+        <link refid="ml__graphics_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea708_caption.h</label>
+        <link refid="ml__media__cea708__caption_8h"/>
+      </node>
+      <node id="18">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h</label>
+        <link refid="ml__gaze__recognition_8h"/>
+      </node>
+      <node id="32">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</label>
+        <link refid="ml__media__extractor_8h"/>
+      </node>
+      <node id="5">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_metadata_v2.h</label>
+        <link refid="ml__camera__metadata__v2_8h"/>
+      </node>
+      <node id="24">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_head_tracking.h</label>
+        <link refid="ml__head__tracking_8h"/>
+      </node>
+      <node id="42">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_webvtt.h</label>
+        <link refid="ml__media__webvtt_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_system_notification_manager.h</label>
+        <link refid="ml__system__notification__manager_8h"/>
+      </node>
+      <node id="25">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h</label>
+        <link refid="ml__headset__fit_8h"/>
+      </node>
+      <node id="31">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_data_source.h</label>
+        <link refid="ml__media__data__source_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_controller.h</label>
+        <link refid="ml__controller_8h"/>
+      </node>
+      <node id="37">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_format.h</label>
+        <link refid="ml__media__format_8h"/>
+      </node>
+      <node id="13">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h</label>
+        <link refid="ml__depth__camera_8h"/>
+      </node>
+      <node id="57">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi.h</label>
+        <link refid="ml__zi_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_m_l_version" prot="public">MLVersion</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" prot="public" static="no">
+        <name>ML_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="39" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" prot="public" static="no">
+        <name>ML_CALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="40" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__api_8h_1a94d008f884ff7f966c355b97fa1ef092" prot="public" static="no">
+        <name>ML_DEPRECATED_MSG</name>
+        <param><defname>msg</defname></param>
+        <initializer><ref refid="group___web_view_1ga6b9a39d4c5d258e2b149898f048206d7" kindref="member">__attribute__</ref>((deprecated(msg)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="48" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__api_8h_1ab765b4fc0554faaff84af2840b7af532" prot="public" static="no">
+        <name>ML_DEPRECATED</name>
+        <initializer><ref refid="group___web_view_1ga6b9a39d4c5d258e2b149898f048206d7" kindref="member">__attribute__</ref>((deprecated))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="49" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" prot="public" static="no">
+        <name>ML_STATIC_INLINE</name>
+        <initializer>static inline</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="51" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" prot="public" static="no">
+        <name>ML_EXTERN_C_BEGIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="58" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" prot="public" static="no">
+        <name>ML_EXTERN_C_END</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="59" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" prot="public" static="no">
+        <name>MLRESULT_PREFIX</name>
+        <param><defname>val</defname></param>
+        <initializer>(val &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to set a the prefix bytes of an API specific MLResult code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="105" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___platform_1ga06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" prot="public">
+          <name>ML_INVALID_HANDLE</name>
+          <initializer>= 0xFFFFFFFFFFFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Value of an invalid handle. To test if a handle is invalid use <ref refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" kindref="member">MLHandleIsValid()</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___platform_1gadf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="group___platform_1ggadf764cbdea00d65edcd07bb9953ad2b7aaf79492b05c60b2a05da8dd9105673c2" prot="public">
+          <name>MLVersion_BuildIdMaxLength</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum character length of <ref refid="struct_m_l_version" kindref="compound">MLVersion</ref> build ID. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___platform_1ga99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="group___platform_1gga99fb83031ce9923c84392b4e92f956b5aa297b99b9a52b1cc3eb79c68baeace37" prot="public">
+          <name>MLResultAPIPrefix_Global</name>
+          <initializer>= ( 0  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for global MLResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="107" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLResultGlobal</name>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8aafb0e581565e43e35c2bdb6c6fbbe8" prot="public">
+          <name>MLResult_Ok</name>
+          <initializer>= MLResultAPIPrefix_Global</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation completed successfully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaaf4276c195787c20940c3448adbd3bd7" prot="public">
+          <name>MLResult_Pending</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Asynchronous operation has not completed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea55034ca100c86c28f05023789a1d2e29" prot="public">
+          <name>MLResult_Timeout</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation has timed out. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeabdbd1c9a830f0ddcbc2d9ef0b887ce30" prot="public">
+          <name>MLResult_Locked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request to lock a shared resource that is already locked. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32d3dc6093f4639e714aabebe5bc64a1" prot="public">
+          <name>MLResult_UnspecifiedFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed due to an unspecified internal error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eead375439c552008bdab89b81e6e90d36d" prot="public">
+          <name>MLResult_InvalidParam</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed due to an invalid parameter being supplied. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8fa7124d8b935370a44ac90ecc92fe34" prot="public">
+          <name>MLResult_AllocFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because memory failed to be allocated. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8ff3f2f21ec08316a7504642df2eb29c" prot="public">
+          <name>MLResult_PermissionDenied</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because a required permission has not been granted. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaa9c7f9deb993ec27d6538048aafad1eb" prot="public">
+          <name>MLResult_NotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because it is not currently implemented. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaab9166c6a3d21fd26003e14c4f79c128" prot="public">
+          <name>MLResult_ClientLimitExceeded</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the client count exceeded the number of clients available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5d70d7faf32742a1cacec0badf1038ef" prot="public">
+          <name>MLResult_PoseNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the requested pose is not available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeafc5cc2e98c9d3b3160d612f54d13eb0b" prot="public">
+          <name>MLResult_IncompatibleSKU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because feature isn&apos;t supported on current device version. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea34e29e5dabee7742db40b9b2a06d897e" prot="public">
+          <name>MLResult_PerceptionSystemNotStarted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the Perception System was not started. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5c1809bf19ea8c9a4f3c8c691717098c" prot="public">
+          <name>MLResult_IllegalState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because it has been invoked at the wrong time. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea89aadaa177bafa21fe328d1f4223cf81" prot="public">
+          <name>MLResult_LicenseError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because of missing/incompatible license. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea1d9e8cd9adb7be29ee95908d43467159" prot="public">
+          <name>MLResult_InvalidTimestamp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the timestamp parameter was outside the expected range. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8a856c4a3285002edd8546a7883f7e0b" prot="public">
+          <name>MLResult_Unauthenticated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the user authentication did not pass. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32fe15246905c87b274a1c0bfe78a216" prot="public">
+          <name>MLResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global MLResult codes that any API can optionally return. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="113" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___platform_1gad436878dff21489f44eaeddc7585681d" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t MLHandle</definition>
+        <argsstring></argsstring>
+        <name>MLHandle</name>
+        <briefdescription>
+<para>Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use <ref refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" kindref="member">MLHandleIsValid()</ref> to check if a handle is valid or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="80" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___platform_1ga18b35fdb14a2439215c30d7d5535c25d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_version" kindref="compound">MLVersion</ref></type>
+        <definition>typedef struct MLVersion MLVersion</definition>
+        <argsstring></argsstring>
+        <name>MLVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDK version: &apos;[major].[minor].[revision].[build_id]&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="102" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___platform_1gaace884f70743ec2f695ea6994ea02247" prot="public" static="no">
+        <type>enum <ref refid="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" kindref="member">MLResultGlobal</ref></type>
+        <definition>typedef enum MLResultGlobal MLResultGlobal</definition>
+        <argsstring></argsstring>
+        <name>MLResultGlobal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global MLResult codes that any API can optionally return. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="150" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MLResult</definition>
+        <argsstring></argsstring>
+        <name>MLResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MLResult type that all functions in the APIs return. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="153" column="17" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___platform_1ga2465b1b80dfbf39b79d76a392f38802d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* MLGetResultString</definition>
+        <argsstring>(MLResult result_code)</argsstring>
+        <name>MLGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result_code</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLResultGlobal codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from ML API functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000001"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="162" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="162" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gaec8456292d85bdc97436de2507c18610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLGlobalGetResultString</definition>
+        <argsstring>(MLResult result_code)</argsstring>
+        <name>MLGlobalGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result_code</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from ML API functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000002"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="195" column="19" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" declline="195" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MLHandleIsValid</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLHandleIsValid</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Check if a handle is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the handle is valid.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000003"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="204" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gab652ce8c2afdad17f91aab3ac35bb18c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* MLGetVersionName</definition>
+        <argsstring>()</argsstring>
+        <name>MLGetVersionName</name>
+        <briefdescription>
+<para>Get SDK version as c-style string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK version as c-style string.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000004"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="214" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gaf78966c503f273cae23d3f8188f495ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_m_l_version" kindref="compound">MLVersion</ref></type>
+        <definition>static MLVersion MLGetVersion</definition>
+        <argsstring>()</argsstring>
+        <name>MLGetVersion</name>
+        <briefdescription>
+<para>Get SDK version as a struct with major, minor, revision, and build_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK version as a struct.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000005"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="224" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="224" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ML_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_API<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_API<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CALL<sp/>__cdecl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ML_NO_DEPRECATION_WARNING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED_MSG(msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(ML_NO_DEPRECATION_DISABLED_MSG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>message(&quot;Magic<sp/>Leap<sp/>C<sp/>SDK<sp/>-<sp/>API<sp/>deprecation<sp/>warnings<sp/>are<sp/>disabled.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED_MSG(msg)<sp/>__declspec(deprecated(msg))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED<sp/>__declspec(deprecated)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_STATIC_INLINE<sp/>__inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_CALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ML_NO_DEPRECATION_WARNING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED_MSG(msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(ML_NO_DEPRECATION_DISABLED_MSG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>message(&quot;Magic<sp/>Leap<sp/>C<sp/>SDK<sp/>-<sp/>API<sp/>deprecation<sp/>warnings<sp/>are<sp/>disabled.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="ml__api_8h_1a94d008f884ff7f966c355b97fa1ef092" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED_MSG(msg)<sp/>__attribute__((deprecated(msg)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="ml__api_8h_1ab765b4fc0554faaff84af2840b7af532" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_DEPRECATED<sp/>__attribute__((deprecated))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_STATIC_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_EXTERN_C_BEGIN<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_EXTERN_C_END<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_EXTERN_C_BEGIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ML_EXTERN_C_END</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__coordinate__frame__uid_8h" kindref="compound">ml_coordinate_frame_uid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__version_8h" kindref="compound">ml_version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="group___platform_1gad436878dff21489f44eaeddc7585681d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref><sp/>=<sp/>0xFFFFFFFFFFFFFFFF</highlight></codeline>
+<codeline lineno="85" refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggadf764cbdea00d65edcd07bb9953ad2b7aaf79492b05c60b2a05da8dd9105673c2" kindref="member">MLVersion_BuildIdMaxLength</ref><sp/>=<sp/>128</highlight></codeline>
+<codeline lineno="90" refid="group___platform_1ggadf764cbdea00d65edcd07bb9953ad2b7aaf79492b05c60b2a05da8dd9105673c2" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="struct_m_l_version" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_version" kindref="compound">MLVersion</ref><sp/>{</highlight></codeline>
+<codeline lineno="95" refid="struct_m_l_version_1a65b8c2f9f0f447cb22d8ec87cac337ec" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_version_1a65b8c2f9f0f447cb22d8ec87cac337ec" kindref="member">major</ref>;</highlight></codeline>
+<codeline lineno="97" refid="struct_m_l_version_1a6b7f8a625f4e0387b4947e12ed317b3e" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_version_1a6b7f8a625f4e0387b4947e12ed317b3e" kindref="member">minor</ref>;</highlight></codeline>
+<codeline lineno="99" refid="struct_m_l_version_1a87021faa71ab3f87eaf87e9aaf4ba7fa" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_version_1a87021faa71ab3f87eaf87e9aaf4ba7fa" kindref="member">revision</ref>;</highlight></codeline>
+<codeline lineno="101" refid="struct_m_l_version_1ac8ff55e69c067a422b6df3286bcbff14" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_version_1ac8ff55e69c067a422b6df3286bcbff14" kindref="member">build_id</ref>[<ref refid="group___platform_1ggadf764cbdea00d65edcd07bb9953ad2b7aaf79492b05c60b2a05da8dd9105673c2" kindref="member">MLVersion_BuildIdMaxLength</ref>];</highlight></codeline>
+<codeline lineno="102" refid="group___platform_1ga18b35fdb14a2439215c30d7d5535c25d" refkind="member"><highlight class="normal">}<sp/><ref refid="group___platform_1ga18b35fdb14a2439215c30d7d5535c25d" kindref="member">MLVersion</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MLRESULT_PREFIX(val)<sp/>(val<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="109" refid="group___platform_1gga99fb83031ce9923c84392b4e92f956b5aa297b99b9a52b1cc3eb79c68baeace37" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gga99fb83031ce9923c84392b4e92f956b5aa297b99b9a52b1cc3eb79c68baeace37" kindref="member">MLResultAPIPrefix_Global</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0),</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" kindref="member">MLResultGlobal</ref><sp/>{</highlight></codeline>
+<codeline lineno="115" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8aafb0e581565e43e35c2bdb6c6fbbe8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8aafb0e581565e43e35c2bdb6c6fbbe8" kindref="member">MLResult_Ok</ref><sp/>=<sp/><ref refid="group___platform_1gga99fb83031ce9923c84392b4e92f956b5aa297b99b9a52b1cc3eb79c68baeace37" kindref="member">MLResultAPIPrefix_Global</ref>,</highlight></codeline>
+<codeline lineno="117" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaaf4276c195787c20940c3448adbd3bd7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaaf4276c195787c20940c3448adbd3bd7" kindref="member">MLResult_Pending</ref>,</highlight></codeline>
+<codeline lineno="119" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea55034ca100c86c28f05023789a1d2e29" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea55034ca100c86c28f05023789a1d2e29" kindref="member">MLResult_Timeout</ref>,</highlight></codeline>
+<codeline lineno="121" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeabdbd1c9a830f0ddcbc2d9ef0b887ce30" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeabdbd1c9a830f0ddcbc2d9ef0b887ce30" kindref="member">MLResult_Locked</ref>,</highlight></codeline>
+<codeline lineno="123" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32d3dc6093f4639e714aabebe5bc64a1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32d3dc6093f4639e714aabebe5bc64a1" kindref="member">MLResult_UnspecifiedFailure</ref>,</highlight></codeline>
+<codeline lineno="125" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eead375439c552008bdab89b81e6e90d36d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eead375439c552008bdab89b81e6e90d36d" kindref="member">MLResult_InvalidParam</ref>,</highlight></codeline>
+<codeline lineno="127" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8fa7124d8b935370a44ac90ecc92fe34" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8fa7124d8b935370a44ac90ecc92fe34" kindref="member">MLResult_AllocFailed</ref>,</highlight></codeline>
+<codeline lineno="129" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8ff3f2f21ec08316a7504642df2eb29c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8ff3f2f21ec08316a7504642df2eb29c" kindref="member">MLResult_PermissionDenied</ref>,</highlight></codeline>
+<codeline lineno="131" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaa9c7f9deb993ec27d6538048aafad1eb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaa9c7f9deb993ec27d6538048aafad1eb" kindref="member">MLResult_NotImplemented</ref>,</highlight></codeline>
+<codeline lineno="133" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaab9166c6a3d21fd26003e14c4f79c128" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaab9166c6a3d21fd26003e14c4f79c128" kindref="member">MLResult_ClientLimitExceeded</ref>,</highlight></codeline>
+<codeline lineno="135" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5d70d7faf32742a1cacec0badf1038ef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5d70d7faf32742a1cacec0badf1038ef" kindref="member">MLResult_PoseNotFound</ref>,</highlight></codeline>
+<codeline lineno="137" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeafc5cc2e98c9d3b3160d612f54d13eb0b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeafc5cc2e98c9d3b3160d612f54d13eb0b" kindref="member">MLResult_IncompatibleSKU</ref>,</highlight></codeline>
+<codeline lineno="139" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea34e29e5dabee7742db40b9b2a06d897e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea34e29e5dabee7742db40b9b2a06d897e" kindref="member">MLResult_PerceptionSystemNotStarted</ref>,</highlight></codeline>
+<codeline lineno="141" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5c1809bf19ea8c9a4f3c8c691717098c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5c1809bf19ea8c9a4f3c8c691717098c" kindref="member">MLResult_IllegalState</ref>,</highlight></codeline>
+<codeline lineno="143" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea89aadaa177bafa21fe328d1f4223cf81" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea89aadaa177bafa21fe328d1f4223cf81" kindref="member">MLResult_LicenseError</ref>,</highlight></codeline>
+<codeline lineno="145" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea1d9e8cd9adb7be29ee95908d43467159" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea1d9e8cd9adb7be29ee95908d43467159" kindref="member">MLResult_InvalidTimestamp</ref>,</highlight></codeline>
+<codeline lineno="147" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8a856c4a3285002edd8546a7883f7e0b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8a856c4a3285002edd8546a7883f7e0b" kindref="member">MLResult_Unauthenticated</ref>,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32fe15246905c87b274a1c0bfe78a216" kindref="member">MLResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="150" refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32fe15246905c87b274a1c0bfe78a216" refkind="member"><highlight class="normal">}<sp/><ref refid="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" kindref="member">MLResultGlobal</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="group___platform_1ga2465b1b80dfbf39b79d76a392f38802d" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___platform_1ga2465b1b80dfbf39b79d76a392f38802d" kindref="member">MLGetResultString</ref>(<ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/>result_code)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(result_code)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8aafb0e581565e43e35c2bdb6c6fbbe8" kindref="member">MLResult_Ok</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_Ok&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaaf4276c195787c20940c3448adbd3bd7" kindref="member">MLResult_Pending</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_Pending&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea55034ca100c86c28f05023789a1d2e29" kindref="member">MLResult_Timeout</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_Timeout&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeabdbd1c9a830f0ddcbc2d9ef0b887ce30" kindref="member">MLResult_Locked</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_Locked&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32d3dc6093f4639e714aabebe5bc64a1" kindref="member">MLResult_UnspecifiedFailure</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_UnspecifiedFailure&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eead375439c552008bdab89b81e6e90d36d" kindref="member">MLResult_InvalidParam</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_InvalidParam&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8fa7124d8b935370a44ac90ecc92fe34" kindref="member">MLResult_AllocFailed</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_AllocFailed&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8ff3f2f21ec08316a7504642df2eb29c" kindref="member">MLResult_PermissionDenied</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_PermissionDenied&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaa9c7f9deb993ec27d6538048aafad1eb" kindref="member">MLResult_NotImplemented</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_NotImplemented&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaab9166c6a3d21fd26003e14c4f79c128" kindref="member">MLResult_ClientLimitExceeded</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_ClientLimitExceeded&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeafc5cc2e98c9d3b3160d612f54d13eb0b" kindref="member">MLResult_IncompatibleSKU</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_IncompatibleSKU&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5d70d7faf32742a1cacec0badf1038ef" kindref="member">MLResult_PoseNotFound</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_PoseNotFound&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea34e29e5dabee7742db40b9b2a06d897e" kindref="member">MLResult_PerceptionSystemNotStarted</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_PerceptionSystemNotStarted&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5c1809bf19ea8c9a4f3c8c691717098c" kindref="member">MLResult_IllegalState</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_IllegalState&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea89aadaa177bafa21fe328d1f4223cf81" kindref="member">MLResult_LicenseError</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_LicenseError&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea1d9e8cd9adb7be29ee95908d43467159" kindref="member">MLResult_InvalidTimestamp</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_InvalidTimestamp&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8a856c4a3285002edd8546a7883f7e0b" kindref="member">MLResult_Unauthenticated</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;MLResult_Unauthenticated&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="group___platform_1gaec8456292d85bdc97436de2507c18610" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___platform_1gaec8456292d85bdc97436de2507c18610" kindref="member">MLGlobalGetResultString</ref>(<ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/>result_code);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" kindref="member">MLHandleIsValid</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref><sp/>!=<sp/><ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="group___platform_1gab652ce8c2afdad17f91aab3ac35bb18c" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___platform_1gab652ce8c2afdad17f91aab3ac35bb18c" kindref="member">MLGetVersionName</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ml__version_8h_1a4427b1d9a48a152099d0b1a24d34af23" kindref="member">MLSDK_VERSION_NAME</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="group___platform_1gaf78966c503f273cae23d3f8188f495ba" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/><ref refid="struct_m_l_version" kindref="compound">MLVersion</ref><sp/><ref refid="group___platform_1gaf78966c503f273cae23d3f8188f495ba" kindref="member">MLGetVersion</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_version" kindref="compound">MLVersion</ref><sp/>version<sp/>=<sp/>{<ref refid="ml__version_8h_1af6105f3e75975a78975d285e351da6ad" kindref="member">MLSDK_VERSION_MAJOR</ref>,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ml__version_8h_1aa96cd28782f9aa2d5937c0978bcffb70" kindref="member">MLSDK_VERSION_MINOR</ref>,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ml__version_8h_1a1bc6ab813f88d37e32d719b9b9f13a71" kindref="member">MLSDK_VERSION_REVISION</ref>,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ml__version_8h_1a2b177e21927a393e814a550ee831d8a7" kindref="member">MLSDK_VERSION_BUILD_ID</ref>};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>version;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h"/>
+  </compounddef>
+</doxygen>

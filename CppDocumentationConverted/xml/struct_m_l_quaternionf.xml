@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_quaternionf" kind="struct" language="C++" prot="public">
+    <compoundname>MLQuaternionf</compoundname>
+    <includes refid="ml__types_8h" local="no">ml_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_quaternionf_1accb5636ecba68554da077c6d2b2deac2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLQuaternionf::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="69" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_quaternionf_1a2c680cd07d5f84f37159ccae65f6394b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLQuaternionf::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="70" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_quaternionf_1ac050856c4932f58a7a3538bf94e7a075" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLQuaternionf::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="71" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_quaternionf_1a8cb0c7e8fc16ca4fa4165e97c21d3391" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLQuaternionf::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="72" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Quaternion stored as X, Y, Z, W floats. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="62" bodyend="77"/>
+    <listofallmembers>
+      <member refid="struct_m_l_quaternionf_1a8cb0c7e8fc16ca4fa4165e97c21d3391" prot="public" virt="non-virtual"><scope>MLQuaternionf</scope><name>w</name></member>
+      <member refid="struct_m_l_quaternionf_1accb5636ecba68554da077c6d2b2deac2" prot="public" virt="non-virtual"><scope>MLQuaternionf</scope><name>x</name></member>
+      <member refid="struct_m_l_quaternionf_1a2c680cd07d5f84f37159ccae65f6394b" prot="public" virt="non-virtual"><scope>MLQuaternionf</scope><name>y</name></member>
+      <member refid="struct_m_l_quaternionf_1ac050856c4932f58a7a3538bf94e7a075" prot="public" virt="non-virtual"><scope>MLQuaternionf</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

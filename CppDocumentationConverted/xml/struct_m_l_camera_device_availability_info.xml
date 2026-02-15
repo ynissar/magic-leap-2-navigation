@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_device_availability_info" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraDeviceAvailabilityInfo</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_device_availability_info_1aaf7361a026e397bbbdf6e24bcd7823db" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gac35323a7ef4d666d98a3b7453a01a1c1" kindref="member">MLCameraIdentifier</ref></type>
+        <definition>MLCameraIdentifier MLCameraDeviceAvailabilityInfo::cam_id</definition>
+        <argsstring></argsstring>
+        <name>cam_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Identifier for the camera that the callback applies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="456" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_device_availability_info_1a71feeb1cd6134ba042c4dbaedd40e72f" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MLCameraDeviceAvailabilityInfo::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The context pointer supplied to <ref refid="group___camera_1ga5e9b8bb432847d983f27a28d75ecf5f0" kindref="member">MLCameraInit()</ref> call. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="458" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to represent info on camera availability. </para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="454" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="454" bodyend="459"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_device_availability_info_1aaf7361a026e397bbbdf6e24bcd7823db" prot="public" virt="non-virtual"><scope>MLCameraDeviceAvailabilityInfo</scope><name>cam_id</name></member>
+      <member refid="struct_m_l_camera_device_availability_info_1a71feeb1cd6134ba042c4dbaedd40e72f" prot="public" virt="non-virtual"><scope>MLCameraDeviceAvailabilityInfo</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

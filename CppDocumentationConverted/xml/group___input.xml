@@ -1,0 +1,3120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___input" kind="group">
+    <compoundname>Input</compoundname>
+    <title>Input</title>
+    <innerclass refid="struct_m_l_input_controller_touchpad_gesture" prot="public">MLInputControllerTouchpadGesture</innerclass>
+    <innerclass refid="struct_m_l_input_controller_callbacks_ex" prot="public">MLInputControllerCallbacksEx</innerclass>
+    <innerclass refid="struct_m_l_input_controller_state_ex" prot="public">MLInputControllerStateEx</innerclass>
+    <innerclass refid="struct_m_l_input_connected_devices_list" prot="public">MLInputConnectedDevicesList</innerclass>
+    <innerclass refid="struct_m_l_input_pre_defined_pattern" prot="public">MLInputPreDefinedPattern</innerclass>
+    <innerclass refid="struct_m_l_input_buzz_command" prot="public">MLInputBuzzCommand</innerclass>
+    <innerclass refid="struct_m_l_input_custom_haptics" prot="public">MLInputCustomHaptics</innerclass>
+    <innerclass refid="struct_m_l_input_custom_haptics_info" prot="public">MLInputCustomHapticsInfo</innerclass>
+    <innerclass refid="struct_m_l_input_voice_app_intent_slot" prot="public">MLInputVoiceAppIntentSlot</innerclass>
+    <innerclass refid="struct_m_l_voice_intent_event" prot="public">MLVoiceIntentEvent</innerclass>
+    <innerclass refid="struct_m_l_voice_intent_callbacks" prot="public">MLVoiceIntentCallbacks</innerclass>
+    <innerclass refid="struct_m_l_voice_intent_settings" prot="public">MLVoiceIntentSettings</innerclass>
+    <innerclass refid="union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern" prot="public">MLInputCustomHaptics.MLInputCustomHapticsPattern</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___input_1ga05589fbab0657f08285ebdfe93f5ec9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@13</name>
+        <enumvalue id="group___input_1gga05589fbab0657f08285ebdfe93f5ec9eaa623e97056016b1e3af82f85ed70584e" prot="public">
+          <name>MLResultAPIPrefix_Input</name>
+          <initializer>= ( 0x21DC  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLInputResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="30" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga8d2bc318ade2086430f4280d40fea211" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputResult</name>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211a5b9eba36f5b017effeae52ef1059f06a" prot="public">
+          <name>MLInputResult_ServiceNotAvailable</name>
+          <initializer>= MLResultAPIPrefix_Input</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211a0e37ecf5950d3676ca3a10c3eb4b2777" prot="public">
+          <name>MLInputResult_PermissionDenied</name>
+          <briefdescription>
+<para>Operation failed because a required permission has not been granted. Example: This can happen when the app is not in the foreground. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211acb20a19e2696c29c28c503c84c32ef13" prot="public">
+          <name>MLInputResult_DeviceNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because a required device was not found. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211a3370e520960cf66d46a1f027b18d7530" prot="public">
+          <name>MLInputResult_IllegalState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the service was in an illegal state. Example: This can occur when the service is still initializing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211a95e1d37b22852c82ca940cd00ba85788" prot="public">
+          <name>MLInputResult_InternalError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because of an internal error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211a48ad49c6fcab0fc4c4f7f3ad52025c8b" prot="public">
+          <name>MLInputResult_SpeechDisabled</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because a required speech feature is disabled in system settings. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga8d2bc318ade2086430f4280d40fea211a299f5916e5e2bbf90cfff5970dcc4e04" prot="public">
+          <name>MLInputResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return values for Input API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="38" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="38" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga16af7b253440dadd46a80a4b9fddba4d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@14</name>
+        <enumvalue id="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" prot="public">
+          <name>MLInput_MaxControllers</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum recognized number of input controllers. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga16af7b253440dadd46a80a4b9fddba4da5226e2e5e985ed9bb61fd6cc74c22aa7" prot="public">
+          <name>MLInput_MaxControllerTouchpadTouches</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum recognized number of controller touchpad touches. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga0196579e696d41a6270b087f8d62721a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerTouchpadGestureState</name>
+        <enumvalue id="group___input_1gga0196579e696d41a6270b087f8d62721aa99d27fdf8ffe2c3c10efafa3f18a2b1b" prot="public">
+          <name>MLInputControllerTouchpadGestureState_End</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End(Default). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0196579e696d41a6270b087f8d62721aa3842e49a10f3dd9d10589ded5ebd980b" prot="public">
+          <name>MLInputControllerTouchpadGestureState_Continue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Continue. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0196579e696d41a6270b087f8d62721aa3a71aca06d945b84e80fd5be8b1bdb59" prot="public">
+          <name>MLInputControllerTouchpadGestureState_Start</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0196579e696d41a6270b087f8d62721aafc832fadc795656fda18bf70d7b8efe6" prot="public">
+          <name>MLInputControllerTouchpadGestureState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Touchpad gesture state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga6ed80c553ffffe76a5d3e5f3d09cd14a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerTouchpadGestureType</name>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa897d837393742c6602b0a57d6a14677e" prot="public">
+          <name>MLInputControllerTouchpadGestureType_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aaf6e1f51d47d0b0f91a6681fc25ac94af" prot="public">
+          <name>MLInputControllerTouchpadGestureType_Tap</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tap. This is a discrete gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa8e7ddd8d599713c2f8a5191b075ece3e" prot="public">
+          <name>MLInputControllerTouchpadGestureType_ForceTapDown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Force tap down. This is a discrete gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aaae942614ee9fcbdcf2929191b5370033" prot="public">
+          <name>MLInputControllerTouchpadGestureType_ForceTapUp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Force tap up. This is a discrete gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa97b914c27fa3d7331058accf2bb75c4a" prot="public">
+          <name>MLInputControllerTouchpadGestureType_ForceDwell</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Force dwell. This is a discrete gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa297f4beca5a587e40a25c408ce0f378c" prot="public">
+          <name>MLInputControllerTouchpadGestureType_SecondForceDown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Second force down. This is a discrete gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa9b7fdaa76da048f1f80bd3e3ac87677f" prot="public">
+          <name>MLInputControllerTouchpadGestureType_RadialScroll</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Radial scroll. This is a continuous gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa05f794a12c699b9740bfd1c26ca95258" prot="public">
+          <name>MLInputControllerTouchpadGestureType_Swipe</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Swipe. This is a continuous gesture. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aaa2132f914160c680395a03624b99c5d2" prot="public">
+          <name>MLInputControllerTouchpadGestureType_Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of gesture types. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga6ed80c553ffffe76a5d3e5f3d09cd14aa49838735281acab8cd274abf322231a2" prot="public">
+          <name>MLInputControllerTouchpadGestureType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recognized touchpad gesture types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="78" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga7982b8f90bafa6c227c1924929689537" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerTouchpadGestureDirection</name>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537a679f4792e6f17e863e5c78da1da24df0" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537ae465387521f972c7a171fe95f46b7c5b" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Up</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Up. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537acd0d5ee3c31007ec5f1e79b292c2acf3" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Down</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Down. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537a0aac31bb279a33248ad2003dc0edd169" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537a9ab932873869b0dbf4df6a18d10c1143" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537ab2807a9c62afaa4d39da689da84753e9" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Clockwise</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Clockwise. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537aad7b8da36e7b71ba5d588a47321fd878" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_CounterClockwise</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter clockwise. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537a26729f0bfa2c2409cf8f92ac43f7a7d6" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of directions. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7982b8f90bafa6c227c1924929689537a55aa2ebd6405b58d818e5e8a21e32f91" prot="public">
+          <name>MLInputControllerTouchpadGestureDirection_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Direction of touchpad gesture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="102" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga147431fbf325e7146705a8d46dded5a2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerType</name>
+        <enumvalue id="group___input_1gga147431fbf325e7146705a8d46dded5a2a24b7288ac510f00a3454d044eb9fb5b0" prot="public">
+          <name>MLInputControllerType_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga147431fbf325e7146705a8d46dded5a2a1060adc81289acec47d76871a6124c8f" prot="public">
+          <name>MLInputControllerType_Device</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Device. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga147431fbf325e7146705a8d46dded5a2aef2226c0b0cf57b726570d17c687e83b" prot="public">
+          <name>MLInputControllerType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Types of input controllers recognized by Magic Leap platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="161" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="161" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1gaa41673979655e340ad8c1c9af5813864" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerButton</name>
+        <enumvalue id="group___input_1ggaa41673979655e340ad8c1c9af5813864a3040741dc4a9f2cf5a292b2f3d3a56cc" prot="public">
+          <name>MLInputControllerButton_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggaa41673979655e340ad8c1c9af5813864aa6a1dd237eefa8650376c428652046f6" prot="public">
+          <name>MLInputControllerButton_Bumper</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bumper. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggaa41673979655e340ad8c1c9af5813864add2b181d006dd38fcce06880dc2152ed" prot="public">
+          <name>MLInputControllerButton_Menu</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Menu. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggaa41673979655e340ad8c1c9af5813864adf1457ef77a4a08a36e56936651c688b" prot="public">
+          <name>MLInputControllerButton_Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of buttons. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggaa41673979655e340ad8c1c9af5813864ab5a59d42187d53f47c89a89cf4e8c395" prot="public">
+          <name>MLInputControllerButton_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buttons on input controllers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="171" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="171" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga4456798c2ccd335e735c084bd40d7c91" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerTriggerEvent</name>
+        <enumvalue id="group___input_1gga4456798c2ccd335e735c084bd40d7c91a0469b5d54a033eae3ea24fcfb64ea051" prot="public">
+          <name>MLInputControllerTriggerEvent_Pull</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This is used when trigger is pulled down, and the normalized value is &gt; 0. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga4456798c2ccd335e735c084bd40d7c91a7f195fa51f2167f34ceee5d0af25e466" prot="public">
+          <name>MLInputControllerTriggerEvent_Release</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This is used when trigger is fully released, and the normalized value is 0. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga4456798c2ccd335e735c084bd40d7c91aeb8025548cde34cfa813b70450a00e50" prot="public">
+          <name>MLInputControllerTriggerEvent_Click</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This is used when trigger is pulled and released within a short duration. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga4456798c2ccd335e735c084bd40d7c91ad28df90394dfeb4dd76c6d600e7d9260" prot="public">
+          <name>MLInputControllerTriggerEvent_Hold</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This is used when trigger is pulled and held for a longer duration. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga4456798c2ccd335e735c084bd40d7c91a9074a24d273c23490d6803050bbd4701" prot="public">
+          <name>MLInputControllerTriggerEvent_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trigger events types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="185" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="185" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga5bdb2098c625cf482d64cb6bbc3815b1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputPreDefinedPatternType</name>
+        <enumvalue id="group___input_1gga5bdb2098c625cf482d64cb6bbc3815b1ab2f3087283960810210bb25cf091ce9f" prot="public">
+          <name>MLInputPreDefinedPatternType_A</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pre-defined pattern used for VKB hover. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga5bdb2098c625cf482d64cb6bbc3815b1a5f1f7101d5d3209a43aa75cd6182fab8" prot="public">
+          <name>MLInputPreDefinedPatternType_B</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pre-Defined pattern used for VKB select. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga5bdb2098c625cf482d64cb6bbc3815b1a2493b6b2eb75cd52c62788f7d42e9186" prot="public">
+          <name>MLInputPreDefinedPatternType_C</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pre-Defined pattern used for homemenu hover. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga5bdb2098c625cf482d64cb6bbc3815b1a1c79e7b9559275e7b1779b6623eeaa12" prot="public">
+          <name>MLInputPreDefinedPatternType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom haptics pattern types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="199" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="199" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1gae27aef07c1fc1b92389d025b500b88ca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputCustomHapticsType</name>
+        <enumvalue id="group___input_1ggae27aef07c1fc1b92389d025b500b88caa22aa3653de69e112cfc9e194d9ed1cd3" prot="public">
+          <name>MLInputCustomHapticsType_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae27aef07c1fc1b92389d025b500b88caa198bacf6c0d8313ae1d6cbefcf456bd8" prot="public">
+          <name>MLInputCustomHapticsType_Buzz</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pattern is a buzz command. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae27aef07c1fc1b92389d025b500b88caaa848e755582d0c26b44733c831f8e540" prot="public">
+          <name>MLInputCustomHapticsType_Predefined</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pattern is a pre-defined pattern. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae27aef07c1fc1b92389d025b500b88caa43085fd720ebb8d53ec9f57879951055" prot="public">
+          <name>MLInputCustomHapticsType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom haptics pattern types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="211" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="211" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1gae58ff4e595b9c2d633f36f46d594dc6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLInputControllerHand</name>
+        <enumvalue id="group___input_1ggae58ff4e595b9c2d633f36f46d594dc6aa359f3398063d6f220b411f5d8683a87b" prot="public">
+          <name>MLInputControllerHand_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae58ff4e595b9c2d633f36f46d594dc6aa1f5e6c9ba9bbad1746638ad898def3a8" prot="public">
+          <name>MLInputControllerHand_Left</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae58ff4e595b9c2d633f36f46d594dc6aa5673dafd53f67e5d75b5f063f453dbef" prot="public">
+          <name>MLInputControllerHand_Right</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae58ff4e595b9c2d633f36f46d594dc6aa6ac4f7780d2fd3d3d187d40df8cde28f" prot="public">
+          <name>MLInputControllerHand_Both</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Both hand. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggae58ff4e595b9c2d633f36f46d594dc6aa59e77a3f7f13c94882b55f8b51288a0c" prot="public">
+          <name>MLInputControllerHand_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Hand in which the controller is held. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="227" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="227" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga0ed680fdb405e7195d9f14032851eebb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@30</name>
+        <enumvalue id="group___input_1gga0ed680fdb405e7195d9f14032851eebbae63e9abe3fc04b0c31d0834a8d700da2" prot="public">
+          <name>MLResultAPIPrefix_Voice</name>
+          <initializer>= MLRESULT_PREFIX(0xbe7a)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLVoiceResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="26" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga7de10a372e6b8b16740f4bf78d90a1f6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLVoiceResult</name>
+        <enumvalue id="group___input_1gga7de10a372e6b8b16740f4bf78d90a1f6afe1c695d8a33f22bc72bc30931ace34a" prot="public">
+          <name>MLVoiceResult_IntentDisabled</name>
+          <initializer>= MLResultAPIPrefix_Voice</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because a required voice intent feature is disabled in system settings. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga7de10a372e6b8b16740f4bf78d90a1f6ad67513997adb2eeda31ad95f5d15a339" prot="public">
+          <name>MLVoiceResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return values for Voice API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="36" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1ga0d608a9e6df8a2795d407440d33e005d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLVoiceState</name>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005da71460078e9661b3409b3033af47fff02" prot="public">
+          <name>MLVoiceState_IntentHotwordDetected</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Intent hotword detected, Automatic Speech Recognition (ASR) session is going to start. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005da79cee986430ec5d8fcf1ef0a5570dfb8" prot="public">
+          <name>MLVoiceState_IntentSessionEnded</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Voice UI is stopped, ASR session is going to stop. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005daff6abbee3852a6db7bfbeb55c69ac164" prot="public">
+          <name>MLVoiceState_IntentSessionEndedAborted</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ASR session is stopped due to abort. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005daef6b9ae902d976470d323d1205f6d468" prot="public">
+          <name>MLVoiceState_IntentSessionEndedNoIntent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ASR session is stopped without detecting an intent. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005da8020aa9e2d1c2dea64be308d1e6dd94c" prot="public">
+          <name>MLVoiceState_IntentSessionEndedTimeout</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ASR session is stopped due to timeout. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005daa3eb23d24728bfa0a537f7bb605823c6" prot="public">
+          <name>MLVoiceState_IntentSessionEndedError</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ASR session is stopped due to error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005dafe7fd4c410b0766c069fc1decd6242f5" prot="public">
+          <name>MLVoiceState_IntentReady</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Intent mode is started and ready. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005daaff93bfa750dd93fbe813486fd1a0b1e" prot="public">
+          <name>MLVoiceState_IntentNotAvailable</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Intent mode is stopped and not available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005da896c3386dd415df1dbe53ddf7918bfc4" prot="public">
+          <name>MLVoiceState_IntentInvalidAppIntent</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid app intent, double check content of JSON submitted with <ref refid="group___input_1gaf3a89b14464c0e6dbb99480e1fc34ad5" kindref="member">MLVoiceIntentConfigureSettings()</ref>. Please refer to Voice Intent Development Toolkit from Magic Leap Hub to generate app intent content. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1gga0d608a9e6df8a2795d407440d33e005daf9e722fb91e1c4c0fb158b22f979bf32" prot="public">
+          <name>MLVoiceState_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Voice state in voice event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="48" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___input_1gac93a8c76f3d22bb024e4685c6995dd13" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLVoiceIntentNoIntentReason</name>
+        <enumvalue id="group___input_1ggac93a8c76f3d22bb024e4685c6995dd13a0def51e306eb6fb96699416c0dd9f4f3" prot="public">
+          <name>MLVoiceIntentNoIntentReason_NoReason</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>In case of success. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggac93a8c76f3d22bb024e4685c6995dd13a420339b23c8e4b45fe279a7f0f99c663" prot="public">
+          <name>MLVoiceIntentNoIntentReason_Silence</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>When the MLVoiceState in <ref refid="struct_m_l_voice_intent_event" kindref="compound">MLVoiceIntentEvent</ref> is either MLVoiceState_IntentSessionEndedTimeout or MLVoiceState_IntentSessionEndedError. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggac93a8c76f3d22bb024e4685c6995dd13a1c21e99af76c04132817cb1e2c9536b6" prot="public">
+          <name>MLVoiceIntentNoIntentReason_NoMatch</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>When the MLVoiceState in <ref refid="struct_m_l_voice_intent_event" kindref="compound">MLVoiceIntentEvent</ref> is MLVoiceState_IntentSessionEndedNoIntent. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___input_1ggac93a8c76f3d22bb024e4685c6995dd13af0440d15c1a3ae9f611011fe582ae1ea" prot="public">
+          <name>MLVoiceIntentNoIntentReason_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>No intent reason code in voice event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="79" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="79" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___input_1ga1768cb67b898622d501f79259cf7a309" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga8d2bc318ade2086430f4280d40fea211" kindref="member">MLInputResult</ref></type>
+        <definition>typedef enum MLInputResult MLInputResult</definition>
+        <argsstring></argsstring>
+        <name>MLInputResult</name>
+        <briefdescription>
+<para>Return values for Input API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="56" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gaa70076249ce02223c8d9b02f5c8cbb65" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga0196579e696d41a6270b087f8d62721a" kindref="member">MLInputControllerTouchpadGestureState</ref></type>
+        <definition>typedef enum MLInputControllerTouchpadGestureState MLInputControllerTouchpadGestureState</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerTouchpadGestureState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Touchpad gesture state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="75" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gaed5dbe31dc0629f9fa062bd82e927695" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga6ed80c553ffffe76a5d3e5f3d09cd14a" kindref="member">MLInputControllerTouchpadGestureType</ref></type>
+        <definition>typedef enum MLInputControllerTouchpadGestureType MLInputControllerTouchpadGestureType</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerTouchpadGestureType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recognized touchpad gesture types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="99" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga33aaa01d8d3fdc030378fdb6d699c234" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga7982b8f90bafa6c227c1924929689537" kindref="member">MLInputControllerTouchpadGestureDirection</ref></type>
+        <definition>typedef enum MLInputControllerTouchpadGestureDirection MLInputControllerTouchpadGestureDirection</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerTouchpadGestureDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Direction of touchpad gesture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="121" column="43"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga42b916852da09ac8d0a2a1e1e9df71f5" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_controller_touchpad_gesture" kindref="compound">MLInputControllerTouchpadGesture</ref></type>
+        <definition>typedef struct MLInputControllerTouchpadGesture MLInputControllerTouchpadGesture</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerTouchpadGesture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A structure containing information about recognized touchpad gesture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="158" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga778df011476d0eda2ea89bdd25d581ab" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga147431fbf325e7146705a8d46dded5a2" kindref="member">MLInputControllerType</ref></type>
+        <definition>typedef enum MLInputControllerType MLInputControllerType</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Types of input controllers recognized by Magic Leap platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="168" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gaea9bb166f697fb7583e4894fac6409d4" prot="public" static="no">
+        <type>enum <ref refid="group___input_1gaa41673979655e340ad8c1c9af5813864" kindref="member">MLInputControllerButton</ref></type>
+        <definition>typedef enum MLInputControllerButton MLInputControllerButton</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buttons on input controllers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="182" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gaf860106f321043026f53c7f83a56e64f" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga4456798c2ccd335e735c084bd40d7c91" kindref="member">MLInputControllerTriggerEvent</ref></type>
+        <definition>typedef enum MLInputControllerTriggerEvent MLInputControllerTriggerEvent</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerTriggerEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trigger events types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="196" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga97860f8cac702eca621c37a17dfb9d6d" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga5bdb2098c625cf482d64cb6bbc3815b1" kindref="member">MLInputPreDefinedPatternType</ref></type>
+        <definition>typedef enum MLInputPreDefinedPatternType MLInputPreDefinedPatternType</definition>
+        <argsstring></argsstring>
+        <name>MLInputPreDefinedPatternType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom haptics pattern types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="208" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga252f2fe2010b06e9970229e8d2791aca" prot="public" static="no">
+        <type>enum <ref refid="group___input_1gae27aef07c1fc1b92389d025b500b88ca" kindref="member">MLInputCustomHapticsType</ref></type>
+        <definition>typedef enum MLInputCustomHapticsType MLInputCustomHapticsType</definition>
+        <argsstring></argsstring>
+        <name>MLInputCustomHapticsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom haptics pattern types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="220" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gabbacfaa51f07c743e106dfbea391842f" prot="public" static="no">
+        <type>enum <ref refid="group___input_1gae58ff4e595b9c2d633f36f46d594dc6a" kindref="member">MLInputControllerHand</ref></type>
+        <definition>typedef enum MLInputControllerHand MLInputControllerHand</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerHand</name>
+        <briefdescription>
+<para>Hand in which the controller is held. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="238" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gae58b2b6ca6790fc404d633dd41d0283f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_controller_callbacks_ex" kindref="compound">MLInputControllerCallbacksEx</ref></type>
+        <definition>typedef struct MLInputControllerCallbacksEx MLInputControllerCallbacksEx</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerCallbacksEx</name>
+        <briefdescription>
+<para>A structure containing callbacks for input controller events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL.</para>
+<para>This structure must be initialized by calling <ref refid="group___input_1gaf8c43f4ba01939f31180fd0ee488bc6b" kindref="member">MLInputControllerCallbacksExInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="320" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gab1f8219cbe4d8da7425aebb8cd601830" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_controller_state_ex" kindref="compound">MLInputControllerStateEx</ref></type>
+        <definition>typedef struct MLInputControllerStateEx MLInputControllerStateEx</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerStateEx</name>
+        <briefdescription>
+<para>A structure containing information about the current state of an input controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="409" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga6c4a96428379c424b23a28067e48f31e" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref></type>
+        <definition>typedef struct MLInputConnectedDevicesList MLInputConnectedDevicesList</definition>
+        <argsstring></argsstring>
+        <name>MLInputConnectedDevicesList</name>
+        <briefdescription>
+<para>A structure containing information about the connected devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="438" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga4db26382f8b13b05c13911c2188a12e0" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_pre_defined_pattern" kindref="compound">MLInputPreDefinedPattern</ref></type>
+        <definition>typedef struct MLInputPreDefinedPattern MLInputPreDefinedPattern</definition>
+        <argsstring></argsstring>
+        <name>MLInputPreDefinedPattern</name>
+        <briefdescription>
+<para>A structure containing information about the Pre-Defined pattern to be played. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+When playing haptic pre-defined pattern, needed information is stored in this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="467" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga573e27c642360eb6a3997fe069787803" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref></type>
+        <definition>typedef struct MLInputBuzzCommand MLInputBuzzCommand</definition>
+        <argsstring></argsstring>
+        <name>MLInputBuzzCommand</name>
+        <briefdescription>
+<para>A structure containing information about the Buzz command to be played. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+When playing haptic buzz command, needed information is stored in this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="499" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gac3ad11bb3f762ccddbfe84d0980aa4cc" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_custom_haptics" kindref="compound">MLInputCustomHaptics</ref></type>
+        <definition>typedef struct MLInputCustomHaptics MLInputCustomHaptics</definition>
+        <argsstring></argsstring>
+        <name>MLInputCustomHaptics</name>
+        <briefdescription>
+<para>A structure containing information about the Buzz command and/or pre-defined pattern to be played. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. A <ref refid="group___input_1ga252f2fe2010b06e9970229e8d2791aca" kindref="member">MLInputCustomHapticsType</ref> should be set while initializing the struct to indicate whether the to-be set pattern is a buzz command or a pre-defined pattern.</para>
+<para>The #duration will set the time for which a pattern is played:<itemizedlist>
+<listitem><para>If the inherited duration of a pre-defined pattern is greater, then it will be cut short and the next pattern will start playing.</para>
+</listitem><listitem><para>If the inherited duration of a pre-defined pattern is smaller, then it will not repeat itself and will wait for the #duration to complete before starting to play the next pattern.</para>
+</listitem><listitem><para>Buzz command&apos;s duration will supersede the #duration. Above caveat is true in case buzz command&apos;s duration is smaller.</para>
+</listitem><listitem><para>The last pattern of the array will continue playing even if the inherited duration is longer than #duration unless the pattern is interrupted by another pattern in the pipeline. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="544" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga49fdb652dc023c6887ea5f1eb51ee6ee" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_custom_haptics_info" kindref="compound">MLInputCustomHapticsInfo</ref></type>
+        <definition>typedef struct MLInputCustomHapticsInfo MLInputCustomHapticsInfo</definition>
+        <argsstring></argsstring>
+        <name>MLInputCustomHapticsInfo</name>
+        <briefdescription>
+<para>A structure containing a list of Buzz command and/or pre-defined patterns to be played. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure holds a list of such a combination. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="564" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga4c12b504ea34ee81baf073aa1bd9bf9b" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga7de10a372e6b8b16740f4bf78d90a1f6" kindref="member">MLVoiceResult</ref></type>
+        <definition>typedef enum MLVoiceResult MLVoiceResult</definition>
+        <argsstring></argsstring>
+        <name>MLVoiceResult</name>
+        <briefdescription>
+<para>Return values for Voice API calls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="41" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gac5de4c29b95c23a652ce74a40aeaef4d" prot="public" static="no">
+        <type>enum <ref refid="group___input_1ga0d608a9e6df8a2795d407440d33e005d" kindref="member">MLVoiceState</ref></type>
+        <definition>typedef enum MLVoiceState MLVoiceState</definition>
+        <argsstring></argsstring>
+        <name>MLVoiceState</name>
+        <briefdescription>
+<para>Voice state in voice event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga12eb969118b369fa6a73ac8a57c33b68" prot="public" static="no">
+        <type>enum <ref refid="group___input_1gac93a8c76f3d22bb024e4685c6995dd13" kindref="member">MLVoiceIntentNoIntentReason</ref></type>
+        <definition>typedef enum MLVoiceIntentNoIntentReason MLVoiceIntentNoIntentReason</definition>
+        <argsstring></argsstring>
+        <name>MLVoiceIntentNoIntentReason</name>
+        <briefdescription>
+<para>No intent reason code in voice event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="89" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gaa80d92b818942c9d392ce9a99d1bfa0b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_input_voice_app_intent_slot" kindref="compound">MLInputVoiceAppIntentSlot</ref></type>
+        <definition>typedef struct MLInputVoiceAppIntentSlot MLInputVoiceAppIntentSlot</definition>
+        <argsstring></argsstring>
+        <name>MLInputVoiceAppIntentSlot</name>
+        <briefdescription>
+<para>A structure containing voice app-intent slot in voice event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="103" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga9fea6568ac0dcbaeb148616d516bd6d0" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_voice_intent_event" kindref="compound">MLVoiceIntentEvent</ref></type>
+        <definition>typedef struct MLVoiceIntentEvent MLVoiceIntentEvent</definition>
+        <argsstring></argsstring>
+        <name>MLVoiceIntentEvent</name>
+        <briefdescription>
+<para>A structure containing voice intent event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="132" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1ga14bbffd5293c3351f22dcb668dad6aa1" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref></type>
+        <definition>typedef struct MLVoiceIntentCallbacks MLVoiceIntentCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLVoiceIntentCallbacks</name>
+        <briefdescription>
+<para>A structure containing callbacks for voice intent events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLVoiceIntentSetCallbacks. Individual callbacks which are not required by the client can be NULL.</para>
+<para>This structure must be initialized by calling <ref refid="group___input_1ga4aa987614762db01434d36b7beafaa23" kindref="member">MLVoiceIntentCallbacksInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="156" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___input_1gaf0190696c87106922cab343ad2f41ed6" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref></type>
+        <definition>typedef struct MLVoiceIntentSettings MLVoiceIntentSettings</definition>
+        <argsstring></argsstring>
+        <name>MLVoiceIntentSettings</name>
+        <briefdescription>
+<para>A structure containing settings for voice app intent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___input_1ga4b201c29d5d41402f519328c9474ce5d" kindref="member">MLVoiceIntentSettingsInit()</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="191" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___input_1gaaf978a9b99b73003d1dd336fd14cee2c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLInputControllerState</definition>
+        <argsstring></argsstring>
+        <name>MLInputControllerState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="373" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___input_1gabb15f39fbb1f1c8d035aa6bd5cb8e039" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="group___input_1gaaf978a9b99b73003d1dd336fd14cee2c" kindref="member">MLInputControllerState</ref></type>
+        <definition>struct MLInputControllerState out_state[MLInput_MaxControllers]</definition>
+        <argsstring>[MLInput_MaxControllers]</argsstring>
+        <name>out_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="639" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="640" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___input_1gaf8c43f4ba01939f31180fd0ee488bc6b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLInputControllerCallbacksExInit</definition>
+        <argsstring>(MLInputControllerCallbacksEx *inout_callbacks)</argsstring>
+        <name>MLInputControllerCallbacksExInit</name>
+        <param>
+          <type><ref refid="struct_m_l_input_controller_callbacks_ex" kindref="compound">MLInputControllerCallbacksEx</ref> *</type>
+          <declname>inout_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_input_controller_callbacks_ex" kindref="compound">MLInputControllerCallbacksEx</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="329" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="329" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gab805f6fdc1657bac57abd2f413debe05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef __attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLInputControllerStateEx.&quot;))) struct MLInputControllerState</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLInputControllerStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>A structure containing information about the current state of an input controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000075"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range.</para>
+<para>Normalized trigger value [0.0,1.0].</para>
+<para>Button states.</para>
+<para>If this controller&apos;s touch is active.</para>
+<para>If this controller is connected.</para>
+<para>Current touchpad gesture.</para>
+<para>Current touchpad gesture state.</para>
+<para>Type of this controller.</para>
+<para>Hardware index of this controller. For ML2 physical controller this value will always be 0.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="348" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="348" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gabe5a8aedce1438bb29d5c4153618fe58" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLInputControllerStateExInit</definition>
+        <argsstring>(MLInputControllerStateEx inout_attr[MLInput_MaxControllers])</argsstring>
+        <name>MLInputControllerStateExInit</name>
+        <param>
+          <type><ref refid="struct_m_l_input_controller_state_ex" kindref="compound">MLInputControllerStateEx</ref></type>
+          <declname>inout_attr</declname>
+          <array>[MLInput_MaxControllers]</array>
+        </param>
+        <briefdescription>
+<para>Initializes values for <ref refid="struct_m_l_input_controller_state_ex" kindref="compound">MLInputControllerStateEx</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="418" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="418" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gaef10bcbee8087b0bbe35c7cc13a51cbc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLInputConnectedDevicesListInit</definition>
+        <argsstring>(MLInputConnectedDevicesList *inout_devices_list)</argsstring>
+        <name>MLInputConnectedDevicesListInit</name>
+        <param>
+          <type><ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> *</type>
+          <declname>inout_devices_list</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_devices_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="447" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="447" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga8262491f3a6cea5594d4430abf109588" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLInputPreDefinedPatternInit</definition>
+        <argsstring>(MLInputPreDefinedPattern *inout_pattern)</argsstring>
+        <name>MLInputPreDefinedPatternInit</name>
+        <param>
+          <type><ref refid="struct_m_l_input_pre_defined_pattern" kindref="compound">MLInputPreDefinedPattern</ref> *</type>
+          <declname>inout_pattern</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_input_pre_defined_pattern" kindref="compound">MLInputPreDefinedPattern</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="474" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="474" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gaa958f73c45f99dbf4c57505996b601d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLInputBuzzCommandInit</definition>
+        <argsstring>(MLInputBuzzCommand *inout_command)</argsstring>
+        <name>MLInputBuzzCommandInit</name>
+        <param>
+          <type><ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref> *</type>
+          <declname>inout_command</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="506" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="506" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga0fd8972171ea1c67217fbd69be4fd99d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLInputCustomHapticsInfoInit</definition>
+        <argsstring>(MLInputCustomHapticsInfo *inout_info)</argsstring>
+        <name>MLInputCustomHapticsInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_input_custom_haptics_info" kindref="compound">MLInputCustomHapticsInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes an array of <ref refid="struct_m_l_input_custom_haptics" kindref="compound">MLInputCustomHaptics</ref> with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to <ref refid="struct_m_l_input_custom_haptics_info" kindref="compound">MLInputCustomHapticsInfo</ref> struct to initialize the array elements with default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="572" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" bodystart="572" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga4b5a189db9a59273666d4eea5b821412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLInputGetResultString</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>MLInputGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLInputsResult and MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from MLInput functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000330"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="593" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="593" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gae53654b2a56fac1bfe8a929d10048540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputCreate</definition>
+        <argsstring>(MLHandle *out_handle)</argsstring>
+        <name>MLInputCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates an input tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the created input tracker. Only valid if the return value is MLResult_Ok. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the input tracker to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the input tracker due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the input tracker due to an unexpected state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000331"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="608" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="608" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gacd3ffa0ce4dc2856bdafe8746bed56da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputSetControllerCallbacksEx</definition>
+        <argsstring>(MLHandle handle, const MLInputControllerCallbacksEx *controller_callbacks, void *user_data)</argsstring>
+        <name>MLInputSetControllerCallbacksEx</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_input_controller_callbacks_ex" kindref="compound">MLInputControllerCallbacksEx</ref> *</type>
+          <declname>controller_callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callbacks for controller input events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 8</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_input_controller_callbacks_ex" kindref="compound">MLInputControllerCallbacksEx</ref> structure (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user payload data; this will be the first argument passed to all the callback functions (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set the callback for controller input events due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the callback for controller input events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set the callback for the controller input events due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000332"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="625" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="625" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga3c3a2a1bcaa612fe73467b61e600dc02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Replaced by MLInputGetControllerStateEx.&quot;))) MLResult MLInputGetControllerState(MLHandle handle</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Replaced by MLInputGetControllerStateEx.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>Returns current state of all possible input controllers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000076"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.1.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of <ref refid="group___input_1gaaf978a9b99b73003d1dd336fd14cee2c" kindref="member">MLInputControllerState</ref> structures that will be populated. The size of this array is at least the size <ref refid="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" kindref="member">MLInput_MaxControllers</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to fetch the controller state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully fetched the controller state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to fetch the controller state due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000333"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="639" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gadb83512defd22a275680735730c3cc27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputGetControllerStateEx</definition>
+        <argsstring>(MLHandle handle, MLInputControllerStateEx out_state[MLInput_MaxControllers])</argsstring>
+        <name>MLInputGetControllerStateEx</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_input_controller_state_ex" kindref="compound">MLInputControllerStateEx</ref></type>
+          <declname>out_state</declname>
+          <array>[MLInput_MaxControllers]</array>
+        </param>
+        <briefdescription>
+<para>Returns current state of all possible input controllers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of <ref refid="struct_m_l_input_controller_state_ex" kindref="compound">MLInputControllerStateEx</ref> structures that will be populated. The size of this array is at least the size <ref refid="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" kindref="member">MLInput_MaxControllers</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to fetch the controller state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully fetched the controller state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to fetch the controller state due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000334"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="655" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="655" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga68795f47e3d03b98f326b8e8a95a3545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputGetConnectedDevices</definition>
+        <argsstring>(MLHandle handle, MLInputConnectedDevicesList *inout_devices)</argsstring>
+        <name>MLInputGetConnectedDevices</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> *</type>
+          <declname>inout_devices</declname>
+        </param>
+        <briefdescription>
+<para>Gets the device IDs of all connected devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_devices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> structure that will be populated. The app should call <ref refid="group___input_1ga2f9e540988b267fa39d8c75b9c2a6a49" kindref="member">MLInputReleaseConnectedDevicesList</ref> to release the contents after use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the IDs of all connected devices due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully fetched the IDs of the connected devices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get the IDs of all connected devices due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000335"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="671" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="671" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga2f9e540988b267fa39d8c75b9c2a6a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputReleaseConnectedDevicesList</definition>
+        <argsstring>(MLHandle handle, MLInputConnectedDevicesList *devices)</argsstring>
+        <name>MLInputReleaseConnectedDevicesList</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> *</type>
+          <declname>devices</declname>
+        </param>
+        <briefdescription>
+<para>Releases the contents of <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> populated by <ref refid="group___input_1ga68795f47e3d03b98f326b8e8a95a3545" kindref="member">MLInputGetConnectedDevices</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 5</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">devices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_input_connected_devices_list" kindref="compound">MLInputConnectedDevicesList</ref> struct. Its contents will be released. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully released the contents of the device list. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to release the contents of the device list due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to release the contents of the device list due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000336"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="686" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="686" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga689901e7286c3fd274a48756a8c9943a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputStartControllerFeedbackPreDefinedPattern</definition>
+        <argsstring>(MLHandle handle, uint8_t controller_id, MLInputPreDefinedPattern *pattern)</argsstring>
+        <name>MLInputStartControllerFeedbackPreDefinedPattern</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>controller_id</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_input_pre_defined_pattern" kindref="compound">MLInputPreDefinedPattern</ref> *</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>Plays the pre-defined pattern. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the input controller 0 ~ <ref refid="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" kindref="member">MLInput_MaxControllers</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to #MLInputPredefinedPattern structure (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service is either not initialized or terminated or the app is not in focus. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_DeviceNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The haptic device could not be found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start a pre-defined pattern due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully started a pre-defined pattern on the specified controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start a pre-defined pattern due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000337"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="705" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="705" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga7006b917f1d86d441218e7e4314b29f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputStartControllerFeedbackBuzzCommand</definition>
+        <argsstring>(MLHandle handle, uint8_t controller_id, const MLInputBuzzCommand *command)</argsstring>
+        <name>MLInputStartControllerFeedbackBuzzCommand</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>controller_id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Plays controller haptic buzz command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the input controller 0 ~ <ref refid="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" kindref="member">MLInput_MaxControllers</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="struct_m_l_input_buzz_command" kindref="compound">MLInputBuzzCommand</ref> structure (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service is either not initialized or terminated or the app is not in focus. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_DeviceNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The haptic device could not be found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start the buzz command due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully started the buzz command on the specified controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start the buzz command due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000338"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="724" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="724" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga58a2a6d455fffd4e1a850251d23a1f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputCreateCustomHapticsPattern</definition>
+        <argsstring>(MLHandle handle, MLInputCustomHapticsInfo *info, uint32_t *inout_pattern_id)</argsstring>
+        <name>MLInputCreateCustomHapticsPattern</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_input_custom_haptics_info" kindref="compound">MLInputCustomHapticsInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>inout_pattern_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a custom haptic pattern. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+A custom haptics pattern is defined as a set of either buzz command and/or pre-defined patterns. Each pattern is played for a duration defined as the #duration_ms member of each element of the <ref refid="struct_m_l_input_custom_haptics" kindref="compound">MLInputCustomHaptics</ref> array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_input_custom_haptics_info" kindref="compound">MLInputCustomHapticsInfo</ref> struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_pattern_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pattern Id created by the API, to be used by <ref refid="group___input_1ga5b3fd5ead389211a79ba6cfded305dd6" kindref="member">MLInputStartControllerFeedbackCustomHapticsPattern</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service is either not initialized or terminated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a custom haptic pattern due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created a custom haptic pattern. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create a custom haptic pattern due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000339"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="745" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="745" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga5b3fd5ead389211a79ba6cfded305dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputStartControllerFeedbackCustomHapticsPattern</definition>
+        <argsstring>(MLHandle handle, uint8_t controller_id, uint32_t pattern_id)</argsstring>
+        <name>MLInputStartControllerFeedbackCustomHapticsPattern</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>controller_id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pattern_id</declname>
+        </param>
+        <briefdescription>
+<para>Plays the custom haptic pattern created by <ref refid="group___input_1ga58a2a6d455fffd4e1a850251d23a1f29" kindref="member">MLInputCreateCustomHapticsPattern</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the input controller 0 ~ <ref refid="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" kindref="member">MLInput_MaxControllers</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pattern_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom pattern id created by <ref refid="group___input_1ga58a2a6d455fffd4e1a850251d23a1f29" kindref="member">MLInputCreateCustomHapticsPattern</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service is either not initialized or terminated or the app is not in focus. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_DeviceNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The haptic device could not be found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start the custom haptic pattern due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully started the custom haptic pattern on the specified controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start the custom haptic pattern due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000340"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="764" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="764" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gae55fa64c5eb66fb0e619ff525646c02c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputDeleteCustomHapticsPattern</definition>
+        <argsstring>(MLHandle handle, uint32_t pattern_id)</argsstring>
+        <name>MLInputDeleteCustomHapticsPattern</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pattern_id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the custom haptic pattern created by <ref refid="group___input_1ga58a2a6d455fffd4e1a850251d23a1f29" kindref="member">MLInputCreateCustomHapticsPattern</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pattern_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom pattern Id created by <ref refid="group___input_1ga58a2a6d455fffd4e1a850251d23a1f29" kindref="member">MLInputCreateCustomHapticsPattern</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service is either not initialized or terminated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the custom haptic pattern due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the custom haptic pattern on the specified controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the custom haptic pattern due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000341"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="781" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="781" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga042d4fe02f355f8b8b174e0e5d635afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputStopControllerFeedback</definition>
+        <argsstring>(MLHandle handle, uint8_t controller_id)</argsstring>
+        <name>MLInputStopControllerFeedback</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>controller_id</declname>
+        </param>
+        <briefdescription>
+<para>Stops the currently playing haptic pattern. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">controller_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the input controller 0 ~ <ref refid="group___input_1gga16af7b253440dadd46a80a4b9fddba4daf03abbcd3a7426c79f3523d4004f6ccb" kindref="member">MLInput_MaxControllers</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service is either not initialized or terminated or the app is not in focus. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_DeviceNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The haptic device could not be found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to stop the pattern due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully stopped the pattern on the specified controller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to stop the pattern due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000342"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="799" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="799" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga592d6f741d254547ab74043c8ee258ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLInputDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLInputDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys an input tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to the input tracker to destroy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the input tracker due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the input tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the input handler due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLInputResult_IllegalState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the input handler due to an unexpected state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000343"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" line="812" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h" declline="812" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga4aa987614762db01434d36b7beafaa23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref> void</type>
+        <definition>ML_STATIC_INLINE void MLVoiceIntentCallbacksInit</definition>
+        <argsstring>(MLVoiceIntentCallbacks *inout_callbacks)</argsstring>
+        <name>MLVoiceIntentCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref> *</type>
+          <declname>inout_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 24</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000688"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="167" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="167" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga4b201c29d5d41402f519328c9474ce5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref> void</type>
+        <definition>ML_STATIC_INLINE void MLVoiceIntentSettingsInit</definition>
+        <argsstring>(MLVoiceIntentSettings *inout_settings)</argsstring>
+        <name>MLVoiceIntentSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000689"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="202" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" bodystart="202" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga966bf9010aca2b177bca495b13d68feb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentCreate</definition>
+        <argsstring>(MLHandle *out_handle)</argsstring>
+        <name>MLVoiceIntentCreate</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a voice intent client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the created voice intent client. Only valid if the return value is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create the voice intent client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created the voice intent client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create client due to missing permission.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000690"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.VOICE_INPUT (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="222" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="222" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga3a6f91eba298224f466b7d734427d22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLVoiceIntentDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a voice intent client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> to the voice intent client to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy the voice intent client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed the voice intent client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000691"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="234" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="234" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gaf3a89b14464c0e6dbb99480e1fc34ad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentConfigureSettings</definition>
+        <argsstring>(MLHandle handle, const MLVoiceIntentSettings *voice_settings)</argsstring>
+        <name>MLVoiceIntentConfigureSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref> *</type>
+          <declname>voice_settings</declname>
+        </param>
+        <briefdescription>
+<para>Sets the settings for voice intent events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>App needs to call MLVoiceIntentConfigureSettings at least once before it calls MLVoiceIntentStartProcessing. App can call MLVoiceIntentConfigureSettings anytime it needs to update the voice intents. But such call will trigger updating intent grammar inside speech engine, which may result in a short delay (could be a few seconds depending on the device&apos;s workload). So it is not recommended to call the function frequently.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the voice intent client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">voice_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_voice_intent_settings" kindref="compound">MLVoiceIntentSettings</ref> structure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set settings for voice intent events due to an invalid param. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set settings for voice intent events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLVoiceResult_IntentDisabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set the settings because required voice intent feature is disabled. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000692"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="256" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="256" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gaa7f88ecd8baa0dcfa5b5bde41b960fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentSetCallbacks</definition>
+        <argsstring>(MLHandle handle, const MLVoiceIntentCallbacks *voice_callbacks, void *user_data)</argsstring>
+        <name>MLVoiceIntentSetCallbacks</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref> *</type>
+          <declname>voice_callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callbacks for voice intent events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the voice intent client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">voice_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_l_voice_intent_callbacks" kindref="compound">MLVoiceIntentCallbacks</ref> structure. Set this to NULL to unregister callbacks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user payload data (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set callbacks for voice intent events due to an invalid param. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set callbacks for voice intent events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLVoiceResult_IntentDisabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set the callbacks because required voice intent feature is disabled in system settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000693"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="274" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="274" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gad704a22baf87a1e8d348db235ebbe255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentStartProcessing</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLVoiceIntentStartProcessing</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Starts voice intent processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API call affects the system voice service.</para>
+<para>NOTE: If your application is processing voice intents make sure to call <ref refid="group___input_1gaabf0b5047adc58663b87e04aef9010bf" kindref="member">MLVoiceIntentStopProcessing</ref> when application loses focus and <ref refid="group___input_1gad704a22baf87a1e8d348db235ebbe255" kindref="member">MLVoiceIntentStartProcessing</ref> when application gains focus to allow for uninterrupted processing of the voice intents.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the voice intent client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start processing due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully start intent processing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLVoiceResult_IntentDisabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start intent processing because required voice intent feature is disabled in system settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000694"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="297" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="297" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gaabf0b5047adc58663b87e04aef9010bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentStopProcessing</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLVoiceIntentStopProcessing</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Stops voice intent processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API call affects the system voice service.</para>
+<para>NOTE: If your application is processing voice intents make sure to call <ref refid="group___input_1gaabf0b5047adc58663b87e04aef9010bf" kindref="member">MLVoiceIntentStopProcessing</ref> when application loses focus and <ref refid="group___input_1gad704a22baf87a1e8d348db235ebbe255" kindref="member">MLVoiceIntentStartProcessing</ref> when application gains focus to allow for uninterrupted processing of the voice intents.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the voice intent client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to stop processing due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully stop intent processing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLVoiceResult_IntentDisabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to stop intent processing because required voice intent feature is disabled in system settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000695"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="320" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="320" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1gaa2f88d3c14fe1eeab0fa3e4d7128fd6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> <ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref> <ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API MLResult ML_CALL MLVoiceIntentIsEnabled</definition>
+        <argsstring>(MLHandle handle, bool *out_is_enabled)</argsstring>
+        <name>MLVoiceIntentIsEnabled</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Checks voice intent feature is enabled in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the voice intent client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns status whether voice intent feature is enabled in system settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to check due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The API call completed successfuly.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000696"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="335" column="25" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="335" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___input_1ga5067cfc1a47e73f2fb164aa3694e9880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref> const char *<ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref></type>
+        <definition>ML_API const char* ML_CALL MLVoiceGetResultString</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>MLVoiceGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLVoiceResult and MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from MLVoice functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000697"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" line="347" column="27" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_voice.h" declline="347" declcolumn="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for the Input system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>APIs for the voice service system.</para>
+<para><simplesect kind="par"><title>Shared Object:\n input.magicleap</title><para></para>
+</simplesect>
+Magic Leap 2 is built on top of AOSP, Android 10 (Q) API level 29. Mouse and Keyboard APIs, which have been supported in legacy versions of Magic Leap 1, have now been removed from the Magic Leap C-API. For mouse and keyboard events, please refer to the <ulink url="https://developer.android.com/ndk/reference/group/input">Android Input NDK API documentation</ulink>.</para>
+<para><simplesect kind="par"><title>Shared Object:\n input.magicleap</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

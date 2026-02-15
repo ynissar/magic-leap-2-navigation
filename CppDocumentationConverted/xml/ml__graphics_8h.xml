@@ -1,0 +1,2312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__graphics_8h" kind="file" language="C++">
+    <compoundname>ml_graphics.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__time_8h" local="yes">ml_time.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="ml__graphics__utils_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</includedby>
+    <includedby refid="ml__zi__graphics_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="8">
+        <label>ml_time.h</label>
+        <link refid="ml__time_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+      <node id="9">
+        <label>time.h</label>
+      </node>
+      <node id="10">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</label>
+        <link refid="ml__graphics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</label>
+        <link refid="ml__graphics__utils_8h"/>
+      </node>
+      <node id="3">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</label>
+        <link refid="ml__zi__graphics_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</label>
+        <link refid="ml__graphics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___graphics_1ga29b59ff332ba06976ce6efc99ddef3f3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGraphicsFlags</name>
+        <enumvalue id="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3adac177c60d30fc367a0eeb6285155f1b" prot="public">
+          <name>MLGraphicsFlags_NoDepth</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>The client will not provide a depth buffer to the graphics system as part of rendering. Therefore the handle returned for all depth related resources from the graphics APIs will be invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a171ded9286af9979d36a26b3fa241c08" prot="public">
+          <name>MLGraphicsFlags_DebugMode</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Create a debug client with a debug configuration that provides extended logcat error logging. Useful to debug failures in API calls to the graphics system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a52206a0760aafc6e8a5e578a25b468d8" prot="public">
+          <name>MLGraphicsFlags_Headlock</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>The client will lock all the content to the user&apos;s head pose. When enabled all of the content rendered by the app and system notifications will be in head locked mode. Use this mode with caution. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a10762ed76617b813f5e6aba00c1aa2fe" prot="public">
+          <name>MLGraphicsFlags_Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>When #graphics_flags is set to default, the client configuration returned is the default configuration (color/depth, origin lower left, non-debug, no headlock). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a6014cdc1282f67c2bc283cd55b835c95" prot="public">
+          <name>MLGraphicsFlags_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The graphics flags used as part of client creation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000013"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The flags are used to define the #graphics_flags member of the <ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref> as part of the definition to create the client. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="58" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSurfaceFormat</name>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07af53e5601be622b3e37655c1b5d3d0748" prot="public">
+          <name>MLSurfaceFormat_Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid format for color/depth. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac197228b07c2c5abd7d3ecbc805d647f" prot="public">
+          <name>MLSurfaceFormat_RGBA8UNorm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32bit linear color format (RGBA8). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a94f1700448afbe908593a27195404821" prot="public">
+          <name>MLSurfaceFormat_RGBA8UNormSRGB</name>
+          <briefdescription>
+<para>Gamma 2.2 32bit sRGB color format (RGBA8). Clients requesting this format are required to encode the final color into this surface as defined by the IEC 61966-2-1 specification. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a116477df7e304f66d5b7a4aa38cd6ba9" prot="public">
+          <name>MLSurfaceFormat_RGB10A2UNorm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32bit linear color format (R10G10B10A2). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a2688c86b0964a5a8aec97b468363fc9b" prot="public">
+          <name>MLSurfaceFormat_RGBA16Float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>64bit linear color format (R16G16B16A16). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a19f1955b2f846c36158e4cca3da189e5" prot="public">
+          <name>MLSurfaceFormat_D32Float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32bit floating point depth buffer (D32F). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a25ea5c420d1bee531099468a36e2a1e7" prot="public">
+          <name>MLSurfaceFormat_D24NormS8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>24bit linear depth format with 8bit stencil (D24S8). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac2bbae4ea5ac20714c827d12070d51f2" prot="public">
+          <name>MLSurfaceFormat_D32FloatS8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32bit floating point depth format with 8bit stencil (D32FS8). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ae2852359f758b02028f68acfb0e26554" prot="public">
+          <name>MLSurfaceFormat_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The definition of the supported color/depth surface formats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000014"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Formats that can be specified for the color_format and depth_format in <ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref>. For the best quality the recommended color format is <ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a94f1700448afbe908593a27195404821" kindref="member">MLSurfaceFormat_RGBA8UNormSRGB</ref>, and for depth (when defined) either <ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a19f1955b2f846c36158e4cca3da189e5" kindref="member">MLSurfaceFormat_D32Float</ref> or <ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac2bbae4ea5ac20714c827d12070d51f2" kindref="member">MLSurfaceFormat_D32FloatS8</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="94" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="94" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_1gad118494f470c309c8de778c56d44022c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGraphicsVirtualCameraName</name>
+        <enumvalue id="group___graphics_1ggad118494f470c309c8de778c56d44022caf064850ab4f3106dd3f638a037ce5a2f" prot="public">
+          <name>MLGraphicsVirtualCameraName_Combined</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Name of the combined camera, the union of all virtual cameras. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1ggad118494f470c309c8de778c56d44022ca22110f1b9c85831db45cd77447209592" prot="public">
+          <name>MLGraphicsVirtualCameraName_Left</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Name of virtual camera for left display. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1ggad118494f470c309c8de778c56d44022cae9d47c0b19f834d19559d7c1f2c82506" prot="public">
+          <name>MLGraphicsVirtualCameraName_Right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Name of virtual camera for right display. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1ggad118494f470c309c8de778c56d44022ca1d9e44930217e6e86c22c791674af604" prot="public">
+          <name>MLGraphicsVirtualCameraName_Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The maximum number of render virtual cameras. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1ggad118494f470c309c8de778c56d44022caadee2bd3e6c60aef8e103b8d5514bce0" prot="public">
+          <name>MLGraphicsVirtualCameraName_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata name associated with each virtual camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000016"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>APIs within the graphics system will return information specific to a single virtual camera or both. The metadata name informs the client how to correlate the outputs of the API to a specific camera or both cameras. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="144" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_1ga385c44f6fb256e5716a2302a5b940388" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@10</name>
+        <enumvalue id="group___graphics_1gga385c44f6fb256e5716a2302a5b940388a93969d90c3c1190e0c94c685348461d0" prot="public">
+          <name>MLGraphics_BufferCount</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The number of buffered entries for each virtual camera. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definitions for Graphics system maximums. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="158" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_1ga4ea89742cd547a41e17d296797543c73" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGraphicsProjectionType</name>
+        <enumvalue id="group___graphics_1gga4ea89742cd547a41e17d296797543c73a2b631bb35ab20d61ed891e00962d88b5" prot="public">
+          <name>MLGraphicsProjectionType_SignedZ</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Projection model with signed Z. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga4ea89742cd547a41e17d296797543c73a71fa0bbff34cbf97784b0b45aab55b7c" prot="public">
+          <name>MLGraphicsProjectionType_ReversedInfiniteZ</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Projection model reversed infinite Z. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga4ea89742cd547a41e17d296797543c73aed57ebd2ddaa46494632450bce2aac78" prot="public">
+          <name>MLGraphicsProjectionType_UnsignedZ</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Projection model with unsigned Z. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga4ea89742cd547a41e17d296797543c73a85d24b89a3bcc4a22c08082d5dc692a1" prot="public">
+          <name>MLGraphicsProjectionType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines the requested projection matrix model for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000017"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Provided as part of the <ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref>, defines the requested projection model for the intrinsic definition returned for each virtual camera from #MLGraphicsBeginFrameEx.</para>
+<para>The signed Z projection model is optimized for OpenGL use and transforms points into a left-hand, right-up-forward, Z range -1 (near) to 1 (far) projected coordinate space.</para>
+<para>The reverse infinite Z projection model maps the Z range from 1 (near) to 0 (infinity).</para>
+<para>Vulkan clients should use the unsigned Z projection model to ensure that NDC points end up in Z range 0 (near) to 1 (far). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="181" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="181" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_1ga5bb84b5703f7f888aa64ad5d7a16d501" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLGraphicsEnvironmentBlendMode</name>
+        <enumvalue id="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a93fcf352f2129b5889238b2d5ccf596b" prot="public">
+          <name>MLGraphicsEnvironmentBlendMode_Additive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ignore frame alpha and prohibit generation of segmented dimmer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a8da3f7593aaba6267a76ac01cfa95064" prot="public">
+          <name>MLGraphicsEnvironmentBlendMode_Alpha_Blend</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the resulting alpha after compostion potentially generating dimmer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501afa8c57287f724402488f09cfb4eb1502" prot="public">
+          <name>MLGraphicsEnvironmentBlendMode_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines how the final frame will be blended with environment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000018"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>For now only used for controlling the segmented dimmer behavior. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="198" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="198" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_1gabc5c98fcc1211af2b80116dd6e0a035d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@11</name>
+        <enumvalue id="group___graphics_1ggabc5c98fcc1211af2b80116dd6e0a035dafb9238c8b0e7a96eb49a990598251090" prot="public">
+          <name>MLGraphicsBlobCache_DefaultMaxEntryBytes</name>
+          <initializer>= 512 * 1024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_1ggabc5c98fcc1211af2b80116dd6e0a035da81f5c84d5ad2f281b40e5f973a916fe1" prot="public">
+          <name>MLGraphicsBlobCache_DefaultMaxTotalBytes</name>
+          <initializer>= 8 * 1024 * 1024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default values suitable for use with MLGraphicsEnableBlobCacheGL(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="556" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="556" bodyend="559"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___graphics_1ga5bbceb34daf35097c0713b262c2c841b" prot="public" static="no">
+        <type>enum <ref refid="group___graphics_1ga29b59ff332ba06976ce6efc99ddef3f3" kindref="member">MLGraphicsFlags</ref></type>
+        <definition>typedef enum MLGraphicsFlags MLGraphicsFlags</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsFlags</name>
+        <briefdescription>
+<para>The graphics flags used as part of client creation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000013"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The flags are used to define the #graphics_flags member of the <ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref> as part of the definition to create the client. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="83" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_1ga3b9e734e3bb6b54b60b224987a4257e9" prot="public" static="no">
+        <type>enum <ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref></type>
+        <definition>typedef enum MLSurfaceFormat MLSurfaceFormat</definition>
+        <argsstring></argsstring>
+        <name>MLSurfaceFormat</name>
+        <briefdescription>
+<para>The definition of the supported color/depth surface formats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000014"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Formats that can be specified for the color_format and depth_format in <ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref>. For the best quality the recommended color format is <ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a94f1700448afbe908593a27195404821" kindref="member">MLSurfaceFormat_RGBA8UNormSRGB</ref>, and for depth (when defined) either <ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a19f1955b2f846c36158e4cca3da189e5" kindref="member">MLSurfaceFormat_D32Float</ref> or <ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac2bbae4ea5ac20714c827d12070d51f2" kindref="member">MLSurfaceFormat_D32FloatS8</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="117" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_1ga86f9ffe743ab49bb71ce3d9ae5654e7c" prot="public" static="no">
+        <type>enum <ref refid="group___graphics_1gad118494f470c309c8de778c56d44022c" kindref="member">MLGraphicsVirtualCameraName</ref></type>
+        <definition>typedef enum MLGraphicsVirtualCameraName MLGraphicsVirtualCameraName</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsVirtualCameraName</name>
+        <briefdescription>
+<para>The metadata name associated with each virtual camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000016"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>APIs within the graphics system will return information specific to a single virtual camera or both. The metadata name informs the client how to correlate the outputs of the API to a specific camera or both cameras. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="155" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_1ga726d73b45bccae7719d06f5424fbd866" prot="public" static="no">
+        <type>enum <ref refid="group___graphics_1ga4ea89742cd547a41e17d296797543c73" kindref="member">MLGraphicsProjectionType</ref></type>
+        <definition>typedef enum MLGraphicsProjectionType MLGraphicsProjectionType</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsProjectionType</name>
+        <briefdescription>
+<para>Defines the requested projection matrix model for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000017"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Provided as part of the <ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref>, defines the requested projection model for the intrinsic definition returned for each virtual camera from #MLGraphicsBeginFrameEx.</para>
+<para>The signed Z projection model is optimized for OpenGL use and transforms points into a left-hand, right-up-forward, Z range -1 (near) to 1 (far) projected coordinate space.</para>
+<para>The reverse infinite Z projection model maps the Z range from 1 (near) to 0 (infinity).</para>
+<para>Vulkan clients should use the unsigned Z projection model to ensure that NDC points end up in Z range 0 (near) to 1 (far). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="190" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_1ga9a54e9455a9d8252df9b636975e77cf4" prot="public" static="no">
+        <type>enum <ref refid="group___graphics_1ga5bb84b5703f7f888aa64ad5d7a16d501" kindref="member">MLGraphicsEnvironmentBlendMode</ref></type>
+        <definition>typedef enum MLGraphicsEnvironmentBlendMode MLGraphicsEnvironmentBlendMode</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsEnvironmentBlendMode</name>
+        <briefdescription>
+<para>Defines how the final frame will be blended with environment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000018"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>For now only used for controlling the segmented dimmer behavior. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="205" column="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsOptions</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="133" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga9801847a1304762cf289418ac1f80b40" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsFrameParamsEx</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsFrameParamsEx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="254" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gac41510591bc4012693efc6832c9643e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsClipExtentsInfo</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsClipExtentsInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="302" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsClipExtentsParams</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsClipExtentsParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="317" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsClipExtentsInfoArrayEx</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsClipExtentsInfoArrayEx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="356" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga201edb04a46ddd59cb67eb196ae11fe7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsRenderTarget</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsRenderTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="389" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gad2f12313f71b7ce3382288d6a6c362cd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsRenderBufferInfo</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsRenderBufferInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="407" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga1473114d5edf4441d23b439efc011c37" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsRenderTargetsInfo</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsRenderTargetsInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="430" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga15221b905a6f2bbcdf7c9874a3317258" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsVirtualCameraInfo</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsVirtualCameraInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="468" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsFrameInfo</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsFrameInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="506" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga965dc745491c1da99196fac5a49d3146" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MLGraphicsClientPerformanceInfo</definition>
+        <argsstring></argsstring>
+        <name>MLGraphicsClientPerformanceInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="553" column="2" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga2b8e5dbf8c87a4b1137e99cbc8887e40" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t max_entry_bytes</definition>
+        <argsstring></argsstring>
+        <name>max_entry_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="582" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga46f3186cecbb0d70726ee5fb44b630eb" prot="public" static="no" mutable="no">
+        <type>uint32_t uint32_t</type>
+        <definition>uint32_t uint32_t max_total_bytes</definition>
+        <argsstring></argsstring>
+        <name>max_total_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="582" column="50" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga8183b5d9e0e6deb60cd537fb0fb9cbfb" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle opengl_context</definition>
+        <argsstring></argsstring>
+        <name>opengl_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="604" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga2b989da3dc9cd785b41bb23b1071482d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> <ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+        <definition>const VkInstance const VkPhysicalDevice const VkDevice MLHandle * out_graphics_client</definition>
+        <argsstring></argsstring>
+        <name>out_graphics_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="604" column="49" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gaf4cfa7aed7add1220bb479ddd79ee62a" prot="public" static="no" mutable="no">
+        <type>const VkInstance</type>
+        <definition>const VkInstance vulkan_instance</definition>
+        <argsstring></argsstring>
+        <name>vulkan_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="653" column="33" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gaf06750540937f93ebb8dec67736d87a3" prot="public" static="no" mutable="no">
+        <type>const VkInstance const VkPhysicalDevice</type>
+        <definition>const VkInstance const VkPhysicalDevice vulkan_physical_device</definition>
+        <argsstring></argsstring>
+        <name>vulkan_physical_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="653" column="72" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga0b5e71cc32c6ae659bf30b209e84c515" prot="public" static="no" mutable="no">
+        <type>const VkInstance const VkPhysicalDevice const VkDevice</type>
+        <definition>const VkInstance const VkPhysicalDevice const VkDevice vulkan_logical_device</definition>
+        <argsstring></argsstring>
+        <name>vulkan_logical_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="653" column="110" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga80f7fc0418a8f6006690592423edb3c3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref> *</type>
+        <definition>const MLGraphicsClipExtentsParams * params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="732" column="40" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga21776e8581f16de9b98c102ece0cdd05" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref> <ref refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" kindref="member">MLGraphicsFrameInfo</ref> *</type>
+        <definition>const MLGraphicsFrameParamsEx MLGraphicsFrameInfo* out_frame_info</definition>
+        <argsstring></argsstring>
+        <name>out_frame_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="732" column="67" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga237fff343035f6108d647cf7f2d2d9f1" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle sync_object</definition>
+        <argsstring></argsstring>
+        <name>sync_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="756" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gae048f86271ecf69502e2aa4dc0e8a156" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" kindref="member">MLGraphicsClipExtentsParams</ref> <ref refid="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" kindref="member">MLGraphicsClipExtentsInfoArrayEx</ref> *</type>
+        <definition>MLMediaDRMKeyValueArray * out_array</definition>
+        <argsstring></argsstring>
+        <name>out_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="779" column="84" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1gac3c72a4d454adc69f64531bc0fc52ed8" prot="public" static="no" mutable="no">
+        <type><ref refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" kindref="member">MLGraphicsRenderTargetsInfo</ref> *</type>
+        <definition>MLGraphicsRenderTargetsInfo* out_targets</definition>
+        <argsstring></argsstring>
+        <name>out_targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="799" column="38" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="821" column="19" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___graphics_1ga74142268a0036200008535cea053c24b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___graphics_1ga965dc745491c1da99196fac5a49d3146" kindref="member">MLGraphicsClientPerformanceInfo</ref> *</type>
+        <definition>MLGraphicsClientPerformanceInfo* out_info</definition>
+        <argsstring></argsstring>
+        <name>out_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="840" column="42" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ml__graphics_8h_1a8a3aa1dcb444e46d84997cf5de9d9797" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dimmer_value</definition>
+        <argsstring></argsstring>
+        <name>dimmer_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="867" column="16" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>__attribute__</definition>
+        <argsstring>((deprecated(&quot;Use OpenXR APIs.&quot;))) struct MLGraphicsOptions</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(deprecated(&quot;Use OpenXR APIs.&quot;))</type>
+        </param>
+        <briefdescription>
+<para>The graphics options provided for client creation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets map events.</para>
+<para>Returns the most recent head tracking state.</para>
+<para>Returns static information about the Head Tracker.</para>
+<para>Destroys a Head Tracker.</para>
+<para>Creates a Head Tracker.</para>
+<para>Initialize default values for a <ref refid="group___head_tracking_1ga11a6a071e1e97510ef4d39f42678399b" kindref="member">MLHeadTrackingStateEx</ref> structure.</para>
+<para>Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling #MLHeadTrackingStateExInit before use.</para>
+<para>A structure containing information on the current state of the Head Tracking system.</para>
+<para>Import a surface as a VkImage from a media api handle.</para>
+<para>Returns a list of required VkDevice extension names.</para>
+<para>Set the value for the global dimmer.</para>
+<para>Obtain latest performance metrics for the client.</para>
+<para>Submit a completed frame to the graphics system.</para>
+<para>Get a list of all buffered entries.</para>
+<para>Get the conservative clip extents information for each virtual camera.</para>
+<para>Signal the sync object provided for each virtual camera for GL/GLES clients.</para>
+<para>Request to begin rendering a new frame in the graphics system.</para>
+<para>Destroy a GL/GLES or VK client.</para>
+<para>Convert VkFormat to MLSurfaceFormat.</para>
+<para>Convert MLSurfaceFormat to VkFormat.</para>
+<para>Create the VK graphics client.</para>
+<para>Convert OpenGL internal format to MLSurfaceFormat.</para>
+<para>Convert MLSurfaceFormat to OpenGL internal format.</para>
+<para>Create the GL/GLES graphics client.</para>
+<para>Enable shader blob cache for OpenGL.</para>
+<para>Performance timing information for the graphics client.</para>
+<para>Initializes default values for MLGraphicsFrameInfo.</para>
+<para>Information about the current render frame populated by MLGraphicsBeginFrameEx(). This struct must be populated by calling MLGraphicsFrameInfoInit() before being used in a call to MLGraphicsBeginFrameEx().</para>
+<para>The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray.</para>
+<para>The complete definition of all possible buffered entries along with associated metadata.</para>
+<para>Definition of a single buffer entry for all virtual cameras as defined in <ref refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" kindref="member">MLGraphicsRenderTargetsInfo</ref>.</para>
+<para>Definition of a single render target defined in <ref refid="group___graphics_1gad2f12313f71b7ce3382288d6a6c362cd" kindref="member">MLGraphicsRenderBufferInfo</ref>.</para>
+<para>Initializes default values for MLGraphicsClipExtentsInfoArrayEx.</para>
+<para>The clip extents array returned from MLGraphicsGetClipExtentsEx().</para>
+<para>Initializes default values for MLGraphicsClipExtentsParams.</para>
+<para>The clip extents parameters.</para>
+<para>The static clip extents defined for all possible eye positions.</para>
+<para>Initializes a MLGraphicsFrameParamsEx with the default parameters.</para>
+<para>The frame parameters requested for the next rendered frame.</para>
+<para><xrefsect id="deprecated_1_deprecated000015"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref> defines the requested client configuration for creating GL/GLES or VK clients.</para>
+<para><xrefsect id="deprecated_1_deprecated000019"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The parameters defined by <ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref> are supplied to #MLGraphicsBeginFrameEx from the client to define the requested characteristics of the next rendered frame.</para>
+<para>This structure must be initialized by calling MLGraphicsFrameParamsExInit() before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 21</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000020"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_frame_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000295"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000021"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Defines the conservative clip extents for the camera name that can be used for early update frustum culling in the client update path (prior to calling #MLGraphicsBeginFrameEx).</para>
+<para><linebreak/>
+<linebreak/>
+Note: The client will need to obtain a headpose to combine with the provided matrices (transform and projection) to define the frustum. The general definition for camera from world (for the specified camera name) is MATprojection * inv(MATtransform) * inv(MATheadpose) for RHS multiplication.</para>
+<para><xrefsect id="deprecated_1_deprecated000022"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The parameters defined by <ref refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" kindref="member">MLGraphicsClipExtentsParams</ref> are supplied to MLGraphicsGetClipExtentsEx() from the client to define the requested characteristics of the clip extents.</para>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000023"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000024"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>The clip extents array provides the conservative clip extents per metadata camera as defined by <ref refid="group___graphics_1gac41510591bc4012693efc6832c9643e4" kindref="member">MLGraphicsClipExtentsInfo</ref>.</para>
+<para>This structure must be initialized by calling MLGraphicsClipExtentsInfoArrayExInit() before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000025"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000026"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Each render target defines one of the buffered entries color/depth surfaces (with maximum count defined by <ref refid="group___graphics_1gga385c44f6fb256e5716a2302a5b940388a93969d90c3c1190e0c94c685348461d0" kindref="member">MLGraphics_BufferCount</ref>). Clients can assume that the handle provided here will be in the list of handles returned from #MLGraphicsBeginFrameEx.</para>
+<para><xrefsect id="deprecated_1_deprecated000027"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Each buffer entry can contain a color / depth target and the target is valid if the handle != 0.</para>
+<para>Note : When the client specifies the <ref refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3adac177c60d30fc367a0eeb6285155f1b" kindref="member">MLGraphicsFlags_NoDepth</ref> flag as part of client creation the depth targets will always be 0.</para>
+<para><xrefsect id="deprecated_1_deprecated000028"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Statically defined after successfully creating the client, the <ref refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" kindref="member">MLGraphicsRenderTargetsInfo</ref> provides the definition of all of the buffered entries along with the global metadata. The client can assume that once queried the definition will not change and therefore does not need to be queried more than once at runtime.</para>
+<para><xrefsect id="deprecated_1_deprecated000029"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>For each virtual camera the client is provided the exact definition of the camera properties along with the matrices needed to construct the full transform chain. In general the transform chain for each virtual camera is defined as MATprojection * inv(MATtransform) for RHS multiplication.</para>
+<para><linebreak/>
+<linebreak/>
+Note: The projection model is asymmetric and clients should not assume any of the symmetric properties of projection. Additionally both the transform and projection will change per frame and cannot be assumed to be static.</para>
+<para><xrefsect id="deprecated_1_deprecated000030"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000031"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_frame_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000032"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Populated by #MLGraphicsGetClientPerformanceInfo, the performance information contains all metrics tracked by the graphics system for the specified client. Metrics are calculated using a sliding window and can be used to adjust the client workload characteristics (i.e. scale, fidelity, etc).</para>
+<para><linebreak/>
+<linebreak/>
+Note: The internal metrics are also provided, informing the client of both the CPU and GPU cost of the internal operations of the graphics system (in the client process).</para>
+<para><xrefsect id="deprecated_1_deprecated000033"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>OpenGL can cache &amp; reuse shaders and other driver artifacts using a blob cache, speeding up loading &amp; processing of shaders significantly on subseqent occurrences. This behavior persists across runs of the app as well, speeding up load times. This function is used to enable the blob caching using the specified file. The file path must be writeable by the application. The file will be created if it doesn&apos;t already exist.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute path to a file to use for caching. Location must be writeable by application. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_entry_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved for future use. Maximum size for a single blob entry. Currently defaults to 512KB. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_total_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved for future use. Maximum total file size for the blob. Currently defaults to 8MB.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to enable blob cache due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully enabled blob cache.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000296"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000034"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Create a graphics client for use with GL/GLES APIs using the provided options and specified opengl context. It is required that the opengl context specified here is only bound on the thread used to render the client frame and is the same context used to render the frame using the provided information from #MLGraphicsBeginFrameEx.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics options for resource creation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opengl_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The OpenGL context to use for resource creation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created graphics client. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create graphics client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created graphics client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create graphics client due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000297"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000035"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLSurfaceFormat to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The returned internal format.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000298"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000036"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The internal format to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The returned MLSurfaceFormat.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000299"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000037"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Create a graphics client for use with VK API using the provided options and specified physical and logical device. The color and depth surfaces are created internally, then exported to the application context. The initial layout of these surfaces is VK_IMAGE_LAYOUT_UNDEFINED. It is the application&apos;s responsibility to perform a layout transition of the surfaces before usage.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics options for resource creation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vulkan_instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Vulkan instance used to create the physical and logical device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vulkan_physical_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Vulkan physical device used to create the specified logical device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vulkan_logical_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Vulkan logical device to use for resource creation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the created graphics client. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create client due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000300"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000038"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MLSurfaceFormat to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The returned VkFormat.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000301"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000039"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The VkFormat to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The returned MLSurfaceFormat.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000302"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000040"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Destroying the client will invalidate all resources associated with the client handle and invalidate the provided handle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy client due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed client. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy client due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000303"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000041"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Called to request the start of a new render frame and should be called as close as possible to the start of rendering to minimize the motion to photon latency. Only one frame can be rendered at a time and must be submitted by providing the returned handle to #MLGraphicsEndFrame prior to another call to #MLGraphicsBeginFrameEx. The call to begin/end frame should be made on the render thread alone of the client. It is required that a successful call to #MLGraphicsFrameInfoInit be made before calling #MLGraphicsBeginFrameEx. Faiure to call #MLGraphicsFrameInfoInit before calling #MLGraphicsBeginFrameEx will return a result of MLResult_NotImplemented.</para>
+<para>Note : Calls to #MLGraphicsBeginFrameEx can and will block the calling process. There are several reasons that lead to a block, including, the client is executing faster than the defined timing requested (and the block re-aligns the client timing), the client is not yet visible in the system, and the compositor has not yet moved to the next buffered entry (i.e. wraparound cases from fast client rendering). The call to #MLGraphicsBeginFrameEx will timeout the block and return when the conditions to unblock have not been satisfied for the internal timeout period. The most common occurrence of the timeout is when the application is not currently visible.</para>
+<para><simplesect kind="par"><title>API Level:\n 22</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame parameters for the frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_frame_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information returned for use when rendering the frame. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start frame due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully started frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start frame due to blocking timeout limit being reached. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to start frame due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000304"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000042"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Required for each frame, after rendering each virtual camera (or multiple if stereo rendering) to signal the sync object in order to inform the graphics system that the rendering for the camera(s) has completed. All sync objects can be signaled after rendering all cameras, but results in lower fidelity in the graphics system.</para>
+<para>Note: Vulkan clients are required to cast the sync object to VkSemaphore and add it to the signal semaphore list when submitting the last command buffer for the virtual camera(s).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client owning the sync object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sync_object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sync object to be signaled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to signal object due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully signaled object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to signal object due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000305"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="attention"><para>EXPERIMENTAL.</para>
+</simplesect>
+Clients should call this function once a frame to get the most accurate clip extents.</para>
+<para><simplesect kind="par"><title>API Level:\n 4</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The clip extents parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The clip extents info array with all information required for update of each virtual camera. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain extents due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully obtained extents. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain extents due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000306"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000043"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Called after client initialization to obtain the definition of all buffered entries along with the associated metadata. Like #MLGraphicsGetClipExtents can be assumed that the output is unchanging for the lifetime of the client.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_targets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render target info array. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain target due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully obtained handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain handle due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000307"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000044"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Submit a completed frame to the graphics system using the handle provided from #MLGraphicsBeginFrameEx. Prior to submiting the frame the client must signal the sync objects provided by #MLGraphicsBeginFrameEx, for GL/GLES clients with #MLGraphicsSignalSyncObjectGL or for VK clients including that sync object as part of the signal semaphore list. For VK clients, the color and depth surfaces can be in any image layout when calling #MLGraphicsEndFrame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client to update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle provided from the call to MLGraphicsBeginFrameEx.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to end frame due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully ended frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to end frame due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000308"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000045"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Can be called any time after the client has begun rendering frames to obtain the internally tracked performance metrics for the client and graphics system. Updated internally once per completed frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client in which to query the performance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current performance information for the client. Only valid if result is MLResult_Ok.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain client performance metrics due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully obtained client performance metrics. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to obtain client performance metrics due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000309"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000046"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Can be called any time after the client has been created. Updates are reflected in the next client submitted frame (via MLGraphicsEndFrame). Any smooth ramping from auto dimmer to application final dimmer should be handled by the application itself. Since the dimmer value set through MLGraphicsSetGlobalDimmer() is reflected only in the next client submitted frame, the smooth ramp stepping interval is equal to current application frame rate. Dimmer values correspond to a global dimming range defined by the user in the settings.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">graphics_client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics client handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dimmer_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Floating point dimmer value in valid range [0.0 to 1.0]. 0.0 corresponds to min user defined value while 1.0 corresponds to max user defined value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Auto global dimmer value could not be set due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Auto global dimmer value set successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation failed with an unspecified error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000310"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000051"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>If out_required_extension_properties is NULL then the number of required extension is returned in out_extension_property_count. Otherwise, out_extension_property_count must point to a variable set to the number of elements in the out_required_extension_properties array, and on return the variable is overwritten with the number of strings actually written to out_required_extension_properties.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_required_extension_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either NULL or a pointer to an array of VkExtensionProperties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_extension_property_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an integer related to the number of extensions required or queried.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of extensions or number of required extensions was returned successfully.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000311"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000052"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>Creates VkImage and VkDeviceMemory objects refrencing a surface referred to by a handle obtained from a media API. The resulting image will be owned by the VkDevice provided.This VkDevice must be created with the extensions specified by MLGraphicsEnumerateRequiredVkDeviceExtensionsForMediaHandleImport enabled. This call does not depend on a Graphics Client and can be used independent of other graphics APIs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vulkan_logical_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Vulkan logical device to use for resource creation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">media_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The media api handle referring to the surface to import. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_imported_surface_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A struct containing the resulting resource handles and information for sampler creation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Import was not performed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Surface was imported successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Import was not performed due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000312"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000059"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStateEx. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 1</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000060"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000061"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000320"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000063"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an MLHandle which will contain the handle of the head tracker. If this operation fails, out_handle will be <ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully created head tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to create head tracker due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application lacks permission.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000321"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000064"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to a Head Tracker created by MLHeadTrackingCreate().</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully destroyed head tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to destroy head tracker due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000322"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000065"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target to populate the data about that Head Tracker.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive static data due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully received static data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to receive static data due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000323"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000067"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to valid <ref refid="group___head_tracking_1ga11a6a071e1e97510ef4d39f42678399b" kindref="member">MLHeadTrackingStateEx</ref> object to be filled with current state information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return the most recent head tracking state due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully returned the most recent head tracking state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to return the most recent head tracking state due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000325"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="deprecated_1_deprecated000068"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated since 1.6.0. Scheduled for removal. </para>
+</xrefdescription></xrefsect></para>
+<para>A developer must be aware of certain events that can occur under degenerative conditions in order to cleanly handle it. The most important event to be aware of is when a map changes.</para>
+<para>In the case that a new map session begins, or recovery fails, all formerly cached transform and world reconstruction data (planes, mesh) is invalidated and must be updated.</para>
+<para><simplesect kind="par"><title>API Level:\n 2</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">head_tracker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the tracker. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_map_events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a uint64_t representing a bitmask of MLHeadTrackingMapEvent, allocated by the caller.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get map events due to an invalid input parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully got map events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to get map events due to an unknown error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000326"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>The combined graphics flags, as defined by <ref refid="group___graphics_1ga5bbceb34daf35097c0713b262c2c841b" kindref="member">MLGraphicsFlags</ref>.</para>
+<para>The color surface format, defined in <ref refid="group___graphics_1ga3b9e734e3bb6b54b60b224987a4257e9" kindref="member">MLSurfaceFormat</ref>.</para>
+<para>The depth surface format, defined in <ref refid="group___graphics_1ga3b9e734e3bb6b54b60b224987a4257e9" kindref="member">MLSurfaceFormat</ref>.</para>
+<para>Struct API version.</para>
+<para>Requested near clip plane distance in meters.</para>
+<para>Far clipping plane distance in meters.</para>
+<para>Distance, in meters, to defined focus point for the client content. The focus distance should be calculated as the positive distance to the client determined object of interest (relative to the forward vector of the Lightwear).</para>
+<para><simplesect kind="note"><para>Note that 0.0 is an invalid value. The platform will attempt to provide default values but setting to 0.0 is strongly discouraged.</para>
+</simplesect>
+The scale factor for the render surfaces, valid range is 0.0-&gt;1.0. The viewport returned from #MLGraphicsBeginFrameEx will be adjusted to the closest width/height match to the request that can be supported by the graphics system.</para>
+<para>Enable the platform level vignette for this frame.</para>
+<para>Content for this frame is protected and should not be recorded or captured outside the graphics system.</para>
+<para>Requested projection model for rendering.</para>
+<para>Requested blend mode.</para>
+<para>The virtual camera meta data name.</para>
+<para>The projection matrix, defined with infinite far clip plane distance. If the client is using a different projection model the matrix will need to be adjusted to match the client model prior to frustum culling.</para>
+<para>The camera to world transform (i.e. local space relative to the head).</para>
+<para>Struct API version.</para>
+<para>Struct API version.</para>
+<para>The number of virtual cameras.</para>
+<para>The combined extents for all the virtual cameras, can be used for conservative frustum culling of all visible content defined by the union of what is visible from all of the defined virtual cameras.</para>
+<para>The per virtual camera clip extents.</para>
+<para>The width of the target.</para>
+<para>The height of the target.</para>
+<para>The handle (ID) of the 2D texture array, each layer represents a virtual camera.</para>
+<para>The surface format of the target.</para>
+<para>The color target for this entry.</para>
+<para>The depth target for this entry.</para>
+<para>The enforced minimum clip distance for rendering content, in meters.</para>
+<para>The un-enforced, but recommended maximum clip distance for rendering content, in meters.</para>
+<para>The total number of virtual camera for this platform, i.e (num_virtual_cameras &lt;= <ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca1d9e44930217e6e86c22c791674af604" kindref="member">MLGraphicsVirtualCameraName_Count</ref>).</para>
+<para>The buffer entries for all virtual cameras.</para>
+<para>The FOV left half angle, in radians.</para>
+<para>The FOV right half angle, in radians.</para>
+<para>The FOV top half angle, in radians.</para>
+<para>The FOV bottom half angle, in radians.</para>
+<para>The handle of the sync object to signal after submitting all GPU work for the virtual camera.</para>
+<para>The projection matrix for the virtual camera.</para>
+<para>The local space (relative to world) camera transform needed to render content, inverse is view matrix.</para>
+<para>The name of the virtual camera.</para>
+<para>Struct API version.</para>
+<para>A reference handle for this frame to be provided at end of frame.</para>
+<para>The handle (ID) of the texture array color surface for the virtual cameras. There is one texture layer per virtual camera.</para>
+<para>The handle (ID) of the texture array depth surface for the virtual cameras. There is one texture layer per virtual camera.</para>
+<para>The common viewport definition for all virtual cameras.</para>
+<para>A handle to a synchronization object that must be cast to VkSemaphore and used during queue submission of a Vulkan app. GL apps can ignore this member.</para>
+<para>The number of virtual cameras for the frame, each virtual camera is a layer.</para>
+<para>The array of virtual cameras to render to for the frame.</para>
+<para>Predicted time when the frame will be displayed.</para>
+<para>The average frame start CPU to composition acquisition of the frame, in nanoseconds.</para>
+<para>The average frame start CPU to frame end GPU, in nanoseconds.</para>
+<para>The average frame cadence, CPU start to CPU start, in nanoseconds.</para>
+<para>The average frame CPU duration, in nanoseconds.</para>
+<para>The average frame GPU duration, in nanoseconds.</para>
+<para>The average CPU duration for internal operations per frame, in nanoseconds.</para>
+<para>The average GPU duration for internal operations per frame, in nanoseconds.</para>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" line="126" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" bodystart="126" bodyend="133" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h" declline="695" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__time_8h" kindref="compound">ml_time.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group___graphics_1ga29b59ff332ba06976ce6efc99ddef3f3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___graphics_1ga29b59ff332ba06976ce6efc99ddef3f3" kindref="member">MLGraphicsFlags</ref><sp/>{</highlight></codeline>
+<codeline lineno="64" refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3adac177c60d30fc367a0eeb6285155f1b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3adac177c60d30fc367a0eeb6285155f1b" kindref="member">MLGraphicsFlags_NoDepth</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="69" refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a171ded9286af9979d36a26b3fa241c08" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a171ded9286af9979d36a26b3fa241c08" kindref="member">MLGraphicsFlags_DebugMode</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="75" refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a52206a0760aafc6e8a5e578a25b468d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a52206a0760aafc6e8a5e578a25b468d8" kindref="member">MLGraphicsFlags_Headlock</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="80" refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a10762ed76617b813f5e6aba00c1aa2fe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a10762ed76617b813f5e6aba00c1aa2fe" kindref="member">MLGraphicsFlags_Default</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga29b59ff332ba06976ce6efc99ddef3f3a6014cdc1282f67c2bc283cd55b835c95" kindref="member">MLGraphicsFlags_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="83" refid="group___graphics_1ga5bbceb34daf35097c0713b262c2c841b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga29b59ff332ba06976ce6efc99ddef3f3" kindref="member">MLGraphicsFlags</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/>{</highlight></codeline>
+<codeline lineno="96" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07af53e5601be622b3e37655c1b5d3d0748" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07af53e5601be622b3e37655c1b5d3d0748" kindref="member">MLSurfaceFormat_Unknown</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="98" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac197228b07c2c5abd7d3ecbc805d647f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac197228b07c2c5abd7d3ecbc805d647f" kindref="member">MLSurfaceFormat_RGBA8UNorm</ref>,</highlight></codeline>
+<codeline lineno="104" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a94f1700448afbe908593a27195404821" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a94f1700448afbe908593a27195404821" kindref="member">MLSurfaceFormat_RGBA8UNormSRGB</ref>,</highlight></codeline>
+<codeline lineno="106" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a116477df7e304f66d5b7a4aa38cd6ba9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a116477df7e304f66d5b7a4aa38cd6ba9" kindref="member">MLSurfaceFormat_RGB10A2UNorm</ref>,</highlight></codeline>
+<codeline lineno="108" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a2688c86b0964a5a8aec97b468363fc9b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a2688c86b0964a5a8aec97b468363fc9b" kindref="member">MLSurfaceFormat_RGBA16Float</ref>,</highlight></codeline>
+<codeline lineno="110" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a19f1955b2f846c36158e4cca3da189e5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a19f1955b2f846c36158e4cca3da189e5" kindref="member">MLSurfaceFormat_D32Float</ref>,</highlight></codeline>
+<codeline lineno="112" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a25ea5c420d1bee531099468a36e2a1e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07a25ea5c420d1bee531099468a36e2a1e7" kindref="member">MLSurfaceFormat_D24NormS8</ref>,</highlight></codeline>
+<codeline lineno="114" refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac2bbae4ea5ac20714c827d12070d51f2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ac2bbae4ea5ac20714c827d12070d51f2" kindref="member">MLSurfaceFormat_D32FloatS8</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga3a0eee50e360c510c6839d735a9a6b07ae2852359f758b02028f68acfb0e26554" kindref="member">MLSurfaceFormat_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="117" refid="group___graphics_1ga3b9e734e3bb6b54b60b224987a4257e9" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="group___graphics_1ga3a583e49061e92e9f2e883ff1aebc16e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>uint32_t<sp/>graphics_flags;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/>color_format;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/>depth_format;</highlight></codeline>
+<codeline lineno="133" refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="group___graphics_1gad118494f470c309c8de778c56d44022c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___graphics_1gad118494f470c309c8de778c56d44022c" kindref="member">MLGraphicsVirtualCameraName</ref><sp/>{</highlight></codeline>
+<codeline lineno="146" refid="group___graphics_1ggad118494f470c309c8de778c56d44022caf064850ab4f3106dd3f638a037ce5a2f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022caf064850ab4f3106dd3f638a037ce5a2f" kindref="member">MLGraphicsVirtualCameraName_Combined</ref><sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="148" refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca22110f1b9c85831db45cd77447209592" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca22110f1b9c85831db45cd77447209592" kindref="member">MLGraphicsVirtualCameraName_Left</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="150" refid="group___graphics_1ggad118494f470c309c8de778c56d44022cae9d47c0b19f834d19559d7c1f2c82506" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022cae9d47c0b19f834d19559d7c1f2c82506" kindref="member">MLGraphicsVirtualCameraName_Right</ref>,</highlight></codeline>
+<codeline lineno="152" refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca1d9e44930217e6e86c22c791674af604" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca1d9e44930217e6e86c22c791674af604" kindref="member">MLGraphicsVirtualCameraName_Count</ref>,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022caadee2bd3e6c60aef8e103b8d5514bce0" kindref="member">MLGraphicsVirtualCameraName_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="155" refid="group___graphics_1ga86f9ffe743ab49bb71ce3d9ae5654e7c" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1gad118494f470c309c8de778c56d44022c" kindref="member">MLGraphicsVirtualCameraName</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga385c44f6fb256e5716a2302a5b940388a93969d90c3c1190e0c94c685348461d0" kindref="member">MLGraphics_BufferCount</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="161" refid="group___graphics_1gga385c44f6fb256e5716a2302a5b940388a93969d90c3c1190e0c94c685348461d0" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="group___graphics_1ga4ea89742cd547a41e17d296797543c73" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___graphics_1ga4ea89742cd547a41e17d296797543c73" kindref="member">MLGraphicsProjectionType</ref><sp/>{</highlight></codeline>
+<codeline lineno="183" refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73a2b631bb35ab20d61ed891e00962d88b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73a2b631bb35ab20d61ed891e00962d88b5" kindref="member">MLGraphicsProjectionType_SignedZ</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="185" refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73a71fa0bbff34cbf97784b0b45aab55b7c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73a71fa0bbff34cbf97784b0b45aab55b7c" kindref="member">MLGraphicsProjectionType_ReversedInfiniteZ</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="187" refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73aed57ebd2ddaa46494632450bce2aac78" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73aed57ebd2ddaa46494632450bce2aac78" kindref="member">MLGraphicsProjectionType_UnsignedZ</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73a85d24b89a3bcc4a22c08082d5dc692a1" kindref="member">MLGraphicsProjectionType_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="190" refid="group___graphics_1ga726d73b45bccae7719d06f5424fbd866" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga4ea89742cd547a41e17d296797543c73" kindref="member">MLGraphicsProjectionType</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="group___graphics_1ga5bb84b5703f7f888aa64ad5d7a16d501" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___graphics_1ga5bb84b5703f7f888aa64ad5d7a16d501" kindref="member">MLGraphicsEnvironmentBlendMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="200" refid="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a93fcf352f2129b5889238b2d5ccf596b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a93fcf352f2129b5889238b2d5ccf596b" kindref="member">MLGraphicsEnvironmentBlendMode_Additive</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="202" refid="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a8da3f7593aaba6267a76ac01cfa95064" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a8da3f7593aaba6267a76ac01cfa95064" kindref="member">MLGraphicsEnvironmentBlendMode_Alpha_Blend</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501afa8c57287f724402488f09cfb4eb1502" kindref="member">MLGraphicsEnvironmentBlendMode_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="205" refid="group___graphics_1ga9a54e9455a9d8252df9b636975e77cf4" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga5bb84b5703f7f888aa64ad5d7a16d501" kindref="member">MLGraphicsEnvironmentBlendMode</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>near_clip;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>far_clip;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>focus_distance;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>surface_scale;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vignette;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>protected_surface;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga4ea89742cd547a41e17d296797543c73" kindref="member">MLGraphicsProjectionType</ref><sp/>projection_type;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga5bb84b5703f7f888aa64ad5d7a16d501" kindref="member">MLGraphicsEnvironmentBlendMode</ref><sp/>blend_mode;</highlight></codeline>
+<codeline lineno="254" refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MLGraphicsFrameParamsExInit(<ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref><sp/>*inout_frame_params)<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;near_clip<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.5f;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;far_clip<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10.0f;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;focus_distance<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;surface_scale<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;vignette<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;protected_surface<sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;projection_type<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group___graphics_1gga4ea89742cd547a41e17d296797543c73a2b631bb35ab20d61ed891e00962d88b5" kindref="member">MLGraphicsProjectionType_SignedZ</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>inout_frame_params-&gt;blend_mode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group___graphics_1gga5bb84b5703f7f888aa64ad5d7a16d501a93fcf352f2129b5889238b2d5ccf596b" kindref="member">MLGraphicsEnvironmentBlendMode_Additive</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1gac41510591bc4012693efc6832c9643e4" kindref="member">MLGraphicsClipExtentsInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gad118494f470c309c8de778c56d44022c" kindref="member">MLGraphicsVirtualCameraName</ref><sp/>virtual_camera_name;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref><sp/>projection;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/>transform;</highlight></codeline>
+<codeline lineno="302" refid="group___graphics_1gac41510591bc4012693efc6832c9643e4" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1gac41510591bc4012693efc6832c9643e4" kindref="member">MLGraphicsClipExtentsInfo</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" kindref="member">MLGraphicsClipExtentsParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="317" refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" kindref="member">MLGraphicsClipExtentsParams</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MLGraphicsClipExtentsParamsInit(<ref refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" kindref="member">MLGraphicsClipExtentsParams</ref><sp/>*inout_params)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>inout_params-&gt;version<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" kindref="member">MLGraphicsClipExtentsInfoArrayEx</ref><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>uint32_t<sp/>num_virtual_cameras;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gac41510591bc4012693efc6832c9643e4" kindref="member">MLGraphicsClipExtentsInfo</ref><sp/>full_extents;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gac41510591bc4012693efc6832c9643e4" kindref="member">MLGraphicsClipExtentsInfo</ref><sp/>virtual_camera_extents[<ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca1d9e44930217e6e86c22c791674af604" kindref="member">MLGraphicsVirtualCameraName_Count</ref>];</highlight></codeline>
+<codeline lineno="356" refid="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" kindref="member">MLGraphicsClipExtentsInfoArrayEx</ref>;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MLGraphicsClipExtentsInfoArrayExInit(<ref refid="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" kindref="member">MLGraphicsClipExtentsInfoArrayEx</ref><sp/>*inout_array)<sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/>inout_array-&gt;version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/>inout_array-&gt;num_virtual_cameras<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga201edb04a46ddd59cb67eb196ae11fe7" kindref="member">MLGraphicsRenderTarget</ref><sp/>{</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="group___media_player_1ga2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="group___media_player_1gadc7b4b8a6ef510e136071efbc9cd9a58" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___media_player_1ga3670f4bed50c88882ceba330ffeb095c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>;</highlight></codeline>
+<codeline lineno="389" refid="group___graphics_1ga201edb04a46ddd59cb67eb196ae11fe7" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga201edb04a46ddd59cb67eb196ae11fe7" kindref="member">MLGraphicsRenderTarget</ref>;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1gad2f12313f71b7ce3382288d6a6c362cd" kindref="member">MLGraphicsRenderBufferInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga201edb04a46ddd59cb67eb196ae11fe7" kindref="member">MLGraphicsRenderTarget</ref><sp/>color;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga201edb04a46ddd59cb67eb196ae11fe7" kindref="member">MLGraphicsRenderTarget</ref><sp/>depth;</highlight></codeline>
+<codeline lineno="407" refid="group___graphics_1gad2f12313f71b7ce3382288d6a6c362cd" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1gad2f12313f71b7ce3382288d6a6c362cd" kindref="member">MLGraphicsRenderBufferInfo</ref>;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" kindref="member">MLGraphicsRenderTargetsInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_clip;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_clip;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/>uint32_t<sp/>num_virtual_cameras;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gad2f12313f71b7ce3382288d6a6c362cd" kindref="member">MLGraphicsRenderBufferInfo</ref><sp/>buffers[<ref refid="group___graphics_1gga385c44f6fb256e5716a2302a5b940388a93969d90c3c1190e0c94c685348461d0" kindref="member">MLGraphics_BufferCount</ref>];</highlight></codeline>
+<codeline lineno="430" refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" kindref="member">MLGraphicsRenderTargetsInfo</ref>;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga15221b905a6f2bbcdf7c9874a3317258" kindref="member">MLGraphicsVirtualCameraInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>left_half_angle;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>right_half_angle;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>top_half_angle;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bottom_half_angle;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga237fff343035f6108d647cf7f2d2d9f1" kindref="member">sync_object</ref>;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref><sp/>projection;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/>transform;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1gad118494f470c309c8de778c56d44022c" kindref="member">MLGraphicsVirtualCameraName</ref><sp/>virtual_camera_name;</highlight></codeline>
+<codeline lineno="468" refid="group___graphics_1ga15221b905a6f2bbcdf7c9874a3317258" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga15221b905a6f2bbcdf7c9874a3317258" kindref="member">MLGraphicsVirtualCameraInfo</ref>;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" kindref="member">MLGraphicsFrameInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/>uint32_t<sp/>version;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>color_id;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>depth_id;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_rectf" kindref="compound">MLRectf</ref><sp/>viewport;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>wait_sync_object;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/>uint32_t<sp/>num_virtual_cameras;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ga15221b905a6f2bbcdf7c9874a3317258" kindref="member">MLGraphicsVirtualCameraInfo</ref><sp/>virtual_cameras[<ref refid="group___graphics_1ggad118494f470c309c8de778c56d44022ca1d9e44930217e6e86c22c791674af604" kindref="member">MLGraphicsVirtualCameraName_Count</ref>];</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/>predicted_display_time;</highlight></codeline>
+<codeline lineno="506" refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" kindref="member">MLGraphicsFrameInfo</ref>;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MLGraphicsFrameInfoInit(<ref refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" kindref="member">MLGraphicsFrameInfo</ref><sp/>*inout_frame_info)<sp/>{</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>!=<sp/>inout_frame_info)<sp/>{</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_frame_info,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" kindref="member">MLGraphicsFrameInfo</ref>));</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_frame_info-&gt;version<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_frame_info-&gt;handle<sp/><sp/>=<sp/>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref>)<ref refid="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" kindref="member">ML_INVALID_HANDLE</ref>;</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="523"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)<sp/>struct<sp/><ref refid="group___graphics_1ga965dc745491c1da99196fac5a49d3146" kindref="member">MLGraphicsClientPerformanceInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_start_cpu_comp_acquire_cpu_ns;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_start_cpu_frame_end_gpu_ns;</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_start_cpu_frame_start_cpu_ns;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_duration_cpu_ns;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_duration_gpu_ns;</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_internal_duration_cpu_ns;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_internal_duration_gpu_ns;</highlight></codeline>
+<codeline lineno="553" refid="group___graphics_1ga965dc745491c1da99196fac5a49d3146" refkind="member"><highlight class="normal">}<sp/><ref refid="group___graphics_1ga965dc745491c1da99196fac5a49d3146" kindref="member">MLGraphicsClientPerformanceInfo</ref>;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="557" refid="group___graphics_1ggabc5c98fcc1211af2b80116dd6e0a035dafb9238c8b0e7a96eb49a990598251090" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggabc5c98fcc1211af2b80116dd6e0a035dafb9238c8b0e7a96eb49a990598251090" kindref="member">MLGraphicsBlobCache_DefaultMaxEntryBytes</ref><sp/>=<sp/>512<sp/>*<sp/>1024,</highlight></codeline>
+<codeline lineno="558" refid="group___graphics_1ggabc5c98fcc1211af2b80116dd6e0a035da81f5c84d5ad2f281b40e5f973a916fe1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___graphics_1ggabc5c98fcc1211af2b80116dd6e0a035da81f5c84d5ad2f281b40e5f973a916fe1" kindref="member">MLGraphicsBlobCache_DefaultMaxTotalBytes</ref><sp/>=<sp/>8<sp/>*<sp/>1024<sp/>*<sp/>1024,</highlight></codeline>
+<codeline lineno="559"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="582" refid="group___graphics_1ga2b8e5dbf8c87a4b1137e99cbc8887e40" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsEnableBlobCacheGL(const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/>uint32_t<sp/><ref refid="group___graphics_1ga2b8e5dbf8c87a4b1137e99cbc8887e40" kindref="member">max_entry_bytes</ref>,<sp/>uint32_t<sp/><ref refid="group___graphics_1ga46f3186cecbb0d70726ee5fb44b630eb" kindref="member">max_total_bytes</ref>);</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="604" refid="group___graphics_1ga8183b5d9e0e6deb60cd537fb0fb9cbfb" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsCreateClientGL(const<sp/><ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref><sp/>*options,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga8183b5d9e0e6deb60cd537fb0fb9cbfb" kindref="member">opengl_context</ref>,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___graphics_1ga2b989da3dc9cd785b41bb23b1071482d" kindref="member">out_graphics_client</ref>);</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/>uint32_t<sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsGLFormatFromMLSurfaceFormat(<ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsMLSurfaceFormatFromGLFormat(uint32_t<sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VK_VERSION_1_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="653" refid="group___graphics_1gaf4cfa7aed7add1220bb479ddd79ee62a" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsCreateClientVk(const<sp/><ref refid="group___graphics_1ga69107ea6a2dfe0469974c6150cfbdcb9" kindref="member">MLGraphicsOptions</ref><sp/>*options,<sp/>const<sp/>VkInstance<sp/><ref refid="group___graphics_1gaf4cfa7aed7add1220bb479ddd79ee62a" kindref="member">vulkan_instance</ref>,<sp/>const<sp/>VkPhysicalDevice<sp/><ref refid="group___graphics_1gaf06750540937f93ebb8dec67736d87a3" kindref="member">vulkan_physical_device</ref>,<sp/>const<sp/>VkDevice<sp/><ref refid="group___graphics_1ga0b5e71cc32c6ae659bf30b209e84c515" kindref="member">vulkan_logical_device</ref>,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___graphics_1ga2b989da3dc9cd785b41bb23b1071482d" kindref="member">out_graphics_client</ref>);</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/>VkFormat<sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsVkFormatFromMLSurfaceFormat(const<sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>);</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___graphics_1ga3a0eee50e360c510c6839d735a9a6b07" kindref="member">MLSurfaceFormat</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsMLSurfaceFormatFromVkFormat(const<sp/>VkFormat<sp/><ref refid="group___media_recorder_1gac277f0c3a1e723a29a42d30c8807d063" kindref="member">format</ref>);</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>OpenXR<sp/>APIs.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsDestroyClient(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*inout_graphics_client);</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="732" refid="group___graphics_1ga21776e8581f16de9b98c102ece0cdd05" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsBeginFrameEx(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/>const<sp/><ref refid="group___graphics_1ga9801847a1304762cf289418ac1f80b40" kindref="member">MLGraphicsFrameParamsEx</ref><sp/>*<ref refid="group___graphics_1ga80f7fc0418a8f6006690592423edb3c3" kindref="member">params</ref>,<sp/><ref refid="group___graphics_1ga9822e8edd9375be95a2dc6a78be04878" kindref="member">MLGraphicsFrameInfo</ref><sp/>*<ref refid="group___graphics_1ga21776e8581f16de9b98c102ece0cdd05" kindref="member">out_frame_info</ref>);</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"></highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="756" refid="group___graphics_1ga237fff343035f6108d647cf7f2d2d9f1" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsSignalSyncObjectGL(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga237fff343035f6108d647cf7f2d2d9f1" kindref="member">sync_object</ref>);</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="779" refid="group___graphics_1gae048f86271ecf69502e2aa4dc0e8a156" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsGetClipExtentsEx(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/>const<sp/><ref refid="group___graphics_1gaa62e9993e60cb4779e3950311cd456ae" kindref="member">MLGraphicsClipExtentsParams</ref><sp/>*<ref refid="group___graphics_1ga80f7fc0418a8f6006690592423edb3c3" kindref="member">params</ref>,<sp/><ref refid="group___graphics_1ga889d2c0f5ac54612dea4546d762ee612" kindref="member">MLGraphicsClipExtentsInfoArrayEx</ref><sp/>*<ref refid="group___graphics_1gae048f86271ecf69502e2aa4dc0e8a156" kindref="member">out_array</ref>);</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="799" refid="group___graphics_1gac3c72a4d454adc69f64531bc0fc52ed8" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsGetRenderTargets(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/><ref refid="group___graphics_1ga1473114d5edf4441d23b439efc011c37" kindref="member">MLGraphicsRenderTargetsInfo</ref><sp/>*<ref refid="group___graphics_1gac3c72a4d454adc69f64531bc0fc52ed8" kindref="member">out_targets</ref>);</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="821" refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsEndFrame(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="840" refid="group___graphics_1ga74142268a0036200008535cea053c24b" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsGetClientPerformanceInfo(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/><ref refid="group___graphics_1ga965dc745491c1da99196fac5a49d3146" kindref="member">MLGraphicsClientPerformanceInfo</ref><sp/>*<ref refid="group___graphics_1ga74142268a0036200008535cea053c24b" kindref="member">out_info</ref>);</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><ref refid="group___media_player_1gac6d4d29cff70f6ae389510678aeede69" kindref="member">ML_DEPRECATED_MSG</ref>(&quot;Use<sp/>OpenXR<sp/>APIs.&quot;)</highlight></codeline>
+<codeline lineno="867" refid="ml__graphics_8h_1a8a3aa1dcb444e46d84997cf5de9d9797" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/>MLGraphicsSetGlobalDimmer(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>graphics_client,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="ml__graphics_8h_1a8a3aa1dcb444e46d84997cf5de9d9797" kindref="member">dimmer_value</ref>);</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight></codeline>
+<codeline lineno="869"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h"/>
+  </compounddef>
+</doxygen>

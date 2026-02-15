@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___platform" kind="group">
+    <compoundname>Platform</compoundname>
+    <title>Platform</title>
+    <innerclass refid="struct_m_l_version" prot="public">MLVersion</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___platform_1ga06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="group___platform_1gga06fc87d81c62e9abb8790b6e5713c55baeeefda7a80d21bee4e6bf66f125e0903" prot="public">
+          <name>ML_INVALID_HANDLE</name>
+          <initializer>= 0xFFFFFFFFFFFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Value of an invalid handle. To test if a handle is invalid use <ref refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" kindref="member">MLHandleIsValid()</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___platform_1gadf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="group___platform_1ggadf764cbdea00d65edcd07bb9953ad2b7aaf79492b05c60b2a05da8dd9105673c2" prot="public">
+          <name>MLVersion_BuildIdMaxLength</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum character length of <ref refid="struct_m_l_version" kindref="compound">MLVersion</ref> build ID. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___platform_1ga99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="group___platform_1gga99fb83031ce9923c84392b4e92f956b5aa297b99b9a52b1cc3eb79c68baeace37" prot="public">
+          <name>MLResultAPIPrefix_Global</name>
+          <initializer>= ( 0  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for global MLResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="107" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLResultGlobal</name>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8aafb0e581565e43e35c2bdb6c6fbbe8" prot="public">
+          <name>MLResult_Ok</name>
+          <initializer>= MLResultAPIPrefix_Global</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation completed successfully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaaf4276c195787c20940c3448adbd3bd7" prot="public">
+          <name>MLResult_Pending</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Asynchronous operation has not completed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea55034ca100c86c28f05023789a1d2e29" prot="public">
+          <name>MLResult_Timeout</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation has timed out. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeabdbd1c9a830f0ddcbc2d9ef0b887ce30" prot="public">
+          <name>MLResult_Locked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request to lock a shared resource that is already locked. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32d3dc6093f4639e714aabebe5bc64a1" prot="public">
+          <name>MLResult_UnspecifiedFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed due to an unspecified internal error. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eead375439c552008bdab89b81e6e90d36d" prot="public">
+          <name>MLResult_InvalidParam</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed due to an invalid parameter being supplied. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8fa7124d8b935370a44ac90ecc92fe34" prot="public">
+          <name>MLResult_AllocFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because memory failed to be allocated. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8ff3f2f21ec08316a7504642df2eb29c" prot="public">
+          <name>MLResult_PermissionDenied</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because a required permission has not been granted. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaa9c7f9deb993ec27d6538048aafad1eb" prot="public">
+          <name>MLResult_NotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because it is not currently implemented. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeaab9166c6a3d21fd26003e14c4f79c128" prot="public">
+          <name>MLResult_ClientLimitExceeded</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the client count exceeded the number of clients available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5d70d7faf32742a1cacec0badf1038ef" prot="public">
+          <name>MLResult_PoseNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the requested pose is not available. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eeafc5cc2e98c9d3b3160d612f54d13eb0b" prot="public">
+          <name>MLResult_IncompatibleSKU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because feature isn&apos;t supported on current device version. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea34e29e5dabee7742db40b9b2a06d897e" prot="public">
+          <name>MLResult_PerceptionSystemNotStarted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the Perception System was not started. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea5c1809bf19ea8c9a4f3c8c691717098c" prot="public">
+          <name>MLResult_IllegalState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because it has been invoked at the wrong time. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea89aadaa177bafa21fe328d1f4223cf81" prot="public">
+          <name>MLResult_LicenseError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because of missing/incompatible license. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea1d9e8cd9adb7be29ee95908d43467159" prot="public">
+          <name>MLResult_InvalidTimestamp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the timestamp parameter was outside the expected range. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea8a856c4a3285002edd8546a7883f7e0b" prot="public">
+          <name>MLResult_Unauthenticated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because the user authentication did not pass. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1ggaed5de507787613a0e0f8b3dd84e4b9eea32fe15246905c87b274a1c0bfe78a216" prot="public">
+          <name>MLResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global MLResult codes that any API can optionally return. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="113" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___platform_1gad436878dff21489f44eaeddc7585681d" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t MLHandle</definition>
+        <argsstring></argsstring>
+        <name>MLHandle</name>
+        <briefdescription>
+<para>Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use <ref refid="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" kindref="member">MLHandleIsValid()</ref> to check if a handle is valid or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="80" column="18" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___platform_1ga18b35fdb14a2439215c30d7d5535c25d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_version" kindref="compound">MLVersion</ref></type>
+        <definition>typedef struct MLVersion MLVersion</definition>
+        <argsstring></argsstring>
+        <name>MLVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDK version: &apos;[major].[minor].[revision].[build_id]&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="102" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___platform_1gaace884f70743ec2f695ea6994ea02247" prot="public" static="no">
+        <type>enum <ref refid="group___platform_1gaed5de507787613a0e0f8b3dd84e4b9ee" kindref="member">MLResultGlobal</ref></type>
+        <definition>typedef enum MLResultGlobal MLResultGlobal</definition>
+        <argsstring></argsstring>
+        <name>MLResultGlobal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global MLResult codes that any API can optionally return. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="150" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MLResult</definition>
+        <argsstring></argsstring>
+        <name>MLResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MLResult type that all functions in the APIs return. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="153" column="17" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___platform_1ga2465b1b80dfbf39b79d76a392f38802d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* MLGetResultString</definition>
+        <argsstring>(MLResult result_code)</argsstring>
+        <name>MLGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result_code</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLResultGlobal codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from ML API functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000001"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="162" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="162" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gaec8456292d85bdc97436de2507c18610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLGlobalGetResultString</definition>
+        <argsstring>(MLResult result_code)</argsstring>
+        <name>MLGlobalGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result_code</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from ML API functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000002"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="195" column="19" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" declline="195" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1ga047ac2b27d0de3b8c2f49a6b4c5a052f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MLHandleIsValid</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLHandleIsValid</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Check if a handle is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the handle is valid.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000003"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="204" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gab652ce8c2afdad17f91aab3ac35bb18c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* MLGetVersionName</definition>
+        <argsstring>()</argsstring>
+        <name>MLGetVersionName</name>
+        <briefdescription>
+<para>Get SDK version as c-style string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK version as c-style string.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000004"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="214" column="31" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gaf78966c503f273cae23d3f8188f495ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_m_l_version" kindref="compound">MLVersion</ref></type>
+        <definition>static MLVersion MLGetVersion</definition>
+        <argsstring>()</argsstring>
+        <name>MLGetVersion</name>
+        <briefdescription>
+<para>Get SDK version as a struct with major, minor, revision, and build_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK version as a struct.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000005"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="224" column="27" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="224" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group___platform_1gabe3cb6a5f17a98592a312cbe95d298f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLPlatformGetAPILevel</definition>
+        <argsstring>(uint32_t *out_api_level)</argsstring>
+        <name>MLPlatformGetAPILevel</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_api_level</declname>
+        </param>
+        <briefdescription>
+<para>Query the OS for which Platform API Level is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_api_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an integer that will store the API level.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation completed successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out_platform_level was not valid (null). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000631"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h" line="41" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h" declline="41" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" prot="public" static="no">
+        <name>MLRESULT_PREFIX</name>
+        <param><defname>val</defname></param>
+        <initializer>(val &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to set a the prefix bytes of an API specific MLResult code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" line="105" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_api.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___platform_1gab38cf8e7cc2e5e7a5b43c6763511b889" prot="public" static="no">
+        <name>ML_PLATFORM_API_LEVEL</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current API Level supported by this Magic Leap SDK. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h" line="28" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_platform.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for information regarding the platform. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n capi.magicleap</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>Shared Object:\n platform.magicleap</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

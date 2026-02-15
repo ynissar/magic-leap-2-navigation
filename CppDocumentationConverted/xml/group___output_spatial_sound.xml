@@ -1,0 +1,2844 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___output_spatial_sound" kind="group">
+    <compoundname>OutputSpatialSound</compoundname>
+    <title>Spatial Sound</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___output_spatial_sound_1ga7c98e7fd009b10b80934bfe99f137e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundEnable</definition>
+        <argsstring>(MLHandle handle, bool is_enabled)</argsstring>
+        <name>MLAudioSetSpatialSoundEnable</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether a sound output is enabled as a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enabling a sound output as a spatial sound will cause each of its channels to be rendered at a per-channel-specified position in 3D space. Spatial sounds also have other customizable per-channel properties such as direction, radiation, distance attenuation, etc. All these properties can be set whether or not a sound output is currently enabled as a spatial sound. Simulated acoustics for spatial sounds are defined by the client&apos;s Acoustic Scene. By default, sound outputs are not enabled as spatial sounds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, spatial audio will be enabled for a sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000054"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1813" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1813" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga5ebbc9d46dac0722f1cd5f17cf79a317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundEnable</definition>
+        <argsstring>(MLHandle handle, bool *out_is_enabled)</argsstring>
+        <name>MLAudioGetSpatialSoundEnable</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Queries whether a sound output is enabled as a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For a sound output enabled as a spatial sound, each of its channels will be rendered at a per-channel-specified position in 3D space. Spatial sounds also have other customizable per-channel properties such as direction, radiation, distance attenuation, etc. All these properties can be queried whether or not a sound output is currently enabled as a spatial sound. Simulated acoustics for spatial sounds are defined by the client&apos;s Acoustic Scene. By default, sound outputs are not enabled as spatial sounds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, spatial audio is be enabled for a sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000055"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1837" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1837" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga0fc2d32f50b57a19b531ecd58594643a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundPosition</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLVec3f *position)</argsstring>
+        <name>MLAudioSetSpatialSoundPosition</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Sets the 3D position for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each channel of a spatial sound is rendered at a position specified by an x,y,z point in cartesian coordinates. Positive x is to the right, positive y is up, and positive z is to the rear.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct to set the position.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000056"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1865" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1865" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gae1715f9ac9fd41184daea0e8761ee541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundPosition</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLVec3f *out_position)</argsstring>
+        <name>MLAudioGetSpatialSoundPosition</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> *</type>
+          <declname>out_position</declname>
+        </param>
+        <briefdescription>
+<para>Queries the 3D position of one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each channel of a spatial sound is rendered at a position specified by an x,y,z point in cartesian coordinates. Positive x is to the right, positive y is up, and positive z is to the rear.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct to be filled with the position.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000057"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1893" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1893" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gab3079343d0e69eead1de2713ba9618f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundDirection</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLQuaternionf *direction)</argsstring>
+        <name>MLAudioSetSpatialSoundDirection</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref> *</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Sets the 3D direction for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each channel of a spatial sound radiates into 3D space with a pattern whose center is specified by the sound channel&apos;s direction. The radiation pattern can be set by calling MLAudioSetSpatialSoundRadiation. By default, sounds have billboarding enabled, which overrides the direction for every channel such that they always face the listener. Billboarding can be disabled by calling MLAudioSetSpatialSoundBillboarding.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct to set the radiation direction.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to set radiation direction due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000058"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1923" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1923" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga8473f9bd81a7b1d1ef4acf21205fd2d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundDirection</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLQuaternionf *out_direction)</argsstring>
+        <name>MLAudioGetSpatialSoundDirection</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref> *</type>
+          <declname>out_direction</declname>
+        </param>
+        <briefdescription>
+<para>Queries the 3D direction of one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each channel of a spatial sound radiates into 3D space with a pattern whose center is specified by the sound channel&apos;s direction. The radiation pattern can be set by calling MLAudioSetSpatialSoundRadiation. By default, sounds have billboarding enabled, which overrides the direction for every channel such that they always face the listener. Billboarding can be disabled by calling MLAudioSetSpatialSoundBillboarding.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct to be filled with the radiation direction.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000059"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1953" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1953" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gafb1924466870656d3c890a4c20447315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundBillboarding</definition>
+        <argsstring>(MLHandle handle, bool is_billboarding)</argsstring>
+        <name>MLAudioSetSpatialSoundBillboarding</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_billboarding</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables billboarding for all channels of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Billboarding causes each channel of a spatial sound to always face the listener. When billboarding is enabled, channel directions set using MLAudioSetSpatialSoundDirection are ignored. Billboarding gives the impression of an omnidirectional sound, while allowing radiation properties set using MLAudioSetSpatialSoundRadiation to affect this sound&apos;s contribution to dispersion and reverb. By default, billboarding is enabled on newly created sound outputs.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_billboarding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, billboarding will be enabled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find resource handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation is unavailable for this sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000060"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="1976" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="1976" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga3f9750449e12fbb6bde6a694b9bca679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundBillboarding</definition>
+        <argsstring>(MLHandle handle, bool *out_is_billboarding)</argsstring>
+        <name>MLAudioGetSpatialSoundBillboarding</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_billboarding</declname>
+        </param>
+        <briefdescription>
+<para>Queries whether billboarding is enabled for a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Billboarding causes each channel of a spatial sound to always face the listener. When billboarding is enabled, channel directions set using MLAudioSetSpatialSoundDirection are ignored. Billboarding gives the impression of an omnidirectional sound, while allowing radiation properties set using MLAudioSetSpatialSoundRadiation to affect this sound&apos;s contribution to dispersion and reverb. By default, billboarding is enabled on newly created sound outputs.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_billboarding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, billboarding is enabled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation is unavailable for this sound output.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000061"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2000" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2000" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gaf87d2f2f8343969d3b01ee64e195a048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundObstruction</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioObstruction *left_ear, const MLAudioObstruction *right_ear)</argsstring>
+        <name>MLAudioSetSpatialSoundObstruction</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *</type>
+          <declname>left_ear</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *</type>
+          <declname>right_ear</declname>
+        </param>
+        <briefdescription>
+<para>Sets the direct path obstruction status for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>THIS IS AN INTERNAL FUNCTION INTENDED FOR ENGINE DEVELOPMENT ONLY.</para>
+<para>Spatial sounds are subject to obstruction effects by real and virtual objects. Each channel of the spatial sound output contains a left and right ear <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> for the direct path, which can be set by repeated calls to this function. The obstruction effect for each channel of a spatial sound is determined by this set of <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> structs and a set of transmission properties. The <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> hit_point determines which transmission properties to apply and the <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> factor determines the extent to which these properties are applied. Transmission properties can be set globally for the scene using MLAudioSetAcousticSceneTransmissionDefault.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">left_ear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> struct to set the direct path obstruction properties for the left ear. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">right_ear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> struct to set the direct path obstruction properties for the right ear.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation is unavailable for this sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000062"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2039" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2039" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gae724bb9f12ebf150335712703d6b77d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundObstruction</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioObstruction *out_left_ear, MLAudioObstruction *out_right_ear)</argsstring>
+        <name>MLAudioGetSpatialSoundObstruction</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *</type>
+          <declname>out_left_ear</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> *</type>
+          <declname>out_right_ear</declname>
+        </param>
+        <briefdescription>
+<para>Queries the direct path obstruction status for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>THIS IS AN INTERNAL FUNCTION INTENDED FOR ENGINE DEVELOPMENT ONLY.</para>
+<para>Spatial sounds are subject to obstruction effects by real and virtual objects. Each channel of the spatial sound output contains a left and right ear <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> for the direct path, which can be queried by this function. The obstruction effect for each channel of a spatial sound is determined by this set of <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> structs and a set of transmission properties. The <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> hit_point determines which transmission properties to apply and the <ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> factor determines the extent to which these properties are applied. Transmission properties can be set globally for the scene using MLAudioSetAcousticSceneTransmissionDefault.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_left_ear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> struct to be filled with the obstruction properties for the left ear. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_right_ear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_obstruction" kindref="compound">MLAudioObstruction</ref> struct to be filled with the obstruction properties for the right ear.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation is unavailable for this sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000063"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2078" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2078" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga3bd414666f892d64ae8b77e5f50c9583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundObstructionOverride</definition>
+        <argsstring>(MLHandle handle, const MLAudioMultibandLevel *override)</argsstring>
+        <name>MLAudioSetSpatialSoundObstructionOverride</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>override</declname>
+        </param>
+        <briefdescription>
+<para>Sets the extent to which a spatial sound is exempt from obstruction effects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function provides a way to prevent obstruction effects on specified spatial sounds. The extent to which a spatial sound is exempt from obstruction effects is specified per band using an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct. The value for each band determines that band&apos;s interpolation between its computed obstruction effect, represented by 0, and no obstruction effect, represented by 1. For example, to completely exempt a spatial sound from obstruction effects, set the override argument to [1,1,1,1], and to fully allow obstruction effects set to [0,0,0,0]. On newly created spatial sounds, obstruction override defaults to [0,0,0,0]. For multi-channel spatial sounds, all channels are affected equally by this function.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">override</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to set the override properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find resource handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation is unavailable for this sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000064"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2107" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2107" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga2b749fcbacc9f8e1c956cf50717cc61f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundObstructionOverride</definition>
+        <argsstring>(MLHandle handle, MLAudioMultibandLevel *out_override)</argsstring>
+        <name>MLAudioGetSpatialSoundObstructionOverride</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>out_override</declname>
+        </param>
+        <briefdescription>
+<para>Queries the extent to which a spatial sound is exempt from obstruction effects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Obstruction override provides a way to prevent obstruction effects on specified spatial sounds. The extent to which a spatial sound is exempt from obstruction effects is specified per band using an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct. The value for each band determines that band&apos;s interpolation between its computed obstruction effect, represented by 0, and no obstruction effect, represented by 1. For example, a spatial sound completely exempt from obstruction effects has an override value of [1,1,1,1], and a spatial sound fully subject to obstruction effects has an override value of [0,0,0,0]. For multi-channel spatial sounds, all channels are affected equally by the override value.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_override</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to be filled with the override properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unable to find resource handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_OperationUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation is unavailable for this sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000065"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2135" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2135" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga33b85b9459df0e65e1f4e226f30b9a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundDistanceAttenuation</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioSpatialSoundDistanceProperties *properties)</argsstring>
+        <name>MLAudioSetSpatialSoundDistanceAttenuation</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Sets the behavior by which a spatial sound is attenuated due to distance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The behavior for distance attenuation is specified by an <ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> struct provided as the properties argument of this function. Within this struct the min_distance specifies the distance from the listener beyond which a spatial sound starts attenuating with distance. The max_distance specifies the distance from the listener beyond which no further attenuation occurs. Between min_distance and max_distance a spatial sound will be attenuated with distance according to the rolloff_factor. A rolloff_factor of 1 will produce distance attenuation that approximates real world distance attenuation. A rolloff_factor greater than 1 will produce distance attenuation that rolls off faster as distance increases, while less than 1 will produce distance attenuation that rolls off more gradually. If rolloff_factor is 0, no distance attenuation will be applied.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> struct to set the properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000066"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2172" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2172" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga21d1a0a6dda4dc067b7484f3d92e4f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundDistanceAttenuation</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioSpatialSoundDistanceProperties *out_properties)</argsstring>
+        <name>MLAudioGetSpatialSoundDistanceAttenuation</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> *</type>
+          <declname>out_properties</declname>
+        </param>
+        <briefdescription>
+<para>Queries the behavior by which a spatial sound is attenuated due to distance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The behavior for distance attenuation is specified by an <ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> struct reported by the out_properties argument of this function. Within this struct the min_distance specifies the distance from the listener beyond which a spatial sound starts attenuating with distance. The max_distance specifies the distance from the listener beyond which no further attenuation occurs. Between min_distance and max_distance a spatial sound will be attenuated with distance according to the rolloff_factor. A rolloff_factor of 1 will produce distance attenuation that approximates real world distance attenuation. A rolloff_factor greater than 1 will produce distance attenuation that rolls off faster as distance increases, while less than 1 will produce distance attenuation that rolls off more gradually. If rolloff_factor is 0, no distance attenuation will be applied.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_spatial_sound_distance_properties" kindref="compound">MLAudioSpatialSoundDistanceProperties</ref> struct to be filled with the properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000067"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2209" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2209" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga49e94b1d9e619fa7d32487e001b3acb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundRadiation</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioSpatialSoundRadiationProperties *properties)</argsstring>
+        <name>MLAudioSetSpatialSoundRadiation</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Sets a radiation pattern that describes the directionality for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each channel of a spatial sound has a dual cone radiation pattern specified by an <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> struct. The radiation pattern is oriented toward the listener for all channels if billboarding is enabled, or in the direction set by MLAudioSetSpatialSoundDirection for each channel if billboarding is disabled. The default values for the <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> struct were chosen to model a human speaking.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> struct to set the properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000068"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2243" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2243" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga687e6558a912b0f7be9e822d996c797f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundRadiation</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioSpatialSoundRadiationProperties *out_properties)</argsstring>
+        <name>MLAudioGetSpatialSoundRadiation</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> *</type>
+          <declname>out_properties</declname>
+        </param>
+        <briefdescription>
+<para>Queries the radiation pattern that describes the directionality for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each channel of a spatial sound has a dual cone radiation pattern specified by an <ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> struct. The radiation pattern is oriented toward the listener for all channels if billboarding is enabled, or in the direction set by MLAudioSetSpatialSoundDirection for each channel if billboarding is disabled.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_spatial_sound_radiation_properties" kindref="compound">MLAudioSpatialSoundRadiationProperties</ref> struct to be filled with the properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000069"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2274" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2274" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga2870947057d44b78c47d79ac7d597c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundDirectLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioMultibandLevel *level)</argsstring>
+        <name>MLAudioSetSpatialSoundDirectLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Sets the gain and 3-band EQ on the Direct Path for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Direct Level is applied to the sound traveling directly from the source to the listener. The gain and 3-band EQ for this stage is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to set the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000070"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2311" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2311" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga6d19d2f97860baf835b775e4840aa59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundDirectLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioMultibandLevel *out_level)</argsstring>
+        <name>MLAudioGetSpatialSoundDirectLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>out_level</declname>
+        </param>
+        <briefdescription>
+<para>Queries the gain and 3-band EQ on the Direct Path for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Direct Level is applied to the sound traveling directly from the source to the listener. The gain and 3-band EQ for this stage is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to be filled with the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000071"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2348" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2348" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gadf8f262d3245512463c9f635f265eca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundIndirectLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioMultibandLevel *level)</argsstring>
+        <name>MLAudioSetSpatialSoundIndirectLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Sets a gain and 3-band EQ applied to all indirect paths for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Indirect Level is applied to the Reflections, Dispersion, and Reverb stages as a group, combining with the level specified for each individual stage. The Reflections stage consists of discrete reflections off of distinct surfaces. The Dispersion stage consists of clustered groups of late reflections smeared in time. The Reverb stage consists of the well-mixed reverberation tail of the sound. The gain and 3-band EQ applied to these stages as a group is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to set the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000072"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2389" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2389" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga4b23a03c99dee32d902f66865d19a4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundIndirectLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioMultibandLevel *out_level)</argsstring>
+        <name>MLAudioGetSpatialSoundIndirectLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>out_level</declname>
+        </param>
+        <briefdescription>
+<para>Queries the gain and 3-band EQ applied to all indirect paths for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Indirect Level is applied to the Reflections, Dispersion, and Reverb stages as a group, combining with the level specified for each individual stage. The Reflections stage consists of discrete reflections off of distinct surfaces. The Dispersion stage consists of clustered groups of late reflections smeared in time. The Reverb stage consists of the well-mixed reverberation tail of the sound. The gain and 3-band EQ applied to these stages as a group is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to be filled with the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000073"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2430" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2430" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga0397716d05d937f9f61b32842e318c59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundDispersionSendLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioMultibandLevel *level)</argsstring>
+        <name>MLAudioSetSpatialSoundDispersionSendLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Sets the gain and 3-band EQ on the Dispersion stage for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Dispersion stage consists of clustered groups of late reflections smeared in time. The gain and 3-band EQ for this stage is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>This &apos;SpatialSoundSendLevel&apos; API sets the amount of signal that a particular sound feeds into a shared acoustic processing effect. To set the properties of the processing effect itself, see the corresponding &apos;AcousticScene&apos; API which is MLAudioSetAcousticSceneDispersionDefault.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to set the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000074"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2472" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2472" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga22bdfd43ff4179c948448b42747d466b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundDispersionSendLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioMultibandLevel *out_level)</argsstring>
+        <name>MLAudioGetSpatialSoundDispersionSendLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>out_level</declname>
+        </param>
+        <briefdescription>
+<para>Queries the gain and 3-band EQ on the Dispersion stage for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Dispersion stage consists of clustered groups of late reflections smeared in time. The gain and 3-band EQ for this stage is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>This &apos;SpatialSoundSendLevel&apos; API queries the amount of signal that a particular sound feeds into a shared acoustic processing effect. To query the properties of the processing effect itself, see the corresponding &apos;AcousticScene&apos; API which is MLAudioGetAcousticSceneDispersionDefault.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to be filled with the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000075"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2513" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2513" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gab3f64dc36fd2ecc0c4700f1f4c071a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundReverbSendLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, const MLAudioMultibandLevel *level)</argsstring>
+        <name>MLAudioSetSpatialSoundReverbSendLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Sets the gain and 3-band EQ on the Reverb stage for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Reverb stage consists of the well-mixed reverberation tail of the sound. The gain and 3-band EQ for this stage is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>This &apos;SpatialSoundSendLevel&apos; API sets the amount of signal that a particular sound feeds into a shared acoustic processing effect. To set the properties of the processing effect itself, see the corresponding &apos;AcousticScene&apos; API which is MLAudioSetAcousticSceneReverbDefault.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be set individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to set the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000076"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2554" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2554" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gab4557cf7993d6d36a24c84b7d8e8a92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundReverbSendLevel</definition>
+        <argsstring>(MLHandle handle, uint32_t channel, MLAudioMultibandLevel *out_level)</argsstring>
+        <name>MLAudioGetSpatialSoundReverbSendLevel</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> *</type>
+          <declname>out_level</declname>
+        </param>
+        <briefdescription>
+<para>Queries the gain and 3-band EQ on the Reverb stage for one channel of a spatial sound. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Naturally occurring sounds in a physical space are experienced as an initial arrival followed by an increasing number of reflections that tend toward a well-mixed reverberation over time. These reflections provide spatial cues that inform the listener as to the position of the sound and the characteristics of the environment in which it occurs. For spatial sounds, this progression is modeled across four stages: Direct Path, Reflections, Dispersion, and Reverb. The level of each of these stages can be manipulated to achieve the desired perceptual balance between them.</para>
+<para>The Reverb stage consists of the well-mixed reverberation tail of the sound. The gain and 3-band EQ for this stage is specified by an <ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct.</para>
+<para>This &apos;SpatialSoundSendLevel&apos; API queries the amount of signal that a particular sound feeds into a shared acoustic processing effect. To query the properties of the processing effect itself, see the corresponding &apos;AcousticScene&apos; API which is MLAudioGetAcousticSceneReverbDefault.</para>
+<para>Spatial sounds require each channel&apos;s parameters to be queried individually. Channels are indexed starting at 0 and follow the track order defined by the audio content. For example, for a spatial sound with stereo content this function should be called twice, passing channel = 0 for left and channel = 1 for right. A sound output must be enabled as a spatial sound using MLAudioSetSpatialSoundEnable for this property to take effect.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_multiband_level" kindref="compound">MLAudioMultibandLevel</ref> struct to be filled with the gain and eq properties.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle not found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000077"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2595" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2595" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga420c33debe8b250fc3902e377a5d3009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialSoundHeadRelative</definition>
+        <argsstring>(MLHandle handle, bool is_head_relative)</argsstring>
+        <name>MLAudioSetSpatialSoundHeadRelative</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_head_relative</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether the position and direction for a spatial sound are interpreted in head-relative coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A head-relative coordinate system has an origin and orientation locked to the user&apos;s head center and forward direction. For spatial sounds with head-relative enabled, the position and direction as specified by MLAudioSetSpatialSoundPosition and MLAudioSetSpatialSoundDirection (and reported by MLAudioGetSpatialSoundPosition and MLAudioGetSpatialSoundDirection) are interpreted within such a coordinate system. For spatial sounds with head-relative disabled, the position and direction are interpreted within the world coordinate system defined by the platform. By default, head-relative is disabled for spatial sounds.</para>
+<para><simplesect kind="par"><title>API Level:\n 7</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_head_relative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, coordinates will be head-relative.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000078"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2621" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2621" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga578f9bf7d5dac620d07eca93f3be40c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialSoundHeadRelative</definition>
+        <argsstring>(MLHandle handle, bool *out_is_head_relative)</argsstring>
+        <name>MLAudioGetSpatialSoundHeadRelative</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>out_is_head_relative</declname>
+        </param>
+        <briefdescription>
+<para>Queries whether the position and direction for a spatial sound are interpreted in head-relative coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A head-relative coordinate system has an origin and orientation locked to the user&apos;s head center and forward direction. For spatial sounds with head-relative enabled, the position and direction as specified by MLAudioSetSpatialSoundPosition and MLAudioSetSpatialSoundDirection (and reported by MLAudioGetSpatialSoundPosition and MLAudioGetSpatialSoundDirection) are interpreted within such a coordinate system. For spatial sounds with head-relative disabled, the position and direction are interpreted within the world coordinate system defined by the platform. By default, head-relative is disabled for spatial sounds.</para>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MLHandle of the sound output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_is_head_relative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, coordinates are head-relative.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an invalid parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an unknown failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_HandleNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to a missing handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an internal configuration error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed because feature has not been implemented yet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000079"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2648" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2648" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1gaae174563420a2dcb86337b7734b71d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioGetSpatialRaycastRequests</definition>
+        <argsstring>(MLAudioRaycastRequest **out_raycast_requests, uint32_t *out_request_count)</argsstring>
+        <name>MLAudioGetSpatialRaycastRequests</name>
+        <param>
+          <type><ref refid="struct_m_l_audio_raycast_request" kindref="compound">MLAudioRaycastRequest</ref> **</type>
+          <declname>out_raycast_requests</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>out_request_count</declname>
+        </param>
+        <briefdescription>
+<para>Queries a list of ID-tracked requests for raycast operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For a custom spatial audio to physics engine integration, typically handled by audio plugins, this function provides a list of raycasts to be performed by the physics engine.</para>
+<para><simplesect kind="note"><para>This function is not intended to be called directly by developers. </para>
+</simplesect>
+<simplesect kind="note"><para>The caller is responsible for deallocating the memory containing the raycast requests.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_raycast_requests</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_raycast_request" kindref="compound">MLAudioRaycastRequest</ref> struct to be filled with requests for raycast operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_request_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be filled with number of raycast operations requested.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully set the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000080"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2672" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2672" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___output_spatial_sound_1ga26ff565d4d61b6eb66a0fd8636d4107d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLAudioSetSpatialRaycastResults</definition>
+        <argsstring>(MLAudioRaycastResult *raycast_results, uint32_t result_count)</argsstring>
+        <name>MLAudioSetSpatialRaycastResults</name>
+        <param>
+          <type><ref refid="struct_m_l_audio_raycast_result" kindref="compound">MLAudioRaycastResult</ref> *</type>
+          <declname>raycast_results</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>result_count</declname>
+        </param>
+        <briefdescription>
+<para>Sets the ID-tracked results for previously requested raycast operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For a custom spatial audio to physics engine integration, typically handled by audio plugins, this function reports the results of raycasts performed by the physics engine.</para>
+<para><simplesect kind="note"><para>This function is not intended to be called directly by developers.</para>
+</simplesect>
+<simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">raycast_results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_audio_raycast_result" kindref="compound">MLAudioRaycastResult</ref> struct to set the list of raycast operation results. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">result_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the number of raycast results.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Successfully retrieved the properties. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If input parameter is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_InternalConfigError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal config error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLAudioResult_NotImplemented</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000081"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="2695" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" declline="2695" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SPATIAL SOUND. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

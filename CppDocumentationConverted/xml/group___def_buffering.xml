@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___def_buffering" kind="group">
+    <compoundname>DefBuffering</compoundname>
+    <title>Buffering</title>
+    <innerclass refid="struct_m_l_audio_buffer_format" prot="public">MLAudioBufferFormat</innerclass>
+    <innerclass refid="struct_m_l_audio_buffer" prot="public">MLAudioBuffer</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___def_buffering_1gaa15645de3aeeafd395e01683d414e2c2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioSampleFormat</name>
+        <enumvalue id="group___def_buffering_1ggaa15645de3aeeafd395e01683d414e2c2a7967bf7a5252bd628de2cb0f476c8f96" prot="public">
+          <name>MLAudioSampleFormat_Int</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Samples are integer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_buffering_1ggaa15645de3aeeafd395e01683d414e2c2a9a84efd4a58b611be7b7f2d75743bee9" prot="public">
+          <name>MLAudioSampleFormat_Float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Samples are float. Not currently implemented for buffered I/O. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_buffering_1ggaa15645de3aeeafd395e01683d414e2c2a34dae52f6eee071c8f2bb23c03134e9a" prot="public">
+          <name>MLAudioSampleFormat_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible sample formats for input and output streams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="360" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="360" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___def_buffering_1gaf9dc383d6665cc020cf4355e33536ef3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLAudioChannelFormat</name>
+        <enumvalue id="group___def_buffering_1ggaf9dc383d6665cc020cf4355e33536ef3ad9c6d793ab65a0fb75f92ff1c3aa5c87" prot="public">
+          <name>MLAudioChannelFormat_Default</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Infer channel format from buffer format settings. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_buffering_1ggaf9dc383d6665cc020cf4355e33536ef3a106df12ddb80f8004a248679038974f5" prot="public">
+          <name>MLAudioChannelFormat_AmbisonicAmbix</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambisonic AmbiX format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___def_buffering_1ggaf9dc383d6665cc020cf4355e33536ef3a8cfebc5b0da43b699b7cd8d828976ad4" prot="public">
+          <name>MLAudioChannelFormat_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel formats for buffered outputs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="370" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="370" bodyend="377"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___def_buffering_1ga40cb7f94f0584d4c1603a0081a765e05" prot="public" static="no">
+        <type>enum <ref refid="group___def_buffering_1gaa15645de3aeeafd395e01683d414e2c2" kindref="member">MLAudioSampleFormat</ref></type>
+        <definition>typedef enum MLAudioSampleFormat MLAudioSampleFormat</definition>
+        <argsstring></argsstring>
+        <name>MLAudioSampleFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible sample formats for input and output streams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="367" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_buffering_1ga9c0ab4059da18bc410099bdacffba049" prot="public" static="no">
+        <type>enum <ref refid="group___def_buffering_1gaf9dc383d6665cc020cf4355e33536ef3" kindref="member">MLAudioChannelFormat</ref></type>
+        <definition>typedef enum MLAudioChannelFormat MLAudioChannelFormat</definition>
+        <argsstring></argsstring>
+        <name>MLAudioChannelFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel formats for buffered outputs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="377" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_buffering_1ga8924598fa47a528d0979199c00d6bc7c" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_buffer_format" kindref="compound">MLAudioBufferFormat</ref></type>
+        <definition>typedef struct MLAudioBufferFormat MLAudioBufferFormat</definition>
+        <argsstring></argsstring>
+        <name>MLAudioBufferFormat</name>
+        <briefdescription>
+<para>Buffer format settings for input and output streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="397" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___def_buffering_1gaa308f844c23745828fb66e1d132ea6d1" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_audio_buffer" kindref="compound">MLAudioBuffer</ref></type>
+        <definition>typedef struct MLAudioBuffer MLAudioBuffer</definition>
+        <argsstring></argsstring>
+        <name>MLAudioBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An audio buffer for passing data to/from buffered outputs and inputs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="405" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BUFFERING. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

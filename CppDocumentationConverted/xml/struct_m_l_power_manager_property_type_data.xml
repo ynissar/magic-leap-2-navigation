@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_power_manager_property_type_data" kind="struct" language="C++" prot="public">
+    <compoundname>MLPowerManagerPropertyTypeData</compoundname>
+    <includes refid="ml__power__manager_8h" local="no">ml_power_manager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_power_manager_property_type_data_1ad82b7a97b880c99e2bdba3417f02ea16" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MLPowerManagerPropertyTypeData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of <ref refid="struct_m_l_power_manager_property_type_data_1a7e18b1a8222cef3bde740802d4d61ae3" kindref="member">property_types</ref> array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="287" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_power_manager_property_type_data_1a7e18b1a8222cef3bde740802d4d61ae3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___power_manager_1ga2db41bd4a348194a7681fab1b52c5eca" kindref="member">MLPowerManagerPropertyType</ref> *</type>
+        <definition>MLPowerManagerPropertyType* MLPowerManagerPropertyTypeData::property_types</definition>
+        <argsstring></argsstring>
+        <name>property_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of <ref refid="group___power_manager_1ga62248c1a2edcf894ff9a3265ac9512e5" kindref="member">MLPowerManagerPropertyType</ref> elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="290" column="30" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate output data when getting a component&apos;s available property types. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 27</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" line="285" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h" bodystart="285" bodyend="292"/>
+    <listofallmembers>
+      <member refid="struct_m_l_power_manager_property_type_data_1a7e18b1a8222cef3bde740802d4d61ae3" prot="public" virt="non-virtual"><scope>MLPowerManagerPropertyTypeData</scope><name>property_types</name></member>
+      <member refid="struct_m_l_power_manager_property_type_data_1ad82b7a97b880c99e2bdba3417f02ea16" prot="public" virt="non-virtual"><scope>MLPowerManagerPropertyTypeData</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

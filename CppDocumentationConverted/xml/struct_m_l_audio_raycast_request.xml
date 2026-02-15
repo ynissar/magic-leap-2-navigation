@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_raycast_request" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioRaycastRequest</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1gada5cde89772c6d2a0b546b92f5a096e6" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastRequest::source_id</definition>
+        <argsstring></argsstring>
+        <name>source_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="320" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gab6cf4c539b010441c2dc17f03cd3eb10" prot="public" static="no" mutable="no">
+        <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+        <definition>MLHandle MLAudioRaycastRequest::image_id</definition>
+        <argsstring></argsstring>
+        <name>image_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="322" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga9ce4a0cfa91650a97185b289627ea0bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLAudioRaycastRequest::leg_index</definition>
+        <argsstring></argsstring>
+        <name>leg_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="324" column="14" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1gaab6fc47e4e42a2d9b2ee4edcc9ef3c4a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_audio_raycast" kindref="compound">MLAudioRaycast</ref></type>
+        <definition>MLAudioRaycast MLAudioRaycastRequest::ray</definition>
+        <argsstring></argsstring>
+        <name>ray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raycast to test for obstruction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="326" column="20" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ID-tracked request for a single raycast operation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="1">
+        <label>MLAudioRaycastRequest</label>
+        <link refid="struct_m_l_audio_raycast_request"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ray</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLAudioRaycast</label>
+        <link refid="struct_m_l_audio_raycast"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>end_point</edgelabel>
+          <edgelabel>eye_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="318" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="318" bodyend="327"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1gab6cf4c539b010441c2dc17f03cd3eb10" prot="public" virt="non-virtual"><scope>MLAudioRaycastRequest</scope><name>image_id</name></member>
+      <member refid="group___audio_defs_1ga9ce4a0cfa91650a97185b289627ea0bd" prot="public" virt="non-virtual"><scope>MLAudioRaycastRequest</scope><name>leg_index</name></member>
+      <member refid="group___audio_defs_1gaab6fc47e4e42a2d9b2ee4edcc9ef3c4a" prot="public" virt="non-virtual"><scope>MLAudioRaycastRequest</scope><name>ray</name></member>
+      <member refid="group___audio_defs_1gada5cde89772c6d2a0b546b92f5a096e6" prot="public" virt="non-virtual"><scope>MLAudioRaycastRequest</scope><name>source_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

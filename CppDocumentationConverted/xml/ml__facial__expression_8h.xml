@@ -1,0 +1,837 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__facial__expression_8h" kind="file" language="C++">
+    <compoundname>ml_facial_expression.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includes refid="ml__types_8h" local="yes">ml_types.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h</label>
+        <link refid="ml__facial__expression_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_m_l_facial_expression_eye_data" prot="public">MLFacialExpressionEyeData</innerclass>
+    <innerclass refid="struct_m_l_facial_expression_settings" prot="public">MLFacialExpressionSettings</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___facial_expression_1gab04a0655cd1e3bcac5e8f48c18df1a57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@9</name>
+        <enumvalue id="group___facial_expression_1ggab04a0655cd1e3bcac5e8f48c18df1a57a43e6e4d47edba4d9e41400ecc9ac1a12" prot="public">
+          <name>MLResultAPIPrefix_FacialExpression</name>
+          <initializer>= ( 0x18cd  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLFacialExpressionResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="36" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___facial_expression_1ga028590d346c397ac0a711937795d8d7c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLFacialExpressionResult</name>
+        <enumvalue id="group___facial_expression_1gga028590d346c397ac0a711937795d8d7cafad030b4cb4cea18aa74d544fa153db7" prot="public">
+          <name>MLFacialExpressionResult_HeadsetFitIssue</name>
+          <initializer>= MLResultAPIPrefix_FacialExpression</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unable to detect the eyes, check MLHeadsetFitStatus. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga028590d346c397ac0a711937795d8d7ca7f062d28fd75404bacc26410d3289aa0" prot="public">
+          <name>MLFacialExpressionResult_EyeExpressionDisabled</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed because enable_eye_expression in <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> is disabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga028590d346c397ac0a711937795d8d7cabbf508a71f4050b85ccece331ea489cd" prot="public">
+          <name>MLFacialExpressionResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Facial expression specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___facial_expression_1ga3c67e55f3521ef9642e85dbbf9498dff" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLFacialExpressionEyeExpressionType</name>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa68c19f25717a2e4e2685c105d533eb4a" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Blink_Left</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Blinking the left eye. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa90157b9ed7831cf6e30c097a5dc2e7f2" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Blink_Right</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Blinking the right eye. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa3eea1da3c048c69fb70c7f12c19fb5aa" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Lid_Tightener_Left</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lower Lid upward movement of the left eye. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffaa6aa5702f977447635f9527774f6af7c" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Lid_Tightener_Right</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lower Lid upward movement of the right eye. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa26853f1e8c8ffbc18f62fb9e3a7d5c93" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Eye_Openness_Left</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upper lid upward movement of the left eye. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffae88a37bcac6d567b1987ff3c5f44f682" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Eye_Openness_Right</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upper lid upward movement of the right eye. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa414bbb8113589ee71627e195bb39e3ae" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Cheek_Raiser_Left</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upward cheek movement, left. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa2d73dcce1e574c40606708914ccd48c6" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Cheek_Raiser_Right</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upward cheek movement, right. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa1584557781c0df301ecd784e8abfc0dc" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Brow_Lowerer_Left</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Downward brow movement, left. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa4e70bc06905f30d633982bd2c71bd5dd" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Brow_Lowerer_Right</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Downward brow movement, right. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa935100168a2ca6a4daab25f16ca9fa05" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Brow_Raiser_Left</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upward brow movement, left side. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa1b05b126ab84e424713669f41c930a95" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Brow_Raiser_Right</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upward brow movement, right side. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa5d12ba53db644f8ca33f9434ff8a70dc" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Count</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of eye expression types. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa7826e6b03833d62c668fee7a485f1169" prot="public">
+          <name>MLFacialExpressionEyeExpressionType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Available facial expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="59" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___facial_expression_1gae44333c90d7263ab6769f8ae5d5cc60a" prot="public" static="no">
+        <type>enum <ref refid="group___facial_expression_1ga028590d346c397ac0a711937795d8d7c" kindref="member">MLFacialExpressionResult</ref></type>
+        <definition>typedef enum MLFacialExpressionResult MLFacialExpressionResult</definition>
+        <argsstring></argsstring>
+        <name>MLFacialExpressionResult</name>
+        <briefdescription>
+<para>Facial expression specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="52" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___facial_expression_1ga5b9cb80070d89da8202c1155cff14971" prot="public" static="no">
+        <type>enum <ref refid="group___facial_expression_1ga3c67e55f3521ef9642e85dbbf9498dff" kindref="member">MLFacialExpressionEyeExpressionType</ref></type>
+        <definition>typedef enum MLFacialExpressionEyeExpressionType MLFacialExpressionEyeExpressionType</definition>
+        <argsstring></argsstring>
+        <name>MLFacialExpressionEyeExpressionType</name>
+        <briefdescription>
+<para>Available facial expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="88" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___facial_expression_1gac318a720e5cf6fed6bca4703b456b02d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref></type>
+        <definition>typedef struct MLFacialExpressionEyeData MLFacialExpressionEyeData</definition>
+        <argsstring></argsstring>
+        <name>MLFacialExpressionEyeData</name>
+        <briefdescription>
+<para>A structure containing information about facial expressions. This structure must be initialized by calling <ref refid="group___facial_expression_1gae76d323432fb31d325c3730389c7c1b8" kindref="member">MLFacialExpressionEyeDataInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="107" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___facial_expression_1ga71a062c008d2cd3418f93c68efd5f0b6" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref></type>
+        <definition>typedef struct MLFacialExpressionSettings MLFacialExpressionSettings</definition>
+        <argsstring></argsstring>
+        <name>MLFacialExpressionSettings</name>
+        <briefdescription>
+<para>A structure containing settings for the facial expressions. This structure must be initialized by calling <ref refid="group___facial_expression_1ga71abdb68af410132b9c99b9b2ffc8744" kindref="member">MLFacialExpressionSettingsInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="144" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___facial_expression_1gae76d323432fb31d325c3730389c7c1b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLFacialExpressionEyeDataInit</definition>
+        <argsstring>(MLFacialExpressionEyeData *inout_eye_data)</argsstring>
+        <name>MLFacialExpressionEyeDataInit</name>
+        <param>
+          <type><ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref> *</type>
+          <declname>inout_eye_data</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_eye_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000278"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="118" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="118" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="group___facial_expression_1ga71abdb68af410132b9c99b9b2ffc8744" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLFacialExpressionSettingsInit</definition>
+        <argsstring>(MLFacialExpressionSettings *inout_settings)</argsstring>
+        <name>MLFacialExpressionSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> *</type>
+          <declname>inout_settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000279"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="155" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" bodystart="155" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group___facial_expression_1ga9018874648901c781e40c3e4fbab0c35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLFacialExpressionGetResultString</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>MLFacialExpressionGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLFacialExpressionResult and MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from MLFacialExpression functions.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000280"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="174" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" declline="174" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLFacialExpressionCreateClient</definition>
+        <argsstring>(const MLFacialExpressionSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLFacialExpressionCreateClient</name>
+        <param>
+          <type>const <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a Facial expression client handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Although multiple client handles can be created they all represent the same facial expressions backend system.</para>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings that configures the facial expressions system. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to be created.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Facial expression client was created successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000281"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.FACIAL_EXPRESSION (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="195" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" declline="195" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___facial_expression_1ga0d4e5aa00bd426aea8e86990c83d0429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLFacialExpressionUpdateSettings</definition>
+        <argsstring>(MLHandle handle, const MLFacialExpressionSettings *settings)</argsstring>
+        <name>MLFacialExpressionUpdateSettings</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Update the Facial expression system with new settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Facial expression client handle created by <ref refid="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" kindref="member">MLFacialExpressionCreateClient</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New Facial expression settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Facial expression settings was updated successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000282"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="212" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" declline="212" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___facial_expression_1ga02fdbd66d8739b9eab0d90475224344a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLFacialExpressionGetEyeData</definition>
+        <argsstring>(MLHandle handle, MLFacialExpressionEyeData *out_eye_data)</argsstring>
+        <name>MLFacialExpressionGetEyeData</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref> *</type>
+          <declname>out_eye_data</declname>
+        </param>
+        <briefdescription>
+<para>Get facial expressions data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Facial expression client handle created by <ref refid="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" kindref="member">MLFacialExpressionCreateClient</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_eye_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Eye expressions data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Facial expression data was retrieved successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLFacialExpressionResult_HeadsetFitIssue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because unable to detect the eyes, check <ref refid="group___headset_fit_1ga133f9a9984e180bf3c13edb190c901ea" kindref="member">MLHeadsetFitStatus</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000283"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="231" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" declline="231" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___facial_expression_1ga286756c1c4c34119b2c83c28404b1a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLFacialExpressionDestroyClient</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLFacialExpressionDestroyClient</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroy client handle and free client resources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 29</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Facial expression client handle created by <ref refid="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" kindref="member">MLFacialExpressionCreateClient</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client handle was successfully destroyed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PerceptionSystemNotStarted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Perception System has not been started. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000284"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" line="247" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h" declline="247" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__types_8h" kindref="compound">ml_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38" refid="group___facial_expression_1ggab04a0655cd1e3bcac5e8f48c18df1a57a43e6e4d47edba4d9e41400ecc9ac1a12" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1ggab04a0655cd1e3bcac5e8f48c18df1a57a43e6e4d47edba4d9e41400ecc9ac1a12" kindref="member">MLResultAPIPrefix_FacialExpression</ref><sp/>=<sp/><ref refid="group___platform_1gaee50ed02e3a7238c3b68d689c96d79e9" kindref="member">MLRESULT_PREFIX</ref>(0x18cd),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45" refid="group___facial_expression_1ga028590d346c397ac0a711937795d8d7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___facial_expression_1ga028590d346c397ac0a711937795d8d7c" kindref="member">MLFacialExpressionResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="group___facial_expression_1gga028590d346c397ac0a711937795d8d7cafad030b4cb4cea18aa74d544fa153db7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga028590d346c397ac0a711937795d8d7cafad030b4cb4cea18aa74d544fa153db7" kindref="member">MLFacialExpressionResult_HeadsetFitIssue</ref><sp/>=<sp/><ref refid="group___facial_expression_1ggab04a0655cd1e3bcac5e8f48c18df1a57a43e6e4d47edba4d9e41400ecc9ac1a12" kindref="member">MLResultAPIPrefix_FacialExpression</ref>,</highlight></codeline>
+<codeline lineno="49" refid="group___facial_expression_1gga028590d346c397ac0a711937795d8d7ca7f062d28fd75404bacc26410d3289aa0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga028590d346c397ac0a711937795d8d7ca7f062d28fd75404bacc26410d3289aa0" kindref="member">MLFacialExpressionResult_EyeExpressionDisabled</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga028590d346c397ac0a711937795d8d7cabbf508a71f4050b85ccece331ea489cd" kindref="member">MLFacialExpressionResult_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="52" refid="group___facial_expression_1gae44333c90d7263ab6769f8ae5d5cc60a" refkind="member"><highlight class="normal">}<sp/><ref refid="group___facial_expression_1ga028590d346c397ac0a711937795d8d7c" kindref="member">MLFacialExpressionResult</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group___facial_expression_1ga3c67e55f3521ef9642e85dbbf9498dff" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___facial_expression_1ga3c67e55f3521ef9642e85dbbf9498dff" kindref="member">MLFacialExpressionEyeExpressionType</ref><sp/>{</highlight></codeline>
+<codeline lineno="61" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa68c19f25717a2e4e2685c105d533eb4a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa68c19f25717a2e4e2685c105d533eb4a" kindref="member">MLFacialExpressionEyeExpressionType_Blink_Left</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="63" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa90157b9ed7831cf6e30c097a5dc2e7f2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa90157b9ed7831cf6e30c097a5dc2e7f2" kindref="member">MLFacialExpressionEyeExpressionType_Blink_Right</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="65" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa3eea1da3c048c69fb70c7f12c19fb5aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa3eea1da3c048c69fb70c7f12c19fb5aa" kindref="member">MLFacialExpressionEyeExpressionType_Lid_Tightener_Left</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="67" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffaa6aa5702f977447635f9527774f6af7c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffaa6aa5702f977447635f9527774f6af7c" kindref="member">MLFacialExpressionEyeExpressionType_Lid_Tightener_Right</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="69" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa26853f1e8c8ffbc18f62fb9e3a7d5c93" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa26853f1e8c8ffbc18f62fb9e3a7d5c93" kindref="member">MLFacialExpressionEyeExpressionType_Eye_Openness_Left</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="71" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffae88a37bcac6d567b1987ff3c5f44f682" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffae88a37bcac6d567b1987ff3c5f44f682" kindref="member">MLFacialExpressionEyeExpressionType_Eye_Openness_Right</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="73" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa414bbb8113589ee71627e195bb39e3ae" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa414bbb8113589ee71627e195bb39e3ae" kindref="member">MLFacialExpressionEyeExpressionType_Cheek_Raiser_Left</ref><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="75" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa2d73dcce1e574c40606708914ccd48c6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa2d73dcce1e574c40606708914ccd48c6" kindref="member">MLFacialExpressionEyeExpressionType_Cheek_Raiser_Right</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="77" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa1584557781c0df301ecd784e8abfc0dc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa1584557781c0df301ecd784e8abfc0dc" kindref="member">MLFacialExpressionEyeExpressionType_Brow_Lowerer_Left</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="79" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa4e70bc06905f30d633982bd2c71bd5dd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa4e70bc06905f30d633982bd2c71bd5dd" kindref="member">MLFacialExpressionEyeExpressionType_Brow_Lowerer_Right</ref><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="81" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa935100168a2ca6a4daab25f16ca9fa05" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa935100168a2ca6a4daab25f16ca9fa05" kindref="member">MLFacialExpressionEyeExpressionType_Brow_Raiser_Left</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="83" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa1b05b126ab84e424713669f41c930a95" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa1b05b126ab84e424713669f41c930a95" kindref="member">MLFacialExpressionEyeExpressionType_Brow_Raiser_Right</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="85" refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa5d12ba53db644f8ca33f9434ff8a70dc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa5d12ba53db644f8ca33f9434ff8a70dc" kindref="member">MLFacialExpressionEyeExpressionType_Count</ref><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa7826e6b03833d62c668fee7a485f1169" kindref="member">MLFacialExpressionEyeExpressionType_Ensure32Bits</ref><sp/>=<sp/>0x7FFFFFFF</highlight></codeline>
+<codeline lineno="88" refid="group___facial_expression_1ga5b9cb80070d89da8202c1155cff14971" refkind="member"><highlight class="normal">}<sp/><ref refid="group___facial_expression_1ga3c67e55f3521ef9642e85dbbf9498dff" kindref="member">MLFacialExpressionEyeExpressionType</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="struct_m_l_facial_expression_eye_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref><sp/>{</highlight></codeline>
+<codeline lineno="98" refid="struct_m_l_facial_expression_eye_data_1a82f70cc473f412625be68f71ca7102a2" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_facial_expression_eye_data_1a82f70cc473f412625be68f71ca7102a2" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="100" refid="struct_m_l_facial_expression_eye_data_1a6a4b79b690223d33f6a184a09d3ca9ac" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_facial_expression_eye_data_1a6a4b79b690223d33f6a184a09d3ca9ac" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="106" refid="struct_m_l_facial_expression_eye_data_1af4432cf3b2c357daee237c881b8c876d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_facial_expression_eye_data_1af4432cf3b2c357daee237c881b8c876d" kindref="member">eye_expression_weights</ref>[<ref refid="group___facial_expression_1gga3c67e55f3521ef9642e85dbbf9498dffa5d12ba53db644f8ca33f9434ff8a70dc" kindref="member">MLFacialExpressionEyeExpressionType_Count</ref>];</highlight></codeline>
+<codeline lineno="107" refid="group___facial_expression_1gac318a720e5cf6fed6bca4703b456b02d" refkind="member"><highlight class="normal">}<sp/><ref refid="group___facial_expression_1gac318a720e5cf6fed6bca4703b456b02d" kindref="member">MLFacialExpressionEyeData</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="group___facial_expression_1gae76d323432fb31d325c3730389c7c1b8" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___facial_expression_1gae76d323432fb31d325c3730389c7c1b8" kindref="member">MLFacialExpressionEyeDataInit</ref>(<ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref><sp/>*inout_eye_data)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_eye_data)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_eye_data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref>));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_eye_data-&gt;<ref refid="struct_m_l_facial_expression_eye_data_1a82f70cc473f412625be68f71ca7102a2" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="struct_m_l_facial_expression_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="133" refid="struct_m_l_facial_expression_settings_1abdb0e1e0b037124f0179ca6cbff5a0c8" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_facial_expression_settings_1abdb0e1e0b037124f0179ca6cbff5a0c8" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="143" refid="struct_m_l_facial_expression_settings_1ac86d0c6c0a062cfd53507c572daf1770" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_facial_expression_settings_1ac86d0c6c0a062cfd53507c572daf1770" kindref="member">enable_eye_expression</ref>;</highlight></codeline>
+<codeline lineno="144" refid="group___facial_expression_1ga71a062c008d2cd3418f93c68efd5f0b6" refkind="member"><highlight class="normal">}<sp/><ref refid="group___facial_expression_1ga71a062c008d2cd3418f93c68efd5f0b6" kindref="member">MLFacialExpressionSettings</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group___facial_expression_1ga71abdb68af410132b9c99b9b2ffc8744" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1a3a240d5c56cc8951cfae16dd22b01d8a" kindref="member">ML_STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___facial_expression_1ga71abdb68af410132b9c99b9b2ffc8744" kindref="member">MLFacialExpressionSettingsInit</ref>(<ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref><sp/>*inout_settings)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inout_settings)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(inout_settings,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref>));</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_settings-&gt;<ref refid="struct_m_l_facial_expression_settings_1abdb0e1e0b037124f0179ca6cbff5a0c8" kindref="member">version</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>inout_settings-&gt;<ref refid="struct_m_l_facial_expression_settings_1ac86d0c6c0a062cfd53507c572daf1770" kindref="member">enable_eye_expression</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="group___facial_expression_1ga9018874648901c781e40c3e4fbab0c35" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___facial_expression_1ga9018874648901c781e40c3e4fbab0c35" kindref="member">MLFacialExpressionGetResultString</ref>(<ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/>result);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___facial_expression_1ga34f6395ec787fa1d9ab87ec9d13e68fa" kindref="member">MLFacialExpressionCreateClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref><sp/>*settings,<sp/><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/>*<ref refid="group___marker_tracking_1ga98ce28963c497d5b2bd1234a3bb4b577" kindref="member">out_handle</ref>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="group___facial_expression_1ga0d4e5aa00bd426aea8e86990c83d0429" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___facial_expression_1ga0d4e5aa00bd426aea8e86990c83d0429" kindref="member">MLFacialExpressionUpdateSettings</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_facial_expression_settings" kindref="compound">MLFacialExpressionSettings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="group___facial_expression_1ga02fdbd66d8739b9eab0d90475224344a" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___facial_expression_1ga02fdbd66d8739b9eab0d90475224344a" kindref="member">MLFacialExpressionGetEyeData</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>,<sp/><ref refid="struct_m_l_facial_expression_eye_data" kindref="compound">MLFacialExpressionEyeData</ref><sp/>*out_eye_data);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="group___facial_expression_1ga286756c1c4c34119b2c83c28404b1a6f" refkind="member"><highlight class="normal"><ref refid="ml__api_8h_1ac77e1e876b3466dc3aa920c75548c292" kindref="member">ML_API</ref><sp/><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref><sp/><ref refid="ml__api_8h_1a2ff9d6ae7b338ee84b5cbc2ee06ed58c" kindref="member">ML_CALL</ref><sp/><ref refid="group___facial_expression_1ga286756c1c4c34119b2c83c28404b1a6f" kindref="member">MLFacialExpressionDestroyClient</ref>(<ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref><sp/><ref refid="group___graphics_1ga1854c7e3473b5bfa2a38cf23c995f284" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h"/>
+  </compounddef>
+</doxygen>

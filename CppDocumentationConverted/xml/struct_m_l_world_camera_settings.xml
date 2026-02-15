@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_world_camera_settings" kind="struct" language="C++" prot="public">
+    <compoundname>MLWorldCameraSettings</compoundname>
+    <includes refid="ml__world__camera_8h" local="no">ml_world_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_world_camera_settings_1a8cbe6521842a712f9a4ce07f64a8c672" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraSettings::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="123" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_settings_1afd55da0a4fc8019265af0396f5b7c3d2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraSettings::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>World camera mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___w_cam_1ga459c241cf0e032fcd40847bc36a95580" kindref="member">MLWorldCameraMode</ref> for more details. If you want to request frames from different camera modes then &quot;OR&quot; the modes of interest to the app. The mode will apply for all the cameras.</para>
+<para><simplesect kind="note"><para>The system may not be able to service all the requested camera modes. This parameter is treated as a hint and data will be provided for the requested camera modes when available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="135" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_settings_1a5ffeb4a3101fdbbfc57bd1fe0766a321" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraSettings::cameras</definition>
+        <argsstring></argsstring>
+        <name>cameras</name>
+        <briefdescription>
+<para>World cameras that need to be enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group___w_cam_1ga2e832830cb067b484de4bd4d0e4ee9d5" kindref="member">MLWorldCameraIdentifier</ref> for more details. If you want to request frames from different world camera then &quot;OR&quot; the cameras of interest to the app.</para>
+<para><simplesect kind="note"><para>The system may not be able to service all the requested cameras. This parameter is treated as a hint and data will be provided from the requested world cameras when available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="147" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate the camera settings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___w_cam_1ga9132b9fa0b8351acf1aa918843c6a8aa" kindref="member">MLWorldCameraSettingsInit</ref> before use.</para>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="121" bodyend="148"/>
+    <listofallmembers>
+      <member refid="struct_m_l_world_camera_settings_1a5ffeb4a3101fdbbfc57bd1fe0766a321" prot="public" virt="non-virtual"><scope>MLWorldCameraSettings</scope><name>cameras</name></member>
+      <member refid="struct_m_l_world_camera_settings_1afd55da0a4fc8019265af0396f5b7c3d2" prot="public" virt="non-virtual"><scope>MLWorldCameraSettings</scope><name>mode</name></member>
+      <member refid="struct_m_l_world_camera_settings_1a8cbe6521842a712f9a4ce07f64a8c672" prot="public" virt="non-virtual"><scope>MLWorldCameraSettings</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

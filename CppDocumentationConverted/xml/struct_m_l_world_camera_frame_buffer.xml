@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_world_camera_frame_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>MLWorldCameraFrameBuffer</compoundname>
+    <includes refid="ml__world__camera_8h" local="no">ml_world_camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_buffer_1ad96927ac0ac3f67d105868db1b3fd3c9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraFrameBuffer::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the frame in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="204" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_buffer_1ad21d96a9eeb9c605843e0d74a47d71de" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraFrameBuffer::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the frame in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="206" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_buffer_1a357c58bf01fc90e40d5d43a6181d5eaf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraFrameBuffer::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stride of the frame in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="208" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_buffer_1abaa57208dce432ca726a15f9e829a73d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraFrameBuffer::bytes_per_pixel</definition>
+        <argsstring></argsstring>
+        <name>bytes_per_pixel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes used to represent a single value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="210" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_buffer_1a455ed52f825836ac99ab05f17a16d4f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLWorldCameraFrameBuffer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes in the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="212" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_world_camera_frame_buffer_1abc11d6c91cdd62d1c7801baa7c497f1b" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* MLWorldCameraFrameBuffer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="214" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to encapsulate per plane info for each camera frame. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 23</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" line="202" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h" bodystart="202" bodyend="215"/>
+    <listofallmembers>
+      <member refid="struct_m_l_world_camera_frame_buffer_1abaa57208dce432ca726a15f9e829a73d" prot="public" virt="non-virtual"><scope>MLWorldCameraFrameBuffer</scope><name>bytes_per_pixel</name></member>
+      <member refid="struct_m_l_world_camera_frame_buffer_1abc11d6c91cdd62d1c7801baa7c497f1b" prot="public" virt="non-virtual"><scope>MLWorldCameraFrameBuffer</scope><name>data</name></member>
+      <member refid="struct_m_l_world_camera_frame_buffer_1ad21d96a9eeb9c605843e0d74a47d71de" prot="public" virt="non-virtual"><scope>MLWorldCameraFrameBuffer</scope><name>height</name></member>
+      <member refid="struct_m_l_world_camera_frame_buffer_1a455ed52f825836ac99ab05f17a16d4f2" prot="public" virt="non-virtual"><scope>MLWorldCameraFrameBuffer</scope><name>size</name></member>
+      <member refid="struct_m_l_world_camera_frame_buffer_1a357c58bf01fc90e40d5d43a6181d5eaf" prot="public" virt="non-virtual"><scope>MLWorldCameraFrameBuffer</scope><name>stride</name></member>
+      <member refid="struct_m_l_world_camera_frame_buffer_1ad96927ac0ac3f67d105868db1b3fd3c9" prot="public" virt="non-virtual"><scope>MLWorldCameraFrameBuffer</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

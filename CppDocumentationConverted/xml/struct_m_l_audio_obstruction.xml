@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_audio_obstruction" kind="struct" language="C++" prot="public">
+    <compoundname>MLAudioObstruction</compoundname>
+    <includes refid="ml__audio_8h" local="no">ml_audio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___audio_defs_1gac3c076951d3b297e17d95ca70a4b28dd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MLAudioObstruction::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount of obstruction [0-1] with 1 = fully applied transmission values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="308" column="11" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___audio_defs_1ga47546999b2cd60d679694ce470c637b2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MLAudioObstruction::hit_point</definition>
+        <argsstring></argsstring>
+        <name>hit_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Location of obstruction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="310" column="13" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Obstruction along a ray. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 20</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MLVec3f</label>
+        <link refid="struct_m_l_vec3f"/>
+      </node>
+      <node id="1">
+        <label>MLAudioObstruction</label>
+        <link refid="struct_m_l_audio_obstruction"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hit_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" line="306" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h" bodystart="306" bodyend="311"/>
+    <listofallmembers>
+      <member refid="group___audio_defs_1gac3c076951d3b297e17d95ca70a4b28dd" prot="public" virt="non-virtual"><scope>MLAudioObstruction</scope><name>factor</name></member>
+      <member refid="group___audio_defs_1ga47546999b2cd60d679694ce470c637b2" prot="public" virt="non-virtual"><scope>MLAudioObstruction</scope><name>hit_point</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

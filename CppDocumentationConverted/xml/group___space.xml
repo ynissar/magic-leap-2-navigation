@@ -1,0 +1,1758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___space" kind="group">
+    <compoundname>Space</compoundname>
+    <title>Space</title>
+    <innerclass refid="struct_m_l_space_manager_settings" prot="public">MLSpaceManagerSettings</innerclass>
+    <innerclass refid="struct_m_l_space" prot="public">MLSpace</innerclass>
+    <innerclass refid="struct_m_l_space_list" prot="public">MLSpaceList</innerclass>
+    <innerclass refid="struct_m_l_space_query_filter" prot="public">MLSpaceQueryFilter</innerclass>
+    <innerclass refid="struct_m_l_space_localization_info" prot="public">MLSpaceLocalizationInfo</innerclass>
+    <innerclass refid="struct_m_l_space_localization_result" prot="public">MLSpaceLocalizationResult</innerclass>
+    <innerclass refid="struct_m_l_space_callbacks" prot="public">MLSpaceCallbacks</innerclass>
+    <innerclass refid="struct_m_l_space_import_info" prot="public">MLSpaceImportInfo</innerclass>
+    <innerclass refid="struct_m_l_space_import_out_data" prot="public">MLSpaceImportOutData</innerclass>
+    <innerclass refid="struct_m_l_space_export_info" prot="public">MLSpaceExportInfo</innerclass>
+    <innerclass refid="struct_m_l_space_export_out_data" prot="public">MLSpaceExportOutData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___space_1ga5d76b81b0ad4c19007a781d4edb8181f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@28</name>
+        <enumvalue id="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fab4875ca595400bcc4e19413753775454" prot="public">
+          <name>MLResultAPIPrefix_Space</name>
+          <initializer>= ( 0x10cc  &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the prefix for MLSpaceResult codes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga5d76b81b0ad4c19007a781d4edb8181fa12e2e2fbb3bbc4331c77d7f8c3170d37" prot="public">
+          <name>MLSpace_MaxSpaceNameLength</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum size for the name of a Magic Leap Space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceResult</name>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fae281467e5cb9a001029d796e10def93a" prot="public">
+          <name>MLSpaceResult_ServerError</name>
+          <initializer>= MLResultAPIPrefix_Space</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There was an error communicating with the server. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa1dda1ec9559c0b87f780ab071818127e" prot="public">
+          <name>MLSpaceResult_ServiceUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The operation failed because the underlying service is not yet available, retry later. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa50a654cb4ef69fe50d417b903e21eb43" prot="public">
+          <name>MLSpaceResult_UnavailableSpace</name>
+          <briefdescription>
+<para>Space is not available. This can happen when the selected space is in AR Cloud but the device is configured for On Device spaces or vice-versa. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa8a1f726b10454d10273c8e6de6febc11" prot="public">
+          <name>MLSpaceResult_IncompatibleSpace</name>
+          <briefdescription>
+<para>Space is not compatible with the current OS version. This can happen when a space exported from an older version of the OS is imported to a device running a newer version of the OS. Refer to the documentation at the top of this header for more notes on Space compatibility. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9bd0f60af766a3c92bc8b7e00cb6867a" prot="public">
+          <name>MLSpaceResult_SpaceAlreadyExists</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The operation failed because the Space being imported already exists in the device. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa851d81dbf3e60f82bbf9266acf1305fa9d7cc4da7a67b4c018ebda6ce821e530" prot="public">
+          <name>MLSpaceResult_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Magic Leap Space specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="75" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="75" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceType</name>
+        <enumvalue id="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579af4d93d4596d83070d41400bc937e4d99" prot="public">
+          <name>MLSpaceType_OnDevice</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>On device space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a226c571e56632e1631d9e1e3082bf5a2" prot="public">
+          <name>MLSpaceType_ARCloud</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AR Cloud based space. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggadb49e10b5e05cc40d4e8e40b465ce579a6d3af31beb78da2e1a94fabedd449e73" prot="public">
+          <name>MLSpaceType_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Space type. Indicates the type of the Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceLocalizationStatus</name>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a249b114ada9ecd922fba7bf9194c6c8e" prot="public">
+          <name>MLSpaceLocalizationStatus_NotLocalized</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device is currently not localized. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a7e03da1fb1146ad9211aa2835b20bfb4" prot="public">
+          <name>MLSpaceLocalizationStatus_Localized</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device has localized successfully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a292b333dedb44c43d798ae2ea6f5e19b" prot="public">
+          <name>MLSpaceLocalizationStatus_LocalizationPending</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization attempt is currently in progress. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9aab9a87eb7c92ed643eb8fb580942e9a4" prot="public">
+          <name>MLSpaceLocalizationStatus_SleepingBeforeRetry</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The device will attempt to localize after sleep duration is complete. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga4ee59a99fddc58e89a1c29dc1fe78be9a1aa16b499d0bfb0520a9abdd81981ad8" prot="public">
+          <name>MLSpaceLocalizationStatus_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The current localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="119" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceLocalizationConfidence</name>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfa3ab532e02bed4b81370d9a7c62e8e608" prot="public">
+          <name>MLSpaceLocalizationConfidence_Poor</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization confidence is very poor and should be reattempted. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfadaa0e4cf424d761aa8456ccc67148a2f" prot="public">
+          <name>MLSpaceLocalizationConfidence_Fair</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The confidence is low, current environmental conditions may adversely affect localization. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfaeb87e24ffb7710370d527c0344076d57" prot="public">
+          <name>MLSpaceLocalizationConfidence_Good</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The confidence is high, persistent content should be stable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfacb50cce11b85cd2b5ecd96d1378b288e" prot="public">
+          <name>MLSpaceLocalizationConfidence_Excellent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This is a very high-confidence localization, persistent content will be very stable. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1ggaa43052976b8a29062e7947a14b2e9fcfae1ecdee4cf0084c9266165c69926ff0c" prot="public">
+          <name>MLSpaceLocalizationConfidence_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The confidence of the current localization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="137" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___space_1ga2234eb12a0d2158d124ce61bf130b849" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MLSpaceLocalizationErrorFlag</name>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae735b5621a3a3a9846cf9a1a8779f06f" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No error, localization was successful. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a479450b6e738d9ad34547b7a25c6c1df" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_Unknown</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed for an unknown reason. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849ac72356ea8e21753b116c3330c314d975" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_OutOfMappedArea</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed becuase the user is outside of the mapped area. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a412add897ca45e01ea1e8413e9bab33b" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_LowFeatureCount</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There are not enough features in the environment to successfully localize. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8e435865bf691650eb2c3b457e812545" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_ExcessiveMotion</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed due to excessive motion. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849ae228af314813632e5b26033065aefa4c" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_LowLight</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Localization failed because the lighting levels are too low in the environment. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a8704b7a16a4fa9835b5134f1f45e04f7" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_HeadposeFailure</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A headpose failure caused localization to be unsuccessful. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a24f55aa6c64257928d91fedc186b1c8a" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_AlgorithmFailure</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>There was an internal algorithm failure that prevented localization. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___space_1gga2234eb12a0d2158d124ce61bf130b849a6ff0ee1752c08f575b12695d12fea2fa" prot="public">
+          <name>MLSpaceLocalizationErrorFlag_Ensure32Bits</name>
+          <initializer>= 0x7FFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure enum is represented as 32 bits. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible reasons that a localization attempt may be unsuccessful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="155" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="155" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___space_1ga69594569e3db4d344e1410a8686ef22b" prot="public" static="no">
+        <type>enum <ref refid="group___space_1gaa851d81dbf3e60f82bbf9266acf1305f" kindref="member">MLSpaceResult</ref></type>
+        <definition>typedef enum MLSpaceResult MLSpaceResult</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceResult</name>
+        <briefdescription>
+<para>Magic Leap Space specific return codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="97" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga063238e8906003f54bf99304d82ec76c" prot="public" static="no">
+        <type>enum <ref refid="group___space_1gadb49e10b5e05cc40d4e8e40b465ce579" kindref="member">MLSpaceType</ref></type>
+        <definition>typedef enum MLSpaceType MLSpaceType</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceType</name>
+        <briefdescription>
+<para>Space type. Indicates the type of the Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="112" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga09b8a0fc69ea23283c2421071851a859" prot="public" static="no">
+        <type>enum <ref refid="group___space_1ga4ee59a99fddc58e89a1c29dc1fe78be9" kindref="member">MLSpaceLocalizationStatus</ref></type>
+        <definition>typedef enum MLSpaceLocalizationStatus MLSpaceLocalizationStatus</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationStatus</name>
+        <briefdescription>
+<para>The current localization status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="130" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga7ce03ebadf91d56e5728c42cfdc3fdb4" prot="public" static="no">
+        <type>enum <ref refid="group___space_1gaa43052976b8a29062e7947a14b2e9fcf" kindref="member">MLSpaceLocalizationConfidence</ref></type>
+        <definition>typedef enum MLSpaceLocalizationConfidence MLSpaceLocalizationConfidence</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationConfidence</name>
+        <briefdescription>
+<para>The confidence of the current localization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="148" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga0d00e1631e936463dc7ad3312a7498ec" prot="public" static="no">
+        <type>enum <ref refid="group___space_1ga2234eb12a0d2158d124ce61bf130b849" kindref="member">MLSpaceLocalizationErrorFlag</ref></type>
+        <definition>typedef enum MLSpaceLocalizationErrorFlag MLSpaceLocalizationErrorFlag</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationErrorFlag</name>
+        <briefdescription>
+<para>A set of possible reasons that a localization attempt may be unsuccessful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="174" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga01d85574666314ac73905e71ab18e066" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref></type>
+        <definition>typedef struct MLSpaceManagerSettings MLSpaceManagerSettings</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceManagerSettings</name>
+        <briefdescription>
+<para>A structure containing settings for the space manager. This structure must be initialized by calling <ref refid="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" kindref="member">MLSpaceManagerSettingsInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="185" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga3d82c210fb782993ab2c853261c378d5" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref></type>
+        <definition>typedef struct MLSpace MLSpace</definition>
+        <argsstring></argsstring>
+        <name>MLSpace</name>
+        <briefdescription>
+<para>A structure containing information about a Magic Leap Space. This structure must be initialized by calling <ref refid="group___space_1gae215ee4fefd36959893a2f1856d05a7d" kindref="member">MLSpaceInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="218" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga8d7fb2a7889d1841bc8da87c2383778d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref></type>
+        <definition>typedef struct MLSpaceList MLSpaceList</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceList</name>
+        <briefdescription>
+<para>A structure containing list of <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref>. This structure must be initialized by calling <ref refid="group___space_1ga550978af81a1086eceba4e12d484e24e" kindref="member">MLSpaceListInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="250" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga3fafbd3962645a9d7b243d80a42bad91" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref></type>
+        <definition>typedef struct MLSpaceQueryFilter MLSpaceQueryFilter</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceQueryFilter</name>
+        <briefdescription>
+<para>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling <ref refid="group___space_1ga8671dc4dddec350ff713efa55f88a295" kindref="member">MLSpaceQueryFilterInit</ref> before use. There is no support for filters at this time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="278" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1gaa9ad7b5e96924fae6d089f3d187c605f" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref></type>
+        <definition>typedef struct MLSpaceLocalizationInfo MLSpaceLocalizationInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationInfo</name>
+        <briefdescription>
+<para>A collection of parameters to be used for localization request. This structure must be initialized by calling <ref refid="group___space_1gad15116e35a8c009cef4218608c0a07cc" kindref="member">MLSpaceLocalizationInfoInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="307" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga5060646bdc2857a82ec37b720f0a2296" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref></type>
+        <definition>typedef struct MLSpaceLocalizationResult MLSpaceLocalizationResult</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceLocalizationResult</name>
+        <briefdescription>
+<para>A structure containing information about the device&apos;s localization state. This structure must be initialized by calling <ref refid="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" kindref="member">MLSpaceLocalizationResultInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="353" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga2da76f4e83c1ca4eac5d42a69482ae6d" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref></type>
+        <definition>typedef struct MLSpaceCallbacks MLSpaceCallbacks</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceCallbacks</name>
+        <briefdescription>
+<para>A structure containing callbacks for events related to the Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure must be initialized by calling <ref refid="group___space_1ga17ae1607ebe52d2f202652086e5522ad" kindref="member">MLSpaceCallbacksInit</ref> before use. Application can unregister (stop receiving callbacks) at any time by setting the corresponding callback to NULL.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="394" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga0d0386fbb73afe1e530f9fdb75a5847b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref></type>
+        <definition>typedef struct MLSpaceImportInfo MLSpaceImportInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceImportInfo</name>
+        <briefdescription>
+<para>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling <ref refid="group___space_1ga9802e8653b9eddae5b33a61233fde414" kindref="member">MLSpaceImportInfoInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="425" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga004f356258f200ec0d53976ef7c20381" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref></type>
+        <definition>typedef struct MLSpaceImportOutData MLSpaceImportOutData</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceImportOutData</name>
+        <briefdescription>
+<para>A structure containing information about the imported Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="451" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1ga00aba4c61695e3eaf0129170cc7a2ea9" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref></type>
+        <definition>typedef struct MLSpaceExportInfo MLSpaceExportInfo</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceExportInfo</name>
+        <briefdescription>
+<para>A structure containing information about the Space export settings. This structure must be initialized by calling <ref refid="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" kindref="member">MLSpaceExportInfoInit</ref> before use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="466" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___space_1gab25c375b8ef9340fa1338d5fe9972e16" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref></type>
+        <definition>typedef struct MLSpaceExportOutData MLSpaceExportOutData</definition>
+        <argsstring></argsstring>
+        <name>MLSpaceExportOutData</name>
+        <briefdescription>
+<para>A structure containing information about the exported Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="498" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___space_1ga0a10d2389e6f52f7521e37f95a94ad75" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceManagerSettingsInit</definition>
+        <argsstring>(MLSpaceManagerSettings *inout_info)</argsstring>
+        <name>MLSpaceManagerSettingsInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000649"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="196" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="196" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gae215ee4fefd36959893a2f1856d05a7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceInit</definition>
+        <argsstring>(MLSpace *inout_info)</argsstring>
+        <name>MLSpaceInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space" kindref="compound">MLSpace</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000650"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="229" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="229" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga550978af81a1086eceba4e12d484e24e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceListInit</definition>
+        <argsstring>(MLSpaceList *inout_info)</argsstring>
+        <name>MLSpaceListInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000651"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="261" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="261" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga8671dc4dddec350ff713efa55f88a295" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceQueryFilterInit</definition>
+        <argsstring>(MLSpaceQueryFilter *inout_query_filter)</argsstring>
+        <name>MLSpaceQueryFilterInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref> *</type>
+          <declname>inout_query_filter</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the default values for a query filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_query_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000652"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="289" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="289" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gad15116e35a8c009cef4218608c0a07cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceLocalizationInfoInit</definition>
+        <argsstring>(MLSpaceLocalizationInfo *inout_info)</argsstring>
+        <name>MLSpaceLocalizationInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the default values for localization info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000653"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="318" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="318" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga860af2490019ecc6dcae9ca1cd3a3bbe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceLocalizationResultInit</definition>
+        <argsstring>(MLSpaceLocalizationResult *inout_info)</argsstring>
+        <name>MLSpaceLocalizationResultInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 31</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The localization result to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000654"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="364" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="364" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga17ae1607ebe52d2f202652086e5522ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceCallbacksInit</definition>
+        <argsstring>(MLSpaceCallbacks *inout_callbacks)</argsstring>
+        <name>MLSpaceCallbacksInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> *</type>
+          <declname>inout_callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Initialize defaults for <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback structure to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000655"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="405" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="405" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga9802e8653b9eddae5b33a61233fde414" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceImportInfoInit</definition>
+        <argsstring>(MLSpaceImportInfo *inout_info)</argsstring>
+        <name>MLSpaceImportInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000656"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="436" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="436" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gaf2baf2aaf8259a90e506bd573b0e9580" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MLSpaceExportInfoInit</definition>
+        <argsstring>(MLSpaceExportInfo *inout_info)</argsstring>
+        <name>MLSpaceExportInfoInit</name>
+        <param>
+          <type><ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref> *</type>
+          <declname>inout_info</declname>
+        </param>
+        <briefdescription>
+<para>Initialize default values for <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">inout_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to initialize with default values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000657"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="477" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" bodystart="477" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gaf6a7a19e6e4c3eeb9a47f853f29757e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MLSpaceGetResultString</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>MLSpaceGetResultString</name>
+        <param>
+          <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLSpaceResult and MLResult codes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from <ref refid="struct_m_l_space" kindref="compound">MLSpace</ref> functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para>
+</simplesect>
+<xrefsect id="permissions_1_permissions000658"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="511" column="18" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="511" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceManagerCreate</definition>
+        <argsstring>(const MLSpaceManagerSettings *settings, MLHandle *out_handle)</argsstring>
+        <name>MLSpaceManagerCreate</name>
+        <param>
+          <type>const <ref refid="struct_m_l_space_manager_settings" kindref="compound">MLSpaceManagerSettings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref> *</type>
+          <declname>out_handle</declname>
+        </param>
+        <briefdescription>
+<para>Creates a Magic Leap Space manager handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application can create only one Magic Leap Space manager handle. Multiple calls to create a manager handle will result in a failure. The handle is valid for the lifecycle of the application.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings that configures the space manager. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to be created.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_ClientLimitExceeded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed due to an existing manager. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle was successfully created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000659"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPACE_MANAGER (protection level: normal) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="535" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="535" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga1d6c8bac9696044516fc36b0e0e2ef9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceSetCallbacks</definition>
+        <argsstring>(MLHandle handle, const MLSpaceCallbacks *callbacks, void *user_data)</argsstring>
+        <name>MLSpaceSetCallbacks</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> *</type>
+          <declname>callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+<para>Set the callbacks for events related to the Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> structure containing the callbacks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that will be returned in the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callbacks were registered successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="550" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="550" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceGetSpaceList</definition>
+        <argsstring>(MLHandle handle, const MLSpaceQueryFilter *query_filter, MLSpaceList *out_space_list)</argsstring>
+        <name>MLSpaceGetSpaceList</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_space_query_filter" kindref="compound">MLSpaceQueryFilter</ref> *</type>
+          <declname>query_filter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *</type>
+          <declname>out_space_list</declname>
+        </param>
+        <briefdescription>
+<para>Get the list of available spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call. Device mapping mode can be changed via the system application(s).</para>
+<para>The list memory is owned by the library, call <ref refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" kindref="member">MLSpaceReleaseSpaceList</ref> to release the memory. Each get <ref refid="group___space_1ga8138e06ca6f8a03df9acdb25cc30b8e7" kindref="member">MLSpaceGetSpaceList</ref> should have a corresponding <ref refid="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" kindref="member">MLSpaceReleaseSpaceList</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">query_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter structure for the query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_space_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of Spaces currently available to the device.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of spaces retrieved successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due to server side error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServiceUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because service is not ready.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000660"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="578" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="578" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga4d7df15e045ba2f02754c9aa468547aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceReleaseSpaceList</definition>
+        <argsstring>(MLHandle handle, MLSpaceList *space_list)</argsstring>
+        <name>MLSpaceReleaseSpaceList</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_list" kindref="compound">MLSpaceList</ref> *</type>
+          <declname>space_list</declname>
+        </param>
+        <briefdescription>
+<para>Release the list of available spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">space_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List Magic Leap Spaces that needs to be released.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List resources was successfully released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000661"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="594" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="594" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga2465fe8e9cda7d4e873b30be446ad59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceRequestLocalization</definition>
+        <argsstring>(MLHandle handle, const MLSpaceLocalizationInfo *localization_info)</argsstring>
+        <name>MLSpaceRequestLocalization</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_m_l_space_localization_info" kindref="compound">MLSpaceLocalizationInfo</ref> *</type>
+          <declname>localization_info</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to localize to a given Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an asynchronous request. Use <ref refid="group___space_1ga25f4671a9ed8c725e6e711b462089088" kindref="member">MLSpaceGetLocalizationResult</ref> to get the results of the localization or use <ref refid="struct_m_l_space_callbacks" kindref="compound">MLSpaceCallbacks</ref> to listen to on_localization_changed events.</para>
+<para>A new request for localization will override all the past requests for localization that are yet to be completed.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">localization_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Magic Leap Space to localize into.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Localization request was submitted successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_UnavailableSpace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due an unavailable Space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServerError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due to server side error. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_ServiceUnavailable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because service is not ready.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000662"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="622" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="622" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga25f4671a9ed8c725e6e711b462089088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceGetLocalizationResult</definition>
+        <argsstring>(MLHandle handle, MLSpaceLocalizationResult *out_localization_result)</argsstring>
+        <name>MLSpaceGetLocalizationResult</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_localization_result" kindref="compound">MLSpaceLocalizationResult</ref> *</type>
+          <declname>out_localization_result</declname>
+        </param>
+        <briefdescription>
+<para>Get the localization results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the results of the most recent localization request.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle created by <ref refid="group___space_1ga8a3b99c5d74ddec8ae8af6dd614b2e87" kindref="member">MLSpaceManagerCreate</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_localization_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the result of the localization request.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Localization result was retrieved successfully. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Unauthenticated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid authentication credentials for this operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000663"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="641" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="641" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga4ca5fd11d5c0bd1f9dfbc02db8b27350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceManagerDestroy</definition>
+        <argsstring>(MLHandle handle)</argsstring>
+        <name>MLSpaceManagerDestroy</name>
+        <param>
+          <type><ref refid="group___platform_1gad436878dff21489f44eaeddc7585681d" kindref="member">MLHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a Space manager handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to be destroyed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space manager handle was successfully destroyed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000664"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="655" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="655" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1ga0584f9886bb1d1408c3e672556f01b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceImportSpace</definition>
+        <argsstring>(const MLSpaceImportInfo *import_info, MLSpaceImportOutData *out_data)</argsstring>
+        <name>MLSpaceImportSpace</name>
+        <param>
+          <type>const <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> *</type>
+          <declname>import_info</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_import_out_data" kindref="compound">MLSpaceImportOutData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Import a Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_m_l_space_import_info" kindref="compound">MLSpaceImportInfo</ref> memory is owned by the app and the app should make sure to release the memory once the API call has returned.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">import_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information need to import the space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the imported space.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_IncompatibleSpace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due an incompatible Space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_SpaceAlreadyExists</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed because Space being imported already exists.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000665"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="676" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="676" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceExportSpace</definition>
+        <argsstring>(const MLSpaceExportInfo *export_info, MLSpaceExportOutData *out_data)</argsstring>
+        <name>MLSpaceExportSpace</name>
+        <param>
+          <type>const <ref refid="struct_m_l_space_export_info" kindref="compound">MLSpaceExportInfo</ref> *</type>
+          <declname>export_info</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> *</type>
+          <declname>out_data</declname>
+        </param>
+        <briefdescription>
+<para>Export an on device Magic Leap Space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> is owned by the library, call <ref refid="group___space_1gae1f897eee7002fb943de6609da0f0873" kindref="member">MLSpaceReleaseExportData</ref> to release the memory. Each <ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref> call should have a corresponding <ref refid="group___space_1gae1f897eee7002fb943de6609da0f0873" kindref="member">MLSpaceReleaseExportData</ref>.</para>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">export_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information needed to export the space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exported space data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_PermissionDenied</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Necessary permission is missing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLSpaceResult_UnavailableSpace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed due an unavailable Space.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000666"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous) </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="698" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="698" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___space_1gae1f897eee7002fb943de6609da0f0873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___platform_1ga0b35b4ae5f4bf20dda1efd1554d58796" kindref="member">MLResult</ref></type>
+        <definition>MLResult MLSpaceReleaseExportData</definition>
+        <argsstring>(MLSpaceExportOutData *space_data)</argsstring>
+        <name>MLSpaceReleaseExportData</name>
+        <param>
+          <type><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> *</type>
+          <declname>space_data</declname>
+        </param>
+        <briefdescription>
+<para>Release resources acquired in <ref refid="group___space_1gac1bc96ddc4eff9f1d09dd8410df6d5ac" kindref="member">MLSpaceExportSpace</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>API Level:\n 26</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">space_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_m_l_space_export_out_data" kindref="compound">MLSpaceExportOutData</ref> that needs to be released.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>MLResult_InvalidParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or more input parameters are not valid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_Ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List resources was successfully released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MLResult_UnspecifiedFailure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation failed for unknown reason.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="permissions_1_permissions000667"><xreftitle>Required Permissions</xreftitle><xrefdescription><para>None </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" line="713" column="16" declfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h" declline="713" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APIs for Magic Leap Space. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Shared Object:\n space.magicleap</title><para></para>
+</simplesect>
+Magic Leap Space is a container that holds metadata about your scanned environment. It is a digital copy of a physical place and could include spatial anchors, environment meshes, environment objects, etc. Spaces can be created on device or in the Magic Leap AR Cloud. Spaces created in the AR Cloud can be easily shared between other devices.</para>
+<para>==&gt; APIs for localization requests:</para>
+<para>Magic Leap Space API allows an application to query the list of Spaces available to the application and determine the Space that the device should localize into. Applications needs to create a Space Manager to list the spaces and trigger localization. Application can create only one manager instance and the API is not thread safe.</para>
+<para>==&gt; APIs for importing and exporting Spaces:</para>
+<para>Magic Leap Space API supports exporting and importing on device Spaces. Applications cannot export AR Cloud spaces. There is no need to create a Magic Leap Space manager to import/export spaces but the application will need additional permissions to import/export spaces. See the API for more details.</para>
+<para>The format of the exported Space data can change with OS version updates. Backwards compatibility: Space exported using OS version n should work on OS versions up to and including OS version n-4. Forwards compatibility: Space exported using OS version n is not guaranteed to work on OS versions &gt; n.</para>
+<para>Developers are strongly encouraged to encrypt the exported Magic Leap Spaces. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

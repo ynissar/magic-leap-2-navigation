@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ml__types_8h" kind="file" language="C++">
+    <compoundname>ml_types.h</compoundname>
+    <includes refid="ml__api_8h" local="yes">ml_api.h</includes>
+    <includedby refid="ml__audio_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h</includedby>
+    <includedby refid="ml__camera__v2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h</includedby>
+    <includedby refid="ml__cv__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h</includedby>
+    <includedby refid="ml__depth__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h</includedby>
+    <includedby refid="ml__eye__calibration_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h</includedby>
+    <includedby refid="ml__eye__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h</includedby>
+    <includedby refid="ml__eye__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h</includedby>
+    <includedby refid="ml__facial__expression_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h</includedby>
+    <includedby refid="ml__gaze__recognition_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h</includedby>
+    <includedby refid="ml__gesture__classification_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h</includedby>
+    <includedby refid="ml__graphics_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</includedby>
+    <includedby refid="ml__graphics__utils_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</includedby>
+    <includedby refid="ml__hand__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h</includedby>
+    <includedby refid="ml__headset__fit_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h</includedby>
+    <includedby refid="ml__input_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h</includedby>
+    <includedby refid="ml__marker__tracking_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h</includedby>
+    <includedby refid="ml__media__cea608__caption_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea608_caption.h</includedby>
+    <includedby refid="ml__media__cea708__caption_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea708_caption.h</includedby>
+    <includedby refid="ml__media__data__source_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_data_source.h</includedby>
+    <includedby refid="ml__media__drm_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_drm.h</includedby>
+    <includedby refid="ml__media__extractor_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</includedby>
+    <includedby refid="ml__media__muxer_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h</includedby>
+    <includedby refid="ml__media__player_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</includedby>
+    <includedby refid="ml__media__stream__source_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_stream_source.h</includedby>
+    <includedby refid="ml__media__webvtt_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_webvtt.h</includedby>
+    <includedby refid="ml__meshing2_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</includedby>
+    <includedby refid="ml__native__surface_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_native_surface.h</includedby>
+    <includedby refid="ml__occlusion_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h</includedby>
+    <includedby refid="ml__planes_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h</includedby>
+    <includedby refid="ml__power__manager_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h</includedby>
+    <includedby refid="ml__snapshot_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</includedby>
+    <includedby refid="ml__space_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h</includedby>
+    <includedby refid="ml__spatial__anchor_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h</includedby>
+    <includedby refid="ml__system__notification__manager_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_system_notification_manager.h</includedby>
+    <includedby refid="ml__time_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h</includedby>
+    <includedby refid="ml__webview_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h</includedby>
+    <includedby refid="ml__world__camera_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h</includedby>
+    <includedby refid="ml__zi__graphics_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ml_api.h</label>
+        <link refid="ml__api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ml_coordinate_frame_uid.h</label>
+        <link refid="ml__coordinate__frame__uid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ml_version.h</label>
+        <link refid="ml__version_8h"/>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_hand_tracking.h</label>
+        <link refid="ml__hand__tracking_8h"/>
+      </node>
+      <node id="2">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_audio.h</label>
+        <link refid="ml__audio_8h"/>
+      </node>
+      <node id="30">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_native_surface.h</label>
+        <link refid="ml__native__surface_8h"/>
+      </node>
+      <node id="36">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_space.h</label>
+        <link refid="ml__space_8h"/>
+      </node>
+      <node id="39">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_time.h</label>
+        <link refid="ml__time_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_power_manager.h</label>
+        <link refid="ml__power__manager_8h"/>
+      </node>
+      <node id="23">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_player.h</label>
+        <link refid="ml__media__player_8h"/>
+      </node>
+      <node id="13">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics_utils.h</label>
+        <link refid="ml__graphics__utils_8h"/>
+      </node>
+      <node id="14">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_zi_graphics.h</label>
+        <link refid="ml__zi__graphics_8h"/>
+      </node>
+      <node id="19">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea608_caption.h</label>
+        <link refid="ml__media__cea608__caption_8h"/>
+      </node>
+      <node id="4">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_cv_camera.h</label>
+        <link refid="ml__cv__camera_8h"/>
+      </node>
+      <node id="29">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_meshing2.h</label>
+        <link refid="ml__meshing2_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gesture_classification.h</label>
+        <link refid="ml__gesture__classification_8h"/>
+      </node>
+      <node id="6">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_calibration.h</label>
+        <link refid="ml__eye__calibration_8h"/>
+      </node>
+      <node id="26">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_muxer.h</label>
+        <link refid="ml__media__muxer_8h"/>
+      </node>
+      <node id="8">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_tracking.h</label>
+        <link refid="ml__eye__tracking_8h"/>
+      </node>
+      <node id="24">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_drm.h</label>
+        <link refid="ml__media__drm_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_planes.h</label>
+        <link refid="ml__planes_8h"/>
+      </node>
+      <node id="7">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_eye_camera.h</label>
+        <link refid="ml__eye__camera_8h"/>
+      </node>
+      <node id="27">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_stream_source.h</label>
+        <link refid="ml__media__stream__source_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_facial_expression.h</label>
+        <link refid="ml__facial__expression_8h"/>
+      </node>
+      <node id="3">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h</label>
+        <link refid="ml__camera__v2_8h"/>
+      </node>
+      <node id="25">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_crypto.h</label>
+        <link refid="ml__media__crypto_8h"/>
+      </node>
+      <node id="40">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_webview.h</label>
+        <link refid="ml__webview_8h"/>
+      </node>
+      <node id="31">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_occlusion.h</label>
+        <link refid="ml__occlusion_8h"/>
+      </node>
+      <node id="35">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_perception.h</label>
+        <link refid="ml__perception_8h"/>
+      </node>
+      <node id="34">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_snapshot.h</label>
+        <link refid="ml__snapshot_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_world_camera.h</label>
+        <link refid="ml__world__camera_8h"/>
+      </node>
+      <node id="18">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_marker_tracking.h</label>
+        <link refid="ml__marker__tracking_8h"/>
+      </node>
+      <node id="17">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_input.h</label>
+        <link refid="ml__input_8h"/>
+      </node>
+      <node id="37">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_spatial_anchor.h</label>
+        <link refid="ml__spatial__anchor_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h</label>
+        <link refid="ml__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_graphics.h</label>
+        <link refid="ml__graphics_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_cea708_caption.h</label>
+        <link refid="ml__media__cea708__caption_8h"/>
+      </node>
+      <node id="10">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_gaze_recognition.h</label>
+        <link refid="ml__gaze__recognition_8h"/>
+      </node>
+      <node id="22">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_extractor.h</label>
+        <link refid="ml__media__extractor_8h"/>
+      </node>
+      <node id="28">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_webvtt.h</label>
+        <link refid="ml__media__webvtt_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_system_notification_manager.h</label>
+        <link refid="ml__system__notification__manager_8h"/>
+      </node>
+      <node id="16">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_headset_fit.h</label>
+        <link refid="ml__headset__fit_8h"/>
+      </node>
+      <node id="21">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_media_data_source.h</label>
+        <link refid="ml__media__data__source_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_depth_camera.h</label>
+        <link refid="ml__depth__camera_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_m_l_vec2f" prot="public">MLVec2f</innerclass>
+    <innerclass refid="struct_m_l_x_y_zf" prot="public">MLXYZf</innerclass>
+    <innerclass refid="struct_m_l_vec3f" prot="public">MLVec3f</innerclass>
+    <innerclass refid="struct_m_l_quaternionf" prot="public">MLQuaternionf</innerclass>
+    <innerclass refid="struct_m_l_transform" prot="public">MLTransform</innerclass>
+    <innerclass refid="struct_m_l_mat4f" prot="public">MLMat4f</innerclass>
+    <innerclass refid="struct_m_l_rectf" prot="public">MLRectf</innerclass>
+    <innerclass refid="struct_m_l_recti" prot="public">MLRecti</innerclass>
+    <innerclass refid="struct_m_l_color32" prot="public">MLColor32</innerclass>
+    <innerclass refid="struct_m_l_color4f" prot="public">MLColor4f</innerclass>
+    <innerclass refid="struct_m_l_u_u_i_d" prot="public">MLUUID</innerclass>
+    <innerclass refid="struct_m_l_pose" prot="public">MLPose</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___common_1ga67d3b5d29dc662557fcbac8374d33d08" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref></type>
+        <definition>typedef struct MLVec2f MLVec2f</definition>
+        <argsstring></argsstring>
+        <name>MLVec2f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>2D vector represented with X and Y floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="32" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga1964e94f8890563e8d6cac63745c7284" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_x_y_zf" kindref="compound">MLXYZf</ref></type>
+        <definition>typedef struct MLXYZf MLXYZf</definition>
+        <argsstring></argsstring>
+        <name>MLXYZf</name>
+        <briefdescription>
+<para>Internal structure used to simplify access of <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref>. Do not create this structure directly and always use <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref> instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga1c014020e01d180bd2f6db7f37dec1dd" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>typedef struct MLVec3f MLVec3f</definition>
+        <argsstring></argsstring>
+        <name>MLVec3f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3D vector represented with X, Y, and Z floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga20c316a3feecd024574336e3eca57b16" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>typedef struct MLQuaternionf MLQuaternionf</definition>
+        <argsstring></argsstring>
+        <name>MLQuaternionf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quaternion stored as X, Y, Z, W floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="77" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gad05a31a732ff8a83976f74b95f6b4b35" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref></type>
+        <definition>typedef struct MLTransform MLTransform</definition>
+        <argsstring></argsstring>
+        <name>MLTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information used to transform from one coordinate frame to another. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="86" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gab331a8be27dd872457d4770f83c74371" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref></type>
+        <definition>typedef struct MLMat4f MLMat4f</definition>
+        <argsstring></argsstring>
+        <name>MLMat4f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An arbitrary 4x4 matrix represented with an array of floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="91" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gaa587a28dab0b30bb3c035a0aa5ca2e58" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_rectf" kindref="compound">MLRectf</ref></type>
+        <definition>typedef struct MLRectf MLRectf</definition>
+        <argsstring></argsstring>
+        <name>MLRectf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 2D float rectangle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="99" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga18b97d751237dc2e043804182ce2f061" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_recti" kindref="compound">MLRecti</ref></type>
+        <definition>typedef struct MLRecti MLRecti</definition>
+        <argsstring></argsstring>
+        <name>MLRecti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A 2D integer rectangle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="107" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga8a22ec310eb4318b3bfd9c2acb50251b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_color32" kindref="compound">MLColor32</ref></type>
+        <definition>typedef struct MLColor32 MLColor32</definition>
+        <argsstring></argsstring>
+        <name>MLColor32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color represented by 4 unsigned bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="124" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1gafc2cf8865c13973627eeba2f89509463" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_color4f" kindref="compound">MLColor4f</ref></type>
+        <definition>typedef struct MLColor4f MLColor4f</definition>
+        <argsstring></argsstring>
+        <name>MLColor4f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color represented by 4 floats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="132" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga10c20fc88d4596f0b25bcbdaab7f266b" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref></type>
+        <definition>typedef struct MLUUID MLUUID</definition>
+        <argsstring></argsstring>
+        <name>MLUUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Universally Unique Identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="151" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga39ed24b20d4477f2d684e554df0e582f" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t MLTime</definition>
+        <argsstring></argsstring>
+        <name>MLTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="154" column="17" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___common_1ga40161f112438365bb34be01b501df0df" prot="public" static="no">
+        <type>struct <ref refid="struct_m_l_pose" kindref="compound">MLPose</ref></type>
+        <definition>typedef struct MLPose MLPose</definition>
+        <argsstring></argsstring>
+        <name>MLPose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Geometric relationship between two coordinate frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h" line="192" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>of<sp/>this<sp/>file<sp/>is<sp/>governed<sp/>by<sp/>the<sp/>Software<sp/>License<sp/>Agreement,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>located<sp/>here:<sp/>https://www.magicleap.com/software-license-agreement-ml2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Terms<sp/>and<sp/>conditions<sp/>applicable<sp/>to<sp/>third-party<sp/>materials<sp/>accompanying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>distribution<sp/>may<sp/>also<sp/>be<sp/>found<sp/>in<sp/>the<sp/>top-level<sp/>NOTICE<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>herein.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ml__api_8h" kindref="compound">ml_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="ml__api_8h_1a249f9ed45ae111c0884bfbb9980b5bad" kindref="member">ML_EXTERN_C_BEGIN</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_m_l_vec2f" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_vec2f" kindref="compound">MLVec2f</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="struct_m_l_vec2f_1a429b9ee3ee7e3881e54e89e04586a01b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_vec2f_1a429b9ee3ee7e3881e54e89e04586a01b" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="31" refid="struct_m_l_vec2f_1aff08b69fb6f2c4f015b4754b744d1f1f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_vec2f_1aff08b69fb6f2c4f015b4754b744d1f1f" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="32" refid="group___common_1ga67d3b5d29dc662557fcbac8374d33d08" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga67d3b5d29dc662557fcbac8374d33d08" kindref="member">MLVec2f</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="struct_m_l_x_y_zf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_x_y_zf" kindref="compound">MLXYZf</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="struct_m_l_x_y_zf_1a7dd26068ac2c0a5b8eb5933eec7b16bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_x_y_zf_1a7dd26068ac2c0a5b8eb5933eec7b16bd" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="40" refid="struct_m_l_x_y_zf_1abd1eddcbfbbe9b02735cf84db80dba45" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_x_y_zf_1abd1eddcbfbbe9b02735cf84db80dba45" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="41" refid="struct_m_l_x_y_zf_1a6f553fad19f5426bd5c39bd19d7f0b69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_x_y_zf_1a6f553fad19f5426bd5c39bd19d7f0b69" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="42" refid="group___common_1ga1964e94f8890563e8d6cac63745c7284" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga1964e94f8890563e8d6cac63745c7284" kindref="member">MLXYZf</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct_m_l_vec3f" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_m_l_x_y_zf" kindref="compound">MLXYZf</ref><sp/>xyz;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>values[3];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52" refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_vec3f_1ac2a60a35826abc484637e93c9028576a" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="53" refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_vec3f_1ae5d1763a7d1a62f52b4eaae218b5d68c" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="54" refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_vec3f_1a810faaf1533a9e8c7dd42494df4d914d" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59" refid="group___common_1ga1c014020e01d180bd2f6db7f37dec1dd" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga1c014020e01d180bd2f6db7f37dec1dd" kindref="member">MLVec3f</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="struct_m_l_quaternionf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>values[4];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69" refid="struct_m_l_quaternionf_1accb5636ecba68554da077c6d2b2deac2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_quaternionf_1accb5636ecba68554da077c6d2b2deac2" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="70" refid="struct_m_l_quaternionf_1a2c680cd07d5f84f37159ccae65f6394b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_quaternionf_1a2c680cd07d5f84f37159ccae65f6394b" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="71" refid="struct_m_l_quaternionf_1ac050856c4932f58a7a3538bf94e7a075" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_quaternionf_1ac050856c4932f58a7a3538bf94e7a075" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="72" refid="struct_m_l_quaternionf_1a8cb0c7e8fc16ca4fa4165e97c21d3391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_quaternionf_1a8cb0c7e8fc16ca4fa4165e97c21d3391" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="77" refid="group___common_1ga20c316a3feecd024574336e3eca57b16" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga20c316a3feecd024574336e3eca57b16" kindref="member">MLQuaternionf</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_m_l_transform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/>{</highlight></codeline>
+<codeline lineno="82" refid="struct_m_l_transform_1ac93bc7766f9aef685a7c48716b35ef4c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_quaternionf" kindref="compound">MLQuaternionf</ref><sp/><ref refid="struct_m_l_transform_1ac93bc7766f9aef685a7c48716b35ef4c" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="85" refid="struct_m_l_transform_1aa874e552831fffbae0582a5c3a518fb1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_transform_1aa874e552831fffbae0582a5c3a518fb1" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="86" refid="group___common_1gad05a31a732ff8a83976f74b95f6b4b35" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1gad05a31a732ff8a83976f74b95f6b4b35" kindref="member">MLTransform</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="struct_m_l_mat4f" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_mat4f" kindref="compound">MLMat4f</ref><sp/>{</highlight></codeline>
+<codeline lineno="90" refid="struct_m_l_mat4f_1ab21edb1645151500b316cf4891e9beb2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_mat4f_1ab21edb1645151500b316cf4891e9beb2" kindref="member">matrix_colmajor</ref>[16];</highlight></codeline>
+<codeline lineno="91" refid="group___common_1gab331a8be27dd872457d4770f83c74371" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1gab331a8be27dd872457d4770f83c74371" kindref="member">MLMat4f</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="struct_m_l_rectf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_rectf" kindref="compound">MLRectf</ref><sp/>{</highlight></codeline>
+<codeline lineno="95" refid="struct_m_l_rectf_1a16488dabdf2f94ca0064cb99b4b4a68e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_rectf_1a16488dabdf2f94ca0064cb99b4b4a68e" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="96" refid="struct_m_l_rectf_1a0f330536afbc8b7da91534f31aa1822e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_rectf_1a0f330536afbc8b7da91534f31aa1822e" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="97" refid="struct_m_l_rectf_1a0540cf34d71f4c02a4f5afc096f9a314" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_rectf_1a0540cf34d71f4c02a4f5afc096f9a314" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="98" refid="struct_m_l_rectf_1aff75580a0a2f1b88fc86db90d72fc4b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_rectf_1aff75580a0a2f1b88fc86db90d72fc4b3" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="99" refid="group___common_1gaa587a28dab0b30bb3c035a0aa5ca2e58" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1gaa587a28dab0b30bb3c035a0aa5ca2e58" kindref="member">MLRectf</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="struct_m_l_recti" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_recti" kindref="compound">MLRecti</ref><sp/>{</highlight></codeline>
+<codeline lineno="103" refid="struct_m_l_recti_1a321f874b9dcf4aaf5730e7fd558cd152" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="struct_m_l_recti_1a321f874b9dcf4aaf5730e7fd558cd152" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="104" refid="struct_m_l_recti_1a03e384dd4980736842f2fecb2fb013d5" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="struct_m_l_recti_1a03e384dd4980736842f2fecb2fb013d5" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="105" refid="struct_m_l_recti_1aefd757b5708587c4eea86bd0240d13d4" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="struct_m_l_recti_1aefd757b5708587c4eea86bd0240d13d4" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="106" refid="struct_m_l_recti_1a9e421da606b7bf48389b8646656ff2e7" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="struct_m_l_recti_1a9e421da606b7bf48389b8646656ff2e7" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="107" refid="group___common_1ga18b97d751237dc2e043804182ce2f061" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga18b97d751237dc2e043804182ce2f061" kindref="member">MLRecti</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="struct_m_l_color32" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_color32" kindref="compound">MLColor32</ref><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115" refid="struct_m_l_color32_1a9fae16ba2e024bbb00a2ac26db1179e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_color32_1a9fae16ba2e024bbb00a2ac26db1179e2" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="116" refid="struct_m_l_color32_1a2ce21318d6d2838f2ef1264538aee3f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_color32_1a2ce21318d6d2838f2ef1264538aee3f5" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="117" refid="struct_m_l_color32_1a12477cc1878336a79188559db4334919" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_color32_1a12477cc1878336a79188559db4334919" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="118" refid="struct_m_l_color32_1ae7123488a877b268acf5d13f7038d6df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_color32_1ae7123488a877b268acf5d13f7038d6df" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>rgba;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="124" refid="group___common_1ga8a22ec310eb4318b3bfd9c2acb50251b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga8a22ec310eb4318b3bfd9c2acb50251b" kindref="member">MLColor32</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="struct_m_l_color4f" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_color4f" kindref="compound">MLColor4f</ref><sp/>{</highlight></codeline>
+<codeline lineno="128" refid="struct_m_l_color4f_1a4f09e2fa8c63bb2761586d531c687019" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_color4f_1a4f09e2fa8c63bb2761586d531c687019" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="129" refid="struct_m_l_color4f_1afb10f135165983576b5cf46aa79bdc95" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_color4f_1afb10f135165983576b5cf46aa79bdc95" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="130" refid="struct_m_l_color4f_1a2a0a5f83ad734a5c3095ae54c8110732" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_color4f_1a2a0a5f83ad734a5c3095ae54c8110732" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="131" refid="struct_m_l_color4f_1a0fc47ff2f637657eb3334f1dc464b119" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_color4f_1a0fc47ff2f637657eb3334f1dc464b119" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="132" refid="group___common_1gafc2cf8865c13973627eeba2f89509463" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1gafc2cf8865c13973627eeba2f89509463" kindref="member">MLColor4f</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="struct_m_l_u_u_i_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_u_u_i_d" kindref="compound">MLUUID</ref><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140" refid="struct_m_l_u_u_i_d_1ab7528178d2eebb140f062c27cb6d1f2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_m_l_u_u_i_d_1ab7528178d2eebb140f062c27cb6d1f2d" kindref="member">time_low</ref>;</highlight></codeline>
+<codeline lineno="141" refid="struct_m_l_u_u_i_d_1a14d5b9831f7aecbc31e073c3f8db032e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_m_l_u_u_i_d_1a14d5b9831f7aecbc31e073c3f8db032e" kindref="member">time_mid</ref>;</highlight></codeline>
+<codeline lineno="142" refid="struct_m_l_u_u_i_d_1a84046460930d839738975d7eabcab498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_m_l_u_u_i_d_1a84046460930d839738975d7eabcab498" kindref="member">time_hi_and_version</ref>;</highlight></codeline>
+<codeline lineno="143" refid="struct_m_l_u_u_i_d_1a0ae02129ddcb949e3dbd7bd1230716ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_u_u_i_d_1a0ae02129ddcb949e3dbd7bd1230716ef" kindref="member">clock_seq_hi_and_reserved</ref>;</highlight></codeline>
+<codeline lineno="144" refid="struct_m_l_u_u_i_d_1a2f3eb99b284ee038b94a4bf1ad326976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_u_u_i_d_1a2f3eb99b284ee038b94a4bf1ad326976" kindref="member">clock_seq_low</ref>;</highlight></codeline>
+<codeline lineno="145" refid="struct_m_l_u_u_i_d_1abbc169fdbbf19daad462efba0aec02dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_l_u_u_i_d_1abbc169fdbbf19daad462efba0aec02dd" kindref="member">node</ref>[6];</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="group___media_player_1gad533563bd35b2dfd953ababa3e495685" kindref="member">data</ref>[16];</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="151" refid="group___common_1ga10c20fc88d4596f0b25bcbdaab7f266b" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga10c20fc88d4596f0b25bcbdaab7f266b" kindref="member">MLUUID</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="struct_m_l_pose" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_l_pose" kindref="compound">MLPose</ref><sp/>{</highlight></codeline>
+<codeline lineno="163" refid="struct_m_l_pose_1a1bd86eb3570939a2daadcbe1258bd654" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_transform" kindref="compound">MLTransform</ref><sp/><ref refid="struct_m_l_pose_1a1bd86eb3570939a2daadcbe1258bd654" kindref="member">transform</ref>;</highlight></codeline>
+<codeline lineno="167" refid="struct_m_l_pose_1a5217a1fc63b3c0f34b9a40b07103ffdc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_m_l_pose_1a5217a1fc63b3c0f34b9a40b07103ffdc" kindref="member">has_derivatives</ref>;</highlight></codeline>
+<codeline lineno="171" refid="struct_m_l_pose_1a7f5098b7f35c0023ebc080cded8017e8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_pose_1a7f5098b7f35c0023ebc080cded8017e8" kindref="member">linear_velocity</ref>;</highlight></codeline>
+<codeline lineno="175" refid="struct_m_l_pose_1aec47304b3fba7bd51c71e3c0b81ab408" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_pose_1aec47304b3fba7bd51c71e3c0b81ab408" kindref="member">linear_acceleration</ref>;</highlight></codeline>
+<codeline lineno="179" refid="struct_m_l_pose_1adb7631d3d00da844745159e2f2628fcf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_pose_1adb7631d3d00da844745159e2f2628fcf" kindref="member">angular_velocity</ref>;</highlight></codeline>
+<codeline lineno="183" refid="struct_m_l_pose_1addc39db5c1f0361fdb8a17833a594f95" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_m_l_vec3f" kindref="compound">MLVec3f</ref><sp/><ref refid="struct_m_l_pose_1addc39db5c1f0361fdb8a17833a594f95" kindref="member">angular_acceleration</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="struct_m_l_pose_1a16c21c29ca18bd80fde922bc229ff404" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_pose_1a16c21c29ca18bd80fde922bc229ff404" kindref="member">origin_time_ns</ref>;</highlight></codeline>
+<codeline lineno="191" refid="struct_m_l_pose_1abb30b43c4b9541b2039446f2e3783638" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___common_1ga39ed24b20d4477f2d684e554df0e582f" kindref="member">MLTime</ref><sp/><ref refid="struct_m_l_pose_1abb30b43c4b9541b2039446f2e3783638" kindref="member">predict_time_ns</ref>;</highlight></codeline>
+<codeline lineno="192" refid="group___common_1ga40161f112438365bb34be01b501df0df" refkind="member"><highlight class="normal">}<sp/><ref refid="group___common_1ga40161f112438365bb34be01b501df0df" kindref="member">MLPose</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><ref refid="ml__api_8h_1a5dc78cf1b9d37fb9a85796b47995e573" kindref="member">ML_EXTERN_C_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_types.h"/>
+  </compounddef>
+</doxygen>

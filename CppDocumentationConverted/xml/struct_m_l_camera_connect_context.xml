@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_m_l_camera_connect_context" kind="struct" language="C++" prot="public">
+    <compoundname>MLCameraConnectContext</compoundname>
+    <includes refid="ml__camera__v2_8h" local="no">ml_camera_v2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_l_camera_connect_context_1a54509a35c57b0dfa74563892aaae3f88" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MLCameraConnectContext::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version contains the version number for this structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="288" column="12" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_connect_context_1a19a8cc9f76a5364362371030efa20f14" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gac35323a7ef4d666d98a3b7453a01a1c1" kindref="member">MLCameraIdentifier</ref></type>
+        <definition>MLCameraIdentifier MLCameraConnectContext::cam_id</definition>
+        <argsstring></argsstring>
+        <name>cam_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Logical camera identifier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="290" column="22" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_connect_context_1ad97d899d7a7b28b6d8180f6c792dd5a8" prot="public" static="no" mutable="no">
+        <type><ref refid="group___camera_1gab32062a187f7eacddc4bf2bbd5ab271d" kindref="member">MLCameraConnectFlag</ref></type>
+        <definition>MLCameraConnectFlag MLCameraConnectContext::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Context in which the camera should operate in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="292" column="23" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_connect_context_1ad1fe3f13f5efed875fb1c2638b7a1bc5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MLCameraConnectContext::enable_video_stab</definition>
+        <argsstring></argsstring>
+        <name>enable_video_stab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/disable video stabilization. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="294" column="8" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_l_camera_connect_context_1a0fcfe01363efde8fe095793b6e38523a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_l_camera_m_r_connect_info" kindref="compound">MLCameraMRConnectInfo</ref></type>
+        <definition>MLCameraMRConnectInfo MLCameraConnectContext::mr_info</definition>
+        <argsstring></argsstring>
+        <name>mr_info</name>
+        <briefdescription>
+<para>MR capture connection settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This field can be ignored if MLCameraConnectFlag_MR or MLCameraConnectFlag_VirtualOnly flag is not used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="300" column="25" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A structure to encapsulate context for a CameraConnect Request. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MLCameraConnectContext</label>
+        <link refid="struct_m_l_camera_connect_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mr_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MLCameraMRConnectInfo</label>
+        <link refid="struct_m_l_camera_m_r_connect_info"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" line="286" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/sdk/native/stubs/build/install/public/include/ml_camera_v2.h" bodystart="286" bodyend="301"/>
+    <listofallmembers>
+      <member refid="struct_m_l_camera_connect_context_1a19a8cc9f76a5364362371030efa20f14" prot="public" virt="non-virtual"><scope>MLCameraConnectContext</scope><name>cam_id</name></member>
+      <member refid="struct_m_l_camera_connect_context_1ad1fe3f13f5efed875fb1c2638b7a1bc5" prot="public" virt="non-virtual"><scope>MLCameraConnectContext</scope><name>enable_video_stab</name></member>
+      <member refid="struct_m_l_camera_connect_context_1ad97d899d7a7b28b6d8180f6c792dd5a8" prot="public" virt="non-virtual"><scope>MLCameraConnectContext</scope><name>flags</name></member>
+      <member refid="struct_m_l_camera_connect_context_1a0fcfe01363efde8fe095793b6e38523a" prot="public" virt="non-virtual"><scope>MLCameraConnectContext</scope><name>mr_info</name></member>
+      <member refid="struct_m_l_camera_connect_context_1a54509a35c57b0dfa74563892aaae3f88" prot="public" virt="non-virtual"><scope>MLCameraConnectContext</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
