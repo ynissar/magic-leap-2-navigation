@@ -13,9 +13,14 @@
 
 #include "marker_detection.h"
 #include <app_framework/toolset.h>
+#include <cmath>
 
 // Uncomment to enable debug logging
 #define DEBUG_MODE
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 namespace ml {
 namespace marker_detection {
@@ -105,6 +110,21 @@ void MarkerDetection::pixelToCameraPlane(
     y = undistorted_points[0].y;
 }
 
+float MarkerDetection::expectedMarkerAreaPixels(
+    float depth_m,
+    float radius_mm,
+    float focal_x_px,
+    float focal_y_px)
+{
+    // A_px ≈ π·r²·fx·fy / d²
+    // r, d in mm; fx, fy in pixels (intrinsics). depth_m in meters -> d_mm = depth_m * 1000
+    if (depth_m <= 0.f) return 0.f;
+    float d_mm = depth_m * 1000.f;
+    float d2_mm2 = d_mm * d_mm;
+    float r2_mm2 = radius_mm * radius_mm;
+    return static_cast<float>(M_PI) * r2_mm2 * focal_x_px * focal_y_px / d2_mm2;
+}
+
 std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
     const cv::Mat& binary_image,
     const cv::Mat& intensity_image,
@@ -128,16 +148,7 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
     for (int i = 1; i < num_components; i++) {
         int area = stats.at<int32_t>(i, cv::CC_STAT_AREA);
 
-        // Filter by blob size
-        if (area < config.min_area_pixels || area > config.max_area_pixels) {
-#ifdef DEBUG_MODE
-            ALOGI("[DEBUG] Rejected blob %d: area=%d (out of range [%d, %d])",
-                  i, area, config.min_area_pixels, config.max_area_pixels);
-#endif
-            continue;
-        }
-
-        // Get centroid pixel coordinates
+        // Get centroid pixel coordinates first (needed for depth lookup and distance-based area)
         double u = centroids.at<double>(i, 0);
         double v = centroids.at<double>(i, 1);
 
@@ -157,6 +168,22 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
         if (depth_m <= 0.0f || std::isnan(depth_m) || std::isinf(depth_m)) {
 #ifdef DEBUG_MODE
             ALOGI("[DEBUG] Rejected blob %d: invalid depth=%.3f", i, depth_m);
+#endif
+            continue;
+        }
+
+        // Filter by blob area: A_px ≈ π·r²·fx·fy/d² (expected area from distance and radius)
+        float expected = expectedMarkerAreaPixels(
+            depth_m,
+            config.sphere_radius_mm,
+            intrinsics.focal_length.x,
+            intrinsics.focal_length.y);
+        float min_expected = config.expected_area_min_ratio * expected;
+        float max_expected = config.expected_area_max_ratio * expected;
+        if (expected <= 0.f || area < min_expected || area > max_expected) {
+#ifdef DEBUG_MODE
+            ALOGI("[DEBUG] Rejected blob %d: area=%d (expected %.1f, range [%.1f, %.1f])",
+                  i, area, expected, min_expected, max_expected);
 #endif
             continue;
         }

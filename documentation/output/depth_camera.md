@@ -117,7 +117,7 @@ API Level: 29
 - `MLDepthCameraFrameType frame_type` — Depth camera stream used for capturing this frame.
 - `MLTransform camera_pose` — Depth camera pose in the world co-ordinate system.
 - `MLDepthCameraIntrinsics intrinsics` — Camera intrinsic parameters.
-- `MLDepthCameraDepthImage  * depth_image` — Depth image.
+- `MLDepthCameraDepthImage  * depth_image` — Depth image. Depth is in **meters** (radial distance from the depth camera coordinate frame). Cast `data` to `float *`.
 - `MLDepthCameraConfidenceBuffer  * confidence` — Confidence score.
 - `MLDepthCameraDepthFlagsBuffer  * flags` — Depth flags.
 - `MLDepthCameraAmbientRawDepthImage  * ambient_raw_depth_image` — Ambient raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is off.

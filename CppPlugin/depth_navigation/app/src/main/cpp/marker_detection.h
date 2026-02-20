@@ -30,10 +30,13 @@ namespace marker_detection {
 struct MarkerDetectionConfig {
     float intensity_threshold_min = 2000.0f;  // TODO: Calibrate with actual data
     float intensity_threshold_max = 3500.0f;
-    int min_area_pixels = 10;
-    int max_area_pixels = 40;
     float sphere_radius_mm = 6.0f;  // TODO: Verify physical marker size
     bool use_ambient_subtraction = false;  // Enable raw - ambient
+
+    // Area filter: A_px ≈ π·r²·fx·fy/d²; accept if measured area in [min_ratio, max_ratio] * expected
+    // TODO: does this actually make sense?
+    float expected_area_min_ratio = 0.5f;
+    float expected_area_max_ratio = 2.0f;
 };
 
 /**
@@ -87,6 +90,17 @@ private:
         float u, float v,
         const MLDepthCameraIntrinsics& intrinsics,
         float& x, float& y
+    );
+
+    /**
+     * Expected marker area in pixels from A_px ≈ π·r²·fx·fy/d² (r,d in mm; fx,fy in pixels).
+     * Used when use_distance_based_area is true to filter blobs by expected size at given depth.
+     */
+    static float expectedMarkerAreaPixels(
+        float depth_m,
+        float radius_mm,
+        float focal_x_px,
+        float focal_y_px
     );
 
     /**
