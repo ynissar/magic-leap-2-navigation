@@ -14,3 +14,8 @@ captures/
 .cxx/
 local.properties
 intermediates/
+# CMake/FetchContent deps (e.g. json) - avoid large zips in repo
+**/build/_deps/
+# Android/CMake build outputs (do not track)
+**/app/build/
+**/app/src/main/cpp/build/
