@@ -458,31 +458,39 @@ private:
     for (auto& overlay : marker_overlay_nodes_) {
       overlay.reset();
     }
+    for (auto& overlay : rejected_overlay_nodes_) {
+      overlay.reset();
+    }
     glDeleteTextures(texture_id_.size(), texture_id_.data());
     texture_id_.fill(0);
   }
 
-  std::shared_ptr<Mesh> CreateMarkerPointMesh(
-      const std::vector<ml::marker_detection::DetectedMarker>& markers,
+  template <typename TMarker>
+  std::shared_ptr<Mesh> CreateMarkerPointMeshInternal(
+      const std::vector<TMarker>& markers,
       uint8_t quad_index) {
 
     std::vector<glm::vec3> vertices;
-    vertices.reserve(markers.size());
+    // Reserve enough space for all blob pixels across all markers.
+    size_t total_points = 0;
+    for (const auto& marker : markers) {
+      total_points += marker.pixels.size();
+    }
+    vertices.reserve(total_points);
 
     // Get texture dimensions for this quad
     float tex_width = static_cast<float>(texture_width_[quad_index]);
     float tex_height = static_cast<float>(texture_height_[quad_index]);
 
     for (const auto& marker : markers) {
-      // Convert pixel coords to normalized quad space [-0.5, 0.5]
-      float u_norm = (marker.centroid_pixel.x / tex_width) - 0.5f;
-      float v_norm = (marker.centroid_pixel.y / tex_height) - 0.5f;
+      for (const auto& p : marker.pixels) {
+        // Convert pixel coords to normalized quad space [-0.5, 0.5]
+        float u_norm = (p.x / tex_width) - 0.5f;
+        float v_norm = (p.y / tex_height) - 0.5f;
 
-      // Account for aspect ratio (from CreatePreviewNode line 499: negative vertical scale)
-      float aspect = tex_height / tex_width;
-      glm::vec3 local_pos(u_norm, v_norm, 0.001f);  // Small z-offset
-
-      vertices.push_back(local_pos);
+        glm::vec3 local_pos(u_norm, v_norm, 0.001f);  // Small z-offset
+        vertices.push_back(local_pos);
+      }
     }
 
     auto mesh = std::make_shared<Mesh>(Buffer::Category::Dynamic, GL_UNSIGNED_INT);
@@ -490,6 +498,18 @@ private:
     mesh->SetPrimitiveType(GL_POINTS);
     mesh->SetPointSize(marker_point_size_);
     return mesh;
+  }
+
+  std::shared_ptr<Mesh> CreateMarkerPointMesh(
+      const std::vector<ml::marker_detection::DetectedMarker>& markers,
+      uint8_t quad_index) {
+    return CreateMarkerPointMeshInternal(markers, quad_index);
+  }
+
+  std::shared_ptr<Mesh> CreateMarkerPointMesh(
+      const std::vector<ml::marker_detection::RejectedBlob>& markers,
+      uint8_t quad_index) {
+    return CreateMarkerPointMeshInternal(markers, quad_index);
   }
 
   void UpdateMarkerOverlay(uint8_t quad_index,
@@ -530,6 +550,48 @@ private:
       renderable->SetMaterial(marker_material);
       // Make sure it's added as child if not already
       parent_node->AddChild(marker_overlay_nodes_[quad_index]);
+    }
+  }
+
+  void UpdateRejectedOverlay(uint8_t quad_index,
+                             const std::vector<ml::marker_detection::RejectedBlob>& blobs) {
+    // Get parent node (first child of preview quad)
+    auto children = preview_nodes_[quad_index]->GetChildren();
+    if (children.empty()) {
+      return;
+    }
+    auto parent_node = children[0];
+
+    // Hide overlay if no blobs or overlay is disabled
+    if (blobs.empty() || !show_marker_overlay_) {
+      if (rejected_overlay_nodes_[quad_index]) {
+        parent_node->RemoveChild(rejected_overlay_nodes_[quad_index]);
+      }
+      return;
+    }
+
+    // Create marker mesh for rejected blobs
+    auto marker_mesh = CreateMarkerPointMesh(blobs, quad_index);
+
+    // Use a fixed green color for rejected blobs
+    glm::vec3 rejected_color(0.0f, 1.0f, 0.0f);
+    auto marker_material = std::make_shared<MarkerOverlayMaterial>(
+        rejected_color, 0.9f);
+
+    // Create or update node
+    if (!rejected_overlay_nodes_[quad_index]) {
+      auto renderable = std::make_shared<RenderableComponent>(
+          marker_mesh, marker_material);
+      rejected_overlay_nodes_[quad_index] = std::make_shared<Node>();
+      rejected_overlay_nodes_[quad_index]->AddComponent(renderable);
+      parent_node->AddChild(rejected_overlay_nodes_[quad_index]);
+    } else {
+      auto renderable = rejected_overlay_nodes_[quad_index]
+          ->GetComponent<RenderableComponent>();
+      renderable->SetMesh(marker_mesh);
+      renderable->SetMaterial(marker_material);
+      // Make sure it's added as child if not already
+      parent_node->AddChild(rejected_overlay_nodes_[quad_index]);
     }
   }
 
@@ -942,10 +1004,11 @@ private:
             config.intensity_threshold_max = 2000.0f;
             config.use_ambient_subtraction = false;  // Set to true to test ambient subtraction
 
+            rejected_blobs_.clear();
             detected_markers_ = ml::marker_detection::MarkerDetection::detectMarkerPositions(
                 raw_data, depth_data, ambient_data,
                 raw_buffer->width, raw_buffer->height,
-                intrinsics, config
+                intrinsics, config, &rejected_blobs_
             );
 
             ALOGI("Detected %zu IR markers", detected_markers_.size());
@@ -963,6 +1026,7 @@ private:
             const auto raw_idx = GetIndexFromCameraFlag(
                 MLDepthCameraFlags_RawDepthImage);
             UpdateMarkerOverlay(raw_idx, detected_markers_);
+            UpdateRejectedOverlay(raw_idx, rejected_blobs_);
           }
         }
         // ========== END MARKER DETECTION ==========
@@ -1057,6 +1121,8 @@ private:
   // Marker overlay visualization
   std::vector<ml::marker_detection::DetectedMarker> detected_markers_;
   CameraFlagsArray<std::shared_ptr<Node>> marker_overlay_nodes_;
+  std::vector<ml::marker_detection::RejectedBlob> rejected_blobs_;
+  CameraFlagsArray<std::shared_ptr<Node>> rejected_overlay_nodes_;
   bool show_marker_overlay_ = true;
   glm::vec3 marker_color_ = glm::vec3(1.0f, 0.0f, 0.0f);  // Red
   float marker_point_size_ = 15.0f;
