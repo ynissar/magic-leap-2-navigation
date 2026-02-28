@@ -30,7 +30,7 @@ namespace marker_detection {
 struct MarkerDetectionConfig {
     float intensity_threshold_min = 2000.0f;  // TODO: Calibrate with actual data
     float intensity_threshold_max = 3500.0f;
-    float sphere_radius_mm = 6.0f;  // TODO: Verify physical marker size
+    float sphere_radius_mm = 5.0f;  // TODO: Verify physical marker size
     bool use_ambient_subtraction = false;  // Enable raw - ambient
 
     // Area filter: A_px ≈ π·r²·fx·fy/d²; accept if measured area in [min_ratio, max_ratio] * expected
@@ -47,6 +47,20 @@ struct DetectedMarker {
     cv::Point2f centroid_pixel; // Pixel coordinates of marker centroid
     int area_pixels;            // Area of marker blob in pixels
     float intensity;            // Average intensity value
+    // All pixels belonging to this blob in image space (for visualization)
+    std::vector<cv::Point2f> pixels;
+};
+
+/**
+ * Represents a blob that was rejected by the marker classifier, used for
+ * visualization/debugging (2D information only).
+ */
+struct RejectedBlob {
+    cv::Point2f centroid_pixel; // Pixel coordinates of blob centroid
+    int area_pixels;            // Area of blob in pixels
+    float depth_m;              // Depth at centroid (meters), may be <= 0 for invalid depth
+    // All pixels belonging to this blob in image space (for visualization)
+    std::vector<cv::Point2f> pixels;
 };
 
 /**
@@ -64,6 +78,8 @@ public:
      * @param height Image height in pixels
      * @param intrinsics Camera intrinsic parameters
      * @param config Detection configuration parameters
+     * @param rejected_blobs Optional output vector that will be filled with
+     *        blobs rejected by the classifier (for visualization/debugging).
      * @return Vector of detected markers
      */
     static std::vector<DetectedMarker> detectMarkerPositions(
@@ -73,7 +89,8 @@ public:
         int width,
         int height,
         const MLDepthCameraIntrinsics& intrinsics,
-        const MarkerDetectionConfig& config = MarkerDetectionConfig()
+        const MarkerDetectionConfig& config = MarkerDetectionConfig(),
+        std::vector<RejectedBlob>* rejected_blobs = nullptr
     );
 
 private:
@@ -113,6 +130,8 @@ private:
      * @param height Image height
      * @param intrinsics Camera intrinsic parameters
      * @param config Detection configuration
+     * @param rejected_blobs Optional output vector that will be filled with
+     *        blobs rejected by the classifier (for visualization/debugging).
      * @return Vector of detected markers
      */
     static std::vector<DetectedMarker> findMarkerBlobs(
@@ -122,7 +141,8 @@ private:
         int width,
         int height,
         const MLDepthCameraIntrinsics& intrinsics,
-        const MarkerDetectionConfig& config
+        const MarkerDetectionConfig& config,
+        std::vector<RejectedBlob>* rejected_blobs
     );
 };
 

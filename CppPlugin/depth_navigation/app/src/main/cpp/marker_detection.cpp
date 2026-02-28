@@ -32,7 +32,8 @@ std::vector<DetectedMarker> MarkerDetection::detectMarkerPositions(
     int width,
     int height,
     const MLDepthCameraIntrinsics& intrinsics,
-    const MarkerDetectionConfig& config)
+    const MarkerDetectionConfig& config,
+    std::vector<RejectedBlob>* rejected_blobs)
 {
     // Convert to cv::Mat for easier processing
     cv::Mat raw_intensity(height, width, CV_32FC1, raw_intensity_buffer);
@@ -59,8 +60,13 @@ std::vector<DetectedMarker> MarkerDetection::detectMarkerPositions(
 #endif
 
     // Threshold to find bright spots
+    // First, apply a small Gaussian blur so that nearby high-intensity pixels
+    // merge into a smoother spot before thresholding.
+    cv::Mat blurred_intensity;
+    cv::GaussianBlur(intensity_image, blurred_intensity, cv::Size(5, 5), 0);
+
     cv::Mat binary_mask;
-    cv::inRange(intensity_image, config.intensity_threshold_min,
+    cv::inRange(blurred_intensity, config.intensity_threshold_min,
                 config.intensity_threshold_max, binary_mask);
 
 #ifdef DEBUG_MODE
@@ -73,10 +79,22 @@ std::vector<DetectedMarker> MarkerDetection::detectMarkerPositions(
     cv::Mat binary_8bit;
     binary_mask.convertTo(binary_8bit, CV_8UC1);
 
+    // Apply a small morphological closing to merge nearby bright pixels
+    // This helps when a single physical marker appears as several tiny islands.
+    {
+        // cv::Mat element = cv::getStructuringElement(
+        //     cv::MORPH_ELLIPSE, cv::Size(5, 5));
+        // cv::morphologyEx(binary_8bit, binary_8bit, cv::MORPH_CLOSE, element);
+#ifdef DEBUG_MODE
+        int bright_pixels_after = cv::countNonZero(binary_8bit);
+        ALOGI("[DEBUG] Bright pixels after morphology: %d", bright_pixels_after);
+#endif
+    }
+
     // Find blobs and convert to 3D
     return findMarkerBlobs(binary_8bit, intensity_image,
                           calibrated_depth_buffer, width, height,
-                          intrinsics, config);
+                          intrinsics, config, rejected_blobs);
 }
 
 void MarkerDetection::pixelToCameraPlane(
@@ -132,7 +150,8 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
     int width,
     int height,
     const MLDepthCameraIntrinsics& intrinsics,
-    const MarkerDetectionConfig& config)
+    const MarkerDetectionConfig& config,
+    std::vector<RejectedBlob>* rejected_blobs)
 {
     std::vector<DetectedMarker> markers;
 
@@ -148,6 +167,28 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
     for (int i = 1; i < num_components; i++) {
         int area = stats.at<int32_t>(i, cv::CC_STAT_AREA);
 
+        // Collect all pixels that belong to this connected component.
+        // We use the bounding box from stats to limit the search region.
+        int left   = stats.at<int32_t>(i, cv::CC_STAT_LEFT);
+        int top    = stats.at<int32_t>(i, cv::CC_STAT_TOP);
+        int widthB = stats.at<int32_t>(i, cv::CC_STAT_WIDTH);
+        int heightB= stats.at<int32_t>(i, cv::CC_STAT_HEIGHT);
+
+        int right  = left + widthB;
+        int bottom = top + heightB;
+
+        std::vector<cv::Point2f> blob_pixels;
+        blob_pixels.reserve(area);
+        for (int y = top; y < bottom; ++y) {
+            const int32_t* label_row = labels.ptr<int32_t>(y);
+            for (int x = left; x < right; ++x) {
+                if (label_row[x] == i) {
+                    blob_pixels.emplace_back(static_cast<float>(x),
+                                             static_cast<float>(y));
+                }
+            }
+        }
+
         // Get centroid pixel coordinates first (needed for depth lookup and distance-based area)
         double u = centroids.at<double>(i, 0);
         double v = centroids.at<double>(i, 1);
@@ -157,6 +198,14 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
 #ifdef DEBUG_MODE
             ALOGI("[DEBUG] Rejected blob %d: centroid out of bounds (%.1f, %.1f)", i, u, v);
 #endif
+            if (rejected_blobs) {
+                RejectedBlob blob;
+                blob.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
+                blob.area_pixels = area;
+                blob.depth_m = 0.0f;
+                blob.pixels = std::move(blob_pixels);
+                rejected_blobs->push_back(blob);
+            }
             continue;
         }
 
@@ -169,6 +218,14 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
 #ifdef DEBUG_MODE
             ALOGI("[DEBUG] Rejected blob %d: invalid depth=%.3f", i, depth_m);
 #endif
+            if (rejected_blobs) {
+                RejectedBlob blob;
+                blob.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
+                blob.area_pixels = area;
+                blob.depth_m = depth_m;
+                blob.pixels = std::move(blob_pixels);
+                rejected_blobs->push_back(blob);
+            }
             continue;
         }
 
@@ -182,15 +239,23 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
         float max_expected = config.expected_area_max_ratio * expected;
         if (expected <= 0.f || area < min_expected || area > max_expected) {
 #ifdef DEBUG_MODE
-            ALOGI("[DEBUG] Rejected blob %d: area=%d (expected %.1f, range [%.1f, %.1f])",
-                  i, area, expected, min_expected, max_expected);
+            ALOGI("[DEBUG] Rejected blob %d: area=%d (expected %.1f, range [%.1f, %.1f]), depth=%.3fm",
+                  i, area, expected, min_expected, max_expected, depth_m);
 #endif
+            if (rejected_blobs) {
+                RejectedBlob blob;
+                blob.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
+                blob.area_pixels = area;
+                blob.depth_m = depth_m;
+                blob.pixels = std::move(blob_pixels);
+                rejected_blobs->push_back(blob);
+            }
             continue;
         }
 
 #ifdef DEBUG_MODE
-        ALOGI("[DEBUG] Blob %d: centroid=(%.1f,%.1f) depth=%.3fm area=%d",
-              i, u, v, depth_m, area);
+        ALOGI("[DEBUG] Blob %d: centroid=(%.1f,%.1f) depth=%.3fm area=%d (expected %.1f, range [%.1f, %.1f]), depth= %.3fm",
+              i, u, v, depth_m, area, expected, min_expected, max_expected, depth_m);
 #endif
 
         // Convert pixel to camera plane
@@ -213,12 +278,58 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
         float centroid_intensity = intensity_image.at<float>(static_cast<int>(v),
                                                              static_cast<int>(u));
 
+#ifdef DEBUG_MODE
+        // Analyze intensity distribution within the blob (inner/mid/outer regions)
+        // Approximate blob radius from its area
+        float radius_est = std::sqrt(static_cast<float>(area) / static_cast<float>(M_PI));
+        float r_inner = radius_est * 0.3f; // core
+        float r_mid   = radius_est * 0.7f; // mid region
+
+        double sum_inner = 0.0, sum_mid = 0.0, sum_outer = 0.0;
+        int count_inner = 0, count_mid = 0, count_outer = 0;
+
+        for (int y = top; y < bottom; ++y) {
+            for (int x = left; x < right; ++x) {
+                if (labels.at<int32_t>(y, x) != i) {
+                    continue; // only consider pixels belonging to this blob
+                }
+
+                float dx = static_cast<float>(x) - static_cast<float>(u);
+                float dy = static_cast<float>(y) - static_cast<float>(v);
+                float r = std::sqrt(dx * dx + dy * dy);
+
+                float I = intensity_image.at<float>(y, x);
+
+                if (r <= r_inner) {
+                    sum_inner += I;
+                    ++count_inner;
+                } else if (r <= r_mid) {
+                    sum_mid += I;
+                    ++count_mid;
+                } else {
+                    sum_outer += I;
+                    ++count_outer;
+                }
+            }
+        }
+
+        double mean_inner = count_inner > 0 ? (sum_inner / count_inner) : 0.0;
+        double mean_mid   = count_mid   > 0 ? (sum_mid   / count_mid)   : 0.0;
+        double mean_outer = count_outer > 0 ? (sum_outer / count_outer) : 0.0;
+
+        ALOGI("[DEBUG] Blob %d intensity profile: centroid=%.3f inner=%.3f mid=%.3f outer=%.3f "
+              "(counts: inner=%d, mid=%d, outer=%d, radius_est=%.2f)",
+              i, centroid_intensity, mean_inner, mean_mid, mean_outer,
+              count_inner, count_mid, count_outer, radius_est);
+#endif
+
         // Create marker
         DetectedMarker marker;
         marker.position_camera = position_3d;  // In meters
         marker.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
         marker.area_pixels = area;
         marker.intensity = centroid_intensity;
+        marker.pixels = std::move(blob_pixels);
 
         markers.push_back(marker);
     }
