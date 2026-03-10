@@ -17,6 +17,7 @@
 #include "depth_material.h"
 #include "marker_detection.h"
 #include "marker_overlay_material.h"
+#include "tool_definition.h"
 
 #include <time.h>
 #include <cstdlib>
@@ -181,6 +182,14 @@ public:
     const Pose head_pose = head_pose_opt.value_or(GetRoot()->GetWorldPose()).HorizontalRotationOnly();
     const Pose gui_offset(glm::vec3(.25f, 0.f, -2.f));  //> Make gui not obscure the preview too much
     GetGui().Place(head_pose + gui_offset);
+
+    // Register a test tool: equilateral triangle, 50mm sides, 5mm sphere radius.
+    // Replace these positions with the actual measured geometry of your physical tool.
+    cv::Mat3f test_spheres(3, 1);
+    test_spheres.at<cv::Vec3f>(0, 0) = cv::Vec3f(  0.f,    0.f,   0.f);
+    test_spheres.at<cv::Vec3f>(1, 0) = cv::Vec3f( 50.f,    0.f,   0.f);
+    test_spheres.at<cv::Vec3f>(2, 0) = cv::Vec3f( 25.f,   43.3f,  0.f);
+    tool_tracker_.AddTool(test_spheres, /*radius_mm=*/5.f, "test_tool", /*min_visible=*/3);
   }
 
   void OnResume() override {
@@ -308,6 +317,21 @@ private:
                         marker.position_camera[2],
                         marker.area_pixels);
           }
+        }
+      }
+      ImGui::Separator();
+      ImGui::NewLine();
+      ImGui::Text("Tool Tracking");
+      {
+        cv::Mat tf = tool_tracker_.GetToolTransform("test_tool");
+        bool valid = tf.at<float>(7, 0) == 1.f;
+        ImGui::Text("test_tool: %s", valid ? "TRACKED" : "not found");
+        if (valid) {
+          ImGui::Text("  pos (%.3f, %.3f, %.3f) m",
+                      tf.at<float>(0, 0), tf.at<float>(1, 0), tf.at<float>(2, 0));
+          ImGui::Text("  rot (%.3f, %.3f, %.3f, %.3f)",
+                      tf.at<float>(3, 0), tf.at<float>(4, 0),
+                      tf.at<float>(5, 0), tf.at<float>(6, 0));
         }
       }
       ImGui::Separator();
@@ -1027,6 +1051,9 @@ private:
                 MLDepthCameraFlags_RawDepthImage);
             UpdateMarkerOverlay(raw_idx, detected_markers_);
             UpdateRejectedOverlay(raw_idx, rejected_blobs_);
+
+            // Run tool tracking on detected markers
+            tool_tracker_.ProcessFrame(detected_markers_);
           }
         }
         // ========== END MARKER DETECTION ==========
@@ -1117,6 +1144,9 @@ private:
   std::array<std::vector<MLDepthCameraStreamCapability>, MLDepthCameraFrameType_Count> stream_caps_;
   std::array<std::vector<const char*>, MLDepthCameraFrameType_Count> frame_rates_;
   int8_t cap_idx_;
+
+  // Tool tracking
+  ml::tool_tracking::ToolTracker tool_tracker_;
 
   // Marker overlay visualization
   std::vector<ml::marker_detection::DetectedMarker> detected_markers_;
