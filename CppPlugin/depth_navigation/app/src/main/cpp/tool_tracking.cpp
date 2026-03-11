@@ -270,7 +270,11 @@ cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
         p.at<float>(i, 0) = sp[0]; p.at<float>(i, 1) = sp[1]; p.at<float>(i, 2) = sp[2];
         p_center += sp;
 
-        cv::Vec3f sq = frame_spheres_mm.at<cv::Vec3f>(sphere_ids[i], 0);
+        // Apply per-sphere Kalman filter before feeding into Kabsch.
+        // tnid tracks the tool-node index (skipping occluded nodes), matching
+        // the sphere_kalman_filters vector layout exactly.
+        cv::Vec3f sq_raw = frame_spheres_mm.at<cv::Vec3f>(sphere_ids[i], 0);
+        cv::Vec3f sq     = tool.sphere_kalman_filters[tnid].FilterData(sq_raw);
         q.at<float>(i, 0) = sq[0]; q.at<float>(i, 1) = sq[1]; q.at<float>(i, 2) = sq[2];
         q_center += sq;
         ++tnid;

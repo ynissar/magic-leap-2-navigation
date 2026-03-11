@@ -61,6 +61,13 @@ bool ToolTracker::AddTool(cv::Mat3f spheres_mm, float radius_mm,
     tool.map           = map.clone();
     tool.ordered_sides = sides;
 
+    // Initialise one Kalman filter per sphere using the tool's noise parameters.
+    for (int i = 0; i < tool.num_spheres; ++i)
+        tool.sphere_kalman_filters.emplace_back(
+            tool.kalman_measurement_noise,
+            tool.kalman_position_noise,
+            tool.kalman_velocity_noise);
+
     tool_index_.insert({identifier, static_cast<int>(tools_.size())});
     tools_.push_back(tool);
 

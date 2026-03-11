@@ -5,6 +5,7 @@
 #include <map>
 #include <opencv2/opencv.hpp>
 #include "marker_detection.h"
+#include "tool_kalman_filter.h"
 
 namespace ml {
 namespace tool_tracking {
@@ -56,6 +57,13 @@ struct TrackedTool {
 
     float lowpass_factor_position{0.6f}; // blend factor toward new position (0=frozen, 1=raw)
     float lowpass_factor_rotation{0.3f}; // blend factor toward new rotation (slerp t)
+
+    // Per-sphere Kalman filters — one per tool node, indexed the same way as spheres_xyz_mm.
+    // Noise parameters can be tuned per-tool before calling AddTool.
+    std::vector<ToolKalmanFilter> sphere_kalman_filters;
+    float kalman_measurement_noise{1.f};
+    float kalman_position_noise{1e-4f};
+    float kalman_velocity_noise{3.f};
 
     bool tracking_finished{true};
 };
