@@ -29,6 +29,16 @@ public:
         m_filter = cv::KalmanFilter(6, 3, 0, CV_32F);
     }
 
+    // Reset the filter with new noise parameters.
+    // The filter will re-initialise lazily on the next FilterData() call.
+    void Reset(float measurementNoise, float positionNoise, float velocityNoise) {
+        m_fMeasurementNoise = measurementNoise;
+        m_fPositionNoise    = positionNoise;
+        m_fVelocityNoise    = velocityNoise;
+        m_bInitialized      = false;
+        m_filter = cv::KalmanFilter(6, 3, 0, CV_32F);
+    }
+
     // Predict → correct with the given measurement.
     // On the very first call the filter is lazily initialised to the observed position.
     cv::Vec3f FilterData(cv::Vec3f value) {

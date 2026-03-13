@@ -334,6 +334,52 @@ private:
                       tf.at<float>(5, 0), tf.at<float>(6, 0));
         }
       }
+
+      ImGui::Separator();
+      ImGui::NewLine();
+      if (ImGui::CollapsingHeader("Tuning")) {
+
+        // ── Marker Detection ──────────────────────────────────────────────
+        if (ImGui::TreeNode("Marker Detection")) {
+          ImGui::SliderFloat("Intensity min", &tune_intensity_min_, 0.f, 5000.f);
+          ImGui::SliderFloat("Intensity max", &tune_intensity_max_, 0.f, 5000.f);
+          ImGui::SliderFloat("Sphere radius (mm)", &tune_sphere_radius_mm_, 1.f, 20.f);
+          ImGui::Checkbox("Ambient subtraction", &tune_ambient_subtraction_);
+          ImGui::SliderFloat("Area min ratio", &tune_area_min_ratio_, 0.01f, 1.f);
+          ImGui::SliderFloat("Area max ratio", &tune_area_max_ratio_, 1.f, 10.f);
+          ImGui::TreePop();
+        }
+
+        // ── Graph Search ──────────────────────────────────────────────────
+        if (ImGui::TreeNode("Graph Search Tolerances")) {
+          if (ImGui::SliderFloat("Side tol (mm)", &tune_tolerance_side_, 0.5f, 20.f))
+            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_);
+          if (ImGui::SliderFloat("Avg tol (mm)", &tune_tolerance_avg_, 0.5f, 20.f))
+            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_);
+          ImGui::TreePop();
+        }
+
+        // ── Pose Smoothing ────────────────────────────────────────────────
+        if (ImGui::TreeNode("Pose Smoothing")) {
+          if (ImGui::SliderFloat("Position alpha", &tune_lowpass_position_, 0.f, 1.f))
+            tool_tracker_.SetLowpassFactors(tune_lowpass_position_, tune_lowpass_rotation_);
+          if (ImGui::SliderFloat("Rotation alpha", &tune_lowpass_rotation_, 0.f, 1.f))
+            tool_tracker_.SetLowpassFactors(tune_lowpass_position_, tune_lowpass_rotation_);
+          ImGui::TreePop();
+        }
+
+        // ── Kalman Filter ─────────────────────────────────────────────────
+        if (ImGui::TreeNode("Kalman Filter")) {
+          bool kalman_changed = false;
+          kalman_changed |= ImGui::SliderFloat("Measurement noise", &tune_kalman_measurement_, 0.01f, 10.f);
+          kalman_changed |= ImGui::SliderFloat("Position noise",    &tune_kalman_position_,    1e-6f, 1.f, "%.6f", ImGuiSliderFlags_Logarithmic);
+          kalman_changed |= ImGui::SliderFloat("Velocity noise",    &tune_kalman_velocity_,    0.01f, 50.f);
+          if (kalman_changed)
+            tool_tracker_.ResetKalmanFilters(tune_kalman_measurement_, tune_kalman_position_, tune_kalman_velocity_);
+          ImGui::TreePop();
+        }
+      }
+
       ImGui::Separator();
       ImGui::NewLine();
 
@@ -1024,9 +1070,12 @@ private:
             const auto& intrinsics = depth_camera_data_.frames[i].intrinsics;
 
             ml::marker_detection::MarkerDetectionConfig config;
-            config.intensity_threshold_min = 1280.0f;
-            config.intensity_threshold_max = 2000.0f;
-            config.use_ambient_subtraction = false;  // Set to true to test ambient subtraction
+            config.intensity_threshold_min = tune_intensity_min_;
+            config.intensity_threshold_max = tune_intensity_max_;
+            config.sphere_radius_mm        = tune_sphere_radius_mm_;
+            config.use_ambient_subtraction = tune_ambient_subtraction_;
+            config.expected_area_min_ratio = tune_area_min_ratio_;
+            config.expected_area_max_ratio = tune_area_max_ratio_;
 
             rejected_blobs_.clear();
             detected_markers_ = ml::marker_detection::MarkerDetection::detectMarkerPositions(
@@ -1156,6 +1205,28 @@ private:
   bool show_marker_overlay_ = true;
   glm::vec3 marker_color_ = glm::vec3(1.0f, 0.0f, 0.0f);  // Red
   float marker_point_size_ = 15.0f;
+
+  // ── Runtime-tunable parameters ──────────────────────────────────────────
+  // Marker detection
+  float tune_intensity_min_         = 1280.f;
+  float tune_intensity_max_         = 2000.f;
+  float tune_sphere_radius_mm_      = 5.f;
+  bool  tune_ambient_subtraction_   = false;
+  float tune_area_min_ratio_        = 0.5f;
+  float tune_area_max_ratio_        = 2.0f;
+
+  // Tool tracking — graph search
+  float tune_tolerance_side_        = 4.f;
+  float tune_tolerance_avg_         = 4.f;
+
+  // Tool tracking — pose smoothing
+  float tune_lowpass_position_      = 0.6f;
+  float tune_lowpass_rotation_      = 0.3f;
+
+  // Tool tracking — Kalman filter
+  float tune_kalman_measurement_    = 1.f;
+  float tune_kalman_position_       = 1e-4f;
+  float tune_kalman_velocity_       = 3.f;
 };
 
 void android_main(struct android_app *state) {

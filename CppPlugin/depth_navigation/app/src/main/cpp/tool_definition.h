@@ -98,6 +98,26 @@ public:
         tolerance_avg_  = avg_mm;
     }
 
+    // Set low-pass smoothing factors on all registered tools.
+    void SetLowpassFactors(float position, float rotation) {
+        for (auto& t : tools_) {
+            t.lowpass_factor_position = position;
+            t.lowpass_factor_rotation = rotation;
+        }
+    }
+
+    // Reset all per-sphere Kalman filters with new noise parameters.
+    // Causes a one-frame re-initialisation glitch — acceptable for tuning.
+    void ResetKalmanFilters(float measurement, float position, float velocity) {
+        for (auto& t : tools_) {
+            t.kalman_measurement_noise = measurement;
+            t.kalman_position_noise    = position;
+            t.kalman_velocity_noise    = velocity;
+            for (auto& kf : t.sphere_kalman_filters)
+                kf.Reset(measurement, position, velocity);
+        }
+    }
+
 private:
     // Build the upper-triangular pairwise-distance map and a sorted side list.
     void ConstructMap(const cv::Mat3f& spheres_mm, int n,
