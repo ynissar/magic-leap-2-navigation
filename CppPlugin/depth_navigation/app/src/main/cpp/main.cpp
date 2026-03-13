@@ -20,6 +20,7 @@
 #include "tool_definition.h"
 
 #include <time.h>
+#include <cfloat>
 #include <cstdlib>
 #include <future>
 
@@ -207,13 +208,7 @@ public:
     const Pose gui_offset(glm::vec3(.25f, 0.f, -2.f));  //> Make gui not obscure the preview too much
     GetGui().Place(head_pose + gui_offset);
 
-    // Register a test tool: equilateral triangle, 50mm sides, 5mm sphere radius.
-    // Replace these positions with the actual measured geometry of your physical tool.
-    cv::Mat3f test_spheres(3, 1);
-    test_spheres.at<cv::Vec3f>(0, 0) = cv::Vec3f(  0.f,    0.f,   0.f);
-    test_spheres.at<cv::Vec3f>(1, 0) = cv::Vec3f( 50.f,    0.f,   0.f);
-    test_spheres.at<cv::Vec3f>(2, 0) = cv::Vec3f( 25.f,   43.3f,  0.f);
-    tool_tracker_.AddTool(test_spheres, /*radius_mm=*/5.f, "test_tool", /*min_visible=*/3);
+    // Tools are now captured at runtime via the Tool Capture GUI panel.
   }
 
   void OnResume() override {
@@ -347,15 +342,83 @@ private:
       ImGui::NewLine();
       ImGui::Text("Tool Tracking");
       {
-        cv::Mat tf = tool_tracker_.GetToolTransform("test_tool");
-        bool valid = tf.at<float>(7, 0) == 1.f;
-        ImGui::Text("test_tool: %s", valid ? "TRACKED" : "not found");
-        if (valid) {
-          ImGui::Text("  pos (%.3f, %.3f, %.3f) m  [world]",
-                      tf.at<float>(0, 0), tf.at<float>(1, 0), tf.at<float>(2, 0));
-          ImGui::Text("  rot (%.3f, %.3f, %.3f, %.3f)",
-                      tf.at<float>(3, 0), tf.at<float>(4, 0),
-                      tf.at<float>(5, 0), tf.at<float>(6, 0));
+        auto tool_names = tool_tracker_.GetToolNames();
+        if (tool_names.empty()) {
+          ImGui::TextDisabled("No tools registered. Use Tool Capture below.");
+        }
+        for (const auto& name : tool_names) {
+          cv::Mat tf = tool_tracker_.GetToolTransform(name);
+          bool valid = tf.at<float>(7, 0) == 1.f;
+          ImGui::Text("%s: %s", name.c_str(), valid ? "TRACKED" : "not found");
+          if (valid) {
+            ImGui::Text("  pos (%.3f, %.3f, %.3f) m  [world]",
+                        tf.at<float>(0, 0), tf.at<float>(1, 0), tf.at<float>(2, 0));
+            ImGui::Text("  rot (%.3f, %.3f, %.3f, %.3f)",
+                        tf.at<float>(3, 0), tf.at<float>(4, 0),
+                        tf.at<float>(5, 0), tf.at<float>(6, 0));
+          }
+        }
+      }
+
+      ImGui::Separator();
+      ImGui::NewLine();
+      if (ImGui::CollapsingHeader("Tool Capture")) {
+        if (capture_state_ == CaptureState::Idle) {
+          ImGui::InputText("Tool name", capture_tool_name_, sizeof(capture_tool_name_));
+          ImGui::SliderInt("Expected spheres", &capture_expected_spheres_, 3, 10);
+          ImGui::SliderInt("Frames to average", &capture_num_frames_, 10, 120);
+          ImGui::SliderFloat("Sphere radius (mm)", &capture_sphere_radius_mm_, 1.f, 20.f);
+          ImGui::TextDisabled("Hold tool in view, then press Start.");
+          if (ImGui::Button("Start Capture")) {
+            capture_state_ = CaptureState::Capturing;
+            capture_frames_collected_ = 0;
+            capture_frames_skipped_ = 0;
+            capture_frame_positions_.clear();
+            capture_status_msg_.clear();
+          }
+        } else if (capture_state_ == CaptureState::Capturing) {
+          float progress = (float)capture_frames_collected_ / (float)capture_num_frames_;
+          ImGui::ProgressBar(progress);
+          ImGui::Text("Collected: %d / %d   Skipped: %d",
+                      capture_frames_collected_, capture_num_frames_, capture_frames_skipped_);
+          int cur_detect = (int)detected_markers_.size();
+          if (cur_detect != capture_expected_spheres_) {
+            ImGui::TextColored(ImVec4(1.f, 1.f, 0.f, 1.f),
+                               "Detected %d markers (expected %d)", cur_detect, capture_expected_spheres_);
+          } else {
+            ImGui::Text("Detected %d markers (OK)", cur_detect);
+          }
+          if (ImGui::Button("Cancel")) {
+            capture_state_ = CaptureState::Idle;
+          }
+        } else if (capture_state_ == CaptureState::Done) {
+          ImGui::TextColored(ImVec4(0.f, 1.f, 0.f, 1.f), "%s", capture_status_msg_.c_str());
+          if (ImGui::CollapsingHeader("Captured Positions")) {
+            int N = capture_result_mm_.rows;
+            for (int si = 0; si < N; ++si) {
+              cv::Vec3f p = capture_result_mm_.at<cv::Vec3f>(si, 0);
+              ImGui::Text("  [%d] (%.2f, %.2f, %.2f) mm", si, p[0], p[1], p[2]);
+            }
+            ImGui::Text("Pairwise distances:");
+            for (int si = 0; si < N; ++si) {
+              for (int sj = si + 1; sj < N; ++sj) {
+                cv::Vec3f diff = capture_result_mm_.at<cv::Vec3f>(si, 0) -
+                                 capture_result_mm_.at<cv::Vec3f>(sj, 0);
+                float dist = std::sqrt(diff[0]*diff[0] + diff[1]*diff[1] + diff[2]*diff[2]);
+                ImGui::Text("    %d-%d: %.2f mm", si, sj, dist);
+              }
+            }
+          }
+          if (ImGui::Button("Register Tool")) {
+            tool_tracker_.RemoveTool(capture_tool_name_);
+            tool_tracker_.AddTool(capture_result_mm_, capture_sphere_radius_mm_,
+                                  capture_tool_name_, std::max(3, capture_expected_spheres_ - 1));
+            capture_state_ = CaptureState::Idle;
+          }
+          ImGui::SameLine();
+          if (ImGui::Button("Discard")) {
+            capture_state_ = CaptureState::Idle;
+          }
         }
       }
 
@@ -1125,6 +1188,41 @@ private:
             UpdateMarkerOverlay(raw_idx, detected_markers_);
             UpdateRejectedOverlay(raw_idx, rejected_blobs_);
 
+            // ── Tool Capture: accumulate frames if capturing ──
+            if (capture_state_ == CaptureState::Capturing) {
+                if ((int)detected_markers_.size() == capture_expected_spheres_) {
+                    std::vector<cv::Vec3f> frame_pos(capture_expected_spheres_);
+                    for (int ci = 0; ci < capture_expected_spheres_; ++ci)
+                        frame_pos[ci] = detected_markers_[ci].position_camera;
+
+                    // Nearest-neighbor reorder against previous frame for correspondence
+                    if (!capture_frame_positions_.empty()) {
+                        const auto& prev = capture_frame_positions_.back();
+                        std::vector<cv::Vec3f> reordered(capture_expected_spheres_);
+                        std::vector<bool> used(capture_expected_spheres_, false);
+                        for (int ci = 0; ci < capture_expected_spheres_; ++ci) {
+                            float best = FLT_MAX; int best_j = 0;
+                            for (int cj = 0; cj < capture_expected_spheres_; ++cj) {
+                                if (used[cj]) continue;
+                                float dd = (float)cv::norm(prev[ci] - frame_pos[cj]);
+                                if (dd < best) { best = dd; best_j = cj; }
+                            }
+                            reordered[ci] = frame_pos[best_j];
+                            used[best_j] = true;
+                        }
+                        frame_pos = reordered;
+                    }
+
+                    capture_frame_positions_.push_back(frame_pos);
+                    capture_frames_collected_++;
+
+                    if (capture_frames_collected_ >= capture_num_frames_)
+                        FinalizeCapture();
+                } else {
+                    capture_frames_skipped_++;
+                }
+            }
+
             // Run tool tracking on detected markers (world-space output)
             cv::Mat cam_to_world = MLTransformToCvMat(
                 depth_camera_data_.frames[i].camera_pose);
@@ -1253,6 +1351,116 @@ private:
   float tune_kalman_measurement_    = 1.f;
   float tune_kalman_position_       = 1e-4f;
   float tune_kalman_velocity_       = 3.f;
+
+  // ── Tool Capture ────────────────────────────────────────────────────────
+  enum class CaptureState { Idle, Capturing, Done };
+  CaptureState capture_state_ = CaptureState::Idle;
+
+  // User-configurable (shown in GUI before capture)
+  int   capture_expected_spheres_ = 4;
+  int   capture_num_frames_       = 30;
+  float capture_sphere_radius_mm_ = 5.f;
+  char  capture_tool_name_[64]    = "captured_tool";
+
+  // Accumulation
+  int   capture_frames_collected_ = 0;
+  int   capture_frames_skipped_   = 0;
+  std::vector<std::vector<cv::Vec3f>> capture_frame_positions_;
+
+  // Result (populated when state → Done)
+  cv::Mat3f     capture_result_mm_;
+  std::string   capture_status_msg_;
+  float         capture_max_std_mm_ = 0.f;
+
+  // ── Capture helpers ─────────────────────────────────────────────────────
+
+  // Align src points to dst points using Kabsch (rigid body, no scale).
+  // Both are N-element vectors of Vec3f (metres). Returns aligned src.
+  std::vector<cv::Vec3f> AlignFrameToReference(
+      const std::vector<cv::Vec3f>& src,
+      const std::vector<cv::Vec3f>& dst)
+  {
+      int N = (int)src.size();
+      cv::Vec3f c_src(0,0,0), c_dst(0,0,0);
+      for (int i = 0; i < N; ++i) { c_src += src[i]; c_dst += dst[i]; }
+      c_src /= (float)N; c_dst /= (float)N;
+
+      cv::Mat P(N, 3, CV_32F), Q(N, 3, CV_32F);
+      for (int i = 0; i < N; ++i) {
+          cv::Vec3f ps = src[i] - c_src, pd = dst[i] - c_dst;
+          P.at<float>(i,0)=ps[0]; P.at<float>(i,1)=ps[1]; P.at<float>(i,2)=ps[2];
+          Q.at<float>(i,0)=pd[0]; Q.at<float>(i,1)=pd[1]; Q.at<float>(i,2)=pd[2];
+      }
+
+      cv::Mat H = P.t() * Q;
+      cv::SVD svd(H);
+      double d = cv::determinant(svd.vt.t() * svd.u.t());
+      cv::Mat I = cv::Mat::eye(3, 3, CV_32F);
+      I.at<float>(2,2) = (d > 0) ? 1.f : -1.f;
+      cv::Mat R = svd.vt.t() * I * svd.u.t();
+
+      std::vector<cv::Vec3f> out(N);
+      for (int i = 0; i < N; ++i) {
+          cv::Vec3f ps = src[i] - c_src;
+          cv::Mat pm = (cv::Mat_<float>(3,1) << ps[0], ps[1], ps[2]);
+          cv::Mat rotated = R * pm;
+          out[i] = cv::Vec3f(rotated.at<float>(0), rotated.at<float>(1),
+                              rotated.at<float>(2)) + c_dst;
+      }
+      return out;
+  }
+
+  void FinalizeCapture() {
+      const int N = capture_expected_spheres_;
+      const int F = (int)capture_frame_positions_.size();
+
+      // Kabsch-based iterative refinement: start with frame 0 as reference
+      std::vector<cv::Vec3f> reference = capture_frame_positions_[0];
+
+      const int NUM_ITERATIONS = 3;
+      for (int iter = 0; iter < NUM_ITERATIONS; ++iter) {
+          std::vector<cv::Vec3f> sum(N, cv::Vec3f(0,0,0));
+          for (int f = 0; f < F; ++f) {
+              std::vector<cv::Vec3f> aligned = AlignFrameToReference(
+                  capture_frame_positions_[f], reference);
+              for (int i = 0; i < N; ++i)
+                  sum[i] += aligned[i];
+          }
+          for (int i = 0; i < N; ++i)
+              reference[i] = sum[i] / (float)F;
+      }
+
+      // Compute quality metric (max per-sphere std dev)
+      capture_max_std_mm_ = 0.f;
+      for (int i = 0; i < N; ++i) {
+          cv::Vec3f var(0,0,0);
+          for (int f = 0; f < F; ++f) {
+              std::vector<cv::Vec3f> aligned = AlignFrameToReference(
+                  capture_frame_positions_[f], reference);
+              cv::Vec3f d = aligned[i] - reference[i];
+              var += cv::Vec3f(d[0]*d[0], d[1]*d[1], d[2]*d[2]);
+          }
+          var /= (float)F;
+          float std_mm = std::sqrt(var[0]+var[1]+var[2]) * 1000.f;
+          capture_max_std_mm_ = std::max(capture_max_std_mm_, std_mm);
+      }
+
+      // Subtract centroid, convert metres → mm
+      cv::Vec3f centroid(0,0,0);
+      for (int i = 0; i < N; ++i) centroid += reference[i];
+      centroid /= (float)N;
+
+      capture_result_mm_ = cv::Mat3f(N, 1);
+      for (int i = 0; i < N; ++i)
+          capture_result_mm_.at<cv::Vec3f>(i, 0) = (reference[i] - centroid) * 1000.f;
+
+      char buf[256];
+      snprintf(buf, sizeof(buf),
+               "Captured %d spheres over %d frames (max std: %.2f mm, skipped: %d)",
+               N, F, capture_max_std_mm_, capture_frames_skipped_);
+      capture_status_msg_ = buf;
+      capture_state_ = CaptureState::Done;
+  }
 };
 
 void android_main(struct android_app *state) {

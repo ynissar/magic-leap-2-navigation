@@ -109,6 +109,14 @@ public:
         }
     }
 
+    // Return the names of all registered tools.
+    std::vector<std::string> GetToolNames() const {
+        std::vector<std::string> names;
+        names.reserve(tools_.size());
+        for (const auto& t : tools_) names.push_back(t.identifier);
+        return names;
+    }
+
     // Reset all per-sphere Kalman filters with new noise parameters.
     // Causes a one-frame re-initialisation glitch — acceptable for tuning.
     void ResetKalmanFilters(float measurement, float position, float velocity) {
