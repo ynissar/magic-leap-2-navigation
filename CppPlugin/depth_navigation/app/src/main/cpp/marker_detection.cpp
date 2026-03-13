@@ -209,6 +209,11 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
                 blob.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
                 blob.area_pixels = area;
                 blob.depth_m = 0.0f;
+                blob.intensity = 0.0f;
+                blob.expected_area = 0.0f;
+                blob.expected_area_min = 0.0f;
+                blob.expected_area_max = 0.0f;
+                blob.reason = RejectionReason::OutOfBounds;
                 blob.pixels = std::move(blob_pixels);
                 rejected_blobs->push_back(blob);
             }
@@ -229,6 +234,11 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
                 blob.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
                 blob.area_pixels = area;
                 blob.depth_m = depth_m;
+                blob.intensity = intensity_image.at<float>(static_cast<int>(v), static_cast<int>(u));
+                blob.expected_area = 0.0f;
+                blob.expected_area_min = 0.0f;
+                blob.expected_area_max = 0.0f;
+                blob.reason = RejectionReason::InvalidDepth;
                 blob.pixels = std::move(blob_pixels);
                 rejected_blobs->push_back(blob);
             }
@@ -253,6 +263,11 @@ std::vector<DetectedMarker> MarkerDetection::findMarkerBlobs(
                 blob.centroid_pixel = cv::Point2f(static_cast<float>(u), static_cast<float>(v));
                 blob.area_pixels = area;
                 blob.depth_m = depth_m;
+                blob.intensity = intensity_image.at<float>(static_cast<int>(v), static_cast<int>(u));
+                blob.expected_area = expected;
+                blob.expected_area_min = min_expected;
+                blob.expected_area_max = max_expected;
+                blob.reason = RejectionReason::AreaMismatch;
                 blob.pixels = std::move(blob_pixels);
                 rejected_blobs->push_back(blob);
             }

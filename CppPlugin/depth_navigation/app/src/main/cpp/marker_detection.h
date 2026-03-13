@@ -58,6 +58,15 @@ struct DetectedMarker {
 };
 
 /**
+ * Reason a blob was rejected by the marker classifier.
+ */
+enum class RejectionReason {
+    OutOfBounds,   // centroid outside image dimensions
+    InvalidDepth,  // depth <= 0, nan, or inf
+    AreaMismatch   // blob area outside expected range for its depth
+};
+
+/**
  * Represents a blob that was rejected by the marker classifier, used for
  * visualization/debugging (2D information only).
  */
@@ -65,6 +74,11 @@ struct RejectedBlob {
     cv::Point2f centroid_pixel; // Pixel coordinates of blob centroid
     int area_pixels;            // Area of blob in pixels
     float depth_m;              // Depth at centroid (meters), may be <= 0 for invalid depth
+    float intensity;            // Centroid intensity (0 if OOB)
+    float expected_area;        // Expected area in px (AreaMismatch only, else 0)
+    float expected_area_min;    // Lower bound (AreaMismatch only, else 0)
+    float expected_area_max;    // Upper bound (AreaMismatch only, else 0)
+    RejectionReason reason;     // Why this blob was rejected
     // All pixels belonging to this blob in image space (for visualization)
     std::vector<cv::Point2f> pixels;
 };
