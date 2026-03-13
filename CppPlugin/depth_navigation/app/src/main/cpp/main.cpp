@@ -368,6 +368,7 @@ private:
           ImGui::SliderInt("Expected spheres", &capture_expected_spheres_, 3, 10);
           ImGui::SliderInt("Frames to average", &capture_num_frames_, 10, 120);
           ImGui::SliderFloat("Sphere radius (mm)", &capture_sphere_radius_mm_, 1.f, 20.f);
+          ImGui::SliderFloat("Max sphere distance (mm)", &capture_max_pair_dist_mm_, 50.f, 500.f);
           ImGui::TextDisabled("Hold tool in view, then press Start.");
           if (ImGui::Button("Start Capture")) {
             capture_state_ = CaptureState::Capturing;
@@ -1195,6 +1196,17 @@ private:
                     for (int ci = 0; ci < capture_expected_spheres_; ++ci)
                         frame_pos[ci] = detected_markers_[ci].position_camera;
 
+                    // Check max pairwise distance — reject if any pair exceeds threshold
+                    bool pair_ok = true;
+                    for (int ci = 0; ci < capture_expected_spheres_ && pair_ok; ++ci) {
+                        for (int cj = ci + 1; cj < capture_expected_spheres_ && pair_ok; ++cj) {
+                            float dist_mm = (float)cv::norm(frame_pos[ci] - frame_pos[cj]) * 1000.f;
+                            if (dist_mm > capture_max_pair_dist_mm_)
+                                pair_ok = false;
+                        }
+                    }
+                    if (!pair_ok) { capture_frames_skipped_++; continue; }
+
                     // Nearest-neighbor reorder against previous frame for correspondence
                     if (!capture_frame_positions_.empty()) {
                         const auto& prev = capture_frame_positions_.back();
@@ -1360,6 +1372,7 @@ private:
   int   capture_expected_spheres_ = 4;
   int   capture_num_frames_       = 30;
   float capture_sphere_radius_mm_ = 5.f;
+  float capture_max_pair_dist_mm_ = 200.f;  // reject frame if any pair exceeds this
   char  capture_tool_name_[64]    = "captured_tool";
 
   // Accumulation
