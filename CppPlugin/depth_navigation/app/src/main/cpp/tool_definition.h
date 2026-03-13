@@ -85,9 +85,12 @@ public:
 
     // Process one frame of detected markers.  Call this once per depth frame,
     // immediately after MarkerDetection::detectMarkerPositions().
-    void ProcessFrame(const std::vector<ml::marker_detection::DetectedMarker>& markers);
+    // camera_to_world_4x4: 4×4 CV_32F homogeneous matrix mapping camera space → world space.
+    // Obtain it by converting the MLTransform from the depth camera frame data.
+    void ProcessFrame(const std::vector<ml::marker_detection::DetectedMarker>& markers,
+                      const cv::Mat& camera_to_world_4x4);
 
-    // Returns the 8×1 transform for the named tool:
+    // Returns the 8×1 transform for the named tool in world space:
     //   [x, y, z (meters),  qx, qy, qz, qw,  valid]
     // valid == 1.0 means the tool was successfully tracked this frame.
     cv::Mat GetToolTransform(const std::string& identifier) const;
@@ -147,6 +150,10 @@ private:
 
     float tolerance_side_{4.f}; // mm — max allowed per-side error
     float tolerance_avg_ {4.f}; // mm — max allowed mean error for a candidate
+
+    // Camera-to-world transform (4×4 CV_32F), updated each frame via ProcessFrame.
+    // Used by MatchPointsKabsch to convert the Kabsch result to world space.
+    cv::Mat camera_to_world_ = cv::Mat::eye(4, 4, CV_32F);
 };
 
 } // namespace tool_tracking

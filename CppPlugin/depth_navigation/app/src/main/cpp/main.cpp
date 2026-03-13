@@ -48,6 +48,30 @@ using namespace ml::app_framework;
 using namespace std::chrono_literals;
 
 namespace {
+  // Convert an MLTransform (position in metres + unit quaternion) to a 4×4 homogeneous
+  // matrix suitable for use as a camera-to-world transform in OpenCV (CV_32F, row-major).
+  cv::Mat MLTransformToCvMat(const MLTransform& t) {
+    float qx = t.rotation.x, qy = t.rotation.y, qz = t.rotation.z, qw = t.rotation.w;
+    float x2 = qx*qx, y2 = qy*qy, z2 = qz*qz;
+    cv::Mat mat = cv::Mat::eye(4, 4, CV_32F);
+    // Row 0
+    mat.at<float>(0,0) = 1.f - 2.f*(y2+z2);
+    mat.at<float>(0,1) = 2.f*(qx*qy - qw*qz);
+    mat.at<float>(0,2) = 2.f*(qx*qz + qw*qy);
+    mat.at<float>(0,3) = t.position.x;
+    // Row 1
+    mat.at<float>(1,0) = 2.f*(qx*qy + qw*qz);
+    mat.at<float>(1,1) = 1.f - 2.f*(x2+z2);
+    mat.at<float>(1,2) = 2.f*(qy*qz - qw*qx);
+    mat.at<float>(1,3) = t.position.y;
+    // Row 2
+    mat.at<float>(2,0) = 2.f*(qx*qz - qw*qy);
+    mat.at<float>(2,1) = 2.f*(qy*qz + qw*qx);
+    mat.at<float>(2,2) = 1.f - 2.f*(x2+y2);
+    mat.at<float>(2,3) = t.position.z;
+    return mat;
+  }
+
   float GetScale(int num_rects) {
     const float grid_size = ceil(sqrtf(num_rects * 1.f));
     const float scale_factor = 1.25f;
@@ -327,7 +351,7 @@ private:
         bool valid = tf.at<float>(7, 0) == 1.f;
         ImGui::Text("test_tool: %s", valid ? "TRACKED" : "not found");
         if (valid) {
-          ImGui::Text("  pos (%.3f, %.3f, %.3f) m",
+          ImGui::Text("  pos (%.3f, %.3f, %.3f) m  [world]",
                       tf.at<float>(0, 0), tf.at<float>(1, 0), tf.at<float>(2, 0));
           ImGui::Text("  rot (%.3f, %.3f, %.3f, %.3f)",
                       tf.at<float>(3, 0), tf.at<float>(4, 0),
@@ -1101,8 +1125,10 @@ private:
             UpdateMarkerOverlay(raw_idx, detected_markers_);
             UpdateRejectedOverlay(raw_idx, rejected_blobs_);
 
-            // Run tool tracking on detected markers
-            tool_tracker_.ProcessFrame(detected_markers_);
+            // Run tool tracking on detected markers (world-space output)
+            cv::Mat cam_to_world = MLTransformToCvMat(
+                depth_camera_data_.frames[i].camera_pose);
+            tool_tracker_.ProcessFrame(detected_markers_, cam_to_world);
           }
         }
         // ========== END MARKER DETECTION ==========

@@ -15,8 +15,11 @@ namespace tool_tracking {
 // map, runs the graph search for each registered tool, then resolves conflicts.
 // ─────────────────────────────────────────────────────────────────────────────
 void ToolTracker::ProcessFrame(
-    const std::vector<ml::marker_detection::DetectedMarker>& markers)
+    const std::vector<ml::marker_detection::DetectedMarker>& markers,
+    const cv::Mat& camera_to_world_4x4)
 {
+    camera_to_world_ = camera_to_world_4x4.clone();
+
     int num_frame_spheres = static_cast<int>(markers.size());
     if (num_frame_spheres < 3 || tools_.empty()) return;
 
@@ -244,8 +247,8 @@ void ToolTracker::UnionSegmentation(ToolResultContainer* raw, int num_tools,
 // MatchPointsKabsch
 // Computes the 6DOF pose of a tool given the matched sphere IDs.
 // Works entirely in mm, outputs position in metres.
-// Ported from IRToolTracker::MatchPointsKabsch, adapted for ML2 (no world
-// transform, no handedness flip, no Kalman filter).
+// Ported from IRToolTracker::MatchPointsKabsch, adapted for ML2 (no handedness
+// flip). Uses camera_to_world_ to output world-space pose.
 // ─────────────────────────────────────────────────────────────────────────────
 cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
                                         const cv::Mat3f& frame_spheres_mm,
@@ -305,21 +308,34 @@ cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
     p_avg.at<float>(0,0) = p_center[0]; p_avg.at<float>(1,0) = p_center[1]; p_avg.at<float>(2,0) = p_center[2];
     cv::Mat t = q_avg - R * p_avg;
 
-    // Convert position to metres
-    cv::Vec3f position(t.at<float>(0,0) / 1000.f,
-                       t.at<float>(1,0) / 1000.f,
-                       t.at<float>(2,0) / 1000.f);
+    // Build 4×4 camera-space rigid-body transform (translation in metres)
+    cv::Mat T_cam = cv::Mat::eye(4, 4, CV_32F);
+    R.copyTo(T_cam(cv::Rect(0, 0, 3, 3)));
+    T_cam.at<float>(0, 3) = t.at<float>(0, 0) / 1000.f;
+    T_cam.at<float>(1, 3) = t.at<float>(1, 0) / 1000.f;
+    T_cam.at<float>(2, 3) = t.at<float>(2, 0) / 1000.f;
 
-    // Extract quaternion from rotation matrix (Shepperd's method)
-    float tr = R.at<float>(0,0) + R.at<float>(1,1) + R.at<float>(2,2);
+    // Apply camera-to-world: T_world = camera_to_world_ * T_cam
+    cv::Mat T_world = camera_to_world_ * T_cam;
+
+    // Extract world-space position (metres)
+    cv::Vec3f position(T_world.at<float>(0, 3),
+                       T_world.at<float>(1, 3),
+                       T_world.at<float>(2, 3));
+
+    // Extract world-space rotation matrix (upper-left 3×3 of T_world)
+    cv::Mat R_world = T_world(cv::Rect(0, 0, 3, 3)).clone();
+
+    // Convert world-space rotation to quaternion (Shepperd's method)
+    float tr = R_world.at<float>(0,0) + R_world.at<float>(1,1) + R_world.at<float>(2,2);
     cv::Vec4f quat; // [qx, qy, qz, qw]
     quat[3] = std::sqrt(std::max(0.f, 1.f + tr)) / 2.f;
-    quat[0] = std::sqrt(std::max(0.f, 1.f + R.at<float>(0,0) - R.at<float>(1,1) - R.at<float>(2,2))) / 2.f;
-    quat[1] = std::sqrt(std::max(0.f, 1.f - R.at<float>(0,0) + R.at<float>(1,1) - R.at<float>(2,2))) / 2.f;
-    quat[2] = std::sqrt(std::max(0.f, 1.f - R.at<float>(0,0) - R.at<float>(1,1) + R.at<float>(2,2))) / 2.f;
-    quat[0] *= (R.at<float>(2,1) - R.at<float>(1,2)) >= 0.f ? 1.f : -1.f;
-    quat[1] *= (R.at<float>(0,2) - R.at<float>(2,0)) >= 0.f ? 1.f : -1.f;
-    quat[2] *= (R.at<float>(1,0) - R.at<float>(0,1)) >= 0.f ? 1.f : -1.f;
+    quat[0] = std::sqrt(std::max(0.f, 1.f + R_world.at<float>(0,0) - R_world.at<float>(1,1) - R_world.at<float>(2,2))) / 2.f;
+    quat[1] = std::sqrt(std::max(0.f, 1.f - R_world.at<float>(0,0) + R_world.at<float>(1,1) - R_world.at<float>(2,2))) / 2.f;
+    quat[2] = std::sqrt(std::max(0.f, 1.f - R_world.at<float>(0,0) - R_world.at<float>(1,1) + R_world.at<float>(2,2))) / 2.f;
+    quat[0] *= (R_world.at<float>(2,1) - R_world.at<float>(1,2)) >= 0.f ? 1.f : -1.f;
+    quat[1] *= (R_world.at<float>(0,2) - R_world.at<float>(2,0)) >= 0.f ? 1.f : -1.f;
+    quat[2] *= (R_world.at<float>(1,0) - R_world.at<float>(0,1)) >= 0.f ? 1.f : -1.f;
 
     // Low-pass filter: blend toward new position and slerp toward new rotation
     const cv::Mat& prev = tool.cur_transform;
