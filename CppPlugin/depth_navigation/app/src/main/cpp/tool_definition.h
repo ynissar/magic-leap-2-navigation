@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <chrono>
 #include <opencv2/opencv.hpp>
 #include "marker_detection.h"
 #include "tool_kalman_filter.h"
@@ -66,6 +67,10 @@ struct TrackedTool {
     float kalman_velocity_noise{3.f};
 
     bool tracking_finished{true};
+
+    // Timestamp of the most recent successful pose update.
+    std::chrono::steady_clock::time_point last_tracked_time{};
+    bool ever_tracked{false};
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -108,6 +113,9 @@ public:
             t.lowpass_factor_rotation = rotation;
         }
     }
+
+    // Returns seconds since the tool was last successfully tracked, or -1 if never tracked.
+    float GetSecondsSinceTracked(const std::string& identifier) const;
 
     // Return the names of all registered tools.
     std::vector<std::string> GetToolNames() const {

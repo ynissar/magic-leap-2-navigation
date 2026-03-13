@@ -23,6 +23,8 @@ void ToolTracker::ProcessFrame(
     int num_frame_spheres = static_cast<int>(markers.size());
     if (num_frame_spheres < 3 || tools_.empty()) return;
 
+    ALOGV("ProcessFrame: %d markers, %d tools", num_frame_spheres, (int)tools_.size());
+
     // Convert positions from metres to mm (all internal geometry is in mm)
     cv::Mat3f frame_spheres_mm(num_frame_spheres, 1);
     for (int i = 0; i < num_frame_spheres; ++i) {
@@ -201,6 +203,7 @@ void ToolTracker::TrackTool(TrackedTool& tool,
         }
     }
 
+    ALOGV("TrackTool '%s': %d candidates found", tool.identifier.c_str(), (int)result.candidates.size());
     tool.tracking_finished = true;
 }
 
@@ -228,8 +231,15 @@ void ToolTracker::UnionSegmentation(ToolResultContainer* raw, int num_tools,
 
         cv::Mat result = MatchPointsKabsch(tools_[best.tool_id], frame_spheres_mm,
                                            best.sphere_ids, best.occluded_nodes);
-        if (result.at<float>(7, 0) == 1.f)
+        if (result.at<float>(7, 0) == 1.f) {
             tools_[best.tool_id].cur_transform = result.clone();
+            tools_[best.tool_id].last_tracked_time = std::chrono::steady_clock::now();
+            tools_[best.tool_id].ever_tracked = true;
+            ALOGV("UnionSegmentation: tool %d pose updated (occlusions=%d, err=%.2f mm)",
+                  best.tool_id, (int)best.occluded_nodes.size(), best.error);
+        } else {
+            ALOGV("UnionSegmentation: tool %d Kabsch failed", best.tool_id);
+        }
 
         // Remove candidates that share any detected sphere with the chosen result
         pool.erase(std::remove_if(pool.begin(), pool.end(),
@@ -374,6 +384,17 @@ cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
     out.at<float>(6, 0) = quat[3]; // qw
     out.at<float>(7, 0) = 1.f;     // valid
     return out;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// GetSecondsSinceTracked
+// ─────────────────────────────────────────────────────────────────────────────
+float ToolTracker::GetSecondsSinceTracked(const std::string& identifier) const {
+    if (tool_index_.count(identifier) == 0) return -1.f;
+    const TrackedTool& t = tools_.at(tool_index_.at(identifier));
+    if (!t.ever_tracked) return -1.f;
+    auto now = std::chrono::steady_clock::now();
+    return std::chrono::duration<float>(now - t.last_tracked_time).count();
 }
 
 } // namespace tool_tracking

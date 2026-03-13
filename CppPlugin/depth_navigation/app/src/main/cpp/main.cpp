@@ -373,6 +373,12 @@ private:
                         tf.at<float>(3, 0), tf.at<float>(4, 0),
                         tf.at<float>(5, 0), tf.at<float>(6, 0));
           }
+          float secs = tool_tracker_.GetSecondsSinceTracked(name);
+          if (secs < 0.f) {
+            ImGui::TextDisabled("  last tracked: never");
+          } else {
+            ImGui::Text("  last tracked: %.1f s ago", secs);
+          }
         }
       }
 
@@ -1292,6 +1298,13 @@ private:
             cv::Mat cam_to_world = MLTransformToCvMat(
                 depth_camera_data_.frames[i].camera_pose);
             tool_tracker_.ProcessFrame(detected_markers_, cam_to_world);
+            for (const auto& n : tool_tracker_.GetToolNames()) {
+                cv::Mat tf = tool_tracker_.GetToolTransform(n);
+                bool v = tf.at<float>(7, 0) == 1.f;
+                ALOGV("Tool '%s': %s  pos=(%.3f,%.3f,%.3f)", n.c_str(),
+                      v ? "TRACKED" : "NOT_FOUND",
+                      tf.at<float>(0,0), tf.at<float>(1,0), tf.at<float>(2,0));
+            }
             UpdateToolVisuals();
           }
         }
@@ -1404,7 +1417,7 @@ private:
   float tune_sphere_radius_mm_      = 5.f;
   bool  tune_ambient_subtraction_   = true;
   float tune_area_min_ratio_        = 0.5f;
-  float tune_area_max_ratio_        = 2.0f;
+  float tune_area_max_ratio_        = 4.0f;
   int   tune_gaussian_kernel_size_  = 5;
   int   tune_morph_kernel_size_     = 5;
 
