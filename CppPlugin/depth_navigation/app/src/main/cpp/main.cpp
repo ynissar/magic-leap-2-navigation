@@ -322,47 +322,36 @@ private:
         ImGui::ColorEdit3("Marker Color", &marker_color_[0]);
         ImGui::SliderFloat("Point Size", &marker_point_size_, 5.0f, 30.0f);
 
-        char det_tab[32], rej_tab[32];
-        snprintf(det_tab, sizeof(det_tab), "Detected (%zu)##det", detected_markers_.size());
-        snprintf(rej_tab, sizeof(rej_tab), "Rejected (%zu)##rej", rejected_blobs_.size());
+        char det_hdr[32], rej_hdr[32];
+        snprintf(det_hdr, sizeof(det_hdr), "Detected (%zu)##det", detected_markers_.size());
+        snprintf(rej_hdr, sizeof(rej_hdr), "Rejected (%zu)##rej", rejected_blobs_.size());
 
-        if (ImGui::BeginTabBar("MarkerTabs")) {
-
-          if (ImGui::BeginTabItem(det_tab)) {
-            if (ImGui::CollapsingHeader("Marker Details")) {
-              for (size_t m = 0; m < detected_markers_.size(); m++) {
-                const auto& mk = detected_markers_[m];
-                ImGui::Text("  [%zu] px(%.1f,%.1f) 3D(%.3f,%.3f,%.3f)m area=%d inten=%.0f",
-                            m, mk.centroid_pixel.x, mk.centroid_pixel.y,
-                            mk.position_camera[0], mk.position_camera[1],
-                            mk.position_camera[2], mk.area_pixels, mk.intensity);
-              }
-            }
-            ImGui::EndTabItem();
+        if (ImGui::CollapsingHeader(det_hdr)) {
+          for (size_t m = 0; m < detected_markers_.size(); m++) {
+            const auto& mk = detected_markers_[m];
+            ImGui::Text("  [%zu] px(%.1f,%.1f) 3D(%.3f,%.3f,%.3f)m area=%d inten=%.0f",
+                        m, mk.centroid_pixel.x, mk.centroid_pixel.y,
+                        mk.position_camera[0], mk.position_camera[1],
+                        mk.position_camera[2], mk.area_pixels, mk.intensity);
           }
+        }
 
-          if (ImGui::BeginTabItem(rej_tab)) {
-            if (ImGui::CollapsingHeader("Rejected Details")) {
-              for (size_t m = 0; m < rejected_blobs_.size(); m++) {
-                const auto& rb = rejected_blobs_[m];
-                const char* reason_str =
-                  rb.reason == ml::marker_detection::RejectionReason::OutOfBounds  ? "OOB"   :
-                  rb.reason == ml::marker_detection::RejectionReason::InvalidDepth ? "Depth" : "Area";
-                ImGui::TextColored(ImVec4(0.2f, 1.f, 0.2f, 1.f),
-                  "  [%zu] %s px(%.1f,%.1f) area=%d inten=%.0f depth=%.3fm",
-                  m, reason_str,
-                  rb.centroid_pixel.x, rb.centroid_pixel.y,
-                  rb.area_pixels, rb.intensity, rb.depth_m);
-                if (rb.reason == ml::marker_detection::RejectionReason::AreaMismatch) {
-                  ImGui::Text("       expected=%.1f [%.1f..%.1f] px",
-                              rb.expected_area, rb.expected_area_min, rb.expected_area_max);
-                }
-              }
+        if (ImGui::CollapsingHeader(rej_hdr)) {
+          for (size_t m = 0; m < rejected_blobs_.size(); m++) {
+            const auto& rb = rejected_blobs_[m];
+            const char* reason_str =
+              rb.reason == ml::marker_detection::RejectionReason::OutOfBounds  ? "OOB"   :
+              rb.reason == ml::marker_detection::RejectionReason::InvalidDepth ? "Depth" : "Area";
+            ImGui::TextColored(ImVec4(0.2f, 1.f, 0.2f, 1.f),
+              "  [%zu] %s px(%.1f,%.1f) area=%d inten=%.0f depth=%.3fm",
+              m, reason_str,
+              rb.centroid_pixel.x, rb.centroid_pixel.y,
+              rb.area_pixels, rb.intensity, rb.depth_m);
+            if (rb.reason == ml::marker_detection::RejectionReason::AreaMismatch) {
+              ImGui::Text("       expected=%.1f [%.1f..%.1f] px",
+                          rb.expected_area, rb.expected_area_min, rb.expected_area_max);
             }
-            ImGui::EndTabItem();
           }
-
-          ImGui::EndTabBar();
         }
       }
       ImGui::Separator();
