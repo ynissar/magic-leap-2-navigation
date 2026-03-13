@@ -37,6 +37,12 @@ struct MarkerDetectionConfig {
     // TODO: does this actually make sense?
     float expected_area_min_ratio = 0.5f;
     float expected_area_max_ratio = 2.0f;
+
+    // Gaussian blur kernel size applied before thresholding (must be odd; 1 = disabled)
+    int gaussian_blur_kernel_size = 5;
+
+    // Morphological closing kernel size (must be odd; 1 = disabled)
+    int morphology_kernel_size = 5;
 };
 
 /**

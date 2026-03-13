@@ -63,10 +63,15 @@ std::vector<DetectedMarker> MarkerDetection::detectMarkerPositions(
     // First, apply a small Gaussian blur so that nearby high-intensity pixels
     // merge into a smoother spot before thresholding.
     cv::Mat blurred_intensity;
-    // cv::GaussianBlur(intensity_image, blurred_intensity, cv::Size(5, 5), 0);
+    int gk = std::max(1, config.gaussian_blur_kernel_size | 1); // ensure odd, >= 1
+    if (gk > 1) {
+        cv::GaussianBlur(intensity_image, blurred_intensity, cv::Size(gk, gk), 0);
+    } else {
+        blurred_intensity = intensity_image;
+    }
 
     cv::Mat binary_mask;
-    cv::inRange(intensity_image, config.intensity_threshold_min,
+    cv::inRange(blurred_intensity, config.intensity_threshold_min,
                 config.intensity_threshold_max, binary_mask);
 
 #ifdef DEBUG_MODE
@@ -82,8 +87,9 @@ std::vector<DetectedMarker> MarkerDetection::detectMarkerPositions(
     // Apply a small morphological closing to merge nearby bright pixels
     // This helps when a single physical marker appears as several tiny islands.
     {
+        int ks = std::max(1, config.morphology_kernel_size | 1); // ensure odd, >= 1
         cv::Mat element = cv::getStructuringElement(
-            cv::MORPH_ELLIPSE, cv::Size(5, 5));
+            cv::MORPH_ELLIPSE, cv::Size(ks, ks));
         cv::morphologyEx(binary_8bit, binary_8bit, cv::MORPH_CLOSE, element);
 #ifdef DEBUG_MODE
         int bright_pixels_after = cv::countNonZero(binary_8bit);

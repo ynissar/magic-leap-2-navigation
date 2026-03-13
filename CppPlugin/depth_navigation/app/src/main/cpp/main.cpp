@@ -23,6 +23,7 @@
 #include <cfloat>
 #include <cstdlib>
 #include <future>
+#include <map>
 
 // OpenCV headers
 #include <opencv2/opencv.hpp>
@@ -430,11 +431,18 @@ private:
         // ── Marker Detection ──────────────────────────────────────────────
         if (ImGui::TreeNode("Marker Detection")) {
           ImGui::SliderFloat("Intensity min", &tune_intensity_min_, 0.f, 5000.f);
-          ImGui::SliderFloat("Intensity max", &tune_intensity_max_, 0.f, 5000.f);
+          ImGui::SliderFloat("Intensity max", &tune_intensity_max_, 0.f, 65000.f);
           ImGui::SliderFloat("Sphere radius (mm)", &tune_sphere_radius_mm_, 1.f, 20.f);
           ImGui::Checkbox("Ambient subtraction", &tune_ambient_subtraction_);
           ImGui::SliderFloat("Area min ratio", &tune_area_min_ratio_, 0.01f, 1.f);
           ImGui::SliderFloat("Area max ratio", &tune_area_max_ratio_, 1.f, 10.f);
+          // Kernels must be odd; clamp after drag
+          if (ImGui::SliderInt("Gaussian blur kernel", &tune_gaussian_kernel_size_, 1, 15)) {
+            tune_gaussian_kernel_size_ = std::max(1, tune_gaussian_kernel_size_ | 1);
+          }
+          if (ImGui::SliderInt("Morph kernel size", &tune_morph_kernel_size_, 1, 15)) {
+            tune_morph_kernel_size_ = std::max(1, tune_morph_kernel_size_ | 1);
+          }
           ImGui::TreePop();
         }
 
@@ -750,6 +758,34 @@ private:
       renderable->SetMaterial(marker_material);
       // Make sure it's added as child if not already
       parent_node->AddChild(rejected_overlay_nodes_[quad_index]);
+    }
+  }
+
+  void UpdateToolVisuals() {
+    for (const auto& name : tool_tracker_.GetToolNames()) {
+      cv::Mat tf = tool_tracker_.GetToolTransform(name);
+      bool valid = tf.at<float>(7, 0) == 1.f;
+
+      // Create a world-space axis gizmo for this tool on first encounter.
+      if (tool_axis_nodes_.find(name) == tool_axis_nodes_.end()) {
+        auto axis_node = CreatePresetNode(NodeType::Axis);
+        axis_node->SetLocalScale(glm::vec3(0.2f, 0.2f, 0.2f));  // 0.5 * 0.2 = 0.1m arms
+        GetRoot()->AddChild(axis_node);
+        tool_axis_nodes_[name] = axis_node;
+      }
+
+      auto& node = tool_axis_nodes_[name];
+      auto renderable = node->GetComponent<RenderableComponent>();
+      if (renderable) {
+        renderable->SetVisible(valid);
+      }
+      if (valid) {
+        glm::vec3 pos(tf.at<float>(0, 0), tf.at<float>(1, 0), tf.at<float>(2, 0));
+        // glm::quat constructor is (w, x, y, z); tracker output is [qx, qy, qz, qw]
+        glm::quat rot(tf.at<float>(6, 0), tf.at<float>(3, 0),
+                      tf.at<float>(4, 0), tf.at<float>(5, 0));
+        node->SetWorldPose(Pose(rot, pos));
+      }
     }
   }
 
@@ -1158,12 +1194,14 @@ private:
             const auto& intrinsics = depth_camera_data_.frames[i].intrinsics;
 
             ml::marker_detection::MarkerDetectionConfig config;
-            config.intensity_threshold_min = tune_intensity_min_;
-            config.intensity_threshold_max = tune_intensity_max_;
-            config.sphere_radius_mm        = tune_sphere_radius_mm_;
-            config.use_ambient_subtraction = tune_ambient_subtraction_;
-            config.expected_area_min_ratio = tune_area_min_ratio_;
-            config.expected_area_max_ratio = tune_area_max_ratio_;
+            config.intensity_threshold_min    = tune_intensity_min_;
+            config.intensity_threshold_max    = tune_intensity_max_;
+            config.sphere_radius_mm           = tune_sphere_radius_mm_;
+            config.use_ambient_subtraction    = tune_ambient_subtraction_;
+            config.expected_area_min_ratio    = tune_area_min_ratio_;
+            config.expected_area_max_ratio    = tune_area_max_ratio_;
+            config.gaussian_blur_kernel_size  = tune_gaussian_kernel_size_;
+            config.morphology_kernel_size     = tune_morph_kernel_size_;
 
             rejected_blobs_.clear();
             detected_markers_ = ml::marker_detection::MarkerDetection::detectMarkerPositions(
@@ -1239,6 +1277,7 @@ private:
             cv::Mat cam_to_world = MLTransformToCvMat(
                 depth_camera_data_.frames[i].camera_pose);
             tool_tracker_.ProcessFrame(detected_markers_, cam_to_world);
+            UpdateToolVisuals();
           }
         }
         // ========== END MARKER DETECTION ==========
@@ -1332,6 +1371,7 @@ private:
 
   // Tool tracking
   ml::tool_tracking::ToolTracker tool_tracker_;
+  std::map<std::string, std::shared_ptr<Node>> tool_axis_nodes_;
 
   // Marker overlay visualization
   std::vector<ml::marker_detection::DetectedMarker> detected_markers_;
@@ -1345,11 +1385,13 @@ private:
   // ── Runtime-tunable parameters ──────────────────────────────────────────
   // Marker detection
   float tune_intensity_min_         = 1280.f;
-  float tune_intensity_max_         = 2000.f;
+  float tune_intensity_max_         = 65000.f;
   float tune_sphere_radius_mm_      = 5.f;
-  bool  tune_ambient_subtraction_   = false;
+  bool  tune_ambient_subtraction_   = true;
   float tune_area_min_ratio_        = 0.5f;
   float tune_area_max_ratio_        = 2.0f;
+  int   tune_gaussian_kernel_size_  = 5;
+  int   tune_morph_kernel_size_     = 5;
 
   // Tool tracking — graph search
   float tune_tolerance_side_        = 4.f;
