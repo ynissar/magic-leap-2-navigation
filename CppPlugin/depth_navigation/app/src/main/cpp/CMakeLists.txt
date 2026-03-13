@@ -31,6 +31,8 @@ find_package(MagicLeapAppFramework REQUIRED)
 add_library(depth_camera SHARED
     main.cpp
     marker_detection.cpp
+    tool_definition.cpp
+    tool_tracking.cpp
 )
 
 include(DeprecatedApiUsage)
