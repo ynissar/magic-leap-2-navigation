@@ -470,9 +470,16 @@ private:
         // ── Graph Search ──────────────────────────────────────────────────
         if (ImGui::TreeNode("Graph Search Tolerances")) {
           if (ImGui::SliderFloat("Side tol (mm)", &tune_tolerance_side_, 0.5f, 20.f))
-            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_);
+            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_, tune_tolerance_rel_);
           if (ImGui::SliderFloat("Avg tol (mm)", &tune_tolerance_avg_, 0.5f, 20.f))
-            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_);
+            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_, tune_tolerance_rel_);
+          if (ImGui::SliderFloat("Rel tol (%)", &tune_tolerance_rel_, 0.f, 0.20f))
+            tool_tracker_.SetTolerances(tune_tolerance_side_, tune_tolerance_avg_, tune_tolerance_rel_);
+          ImGui::SameLine(); ImGui::TextDisabled("(?)");
+          if (ImGui::IsItemHovered())
+            ImGui::SetTooltip("Relative per-side tolerance as a fraction of expected\n"
+                              "distance. Compensates for depth-scale error at different\n"
+                              "operating distances. Effective tol = max(Side tol, Rel tol * side).");
           ImGui::TreePop();
         }
 
@@ -1010,9 +1017,9 @@ private:
     const int64_t current_frame_number = data.frames[0].frame_number;
     if (last_dcam_frame_number_ >= 0) {
       const int64_t diff = current_frame_number - last_dcam_frame_number_;
-      ALOGD("Frame diff: %ld", diff);
+      // ALOGD("Frame diff: %ld", diff);
       if (diff > 1) {
-        ALOGV("Lost frames! Current frame: %ld, last frame: %ld, difference: %ld.", current_frame_number, last_dcam_frame_number_, diff);
+        // ALOGV("Lost frames! Current frame: %ld, last frame: %ld, difference: %ld.", current_frame_number, last_dcam_frame_number_, diff);
       }
     }
     last_dcam_frame_number_ = current_frame_number;
@@ -1424,6 +1431,7 @@ private:
   // Tool tracking — graph search
   float tune_tolerance_side_        = 4.f;
   float tune_tolerance_avg_         = 4.f;
+  float tune_tolerance_rel_         = 0.05f; // 5% of expected side length
 
   // Tool tracking — pose smoothing
   float tune_lowpass_position_      = 0.6f;

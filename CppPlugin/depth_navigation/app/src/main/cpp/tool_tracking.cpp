@@ -74,6 +74,18 @@ void ToolTracker::TrackTool(TrackedTool& tool,
 
     int max_occluded = tool.num_spheres - tool.min_visible_spheres;
 
+    // Pre-compute the mean template side length for the relative avg-tolerance check.
+    // All pairwise distances in the template scale by the same depth-error factor k,
+    // so the effective avg tolerance is max(tolerance_avg_, tolerance_rel_ * mean_side).
+    float mean_template_side_mm = 0.f;
+    if (!tool.ordered_sides.empty()) {
+        for (const Side& s : tool.ordered_sides)
+            mean_template_side_mm += s.distance;
+        mean_template_side_mm /= static_cast<float>(tool.ordered_sides.size());
+    }
+    const float eff_avg_tol = std::max(tolerance_avg_,
+                                       tolerance_rel_ * mean_template_side_mm);
+
     struct search_entry {
         std::vector<int> visited_nodes_frame;
         float combined_error{0.f};
@@ -92,7 +104,8 @@ void ToolTracker::TrackTool(TrackedTool& tool,
         for (int k = m + 1; k <= max_occluded + 1; ++k) {
             float cur_side_length = tool.map.at<float>(m, k);
             for (const Side& s : frame_sides) {
-                if (std::abs(s.distance - cur_side_length) < tolerance_side_)
+                if (std::abs(s.distance - cur_side_length) <
+                        std::max(tolerance_side_, tolerance_rel_ * cur_side_length))
                     eligible_sides.push_back(s);
             }
             if (eligible_sides.empty() && max_occluded == 0) {
@@ -140,7 +153,7 @@ void ToolTracker::TrackTool(TrackedTool& tool,
         if (occluded <= max_occluded &&
             visited == (tool.num_spheres - occluded)) {
             if (curr.num_sides > 0 &&
-                (curr.combined_error / curr.num_sides) < tolerance_avg_) {
+                (curr.combined_error / curr.num_sides) < eff_avg_tol) {
                 ToolResult r;
                 r.error          = curr.combined_error;
                 r.sphere_ids     = curr.visited_nodes_frame;
@@ -176,7 +189,8 @@ void ToolTracker::TrackTool(TrackedTool& tool,
                 float expected = tool.map.at<float>(tnid, visited + occluded);
                 float err_side = std::abs(frame_map.at<float>(id1, id2) - expected);
 
-                if (err_side > tolerance_side_) { exceeded = true; break; }
+                if (err_side > std::max(tolerance_side_, tolerance_rel_ * expected))
+                    { exceeded = true; break; }
                 err_new += err_side;
                 ++err_cnt;
                 ++tnid;

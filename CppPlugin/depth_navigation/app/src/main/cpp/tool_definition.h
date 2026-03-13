@@ -100,10 +100,16 @@ public:
     // valid == 1.0 means the tool was successfully tracked this frame.
     cv::Mat GetToolTransform(const std::string& identifier) const;
 
-    // Tune matching tolerances (mm).
-    void SetTolerances(float side_mm, float avg_mm) {
+    // Tune matching tolerances.
+    // side_mm / avg_mm: absolute per-side and mean-error floors (mm).
+    // rel_frac: relative tolerance as a fraction of the expected side length
+    //   (e.g. 0.05 = 5%).  The effective tolerance for each side is
+    //   max(side_mm, rel_frac * expected_side_mm), making the matcher
+    //   depth-scale-invariant for larger inter-sphere distances.
+    void SetTolerances(float side_mm, float avg_mm, float rel_frac = -1.f) {
         tolerance_side_ = side_mm;
         tolerance_avg_  = avg_mm;
+        if (rel_frac >= 0.f) tolerance_rel_ = rel_frac;
     }
 
     // Set low-pass smoothing factors on all registered tools.
@@ -164,8 +170,9 @@ private:
     std::vector<TrackedTool>    tools_;
     std::map<std::string, int>  tool_index_;
 
-    float tolerance_side_{4.f}; // mm — max allowed per-side error
-    float tolerance_avg_ {4.f}; // mm — max allowed mean error for a candidate
+    float tolerance_side_{4.f};  // mm  — absolute per-side error floor
+    float tolerance_avg_ {4.f};  // mm  — absolute mean-error floor for a candidate
+    float tolerance_rel_ {0.05f}; // fraction — relative per-side tolerance (0 = disabled)
 
     // Camera-to-world transform (4×4 CV_32F), updated each frame via ProcessFrame.
     // Used by MatchPointsKabsch to convert the Kabsch result to world space.
