@@ -170,9 +170,9 @@ private:
     std::vector<TrackedTool>    tools_;
     std::map<std::string, int>  tool_index_;
 
-    float tolerance_side_{4.f};  // mm  — absolute per-side error floor
-    float tolerance_avg_ {4.f};  // mm  — absolute mean-error floor for a candidate
-    float tolerance_rel_ {0.05f}; // fraction — relative per-side tolerance (0 = disabled)
+    float tolerance_side_{10.f};  // mm  — absolute per-side error floor
+    float tolerance_avg_ {10.f};  // mm  — absolute mean-error floor for a candidate
+    float tolerance_rel_ {0.10f}; // fraction — relative per-side tolerance (0 = disabled)
 
     // Camera-to-world transform (4×4 CV_32F), updated each frame via ProcessFrame.
     // Used by MatchPointsKabsch to convert the Kabsch result to world space.
