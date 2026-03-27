@@ -4,9 +4,18 @@
 #include <app_framework/toolset.h>
 #include <algorithm>
 #include <cmath>
+#include <android/log.h>
 
 namespace ml {
 namespace tool_tracking {
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TOOL_TRK_LOG
+// Dedicated logcat tag for tool-tracking internals:
+//   adb logcat -s ToolTrack
+// ─────────────────────────────────────────────────────────────────────────────
+#define TOOL_TRK_LOG(...) \
+    __android_log_print(ANDROID_LOG_VERBOSE, "ToolTrack", __VA_ARGS__)
 
 // ─────────────────────────────────────────────────────────────────────────────
 // ProcessFrame
@@ -21,9 +30,14 @@ void ToolTracker::ProcessFrame(
     camera_to_world_ = camera_to_world_4x4.clone();
 
     int num_frame_spheres = static_cast<int>(markers.size());
-    if (num_frame_spheres < 3 || tools_.empty()) return;
+    if (num_frame_spheres < 3 || tools_.empty()) {
+        TOOL_TRK_LOG("ProcessFrame: skipped (markers=%d, tools=%zu)",
+                     num_frame_spheres, tools_.size());
+        return;
+    }
 
-    ALOGV("ProcessFrame: %d markers, %d tools", num_frame_spheres, (int)tools_.size());
+    TOOL_TRK_LOG("ProcessFrame: %d markers, %zu tools",
+                 num_frame_spheres, tools_.size());
 
     // Convert positions from metres to mm (all internal geometry is in mm)
     cv::Mat3f frame_spheres_mm(num_frame_spheres, 1);
@@ -44,7 +58,13 @@ void ToolTracker::ProcessFrame(
     std::vector<ToolResultContainer> raw_results(num_tools);
     for (int i = 0; i < num_tools; ++i) {
         raw_results[i].tool_id = i;
-        if (!tools_[i].tracking_finished) continue;
+        if (!tools_[i].tracking_finished) {
+            TOOL_TRK_LOG("ProcessFrame: skipping tool %d ('%s') — previous tracking not finished",
+                         i, tools_[i].identifier.c_str());
+            continue;
+        }
+        TOOL_TRK_LOG("ProcessFrame: tracking tool %d ('%s')",
+                     i, tools_[i].identifier.c_str());
         TrackTool(tools_[i], frame_spheres_mm, frame_map, frame_sides,
                   num_frame_spheres, raw_results[i]);
     }
@@ -68,6 +88,8 @@ void ToolTracker::TrackTool(TrackedTool& tool,
     tool.tracking_finished = false;
 
     if (num_frame_spheres < tool.min_visible_spheres) {
+        TOOL_TRK_LOG("TrackTool '%s': not enough markers this frame (have=%d, need>=%d)",
+                     tool.identifier.c_str(), num_frame_spheres, tool.min_visible_spheres);
         tool.tracking_finished = true;
         return;
     }
@@ -99,6 +121,15 @@ void ToolTracker::TrackTool(TrackedTool& tool,
 
     // Seed: find frame sides whose length matches the first visible template side,
     // accounting for possible leading occlusions.
+
+    for (const Side& s : frame_sides) {
+        TOOL_TRK_LOG("frame_side: %d -> %d : %.3f", s.id_from, s.id_to, s.distance);
+    }
+    for (const Side& s : tool.ordered_sides) {
+        TOOL_TRK_LOG("tool.ordered_side: %d -> %d : %.3f", s.id_from, s.id_to, s.distance);
+    }
+    TOOL_TRK_LOG("max_occluded: %d", max_occluded);
+
     for (int m = 0; m <= max_occluded; ++m) {
         std::vector<int> hidden_nodes_inside;
         for (int k = m + 1; k <= max_occluded + 1; ++k) {
@@ -109,6 +140,8 @@ void ToolTracker::TrackTool(TrackedTool& tool,
                     eligible_sides.push_back(s);
             }
             if (eligible_sides.empty() && max_occluded == 0) {
+                TOOL_TRK_LOG("TrackTool '%s': no eligible seed sides for m=%d (max_occluded=0)",
+                             tool.identifier.c_str(), m);
                 tool.tracking_finished = true;
                 return;
             }
@@ -119,6 +152,8 @@ void ToolTracker::TrackTool(TrackedTool& tool,
             }
         }
         if (eligible_sides.empty() && max_occluded == 0) {
+            TOOL_TRK_LOG("TrackTool '%s': exhausted seeds with no matches (max_occluded=0)",
+                         tool.identifier.c_str());
             tool.tracking_finished = true;
             return;
         }
@@ -217,7 +252,8 @@ void ToolTracker::TrackTool(TrackedTool& tool,
         }
     }
 
-    ALOGV("TrackTool '%s': %d candidates found", tool.identifier.c_str(), (int)result.candidates.size());
+    TOOL_TRK_LOG("TrackTool '%s': %d candidates found", tool.identifier.c_str(),
+                 (int)result.candidates.size());
     tool.tracking_finished = true;
 }
 
@@ -237,6 +273,7 @@ void ToolTracker::UnionSegmentation(ToolResultContainer* raw, int num_tools,
             pool.push_back(r);
         }
     }
+    ALOGV("UnionSegmentation: total candidates across tools = %zu", pool.size());
     std::sort(pool.begin(), pool.end(), &ToolResult::compare);
 
     while (!pool.empty()) {
@@ -249,13 +286,17 @@ void ToolTracker::UnionSegmentation(ToolResultContainer* raw, int num_tools,
             tools_[best.tool_id].cur_transform = result.clone();
             tools_[best.tool_id].last_tracked_time = std::chrono::steady_clock::now();
             tools_[best.tool_id].ever_tracked = true;
-            ALOGV("UnionSegmentation: tool %d pose updated (occlusions=%d, err=%.2f mm)",
-                  best.tool_id, (int)best.occluded_nodes.size(), best.error);
+            ALOGV("UnionSegmentation: tool %d ('%s') pose updated "
+                  "(visible_pts=%zu, occlusions=%zu, err=%.2f mm)",
+                  best.tool_id, tools_[best.tool_id].identifier.c_str(),
+                  best.sphere_ids.size(), best.occluded_nodes.size(), best.error);
         } else {
-            ALOGV("UnionSegmentation: tool %d Kabsch failed", best.tool_id);
+            ALOGV("UnionSegmentation: tool %d ('%s') Kabsch failed",
+                  best.tool_id, tools_[best.tool_id].identifier.c_str());
         }
 
         // Remove candidates that share any detected sphere with the chosen result
+        size_t before = pool.size();
         pool.erase(std::remove_if(pool.begin(), pool.end(),
             [&](const ToolResult& next) {
                 if (next.tool_id == best.tool_id) return true;
@@ -264,6 +305,8 @@ void ToolTracker::UnionSegmentation(ToolResultContainer* raw, int num_tools,
                         if (cs == ns) return true;
                 return false;
             }), pool.end());
+        ALOGV("UnionSegmentation: removed %zu conflicting candidates, %zu remain",
+              before - pool.size(), pool.size());
     }
 }
 
@@ -281,7 +324,11 @@ cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
 {
     cv::Mat zeros = cv::Mat::zeros(8, 1, CV_32F);
     int num_pts = tool.num_spheres - static_cast<int>(occluded_nodes.size());
-    if (num_pts < 3) return zeros;
+    if (num_pts < 3) {
+        TOOL_TRK_LOG("MatchPointsKabsch '%s': not enough points (have=%d, need>=3)",
+                     tool.identifier.c_str(), num_pts);
+        return zeros;
+    }
 
     cv::Mat p(num_pts, 3, CV_32F); // template points (mm)
     cv::Mat q(num_pts, 3, CV_32F); // detected points (mm)
@@ -397,6 +444,13 @@ cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
     out.at<float>(5, 0) = quat[2]; // qz
     out.at<float>(6, 0) = quat[3]; // qw
     out.at<float>(7, 0) = 1.f;     // valid
+
+    TOOL_TRK_LOG("MatchPointsKabsch '%s': world position=(%.3f, %.3f, %.3f), "
+                 "quat=(%.3f, %.3f, %.3f, %.3f), num_pts=%d, occluded=%zu",
+                 tool.identifier.c_str(),
+                 position[0], position[1], position[2],
+                 quat[0], quat[1], quat[2], quat[3],
+                 num_pts, occluded_nodes.size());
     return out;
 }
 
