@@ -13,13 +13,13 @@ We need to adapt this approach to Magic Leap 2's depth camera API, which has dif
 
 ## Key Differences Between HoloLens2 and ML2
 
-| Aspect | HoloLens2 | Magic Leap 2 |
-|--------|-----------|--------------|
-| Intensity Data | Separate AHAT intensity image (cvAbImage, 16-bit) | Part of raw_depth_image buffer (float) |
-| Depth Data | UINT16 depth buffer | Float buffer in meters |
-| Intrinsics | Hardware API `MapImagePointToCameraUnitPlane()` | Raw parameters in `MLDepthCameraIntrinsics` |
-| Camera Pose | Separate query | Per-frame in `MLDepthCameraFrame.camera_pose` |
-| Coordinate System | DirectX (right-handed, row-major matrices) | OpenGL-like (varies by framework) |
+| Aspect            | HoloLens2                                         | Magic Leap 2                                  |
+| ----------------- | ------------------------------------------------- | --------------------------------------------- |
+| Intensity Data    | Separate AHAT intensity image (cvAbImage, 16-bit) | Part of raw_depth_image buffer (float)        |
+| Depth Data        | UINT16 depth buffer                               | Float buffer in meters                        |
+| Intrinsics        | Hardware API `MapImagePointToCameraUnitPlane()`   | Raw parameters in `MLDepthCameraIntrinsics`   |
+| Camera Pose       | Separate query                                    | Per-frame in `MLDepthCameraFrame.camera_pose` |
+| Coordinate System | DirectX (right-handed, row-major matrices)        | OpenGL-like (varies by framework)             |
 
 ---
 
@@ -394,12 +394,12 @@ cv::undistortPoints(distorted_pts, undistorted_pts, camera_matrix, distortion_co
 
 ## Files to Modify
 
-| File | Changes |
-|------|---------|
-| `CppPlugin/depth_navigation/app/src/main/cpp/marker_detection.h` | Create new header with class definition |
-| `CppPlugin/depth_navigation/app/src/main/cpp/marker_detection.cpp` | Implement detection functions |
-| `CppPlugin/depth_navigation/app/src/main/cpp/main.cpp` | Add include, integrate detection into `processFrame()` |
-| `CppPlugin/depth_navigation/app/src/main/cpp/CMakeLists.txt` | Add `marker_detection.cpp` to build |
+| File                                                               | Changes                                                |
+| ------------------------------------------------------------------ | ------------------------------------------------------ |
+| `CppPlugin/depth_navigation/app/src/main/cpp/marker_detection.h`   | Create new header with class definition                |
+| `CppPlugin/depth_navigation/app/src/main/cpp/marker_detection.cpp` | Implement detection functions                          |
+| `CppPlugin/depth_navigation/app/src/main/cpp/main.cpp`             | Add include, integrate detection into `processFrame()` |
+| `CppPlugin/depth_navigation/app/src/main/cpp/CMakeLists.txt`       | Add `marker_detection.cpp` to build                    |
 
 ---
 

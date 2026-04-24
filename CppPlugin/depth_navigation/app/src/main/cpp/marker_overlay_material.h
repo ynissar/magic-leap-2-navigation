@@ -7,7 +7,7 @@
 namespace ml {
 namespace app_framework {
 
-static const char* kMarkerOverlayVertexShader = R"GLSL(
+static const char *kMarkerOverlayVertexShader = R"GLSL(
 #version 410 core
 
 layout(std140) uniform Camera {
@@ -30,7 +30,7 @@ void main() {
 }
 )GLSL";
 
-static const char* kMarkerOverlayFragmentShader = R"GLSL(
+static const char *kMarkerOverlayFragmentShader = R"GLSL(
 #version 410 core
 layout(std140) uniform Material {
   vec3 MarkerColor;
@@ -49,11 +49,13 @@ public:
   MarkerOverlayMaterial(glm::vec3 color = glm::vec3(1.0f, 0.0f, 0.0f),
                         float alpha = 0.9f) {
     SetVertexProgram(
-        Registry::GetInstance()->GetResourcePool()->LoadShaderFromCode<VertexProgram>(
-            kMarkerOverlayVertexShader));
-    SetFragmentProgram(
-        Registry::GetInstance()->GetResourcePool()->LoadShaderFromCode<FragmentProgram>(
-            kMarkerOverlayFragmentShader));
+        Registry::GetInstance()
+            ->GetResourcePool()
+            ->LoadShaderFromCode<VertexProgram>(kMarkerOverlayVertexShader));
+    SetFragmentProgram(Registry::GetInstance()
+                           ->GetResourcePool()
+                           ->LoadShaderFromCode<FragmentProgram>(
+                               kMarkerOverlayFragmentShader));
     SetMarkerColor(color);
     SetMarkerAlpha(alpha);
     EnableAlphaBlending(true);
@@ -64,5 +66,5 @@ public:
   MATERIAL_VARIABLE_DECLARE(float, MarkerAlpha);
 };
 
-}  // namespace app_framework
-}  // namespace ml
+} // namespace app_framework
+} // namespace ml

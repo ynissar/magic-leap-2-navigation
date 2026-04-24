@@ -1,76 +1,82 @@
 #pragma once
 
-#include <string>
-#include <vector>
-#include <map>
-#include <chrono>
-#include <opencv2/opencv.hpp>
 #include "marker_detection.h"
 #include "tool_kalman_filter.h"
+#include <chrono>
+#include <map>
+#include <opencv2/opencv.hpp>
+#include <string>
+#include <vector>
 
 namespace ml {
 namespace tool_tracking {
 
-// A directed edge between two detected sphere indices, with the measured distance.
+// A directed edge between two detected sphere indices, with the measured
+// distance.
 struct Side {
-    int id_from{0};
-    int id_to{0};
-    float distance{0.f};
+  int id_from{0};
+  int id_to{0};
+  float distance{0.f};
 
-    static bool compare(const Side& a, const Side& b) {
-        return a.distance < b.distance;
-    }
+  static bool compare(const Side &a, const Side &b) {
+    return a.distance < b.distance;
+  }
 };
 
 // One candidate pose solution found during the graph search for a single tool.
 struct ToolResult {
-    int tool_id{-1};
-    std::vector<int> sphere_ids;      // indices into the current frame's detected_markers
-    float error{0.f};                 // summed side-length error (mm)
-    std::vector<int> occluded_nodes;  // tool node indices that were not visible
+  int tool_id{-1};
+  std::vector<int>
+      sphere_ids;   // indices into the current frame's detected_markers
+  float error{0.f}; // summed side-length error (mm)
+  std::vector<int> occluded_nodes; // tool node indices that were not visible
 
-    // Sort: fewest occluded first, then lowest total error.
-    static bool compare(const ToolResult& a, const ToolResult& b) {
-        if (a.occluded_nodes.size() != b.occluded_nodes.size())
-            return a.occluded_nodes.size() < b.occluded_nodes.size();
-        return a.error < b.error;
-    }
+  // Sort: fewest occluded first, then lowest total error.
+  static bool compare(const ToolResult &a, const ToolResult &b) {
+    if (a.occluded_nodes.size() != b.occluded_nodes.size())
+      return a.occluded_nodes.size() < b.occluded_nodes.size();
+    return a.error < b.error;
+  }
 };
 
 struct ToolResultContainer {
-    int tool_id{-1};
-    std::vector<ToolResult> candidates;
+  int tool_id{-1};
+  std::vector<ToolResult> candidates;
 };
 
 // A registered rigid-body tool, defined by its sphere template geometry.
 struct TrackedTool {
-    std::string identifier;
-    int num_spheres{0};
-    int min_visible_spheres{3};
-    float sphere_radius_mm{5.f};
+  std::string identifier;
+  int num_spheres{0};
+  int min_visible_spheres{3};
+  float sphere_radius_mm{5.f};
 
-    cv::Mat3f spheres_xyz_mm;        // (num_spheres × 1) local-frame positions in mm
-    cv::Mat   map;                   // (num_spheres × num_spheres) upper-triangular pairwise distance matrix (mm)
-    std::vector<Side> ordered_sides; // sorted by distance for fast seed search
+  cv::Mat3f spheres_xyz_mm; // (num_spheres × 1) local-frame positions in mm
+  cv::Mat map; // (num_spheres × num_spheres) upper-triangular pairwise distance
+               // matrix (mm)
+  std::vector<Side> ordered_sides; // sorted by distance for fast seed search
 
-    // 8×1: [x, y, z (m),  qx, qy, qz, qw,  valid(0/1)] in camera space
-    cv::Mat cur_transform = cv::Mat::zeros(8, 1, CV_32F);
+  // 8×1: [x, y, z (m),  qx, qy, qz, qw,  valid(0/1)] in camera space
+  cv::Mat cur_transform = cv::Mat::zeros(8, 1, CV_32F);
 
-    float lowpass_factor_position{0.6f}; // blend factor toward new position (0=frozen, 1=raw)
-    float lowpass_factor_rotation{0.3f}; // blend factor toward new rotation (slerp t)
+  float lowpass_factor_position{
+      0.6f}; // blend factor toward new position (0=frozen, 1=raw)
+  float lowpass_factor_rotation{
+      0.3f}; // blend factor toward new rotation (slerp t)
 
-    // Per-sphere Kalman filters — one per tool node, indexed the same way as spheres_xyz_mm.
-    // Noise parameters can be tuned per-tool before calling AddTool.
-    std::vector<ToolKalmanFilter> sphere_kalman_filters;
-    float kalman_measurement_noise{1.f};
-    float kalman_position_noise{1e-4f};
-    float kalman_velocity_noise{3.f};
+  // Per-sphere Kalman filters — one per tool node, indexed the same way as
+  // spheres_xyz_mm. Noise parameters can be tuned per-tool before calling
+  // AddTool.
+  std::vector<ToolKalmanFilter> sphere_kalman_filters;
+  float kalman_measurement_noise{1.f};
+  float kalman_position_noise{1e-4f};
+  float kalman_velocity_noise{3.f};
 
-    bool tracking_finished{true};
+  bool tracking_finished{true};
 
-    // Timestamp of the most recent successful pose update.
-    std::chrono::steady_clock::time_point last_tracked_time{};
-    bool ever_tracked{false};
+  // Timestamp of the most recent successful pose update.
+  std::chrono::steady_clock::time_point last_tracked_time{};
+  bool ever_tracked{false};
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -79,104 +85,108 @@ struct TrackedTool {
 
 class ToolTracker {
 public:
-    // Register a tool defined by its sphere positions in the tool-local frame (mm).
-    // min_visible: minimum number of spheres that must be detected for a valid pose.
-    bool AddTool(cv::Mat3f spheres_mm, float radius_mm,
-                 const std::string& identifier,
-                 int min_visible = 3);
+  // Register a tool defined by its sphere positions in the tool-local frame
+  // (mm). min_visible: minimum number of spheres that must be detected for a
+  // valid pose.
+  bool AddTool(cv::Mat3f spheres_mm, float radius_mm,
+               const std::string &identifier, int min_visible = 3);
 
-    bool RemoveTool(const std::string& identifier);
-    void RemoveAllTools();
+  bool RemoveTool(const std::string &identifier);
+  void RemoveAllTools();
 
-    // Process one frame of detected markers.  Call this once per depth frame,
-    // immediately after MarkerDetection::detectMarkerPositions().
-    // camera_to_world_4x4: 4×4 CV_32F homogeneous matrix mapping camera space → world space.
-    // Obtain it by converting the MLTransform from the depth camera frame data.
-    void ProcessFrame(const std::vector<ml::marker_detection::DetectedMarker>& markers,
-                      const cv::Mat& camera_to_world_4x4);
+  // Process one frame of detected markers.  Call this once per depth frame,
+  // immediately after MarkerDetection::detectMarkerPositions().
+  // camera_to_world_4x4: 4×4 CV_32F homogeneous matrix mapping camera space →
+  // world space. Obtain it by converting the MLTransform from the depth camera
+  // frame data.
+  void
+  ProcessFrame(const std::vector<ml::marker_detection::DetectedMarker> &markers,
+               const cv::Mat &camera_to_world_4x4);
 
-    // Returns the 8×1 transform for the named tool in world space:
-    //   [x, y, z (meters),  qx, qy, qz, qw,  valid]
-    // valid == 1.0 means the tool was successfully tracked this frame.
-    cv::Mat GetToolTransform(const std::string& identifier) const;
+  // Returns the 8×1 transform for the named tool in world space:
+  //   [x, y, z (meters),  qx, qy, qz, qw,  valid]
+  // valid == 1.0 means the tool was successfully tracked this frame.
+  cv::Mat GetToolTransform(const std::string &identifier) const;
 
-    // Tune matching tolerances.
-    // side_mm / avg_mm: absolute per-side and mean-error floors (mm).
-    // rel_frac: relative tolerance as a fraction of the expected side length
-    //   (e.g. 0.05 = 5%).  The effective tolerance for each side is
-    //   max(side_mm, rel_frac * expected_side_mm), making the matcher
-    //   depth-scale-invariant for larger inter-sphere distances.
-    void SetTolerances(float side_mm, float avg_mm, float rel_frac = -1.f) {
-        tolerance_side_ = side_mm;
-        tolerance_avg_  = avg_mm;
-        if (rel_frac >= 0.f) tolerance_rel_ = rel_frac;
+  // Tune matching tolerances.
+  // side_mm / avg_mm: absolute per-side and mean-error floors (mm).
+  // rel_frac: relative tolerance as a fraction of the expected side length
+  //   (e.g. 0.05 = 5%).  The effective tolerance for each side is
+  //   max(side_mm, rel_frac * expected_side_mm), making the matcher
+  //   depth-scale-invariant for larger inter-sphere distances.
+  void SetTolerances(float side_mm, float avg_mm, float rel_frac = -1.f) {
+    tolerance_side_ = side_mm;
+    tolerance_avg_ = avg_mm;
+    if (rel_frac >= 0.f)
+      tolerance_rel_ = rel_frac;
+  }
+
+  // Set low-pass smoothing factors on all registered tools.
+  void SetLowpassFactors(float position, float rotation) {
+    for (auto &t : tools_) {
+      t.lowpass_factor_position = position;
+      t.lowpass_factor_rotation = rotation;
     }
+  }
 
-    // Set low-pass smoothing factors on all registered tools.
-    void SetLowpassFactors(float position, float rotation) {
-        for (auto& t : tools_) {
-            t.lowpass_factor_position = position;
-            t.lowpass_factor_rotation = rotation;
-        }
+  // Returns seconds since the tool was last successfully tracked, or -1 if
+  // never tracked.
+  float GetSecondsSinceTracked(const std::string &identifier) const;
+
+  // Return the names of all registered tools.
+  std::vector<std::string> GetToolNames() const {
+    std::vector<std::string> names;
+    names.reserve(tools_.size());
+    for (const auto &t : tools_)
+      names.push_back(t.identifier);
+    return names;
+  }
+
+  // Reset all per-sphere Kalman filters with new noise parameters.
+  // Causes a one-frame re-initialisation glitch — acceptable for tuning.
+  void ResetKalmanFilters(float measurement, float position, float velocity) {
+    for (auto &t : tools_) {
+      t.kalman_measurement_noise = measurement;
+      t.kalman_position_noise = position;
+      t.kalman_velocity_noise = velocity;
+      for (auto &kf : t.sphere_kalman_filters)
+        kf.Reset(measurement, position, velocity);
     }
-
-    // Returns seconds since the tool was last successfully tracked, or -1 if never tracked.
-    float GetSecondsSinceTracked(const std::string& identifier) const;
-
-    // Return the names of all registered tools.
-    std::vector<std::string> GetToolNames() const {
-        std::vector<std::string> names;
-        names.reserve(tools_.size());
-        for (const auto& t : tools_) names.push_back(t.identifier);
-        return names;
-    }
-
-    // Reset all per-sphere Kalman filters with new noise parameters.
-    // Causes a one-frame re-initialisation glitch — acceptable for tuning.
-    void ResetKalmanFilters(float measurement, float position, float velocity) {
-        for (auto& t : tools_) {
-            t.kalman_measurement_noise = measurement;
-            t.kalman_position_noise    = position;
-            t.kalman_velocity_noise    = velocity;
-            for (auto& kf : t.sphere_kalman_filters)
-                kf.Reset(measurement, position, velocity);
-        }
-    }
+  }
 
 private:
-    // Build the upper-triangular pairwise-distance map and a sorted side list.
-    void ConstructMap(const cv::Mat3f& spheres_mm, int n,
-                      cv::Mat& out_map, std::vector<Side>& out_sides) const;
+  // Build the upper-triangular pairwise-distance map and a sorted side list.
+  void ConstructMap(const cv::Mat3f &spheres_mm, int n, cv::Mat &out_map,
+                    std::vector<Side> &out_sides) const;
 
-    // Graph search: find all candidate sphere assignments for one tool.
-    void TrackTool(TrackedTool& tool,
-                   const cv::Mat3f& frame_spheres_mm,
-                   const cv::Mat& frame_map,
-                   const std::vector<Side>& frame_sides,
-                   int num_frame_spheres,
-                   ToolResultContainer& result) const;
+  // Graph search: find all candidate sphere assignments for one tool.
+  void TrackTool(TrackedTool &tool, const cv::Mat3f &frame_spheres_mm,
+                 const cv::Mat &frame_map, const std::vector<Side> &frame_sides,
+                 int num_frame_spheres, ToolResultContainer &result) const;
 
-    // Greedy conflict resolution across all tools.
-    void UnionSegmentation(ToolResultContainer* raw, int num_tools,
-                           const cv::Mat3f& frame_spheres_mm);
+  // Greedy conflict resolution across all tools.
+  void UnionSegmentation(ToolResultContainer *raw, int num_tools,
+                         const cv::Mat3f &frame_spheres_mm);
 
-    // Kabsch algorithm: compute 6DOF pose from matched point sets.
-    // Returns 8×1 Mat [xyz(m), qxyzw, valid], or zeros on failure.
-    cv::Mat MatchPointsKabsch(TrackedTool& tool,
-                              const cv::Mat3f& frame_spheres_mm,
-                              const std::vector<int>& sphere_ids,
-                              const std::vector<int>& occluded_nodes);
+  // Kabsch algorithm: compute 6DOF pose from matched point sets.
+  // Returns 8×1 Mat [xyz(m), qxyzw, valid], or zeros on failure.
+  cv::Mat MatchPointsKabsch(TrackedTool &tool,
+                            const cv::Mat3f &frame_spheres_mm,
+                            const std::vector<int> &sphere_ids,
+                            const std::vector<int> &occluded_nodes);
 
-    std::vector<TrackedTool>    tools_;
-    std::map<std::string, int>  tool_index_;
+  std::vector<TrackedTool> tools_;
+  std::map<std::string, int> tool_index_;
 
-    float tolerance_side_{10.f};  // mm  — absolute per-side error floor
-    float tolerance_avg_ {10.f};  // mm  — absolute mean-error floor for a candidate
-    float tolerance_rel_ {0.10f}; // fraction — relative per-side tolerance (0 = disabled)
+  float tolerance_side_{10.f}; // mm  — absolute per-side error floor
+  float tolerance_avg_{10.f}; // mm  — absolute mean-error floor for a candidate
+  float tolerance_rel_{
+      0.10f}; // fraction — relative per-side tolerance (0 = disabled)
 
-    // Camera-to-world transform (4×4 CV_32F), updated each frame via ProcessFrame.
-    // Used by MatchPointsKabsch to convert the Kabsch result to world space.
-    cv::Mat camera_to_world_ = cv::Mat::eye(4, 4, CV_32F);
+  // Camera-to-world transform (4×4 CV_32F), updated each frame via
+  // ProcessFrame. Used by MatchPointsKabsch to convert the Kabsch result to
+  // world space.
+  cv::Mat camera_to_world_ = cv::Mat::eye(4, 4, CV_32F);
 };
 
 } // namespace tool_tracking
