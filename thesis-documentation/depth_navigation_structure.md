@@ -4,7 +4,7 @@
 
 `CppPlugin/depth_navigation/` is a native Android (NDK) application for Magic Leap 2 that detects IR markers using the device's depth camera and tracks rigid-body surgical tools in real time. It is a port of the HoloLens 2 IR tracking system (`HoloLens2-IRTracking-main/`) adapted to use the ML2 depth camera C API and OpenCV.
 
-The app runs as a `NativeActivity` — there is no Java/Kotlin code. All logic is in C++, compiled via CMake, and linked against the ML2 perception SDK and a vendored OpenCV build. The application's entry point is `android_main()` in `main.cpp`, which instantiates a `DepthCameraApp` and enters the ML2 app framework's run loop.
+The app runs as a `NativeActivity` — there is no Java/Kotlin code. All logic is in C++, compiled via CMake, and linked against the ML2 perception SDK and a android OpenCV build. The application's entry point is `android_main()` in `main.cpp`, which instantiates a `DepthCameraApp` and enters the ML2 app framework's run loop.
 
 Each iteration of the run loop follows a three-stage pipeline:
 
@@ -12,7 +12,7 @@ Each iteration of the run loop follows a three-stage pipeline:
 
 2. **Detect & Track** — The raw intensity and calibrated depth buffers are passed to the marker detection module, which identifies bright IR blobs, filters them, and back-projects them to 3D positions in camera space. These detected markers are then forwarded to the tool tracking module, which matches them against registered tool templates using pairwise-distance graph search, computes a 6DOF pose via the Kabsch algorithm, and transforms the result into world space using the camera pose.
 
-3. **Visualize & Tune** — The depth/confidence streams are rendered as head-locked textured quads in AR space. Detected and rejected blobs are drawn as colored point overlays on the raw intensity quad. Tracked tools are visualized as 3D axis gizmos positioned at their world-space poses. An ImGui control panel allows runtime tuning of every parameter in the pipeline — from camera exposure and detection thresholds to graph search tolerances, smoothing factors, and Kalman filter noise. A built-in tool capture workflow lets users define new tool geometries on-device by averaging marker positions across multiple frames.
+3. **Visualize & Tune** — The depth/confidence streams are rendered as head-locked textured quads in AR space. Detected and rejected blobs are drawn as colored point overlays on the raw intensity quad. Tracked tool poses are exposed through the ImGui control panel (per-tool position, orientation, and tracked/not-found status) and logged to logcat; no in-world 3D visualization of the tool is rendered. The control panel also allows runtime tuning of every parameter in the pipeline — from camera exposure and detection thresholds to graph search tolerances, smoothing factors, and Kalman filter noise. A built-in tool capture workflow lets users define new tool geometries on-device by averaging marker positions across multiple frames.
 
 ---
 
@@ -37,9 +37,10 @@ ML2 Depth Camera Hardware
                                 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  processFrame()  [main.cpp]                                            │
-│  Orchestrates the detect→track pipeline for each frame. Populates the  │
-│  MarkerDetectionConfig from current UI slider values, calls detection,  │
-│  feeds results into tool capture (if active) and tool tracking.        │
+│  Orchestrates the detect→track pipeline for each frame. Builds a       │
+│  MarkerDetectionConfig from current UI slider values via               │
+│  buildDetectionConfig(), calls detection, feeds results into tool      │
+│  capture (if active), then delegates tracking to runToolTracking().    │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
               ┌─────────────────┼──────────────────────┐
@@ -83,45 +84,46 @@ ML2 Depth Camera Hardware
            │                    │                      │
            ▼                    ▼                      ▼
 ┌───────────────────────────────────────┐   ┌─────────────────────┐
-│  ToolTracker::ProcessFrame()          │   │  Tool Capture       │
-│  [tool_tracking.cpp]                  │   │  (if active)        │
-│                                       │   │  [main.cpp]         │
-│  Input:                               │   │                     │
-│   • DetectedMarker[] (metres)         │   │  Accumulates marker │
-│   • camera-to-world 4×4 matrix        │   │  positions across N │
-│                                       │   │  frames, reorders   │
-│  Processing:                          │   │  by nearest-neighbor │
-│   m→mm conversion →                   │   │  correspondence,    │
-│   build pairwise distance map →       │   │  Kabsch-aligns all  │
-│   graph search per tool (TrackTool) → │   │  frames to a mean   │
-│   conflict resolution                 │   │  reference, then    │
-│     (UnionSegmentation) →             │   │  registers the tool │
-│   Kabsch pose estimation              │   │  with ToolTracker.  │
-│     (MatchPointsKabsch) →             │   └─────────────────────┘
+│  runToolTracking()  [main.cpp]        │   │  Tool Capture       │
+│   → ToolTracker::ProcessFrame()       │   │  (if active)        │
+│     [tool_tracking.cpp]               │   │  [main.cpp]         │
+│                                       │   │                     │
+│  Input:                               │   │  Accumulates marker │
+│   • DetectedMarker[] (metres)         │   │  positions across N │
+│   • camera-to-world 4×4 matrix        │   │  frames, reorders   │
+│     (built via MLTransformToCvMat)    │   │  by nearest-neighbor │
+│                                       │   │  correspondence,    │
+│  Processing:                          │   │  Kabsch-aligns all  │
+│   m→mm conversion →                   │   │  frames to a mean   │
+│   build pairwise distance map →       │   │  reference, then    │
+│   graph search per tool (TrackTool) → │   │  registers the tool │
+│   conflict resolution                 │   │  with ToolTracker.  │
+│     (UnionSegmentation) →             │   └─────────────────────┘
+│   Kabsch pose estimation              │
+│     (MatchPointsKabsch) →             │
 │   Kalman filtering (per-sphere) →     │
 │   low-pass smoothing (pos + rot) →    │
-│   camera→world transform             │
+│   camera→world transform              │
 │                                       │
 │  Output (per registered tool):        │
 │   8×1 cv::Mat                         │
-│   [x, y, z (m), qx, qy, qz, qw,     │
+│   [x, y, z (m), qx, qy, qz, qw,       │
 │    valid (0 or 1)]                    │
-│   in world space                      │
+│   in world space — surfaced in the    │
+│   ImGui panel and logged to logcat    │
 └───────────────────┬───────────────────┘
                     │
-      ┌─────────────┼──────────────────┐
-      ▼             ▼                  ▼
-┌────────────┐ ┌────────────┐  ┌──────────────┐
-│ Update     │ │ Update     │  │ Update       │
-│ Marker     │ │ Rejected   │  │ Tool         │
-│ Overlay    │ │ Overlay    │  │ Visuals      │
-│ [main.cpp] │ │ [main.cpp] │  │ [main.cpp]   │
-│            │ │            │  │              │
-│ Colored    │ │ Green      │  │ 3D axis      │
-│ points on  │ │ points on  │  │ gizmos at    │
-│ raw depth  │ │ raw depth  │  │ tool world   │
-│ quad       │ │ quad       │  │ poses        │
-└────────────┘ └────────────┘  └──────────────┘
+            ┌───────┴────────┐
+            ▼                ▼
+┌────────────────┐  ┌────────────────┐
+│ UpdateMarker   │  │ UpdateRejected │
+│ Overlay        │  │ Overlay        │
+│ [main.cpp]     │  │ [main.cpp]     │
+│                │  │                │
+│ Colored points │  │ Green points   │
+│ on raw depth   │  │ on raw depth   │
+│ quad           │  │ quad           │
+└────────────────┘  └────────────────┘
 ```
 
 ---
@@ -153,6 +155,7 @@ depth_navigation/
 This is the largest file in the project and serves as the top-level orchestrator. It defines the `DepthCameraApp` class (a subclass of `ml::app_framework::Application`) which owns the depth camera connection, the marker detector configuration, the `ToolTracker` instance, all visualization state, and the ImGui control panel. The `android_main()` function at the bottom of the file instantiates this class and enters the run loop.
 
 **Primary purposes:**
+
 - Manage the ML2 depth camera lifecycle (connect, configure, acquire frames, release)
 - Drive the per-frame detect→track pipeline by calling into `MarkerDetection` and `ToolTracker`
 - Render depth camera data streams as AR-space quads and overlay detection results
@@ -166,9 +169,13 @@ This is the largest file in the project and serves as the top-level orchestrator
 
 - **`AcquireNewFrames()`** — Non-blocking call to `MLDepthCameraGetLatestDepthData`. On success, updates frame metadata, pushes each data stream's buffer into the corresponding GPU texture, then calls `processFrame()`.
 
-- **`processFrame()`** — The core orchestration function. Constructs a `MarkerDetectionConfig` from the current UI slider values, calls `MarkerDetection::detectMarkerPositions()`, feeds the results into the tool capture state machine (if active), converts the camera pose to a 4×4 matrix via `MLTransformToCvMat()`, and calls `ToolTracker::ProcessFrame()`. Also triggers `UpdateMarkerOverlay()`, `UpdateRejectedOverlay()`, and `UpdateToolVisuals()`.
+- **`processFrame()`** — The core orchestration function. Reads the latest depth frame buffers (raw intensity, calibrated depth, ambient, confidence), builds a `MarkerDetectionConfig` via `buildDetectionConfig()`, calls `MarkerDetection::detectMarkerPositions()`, triggers `UpdateMarkerOverlay()` / `UpdateRejectedOverlay()`, feeds the results into the tool capture state machine (if active), and delegates world-space tracking to `runToolTracking()`.
 
-- **`UpdateGui()`** — Draws the ImGui control panel with sections for: basic frame info (camera pose, frame number), camera settings (stream mode, frame rate, exposure), marker overlay controls, tool tracking status (per-tool pose display), tool capture workflow (start/progress/register/discard), and tuning panels (marker detection thresholds, graph search tolerances, pose smoothing alpha, Kalman filter noise).
+- **`buildDetectionConfig()`** — Snapshots the current UI slider state (intensity thresholds, sphere radius, ambient subtraction toggle, Gaussian/morphology kernel sizes, area filter ratios, logging options, depth-baseline reset) into a fresh `MarkerDetectionConfig` that is passed into the detector for the current frame.
+
+- **`runToolTracking()`** — Thin wrapper around `ToolTracker::ProcessFrame()`. Converts the ML2 camera pose to a 4×4 `cv::Mat` via `MLTransformToCvMat()`, invokes the tracker, then iterates over all registered tool names and logs each tool's tracked/not-found status and world-space position to logcat.
+
+- **`UpdateGui()`** — Draws the ImGui control panel shell and delegates section rendering to `drawStreamInfoPanel()` (frame info, camera pose), `drawStreamSettingsPanel()` (stream mode, frame rate, exposure, data-type toggles), the inline marker-overlay controls (including the per-frame detected/rejected blob dumps), `drawToolCapturePanel()` (start/progress/register/discard workflow and registered-tool pose readout), and `drawTuningPanel()` (detection thresholds, graph search tolerances, low-pass smoothing factors, Kalman noise).
 
 - **`MLTransformToCvMat(const MLTransform&)`** — Converts the ML2 camera pose (position in metres + unit quaternion) into a 4×4 row-major homogeneous matrix (`CV_32F`) for use as the camera-to-world transform in the tracking pipeline.
 
@@ -176,17 +183,14 @@ This is the largest file in the project and serves as the top-level orchestrator
 
 - **`UpdateMarkerOverlay()` / `UpdateRejectedOverlay()`** — Convert detected marker or rejected blob pixel coordinates into point meshes and render them as colored overlays on the raw depth image quad.
 
-- **`UpdateToolVisuals()`** — For each registered tool, creates (on first encounter) or updates a 3D axis gizmo node at the tool's world-space pose. Hides the gizmo when the tool is not currently tracked.
-
-- **`FinalizeCapture()`** — Concludes the tool capture workflow. Performs iterative Kabsch-based alignment of all accumulated frames to a mean reference (3 iterations), computes a quality metric (max per-sphere standard deviation), subtracts the centroid, converts from metres to mm, and stores the result for user review before registration.
-
-- **`AlignFrameToReference()`** — Helper for tool capture. Applies the Kabsch algorithm (SVD of cross-covariance) to rigidly align one frame's sphere positions to the current reference positions.
+- **`FinalizeCapture()` / `AlignFrameToReference()`** — Conclude the tool capture workflow. `FinalizeCapture()` performs iterative Kabsch-based alignment of all accumulated frames to a mean reference (3 iterations) using `AlignFrameToReference()` as the per-frame helper (SVD of cross-covariance), computes a quality metric (max per-sphere standard deviation), subtracts the centroid, converts from metres to mm, and stores the result for user review before registration.
 
 ### `marker_detection.h / .cpp` — IR blob detection and 3D back-projection
 
 This module is responsible for the first stage of the pipeline: finding bright IR marker blobs in the raw intensity image and computing their 3D positions in camera space. It operates entirely on a single frame's data with no temporal state (except for optional depth-scaling baseline tracking used for diagnostics).
 
 **Primary purposes:**
+
 - Identify bright regions in the raw intensity image that correspond to IR-reflective marker spheres
 - Filter candidates by depth validity and expected projected area
 - Back-project accepted blobs from 2D pixel coordinates to 3D camera-space positions using the calibrated depth and camera intrinsics
@@ -215,6 +219,7 @@ This module is responsible for the first stage of the pipeline: finding bright I
 This module defines the data structures that represent registered tools and the `ToolTracker` class's public API for tool management. It also implements the pairwise distance map construction that underpins the graph search. The header (`tool_definition.h`) is the central type definition file — both `main.cpp` and `tool_tracking.cpp` include it.
 
 **Primary purposes:**
+
 - Define the `TrackedTool` struct that stores a tool's template geometry, distance map, Kalman filters, smoothing parameters, and current pose output
 - Define the `ToolTracker` class with its public API for registering/removing tools, processing frames, retrieving transforms, and tuning parameters
 - Build the pairwise distance map and sorted side list used by the graph search
@@ -246,6 +251,7 @@ This module defines the data structures that represent registered tools and the 
 This file contains the frame-by-frame tracking pipeline — the computational core of the system. It takes detected marker positions and matches them against registered tool templates using a pairwise-distance graph search, resolves conflicts when multiple tools compete for the same markers, and computes world-space 6DOF poses via the Kabsch algorithm with temporal smoothing.
 
 **Primary purposes:**
+
 - Match detected markers to registered tool templates using distance-based graph search
 - Handle partial occlusion (fewer visible markers than the tool definition expects)
 - Resolve conflicts when multiple tools share detected markers
@@ -269,6 +275,7 @@ This file contains the frame-by-frame tracking pipeline — the computational co
 A header-only implementation of a 6-state constant-velocity Kalman filter, ported from the HoloLens 2 `IRKalmanFilter.h`. One filter instance is maintained per sphere per registered tool. It smooths individual sphere position measurements before they enter the Kabsch algorithm, reducing frame-to-frame jitter.
 
 **Primary purposes:**
+
 - Provide temporal smoothing of individual marker sphere positions
 - Reduce measurement noise before pose estimation
 
@@ -294,8 +301,8 @@ A simple solid-color GLSL material used to render detected marker blobs and reje
 
 ## Unit Conventions
 
-| Context                        | Unit        |
-|-------------------------------|-------------|
+| Context                           | Unit        |
+| --------------------------------- | ----------- |
 | `DetectedMarker::position_camera` | metres      |
 | Tool template (`spheres_xyz_mm`)  | millimetres |
 | Graph search tolerances           | millimetres |

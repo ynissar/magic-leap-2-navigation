@@ -231,6 +231,273 @@ public:
     MLDepthCameraDataInit(&depth_camera_data_);
   }
 
+  ml::marker_detection::MarkerDetectionConfig buildDetectionConfig() {
+    ml::marker_detection::MarkerDetectionConfig config;
+    config.intensity_threshold_min = tune_intensity_min_;
+    config.intensity_threshold_max = tune_intensity_max_;
+    config.sphere_radius_mm = tune_sphere_radius_mm_;
+    config.use_ambient_subtraction = tune_ambient_subtraction_;
+    config.log_depth_scaling = tune_log_depth_scaling_;
+    config.log_every_n_frames = tune_log_every_n_frames_;
+    config.reset_depth_baseline =
+        request_reset_depth_baseline_ ||
+        (tune_log_depth_scaling_ && !prev_tune_log_depth_scaling_);
+    if (request_reset_depth_baseline_) {
+      request_reset_depth_baseline_ = false;
+    }
+    prev_tune_log_depth_scaling_ = tune_log_depth_scaling_;
+    config.expected_area_min_ratio = tune_area_min_ratio_;
+    config.expected_area_max_ratio = tune_area_max_ratio_;
+    config.gaussian_blur_kernel_size = tune_gaussian_kernel_size_;
+    config.morphology_kernel_size = tune_morph_kernel_size_;
+    config.log_pairwise_distances = tune_log_pairwise_distances_;
+    config.log_pairwise_every_n_frames = tune_log_pairwise_every_n_frames_;
+    return config;
+  }
+
+  void runToolTracking(
+      const std::vector<ml::marker_detection::DetectedMarker> &markers,
+      const MLTransform &camera_pose) {
+    cv::Mat cam_to_world = MLTransformToCvMat(camera_pose);
+    tool_tracker_.ProcessFrame(markers, cam_to_world);
+    for (const auto &n : tool_tracker_.GetToolNames()) {
+      cv::Mat tf = tool_tracker_.GetToolTransform(n);
+      bool v = tf.at<float>(7, 0) == 1.f;
+      ALOGV("Tool '%s': %s  pos=(%.3f,%.3f,%.3f)", n.c_str(),
+            v ? "TRACKED" : "NOT_FOUND", tf.at<float>(0, 0), tf.at<float>(1, 0),
+            tf.at<float>(2, 0));
+    }
+  }
+
+  void processFrame() {
+    ALOGV("processFrame called with frame_count: %u",
+          depth_camera_data_.frame_count);
+
+    if (depth_camera_data_.frame_count >= 1) {
+      for (size_t i = 0; i < depth_camera_data_.frame_count; i++) {
+        ALOGV("=== Frame %zu ===", i);
+
+        // Process Raw Depth Image
+        if (depth_camera_data_.frames[i].raw_depth_image != nullptr) {
+          auto *buffer = depth_camera_data_.frames[i].raw_depth_image;
+          ALOGV("Raw Depth Image: %ux%u pixels", buffer->width, buffer->height);
+
+          float *data = reinterpret_cast<float *>(buffer->data);
+          if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
+            // Print first 5 pixel values
+            ALOGV("  First 5 pixels: %.2f, %.2f, %.2f, %.2f, %.2f", data[0],
+                  data[1], data[2], data[3], data[4]);
+
+            // Calculate min/max for center pixel region (100 pixels)
+            int center_x = buffer->width / 2;
+            int center_y = buffer->height / 2;
+            int start_idx = center_y * buffer->width + center_x - 50;
+            float min_val = data[start_idx];
+            float max_val = data[start_idx];
+            for (int j = 0;
+                 j < 100 && (start_idx + j) < (buffer->width * buffer->height);
+                 j++) {
+              min_val = std::min(min_val, data[start_idx + j]);
+              max_val = std::max(max_val, data[start_idx + j]);
+            }
+            ALOGV("  Center region min: %.2f, max: %.2f", min_val, max_val);
+          }
+        } else {
+          ALOGV("Raw Depth Image: NULL");
+        }
+
+        // Process Processed Depth Image
+        if (depth_camera_data_.frames[i].depth_image != nullptr) {
+          auto *buffer = depth_camera_data_.frames[i].depth_image;
+          ALOGV("Processed Depth Image: %ux%u pixels", buffer->width,
+                buffer->height);
+
+          float *data = reinterpret_cast<float *>(buffer->data);
+          if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
+            // Print first 5 pixel values (in meters)
+            ALOGV("  First 5 pixels (meters): %.3f, %.3f, %.3f, %.3f, %.3f",
+                  data[0], data[1], data[2], data[3], data[4]);
+
+            // Calculate min/max for center pixel region
+            int center_x = buffer->width / 2;
+            int center_y = buffer->height / 2;
+            int start_idx = center_y * buffer->width + center_x - 50;
+            float min_val = data[start_idx];
+            float max_val = data[start_idx];
+            for (int j = 0;
+                 j < 100 && (start_idx + j) < (buffer->width * buffer->height);
+                 j++) {
+              if (data[start_idx + j] >
+                  0.0f) { // Only consider valid depth values
+                min_val = std::min(min_val, data[start_idx + j]);
+                max_val = std::max(max_val, data[start_idx + j]);
+              }
+            }
+            ALOGV("  Center region depth (m): min=%.3f, max=%.3f", min_val,
+                  max_val);
+          }
+        } else {
+          ALOGV("Processed Depth Image: NULL");
+        }
+
+        // Process Confidence Scores
+        if (depth_camera_data_.frames[i].confidence != nullptr) {
+          auto *buffer = depth_camera_data_.frames[i].confidence;
+          ALOGV("Confidence Buffer: %ux%u pixels", buffer->width,
+                buffer->height);
+
+          float *data = reinterpret_cast<float *>(buffer->data);
+          if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
+            // Print first 5 confidence values
+            ALOGV("  First 5 confidence values: %.2f, %.2f, %.2f, %.2f, %.2f",
+                  data[0], data[1], data[2], data[3], data[4]);
+
+            // Calculate min/max/average for center region
+            int center_x = buffer->width / 2;
+            int center_y = buffer->height / 2;
+            int start_idx = center_y * buffer->width + center_x - 50;
+            float min_val = data[start_idx];
+            float max_val = data[start_idx];
+            float sum = 0.0f;
+            int count = 0;
+            for (int j = 0;
+                 j < 100 && (start_idx + j) < (buffer->width * buffer->height);
+                 j++) {
+              min_val = std::min(min_val, data[start_idx + j]);
+              max_val = std::max(max_val, data[start_idx + j]);
+              sum += data[start_idx + j];
+              count++;
+            }
+            float avg = sum / count;
+            ALOGV("  Center region confidence: min=%.2f, max=%.2f, avg=%.2f",
+                  min_val, max_val, avg);
+          }
+        } else {
+          ALOGV("Confidence Buffer: NULL");
+        }
+
+        // Process Ambient Raw Depth (for reference)
+        if (depth_camera_data_.frames[i].ambient_raw_depth_image != nullptr) {
+          auto *buffer = depth_camera_data_.frames[i].ambient_raw_depth_image;
+          ALOGV("Ambient Raw Depth: %ux%u pixels", buffer->width,
+                buffer->height);
+        } else {
+          ALOGV("Ambient Raw Depth: NULL");
+        }
+
+        // ========== MARKER DETECTION INTEGRATION ==========
+        if (depth_camera_data_.frames[i].raw_depth_image != nullptr &&
+            depth_camera_data_.frames[i].depth_image != nullptr) {
+
+          auto *raw_buffer = depth_camera_data_.frames[i].raw_depth_image;
+          auto *depth_buffer = depth_camera_data_.frames[i].depth_image;
+          auto *ambient_buffer =
+              depth_camera_data_.frames[i].ambient_raw_depth_image;
+
+          float *raw_data = reinterpret_cast<float *>(raw_buffer->data);
+          float *depth_data = reinterpret_cast<float *>(depth_buffer->data);
+          float *ambient_data =
+              ambient_buffer ? reinterpret_cast<float *>(ambient_buffer->data)
+                             : nullptr;
+
+          if (raw_data && depth_data && raw_buffer->width > 0 &&
+              raw_buffer->height > 0) {
+            const auto &intrinsics = depth_camera_data_.frames[i].intrinsics;
+
+            const auto config = buildDetectionConfig();
+
+            rejected_blobs_.clear();
+            detected_markers_ =
+                ml::marker_detection::MarkerDetection::detectMarkerPositions(
+                    raw_data, depth_data, ambient_data, raw_buffer->width,
+                    raw_buffer->height, intrinsics, config, &rejected_blobs_);
+
+            ALOGI("Detected %zu IR markers", detected_markers_.size());
+            for (size_t m = 0; m < detected_markers_.size(); m++) {
+              const auto &marker = detected_markers_[m];
+              ALOGI("  Marker %zu: pixel(%.1f, %.1f) 3D(%.3f, %.3f, %.3f)m "
+                    "area=%d intensity=%.1f",
+                    m, marker.centroid_pixel.x, marker.centroid_pixel.y,
+                    marker.position_camera[0], marker.position_camera[1],
+                    marker.position_camera[2], marker.area_pixels,
+                    marker.intensity);
+            }
+
+            // Update overlay on raw depth image quad
+            const auto raw_idx =
+                GetIndexFromCameraFlag(MLDepthCameraFlags_RawDepthImage);
+            UpdateMarkerOverlay(raw_idx, detected_markers_);
+            UpdateRejectedOverlay(raw_idx, rejected_blobs_);
+
+            // ── Tool Capture: accumulate frames if capturing ──
+            if (capture_state_ == CaptureState::Capturing) {
+              if ((int)detected_markers_.size() == capture_expected_spheres_) {
+                std::vector<cv::Vec3f> frame_pos(capture_expected_spheres_);
+                for (int ci = 0; ci < capture_expected_spheres_; ++ci)
+                  frame_pos[ci] = detected_markers_[ci].position_camera;
+
+                // Check max pairwise distance — reject if any pair exceeds
+                // threshold
+                bool pair_ok = true;
+                for (int ci = 0; ci < capture_expected_spheres_ && pair_ok;
+                     ++ci) {
+                  for (int cj = ci + 1;
+                       cj < capture_expected_spheres_ && pair_ok; ++cj) {
+                    float dist_mm =
+                        (float)cv::norm(frame_pos[ci] - frame_pos[cj]) * 1000.f;
+                    if (dist_mm > capture_max_pair_dist_mm_)
+                      pair_ok = false;
+                  }
+                }
+                if (!pair_ok) {
+                  capture_frames_skipped_++;
+                  continue;
+                }
+
+                // Nearest-neighbor reorder against previous frame for
+                // correspondence
+                if (!capture_frame_positions_.empty()) {
+                  const auto &prev = capture_frame_positions_.back();
+                  std::vector<cv::Vec3f> reordered(capture_expected_spheres_);
+                  std::vector<bool> used(capture_expected_spheres_, false);
+                  for (int ci = 0; ci < capture_expected_spheres_; ++ci) {
+                    float best = FLT_MAX;
+                    int best_j = 0;
+                    for (int cj = 0; cj < capture_expected_spheres_; ++cj) {
+                      if (used[cj])
+                        continue;
+                      float dd = (float)cv::norm(prev[ci] - frame_pos[cj]);
+                      if (dd < best) {
+                        best = dd;
+                        best_j = cj;
+                      }
+                    }
+                    reordered[ci] = frame_pos[best_j];
+                    used[best_j] = true;
+                  }
+                  frame_pos = reordered;
+                }
+
+                capture_frame_positions_.push_back(frame_pos);
+                capture_frames_collected_++;
+
+                if (capture_frames_collected_ >= capture_num_frames_)
+                  FinalizeCapture();
+              } else {
+                capture_frames_skipped_++;
+              }
+            }
+
+            // Run tool tracking on detected markers (world-space output)
+            runToolTracking(detected_markers_,
+                            depth_camera_data_.frames[i].camera_pose);
+          }
+        }
+        // ========== END MARKER DETECTION ==========
+      }
+    }
+  }
+
   void OnStart() override {
     // Load legend bar textures.
     color_map_tex_ = Registry::GetInstance()->GetResourcePool()->LoadTexture(
@@ -918,37 +1185,6 @@ private:
                        rejected_color);
   }
 
-  void UpdateToolVisuals() {
-    for (const auto &name : tool_tracker_.GetToolNames()) {
-      cv::Mat tf = tool_tracker_.GetToolTransform(name);
-      bool valid = tf.at<float>(7, 0) == 1.f;
-
-      // Create a world-space axis gizmo for this tool on first encounter.
-      if (tool_axis_nodes_.find(name) == tool_axis_nodes_.end()) {
-        auto axis_node = CreatePresetNode(NodeType::Axis);
-        axis_node->SetLocalScale(
-            glm::vec3(0.2f, 0.2f, 0.2f)); // 0.5 * 0.2 = 0.1m arms
-        GetRoot()->AddChild(axis_node);
-        tool_axis_nodes_[name] = axis_node;
-      }
-
-      auto &node = tool_axis_nodes_[name];
-      auto renderable = node->GetComponent<RenderableComponent>();
-      if (renderable) {
-        renderable->SetVisible(valid);
-      }
-      if (valid) {
-        glm::vec3 pos(tf.at<float>(0, 0), tf.at<float>(1, 0),
-                      tf.at<float>(2, 0));
-        // glm::quat constructor is (w, x, y, z); tracker output is [qx, qy, qz,
-        // qw]
-        glm::quat rot(tf.at<float>(6, 0), tf.at<float>(3, 0),
-                      tf.at<float>(4, 0), tf.at<float>(5, 0));
-        node->SetWorldPose(Pose(rot, pos));
-      }
-    }
-  }
-
   void ResizePreview(int w, int h, uint8_t idx) {
     if (w != texture_width_[idx] || h != texture_height_[idx]) {
       texture_width_[idx] = w;
@@ -1300,274 +1536,6 @@ private:
     return MLResult_Ok;
   }
 
-  ml::marker_detection::MarkerDetectionConfig buildDetectionConfig() {
-    ml::marker_detection::MarkerDetectionConfig config;
-    config.intensity_threshold_min = tune_intensity_min_;
-    config.intensity_threshold_max = tune_intensity_max_;
-    config.sphere_radius_mm = tune_sphere_radius_mm_;
-    config.use_ambient_subtraction = tune_ambient_subtraction_;
-    config.log_depth_scaling = tune_log_depth_scaling_;
-    config.log_every_n_frames = tune_log_every_n_frames_;
-    config.reset_depth_baseline =
-        request_reset_depth_baseline_ ||
-        (tune_log_depth_scaling_ && !prev_tune_log_depth_scaling_);
-    if (request_reset_depth_baseline_) {
-      request_reset_depth_baseline_ = false;
-    }
-    prev_tune_log_depth_scaling_ = tune_log_depth_scaling_;
-    config.expected_area_min_ratio = tune_area_min_ratio_;
-    config.expected_area_max_ratio = tune_area_max_ratio_;
-    config.gaussian_blur_kernel_size = tune_gaussian_kernel_size_;
-    config.morphology_kernel_size = tune_morph_kernel_size_;
-    config.log_pairwise_distances = tune_log_pairwise_distances_;
-    config.log_pairwise_every_n_frames = tune_log_pairwise_every_n_frames_;
-    return config;
-  }
-
-  void runToolTracking(
-      const std::vector<ml::marker_detection::DetectedMarker> &markers,
-      const MLTransform &camera_pose) {
-    cv::Mat cam_to_world = MLTransformToCvMat(camera_pose);
-    tool_tracker_.ProcessFrame(markers, cam_to_world);
-    for (const auto &n : tool_tracker_.GetToolNames()) {
-      cv::Mat tf = tool_tracker_.GetToolTransform(n);
-      bool v = tf.at<float>(7, 0) == 1.f;
-      ALOGV("Tool '%s': %s  pos=(%.3f,%.3f,%.3f)", n.c_str(),
-            v ? "TRACKED" : "NOT_FOUND", tf.at<float>(0, 0), tf.at<float>(1, 0),
-            tf.at<float>(2, 0));
-    }
-    UpdateToolVisuals();
-  }
-
-  void processFrame() {
-    ALOGV("processFrame called with frame_count: %u",
-          depth_camera_data_.frame_count);
-
-    if (depth_camera_data_.frame_count >= 1) {
-      for (size_t i = 0; i < depth_camera_data_.frame_count; i++) {
-        ALOGV("=== Frame %zu ===", i);
-
-        // Process Raw Depth Image
-        if (depth_camera_data_.frames[i].raw_depth_image != nullptr) {
-          auto *buffer = depth_camera_data_.frames[i].raw_depth_image;
-          ALOGV("Raw Depth Image: %ux%u pixels", buffer->width, buffer->height);
-
-          float *data = reinterpret_cast<float *>(buffer->data);
-          if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
-            // Print first 5 pixel values
-            ALOGV("  First 5 pixels: %.2f, %.2f, %.2f, %.2f, %.2f", data[0],
-                  data[1], data[2], data[3], data[4]);
-
-            // Calculate min/max for center pixel region (100 pixels)
-            int center_x = buffer->width / 2;
-            int center_y = buffer->height / 2;
-            int start_idx = center_y * buffer->width + center_x - 50;
-            float min_val = data[start_idx];
-            float max_val = data[start_idx];
-            for (int j = 0;
-                 j < 100 && (start_idx + j) < (buffer->width * buffer->height);
-                 j++) {
-              min_val = std::min(min_val, data[start_idx + j]);
-              max_val = std::max(max_val, data[start_idx + j]);
-            }
-            ALOGV("  Center region min: %.2f, max: %.2f", min_val, max_val);
-          }
-        } else {
-          ALOGV("Raw Depth Image: NULL");
-        }
-
-        // Process Processed Depth Image
-        if (depth_camera_data_.frames[i].depth_image != nullptr) {
-          auto *buffer = depth_camera_data_.frames[i].depth_image;
-          ALOGV("Processed Depth Image: %ux%u pixels", buffer->width,
-                buffer->height);
-
-          float *data = reinterpret_cast<float *>(buffer->data);
-          if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
-            // Print first 5 pixel values (in meters)
-            ALOGV("  First 5 pixels (meters): %.3f, %.3f, %.3f, %.3f, %.3f",
-                  data[0], data[1], data[2], data[3], data[4]);
-
-            // Calculate min/max for center pixel region
-            int center_x = buffer->width / 2;
-            int center_y = buffer->height / 2;
-            int start_idx = center_y * buffer->width + center_x - 50;
-            float min_val = data[start_idx];
-            float max_val = data[start_idx];
-            for (int j = 0;
-                 j < 100 && (start_idx + j) < (buffer->width * buffer->height);
-                 j++) {
-              if (data[start_idx + j] >
-                  0.0f) { // Only consider valid depth values
-                min_val = std::min(min_val, data[start_idx + j]);
-                max_val = std::max(max_val, data[start_idx + j]);
-              }
-            }
-            ALOGV("  Center region depth (m): min=%.3f, max=%.3f", min_val,
-                  max_val);
-          }
-        } else {
-          ALOGV("Processed Depth Image: NULL");
-        }
-
-        // Process Confidence Scores
-        if (depth_camera_data_.frames[i].confidence != nullptr) {
-          auto *buffer = depth_camera_data_.frames[i].confidence;
-          ALOGV("Confidence Buffer: %ux%u pixels", buffer->width,
-                buffer->height);
-
-          float *data = reinterpret_cast<float *>(buffer->data);
-          if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
-            // Print first 5 confidence values
-            ALOGV("  First 5 confidence values: %.2f, %.2f, %.2f, %.2f, %.2f",
-                  data[0], data[1], data[2], data[3], data[4]);
-
-            // Calculate min/max/average for center region
-            int center_x = buffer->width / 2;
-            int center_y = buffer->height / 2;
-            int start_idx = center_y * buffer->width + center_x - 50;
-            float min_val = data[start_idx];
-            float max_val = data[start_idx];
-            float sum = 0.0f;
-            int count = 0;
-            for (int j = 0;
-                 j < 100 && (start_idx + j) < (buffer->width * buffer->height);
-                 j++) {
-              min_val = std::min(min_val, data[start_idx + j]);
-              max_val = std::max(max_val, data[start_idx + j]);
-              sum += data[start_idx + j];
-              count++;
-            }
-            float avg = sum / count;
-            ALOGV("  Center region confidence: min=%.2f, max=%.2f, avg=%.2f",
-                  min_val, max_val, avg);
-          }
-        } else {
-          ALOGV("Confidence Buffer: NULL");
-        }
-
-        // Process Ambient Raw Depth (for reference)
-        if (depth_camera_data_.frames[i].ambient_raw_depth_image != nullptr) {
-          auto *buffer = depth_camera_data_.frames[i].ambient_raw_depth_image;
-          ALOGV("Ambient Raw Depth: %ux%u pixels", buffer->width,
-                buffer->height);
-        } else {
-          ALOGV("Ambient Raw Depth: NULL");
-        }
-
-        // ========== MARKER DETECTION INTEGRATION ==========
-        if (depth_camera_data_.frames[i].raw_depth_image != nullptr &&
-            depth_camera_data_.frames[i].depth_image != nullptr) {
-
-          auto *raw_buffer = depth_camera_data_.frames[i].raw_depth_image;
-          auto *depth_buffer = depth_camera_data_.frames[i].depth_image;
-          auto *ambient_buffer =
-              depth_camera_data_.frames[i].ambient_raw_depth_image;
-
-          float *raw_data = reinterpret_cast<float *>(raw_buffer->data);
-          float *depth_data = reinterpret_cast<float *>(depth_buffer->data);
-          float *ambient_data =
-              ambient_buffer ? reinterpret_cast<float *>(ambient_buffer->data)
-                             : nullptr;
-
-          if (raw_data && depth_data && raw_buffer->width > 0 &&
-              raw_buffer->height > 0) {
-            const auto &intrinsics = depth_camera_data_.frames[i].intrinsics;
-
-            const auto config = buildDetectionConfig();
-
-            rejected_blobs_.clear();
-            detected_markers_ =
-                ml::marker_detection::MarkerDetection::detectMarkerPositions(
-                    raw_data, depth_data, ambient_data, raw_buffer->width,
-                    raw_buffer->height, intrinsics, config, &rejected_blobs_);
-
-            ALOGI("Detected %zu IR markers", detected_markers_.size());
-            for (size_t m = 0; m < detected_markers_.size(); m++) {
-              const auto &marker = detected_markers_[m];
-              ALOGI("  Marker %zu: pixel(%.1f, %.1f) 3D(%.3f, %.3f, %.3f)m "
-                    "area=%d intensity=%.1f",
-                    m, marker.centroid_pixel.x, marker.centroid_pixel.y,
-                    marker.position_camera[0], marker.position_camera[1],
-                    marker.position_camera[2], marker.area_pixels,
-                    marker.intensity);
-            }
-
-            // Update overlay on raw depth image quad
-            const auto raw_idx =
-                GetIndexFromCameraFlag(MLDepthCameraFlags_RawDepthImage);
-            UpdateMarkerOverlay(raw_idx, detected_markers_);
-            UpdateRejectedOverlay(raw_idx, rejected_blobs_);
-
-            // ── Tool Capture: accumulate frames if capturing ──
-            if (capture_state_ == CaptureState::Capturing) {
-              if ((int)detected_markers_.size() == capture_expected_spheres_) {
-                std::vector<cv::Vec3f> frame_pos(capture_expected_spheres_);
-                for (int ci = 0; ci < capture_expected_spheres_; ++ci)
-                  frame_pos[ci] = detected_markers_[ci].position_camera;
-
-                // Check max pairwise distance — reject if any pair exceeds
-                // threshold
-                bool pair_ok = true;
-                for (int ci = 0; ci < capture_expected_spheres_ && pair_ok;
-                     ++ci) {
-                  for (int cj = ci + 1;
-                       cj < capture_expected_spheres_ && pair_ok; ++cj) {
-                    float dist_mm =
-                        (float)cv::norm(frame_pos[ci] - frame_pos[cj]) * 1000.f;
-                    if (dist_mm > capture_max_pair_dist_mm_)
-                      pair_ok = false;
-                  }
-                }
-                if (!pair_ok) {
-                  capture_frames_skipped_++;
-                  continue;
-                }
-
-                // Nearest-neighbor reorder against previous frame for
-                // correspondence
-                if (!capture_frame_positions_.empty()) {
-                  const auto &prev = capture_frame_positions_.back();
-                  std::vector<cv::Vec3f> reordered(capture_expected_spheres_);
-                  std::vector<bool> used(capture_expected_spheres_, false);
-                  for (int ci = 0; ci < capture_expected_spheres_; ++ci) {
-                    float best = FLT_MAX;
-                    int best_j = 0;
-                    for (int cj = 0; cj < capture_expected_spheres_; ++cj) {
-                      if (used[cj])
-                        continue;
-                      float dd = (float)cv::norm(prev[ci] - frame_pos[cj]);
-                      if (dd < best) {
-                        best = dd;
-                        best_j = cj;
-                      }
-                    }
-                    reordered[ci] = frame_pos[best_j];
-                    used[best_j] = true;
-                  }
-                  frame_pos = reordered;
-                }
-
-                capture_frame_positions_.push_back(frame_pos);
-                capture_frames_collected_++;
-
-                if (capture_frames_collected_ >= capture_num_frames_)
-                  FinalizeCapture();
-              } else {
-                capture_frames_skipped_++;
-              }
-            }
-
-            // Run tool tracking on detected markers (world-space output)
-            runToolTracking(detected_markers_,
-                            depth_camera_data_.frames[i].camera_pose);
-          }
-        }
-        // ========== END MARKER DETECTION ==========
-      }
-    }
-  }
-
   void UpdateStreamCapabilities() {
     MLDepthCameraCapabilityFilter filter;
     MLDepthCameraCapabilityFilterInit(&filter);
@@ -1663,8 +1631,6 @@ private:
 
   // Tool tracking
   ml::tool_tracking::ToolTracker tool_tracker_;
-  std::map<std::string, std::shared_ptr<Node>> tool_axis_nodes_;
-
   // Marker overlay visualization
   std::vector<ml::marker_detection::DetectedMarker> detected_markers_;
   CameraFlagsArray<std::shared_ptr<Node>> marker_overlay_nodes_;
