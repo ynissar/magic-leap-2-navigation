@@ -98,4 +98,4 @@ See [`SETUP.md`](thesis-documentation/SETUP.md#debugging-with-logcat) for the co
 
 ## Contact
 
-Questions, or want additional documentation shared with you? Reach out to **Yusuf Nissar** at [Yusufnissar8@gmail.com](mailto:Yusufnissar8@gmail.com).
+Questions, or want additional documentation shared with you? Reach out to **Yusuf Nissar** at `yusufnissar8 [at] gmail [dot] com`.
