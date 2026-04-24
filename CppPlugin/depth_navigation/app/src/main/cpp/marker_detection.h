@@ -15,11 +15,12 @@
 
 #include <opencv2/opencv.hpp>
 #include <ml_depth_camera.h>
+#include <cstdint>
 #include <vector>
 
-// TODO: Decide on units - keep meters (ML2 native) or convert to mm (HoloLens2 convention)?
-// TODO: Verify sphere_radius correction - should we add or subtract? Is 6mm correct?
-// TODO: Determine intensity threshold values - need calibration with actual markers?
+// Positions are in metres (ML2 native). Converted to mm at the tool_tracking boundary (tool_tracking.cpp:44-48).
+// Sphere-radius correction is applied by adding radius to centroid depth to estimate sphere center depth.
+// Defaults tuned for retroreflective IR markers. Adjustable at runtime via GUI sliders.
 
 namespace ml {
 namespace marker_detection {
@@ -28,13 +29,13 @@ namespace marker_detection {
  * Configuration parameters for marker detection
  */
 struct MarkerDetectionConfig {
-    float intensity_threshold_min = 2000.0f;  // TODO: Calibrate with actual data
+    float intensity_threshold_min = 2000.0f;  // Working defaults for current marker set
     float intensity_threshold_max = 3500.0f;
-    float sphere_radius_mm = 5.0f;  // TODO: Verify physical marker size
+    float sphere_radius_mm = 5.0f;  // Default for current marker set; adjustable at runtime via GUI sliders.
     bool use_ambient_subtraction = false;  // Enable raw - ambient
 
-    // Area filter: A_px ≈ π·r²·fx·fy/d²; accept if measured area in [min_ratio, max_ratio] * expected
-    // TODO: does this actually make sense?
+    // Area filter: A_px ≈ π·r²·fx·fy/d²; keep blobs whose measured area is within
+    // [min_ratio, max_ratio] * expected to reject depth-inconsistent components.
     float expected_area_min_ratio = 0.5f;
     float expected_area_max_ratio = 2.0f;
 
@@ -43,6 +44,18 @@ struct MarkerDetectionConfig {
 
     // Morphological closing kernel size (must be odd; 1 = disabled)
     int morphology_kernel_size = 5;
+
+    // Emit depth scaling debug logs every N detector calls.
+    bool log_depth_scaling = false;
+    int log_every_n_frames = 10;
+
+    // Emit pairwise inter-marker distance logs (MarkerPair tag) every N detector calls.
+    bool log_pairwise_distances      = false;
+    int  log_pairwise_every_n_frames = 10;
+
+    // Clear session baseline for depth-scale ratio (mean z / z_initial). Set from UI on
+    // "Log depth scaling" rising edge or "Reset depth baseline" button.
+    bool reset_depth_baseline = false;
 };
 
 /**
@@ -162,7 +175,9 @@ private:
         int height,
         const MLDepthCameraIntrinsics& intrinsics,
         const MarkerDetectionConfig& config,
-        std::vector<RejectedBlob>* rejected_blobs
+        std::vector<RejectedBlob>* rejected_blobs,
+        bool should_log_depth_scaling,
+        uint64_t frame_index
     );
 };
 

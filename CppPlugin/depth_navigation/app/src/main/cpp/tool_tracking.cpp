@@ -199,40 +199,40 @@ void ToolTracker::TrackTool(TrackedTool& tool,
         }
 
         // Try to extend with each unvisited frame sphere
-        for (int cand = 0; cand < num_frame_spheres; ++cand) {
+        for (int candidate = 0; candidate < num_frame_spheres; ++candidate) {
             if (std::find(curr.visited_nodes_frame.begin(),
-                          curr.visited_nodes_frame.end(), cand)
+                          curr.visited_nodes_frame.end(), candidate)
                 != curr.visited_nodes_frame.end())
                 continue;
 
             bool   exceeded = false;
             float  err_new  = 0.f;
             int    err_cnt  = 0;
-            int    tnid     = 0; // tool node id, skipping occluded nodes
+            int    tool_node_id = 0; // tool node id, skipping occluded nodes
 
             for (int j = 0; j < visited; ++j) {
                 while (std::find(curr.occluded_nodes_tool.begin(),
-                                 curr.occluded_nodes_tool.end(), tnid)
+                                 curr.occluded_nodes_tool.end(), tool_node_id)
                        != curr.occluded_nodes_tool.end())
-                    ++tnid;
+                    ++tool_node_id;
 
-                int id1 = curr.visited_nodes_frame[j];
-                int id2 = cand;
-                if (id1 > id2) std::swap(id1, id2);
+                int marker_idx_a = curr.visited_nodes_frame[j];
+                int marker_idx_b = candidate;
+                if (marker_idx_a > marker_idx_b) std::swap(marker_idx_a, marker_idx_b);
 
                 // next tool node index = visited count + occlusion count
-                float expected = tool.map.at<float>(tnid, visited + occluded);
-                float err_side = std::abs(frame_map.at<float>(id1, id2) - expected);
+                float expected = tool.map.at<float>(tool_node_id, visited + occluded);
+                float err_side = std::abs(frame_map.at<float>(marker_idx_a, marker_idx_b) - expected);
 
                 if (err_side > std::max(tolerance_side_, tolerance_rel_ * expected))
                     { exceeded = true; break; }
                 err_new += err_side;
                 ++err_cnt;
-                ++tnid;
+                ++tool_node_id;
             }
 
             if (exceeded) {
-                // Optionally mark next tool node as occluded and retry without cand
+                // Optionally mark next tool node as occluded and retry without candidate
                 if (occluded < max_occluded) {
                     std::vector<int> new_occl(curr.occluded_nodes_tool);
                     new_occl.push_back(visited + occluded);
@@ -244,7 +244,7 @@ void ToolTracker::TrackTool(TrackedTool& tool,
             }
 
             std::vector<int> new_visited(curr.visited_nodes_frame);
-            new_visited.push_back(cand);
+            new_visited.push_back(candidate);
             search_list.push_back({new_visited,
                                    curr.combined_error + err_new,
                                    curr.num_sides + err_cnt,
@@ -334,24 +334,24 @@ cv::Mat ToolTracker::MatchPointsKabsch(TrackedTool& tool,
     cv::Mat q(num_pts, 3, CV_32F); // detected points (mm)
     cv::Vec3f p_center(0.f), q_center(0.f);
 
-    int tnid = 0;
+    int tool_node_id = 0;
     for (int i = 0; i < num_pts; ++i) {
-        while (std::find(occluded_nodes.begin(), occluded_nodes.end(), tnid)
+        while (std::find(occluded_nodes.begin(), occluded_nodes.end(), tool_node_id)
                != occluded_nodes.end())
-            ++tnid;
+            ++tool_node_id;
 
-        cv::Vec3f sp = tool.spheres_xyz_mm.at<cv::Vec3f>(tnid, 0);
+        cv::Vec3f sp = tool.spheres_xyz_mm.at<cv::Vec3f>(tool_node_id, 0);
         p.at<float>(i, 0) = sp[0]; p.at<float>(i, 1) = sp[1]; p.at<float>(i, 2) = sp[2];
         p_center += sp;
 
         // Apply per-sphere Kalman filter before feeding into Kabsch.
-        // tnid tracks the tool-node index (skipping occluded nodes), matching
+        // tool_node_id tracks the tool-node index (skipping occluded nodes), matching
         // the sphere_kalman_filters vector layout exactly.
-        cv::Vec3f sq_raw = frame_spheres_mm.at<cv::Vec3f>(sphere_ids[i], 0);
-        cv::Vec3f sq     = tool.sphere_kalman_filters[tnid].FilterData(sq_raw);
+        cv::Vec3f squared_distance_raw = frame_spheres_mm.at<cv::Vec3f>(sphere_ids[i], 0);
+        cv::Vec3f sq     = tool.sphere_kalman_filters[tool_node_id].FilterData(squared_distance_raw);
         q.at<float>(i, 0) = sq[0]; q.at<float>(i, 1) = sq[1]; q.at<float>(i, 2) = sq[2];
         q_center += sq;
-        ++tnid;
+        ++tool_node_id;
     }
     p_center /= static_cast<float>(num_pts);
     q_center /= static_cast<float>(num_pts);

@@ -23,31 +23,31 @@ public:
         : ToolKalmanFilter(1.f, 1e-4f, 3.f) {}
 
     ToolKalmanFilter(float measurementNoise, float positionNoise, float velocityNoise)
-        : m_fMeasurementNoise(measurementNoise),
-          m_fPositionNoise(positionNoise),
-          m_fVelocityNoise(velocityNoise) {
-        m_filter = cv::KalmanFilter(6, 3, 0, CV_32F);
+        : measurement_noise_(measurementNoise),
+          position_noise_(positionNoise),
+          velocity_noise_(velocityNoise) {
+        filter_ = cv::KalmanFilter(6, 3, 0, CV_32F);
     }
 
     // Reset the filter with new noise parameters.
     // The filter will re-initialise lazily on the next FilterData() call.
     void Reset(float measurementNoise, float positionNoise, float velocityNoise) {
-        m_fMeasurementNoise = measurementNoise;
-        m_fPositionNoise    = positionNoise;
-        m_fVelocityNoise    = velocityNoise;
-        m_bInitialized      = false;
-        m_filter = cv::KalmanFilter(6, 3, 0, CV_32F);
+        measurement_noise_ = measurementNoise;
+        position_noise_    = positionNoise;
+        velocity_noise_    = velocityNoise;
+        initialized_       = false;
+        filter_ = cv::KalmanFilter(6, 3, 0, CV_32F);
     }
 
     // Predict → correct with the given measurement.
     // On the very first call the filter is lazily initialised to the observed position.
     cv::Vec3f FilterData(cv::Vec3f value) {
-        if (!m_bInitialized) {
+        if (!initialized_) {
             InitializeFilter(value);
         }
-        cv::Mat prediction = m_filter.predict();
+        cv::Mat prediction = filter_.predict();
         cv::Mat meas = cv::Mat(value).reshape(1, 3);
-        cv::Mat correction = m_filter.correct(meas);
+        cv::Mat correction = filter_.correct(meas);
         return cv::Vec3f(correction.at<float>(0, 0),
                          correction.at<float>(1, 0),
                          correction.at<float>(2, 0));
@@ -60,43 +60,43 @@ private:
         A.at<float>(0, 3) = 1.f; // x  += vx
         A.at<float>(1, 4) = 1.f; // y  += vy
         A.at<float>(2, 5) = 1.f; // z  += vz
-        m_filter.transitionMatrix = A;
+        filter_.transitionMatrix = A;
 
         // Measurement matrix: observe [x, y, z] from state
         cv::Mat H = cv::Mat::zeros(3, 6, CV_32F);
         H.at<float>(0, 0) = 1.f;
         H.at<float>(1, 1) = 1.f;
         H.at<float>(2, 2) = 1.f;
-        m_filter.measurementMatrix = H;
+        filter_.measurementMatrix = H;
 
         // Process noise (Q): position and velocity components
         cv::Mat Q = cv::Mat::zeros(6, 6, CV_32F);
-        Q.at<float>(0, 0) = Q.at<float>(1, 1) = Q.at<float>(2, 2) = m_fPositionNoise;
-        Q.at<float>(3, 3) = Q.at<float>(4, 4) = Q.at<float>(5, 5) = m_fVelocityNoise;
-        m_filter.processNoiseCov = Q;
+        Q.at<float>(0, 0) = Q.at<float>(1, 1) = Q.at<float>(2, 2) = position_noise_;
+        Q.at<float>(3, 3) = Q.at<float>(4, 4) = Q.at<float>(5, 5) = velocity_noise_;
+        filter_.processNoiseCov = Q;
 
         // Measurement noise (R)
-        m_filter.measurementNoiseCov = cv::Mat::eye(3, 3, CV_32F) * m_fMeasurementNoise;
+        filter_.measurementNoiseCov = cv::Mat::eye(3, 3, CV_32F) * measurement_noise_;
 
         // Initial state: seed position from first observation, velocity = 0
         cv::Mat x = cv::Mat::zeros(6, 1, CV_32F);
         x.at<float>(0, 0) = value[0];
         x.at<float>(1, 0) = value[1];
         x.at<float>(2, 0) = value[2];
-        m_filter.statePre  = x;
-        m_filter.statePost = x.clone();
+        filter_.statePre  = x;
+        filter_.statePost = x.clone();
 
         // Initial error covariance
-        m_filter.errorCovPost = cv::Mat::eye(6, 6, CV_32F);
+        filter_.errorCovPost = cv::Mat::eye(6, 6, CV_32F);
 
-        m_bInitialized = true;
+        initialized_ = true;
     }
 
-    cv::KalmanFilter m_filter;
-    bool  m_bInitialized{false};
-    float m_fMeasurementNoise;
-    float m_fPositionNoise;
-    float m_fVelocityNoise;
+    cv::KalmanFilter filter_;
+    bool  initialized_{false};
+    float measurement_noise_;
+    float position_noise_;
+    float velocity_noise_;
 };
 
 } // namespace tool_tracking

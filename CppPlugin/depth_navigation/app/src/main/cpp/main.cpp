@@ -46,10 +46,11 @@
 #include <EGL/eglext.h>
 #endif
 
-using namespace ml::app_framework;
 using namespace std::chrono_literals;
 
 namespace {
+  using namespace ml::app_framework;
+
   // Convert an MLTransform (position in metres + unit quaternion) to a 4×4 homogeneous
   // matrix suitable for use as a camera-to-world transform in OpenCV (CV_32F, row-major).
   cv::Mat MLTransformToCvMat(const MLTransform& t) {
@@ -386,13 +387,14 @@ private:
       ImGui::NewLine();
       if (ImGui::CollapsingHeader("Tool Capture")) {
         if (capture_state_ == CaptureState::Idle) {
-          ImGui::InputText("Tool name", capture_tool_name_, sizeof(capture_tool_name_));
           ImGui::SliderInt("Expected spheres", &capture_expected_spheres_, 3, 10);
           ImGui::SliderInt("Frames to average", &capture_num_frames_, 10, 120);
           ImGui::SliderFloat("Sphere radius (mm)", &capture_sphere_radius_mm_, 1.f, 20.f);
           ImGui::SliderFloat("Max sphere distance (mm)", &capture_max_pair_dist_mm_, 50.f, 500.f);
           ImGui::TextDisabled("Hold tool in view, then press Start.");
           if (ImGui::Button("Start Capture")) {
+            snprintf(capture_tool_name_, sizeof(capture_tool_name_),
+                     "captured_tool_%d", captured_tool_counter_);
             capture_state_ = CaptureState::Capturing;
             capture_frames_collected_ = 0;
             capture_frames_skipped_ = 0;
@@ -436,6 +438,7 @@ private:
             tool_tracker_.RemoveTool(capture_tool_name_);
             tool_tracker_.AddTool(capture_result_mm_, capture_sphere_radius_mm_,
                                   capture_tool_name_, std::max(3, capture_expected_spheres_ - 1));
+            captured_tool_counter_++;
             capture_state_ = CaptureState::Idle;
           }
           ImGui::SameLine();
@@ -455,6 +458,16 @@ private:
           ImGui::SliderFloat("Intensity max", &tune_intensity_max_, 0.f, 65000.f);
           ImGui::SliderFloat("Sphere radius (mm)", &tune_sphere_radius_mm_, 1.f, 20.f);
           ImGui::Checkbox("Ambient subtraction", &tune_ambient_subtraction_);
+          ImGui::Checkbox("Log depth scaling", &tune_log_depth_scaling_);
+          ImGui::SliderInt("Depth log every N frames", &tune_log_every_n_frames_, 1, 120);
+          ImGui::Checkbox("Log pairwise distances", &tune_log_pairwise_distances_);
+          ImGui::SliderInt("Pairwise log every N frames", &tune_log_pairwise_every_n_frames_, 1, 120);
+          if (ImGui::Button("Reset depth baseline")) {
+            request_reset_depth_baseline_ = true;
+          }
+          if (ImGui::IsItemHovered()) {
+            ImGui::SetTooltip("Clears mean-z baseline for ratio_z/dz on next scaled log.");
+          }
           ImGui::SliderFloat("Area min ratio", &tune_area_min_ratio_, 0.01f, 1.f);
           ImGui::SliderFloat("Area max ratio", &tune_area_max_ratio_, 1.f, 10.f);
           // Kernels must be odd; clamp after drag
@@ -871,6 +884,7 @@ private:
       grouped_node_->AddChild(node);
     }
     GetRoot()->AddChild(grouped_node_);
+
     is_preview_invalid_ = false;
   }
 
@@ -1102,22 +1116,59 @@ private:
     return MLResult_Ok;
   }
 
+  ml::marker_detection::MarkerDetectionConfig buildDetectionConfig() {
+    ml::marker_detection::MarkerDetectionConfig config;
+    config.intensity_threshold_min    = tune_intensity_min_;
+    config.intensity_threshold_max    = tune_intensity_max_;
+    config.sphere_radius_mm           = tune_sphere_radius_mm_;
+    config.use_ambient_subtraction    = tune_ambient_subtraction_;
+    config.log_depth_scaling          = tune_log_depth_scaling_;
+    config.log_every_n_frames         = tune_log_every_n_frames_;
+    config.reset_depth_baseline       = request_reset_depth_baseline_ ||
+        (tune_log_depth_scaling_ && !prev_tune_log_depth_scaling_);
+    if (request_reset_depth_baseline_) {
+      request_reset_depth_baseline_ = false;
+    }
+    prev_tune_log_depth_scaling_      = tune_log_depth_scaling_;
+    config.expected_area_min_ratio    = tune_area_min_ratio_;
+    config.expected_area_max_ratio    = tune_area_max_ratio_;
+    config.gaussian_blur_kernel_size  = tune_gaussian_kernel_size_;
+    config.morphology_kernel_size     = tune_morph_kernel_size_;
+    config.log_pairwise_distances      = tune_log_pairwise_distances_;
+    config.log_pairwise_every_n_frames = tune_log_pairwise_every_n_frames_;
+    return config;
+  }
+
+  void runToolTracking(const std::vector<ml::marker_detection::DetectedMarker>& markers,
+                       const MLTransform& camera_pose) {
+    cv::Mat cam_to_world = MLTransformToCvMat(camera_pose);
+    tool_tracker_.ProcessFrame(markers, cam_to_world);
+    for (const auto& n : tool_tracker_.GetToolNames()) {
+      cv::Mat tf = tool_tracker_.GetToolTransform(n);
+      bool v = tf.at<float>(7, 0) == 1.f;
+      ALOGV("Tool '%s': %s  pos=(%.3f,%.3f,%.3f)", n.c_str(),
+            v ? "TRACKED" : "NOT_FOUND",
+            tf.at<float>(0,0), tf.at<float>(1,0), tf.at<float>(2,0));
+    }
+    UpdateToolVisuals();
+  }
+
   void processFrame() {
-    ALOGI("processFrame called with frame_count: %u", depth_camera_data_.frame_count);
+    ALOGV("processFrame called with frame_count: %u", depth_camera_data_.frame_count);
 
     if (depth_camera_data_.frame_count >= 1) {
       for (size_t i = 0; i < depth_camera_data_.frame_count; i++) {
-        ALOGI("=== Frame %zu ===", i);
+        ALOGV("=== Frame %zu ===", i);
 
         // Process Raw Depth Image
         if (depth_camera_data_.frames[i].raw_depth_image != nullptr) {
           auto* buffer = depth_camera_data_.frames[i].raw_depth_image;
-          ALOGI("Raw Depth Image: %ux%u pixels", buffer->width, buffer->height);
+          ALOGV("Raw Depth Image: %ux%u pixels", buffer->width, buffer->height);
 
           float* data = reinterpret_cast<float*>(buffer->data);
           if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
             // Print first 5 pixel values
-            ALOGI("  First 5 pixels: %.2f, %.2f, %.2f, %.2f, %.2f",
+            ALOGV("  First 5 pixels: %.2f, %.2f, %.2f, %.2f, %.2f",
                   data[0], data[1], data[2], data[3], data[4]);
 
             // Calculate min/max for center pixel region (100 pixels)
@@ -1130,21 +1181,21 @@ private:
               min_val = std::min(min_val, data[start_idx + j]);
               max_val = std::max(max_val, data[start_idx + j]);
             }
-            ALOGI("  Center region min: %.2f, max: %.2f", min_val, max_val);
+            ALOGV("  Center region min: %.2f, max: %.2f", min_val, max_val);
           }
         } else {
-          ALOGI("Raw Depth Image: NULL");
+          ALOGV("Raw Depth Image: NULL");
         }
 
         // Process Processed Depth Image
         if (depth_camera_data_.frames[i].depth_image != nullptr) {
           auto* buffer = depth_camera_data_.frames[i].depth_image;
-          ALOGI("Processed Depth Image: %ux%u pixels", buffer->width, buffer->height);
+          ALOGV("Processed Depth Image: %ux%u pixels", buffer->width, buffer->height);
 
           float* data = reinterpret_cast<float*>(buffer->data);
           if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
             // Print first 5 pixel values (in meters)
-            ALOGI("  First 5 pixels (meters): %.3f, %.3f, %.3f, %.3f, %.3f",
+            ALOGV("  First 5 pixels (meters): %.3f, %.3f, %.3f, %.3f, %.3f",
                   data[0], data[1], data[2], data[3], data[4]);
 
             // Calculate min/max for center pixel region
@@ -1159,21 +1210,21 @@ private:
                 max_val = std::max(max_val, data[start_idx + j]);
               }
             }
-            ALOGI("  Center region depth (m): min=%.3f, max=%.3f", min_val, max_val);
+            ALOGV("  Center region depth (m): min=%.3f, max=%.3f", min_val, max_val);
           }
         } else {
-          ALOGI("Processed Depth Image: NULL");
+          ALOGV("Processed Depth Image: NULL");
         }
 
         // Process Confidence Scores
         if (depth_camera_data_.frames[i].confidence != nullptr) {
           auto* buffer = depth_camera_data_.frames[i].confidence;
-          ALOGI("Confidence Buffer: %ux%u pixels", buffer->width, buffer->height);
+          ALOGV("Confidence Buffer: %ux%u pixels", buffer->width, buffer->height);
 
           float* data = reinterpret_cast<float*>(buffer->data);
           if (data != nullptr && buffer->width > 0 && buffer->height > 0) {
             // Print first 5 confidence values
-            ALOGI("  First 5 confidence values: %.2f, %.2f, %.2f, %.2f, %.2f",
+            ALOGV("  First 5 confidence values: %.2f, %.2f, %.2f, %.2f, %.2f",
                   data[0], data[1], data[2], data[3], data[4]);
 
             // Calculate min/max/average for center region
@@ -1191,18 +1242,18 @@ private:
               count++;
             }
             float avg = sum / count;
-            ALOGI("  Center region confidence: min=%.2f, max=%.2f, avg=%.2f", min_val, max_val, avg);
+            ALOGV("  Center region confidence: min=%.2f, max=%.2f, avg=%.2f", min_val, max_val, avg);
           }
         } else {
-          ALOGI("Confidence Buffer: NULL");
+          ALOGV("Confidence Buffer: NULL");
         }
 
         // Process Ambient Raw Depth (for reference)
         if (depth_camera_data_.frames[i].ambient_raw_depth_image != nullptr) {
           auto* buffer = depth_camera_data_.frames[i].ambient_raw_depth_image;
-          ALOGI("Ambient Raw Depth: %ux%u pixels", buffer->width, buffer->height);
+          ALOGV("Ambient Raw Depth: %ux%u pixels", buffer->width, buffer->height);
         } else {
-          ALOGI("Ambient Raw Depth: NULL");
+          ALOGV("Ambient Raw Depth: NULL");
         }
 
         // ========== MARKER DETECTION INTEGRATION ==========
@@ -1221,15 +1272,7 @@ private:
           if (raw_data && depth_data && raw_buffer->width > 0 && raw_buffer->height > 0) {
             const auto& intrinsics = depth_camera_data_.frames[i].intrinsics;
 
-            ml::marker_detection::MarkerDetectionConfig config;
-            config.intensity_threshold_min    = tune_intensity_min_;
-            config.intensity_threshold_max    = tune_intensity_max_;
-            config.sphere_radius_mm           = tune_sphere_radius_mm_;
-            config.use_ambient_subtraction    = tune_ambient_subtraction_;
-            config.expected_area_min_ratio    = tune_area_min_ratio_;
-            config.expected_area_max_ratio    = tune_area_max_ratio_;
-            config.gaussian_blur_kernel_size  = tune_gaussian_kernel_size_;
-            config.morphology_kernel_size     = tune_morph_kernel_size_;
+            const auto config = buildDetectionConfig();
 
             rejected_blobs_.clear();
             detected_markers_ = ml::marker_detection::MarkerDetection::detectMarkerPositions(
@@ -1302,17 +1345,7 @@ private:
             }
 
             // Run tool tracking on detected markers (world-space output)
-            cv::Mat cam_to_world = MLTransformToCvMat(
-                depth_camera_data_.frames[i].camera_pose);
-            tool_tracker_.ProcessFrame(detected_markers_, cam_to_world);
-            for (const auto& n : tool_tracker_.GetToolNames()) {
-                cv::Mat tf = tool_tracker_.GetToolTransform(n);
-                bool v = tf.at<float>(7, 0) == 1.f;
-                ALOGV("Tool '%s': %s  pos=(%.3f,%.3f,%.3f)", n.c_str(),
-                      v ? "TRACKED" : "NOT_FOUND",
-                      tf.at<float>(0,0), tf.at<float>(1,0), tf.at<float>(2,0));
-            }
-            UpdateToolVisuals();
+            runToolTracking(detected_markers_, depth_camera_data_.frames[i].camera_pose);
           }
         }
         // ========== END MARKER DETECTION ==========
@@ -1423,6 +1456,12 @@ private:
   float tune_intensity_max_         = 65000.f;
   float tune_sphere_radius_mm_      = 5.f;
   bool  tune_ambient_subtraction_   = true;
+  bool  tune_log_depth_scaling_     = false;
+  bool  prev_tune_log_depth_scaling_ = false;
+  bool  request_reset_depth_baseline_ = false;
+  int   tune_log_every_n_frames_    = 10;
+  bool  tune_log_pairwise_distances_      = false;
+  int   tune_log_pairwise_every_n_frames_ = 10;
   float tune_area_min_ratio_        = 0.5f;
   float tune_area_max_ratio_        = 4.0f;
   int   tune_gaussian_kernel_size_  = 5;
@@ -1451,7 +1490,8 @@ private:
   int   capture_num_frames_       = 30;
   float capture_sphere_radius_mm_ = 5.f;
   float capture_max_pair_dist_mm_ = 200.f;  // reject frame if any pair exceeds this
-  char  capture_tool_name_[64]    = "captured_tool";
+  char  capture_tool_name_[64]    = "captured_tool_1";
+  int   captured_tool_counter_    = 1;
 
   // Accumulation
   int   capture_frames_collected_ = 0;
